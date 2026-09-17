@@ -68,10 +68,15 @@ import SharePointDevelopmentService from '../components/services/SharePointDevel
 import PowerAppsDevelopmentService from '../components/services/PowerAppsDevelopmentService';
 import KotlinAppDevelopmentService from '../components/services/KotlinAppDevelopmentService';
 import HybridAppDevelopmentService from '../components/services/HybridAppDevelopmentService';
+import NativeAppDevelopmentService from '../components/services/NativeAppDevelopmentService';
+import CustomMobileAppDevelopmentService from '../components/services/CustomMobileAppDevelopmentService';
 import PersonalFitnessAppService from '../components/services/PersonalFitnessAppService';
 import UsedCarAppDevelopmentService from '../components/services/UsedCarAppDevelopmentService';
 import EnneagramTestAppService from '../components/services/EnneagramTestAppService';
 import CreditCardAppDevelopmentService from '../components/services/CreditCardAppDevelopmentService';
+import SwiftAppDevelopmentService from '../components/services/SwiftAppDevelopmentService';
+import IBeaconAppDevelopmentService from '../components/services/IBeaconAppDevelopmentService';
+import WearableAppDevelopmentService from '../components/services/WearableAppDevelopmentService';
 import ItConsultingServices from '../components/services/ItConsultingServices';
 import AppDevelopmentConsultingService from '../components/services/AppDevelopmentConsultingService';
 import StartupConsultingServices from '../components/services/StartupConsultingServices';
@@ -194,6 +199,16 @@ export const ServiceDetails = () => {
 
   const isHybrid = currentSlug.includes('hybrid');
 
+  const isNativeApp = currentSlug === 'native-app-development' ||
+    currentSlug === 'native-app' ||
+    currentSlug.includes('native-app') ||
+    currentSlug === 'services/native-app-development';
+
+  const isCustomMobileApp = currentSlug === 'custom-mobile-app-development' ||
+    currentSlug === 'custom-mobile-app' ||
+    currentSlug.includes('custom-mobile') ||
+    currentSlug === 'services/custom-mobile-app-development';
+
   const isPersonalFitness = currentSlug === 'personal-fitness-app' ||
     currentSlug.includes('personal-fitness') ||
     currentSlug.includes('fitness-app') ||
@@ -215,18 +230,33 @@ export const ServiceDetails = () => {
     currentSlug.includes('credit-card') ||
     currentSlug === 'services/credit-card-app-development';
 
+  const isSwiftApp = currentSlug === 'swift-app-development' ||
+    currentSlug === 'swift-app' ||
+    currentSlug.includes('swift-app') ||
+    currentSlug === 'services/swift-app-development';
+
+  const isIBeacon = currentSlug === 'ibeacon-app-development' ||
+    currentSlug === 'ibeacon-app' ||
+    currentSlug.includes('ibeacon') ||
+    currentSlug === 'services/ibeacon-app-development';
+
+  const isWearableApp = currentSlug === 'wearable-app-development' ||
+    currentSlug === 'wearable-app' ||
+    currentSlug.includes('wearable-app') ||
+    currentSlug === 'services/wearable-app-development';
+
   const isCrossPlatform = currentSlug.includes('cross-platform') ||
     currentSlug.includes('crossplatform') ||
     currentSlug.includes('multi-platform');
 
-  const isIOS = !isHireIOS && !isHireIphone && !isHireSwift && (currentSlug.includes('ios') || currentSlug.includes('iphone')) && !isIPad;
+  const isIOS = !isHireIOS && !isHireIphone && !isHireSwift && !isSwiftApp && (currentSlug.includes('ios') || currentSlug.includes('iphone')) && !isIPad;
 
   const isMobileApp = !isHireMobile && (
     currentSlug === 'mobile-app-development' ||
     currentSlug === 'mobile-app' ||
     currentSlug === 'mobile-application' ||
     currentSlug === 'mobile-application-development' ||
-    (currentSlug.includes('mobile-app') && !isReactNative && !isFlutter && !isIOS && !isAndroid && !isXamarin && !isIWatch && !isCrossPlatform && !isKotlin && !isHybrid && !isIPad && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard)
+    (currentSlug.includes('mobile-app') && !isReactNative && !isFlutter && !isIOS && !isAndroid && !isXamarin && !isIWatch && !isCrossPlatform && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isIPad && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp)
   );
 
   const isNet = currentSlug === 'net' ||
@@ -540,7 +570,7 @@ export const ServiceDetails = () => {
   const isChatGpt = currentSlug.includes('chatgpt') || currentSlug.includes('chat-gpt') || currentSlug.includes('hire-chatgpt');
 
   useEffect(() => {
-    if (!isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp) {
+    if (!isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp) {
       fetchServiceDetails();
     } else {
       setLoading(false);
@@ -648,6 +678,14 @@ export const ServiceDetails = () => {
     return <HybridAppDevelopmentService />;
   }
 
+  if (isNativeApp) {
+    return <NativeAppDevelopmentService />;
+  }
+
+  if (isCustomMobileApp) {
+    return <CustomMobileAppDevelopmentService />;
+  }
+
   if (isPersonalFitness) {
     return <PersonalFitnessAppService />;
   }
@@ -662,6 +700,18 @@ export const ServiceDetails = () => {
 
   if (isCreditCard) {
     return <CreditCardAppDevelopmentService />;
+  }
+
+  if (isSwiftApp) {
+    return <SwiftAppDevelopmentService />;
+  }
+
+  if (isIBeacon) {
+    return <IBeaconAppDevelopmentService />;
+  }
+
+  if (isWearableApp) {
+    return <WearableAppDevelopmentService />;
   }
 
   if (isCrossPlatform) {
@@ -932,6 +982,8 @@ export const ServiceDetails = () => {
 
   if (loading) return <LoadingSpinner fullPage message="Loading service details..." />;
   if (error || !service) return <Container className="py-20"><ErrorState message={error || 'Service not found.'} onRetry={fetchServiceDetails} /></Container>;
+
+  const currentService = service || {};
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-[#005F96] selection:text-white">

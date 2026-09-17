@@ -159,16 +159,7 @@ export const UsedCarAppDevelopmentService = () => {
       title: 'Fixed Price',
       desc: "If you represent a company with a project that needs dedicated attention, ask about dedicated teams. It's a pay-as-you-go monthly rolling contract.",
       icon: (
-        <svg viewBox="0 0 48 48" className="w-12 h-12 text-[#8B5CF6]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          {/* Ruffled top above tie */}
-          <path d="M19 9 C17 6 22 5 24 7 C26 5 31 6 29 9" />
-          {/* Tied neck */}
-          <path d="M18 11 H30" strokeWidth="2.8" />
-          {/* Main money bag pouch */}
-          <path d="M18 11 C12 16 9 23 9 32 C9 41 15 44 24 44 C33 44 39 41 39 32 C39 23 36 16 30 11" />
-          {/* Dollar Sign */}
-          <text x="24" y="32" fill="currentColor" stroke="none" fontSize="15" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">$</text>
-        </svg>
+        <img src="/images/ic_fixed_price.svg" alt="Fixed Price" className="w-12 h-12 object-contain" />
       ),
       points: [
         'Optimal flexibility',
@@ -181,22 +172,7 @@ export const UsedCarAppDevelopmentService = () => {
       title: 'Time Material',
       desc: "If you are represent a company with undefined projects and need ongoing work, ask about hourly. It's a pay-as-you-go hour-wise rolling contract.",
       icon: (
-        <svg viewBox="0 0 48 48" className="w-12 h-12 text-[#22C55E]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          {/* Top Winder & Loop */}
-          <path d="M24 10 V5" />
-          <path d="M20 5 H28" />
-          <path d="M35 15 L38 12" />
-          {/* Clock Circle */}
-          <circle cx="25" cy="27" r="14" />
-          {/* Clock Hands */}
-          <path d="M25 27 V19" strokeWidth="2.5" />
-          <path d="M25 27 L31 27" strokeWidth="2.5" />
-          <circle cx="25" cy="27" r="1.5" fill="currentColor" />
-          {/* Speed / Motion lines on left */}
-          <path d="M10 20 H5" />
-          <path d="M8 26 H3" />
-          <path d="M10 32 H5" />
-        </svg>
+        <img src="/images/ic_time_material.svg" alt="Time Material" className="w-12 h-12 object-contain" />
       ),
       points: [
         'No hidden costs',
@@ -209,17 +185,7 @@ export const UsedCarAppDevelopmentService = () => {
       title: 'Dedicated Team',
       desc: "If you represent a company with a project that needs dedicated attention, ask about dedicated teams. It's a pay-as-you-go monthly rolling contract.",
       icon: (
-        <svg viewBox="0 0 48 48" className="w-12 h-12 text-[#F97316]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          {/* Center Leader Head & Body */}
-          <circle cx="24" cy="14" r="5" />
-          <path d="M16 33 C16 27.5 19.5 24 24 24 C28.5 24 32 27.5 32 33" />
-          {/* Left Member Head & Body */}
-          <circle cx="13" cy="18" r="4" />
-          <path d="M6 33 C6 29 9 26 13 26 C14.5 26 15.8 26.5 16.8 27.4" />
-          {/* Right Member Head & Body */}
-          <circle cx="35" cy="18" r="4" />
-          <path d="M42 33 C42 29 39 26 35 26 C33.5 26 32.2 26.5 31.2 27.4" />
-        </svg>
+        <img src="/images/ic_full_time.svg" alt="Dedicated Team" className="w-12 h-12 object-contain" />
       ),
       points: [
         'No hidden costs',
@@ -232,16 +198,7 @@ export const UsedCarAppDevelopmentService = () => {
       title: 'Buckets Approach',
       desc: 'A lot of businesses typically select our bucket approach which allow them for payment convenience once the project is finished and things are in place.',
       icon: (
-        <svg viewBox="0 0 48 48" className="w-12 h-12 text-[#06B6D4]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          {/* Big Gear Left/Bottom */}
-          <circle cx="18" cy="28" r="4" />
-          <circle cx="18" cy="28" r="8" />
-          <path d="M18 18 V20 M18 36 V38 M8 28 H10 M26 28 H28 M11 21 L12.5 22.5 M23.5 33.5 L25 35 M11 35 L12.5 33.5 M23.5 22.5 L25 21" strokeWidth="2.4" />
-          {/* Small Gear Right/Top */}
-          <circle cx="33" cy="17" r="3" />
-          <circle cx="33" cy="17" r="6" />
-          <path d="M33 9 V11 M33 23 V25 M25 17 H27 M39 17 H41 M27.5 11.5 L29 13 M37 21 L38.5 22.5 M27.5 22.5 L29 21 M37 13 L38.5 11.5" strokeWidth="2.2" />
-        </svg>
+        <img src="/images/bucketapproch.svg" alt="Buckets Approach" className="w-12 h-12 object-contain" />
       ),
       points: [
         'Direct Resource Monitoring',

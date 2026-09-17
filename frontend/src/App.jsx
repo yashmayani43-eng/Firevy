@@ -136,6 +136,10 @@ export function App() {
                 <Route path="/blog" element={<CompanySubDetails />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/services/:slug" element={<ServiceDetails />} />
+                <Route path="/services/native-app-development" element={<ServiceDetails />} />
+                <Route path="/native-app-development" element={<ServiceDetails />} />
+                <Route path="/services/custom-mobile-app-development" element={<ServiceDetails />} />
+                <Route path="/custom-mobile-app-development" element={<ServiceDetails />} />
                 <Route path="/services/it-consulting-services" element={<ServiceDetails />} />
                 <Route path="/it-consulting-services" element={<ServiceDetails />} />
                 <Route path="/services/app-development-consulting" element={<ServiceDetails />} />
@@ -331,6 +335,14 @@ export function App() {
                 <Route path="/used-car-app-development" element={<ServiceDetails />} />
                 <Route path="/services/enneagram-test-app" element={<ServiceDetails />} />
                 <Route path="/enneagram-test-app" element={<ServiceDetails />} />
+                <Route path="/services/credit-card-app-development" element={<ServiceDetails />} />
+                <Route path="/credit-card-app-development" element={<ServiceDetails />} />
+                <Route path="/services/swift-app-development" element={<ServiceDetails />} />
+                <Route path="/swift-app-development" element={<ServiceDetails />} />
+                <Route path="/services/ibeacon-app-development" element={<ServiceDetails />} />
+                <Route path="/ibeacon-app-development" element={<ServiceDetails />} />
+                <Route path="/services/wearable-app-development" element={<ServiceDetails />} />
+                <Route path="/wearable-app-development" element={<ServiceDetails />} />
                 <Route path="/services/warehouse-management-system" element={<ServiceDetails />} />
                 <Route path="/warehouse-management-system" element={<ServiceDetails />} />
                 <Route path="/services/visitor-management-system" element={<ServiceDetails />} />

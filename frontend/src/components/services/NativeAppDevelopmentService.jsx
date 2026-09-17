@@ -8,6 +8,12 @@ import SuccessMatrix from '../common/SuccessMatrix';
 import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
 import SuccessStoriesSection from '../common/SuccessStoriesSection';
 import PremiumServicesGrid from '../common/PremiumServicesGrid';
+import SapphireSeasonedExpertsSection from './SapphireSeasonedExpertsSection';
+import IndustryFocusedInsightsSection from './IndustryFocusedInsightsSection';
+import AboutUsStats from './AboutUsStats';
+import TransformativeImpactSection from './TransformativeImpactSection';
+import SectorsThrivingSection from './SectorsThrivingSection';
+import MobileAppProficientTechStackSection from './MobileAppProficientTechStackSection';
 import BrandLogoMarquee from '../common/BrandLogoMarquee';
 import SapphireLightHeroBanner from '../common/SapphireLightHeroBanner';
 import HybridAppCuttingEdgeTechnologiesSection from './HybridAppCuttingEdgeTechnologiesSection';
@@ -18,15 +24,37 @@ import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
+import {
+  Code,
+  Smartphone,
+  ShieldCheck,
+  Cpu,
+  Zap,
+  Layers,
+  Award,
+  Users,
+  Target,
+  ArrowRight,
+  CheckCircle2,
+  Check,
+  Sparkles,
+  Globe,
+  Settings,
+  RefreshCw,
+  Bug,
+  Layout,
+  Lock,
+  Boxes
+} from 'lucide-react';
 
-export const EnneagramTestAppService = () => {
+export const NativeAppDevelopmentService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    model: 'Dedicated Psychology & App Squad',
-    appType: 'Custom Enneagram Test App Development',
+    model: 'Dedicated Native Squad',
+    appType: 'Custom Native App Development',
     budget: '$20,000 - $45,000',
     message: ''
   });
@@ -41,107 +69,90 @@ export const EnneagramTestAppService = () => {
     setFormSubmitted(true);
   };
 
-  // 6 Benefits of Enneagram Test App Development
+  // 6 Benefits of Native App Development (1:1 Reference Match Sequence)
   const benefitsItems = [
     {
-      title: 'Psychometric Assessment Engine',
-      desc: 'Seamlessly calibrate 9 personality types, wing dynamics, and instinctual variants with scientific scoring algorithms and instant personality breakdowns.',
+      title: 'Peak Performance & Speed',
+      desc: 'Native apps are built with platform-specific languages (Swift/Objective-C for iOS, Kotlin/Java for Android) that compile directly to machine code, delivering unmatched 60fps/120fps fluid responsiveness and optimal hardware efficiency.',
+      icon: (
+        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+        </svg>
+      )
+    },
+    {
+      title: 'Seamless Device Hardware Access',
+      desc: 'Native development grants direct, uninhibited access to all hardware capabilities including Camera, GPS, LiDAR sensors, Bluetooth Low Energy, NFC, Apple Pay/Google Pay, and biometric authentication with zero performance loss.',
+      icon: (
+        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="5" y="2" width="14" height="20" rx="2" />
+          <line x1="12" y1="18" x2="12.01" y2="18" strokeWidth="2.5" />
+          <path d="M9 6h6" />
+        </svg>
+      )
+    },
+    {
+      title: 'Superior User Experience (UX)',
+      desc: 'Native applications adhere strictly to platform-specific UI design guidelines—Apple Human Interface Guidelines and Google Material Design—delivering intuitive, familiar navigation and superior user satisfaction.',
+      icon: (
+        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+      )
+    },
+    {
+      title: 'Robust Security & Data Protection',
+      desc: 'Native mobile architectures leverage hardware-level encryption, Apple Keychain, Android Keystore, and system-level security protections, providing bank-grade defense for sensitive business and user information.',
+      icon: (
+        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+          <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        </svg>
+      )
+    },
+    {
+      title: 'Reliable Offline Capabilities',
+      desc: 'Native applications utilize robust local databases such as CoreData, Realm, and Room/SQLite, ensuring uninterrupted offline functionality, rapid data synchronization, and zero dependency on constant network connectivity.',
+      icon: (
+        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <ellipse cx="12" cy="5" rx="9" ry="3" />
+          <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+          <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+        </svg>
+      )
+    },
+    {
+      title: 'Day-One OS Feature Support',
+      desc: 'Native developers immediately leverage the latest operating system APIs, widgets, Dynamic Island, and hardware updates from Apple and Google on release day without waiting for third-party wrapper or bridge updates.',
       icon: (
         <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="10" />
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-          <path d="M2 12h20" />
-        </svg>
-      )
-    },
-    {
-      title: 'AI-Driven Custom Personality Insights',
-      desc: 'Dynamic machine learning algorithms generate personalized growth roadmaps, relationship compatibility matrices, and career strengths based on user test responses.',
-      icon: (
-        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-          <path d="M2 8h16v8H2z" />
-          <line x1="6" y1="1" x2="6" y2="4" />
-          <line x1="10" y1="1" x2="10" y2="4" />
-          <line x1="14" y1="1" x2="14" y2="4" />
-        </svg>
-      )
-    },
-    {
-      title: 'Real-Time Compatibility & Team Dynamics',
-      desc: 'Interactive visual dashboards track interpersonal relationships, team communication styles, conflict resolution tips, and leadership metrics with downloadable PDF reports.',
-      icon: (
-        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-        </svg>
-      )
-    },
-    {
-      title: 'Daily Micro-Journaling & Habit Coaching',
-      desc: 'Daily mindfulness prompts, stress-to-growth integration tracks, audio guides, and personalized micro-coaching designed to foster long-term emotional intelligence.',
-      icon: (
-        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <polygon points="23 7 16 12 23 17 23 7" />
-          <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
-        </svg>
-      )
-    },
-    {
-      title: 'Social Sharing & Community Challenges',
-      desc: 'Boost user retention with personality type comparison cards, social sharing widgets, streak rewards, and interactive community discussion circles.',
-      icon: (
-        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="8" r="7" />
-          <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
-        </svg>
-      )
-    },
-    {
-      title: 'Enterprise & HR Team Assessments',
-      desc: 'Multi-user organizational licensing, corporate group reporting, team psychological safety analytics, and automated onboarding assessments for enterprises.',
-      icon: (
-        <svg className="w-6 h-6 text-[#0084D1]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M18 20V10" />
-          <path d="M12 20V4" />
-          <path d="M6 20v-6" />
+          <polyline points="12 6 12 12 16 14" />
         </svg>
       )
     }
   ];
 
-  // 4 Business Friendly Hiring Models
+  // 4 Business Friendly Hiring Models (1:1 Reference Match)
   const hiringModels = [
     {
-      title: 'Fixed Price Model',
-      desc: 'If you represent an organization with well-defined personality app scopes, ask about our fixed cost model with strict milestone-based delivery.',
+      title: 'Fixed Price',
+      desc: "If you represent a company with a project that needs dedicated attention, ask about dedicated teams. It's a pay-as-you-go monthly rolling contract.",
       icon: (
-        <svg viewBox="0 0 48 48" className="w-12 h-12 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="8" y="10" width="32" height="30" rx="3" />
-          <path d="M16 6 V10" />
-          <path d="M32 6 V10" />
-          <path d="M8 18 H40" />
-          <path d="M20 28 L23 31 L29 25" strokeWidth="2.5" />
-        </svg>
+        <img src="/images/ic_fixed_price.svg" alt="Fixed Price" className="w-12 h-12 object-contain" />
       ),
       points: [
         'Optimal flexibility',
         'Agile team',
-        'Milestone deliverables',
+        'Small projects',
         'Complete control over budget'
       ]
     },
     {
       title: 'Time Material',
-      desc: 'If you represent a self-growth or EdTech brand with evolving assessment algorithms and continuous testing needs, choose our flexible hourly rolling contract.',
+      desc: "If you are represent a company with undefined projects and need ongoing work, ask about hourly. It's a pay-as-you-go hour-wise rolling contract.",
       icon: (
-        <svg viewBox="0 0 48 48" className="w-12 h-12 text-[#10B981]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="24" cy="27" r="14" />
-          <path d="M24 13 V8" />
-          <path d="M20 8 H28" />
-          <path d="M34 17 L37 14" />
-          <path d="M24 27 L24 20" />
-          <path d="M24 27 L29 30" />
-        </svg>
+        <img src="/images/ic_time_material.svg" alt="Time Material" className="w-12 h-12 object-contain" />
       ),
       points: [
         'No hidden costs',
@@ -152,16 +163,9 @@ export const EnneagramTestAppService = () => {
     },
     {
       title: 'Dedicated Team',
-      desc: 'If you represent an enterprise requiring a dedicated mobile squad of developers, psychometric architects, and QA engineers on a monthly rolling retainer.',
+      desc: "If you represent a company with a project that needs dedicated attention, ask about dedicated teams. It's a pay-as-you-go monthly rolling contract.",
       icon: (
-        <svg viewBox="0 0 48 48" className="w-12 h-12 text-[#F97316]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="24" cy="15" r="4.5" />
-          <path d="M17 29 C17 24.5 20 22.5 24 22.5 C28 22.5 31 24.5 31 29" />
-          <circle cx="14" cy="19" r="3.5" />
-          <path d="M8 31 C8 27 11 25.5 14 25.5 C15.2 25.5 16.3 25.9 17.2 26.6" />
-          <circle cx="34" cy="19" r="3.5" />
-          <path d="M30.8 26.6 C31.7 25.9 32.8 25.5 34 25.5 C37 25.5 40 27 40 31" />
-        </svg>
+        <img src="/images/ic_full_time.svg" alt="Dedicated Team" className="w-12 h-12 object-contain" />
       ),
       points: [
         'No hidden costs',
@@ -172,170 +176,127 @@ export const EnneagramTestAppService = () => {
     },
     {
       title: 'Buckets Approach',
-      desc: 'Ideal for ongoing post-launch maintenance, OS upgrades, and feature additions with pre-purchased flexible support hour blocks.',
+      desc: 'A lot of businesses typically select our bucket approach which allow them for payment convenience once the project is finished and things are in place.',
       icon: (
-        <svg viewBox="0 0 48 48" className="w-12 h-12 text-[#06B6D4]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="19" cy="27" r="7" />
-          <path d="M19 18 V20 M19 34 V36 M10 27 H12 M26 27 H28 M12.5 20.5 L14 22 M24 32 L25.5 33.5 M12.5 33.5 L14 32 M24 22 L25.5 20.5" strokeWidth="2.2" />
-          <circle cx="31" cy="17" r="4.5" />
-          <path d="M31 11 V12.5 M31 21.5 V23 M25 17 H26.5 M35.5 17 H37 M26.8 12.8 L28 14 M34 20 L35.2 21.2 M26.8 21.2 L28 20 M34 14 L35.2 12.8" strokeWidth="1.8" />
-        </svg>
+        <img src="/images/bucketapproch.svg" alt="Buckets Approach" className="w-12 h-12 object-contain" />
       ),
       points: [
         'Direct Resource Monitoring',
         'Less Risk',
-        'Flexible hours',
+        'Less budget',
         'Pay only for measurable work'
       ]
     }
   ];
 
-  // Official Enneagram FAQs
-  const enneagramFaqs = [
-    {
-      q: '1. What are the key features of a custom Enneagram Test app?',
-      a: 'A production-grade Enneagram application includes dynamic multi-question psychometric tests, 9-type personality mapping, wing analysis, stress and growth integration paths, relationship compatibility charts, daily micro-journaling, and PDF report downloads.'
-    },
-    {
-      q: '2. How do you ensure accuracy in Enneagram scoring algorithms?',
-      a: 'We implement standardized Likert scale matrices, weighted Bayesian scoring engines, and adaptive test algorithms that prevent response bias and provide high reliability across all nine Enneagram personality types.'
-    },
-    {
-      q: '3. Can we offer subscription models, team tiers, and in-app purchases?',
-      a: 'Yes! We configure secure in-app subscriptions and payment gateways across Apple StoreKit 2, Google Play Billing, Stripe, and RevenueCat with support for premium full reports, corporate group packages, and automated renewals.'
-    },
-    {
-      q: '4. Is user psychometric data kept private and compliant with regulations?',
-      a: 'Absolutely. We enforce end-to-end encryption (AES-256), secure authentication, and strict compliance with GDPR, CCPA, and global privacy standards for sensitive psychological and personal data storage.'
-    },
-    {
-      q: '5. Do you handle App Store and Google Play Store publishing?',
-      a: 'Yes! Our team manages the end-to-end deployment process, including signing certificates, metadata reviews, store guideline validations, and publication.'
-    },
-    {
-      q: '6. Do you sign Non-Disclosure Agreements (NDAs)?',
-      a: 'Yes, we sign strict Non-Disclosure Agreements (NDAs) prior to any project discussion to ensure 100% data confidentiality and complete source code intellectual property ownership.'
-    }
-  ];
-
-  // Stats for Enneagram Test App Development (100% matched to reference)
-  const enneagramStats = [
-    { value: '100+', label: 'Software Developers' },
-    { value: '20+', label: 'Fortunes 500 Companies' },
-    { value: '1000+', label: 'Project Completed in Software' },
-    { value: '320+', label: '5-Star Clutch Reviews' }
-  ];
-
-  // 7 Enneagram Test App Development Services
-  const enneagramExpertiseCards = [
+  // Native App Expertise Cards for HybridAppExpertiseServices component
+  const nativeExpertiseCards = [
     {
       id: 1,
-      title: 'Psychometric Testing & Scoring Engine',
-      desc: 'Adaptive multi-parameter personality test algorithms calculating core types, wings, instinctual variants, and growth arrows.'
+      title: 'iOS Swift & SwiftUI App Development',
+      desc: 'We engineer high-performance native iOS applications utilizing Apple Swift, SwiftUI, and Combine frameworks, ensuring seamless App Store compliance and fluid experiences across iPhones and iPads.'
     },
     {
       id: 2,
-      title: 'Low-Cost Personality App Development',
-      desc: 'Cost-effective solutions for startups, psychological researchers, and coaching organizations in search of scalable apps.'
+      title: 'Android Kotlin App Development',
+      desc: 'Our senior Android engineers build robust native applications using Kotlin, Jetpack Compose, and Coroutines, following modern Android Architecture Components for maximum stability.'
     },
     {
       id: 3,
-      title: 'Relationship & Team Compatibility Apps',
-      desc: 'Apps that calculate interpersonal dynamics, couples compatibility, workplace communication, and conflict resolution guides.'
+      title: 'Native UI/UX & Human Interface Design',
+      desc: 'Our specialized design architects craft pixel-perfect native interfaces tailored specifically to Apple Human Interface Guidelines and Google Material You design systems.'
     },
     {
       id: 4,
-      title: 'Daily Micro-Journaling & Habit Apps',
-      desc: 'Personalized self-reflection prompts, emotional triggers trackers, and mindfulness exercises tailored to each personality type.'
+      title: 'Native Hardware & IoT Integration',
+      desc: 'Unlock the complete power of device sensors, CoreBluetooth, CoreLocation, Apple HealthKit, Google Fit, NFC, and camera-based computer vision without bridge bottlenecks.'
     },
     {
       id: 5,
-      title: 'Live & On-Demand Video Coaching Apps',
-      desc: 'High-definition streaming platforms with interactive coaching sessions, expert workshops, and personalized self-growth classes.'
+      title: 'Native App Refactoring & Migration',
+      desc: 'Seamlessly refactor legacy Objective-C and Java codebases to modern Swift and Kotlin architectures with zero downtime, improved test coverage, and optimized app startup times.'
     },
     {
       id: 6,
-      title: 'AI-Powered Personality & Wellness Insights',
-      desc: 'Intelligent algorithms that analyze behavioral patterns to deliver dynamic personal development advice and career guidance.'
+      title: 'Enterprise Security & Compliance',
+      desc: 'We implement hardware-backed keystores, biometric authentication, OWASP mobile security standards, and zero-trust data protection for regulated industries like healthcare and fintech.'
     },
     {
       id: 7,
-      title: 'Enterprise & Corporate Team Management',
-      desc: 'Comprehensive enterprise HR portals with team assessment dashboards, bulk seat licensing, and organization culture reports.'
+      title: 'App Store & Play Store Optimization (ASO)',
+      desc: 'Comprehensive post-development deployment management, automated CI/CD pipelines, crash monitoring with Firebase, and continuous version updates for top store rankings.'
     }
+  ];
+
+  // Official Native App FAQs
+  const nativeFaqs = [
+    {
+      q: '1. What is native mobile app development?',
+      a: 'Native mobile app development involves building applications exclusively for a specific operating system using its official programming languages—Swift and Objective-C for iOS, and Kotlin and Java for Android. This ensures optimal speed, hardware compatibility, and peak performance.'
+    },
+    {
+      q: '2. Why should I choose native app development over hybrid or cross-platform?',
+      a: 'Native development delivers unmatched runtime performance, flawless 60fps/120fps animations, direct access to device hardware (cameras, sensors, biometrics), zero third-party bridge overhead, and immediate support for newly released OS features from Apple and Google.'
+    },
+    {
+      q: '3. Can native apps work reliably offline?',
+      a: 'Yes! Native apps utilize high-speed local data persistence engines such as CoreData, Realm, and Room/SQLite, allowing comprehensive offline functionality and automatic background sync when an internet connection is re-established.'
+    },
+    {
+      q: '4. How do you ensure high security in native mobile applications?',
+      a: 'We implement hardware-level encryption through Apple Keychain and Android Keystore, certificate pinning, biometric authentication (FaceID and TouchID), and OWASP mobile security best practices to protect sensitive business and user data.'
+    },
+    {
+      q: '5. Do you handle App Store and Google Play Store submission?',
+      a: 'Yes! We manage the end-to-end publishing lifecycle including provisioning profiles, app signing certificates, privacy compliance, store listing assets, and App Store / Google Play review guideline adherence.'
+    },
+    {
+      q: '6. Do you sign Non-Disclosure Agreements (NDAs)?',
+      a: 'Yes, we sign comprehensive NDAs prior to any technical discovery or project kickoff, ensuring complete confidentiality and 100% intellectual property (IP) ownership of the source code.'
+    }
+  ];
+
+  // Exact Stats for Native App Development matching reference screenshot
+  const nativeStats = [
+    { value: '80+', label: 'Mobile App Developers' },
+    { value: '20+', label: 'Fortunes 500 Companies' },
+    { value: '800+', label: 'Project Completed in Mobile Technology' },
+    { value: '320%', label: 'Clients Retention Rate' }
   ];
 
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Enneagram Test App Development Company | Custom Personality Apps | Firevy.co"
-        description="We have expertise in developing Enneagram Test Apps that enable businesses, coaches, and enterprises to deliver deep personality insights and self-growth experiences to users across the globe."
-        canonical="/services/enneagram-test-app"
+        title="Native App Development Services in USA | Custom iOS & Android Apps | Firevy.co"
+        description="Leading Native App Development Company. We engineer fast, secure, and intuitive native mobile apps for iOS and Android using Swift, Kotlin, and modern native frameworks."
+        canonical="/services/native-app-development"
       />
 
-      {/* 1. Dedicated Enneagram Personality Test App Hero Banner */}
-      <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 bg-[#EEF5FB] text-slate-900 relative overflow-hidden text-left font-sans border-b border-slate-200/60">
-        <Container className="relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Text & Stats & CTA */}
-            <div className="lg:col-span-7 space-y-6">
-              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-[800] text-slate-900 tracking-tight leading-[1.18] font-sans">
-                Enneagram Personality Test<br className="hidden sm:inline" /> App Development Company
-              </h1>
-
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed font-sans">
-                We are experts in creating Enneagram Personality assessment app that enable individuals, enterprises, and organizations to learn about personality types, enhance relationships, and unlock personal development. As an affordable Enneagram App Development Company , we provide scalable and tailored apps for businesses of all sizes. As a startup, enterprise, or coach searching to grow digitally, our custom apps offer engaging, precise, and interactive tests. Start today with a free quote to turn your Enneagram Assessment Test App idea into reality.
-              </p>
-
-              {/* 4 Stats Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-2 pb-1 border-t border-slate-200/80">
-                {enneagramStats.map((st, idx) => (
-                  <div key={idx} className="space-y-0.5">
-                    <div className="text-xl sm:text-2xl font-[900] text-[#005F96] tracking-tight">{st.value}</div>
-                    <div className="text-[11px] sm:text-xs text-slate-500 font-medium leading-tight">{st.label}</div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="pt-2">
-                <a
-                  href="#quote-form"
-                  className="inline-flex items-center justify-center px-7 py-3.5 rounded-[8px] bg-[#006B8F] hover:bg-[#005573] text-white font-[700] text-sm sm:text-base transition-all shadow-md hover:shadow-lg group font-sans gap-2"
-                >
-                  <span>Discuss Your Project</span>
-                  <span className="text-lg leading-none transition-transform group-hover:translate-x-1">→</span>
-                </a>
-              </div>
-            </div>
-
-            {/* Right Visual Graphic (Exact 1:1 Match Illustration) */}
-            <div className="lg:col-span-5 flex justify-center relative py-2">
-              <img
-                src="/images/services/enneagram-hero-illustration.png"
-                alt="Enneagram Personality Test App Development"
-                className="w-full h-auto max-w-[480px] lg:max-w-[520px] object-contain select-none"
-                style={{ mixBlendMode: 'multiply' }}
-              />
-            </div>
-          </div>
-        </Container>
-      </section>
+      {/* 1. Sapphire Light Hero Banner (1:1 Screenshot Match) */}
+      <SapphireLightHeroBanner
+        title="Native App Development Services in USA"
+        subtitle="Indeed, we are one of the leading platforms for AI integrated native mobile app development. Native mobile applications provide dependable, highly secure, and quick performance."
+        ctaText="Discuss Your Project"
+        ctaLink="#quote-form"
+        serviceCategory="hybrid"
+        stats={nativeStats}
+        heroImage="/images/native_hero_illustration.png"
+      />
 
       {/* 2. Brand Logo Marquee Right Below Hero Banner */}
       <BrandLogoMarquee />
 
-      {/* 3. SECTION: Hire Developers For Enneagram Personality App */}
+      {/* 3. SECTION: Dedicated And Tailored Native Applications (1:1 Reference Match) */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Exact 1:1 Match Illustration */}
+            {/* Left Column: Dedicated Native Applications Illustration */}
             <div className="lg:col-span-6 flex justify-center">
-              <div className="relative w-full max-w-[460px] p-2 flex items-center justify-center">
+              <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
-                  src="/images/services/enneagram-hire-developers.png"
-                  alt="Hire Developers For Enneagram Personality App"
-                  className="w-full h-auto max-w-[440px] object-contain select-none"
-                  style={{ mixBlendMode: 'multiply' }}
+                  src="/images/hybrid_hero_illustration.png"
+                  alt="Dedicated And Tailored Native Applications"
+                  className="w-full h-auto max-w-[460px] object-contain"
                 />
               </div>
             </div>
@@ -343,12 +304,45 @@ export const EnneagramTestAppService = () => {
             {/* Right Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Hire Developers For Enneagram Personality App
+                Dedicated And Tailored Native Applications
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                As a reliable Enneagram Personality Test App Development Company, we specialize in developing secure, dependable, and high-feature digital solutions. Our experts are masters in building Personality Test Apps and Custom Enneagram App Development Services for businesses, educators, psychologists, and coaching professionals. With years of experience, we offer industry-specific knowledge, innovation-fueled strategies, and unparalleled subject matter expertise in Personality Test App Development. Starting from effortless UI/UX design to backend scalability, we provide solutions that fulfill both user engagement and business objectives.
+                Custom native mobile app development is commonly employed in in-app gaming. Therefore, great care must be used while selecting this kind of service. As a AI Powered Native App Development Company, we are capable of understanding both your needs and your budget. We are one of the Scalable native app development company with the expertise to help your company expand and achieve new heights. Our AI native app development services include native app development in Android and Windows. In these native mobile apps, we deliver great features such as Beacon Technology, multitasking, 3D Touch, and much more.
               </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* 4. SECTION: Brief About Native App Development Services (1:1 Reference Match) */}
+      <section className="py-16 sm:py-20 bg-white text-left">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            {/* Left Column: Brief Content */}
+            <div className="lg:col-span-6 space-y-5">
+              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
+                Brief About Native App Development Services
+              </h2>
+
+              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+                We provide full-cycle Native Mobile application development services to new businesses, new ventures, and business visionaries. Our Affordable AI native app development services focus on using the most recent technological advancements so that we can provide you with solutions that are not only highly secure but also very user-friendly. As a Best Native App Development Company, we focus on frequent scrum changes to improve our outcomes and the efficiency of our practice techniques and plans.
+              </p>
+
+              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+                We have a specialized team of experienced mobile app designers to provide the highest business management solutions for native mobile applications. As an exclusive native mobile app development partner, we develop apps for small to large enterprises to help them get a competitive advantage in their specific industry.
+              </p>
+            </div>
+
+            {/* Right Column: Brief Solutions Image */}
+            <div className="lg:col-span-6 flex justify-center">
+              <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
+                <img
+                  src="/images/native_brief_services.png"
+                  alt="Brief About Native App Development Services"
+                  className="w-full h-auto max-w-[460px] object-contain"
+                />
+              </div>
             </div>
           </div>
         </Container>
@@ -392,35 +386,35 @@ export const EnneagramTestAppService = () => {
                     </svg>
                   </div>
 
-                  {/* Badge 2: The Manifest */}
+                  {/* Badge 2: The Manifest - Most Reviewed Dedicated Software Development Companies */}
                   <img
                     src="/images/awards/most_review_softwarecompany_manifest.svg"
                     alt="Most Reviewed Software Development Company"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
 
-                  {/* Badge 3: The Manifest */}
+                  {/* Badge 3: The Manifest - Most Reviewed Software Developers */}
                   <img
                     src="/images/awards/most_web_review_manifest.svg"
                     alt="Most Reviewed Software Developers"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
 
-                  {/* Badge 4: GoodFirms */}
+                  {/* Badge 4: GoodFirms Top Dedicated Software Development Company */}
                   <img
                     src="/images/awards/top_mobile_app_goodfirm.svg"
                     alt="Top Dedicated Software Development Company GoodFirms"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
 
-                  {/* Badge 5: The Manifest */}
+                  {/* Badge 5: The Manifest - Most Reviewed Dedicated Software Development Companies */}
                   <img
                     src="/images/awards/most_review_softwarecompany_manifest.svg"
                     alt="Most Reviewed Software Development Company"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
 
-                  {/* Badge 6: Clutch */}
+                  {/* Badge 6: Clutch Top Dedicated Software Company Hexagon */}
                   <img
                     src="/images/awards/top_mobile_clutchn.svg"
                     alt="Top Clutch Dedicated Software Company"
@@ -487,54 +481,145 @@ export const EnneagramTestAppService = () => {
         </Container>
       </section>
 
-      {/* 6. SECTION: Scalable And Robust Fitness Applications (Quote Card) */}
-      <section className="py-14 sm:py-18 bg-white font-sans">
+      {/* 6. SECTION: Get A 100% Customizable Native App Development By Experts (1:1 Reference Match) */}
+      <section className="py-12 sm:py-16 bg-white text-slate-900 font-sans text-left">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Quote Card */}
-            <div className="lg:col-span-4 bg-[#F0F8FC] rounded-2xl p-7 sm:p-9 relative flex flex-col justify-between min-h-[260px] border border-sky-100 shadow-sm text-left">
+          {/* Centered H2 Title */}
+          <div className="text-center w-full max-w-5xl mx-auto mb-10 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-[#0F172A] tracking-tight leading-tight">
+              Get A 100% Customizable Native App Development By Experts
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            {/* Left Quote Card with Topographic Lines & Speech Pointer */}
+            <div className="lg:col-span-4 bg-[#F0F8FC] rounded-[12px] p-8 sm:p-9 flex flex-col justify-start relative shadow-xs border border-sky-100/80 min-h-[300px]">
+              {/* Subtle Topographic Background Lines */}
+              <svg className="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-20 60 Q 60 120, 140 40 T 300 80 T 450 30" fill="none" stroke="#005F96" strokeWidth="1" />
+                <path d="M-20 120 Q 80 180, 160 100 T 320 140 T 450 90" fill="none" stroke="#005F96" strokeWidth="1" />
+                <path d="M-20 180 Q 100 240, 180 160 T 340 200 T 450 150" fill="none" stroke="#005F96" strokeWidth="1" />
+                <path d="M-20 240 Q 120 300, 200 220 T 360 260 T 450 210" fill="none" stroke="#005F96" strokeWidth="1" />
+              </svg>
+
+              {/* Speech Bubble Arrow on Right (Desktop Only) */}
               <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[12px] border-y-transparent border-l-[14px] border-l-[#F0F8FC] z-10" />
 
+              {/* Quote Icon */}
               <div className="text-[#005F96] mb-4 relative z-10">
                 <svg viewBox="0 0 44 34" className="w-10 h-8 fill-current">
                   <path d="M0 19.428C0 8.7 6.857 0 17.143 0v6.857c-5.714 0-8.571 4-8.571 9.143h8.571V34H0V19.428zm25.714 0C25.714 8.7 32.571 0 42.857 0v6.857c-5.714 0-8.571 4-8.571 9.143h8.571V34H25.714V19.428z" />
                 </svg>
               </div>
 
+              {/* Heading Inside Card */}
               <h3 className="text-[24px] sm:text-[27px] lg:text-[29px] font-[900] text-[#005F96] tracking-tight leading-[1.3] relative z-10">
-                Scalable And Robust Enneagram Apps
+                Scalable And Robust Native Apps
               </h3>
             </div>
 
             {/* Right Column: Paragraph Content */}
             <div className="lg:col-span-8 space-y-4 text-left flex flex-col justify-center">
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We are a top Enneagram test mobile application development company backed by experienced software architects and certified developers. Our team engineers high-velocity mobile applications that combine native performance with seamless cross-platform adaptability.
+                We are a leading native mobile application development company backed by certified software architects and senior iOS and Android engineers. Our team engineers high-velocity native mobile applications that maximize raw processing capabilities, device hardware sensors, and platform ecosystem advantages.
               </p>
 
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We know that applications designed for self-growth and personality coaching must deliver dependable offline caching, instant load times, and fluid touch interactions. We ensure every deliverable matches your business goals without compromising code maintainability or security.
+                We know that applications engineered for modern enterprises must deliver instant cold-starts, fluid touch gestures, reliable offline caching, and bank-grade data security. We ensure every native deliverable matches your business goals without compromising code maintainability, scalability, or performance.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 6.5 SECTION: Cutting Edge Technologies Firevy Use For Hybrid App Development */}
+      {/* 6.5 SECTION: Cutting Edge Technologies Sapphire Use For Native App Development */}
       <HybridAppCuttingEdgeTechnologiesSection
-        title={"Cutting Edge Technologies Firevy Use For\nHybrid App Development"}
+        title={"Cutting Edge Technologies Firevy Use For\nNative App Development"}
       />
 
       {/* 7. SECTION: Our Premium Services */}
       <PremiumServicesGrid />
 
+      {/* 7.5 SECTION: Meet Sapphire's Exceptional Team of Seasoned Experts */}
+      <SapphireSeasonedExpertsSection />
+
+      {/* 7.6 SECTION: Industry-Focused Insights To Elevate Your Business */}
+      <IndustryFocusedInsightsSection subtitle="Trending Industries that Use Mobile App Development" />
+
+      {/* 7.7 SECTION: About Us Stats */}
+      <AboutUsStats companyName="Sapphire" />
+
+      {/* 7.8 SECTION: Explore The Transformative Impact Of Native App On Your Business Success */}
+      <TransformativeImpactSection title="Explore The Transformative Impact Of Native App On Your Business Success" />
+
+      {/* 7.9 SECTION: Sapphire's Comprehensive Suite of Mobile App Development Services */}
+      <section className="py-14 sm:py-18 bg-[#005F96] text-white font-sans text-left overflow-hidden">
+        <Container>
+          <div className="text-center max-w-4xl mx-auto mb-12 space-y-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight font-sans">
+              Sapphire’s Comprehensive Suite of Mobile App Development Services
+            </h2>
+            <p className="text-blue-100 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-normal">
+              Sapphire developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Sapphire provides full-service mobile app development customized to meet your requirements.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              {
+                title: 'Mobile App UI/UX Design',
+                desc: 'By considering market trends and creating best practices that provide an enhanced app user experience, we can help you create a unique, sophisticated, and user-friendly mobile app user interface.'
+              },
+              {
+                title: 'MVP Development',
+                desc: 'By creating an MVP with the necessary functionality, we increase your trust in the app idea. This enables you to swiftly release a test app onto the market and attract early users before moving on to complete app development.'
+              },
+              {
+                title: 'Custom App Development',
+                desc: "Whether you're developing a mobile app for a business or a community, we can help you realize your unique idea by incorporating cutting-edge features that will make it stand out from the crowd."
+              },
+              {
+                title: 'Startup App Development',
+                desc: 'Our world-class app development solutions will help your startup take off by helping startups get the best app solution possible with the use of leading app development frameworks.'
+              },
+              {
+                title: 'Enterprise App Development',
+                desc: 'Enhance your business operations through mobility by integrating third-party integrations and industry-leading technologies into your mobile app solutions to increase revenue and business operations.'
+              },
+              {
+                title: 'Embedded IoT App Development',
+                desc: 'To control and fully exploit your IoT-enabled environment, get a highly customized embedded software solution built with cloud and AI/ML technology.'
+              }
+            ].map((service, idx) => (
+              <div
+                key={idx}
+                className="bg-white text-slate-900 rounded-2xl p-7 flex flex-col justify-start text-left shadow-md hover:shadow-xl transition-all duration-300 border border-white/20"
+              >
+                <h3 className="font-extrabold text-lg sm:text-xl text-[#0F172A] mb-3 leading-snug font-sans">
+                  {service.title}
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                  {service.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* 7.10 SECTION: Sectors Thriving Through Sapphire’s Bespoke Native App Development Services */}
+      <SectorsThrivingSection title="Sectors Thriving Through Sapphire’s Bespoke Native App Development Services" />
+
       {/* 8. SECTION: Success Stories */}
       <SuccessStoriesSection category="general" />
+
+      {/* 8.5 SECTION: Technology Stack That Sapphire Mobile Developers Use Proficiently */}
+      <MobileAppProficientTechStackSection />
 
       {/* 10. SECTION: Proud To Have Picked These Up Along The Way */}
       <ProudAwardsBanner />
 
-      {/* 11. SECTION: Benefits of Enneagram Test App Development */}
+      {/* 11. SECTION: Benefits of Native App Development (1:1 Reference Match) */}
       <section className="py-16 sm:py-20 bg-white text-slate-900 font-sans text-left border-b border-slate-100 overflow-hidden">
         <Container>
           {/* Section Header */}
@@ -546,10 +631,10 @@ export const EnneagramTestAppService = () => {
             className="text-center max-w-4xl mx-auto mb-12 sm:mb-14"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              Benefits of Enneagram Test App Development
+              Benefits of Native App Development
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-4xl mx-auto font-normal">
-              Enneagram test applications combine psychometric testing, real-time compatibility analytics, and gamified growth features. Benefits of our personality app development solutions:
+              Native App Development Services leverage platform-specific languages and SDKs to engineer market-leading solutions. Benefits of Native App Development Services:
             </p>
           </motion.div>
 
@@ -578,14 +663,17 @@ export const EnneagramTestAppService = () => {
                 className="bg-white rounded-[16px] p-7 sm:p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col text-left space-y-4 group cursor-default"
               >
                 <div className="space-y-4">
+                  {/* Icon with light cyan/blue rounded square container */}
                   <div className="w-12 h-12 rounded-[12px] bg-[#EBF6FC] text-[#0084D1] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
                     {item.icon}
                   </div>
 
+                  {/* Title */}
                   <h3 className="text-lg sm:text-[19px] font-[800] text-slate-950 font-sans leading-snug group-hover:text-[#005F96] transition-colors">
                     {item.title}
                   </h3>
 
+                  {/* Description */}
                   <p className="text-xs sm:text-[13.5px] text-slate-600 font-[400] leading-relaxed font-sans">
                     {item.desc}
                   </p>
@@ -596,15 +684,14 @@ export const EnneagramTestAppService = () => {
         </Container>
       </section>
 
-      {/* 11.5 SECTION: Our Enneagram Test App Development Services */}
+      {/* 11.5 SECTION: The Expertise In Our Native App Development Services (1:1 Reference Match) */}
       <HybridAppExpertiseServices
-        title="Our Enneagram Test App Development Services"
-        subtitle="We provide a variety of personality app development services aimed at optimizing business ROI and providing high-value self-discovery digital experiences. Each service is tailored to client needs and user expectations."
-        cards={enneagramExpertiseCards}
-        showButton={false}
+        title="The Expertise In Our Native App Development Services"
+        subtitle="As a leading native app development company, we engineer high-performance native applications in record time. Our expertise includes:"
+        cards={nativeExpertiseCards}
       />
 
-      {/* 12. SECTION: Business Friendly Hiring Models */}
+      {/* 12. SECTION: Business Friendly Hiring Models (1:1 Reference Match) */}
       <section className="py-16 sm:py-20 bg-[#f4f9fd] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
         <Container>
           {/* Section Header */}
@@ -619,7 +706,7 @@ export const EnneagramTestAppService = () => {
               Business Friendly Hiring Models : Building Greater Futures Through Innovation
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-4xl mx-auto font-normal">
-              We offer four different types of hiring models that are designed to suit your diverse needs and budget. Take a look at our hiring models:
+              We offer three different types of hiring models that are designed to suit your diverse needs and budget. Take a look at our hiring models:
             </p>
           </motion.div>
 
@@ -648,18 +735,22 @@ export const EnneagramTestAppService = () => {
                 className="bg-white rounded-[18px] p-6 sm:p-7 border border-slate-100 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between text-center space-y-6 group cursor-default"
               >
                 <div className="space-y-3">
+                  {/* Clean Vector Icon */}
                   <div className="w-14 h-14 flex items-center justify-center shrink-0 mx-auto transition-transform duration-300 group-hover:scale-110">
                     {item.icon}
                   </div>
 
+                  {/* Card Title */}
                   <h3 className="text-lg sm:text-[19px] font-[800] text-slate-950 font-sans leading-snug group-hover:text-[#005F96] transition-colors">
                     {item.title}
                   </h3>
 
+                  {/* Card Description */}
                   <p className="text-xs sm:text-[12.8px] text-slate-600 font-[400] leading-relaxed font-sans text-center min-h-[60px]">
                     {item.desc}
                   </p>
 
+                  {/* Bullet Points List with Blue Checkmarks */}
                   <ul className="space-y-2 pt-3 text-left font-sans text-xs sm:text-[12.8px] text-slate-700 font-[500]">
                     {item.points.map((pt, pIdx) => (
                       <li key={pIdx} className="flex items-center space-x-2">
@@ -670,6 +761,7 @@ export const EnneagramTestAppService = () => {
                   </ul>
                 </div>
 
+                {/* 'Hire Now' Blue Button */}
                 <a
                   href="#quote-form"
                   className="w-full py-2.5 rounded-[6px] bg-[#005F96] hover:bg-[#004a75] text-white font-[700] text-sm transition-all shadow-xs hover:shadow-md font-sans inline-block mt-4 text-center cursor-pointer"
@@ -686,7 +778,10 @@ export const EnneagramTestAppService = () => {
       <InnovativeSolutionsVideoSection />
 
       {/* 14. SECTION: Process We Follow */}
-      <ProcessWeFollow title="Process We Follow" subtitle="Process-oriented execution from personality assessment wireframes to psychometric scoring algorithms, QA testing, and App Store deployment." />
+      <ProcessWeFollow
+        title="Process We Follow"
+        subtitle="Process-oriented execution from native UI wireframes to Swift/Kotlin compilation, QA testing, and App Store deployment."
+      />
 
       {/* 15. SECTION: Our Story, Their Words */}
       <OurStoryTheirWordsSection />
@@ -704,7 +799,7 @@ export const EnneagramTestAppService = () => {
       <DigitalTransformationSlider />
 
       {/* 21. SECTION: Frequently Asked Questions */}
-      <SapphireFaqSection faqList={enneagramFaqs} />
+      <SapphireFaqSection faqList={nativeFaqs} />
 
       {/* 22. SECTION: Our Recent Blogs */}
       <section className="py-16 sm:py-20 bg-[#F8FAFC] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
@@ -714,26 +809,26 @@ export const EnneagramTestAppService = () => {
               Our Recent Blogs
             </h2>
             <p className="text-base sm:text-[17.5px] font-[400] text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto">
-              Read our latest engineering insights, architecture breakdowns, and personality mobile app best practices.
+              Read our latest engineering insights, platform architecture breakdowns, and native mobile best practices.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
             {/* Blog Card 1 */}
             <div className="bg-white rounded-[16px] overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div className="w-full h-48 overflow-hidden bg-slate-900">
+              <div className="w-full h-48 overflow-hidden bg-slate-100">
                 <img
-                  src="/images/fitness_blog_1.svg"
-                  alt="Building Accurate Psychometric Assessment & Scoring Engines"
+                  src="/images/iwatch_blog_1.png"
+                  alt="Native vs Cross-Platform: When To Go 100% Native in 2024"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                 <h3 className="text-lg font-[800] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                  Building Accurate Psychometric Assessment &amp; Scoring Engines
+                  Native vs Cross-Platform: When To Go 100% Native in 2024
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                  How modern psychological test architectures optimize score calibration and reliability across all 9 Enneagram types.
+                  Discover why high-throughput consumer apps, gaming, and secure banking prioritize native architectures.
                 </p>
                 <div className="text-[#005F96] font-bold text-xs flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read More →
@@ -743,19 +838,19 @@ export const EnneagramTestAppService = () => {
 
             {/* Blog Card 2 */}
             <div className="bg-white rounded-[16px] overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div className="w-full h-48 overflow-hidden bg-slate-900">
+              <div className="w-full h-48 overflow-hidden bg-slate-100">
                 <img
-                  src="/images/fitness_blog_2.svg"
-                  alt="AI in Personality Apps: Delivering Hyper-Personalized Growth Insights"
+                  src="/images/iwatch_blog_2.png"
+                  alt="Mastering Jetpack Compose and SwiftUI for Enterprise Apps"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                 <h3 className="text-lg font-[800] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                  AI in Personality Apps: Delivering Hyper-Personalized Growth Insights
+                  Mastering Jetpack Compose and SwiftUI for Enterprise Apps
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                  Machine learning models that adapt daily prompts, stress triggers, and habit recommendations for self-actualization.
+                  How modern declarative UI paradigms drastically accelerate native app development velocity and reduce codebase maintenance.
                 </p>
                 <div className="text-[#005F96] font-bold text-xs flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read More →
@@ -765,19 +860,19 @@ export const EnneagramTestAppService = () => {
 
             {/* Blog Card 3 */}
             <div className="bg-white rounded-[16px] overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div className="w-full h-48 overflow-hidden bg-slate-900">
+              <div className="w-full h-48 overflow-hidden bg-slate-100">
                 <img
-                  src="/images/fitness_blog_3.svg"
-                  alt="Privacy & Data Standards for Self-Discovery & Psychology Applications"
+                  src="/images/iwatch_blog_3.png"
+                  alt="Enterprise Security Best Practices for iOS & Android"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                 <h3 className="text-lg font-[800] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                  Privacy &amp; Data Standards for Self-Discovery &amp; Psychology Applications
+                  Enterprise Security Best Practices for iOS & Android
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                  Implementing cryptographic keystores, biometrics, and zero-trust API communications for sensitive user psychometric data.
+                  Hardening your native applications with hardware encryption, certificate pinning, and biometric authorization.
                 </p>
                 <div className="text-[#005F96] font-bold text-xs flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read More →
@@ -788,7 +883,7 @@ export const EnneagramTestAppService = () => {
         </Container>
       </section>
 
-      {/* 24. SECTION: Have Enneagram Test App Development Challenge To Address ?? */}
+      {/* 24. SECTION: Have Native App Development Challenge To Address ?? (1:1 Reference Match) */}
       <section className="relative w-full max-w-full py-10 sm:py-12 lg:py-14 bg-[#005F96] text-white text-center font-sans overflow-hidden">
         {/* Background Floating Geometric Rounded Squares / Rectangles Overlay */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -802,11 +897,11 @@ export const EnneagramTestAppService = () => {
         {/* Centered Content */}
         <div className="relative z-10 w-full max-w-5xl px-4 sm:px-8 mx-auto text-center space-y-3.5">
           <h2 className="text-white tracking-tight font-[800] text-2xl sm:text-3xl lg:text-[34px] leading-tight">
-            Have Enneagram Test App Development Challenge To Address ??
+            Have Native App Development Challenge To Address ??
           </h2>
 
           <p className="text-xs sm:text-sm md:text-[15px] text-blue-50 font-normal leading-relaxed max-w-3xl mx-auto font-sans opacity-95">
-            Get access to top Enneagram Test App development to transform your ideas into a robust application.
+            Get access to top Native App development specialists to transform your ideas into a robust, high-performance application.
           </p>
 
           <div className="pt-3">
@@ -823,4 +918,4 @@ export const EnneagramTestAppService = () => {
   );
 };
 
-export default EnneagramTestAppService;
+export default NativeAppDevelopmentService;

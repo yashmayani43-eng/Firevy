@@ -45,10 +45,12 @@ export const SapphireLightHeroBanner = ({
   ctaText = "Discuss Your Project",
   ctaLink = "#quote-form",
   serviceCategory = "education",
-  stats = null
+  stats = null,
+  heroImage = null
 }) => {
   const isEducation = serviceCategory === 'education';
   const isUber = serviceCategory === 'uber' || serviceCategory === 'taxi';
+  const isHybrid = serviceCategory === 'hybrid';
 
   return (
     <section className="pt-20 sm:pt-24 pb-8 sm:pb-12 bg-[#EEF5FB] text-slate-900 relative overflow-hidden text-left font-sans border-b border-slate-200/60">
@@ -76,7 +78,15 @@ export const SapphireLightHeroBanner = ({
 
           {/* Right Visual Graphic */}
           <div className="lg:col-span-6 flex justify-center relative py-4">
-            {isUber ? (
+            {heroImage || isHybrid ? (
+              <div className="relative w-full max-w-[560px] flex items-center justify-center">
+                <img
+                  src={heroImage || "/images/hybrid_hero_illustration.png"}
+                  alt={title}
+                  className="w-full max-w-[520px] h-auto object-contain select-none pointer-events-none drop-shadow-sm"
+                />
+              </div>
+            ) : isUber ? (
               <div className="relative w-full max-w-[580px] h-[360px] sm:h-[420px] flex items-center justify-center">
                 {/* 1. Background City Skyline Vector */}
                 <div className="absolute inset-0 flex items-end justify-center pointer-events-none opacity-90">
