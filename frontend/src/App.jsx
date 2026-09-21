@@ -142,6 +142,10 @@ export function App() {
                 <Route path="/on-demand-app-development" element={<OnDemandAppDevelopmentService />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/services/:slug" element={<ServiceDetails />} />
+                <Route path="/services/hire-mean-stack-developers" element={<ServiceDetails />} />
+                <Route path="/hire-mean-stack-developers" element={<ServiceDetails />} />
+                <Route path="/services/hire-mean-stack-developer" element={<ServiceDetails />} />
+                <Route path="/hire-mean-stack-developer" element={<ServiceDetails />} />
                 <Route path="/services/it-consulting-services" element={<ServiceDetails />} />
                 <Route path="/it-consulting-services" element={<ServiceDetails />} />
                 <Route path="/services/app-development-consulting" element={<ServiceDetails />} />
