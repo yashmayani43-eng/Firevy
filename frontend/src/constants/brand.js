@@ -10,7 +10,7 @@ export const BRAND = {
     salesEmail: "sales@firevy.co",
     careersEmail: "careers@firevy.co",
     phoneUS: "+1 (800) 592-7410",
-    phoneIN: "+91 942-970-9662",
+    phoneIN: "+91 7069370629",
     address: {
       street: "500 Howard Street, Suite 400",
       city: "San Francisco",
