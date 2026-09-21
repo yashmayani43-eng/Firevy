@@ -617,11 +617,11 @@ export const NintexDevelopmentService = () => {
               onClick={() => setIsVideoModalOpen(true)}
               className="relative w-full rounded-[24px] sm:rounded-[32px] overflow-hidden bg-[#032541] shadow-[0_20px_50px_rgba(3,37,65,0.22)] p-6 sm:p-10 lg:p-14 min-h-[360px] sm:min-h-[440px] flex flex-col justify-between items-center group cursor-pointer border border-slate-700/40 hover:shadow-[0_25px_60px_rgba(3,37,65,0.32)] transition-all duration-300"
             >
-              {/* Top Right: Firevy.co Branding (Replacing Sapphire name) */}
+              {/* Top Right: Firevy.Co Branding (Replacing Sapphire name) */}
               <div className="w-full flex justify-end items-center z-10">
                 <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3 sm:px-4 py-1.5 rounded-full border border-white/20">
                   <span className="text-white font-black text-sm sm:text-base tracking-tight font-sans">
-                    firevy<span className="text-sky-400">.co</span>
+                    Firevy<span className="text-sky-400">.co</span>
                   </span>
                 </div>
               </div>
@@ -680,7 +680,7 @@ export const NintexDevelopmentService = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center justify-between px-6 py-4 bg-slate-800 text-white border-b border-slate-700">
-                <h3 className="font-bold text-base sm:text-lg">Top Nintex Development Company | Firevy.co</h3>
+                <h3 className="font-bold text-base sm:text-lg">Top Nintex Development Company | Firevy.Co</h3>
                 <button
                   onClick={() => setIsVideoModalOpen(false)}
                   className="w-8 h-8 rounded-full bg-slate-700 hover:bg-slate-600 text-white flex items-center justify-center font-bold text-sm cursor-pointer"

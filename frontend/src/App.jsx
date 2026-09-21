@@ -142,6 +142,16 @@ export function App() {
                 <Route path="/on-demand-app-development" element={<OnDemandAppDevelopmentService />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/services/:slug" element={<ServiceDetails />} />
+                <Route path="/services/ride-sharing-app-development" element={<ServiceDetails />} />
+                <Route path="/ride-sharing-app-development" element={<ServiceDetails />} />
+                <Route path="/services/visa-card-app-development" element={<ServiceDetails />} />
+                <Route path="/visa-card-app-development" element={<ServiceDetails />} />
+                <Route path="/services/wellness-app-development" element={<ServiceDetails />} />
+                <Route path="/wellness-app-development" element={<ServiceDetails />} />
+                <Route path="/services/windows-app-development" element={<ServiceDetails />} />
+                <Route path="/windows-app-development" element={<ServiceDetails />} />
+                <Route path="/services/b2b-mobile-app-development" element={<ServiceDetails />} />
+                <Route path="/b2b-mobile-app-development" element={<ServiceDetails />} />
                 <Route path="/services/native-app-development" element={<ServiceDetails />} />
                 <Route path="/native-app-development" element={<ServiceDetails />} />
                 <Route path="/services/custom-mobile-app-development" element={<ServiceDetails />} />

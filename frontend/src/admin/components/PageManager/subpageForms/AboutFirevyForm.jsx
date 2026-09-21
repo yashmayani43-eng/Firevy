@@ -14,7 +14,7 @@ import adminService from '../../../services/adminService';
 /**
  * AboutFirevyForm
  * 
- * 100% Dynamic Page-Specific CMS Form for "About firevy.co"
+ * 100% Dynamic Page-Specific CMS Form for "About Firevy.Co"
  * Matches the complete layout shown in the Sapphire reference design.
  */
 export const AboutFirevyForm = ({
@@ -77,9 +77,9 @@ export const AboutFirevyForm = ({
     ? formData.heroImage 
     : (hero.heroImage !== undefined ? hero.heroImage : '/images/about-hero-laptop.svg');
 
-  // 2. About firevy.co (Building & Narrative) State
+  // 2. About Firevy.Co (Building & Narrative) State
   const aboutCompany = formData.aboutCompany || formData.content?.aboutCompany || {
-    heading: formData.overview?.title || 'About firevy.co',
+    heading: formData.overview?.title || 'About Firevy.Co',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80',
     description: formData.overview?.text || '',
     buttonText: 'Get In Touch',
@@ -90,7 +90,7 @@ export const AboutFirevyForm = ({
   const rawMissionVision = formData.missionVision || formData.content?.missionVision || {};
   const missionVision = {
     heading: rawMissionVision.heading || 'We Create, We Enhance, We Deliver',
-    subheading: rawMissionVision.subheading || "More Than Expected – That's firevy.co",
+    subheading: rawMissionVision.subheading || "More Than Expected – That's Firevy.Co",
     visionTitle: rawMissionVision.visionTitle || formData.content?.visionHeading || 'Our Vision',
     visionText: rawMissionVision.visionText || formData.content?.visionText || "It's our goal to empower our customers to achieve more and to be one of the best customer-centric company.",
     missionTitle: rawMissionVision.missionTitle || formData.content?.missionHeading || 'Our Mission',
@@ -144,7 +144,7 @@ export const AboutFirevyForm = ({
   const culture = formData.culture || formData.content?.culture || {
     heading: 'Our Culture',
     paragraphs: [
-      'At firevy.co, we have nurtured a culture that inspires innovation and creativity. We believe that success of our company is directly relational to the success of each and every employee. We strive to create a young, fun-loving, open yet professional and hardworking environment.',
+      'At Firevy.Co, we have nurtured a culture that inspires innovation and creativity. We believe that success of our company is directly relational to the success of each and every employee. We strive to create a young, fun-loving, open yet professional and hardworking environment.',
       'We empower our team members to move forward professionally by taking ownership and learning from every project they work on. Coming to work and building amazing digital solutions should be fun.'
     ],
     buttonText: 'Explore Careers (Jobs)',
@@ -162,7 +162,7 @@ export const AboutFirevyForm = ({
   // 7. Leadership State
   const leadership = formData.leadership || formData.content?.leadership || {
     heading: 'Our Leadership',
-    subheading: 'The outlook, passion and experience of our leaders guides firevy.co.',
+    subheading: 'The outlook, passion and experience of our leaders guides Firevy.Co.',
     leaders: [
       {
         name: 'Mr. Kumaril Patel',
@@ -213,7 +213,7 @@ export const AboutFirevyForm = ({
   // 11. Insights State
   const insights = formData.insights || formData.content?.insights || {
     heading: 'Insights',
-    subheading: 'Based on boundless enthusiasm and challenging spirit, firevy.co is committed to deliver excellence.',
+    subheading: 'Based on boundless enthusiasm and challenging spirit, Firevy.Co is committed to deliver excellence.',
     items: [
       { image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80', caption: 'Corporate Headquarters' },
       { image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80', caption: 'Occucon Event' },
@@ -367,7 +367,7 @@ export const AboutFirevyForm = ({
     <div className="cms-form-stack" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {/* 1. PAGE INFORMATION */}
       <AdminPageInfoSection
-        title={hero.title || subPageMeta?.title || 'About firevy.co'}
+        title={hero.title || subPageMeta?.title || 'About Firevy.Co'}
         slug={subPageMeta?.slug || 'about-firevy'}
         status={formData.status || 'published'}
         onChangeStatus={(st) => updateRootField('status', st)}
@@ -397,7 +397,7 @@ export const AboutFirevyForm = ({
             <input
               type="text"
               className="form-control"
-              placeholder="e.g. About firevy.co"
+              placeholder="e.g. About Firevy.Co"
               value={hero.title || ''}
               onChange={(e) => updateSection('hero', 'title', e.target.value)}
               required
@@ -542,7 +542,7 @@ export const AboutFirevyForm = ({
             <input
               type="text"
               className="form-control"
-              placeholder="e.g. About firevy.co"
+              placeholder="e.g. About Firevy.Co"
               value={aboutCompany.heading || ''}
               onChange={(e) => {
                 updateContentSection('aboutCompany', 'heading', e.target.value);
@@ -618,7 +618,7 @@ export const AboutFirevyForm = ({
             <input
               type="text"
               className="form-control"
-              placeholder="e.g. More Than Expected – That's firevy.co"
+              placeholder="e.g. More Than Expected – That's Firevy.Co"
               value={missionVision.subheading || ''}
               onChange={(e) => updateContentSection('missionVision', 'subheading', e.target.value)}
             />

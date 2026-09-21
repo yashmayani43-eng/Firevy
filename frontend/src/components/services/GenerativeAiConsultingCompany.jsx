@@ -216,7 +216,7 @@ export const GenerativeAiConsultingCompany = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Generative AI Consulting Company | Enterprise LLM, RAG & Agents | Firevy.co"
+        title="Generative AI Consulting Company | Enterprise LLM, RAG & Agents | Firevy.Co"
         description="Transform your enterprise with Firevy's certified Generative AI Consulting Company. Specializing in custom LLM fine-tuning, RAG architecture, autonomous AI agents, and secure AI governance."
         keywords="generative ai consulting company, generative ai consulting services, enterprise llm consulting, rag architecture, ai agents development, custom gpt, fine-tuning llama, ai transformation partner"
       />

@@ -247,7 +247,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       a: 'Kubernetes is a low-level container orchestrator requiring teams to manage container manifests, ingresses, and cluster networking manually. Cloud Foundry provides a higher-level developer-centric Platform as a Service (PaaS) abstraction where code is automatically packaged into containers via buildpacks, routed through Gorouter, and managed with self-healing features out of the box.'
     },
     {
-      q: 'Can Firevy.co help migrate our legacy applications to Cloud Foundry?',
+      q: 'Can Firevy.Co help migrate our legacy applications to Cloud Foundry?',
       a: 'Yes. Our Cloud Foundry specialists evaluate your current architecture, modernize codebases into 12-factor cloud-native applications, configure custom buildpacks, bind enterprise data services via Open Service Brokers, and execute zero-downtime blue-green migrations.'
     },
     {
@@ -271,7 +271,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       a: 'Yes. Stateful services (PostgreSQL, MySQL, Redis, RabbitMQ, Kafka) are connected via the Open Service Broker API (OSBAPI). Cloud Foundry provisions dedicated instances and injects secure connection credentials directly into the application environment.'
     },
     {
-      q: 'How do I hire dedicated Cloud Foundry developers from Firevy.co?',
+      q: 'How do I hire dedicated Cloud Foundry developers from Firevy.Co?',
       a: 'You can hire experienced Cloud Foundry architects, PaaS engineers, and DevOps specialists on flexible engagement models (dedicated team, time & materials, or project-based). Contact our team today for a free architecture review and consultation.'
     }
   ];
@@ -279,8 +279,8 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
   return (
     <div className="w-full bg-white font-sans text-slate-900 overflow-hidden">
       <SEO
-        title="Cloud Foundry Software Development Company | Firevy.co"
-        description="Enterprise Cloud Foundry software development, PaaS engineering, BOSH lifecycle automation, and VMware Tanzu architecture by certified experts at Firevy.co."
+        title="Cloud Foundry Software Development Company | Firevy.Co"
+        description="Enterprise Cloud Foundry software development, PaaS engineering, BOSH lifecycle automation, and VMware Tanzu architecture by certified experts at Firevy.Co."
       />
 
       {/* ========================================================================= */}
@@ -393,7 +393,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
               </p>
 
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] font-normal leading-[1.8]">
-                At Firevy.co, our Cloud Foundry certified engineers architect resilient multi-cloud PaaS systems backed by BOSH lifecycle automation, Cloud Native Buildpacks, and custom Open Service Brokers. We empower enterprises to achieve continuous delivery with guaranteed 99.99% uptime.
+                At Firevy.Co, our Cloud Foundry certified engineers architect resilient multi-cloud PaaS systems backed by BOSH lifecycle automation, Cloud Native Buildpacks, and custom Open Service Brokers. We empower enterprises to achieve continuous delivery with guaranteed 99.99% uptime.
               </p>
             </div>
           </div>
@@ -490,7 +490,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
             {/* Right Column: Detailed Narrative */}
             <div className="lg:col-span-7 flex flex-col justify-center space-y-4 text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.78] font-normal text-left">
               <p>
-                Navigating complex multi-cloud deployments without a standardized Platform as a Service leads to configuration drift, security gaps, and sluggish release cycles. As an enterprise Cloud Foundry Software Development Company, Firevy.co provides tailored PaaS architectures that empower developers to ship code rapidly without touching servers.
+                Navigating complex multi-cloud deployments without a standardized Platform as a Service leads to configuration drift, security gaps, and sluggish release cycles. As an enterprise Cloud Foundry Software Development Company, Firevy.Co provides tailored PaaS architectures that empower developers to ship code rapidly without touching servers.
               </p>
               <p>
                 Our 100% personalized Cloud Foundry Services are customized to your specific runtime, database binding, and compliance mandates. From Diego cell tuning to VMware Tanzu Application Service (TAS) enterprise migrations, we deliver scalable infrastructure that cuts operational toil and delivers true multi-cloud agility.
@@ -512,7 +512,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
                 Cutting-Edge Technologies We Use For Cloud Foundry
               </h2>
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] max-w-2xl font-normal leading-relaxed">
-                As a premier Cloud Foundry engineering firm, Firevy.co leverages enterprise-grade PaaS orchestration, lifecycle tooling, and cloud-native frameworks.
+                As a premier Cloud Foundry engineering firm, Firevy.Co leverages enterprise-grade PaaS orchestration, lifecycle tooling, and cloud-native frameworks.
               </p>
             </div>
 
@@ -564,14 +564,14 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       {/* ========================================================================= */}
       {/* 8. OUR PREMIUM SERVICES                                                   */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 9. SUCCESS STORIES                                                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
         cards={cloudFoundrySuccessCards}
-        subtitle="Explore how Firevy.co has enabled global enterprises to transform software velocity and achieve resilient multi-cloud operations with Cloud Foundry PaaS."
+        subtitle="Explore how Firevy.Co has enabled global enterprises to transform software velocity and achieve resilient multi-cloud operations with Cloud Foundry PaaS."
       />
 
       {/* ========================================================================= */}
@@ -715,7 +715,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
         title="Frequently Asked Questions"
         subtitle="We Listen To Queries And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mentioned Below."
         faqs={cloudFoundryFaqs}
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}
@@ -734,7 +734,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       <div id="contact">
         <IWatchChallengeCtaBanner
           title="Have Cloud Foundry Challenge To Address ?"
-          subtitle="Get access to top Cloud Foundry Certified Architects and Tanzu specialists at Firevy.co to transform your deployment pipeline into an automated PaaS ecosystem."
+          subtitle="Get access to top Cloud Foundry Certified Architects and Tanzu specialists at Firevy.Co to transform your deployment pipeline into an automated PaaS ecosystem."
           buttonText="Hire Now"
         />
       </div>

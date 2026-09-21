@@ -17,7 +17,7 @@ const nodeJsBlogsData = [
           <div className="flex items-center">
             <img
               src="/firevy_logo_dark.png"
-              alt="firevy.co"
+              alt="Firevy.Co"
               className="h-5 sm:h-5.5 w-auto object-contain"
             />
           </div>
@@ -102,7 +102,7 @@ const nodeJsBlogsData = [
           <div className="flex items-center">
             <img
               src="/firevy_logo_white.png"
-              alt="firevy.co"
+              alt="Firevy.Co"
               className="h-5 sm:h-5.5 w-auto object-contain"
             />
           </div>

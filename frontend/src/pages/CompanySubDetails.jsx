@@ -127,7 +127,7 @@ const clientReviews = [
     location: 'Saudi Arabia',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
     headline: '...technical support was very responsive.',
-    text: 'firevy.co delivered the software in a timely manner. The team was responsive to requests and feedback and...',
+    text: 'Firevy.Co delivered the software in a timely manner. The team was responsive to requests and feedback and...',
     rating: '4.5',
     scores: { quality: '4.5', schedule: '4.5', cost: '4.5', refer: '5.0' }
   },
@@ -137,7 +137,7 @@ const clientReviews = [
     location: 'Australia',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
     headline: 'I was impressed by their ability to communicate effectively.',
-    text: 'firevy.co delivered a user-friendly application that looked great. The client received positive feedback from...',
+    text: 'Firevy.Co delivered a user-friendly application that looked great. The client received positive feedback from...',
     rating: '5.0',
     scores: { quality: '5.0', schedule: '5.0', cost: '5.0', refer: '5.0' }
   },
@@ -147,7 +147,7 @@ const clientReviews = [
     location: 'Phuket, Thailand',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
     headline: 'Their mobile app skills, helpfulness, and overall problem-solving blew me...',
-    text: 'firevy.co created a platform that the client was happy with. They were easy to talk to, responsive, and attentive to the...',
+    text: 'Firevy.Co created a platform that the client was happy with. They were easy to talk to, responsive, and attentive to the...',
     rating: '5.0',
     scores: { quality: '5.0', schedule: '5.0', cost: '5.0', refer: '5.0' }
   },
@@ -157,7 +157,7 @@ const clientReviews = [
     location: 'Rockville, Maryland',
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80',
     headline: 'They were excellent at providing the right level of detail in implementation...',
-    text: 'firevy.co impressed the client with the quality of their deliverables. They provided consistent designs, achieved the...',
+    text: 'Firevy.Co impressed the client with the quality of their deliverables. They provided consistent designs, achieved the...',
     rating: '5.0',
     scores: { quality: '5.0', schedule: '5.0', cost: '5.0', refer: '5.0' }
   }
@@ -192,15 +192,15 @@ const brandLogos = [
 
 const companyPagesData = {
   'about-firevy': {
-    title: 'About firevy.co',
+    title: 'About Firevy.Co',
     badge: 'COMPANY PROFILE',
-    subtitle: 'firevy.co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions.',
+    subtitle: 'Firevy.Co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions.',
     icon: Globe,
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80',
     content: [
       {
         heading: 'Our Vision & Core Mission',
-        text: 'At firevy.co, we partner with world-class organizations to turn ambitious ideas into digital reality. With over 15 years of technical excellence, our multi-disciplinary engineering squads design resilient web, mobile, AI, and cloud architectures.'
+        text: 'At Firevy.Co, we partner with world-class organizations to turn ambitious ideas into digital reality. With over 15 years of technical excellence, our multi-disciplinary engineering squads design resilient web, mobile, AI, and cloud architectures.'
       },
       {
         heading: 'Global Delivery Excellence',
@@ -223,7 +223,7 @@ const companyPagesData = {
     content: [
       {
         heading: 'Pioneering The Future Of Software Engineering',
-        text: 'Welcome to firevy.co. When we founded this company, our goal was simple: to bring technical rigor and genuine client centricity to software engineering. Technology is best when it brings people together and solves genuine human problems.'
+        text: 'Welcome to Firevy.Co. When we founded this company, our goal was simple: to bring technical rigor and genuine client centricity to software engineering. Technology is best when it brings people together and solves genuine human problems.'
       },
       {
         heading: 'Our Commitment To Quality & Transparency',
@@ -239,7 +239,7 @@ const companyPagesData = {
   'our-team': {
     title: 'Our Team & Leadership',
     badge: 'ENGINEERING TALENT',
-    subtitle: 'Meet the Architects, Developers, and Visionaries Behind firevy.co.',
+    subtitle: 'Meet the Architects, Developers, and Visionaries Behind Firevy.Co.',
     icon: Users,
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80',
     content: [
@@ -303,9 +303,9 @@ const companyPagesData = {
     ]
   },
   'why-choose-us': {
-    title: 'Why Choose firevy.co',
+    title: 'Why Choose Firevy.Co',
     badge: 'VALUE PROPOSITION',
-    subtitle: 'Discover Why Leading Enterprises and Startups Trust firevy.co as Their Primary Tech Partner.',
+    subtitle: 'Discover Why Leading Enterprises and Startups Trust Firevy.Co as Their Primary Tech Partner.',
     icon: ShieldCheck,
     image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80',
     content: [
@@ -327,7 +327,7 @@ const companyPagesData = {
   'brochure': {
     title: 'Download Brochure',
     badge: 'CORPORATE OVERVIEW',
-    subtitle: 'Let\'s create something big together! Download firevy.co corporate digital brochure.',
+    subtitle: 'Let\'s create something big together! Download Firevy.Co corporate digital brochure.',
     icon: FileText,
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
     content: [],
@@ -336,7 +336,7 @@ const companyPagesData = {
   'download-brochure': {
     title: 'Download Brochure',
     badge: 'CORPORATE OVERVIEW',
-    subtitle: 'Let\'s create something big together! Download firevy.co corporate digital brochure.',
+    subtitle: 'Let\'s create something big together! Download Firevy.Co corporate digital brochure.',
     icon: FileText,
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
     content: [],
@@ -345,25 +345,25 @@ const companyPagesData = {
   'great-place-to-work': {
     title: 'Great Place To Work',
     badge: 'COMPANY CULTURE',
-    subtitle: 'What Makes firevy.co An Exciting Place To Work?',
+    subtitle: 'What Makes Firevy.Co An Exciting Place To Work?',
     icon: Heart,
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80',
     content: [],
     highlights: []
   },
   'women-empowerment': {
-    title: 'Empowering The Women At firevy.co',
+    title: 'Empowering The Women At Firevy.Co',
     badge: 'DIVERSITY & INCLUSION',
-    subtitle: 'At firevy.co, we firmly believe in equality of opportunity and non-discrimination.',
+    subtitle: 'At Firevy.Co, we firmly believe in equality of opportunity and non-discrimination.',
     icon: Heart,
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80',
     content: [],
     highlights: []
   },
   'empowering-the-women-at-sapphire': {
-    title: 'Empowering The Women At firevy.co',
+    title: 'Empowering The Women At Firevy.Co',
     badge: 'DIVERSITY & INCLUSION',
-    subtitle: 'At firevy.co, we firmly believe in equality of opportunity and non-discrimination.',
+    subtitle: 'At Firevy.Co, we firmly believe in equality of opportunity and non-discrimination.',
     icon: Heart,
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80',
     content: [],
@@ -510,15 +510,15 @@ export const CompanySubDetails = () => {
     return <InsightfulVideos />;
   }
 
-  // If this is the "About firevy.co" / "about-firevy" page, render the exact Sapphire About Layout
+  // If this is the "About Firevy.Co" / "about-firevy" page, render the exact Sapphire About Layout
   if (pageKey === 'about-firevy') {
     const content = dynamicSection?.content || {};
 
     // 1. About Company (Overview & Building)
     const aboutCompany = content.aboutCompany || {
-      heading: content.aboutHeading || 'About firevy.co',
+      heading: content.aboutHeading || 'About Firevy.Co',
       image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80',
-      description: content.aboutText || "firevy.co is an ISO27001:2013 certified Web & Mobile App Development Company established in 2002. We offer a wide range of IT services and domain specific solutions to Enterprises, ISVs, Digital Agencies and Startups. Our devoted and passionate team delivers best industry practices combined with technology expertise and business domain knowledge to drive digital transformation. Our team having diverse skills with more than 23+ years of technology experience engaging with customers at deeper level to provide high-end technology solutions and innovations.",
+      description: content.aboutText || "Firevy.Co is an ISO27001:2013 certified Web & Mobile App Development Company established in 2002. We offer a wide range of IT services and domain specific solutions to Enterprises, ISVs, Digital Agencies and Startups. Our devoted and passionate team delivers best industry practices combined with technology expertise and business domain knowledge to drive digital transformation. Our team having diverse skills with more than 23+ years of technology experience engaging with customers at deeper level to provide high-end technology solutions and innovations.",
       buttonText: 'Get In Touch',
       buttonLink: '/contact'
     };
@@ -527,7 +527,7 @@ export const CompanySubDetails = () => {
     const rawMV = content.missionVision || {};
     const missionVision = {
       heading: rawMV.heading || 'We Create, We Enhance, We Deliver',
-      subheading: rawMV.subheading || "More Than Expected – That's firevy.co",
+      subheading: rawMV.subheading || "More Than Expected – That's Firevy.Co",
       visionTitle: rawMV.visionTitle || content.visionHeading || 'Our Vision',
       visionText: rawMV.visionText || content.visionText || "It's our goal to empower our customers to achieve more and to be one of the best customer-centric company.",
       missionTitle: rawMV.missionTitle || content.missionHeading || 'Our Mission',
@@ -580,7 +580,7 @@ export const CompanySubDetails = () => {
     const culture = content.culture || {
       heading: 'Our Culture',
       paragraphs: [
-        'At firevy.co, we have nurtured a culture that inspires innovation and creativity. We believe that success of our company is directly relational to the success of each and every employee. We strive to create a young, fun-loving, open yet professional and hardworking environment.',
+        'At Firevy.Co, we have nurtured a culture that inspires innovation and creativity. We believe that success of our company is directly relational to the success of each and every employee. We strive to create a young, fun-loving, open yet professional and hardworking environment.',
         'We empower our team members to move forward professionally by taking ownership and learning from every project they work on. Coming to work and building amazing digital solutions should be fun.'
       ],
       buttonText: 'Explore Careers (Jobs)',
@@ -664,8 +664,8 @@ export const CompanySubDetails = () => {
     return (
       <div className="bg-white min-h-screen text-slate-900 font-sans">
         <SEO
-          title={dynamicSection?.seo?.metaTitle || `About Us | We Shape Digital Solutions | firevy.co`}
-          description={dynamicSection?.seo?.metaDescription || "firevy.co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions."}
+          title={dynamicSection?.seo?.metaTitle || `About Us | We Shape Digital Solutions | Firevy.Co`}
+          description={dynamicSection?.seo?.metaDescription || "Firevy.Co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions."}
           canonical={`/company/${pageKey}`}
         />
 
@@ -680,10 +680,10 @@ export const CompanySubDetails = () => {
                   </div>
                 )}
                 <h1 className="text-[34px] font-[800] text-slate-900 tracking-tight leading-tight font-sans page-hero-title">
-                  {dynamicSection?.title || 'About firevy.co'}
+                  {dynamicSection?.title || 'About Firevy.Co'}
                 </h1>
                 <p className="text-[15px] text-slate-600 leading-relaxed font-[400] font-sans max-w-xl page-hero-desc">
-                  {dynamicSection?.subtitle || 'firevy.co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions.'}
+                  {dynamicSection?.subtitle || 'Firevy.Co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions.'}
                 </p>
                 <div className="pt-2">
                   <Link
@@ -756,7 +756,7 @@ export const CompanySubDetails = () => {
           </div>
         </section>
 
-        {/* 2. "About firevy.co" */}
+        {/* 2. "About Firevy.Co" */}
         <section className="py-16 bg-white border-t border-slate-100 text-left font-sans">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -764,14 +764,14 @@ export const CompanySubDetails = () => {
                 <div className="rounded-[14px] overflow-hidden border border-slate-200/90 shadow-sm bg-white">
                   <img
                     src={getMediaUrl(aboutCompany.image)}
-                    alt={aboutCompany.heading || 'About firevy.co'}
+                    alt={aboutCompany.heading || 'About Firevy.Co'}
                     className="w-full h-[330px] sm:h-[350px] object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>
               <div className="lg:col-span-7 space-y-4">
                 <h2 className="text-[40px] font-[800] text-slate-900 tracking-tight leading-tight font-sans section-content-title">
-                  {aboutCompany.heading || 'About firevy.co'}
+                  {aboutCompany.heading || 'About Firevy.Co'}
                 </h2>
                 <div className="space-y-3.5 text-[15px] text-slate-600 leading-[1.8] font-[400] font-sans section-content-desc whitespace-pre-line">
                   <p>{aboutCompany.description}</p>
@@ -795,7 +795,7 @@ export const CompanySubDetails = () => {
             <div className="text-center max-w-4xl mx-auto mb-14">
               <h2 className="text-[40px] font-[800] text-slate-900 tracking-tight leading-[1.2] font-sans section-content-title">
                 {missionVision.heading || 'We Create, We Enhance, We Deliver'}<br />
-                {missionVision.subheading || "More Than Expected – That's firevy.co"}
+                {missionVision.subheading || "More Than Expected – That's Firevy.Co"}
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -895,7 +895,7 @@ export const CompanySubDetails = () => {
                 {content.leadership?.heading || 'Our Leadership'}
               </h2>
               <p className="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed max-w-3xl mx-auto font-[400] font-sans">
-                {content.leadership?.subheading || 'The outlook, passion and experience of our leaders guides firevy.co.'}
+                {content.leadership?.subheading || 'The outlook, passion and experience of our leaders guides Firevy.Co.'}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -996,7 +996,7 @@ export const CompanySubDetails = () => {
                 {content.insights?.heading || 'Insights'}
               </h2>
               <p className="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed max-w-3xl mx-auto font-[400] font-sans">
-                {content.insights?.subheading || 'Based on boundless enthusiasm and challenging spirit, firevy.co is committed to deliver excellence.'}
+                {content.insights?.subheading || 'Based on boundless enthusiasm and challenging spirit, Firevy.Co is committed to deliver excellence.'}
               </p>
             </div>
 
@@ -1088,7 +1088,7 @@ export const CompanySubDetails = () => {
             <div className="w-full h-[360px] sm:h-[450px] rounded-[20px] overflow-hidden shadow-lg border border-slate-200 bg-slate-900 relative">
               <img
                 src={getMediaUrl(teamBanner.image)}
-                alt="firevy.co Whole Team"
+                alt="Firevy.Co Whole Team"
                 className="w-full h-full object-cover opacity-95 hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -1125,10 +1125,10 @@ export const CompanySubDetails = () => {
 
     // Message Paragraphs
     const defaultParagraphs = [
-      "Welcome to firevy.co—a hub where ingenuity meets ambition. As the CEO, I firmly believe that leadership transcends the act of managing. It is about inspiring every individual within the organization to dream, innovate, and achieve greatness. Leadership is a responsibility to guide not just a company, but a movement—one driven by a relentless pursuit of excellence and a passion to redefine what is possible.",
-      "At firevy.co, we are not mere participants in the ever-evolving tech landscape; we are architects of change. Our mission is to harness the transformative power of technology, crafting solutions that empower businesses, enrich lives, and shape the future. Every solution we build reflects a commitment to quality, creativity, and the unwavering belief that technology, when wielded wisely, can be a force for global progress.",
+      "Welcome to Firevy.Co—a hub where ingenuity meets ambition. As the CEO, I firmly believe that leadership transcends the act of managing. It is about inspiring every individual within the organization to dream, innovate, and achieve greatness. Leadership is a responsibility to guide not just a company, but a movement—one driven by a relentless pursuit of excellence and a passion to redefine what is possible.",
+      "At Firevy.Co, we are not mere participants in the ever-evolving tech landscape; we are architects of change. Our mission is to harness the transformative power of technology, crafting solutions that empower businesses, enrich lives, and shape the future. Every solution we build reflects a commitment to quality, creativity, and the unwavering belief that technology, when wielded wisely, can be a force for global progress.",
       "This company is more than a business—it is a beacon of possibility. Our team, fueled by curiosity and resilience, dares to envision a world where ideas are not limited by boundaries but ignited by boldness. Each challenge we face becomes an opportunity to grow, to innovate, and to lead. We don't just adapt to change; we are the change.",
-      "I firmly believe that one revolutionary idea, one brilliant invention, has the potential to illuminate billions of lives. Technology has the power to bridge divides, solve pressing challenges, and transform societies. At firevy.co, we are not just creators of software—we are curators of dreams, building tools that unlock the infinite potential within every individual and organization we serve.",
+      "I firmly believe that one revolutionary idea, one brilliant invention, has the potential to illuminate billions of lives. Technology has the power to bridge divides, solve pressing challenges, and transform societies. At Firevy.Co, we are not just creators of software—we are curators of dreams, building tools that unlock the infinite potential within every individual and organization we serve.",
       "Nothing is impossible when you dare to dream, believe in your vision, and act with unwavering conviction. Together, we will embrace challenges, seize opportunities, and continue to push the boundaries of what technology can achieve. This is our journey—a journey fueled by bold ideas, limitless ambition, and an unyielding commitment to excellence.",
       "Thank you for trusting us to be your partner in progress. Together, we are not just building software, mobile apps and websites; we are creating a legacy—a legacy of innovation, impact, and transformative power that will resonate for generations to come."
     ];
@@ -1140,19 +1140,19 @@ export const CompanySubDetails = () => {
     const signoffPrefix = dynamicSection?.content?.signoffPrefix || "Yours Sincerely,";
     const signoffName = dynamicSection?.content?.signoffName || ceoName;
     const signoffRole = dynamicSection?.content?.signoffRole || "CEO";
-    const signoffCompany = dynamicSection?.content?.signoffCompany || "firevy.co";
+    const signoffCompany = dynamicSection?.content?.signoffCompany || "Firevy.Co";
 
     // Bottom CTA
     const cta = dynamicSection?.content?.cta || dynamicSection?.cta || {};
     const ctaTitle = cta.title || "Let's Work Together On Your Next Digital Project";
-    const ctaSubtitle = cta.subtitle || "Have a project with us? Reach out today to learn more about how Firevy.co can help you unlock business solutions and drive your business strategy.";
+    const ctaSubtitle = cta.subtitle || "Have a project with us? Reach out today to learn more about how Firevy.Co can help you unlock business solutions and drive your business strategy.";
     const ctaButtonText = cta.buttonText || "Request A Free Quote";
     const ctaButtonLink = cta.buttonLink || "/contact";
 
     return (
       <div className="bg-white min-h-screen text-slate-900 font-sans">
         <SEO
-          title={`${heroTitle} | firevy.co`}
+          title={`${heroTitle} | Firevy.Co`}
           description={heroSubtitle}
           canonical={`/company/${pageKey}`}
         />
@@ -1328,7 +1328,7 @@ export const CompanySubDetails = () => {
       linkedin: 'https://linkedin.com',
       messageHeading: 'CEO Message',
       paragraphs: [
-        "Welcome to firevy.co— a hub where ingenuity meets ambition. As the CEO, I firmly believe that leadership is not just about steering the ship but about inspiring every hand on deck to innovate, dream, and achieve. Our success stems from a shared commitment to excellence, where each solution is crafted with purpose and passion. At firevy.co, we don't merely adapt to change; we define it. By blending cutting-edge technology with human ingenuity, we create software solutions that empower businesses and individuals alike. This is not just a company; it's a vision brought to life by a team that dares to dream bigger every day.",
+        "Welcome to Firevy.Co— a hub where ingenuity meets ambition. As the CEO, I firmly believe that leadership is not just about steering the ship but about inspiring every hand on deck to innovate, dream, and achieve. Our success stems from a shared commitment to excellence, where each solution is crafted with purpose and passion. At Firevy.Co, we don't merely adapt to change; we define it. By blending cutting-edge technology with human ingenuity, we create software solutions that empower businesses and individuals alike. This is not just a company; it's a vision brought to life by a team that dares to dream bigger every day.",
         "Never stop believing in the power of technology that can change the world. One Revolutionary idea... One brilliant Invention can enlighten billions of the Human lives. Nothing is Impossible when you Dream it & believe it you can Do it. Together, let us embrace the challenges and opportunities. Thank you for trusting us to be your partner in progress. Together, we are not just building software —we are creating a legacy of innovation and impact."
       ]
     };
@@ -1341,8 +1341,8 @@ export const CompanySubDetails = () => {
       linkedin: 'https://linkedin.com',
       messageHeading: 'CTO Message',
       paragraphs: [
-        "At firevy.co, technology is not just a means to an end—it's the essence of our identity and the foundation of our future. As the CTO, my mission is to push the boundaries of innovation, ensuring that every line of code we write and every solution we deliver drives meaningful impact. Our approach is simple yet profound: embrace challenges as opportunities and ideas as catalysts for change. By staying at the forefront of technological advancements and fostering a culture of continuous learning, we empower businesses to thrive in a dynamic digital landscape. Crafting success stories from startups to Fortune 500 stalwarts.",
-        "Our dedication to user-centric design and cutting-edge solutions has garnered prestigious accolades. Innovation is a journey, and at firevy.co, we walk that path with purpose and passion, transforming visions into reality and possibilities into achievements. Thank you for trusting us as your technology partner. Together, we are building a smarter, more connected happy world."
+        "At Firevy.Co, technology is not just a means to an end—it's the essence of our identity and the foundation of our future. As the CTO, my mission is to push the boundaries of innovation, ensuring that every line of code we write and every solution we deliver drives meaningful impact. Our approach is simple yet profound: embrace challenges as opportunities and ideas as catalysts for change. By staying at the forefront of technological advancements and fostering a culture of continuous learning, we empower businesses to thrive in a dynamic digital landscape. Crafting success stories from startups to Fortune 500 stalwarts.",
+        "Our dedication to user-centric design and cutting-edge solutions has garnered prestigious accolades. Innovation is a journey, and at Firevy.Co, we walk that path with purpose and passion, transforming visions into reality and possibilities into achievements. Thank you for trusting us as your technology partner. Together, we are building a smarter, more connected happy world."
       ]
     };
     const cto = dynamicSection?.content?.cto || defaultCto;
@@ -1398,7 +1398,7 @@ export const CompanySubDetails = () => {
       name: 'Vipul Patel',
       role: 'Team Lead',
       image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
-      quote: "I am proud to be working for a company like firevy.co that values honesty and a fair attitude to all which has also contributed to a very valuable and delightful experience. The work culture and the integrity of the company's management are remarkable. In firevy.co, we get all the freedom to think out-of-the-box and take complete ownership of the work we do. Being a client-focused company, firevy.co makes us understand the clients' requirements easily so that the work can be coordinated effectively. There are always opportunities to learn and no limitations to scale new heights in this organization."
+      quote: "I am proud to be working for a company like Firevy.Co that values honesty and a fair attitude to all which has also contributed to a very valuable and delightful experience. The work culture and the integrity of the company's management are remarkable. In Firevy.Co, we get all the freedom to think out-of-the-box and take complete ownership of the work we do. Being a client-focused company, Firevy.Co makes us understand the clients' requirements easily so that the work can be coordinated effectively. There are always opportunities to learn and no limitations to scale new heights in this organization."
     };
     const firevianSay = dynamicSection?.content?.firevianSay || defaultFirevianSay;
 
@@ -1406,8 +1406,8 @@ export const CompanySubDetails = () => {
     const defaultLearningGrowth = {
       heading: 'Learning & Growth',
       paragraphs: [
-        "Learning and growth go hand-in-hand fundamentally, and so is the story at firevy.co. We offer ample amounts of training to each individual and help them to improve their skills with subject matter specialists from the industry and within the company. We always believe in continuous learning culture so it gives opportunity to achieve better be it, Business interactions, Design Thinking or Technology.",
-        "We want our team to grow and develop at firevy.co, meet your career goals and make the most of your potential, all while embracing your own exceptional talents.",
+        "Learning and growth go hand-in-hand fundamentally, and so is the story at Firevy.Co. We offer ample amounts of training to each individual and help them to improve their skills with subject matter specialists from the industry and within the company. We always believe in continuous learning culture so it gives opportunity to achieve better be it, Business interactions, Design Thinking or Technology.",
+        "We want our team to grow and develop at Firevy.Co, meet your career goals and make the most of your potential, all while embracing your own exceptional talents.",
         "That's why we are committed to helping you drive your career in a dynamic environment. Across all levels of our organization, we are nurturing a culture of trust and dialogue. We offer tools to support this culture such as 360 feedback, online coaching and a mutual mentoring program."
       ],
       buttonText: 'Join Our Team',
@@ -1420,10 +1420,10 @@ export const CompanySubDetails = () => {
     };
     const learningGrowth = dynamicSection?.content?.learningGrowth || defaultLearningGrowth;
 
-    // 7. Team @ firevy.co (2x2 Gallery)
+    // 7. Team @ Firevy.Co (2x2 Gallery)
     const defaultLifeAtFirevy = {
-      heading: 'Team @ firevy.co',
-      description: 'At firevy.co, we have a friendly, inspiring and fun loving yet professional environment. We celebrate all the good moments in terms of our growth and accomplishments. Our closeness always makes us feel strengthened and energetic to improve our actions, to go stress-free, and to work untiringly as a team.',
+      heading: 'Team @ Firevy.Co',
+      description: 'At Firevy.Co, we have a friendly, inspiring and fun loving yet professional environment. We celebrate all the good moments in terms of our growth and accomplishments. Our closeness always makes us feel strengthened and energetic to improve our actions, to go stress-free, and to work untiringly as a team.',
       images: [
         'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
         'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
@@ -1443,7 +1443,7 @@ export const CompanySubDetails = () => {
     return (
       <div className="bg-white min-h-screen text-slate-900 font-sans">
         <SEO
-          title={`${heroTitle} | Innovative & Passionate Minds | firevy.co`}
+          title={`${heroTitle} | Innovative & Passionate Minds | Firevy.Co`}
           description={heroSubtitle}
           canonical={`/company/${pageKey}`}
         />
@@ -1884,12 +1884,12 @@ export const CompanySubDetails = () => {
           </div>
         </section>
 
-        {/* 7. "Team @ firevy.co" SECTION */}
+        {/* 7. "Team @ Firevy.Co" SECTION */}
         <section className="py-20 bg-[#F8FAFC] border-t border-slate-200 text-slate-900 font-sans">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <div className="text-center max-w-4xl mx-auto mb-14">
               <h2 className="text-[38px] sm:text-[46px] font-[900] text-slate-900 tracking-tight leading-tight mb-3 font-sans">
-                {lifeAtFirevy.heading || "Team @ firevy.co"}
+                {lifeAtFirevy.heading || "Team @ Firevy.Co"}
               </h2>
               <p className="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed max-w-3xl mx-auto font-[400] font-sans">
                 {lifeAtFirevy.description}
@@ -1941,13 +1941,13 @@ export const CompanySubDetails = () => {
   // If this is the "Events & Activities" / "events-activities" page, render exact Sapphire Events & Activities Layout
   if (pageKey === 'events-activities') {
     const heroTitle = dynamicSection?.content?.heroHeading || dynamicSection?.hero?.title || dynamicSection?.title || "Events & Celebrations";
-    const heroSubtitle = dynamicSection?.content?.heroSubtitle || dynamicSection?.hero?.subtitle || dynamicSection?.subtitle || "At Firevy.co, we believe that celebrating success is just as important as achieving it. From casual dress-down days and monthly celebrations enjoy the celebration.";
+    const heroSubtitle = dynamicSection?.content?.heroSubtitle || dynamicSection?.hero?.subtitle || dynamicSection?.subtitle || "At Firevy.Co, we believe that celebrating success is just as important as achieving it. From casual dress-down days and monthly celebrations enjoy the celebration.";
     const heroButtonText = dynamicSection?.content?.heroButtonText || dynamicSection?.hero?.ctaText || dynamicSection?.ctaText || "Let's Talk";
     const heroButtonLink = dynamicSection?.content?.heroButtonLink || dynamicSection?.hero?.ctaLink || dynamicSection?.ctaLink || "/contact";
     const heroImage = dynamicSection?.hero?.image || dynamicSection?.content?.heroImage || '/images/events-hero.svg';
 
-    const lifeHeading = dynamicSection?.content?.lifeHeading || "Life @firevy.co";
-    const lifeDescription = dynamicSection?.content?.lifeDescription || "At firevy.co, we constantly try new ways to make our work environment, enjoyable and inspiring. From company outings to birthdays, we just need a reason to celebrate. Have a glimpse at life and culture @firevy.co!";
+    const lifeHeading = dynamicSection?.content?.lifeHeading || "Life @Firevy.Co";
+    const lifeDescription = dynamicSection?.content?.lifeDescription || "At Firevy.Co, we constantly try new ways to make our work environment, enjoyable and inspiring. From company outings to birthdays, we just need a reason to celebrate. Have a glimpse at life and culture @Firevy.Co!";
 
     const defaultYears = ['2026', '2025', '2024', '2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016', '2015'];
     const dynamicYears = (Array.isArray(dynamicSection?.content?.years) && dynamicSection.content.years.length > 0)
@@ -2064,7 +2064,7 @@ export const CompanySubDetails = () => {
     return (
       <div className="bg-white min-h-screen text-slate-900 font-sans">
         <SEO
-          title={`${heroTitle} | Life @ firevy.co | firevy.co`}
+          title={`${heroTitle} | Life @ Firevy.Co | Firevy.Co`}
           description={heroSubtitle}
           canonical={`/company/${pageKey}`}
         />
@@ -2165,7 +2165,7 @@ export const CompanySubDetails = () => {
           </div>
         </section>
 
-        {/* 2. "Life @firevy.co" SECTION */}
+        {/* 2. "Life @Firevy.Co" SECTION */}
         <section className="py-20 bg-white border-t border-slate-100 text-center font-sans">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <h2 className="text-[40px] font-[800] text-slate-900 tracking-tight leading-tight mb-4 font-sans section-content-title">
@@ -2262,13 +2262,13 @@ export const CompanySubDetails = () => {
     const seo = dynamicSection?.seo || {};
 
     const heroHeadline = hero.title || dynamicSection?.title || "Let's create something big together!";
-    const heroSubtitle = hero.subtitle || dynamicSection?.subtitle || "firevy.co is a Leading software and app development company with offices worldwide. If you want to know more about our business.";
+    const heroSubtitle = hero.subtitle || dynamicSection?.subtitle || "Firevy.Co is a Leading software and app development company with offices worldwide. If you want to know more about our business.";
     const heroCtaText = hero.ctaText || dynamicSection?.ctaText || "Connect Us";
     const heroCtaLink = hero.ctaLink || dynamicSection?.ctaLink || "/contact";
     const heroImage = hero.heroImage || dynamicSection?.heroImage;
 
     const infoHeading = downloadableInfo.heading || "Easily & Quickly Downloadable Information";
-    const infoDescription = downloadableInfo.description || "As a global leader in the software development market, we have 2800+ satisfied clients in 30+ countries. Established in 2002, we are a leading Mobile App Development Company in the USA with ISO 27001:2013 certification. As a Multinational company, we provide software and website development services from our cutting-edge delivery centers in Ahmedabad, India. We have experience working with several Fortune 100 companies and popular brands like American Express, Bayer, Chevron, Almarai, Adani, L&T, Vedanta, Orient Cement, Dr Reddy, and LOREAL. Additionally, we take great pride in being Clutch and Google's top-rated mobile app development company. Whether you are looking for mobile app development services, website design, or software development, firevy.co is your right destination. firevy.co can deliver 1500+ projects and assists big clients like Adani and American Express skyrocket their business by delivering top-notch services.";
+    const infoDescription = downloadableInfo.description || "As a global leader in the software development market, we have 2800+ satisfied clients in 30+ countries. Established in 2002, we are a leading Mobile App Development Company in the USA with ISO 27001:2013 certification. As a Multinational company, we provide software and website development services from our cutting-edge delivery centers in Ahmedabad, India. We have experience working with several Fortune 100 companies and popular brands like American Express, Bayer, Chevron, Almarai, Adani, L&T, Vedanta, Orient Cement, Dr Reddy, and LOREAL. Additionally, we take great pride in being Clutch and Google's top-rated mobile app development company. Whether you are looking for mobile app development services, website design, or software development, Firevy.Co is your right destination. Firevy.Co can deliver 1500+ projects and assists big clients like Adani and American Express skyrocket their business by delivering top-notch services.";
 
     const card1Title = downloadableInfo.card1Title || "Services";
     const card1Tag = downloadableInfo.card1Tag || "S";
@@ -2278,16 +2278,16 @@ export const CompanySubDetails = () => {
     const card2Subtitle = downloadableInfo.card2Subtitle || "achieve more and to be one of the best customer-centric";
     const card2Bg = downloadableInfo.card2Bg || "#006B8F";
 
-    const card3Brand = downloadableInfo.card3Brand || "firevy";
+    const card3Brand = downloadableInfo.card3Brand || "Firevy";
     const card3Suffix = downloadableInfo.card3Suffix || ".co";
     const card3Tag = downloadableInfo.card3Tag || "ISO 27001:2013";
     const card3Image = downloadableInfo.card3Image || "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80";
     const card3Title = downloadableInfo.card3Title || "Digital Brochure";
-    const card3Website = downloadableInfo.card3Website || "www.firevy.co";
+    const card3Website = downloadableInfo.card3Website || "www.Firevy.Co";
 
     const formTitle = brochureForm.title || "Download Our Brochure To Take A Glimpse Of Our Offerings";
     const formBtnText = brochureForm.buttonText || "Download";
-    const formSuccessMsg = brochureForm.successMessage || "Thank you! Your firevy.co digital brochure download has started.";
+    const formSuccessMsg = brochureForm.successMessage || "Thank you! Your Firevy.Co digital brochure download has started.";
     const primaryPdfUrl = brochureForm.brochurePdf || brochureForm.pdfUrl || dynamicSection?.content?.brochurePdf || (dynamicBrochures?.[0]?.pdfUrl) || '';
 
     const brandsTitle = trustedBrands.heading || "Trusted By The World’s Leading Brands";
@@ -2312,8 +2312,8 @@ export const CompanySubDetails = () => {
     return (
       <div className="bg-white min-h-screen text-slate-900 font-sans">
         <SEO
-          title={seo.metaTitle || "Download Brochure | Easily & Quickly Downloadable Information | firevy.co"}
-          description={seo.metaDescription || "Download firevy.co corporate digital brochure. firevy.co is a leading software and app development company with offices worldwide."}
+          title={seo.metaTitle || "Download Brochure | Easily & Quickly Downloadable Information | Firevy.Co"}
+          description={seo.metaDescription || "Download Firevy.Co corporate digital brochure. Firevy.Co is a leading software and app development company with offices worldwide."}
           canonical={seo.canonical || `/company/${pageKey}`}
           keywords={seo.metaKeywords || ''}
         />
@@ -2604,7 +2604,7 @@ export const CompanySubDetails = () => {
       {
         id: 4,
         title: 'Clients Presence',
-        desc: 'Clients in more than 25 countries across the globe are advocates of firevy.co\'s deliverability, quality, and production.',
+        desc: 'Clients in more than 25 countries across the globe are advocates of Firevy.Co\'s deliverability, quality, and production.',
         icon: <Users className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2616,13 +2616,13 @@ export const CompanySubDetails = () => {
       {
         id: 6,
         title: 'Awards & Achievements',
-        desc: 'firevy.co is an award winning and well known name in education domain with amazing ranking on google (SEO) and holding more than 15+ awards for the product.',
+        desc: 'Firevy.Co is an award winning and well known name in education domain with amazing ranking on google (SEO) and holding more than 15+ awards for the product.',
         icon: <Award className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 7,
         title: 'No Hidden Costs',
-        desc: 'Pay for what service you get and nothing else. firevy.co has a strict policy of avoiding any additional charges and taking payments once the work is completely done (in freelancing portals).',
+        desc: 'Pay for what service you get and nothing else. Firevy.Co has a strict policy of avoiding any additional charges and taking payments once the work is completely done (in freelancing portals).',
         icon: <FileText className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2634,19 +2634,19 @@ export const CompanySubDetails = () => {
       {
         id: 9,
         title: 'Free Guidance',
-        desc: 'New to web development or app development? please feel free for any guidance or consultation, firevy.co provides it completely free of charge and keeps no charge for guiding or communicating with new clients in the market.',
+        desc: 'New to web development or app development? please feel free for any guidance or consultation, Firevy.Co provides it completely free of charge and keeps no charge for guiding or communicating with new clients in the market.',
         icon: <MessageSquare className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 10,
         title: 'One Stop Shop',
-        desc: 'Tired of finding & paying for individuals with different skills? firevy.co comes up with a one roof solution, enabling you to get everything from designs to QA and support at a single stop. Allow firevy.co to minimize your efforts.',
+        desc: 'Tired of finding & paying for individuals with different skills? Firevy.Co comes up with a one roof solution, enabling you to get everything from designs to QA and support at a single stop. Allow Firevy.Co to minimize your efforts.',
         icon: <Briefcase className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 11,
         title: 'Trust',
-        desc: 'Hire firevy.co and get secured. Handover all your worries and concerns to a 23+ years + 270001 ISO-Certified firm and get rid of any frauds or worries. Not only this, Our reputation is our shadow, hence we cannot at all afford ruining our reputation because of any fraud or misbehaves.',
+        desc: 'Hire Firevy.Co and get secured. Handover all your worries and concerns to a 23+ years + 270001 ISO-Certified firm and get rid of any frauds or worries. Not only this, Our reputation is our shadow, hence we cannot at all afford ruining our reputation because of any fraud or misbehaves.',
         icon: <ShieldCheck className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2658,7 +2658,7 @@ export const CompanySubDetails = () => {
       {
         id: 13,
         title: 'Customer Retention',
-        desc: 'Adani group has been part of firevy.co\'s client library since 2012.',
+        desc: 'Adani group has been part of Firevy.Co\'s client library since 2012.',
         icon: <Heart className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2676,49 +2676,49 @@ export const CompanySubDetails = () => {
       {
         id: 16,
         title: 'Dedicated',
-        desc: 'Facing issues of unavailability from freelancers? firevy.co comes with full time availability with multiple options of developers incase the one gets unavailable.',
+        desc: 'Facing issues of unavailability from freelancers? Firevy.Co comes with full time availability with multiple options of developers incase the one gets unavailable.',
         icon: <Users className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 17,
         title: 'Cost And ROI',
-        desc: 'firevy.co takes care of your budget and helps you to workout even in low budgets, the idea of going for a MVP comes into picture under such scenarios and we proceed with helping you with a model that helps you to generate ROI first.',
+        desc: 'Firevy.Co takes care of your budget and helps you to workout even in low budgets, the idea of going for a MVP comes into picture under such scenarios and we proceed with helping you with a model that helps you to generate ROI first.',
         icon: <FileText className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 18,
         title: 'Boutique Agency',
-        desc: 'Services that firevy.co provides from a single roof includes: Web Development, Mobile App Development, Cloud & DevOps, Product Development, Software Testing & QA, Digital Marketing, Software Maintenance & Support.',
+        desc: 'Services that Firevy.Co provides from a single roof includes: Web Development, Mobile App Development, Cloud & DevOps, Product Development, Software Testing & QA, Digital Marketing, Software Maintenance & Support.',
         icon: <Briefcase className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 19,
         title: 'Domain Expertise',
-        desc: 'firevy.co comes up with attitude of learning though it has been providing its services from last 2 decades. With time we have evolved to latest technologies and languages like flutter, react-native, ML, react JS, Node JS, etc. Making it easy for you to find all under a single roof.',
+        desc: 'Firevy.Co comes up with attitude of learning though it has been providing its services from last 2 decades. With time we have evolved to latest technologies and languages like flutter, react-native, ML, react JS, Node JS, etc. Making it easy for you to find all under a single roof.',
         icon: <Globe className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 20,
         title: 'Secured & Safe',
-        desc: 'firevy.co is bound to keep all your data private by signing NDAs We understand sensitivity of project information, and insured to work on high-security/high-safety systems. In this way we will implement essential steps to protect proprietary and personal data.',
+        desc: 'Firevy.Co is bound to keep all your data private by signing NDAs We understand sensitivity of project information, and insured to work on high-security/high-safety systems. In this way we will implement essential steps to protect proprietary and personal data.',
         icon: <ShieldCheck className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 21,
         title: 'Easy Handover',
-        desc: 'Honest enough to say \'Sorry, not good fit for you\'. Need to switch your preference? please don\'t hesitate at all. firevy.co provides the complete KT (Knowledge Transfer) to next party keep you updated of everything with an easy exit process.',
+        desc: 'Honest enough to say \'Sorry, not good fit for you\'. Need to switch your preference? please don\'t hesitate at all. Firevy.Co provides the complete KT (Knowledge Transfer) to next party keep you updated of everything with an easy exit process.',
         icon: <CheckCircle2 className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 22,
         title: 'Enterprise Apps',
-        desc: 'firevy.co is not only focused on on-demand services apps development. But, also have an expert eye on providing enterprise apps and solution like ERP development, CRM development, CRMS, SaaS product development, and Sharepoint/Ninetex solutions too.',
+        desc: 'Firevy.Co is not only focused on on-demand services apps development. But, also have an expert eye on providing enterprise apps and solution like ERP development, CRM development, CRMS, SaaS product development, and Sharepoint/Ninetex solutions too.',
         icon: <Target className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 23,
         title: 'Problem Solving',
-        desc: 'firevy.co believes in client satisfaction, hence enables you to work or communicate with techie who would not only provide problem solving approaches, but will also help to make a road map and fulfill your requirement in best possible manner.',
+        desc: 'Firevy.Co believes in client satisfaction, hence enables you to work or communicate with techie who would not only provide problem solving approaches, but will also help to make a road map and fulfill your requirement in best possible manner.',
         icon: <Sparkles className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2736,13 +2736,13 @@ export const CompanySubDetails = () => {
       {
         id: 26,
         title: 'Cost Optimization',
-        desc: 'Choosing firevy.co might be beneficial for you has you can hire a team at a cost of single individual. firevy.co\'s hourly rate are having wide ranges depending upon what developers you choose. Making you comfortable to choose developers according to the complexity of your task.',
+        desc: 'Choosing Firevy.Co might be beneficial for you has you can hire a team at a cost of single individual. Firevy.Co\'s hourly rate are having wide ranges depending upon what developers you choose. Making you comfortable to choose developers according to the complexity of your task.',
         icon: <FileText className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 27,
         title: 'Focused On UI/UX',
-        desc: 'User experience is quite important and firevy.co pressures it more. We offer clients to go with an initial milestone of designs only. Finalizing it first, and then proceeding it with the final development after complete satisfaction of your on the designs.',
+        desc: 'User experience is quite important and Firevy.Co pressures it more. We offer clients to go with an initial milestone of designs only. Finalizing it first, and then proceeding it with the final development after complete satisfaction of your on the designs.',
         icon: <Sparkles className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2760,7 +2760,7 @@ export const CompanySubDetails = () => {
       {
         id: 30,
         title: 'Cloud Computing',
-        desc: 'World is switching to cloud! Everyone is getting rid of online servers and offline storage stuff. firevy.co comes up with an updated support in cloud technologies as well like AWS, Docker, Jenkins, Oracle, DevOps, and many more.',
+        desc: 'World is switching to cloud! Everyone is getting rid of online servers and offline storage stuff. Firevy.Co comes up with an updated support in cloud technologies as well like AWS, Docker, Jenkins, Oracle, DevOps, and many more.',
         icon: <Target className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2772,37 +2772,37 @@ export const CompanySubDetails = () => {
       {
         id: 32,
         title: 'English Proficiency',
-        desc: 'No miscommunication or language barrier. firevy.co comes up with the best and energetic team completely trained and quoted with proficiency in English from Sales to support. Giving you a very homely feel via easy means of communication.',
+        desc: 'No miscommunication or language barrier. Firevy.Co comes up with the best and energetic team completely trained and quoted with proficiency in English from Sales to support. Giving you a very homely feel via easy means of communication.',
         icon: <MessageSquare className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 33,
         title: 'The BRD Policy',
-        desc: 'firevy.co comes up with a policy, where everything would be freezed and pre-written in a BRD (Business requirement document) Work starts only after client\'s approval on the BRD. Let\'s avoid the possible communication gaps and any possible future disputes.',
+        desc: 'Firevy.Co comes up with a policy, where everything would be freezed and pre-written in a BRD (Business requirement document) Work starts only after client\'s approval on the BRD. Let\'s avoid the possible communication gaps and any possible future disputes.',
         icon: <FileText className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 34,
         title: 'Initial Design Milestone',
-        desc: 'Facing trust issues? Worried about your project budgets? Start with firevy.co at just a short milestone for the rough wireframes and mockups! Essure the quality and decide, wanna proceed with us or not. Release the milestone only if satisfied by the work. No need to pay big amounts in name of advance.',
+        desc: 'Facing trust issues? Worried about your project budgets? Start with Firevy.Co at just a short milestone for the rough wireframes and mockups! Essure the quality and decide, wanna proceed with us or not. Release the milestone only if satisfied by the work. No need to pay big amounts in name of advance.',
         icon: <CheckCircle2 className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 35,
         title: 'On-Demand POCs',
-        desc: 'Looking for someone who can provide you quickest solution for a on-demand service app (MVPs)? firevy.co is a perfect place to help you with such POCs at cost efficient rates + quickest delivery through white labeling.',
+        desc: 'Looking for someone who can provide you quickest solution for a on-demand service app (MVPs)? Firevy.Co is a perfect place to help you with such POCs at cost efficient rates + quickest delivery through white labeling.',
         icon: <Briefcase className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 36,
         title: 'Always In Touch',
-        desc: 'Weather it\'s clients, partners, people, or prospects, firevy.co believes in staying touch with everyone and look forward for a better and strong relationship.',
+        desc: 'Weather it\'s clients, partners, people, or prospects, Firevy.Co believes in staying touch with everyone and look forward for a better and strong relationship.',
         icon: <Heart className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 37,
         title: 'Innovation',
-        desc: 'Innovation is birth of new Invention . firevy.co comes up with innovative techniques making your projects/products more precise and up to date with adding modern touches.',
+        desc: 'Innovation is birth of new Invention . Firevy.Co comes up with innovative techniques making your projects/products more precise and up to date with adding modern touches.',
         icon: <Sparkles className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2814,7 +2814,7 @@ export const CompanySubDetails = () => {
       {
         id: 39,
         title: 'Flexibility',
-        desc: 'firevy.co also offers to work in different timezone , hence making you comfortable by offering our flexibility.',
+        desc: 'Firevy.Co also offers to work in different timezone , hence making you comfortable by offering our flexibility.',
         icon: <Globe className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2844,13 +2844,13 @@ export const CompanySubDetails = () => {
       {
         id: 44,
         title: 'Training Acceptance',
-        desc: 'Always a yes from firevy.co side regarding any challenges that come as an hurdle in the development and other phases. Giving you a complete easy to work with environment where every detailed study would be done by firevy.co team. It\'s an honor to learn new things daily.',
+        desc: 'Always a yes from Firevy.Co side regarding any challenges that come as an hurdle in the development and other phases. Giving you a complete easy to work with environment where every detailed study would be done by Firevy.Co team. It\'s an honor to learn new things daily.',
         icon: <CheckCircle2 className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 45,
         title: 'Platform Selection',
-        desc: 'firevy.co helps you to understand the importance of using a particular technology stack with its pros and cons. Letting you to leave all your worries to us and just provide you end results as per your expectations.',
+        desc: 'Firevy.Co helps you to understand the importance of using a particular technology stack with its pros and cons. Letting you to leave all your worries to us and just provide you end results as per your expectations.',
         icon: <Target className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2862,13 +2862,13 @@ export const CompanySubDetails = () => {
       {
         id: 47,
         title: 'Evolving Ideas',
-        desc: 'It\'s not always limited to scope or a BRD, No scope document can bound a limit for evolution of new phases in the app. firevy.co helps you to add +1 to your visions, keeping and developing things in a realistic manner.',
+        desc: 'It\'s not always limited to scope or a BRD, No scope document can bound a limit for evolution of new phases in the app. Firevy.Co helps you to add +1 to your visions, keeping and developing things in a realistic manner.',
         icon: <Sparkles className="w-9 h-9 stroke-[1.7]" />
       },
       {
         id: 48,
         title: 'Thought Process',
-        desc: 'Your project is our Responsibility; we do it with integrity; and deliver it with honesty - thought process followed by firevy.co since it\'s existence in the market.',
+        desc: 'Your project is our Responsibility; we do it with integrity; and deliver it with honesty - thought process followed by Firevy.Co since it\'s existence in the market.',
         icon: <Award className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2880,7 +2880,7 @@ export const CompanySubDetails = () => {
       {
         id: 50,
         title: 'Result Oriented',
-        desc: 'firevy.co works behind your vision, and makes your vision as its mission and thrive hard to get the results as expected by you.',
+        desc: 'Firevy.Co works behind your vision, and makes your vision as its mission and thrive hard to get the results as expected by you.',
         icon: <Target className="w-9 h-9 stroke-[1.7]" />
       },
       {
@@ -2918,17 +2918,17 @@ export const CompanySubDetails = () => {
           ? dynamicSection.content.whyChooseUsCards
           : whyChooseUsCards;
 
-    const heroTitle = dynamicSection?.title || dynamicSection?.hero?.title || 'Why Choose firevy.co';
-    const heroSubtitle = dynamicSection?.subtitle || dynamicSection?.hero?.subtitle || 'We understand the seriousness of your project, and here are the few reasons that why should you join the firevy.co club and get added to the list of 1500+ clients who have been trusting us since 2 decades.';
+    const heroTitle = dynamicSection?.title || dynamicSection?.hero?.title || 'Why Choose Firevy.Co';
+    const heroSubtitle = dynamicSection?.subtitle || dynamicSection?.hero?.subtitle || 'We understand the seriousness of your project, and here are the few reasons that why should you join the Firevy.Co club and get added to the list of 1500+ clients who have been trusting us since 2 decades.';
     const heroCtaText = dynamicSection?.ctaText || dynamicSection?.hero?.ctaText || 'Connect Now';
     const heroCtaLink = dynamicSection?.ctaLink || dynamicSection?.hero?.ctaLink || '/contact';
     const heroImage = dynamicSection?.heroImage || dynamicSection?.hero?.heroImage || '/images/why-choose-hero.svg';
 
-    const sectionHeading = dynamicSection?.content?.sectionHeading || dynamicSection?.content?.heading || 'Why firevy.co?';
+    const sectionHeading = dynamicSection?.content?.sectionHeading || dynamicSection?.content?.heading || 'Why Firevy.Co?';
     const sectionSubtitle = dynamicSection?.content?.sectionSubtitle || dynamicSection?.content?.subtitle || dynamicSection?.content?.intro || 'Reasons why our clients keep coming back to us';
 
     const ctaTitle = dynamicSection?.content?.ctaBanner?.title || dynamicSection?.cta?.title || "Ready To Get Started?";
-    const ctaSubtitle = dynamicSection?.content?.ctaBanner?.subtitle || dynamicSection?.cta?.subtitle || "Learn how firevy.co can help you build better relationships with your customers. Start a conversation today.";
+    const ctaSubtitle = dynamicSection?.content?.ctaBanner?.subtitle || dynamicSection?.cta?.subtitle || "Learn how Firevy.Co can help you build better relationships with your customers. Start a conversation today.";
     const ctaButtonText = dynamicSection?.content?.ctaBanner?.buttonText || dynamicSection?.cta?.buttonText || "TALK TO TECH EXPERT";
     const ctaButtonLink = dynamicSection?.content?.ctaBanner?.buttonLink || dynamicSection?.cta?.buttonLink || "/contact";
     const newsletterTitle = dynamicSection?.content?.newsletter?.title || dynamicSection?.newsletter?.title || "Subscribe us and Get the latest updates and news";
@@ -2938,8 +2938,8 @@ export const CompanySubDetails = () => {
     return (
       <div className="bg-white min-h-screen text-slate-900 font-sans">
         <SEO
-          title={dynamicSection?.seo?.metaTitle || "Why Choose Us? | Reasons Why Clients Trust Us | firevy.co"}
-          description={dynamicSection?.seo?.metaDescription || "Discover why leading enterprises and startups trust firevy.co as their primary tech partner. Explore our 51 reasons for client excellence."}
+          title={dynamicSection?.seo?.metaTitle || "Why Choose Us? | Reasons Why Clients Trust Us | Firevy.Co"}
+          description={dynamicSection?.seo?.metaDescription || "Discover why leading enterprises and startups trust Firevy.Co as their primary tech partner. Explore our 51 reasons for client excellence."}
           keywords={dynamicSection?.seo?.metaKeywords || ""}
           canonical={dynamicSection?.seo?.canonical || `/company/${pageKey}`}
         />
@@ -3019,7 +3019,7 @@ export const CompanySubDetails = () => {
           </div>
         </section>
 
-        {/* 2. "Why firevy.co?" CARDS GRID SECTION */}
+        {/* 2. "Why Firevy.Co?" CARDS GRID SECTION */}
         <section className="py-20 bg-[#F4F7FB] text-left font-sans">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <div className="text-center max-w-4xl mx-auto mb-16">
@@ -3089,7 +3089,7 @@ export const CompanySubDetails = () => {
       {
         id: 2,
         title: 'Equal Opportunity Employer',
-        desc: 'firevy.co promises not to discriminate against employees because of their race, color, religion, sex, national origin, age, disability, or genetic information.',
+        desc: 'Firevy.Co promises not to discriminate against employees because of their race, color, religion, sex, national origin, age, disability, or genetic information.',
         iconName: 'Users'
       },
       {
@@ -3130,7 +3130,7 @@ export const CompanySubDetails = () => {
       {
         id: 4,
         title: 'Making Impact',
-        desc: 'We aim to give you a chance to advance your career and alter the course of history. Our work at firevy.co significantly impacts the world we live in.',
+        desc: 'We aim to give you a chance to advance your career and alter the course of history. Our work at Firevy.Co significantly impacts the world we live in.',
         iconName: 'Target'
       }
     ];
@@ -3142,7 +3142,7 @@ export const CompanySubDetails = () => {
         location: 'Rockville, Maryland',
         avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80',
         title: '"They are very professional, respectful, competent, and approachable."',
-        quote: "The client was highly pleased with firevy.co's software development work. The team met all timeline goals and kept the cost within budget...",
+        quote: "The client was highly pleased with Firevy.Co's software development work. The team met all timeline goals and kept the cost within budget...",
         rating: '4.5',
         quality: '4.0',
         schedule: '4.5',
@@ -3154,8 +3154,8 @@ export const CompanySubDetails = () => {
         name: 'Derrick Surratt',
         location: 'Arkansas',
         avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80',
-        title: '"firevy.co\'s team communicated effectively..."',
-        quote: 'firevy.co successfully implemented all UX and design features on the app. The team has consistently delivered on schedule...',
+        title: '"Firevy.Co\'s team communicated effectively..."',
+        quote: 'Firevy.Co successfully implemented all UX and design features on the app. The team has consistently delivered on schedule...',
         rating: '5.0',
         quality: '5.0',
         schedule: '5.0',
@@ -3168,7 +3168,7 @@ export const CompanySubDetails = () => {
         location: 'Massachusetts',
         avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80',
         title: "\"They're able to listen to customer requests and attend...\"",
-        quote: "firevy.co's updates improved a product's UX per the end customer's requests. The team is personable, reaches their goals...",
+        quote: "Firevy.Co's updates improved a product's UX per the end customer's requests. The team is personable, reaches their goals...",
         rating: '5.0',
         quality: '5.0',
         schedule: '5.0',
@@ -3235,8 +3235,8 @@ export const CompanySubDetails = () => {
     };
 
     // Dynamic resolution
-    const heroTitle = dynamicSection?.title || dynamicSection?.hero?.title || 'What Makes firevy.co An Exciting Place To Work?';
-    const heroSubtitle = dynamicSection?.subtitle || dynamicSection?.hero?.subtitle || 'Working with firevy.co is much more than doing a set of tasks daily. You can think, innovate, and tell us your ideas to improve this organization! You have exciting new opportunities to follow your curiosity wherever it takes you and pursue a career with our company.';
+    const heroTitle = dynamicSection?.title || dynamicSection?.hero?.title || 'What Makes Firevy.Co An Exciting Place To Work?';
+    const heroSubtitle = dynamicSection?.subtitle || dynamicSection?.hero?.subtitle || 'Working with Firevy.Co is much more than doing a set of tasks daily. You can think, innovate, and tell us your ideas to improve this organization! You have exciting new opportunities to follow your curiosity wherever it takes you and pursue a career with our company.';
     const heroCtaText = dynamicSection?.ctaText || dynamicSection?.hero?.ctaText || 'Discuss Your Project';
     const heroCtaLink = dynamicSection?.ctaLink || dynamicSection?.hero?.ctaLink || '/contact';
     const heroImage = dynamicSection?.heroImage || dynamicSection?.hero?.heroImage || '/images/great-place-hero.svg';
@@ -3279,13 +3279,13 @@ export const CompanySubDetails = () => {
     return (
       <div className="bg-white min-h-screen text-slate-900 font-sans">
         <SEO
-          title={dynamicSection?.seo?.metaTitle || "Great Place To Work | Life & Culture at firevy.co"}
-          description={dynamicSection?.seo?.metaDescription || "What makes firevy.co an exciting place to work? Discover our culture, values, team benefits, and awards."}
+          title={dynamicSection?.seo?.metaTitle || "Great Place To Work | Life & Culture at Firevy.Co"}
+          description={dynamicSection?.seo?.metaDescription || "What makes Firevy.Co an exciting place to work? Discover our culture, values, team benefits, and awards."}
           keywords={dynamicSection?.seo?.metaKeywords || ""}
           canonical={dynamicSection?.seo?.canonical || `/company/${pageKey}`}
         />
 
-        {/* 1. HERO SECTION: "What Makes firevy.co An Exciting Place To Work?" (Exact Reference Screenshot Match) */}
+        {/* 1. HERO SECTION: "What Makes Firevy.Co An Exciting Place To Work?" (Exact Reference Screenshot Match) */}
         <section className="pt-32 pb-16 bg-[#F4F7FB] relative overflow-hidden text-left font-sans">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -3363,7 +3363,7 @@ export const CompanySubDetails = () => {
                 <div className="relative w-full rounded-[20px] overflow-hidden shadow-2xl border border-slate-200 group">
                   <img
                     src={getMediaUrl(howWeDidIt.image || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80')}
-                    alt="firevy.co Corporate Building"
+                    alt="Firevy.Co Corporate Building"
                     className="w-full h-[380px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
@@ -3376,28 +3376,28 @@ export const CompanySubDetails = () => {
                   {howWeDidIt.heading || 'How We Did It?'}
                 </h2>
                 <p className="text-[15px] font-[400] text-slate-600 leading-[1.85] font-sans section-content-desc">
-                  {howWeDidIt.description || 'It was the first time we tried to offer 360-degree IT services, so getting here took a lot of work. A few years ago, we worked hard for our first client before receiving our first lead. At that very moment, firevy.co chose to group its IT services under a single umbrella. We were fortunate to receive further leads over the following few months, and they were gracious enough to provide us with as much input as we could reasonably process. Additionally, several of our clients began requesting digital marketing solutions. We started a small team for digital marketing from there and have yet to look back. All due to our incredible partners, clients, and, of course, our extraordinarily bright personnel who put in a lot of effort for us.'}
+                  {howWeDidIt.description || 'It was the first time we tried to offer 360-degree IT services, so getting here took a lot of work. A few years ago, we worked hard for our first client before receiving our first lead. At that very moment, Firevy.Co chose to group its IT services under a single umbrella. We were fortunate to receive further leads over the following few months, and they were gracious enough to provide us with as much input as we could reasonably process. Additionally, several of our clients began requesting digital marketing solutions. We started a small team for digital marketing from there and have yet to look back. All due to our incredible partners, clients, and, of course, our extraordinarily bright personnel who put in a lot of effort for us.'}
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 4. "What Makes firevy.co Great Place To Work" VIDEO BANNER SECTION */}
+        {/* 4. "What Makes Firevy.Co Great Place To Work" VIDEO BANNER SECTION */}
         <section className="py-20 bg-[#006B8F] text-white text-center font-sans relative overflow-hidden">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <h2 className="text-[40px] font-[800] text-white tracking-tight leading-tight mb-2 font-sans section-content-title">
-              {videoBanner.heading || 'What Makes firevy.co Great Place To Work'}
+              {videoBanner.heading || 'What Makes Firevy.Co Great Place To Work'}
             </h2>
             <p className="text-[15px] font-[400] text-cyan-100 max-w-xl mx-auto mb-12 font-sans section-content-desc">
-              {videoBanner.subtitle || 'What Makes firevy.co Great Place to work'}
+              {videoBanner.subtitle || 'What Makes Firevy.Co Great Place to work'}
             </p>
 
             {/* Video Container Box with Cyan Border */}
             <div className="relative max-w-4xl mx-auto rounded-[30px] overflow-hidden border-4 border-cyan-300/80 shadow-2xl group cursor-pointer">
               <img
                 src={getMediaUrl(videoBanner.coverImage || 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80')}
-                alt="firevy.co Team Collaboration"
+                alt="Firevy.Co Team Collaboration"
                 className="w-full h-[400px] sm:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700 brightness-95"
               />
               <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors flex items-center justify-center">
@@ -3475,7 +3475,7 @@ export const CompanySubDetails = () => {
                   {heroes.heading || 'Meet Our Heroes'}
                 </h3>
                 <p className="text-[15px] font-[400] text-slate-600 leading-[1.85] font-sans section-content-desc">
-                  {heroes.description || "We reward them because our team's strength grows enormously from our accomplishments. When an individual or team exemplifies your company's values, mission, or objectives, we have a culture that values and rewards their effort, successes, and contributions. Employees that take part in initiatives like these realize the significance and value of their work. Their ability to accomplish their jobs better is thereby significantly increased. At firevy.co, increasing employee productivity and recruiting and keeping top talent is done in a variety of ways, from work incentives to more freedom. We recognize the significance of feeling valued in order to succeed as a business owner or entrepreneur."}
+                  {heroes.description || "We reward them because our team's strength grows enormously from our accomplishments. When an individual or team exemplifies your company's values, mission, or objectives, we have a culture that values and rewards their effort, successes, and contributions. Employees that take part in initiatives like these realize the significance and value of their work. Their ability to accomplish their jobs better is thereby significantly increased. At Firevy.Co, increasing employee productivity and recruiting and keeping top talent is done in a variety of ways, from work incentives to more freedom. We recognize the significance of feeling valued in order to succeed as a business owner or entrepreneur."}
                 </p>
               </div>
 
@@ -3486,7 +3486,7 @@ export const CompanySubDetails = () => {
                   <div className="rounded-[16px] overflow-hidden shadow-lg border border-slate-200 h-full min-h-[300px]">
                     <img
                       src={getMediaUrl(heroes.image1 || 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80')}
-                      alt="firevy.co Award Ceremony"
+                      alt="Firevy.Co Award Ceremony"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
                   </div>
@@ -3536,7 +3536,7 @@ export const CompanySubDetails = () => {
                 >
                   <img
                     src={getMediaUrl(photoUrl)}
-                    alt={`firevy.co Workplace ${pIdx + 1}`}
+                    alt={`Firevy.Co Workplace ${pIdx + 1}`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -3565,7 +3565,7 @@ export const CompanySubDetails = () => {
           </div>
         </section>
 
-        {/* 8. "firevy.co Culture" SECTION */}
+        {/* 8. "Firevy.Co Culture" SECTION */}
         <section className="py-24 text-white font-sans relative overflow-hidden">
           {/* Office Background Image with Blue Tint Overlay */}
           <div
@@ -3579,7 +3579,7 @@ export const CompanySubDetails = () => {
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8 relative z-10">
             <div className="text-center max-w-4xl mx-auto mb-16">
               <h2 className="text-[40px] font-[800] text-white tracking-tight leading-tight mb-3 font-sans section-content-title">
-                {culture.heading || 'firevy.co Culture'}
+                {culture.heading || 'Firevy.Co Culture'}
               </h2>
               <p className="text-[15px] font-[400] text-cyan-100 leading-relaxed max-w-2xl mx-auto font-sans section-content-desc">
                 {culture.subtitle || 'We embrace a culture that fosters an environment where workers are happy and produce better work...'}
@@ -3751,22 +3751,22 @@ export const CompanySubDetails = () => {
     return (
       <div className="bg-white min-h-screen text-slate-900 font-sans">
         <SEO
-          title="Empowering The Women At firevy.co | Life & Diversity"
-          description="At firevy.co, we firmly believe in equality of opportunity, shatter the glass ceiling, and celebrate women in leadership."
+          title="Empowering The Women At Firevy.Co | Life & Diversity"
+          description="At Firevy.Co, we firmly believe in equality of opportunity, shatter the glass ceiling, and celebrate women in leadership."
           canonical={`/company/${pageKey}`}
         />
 
-        {/* 1. HERO SECTION: "Empowering The Women At firevy.co" (Exact Reference Screenshot 0 Match) */}
+        {/* 1. HERO SECTION: "Empowering The Women At Firevy.Co" (Exact Reference Screenshot 0 Match) */}
         <section className="pt-32 pb-16 bg-[#F4F7FB] relative overflow-hidden text-left font-sans">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
               {/* Left Text */}
               <div className="lg:col-span-6 space-y-6">
                 <h1 className="text-[34px] font-[800] text-slate-900 tracking-tight leading-tight font-sans page-hero-title">
-                  {dynamicSection?.title || 'Empowering The Women At firevy.co'}
+                  {dynamicSection?.title || 'Empowering The Women At Firevy.Co'}
                 </h1>
                 <p className="text-[15px] text-slate-600 leading-relaxed font-[400] font-sans max-w-xl page-hero-desc">
-                  {dynamicSection?.subtitle || 'At firevy.co, we firmly believe in equality of opportunity and non-discrimination.'}
+                  {dynamicSection?.subtitle || 'At Firevy.Co, we firmly believe in equality of opportunity and non-discrimination.'}
                 </p>
                 <div className="pt-2">
                   <Link
@@ -3811,7 +3811,7 @@ export const CompanySubDetails = () => {
                   <div className="absolute bottom-2 left-24 w-[240px] h-[160px] rounded-[22px] overflow-hidden shadow-2xl border-4 border-white rotate-2 group hover:rotate-0 transition-transform duration-500 z-10">
                     <img
                       src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80"
-                      alt="firevy.co Women Celebration"
+                      alt="Firevy.Co Women Celebration"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -3888,21 +3888,21 @@ export const CompanySubDetails = () => {
                   Women In Leadership
                 </h2>
                 <p className="text-[15px] font-[400] text-slate-600 leading-[1.85] font-sans section-content-desc">
-                  At firevy.co, we put a lot of effort towards demonstrating to all women that they have a place in the technology sector and are greatly needed by fostering an atmosphere that values and appreciates their contributions to our team. We help women leaders by, among other things, influencing the next generation through educational initiatives. firevy.co gives its female talent the skills, resources, and attitude they need to lead in the company. Apart from that, we strive to create mentors and role models for our future female leaders.
+                  At Firevy.Co, we put a lot of effort towards demonstrating to all women that they have a place in the technology sector and are greatly needed by fostering an atmosphere that values and appreciates their contributions to our team. We help women leaders by, among other things, influencing the next generation through educational initiatives. Firevy.Co gives its female talent the skills, resources, and attitude they need to lead in the company. Apart from that, we strive to create mentors and role models for our future female leaders.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 4. "Achievements Of Women At firevy.co" SECTION (Exact Reference Screenshot 1 Match) */}
+        {/* 4. "Achievements Of Women At Firevy.Co" SECTION (Exact Reference Screenshot 1 Match) */}
         <section className="py-20 bg-[#F4F7FB] text-left font-sans">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
               {/* Left Column Text */}
               <div className="lg:col-span-6 space-y-6">
                 <h2 className="text-[40px] font-[800] text-slate-900 tracking-tight leading-tight font-sans section-content-title">
-                  Achievements Of Women At firevy.co
+                  Achievements Of Women At Firevy.Co
                 </h2>
                 <p className="text-[15px] font-[400] text-slate-600 leading-[1.85] font-sans section-content-desc">
                   Affirmative action and statistics alone do not define gender diversity. It is about enabling every woman to shatter the symbolic glass ceiling. Not just a small number of women have succeeded in shattering the glass ceiling. Women leaders contribute talents and views that result in significant structural and cultural changes as we continue to progress in a state of flux. Additionally, we think that having women on management teams greatly enhances the organization's social drive.
@@ -3956,7 +3956,7 @@ export const CompanySubDetails = () => {
                     “
                   </div>
                   <p className="text-[14px] font-[400] text-cyan-50 leading-[1.7] font-sans relative z-10">
-                    Balancing office work, household responsibilities, and personal growth isn’t easy, but it’s part of my everyday life. With time management, self-discipline, and support, I continue to grow in my career while staying connected to who I am beyond the workplace. What makes this journey smoother is the support and encouragement I receive from firevy.co. A positive work culture, opportunities for learning, and the flexibility to manage personal commitments have played a key role in shaping my professional growth. I'm proud to be part of a workplace that values women not just as employees, but as individuals with ambition and potential.
+                    Balancing office work, household responsibilities, and personal growth isn’t easy, but it’s part of my everyday life. With time management, self-discipline, and support, I continue to grow in my career while staying connected to who I am beyond the workplace. What makes this journey smoother is the support and encouragement I receive from Firevy.Co. A positive work culture, opportunities for learning, and the flexibility to manage personal commitments have played a key role in shaping my professional growth. I'm proud to be part of a workplace that values women not just as employees, but as individuals with ambition and potential.
                   </p>
                   <div>
                     <h3 className="text-[18px] font-[800] text-white font-sans leading-tight">Foram Gami</h3>
@@ -3974,7 +3974,7 @@ export const CompanySubDetails = () => {
                     “
                   </div>
                   <p className="text-[14px] font-[400] text-slate-700 leading-[1.7] font-sans relative z-10">
-                    "I'm a woman, a wife, and a passionate HR professional. What began as a trainee role has evolved into a journey of growth, resilience, and leadership, now standing proud as a Senior HR. Throughout this journey, firevy.co has played a pivotal role in nurturing my professional development by providing an environment where learning is continuous, contributions are valued, and potential is recognized. To me, women’s empowerment is a quiet fire, born of courage, fuelled by unity, and lighting the way forward.”
+                    "I'm a woman, a wife, and a passionate HR professional. What began as a trainee role has evolved into a journey of growth, resilience, and leadership, now standing proud as a Senior HR. Throughout this journey, Firevy.Co has played a pivotal role in nurturing my professional development by providing an environment where learning is continuous, contributions are valued, and potential is recognized. To me, women’s empowerment is a quiet fire, born of courage, fuelled by unity, and lighting the way forward.”
                   </p>
                   <div>
                     <h3 className="text-[18px] font-[800] text-[#006B8F] font-sans leading-tight">Rinku Shekhawat</h3>
@@ -4006,7 +4006,7 @@ export const CompanySubDetails = () => {
                     “
                   </div>
                   <p className="text-[14px] font-[400] text-cyan-50 leading-[1.7] font-sans relative z-10">
-                    "I'm a proud wife and a dedicated professional. Relocating independently from Madhya Pradesh to Gujarat was not just a change in geography - it was a bold step toward self-growth and new possibilities. In this new chapter at firevy.co, I've learned to lead with clarity, manage with heart, and strike a powerful balance between my professional ambitions and personal responsibilities. For me, empowerment is not just about rising - it's about rising with resilience, purpose, and grace."
+                    "I'm a proud wife and a dedicated professional. Relocating independently from Madhya Pradesh to Gujarat was not just a change in geography - it was a bold step toward self-growth and new possibilities. In this new chapter at Firevy.Co, I've learned to lead with clarity, manage with heart, and strike a powerful balance between my professional ambitions and personal responsibilities. For me, empowerment is not just about rising - it's about rising with resilience, purpose, and grace."
                   </p>
                   <div>
                     <h3 className="text-[18px] font-[800] text-white font-sans leading-tight">Akanksha Rai</h3>
@@ -4024,7 +4024,7 @@ export const CompanySubDetails = () => {
                     “
                   </div>
                   <p className="text-[14px] font-[400] text-slate-700 leading-[1.7] font-sans relative z-10">
-                    "I’m proud to be part of a company like firevy.co, where women are truly valued, respected, and empowered. As an unmarried woman, I’ve often encountered assumptions about what I should be doing next in life. But at firevy.co, I’ve never been made to feel “less than” or out of place. Here, I’m appreciated for my work, encouraged to grow, and trusted with responsibilities that challenge and inspire me. It’s refreshing to work in an environment where merit speaks louder than stereotypes."
+                    "I’m proud to be part of a company like Firevy.Co, where women are truly valued, respected, and empowered. As an unmarried woman, I’ve often encountered assumptions about what I should be doing next in life. But at Firevy.Co, I’ve never been made to feel “less than” or out of place. Here, I’m appreciated for my work, encouraged to grow, and trusted with responsibilities that challenge and inspire me. It’s refreshing to work in an environment where merit speaks louder than stereotypes."
                   </p>
                   <div>
                     <h3 className="text-[18px] font-[800] text-[#006B8F] font-sans leading-tight">Purvi Trivedi</h3>
@@ -4043,12 +4043,12 @@ export const CompanySubDetails = () => {
           </div>
         </section>
 
-        {/* 6. "How Does firevy.co Build A Female-Friendly Work Environment?" SECTION (Exact Reference Screenshot 0 Match) */}
+        {/* 6. "How Does Firevy.Co Build A Female-Friendly Work Environment?" SECTION (Exact Reference Screenshot 0 Match) */}
         <section className="py-20 bg-[#F4F7FB] text-slate-900 font-sans text-left border-t border-slate-200">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <div className="text-center max-w-4xl mx-auto mb-16">
               <h2 className="text-[40px] font-[800] text-slate-900 tracking-tight leading-tight mb-3 font-sans section-content-title">
-                How Does firevy.co Build A Female-Friendly Work Environment?
+                How Does Firevy.Co Build A Female-Friendly Work Environment?
               </h2>
               <p className="text-[15px] font-[400] text-slate-600 leading-relaxed max-w-3xl mx-auto font-sans section-content-desc">
                 From hiring to entry level to leadership, we ensure we have policies and processes to remove gender bias underlying any circumstances
@@ -4287,7 +4287,7 @@ export const CompanySubDetails = () => {
                         "The team is very professional and friendly."
                       </h4>
                       <p className="text-[11.5px] font-[400] text-slate-600 leading-relaxed font-sans line-clamp-3">
-                        Thanks to firevy.co, we have launched the app and my customers are happy with the tool. currently, we have...
+                        Thanks to Firevy.Co, we have launched the app and my customers are happy with the tool. currently, we have...
                       </p>
                     </div>
                     <div className="flex items-center space-x-2.5 pt-1">
@@ -4319,10 +4319,10 @@ export const CompanySubDetails = () => {
                         <span>Clut</span><span className="text-red-500">c</span><span>h</span>
                       </div>
                       <h4 className="text-[12.5px] font-[700] text-slate-900 leading-snug mb-1 font-sans">
-                        "The time and effort the firevy.co team put into..."
+                        "The time and effort the Firevy.Co team put into..."
                       </h4>
                       <p className="text-[11.5px] font-[400] text-slate-600 leading-relaxed font-sans line-clamp-3">
-                        firevy.co uploaded the app successfully to the app stores. The team was highly responsive, delivered on time, and...
+                        Firevy.Co uploaded the app successfully to the app stores. The team was highly responsive, delivered on time, and...
                       </p>
                     </div>
                     <div className="flex items-center space-x-2.5 pt-1">
@@ -4357,7 +4357,7 @@ export const CompanySubDetails = () => {
                         "The technical support team was very responsive..."
                       </h4>
                       <p className="text-[11.5px] font-[400] text-slate-600 leading-relaxed font-sans line-clamp-3">
-                        firevy.co delivered the software in a timely manner. The team was responsive to requests and feedback...
+                        Firevy.Co delivered the software in a timely manner. The team was responsive to requests and feedback...
                       </p>
                     </div>
                     <div className="flex items-center space-x-2.5 pt-1">
@@ -4431,7 +4431,7 @@ export const CompanySubDetails = () => {
 
     // 1. Featured Spotlight Article (Hero Left)
     const featuredBlog = blogSectionContent.heroFeatured || dynamicSection?.heroFeatured || {
-      brandText: 'firevy.co',
+      brandText: 'Firevy.Co',
       badge: 'FEATURED ARTICLE',
       tag: '</> AI TOOLS',
       title: "AI in Mobile App Development: Tools That Save Time and Money",
@@ -4485,7 +4485,7 @@ export const CompanySubDetails = () => {
         category: "Artificial Intelligence Development",
         date: "August 31, 2026",
         readTime: "5 min read",
-        brandText: "firevy.co",
+        brandText: "Firevy.Co",
         badge: "INSIGHT",
         tag: "</> AI AGENTS",
         subtext: "Next-Gen Engineering Insights",
@@ -4500,7 +4500,7 @@ export const CompanySubDetails = () => {
         category: "Artificial Intelligence Development",
         date: "August 27, 2026",
         readTime: "5 min read",
-        brandText: "firevy.co",
+        brandText: "Firevy.Co",
         badge: "INSIGHT",
         tag: "</> COMPOSABLE AI",
         subtext: "Next-Gen Engineering Insights",
@@ -4515,7 +4515,7 @@ export const CompanySubDetails = () => {
         category: "Software Development",
         date: "August 25, 2026",
         readTime: "5 min read",
-        brandText: "firevy.co",
+        brandText: "Firevy.Co",
         badge: "INSIGHT",
         tag: "</> LEADERSHIP",
         subtext: "Next-Gen Engineering Insights",
@@ -4530,7 +4530,7 @@ export const CompanySubDetails = () => {
         category: "Artificial Intelligence Development",
         date: "August 21, 2026",
         readTime: "5 min read",
-        brandText: "firevy.co",
+        brandText: "Firevy.Co",
         badge: "INSIGHT",
         tag: "</> AUTOMATION",
         subtext: "Next-Gen Engineering Insights",
@@ -4545,7 +4545,7 @@ export const CompanySubDetails = () => {
         category: "Web Development",
         date: "August 19, 2026",
         readTime: "5 min read",
-        brandText: "firevy.co",
+        brandText: "Firevy.Co",
         badge: "INSIGHT",
         tag: "</> WEB EVOLUTION",
         subtext: "Next-Gen Engineering Insights",
@@ -4560,7 +4560,7 @@ export const CompanySubDetails = () => {
         category: "Software Development",
         date: "August 14, 2026",
         readTime: "5 min read",
-        brandText: "firevy.co",
+        brandText: "Firevy.Co",
         badge: "INSIGHT",
         tag: "</> ARCHITECTURE",
         subtext: "Next-Gen Engineering Insights",
@@ -4575,7 +4575,7 @@ export const CompanySubDetails = () => {
         category: "Artificial Intelligence Development",
         date: "August 5, 2026",
         readTime: "5 min read",
-        brandText: "firevy.co",
+        brandText: "Firevy.Co",
         badge: "INSIGHT",
         tag: "</> BI & ANALYTICS",
         subtext: "Next-Gen Engineering Insights",
@@ -4590,7 +4590,7 @@ export const CompanySubDetails = () => {
         category: "Artificial Intelligence Development",
         date: "July 31, 2026",
         readTime: "5 min read",
-        brandText: "firevy.co",
+        brandText: "Firevy.Co",
         badge: "INSIGHT",
         tag: "</> AI STRATEGY",
         subtext: "Next-Gen Engineering Insights",
@@ -4612,7 +4612,7 @@ export const CompanySubDetails = () => {
           readTime: b.readTime || '5 min read',
           excerpt: b.shortDescription || b.excerpt || '',
           content: b.content || '',
-          brandText: b.brandText || 'firevy.co',
+          brandText: b.brandText || 'Firevy.Co',
           badge: b.badge || 'INSIGHT',
           tag: b.tag || (b.tags?.[0] ? `</> ${b.tags[0]}` : '</> TECH'),
           subtext: b.subtext || 'Next-Gen Engineering Insights',
@@ -4680,8 +4680,8 @@ export const CompanySubDetails = () => {
     return (
       <div className="bg-white min-h-screen text-slate-900 font-sans">
         <SEO
-          title={dynamicSection?.seo?.metaTitle || "Tech Insights & Blog | firevy.co"}
-          description={dynamicSection?.seo?.metaDescription || "Read top tech articles, mobile app development guides, AI trends, and software strategy by firevy.co experts."}
+          title={dynamicSection?.seo?.metaTitle || "Tech Insights & Blog | Firevy.Co"}
+          description={dynamicSection?.seo?.metaDescription || "Read top tech articles, mobile app development guides, AI trends, and software strategy by Firevy.Co experts."}
           canonical="/company/blog"
         />
 
@@ -4703,7 +4703,7 @@ export const CompanySubDetails = () => {
                   )}
                   <div className="flex justify-between items-center z-10">
                     <span className="text-[20px] font-[900] tracking-tight text-cyan-300 font-sans">
-                      {featuredBlog.brandText || 'firevy.co'}
+                      {featuredBlog.brandText || 'Firevy.Co'}
                     </span>
                     <span className="bg-cyan-500/20 text-cyan-200 border border-cyan-400/30 text-[11px] font-[800] px-3 py-1 rounded-full uppercase tracking-wider">
                       {featuredBlog.badge || 'FEATURED ARTICLE'}
@@ -4789,7 +4789,7 @@ export const CompanySubDetails = () => {
                         )}
                         <div className="flex justify-between items-center z-10">
                           <span className="text-[10.5px] font-[900] text-cyan-300 uppercase tracking-wider">
-                            {card.brandText || 'firevy.co'}
+                            {card.brandText || 'Firevy.Co'}
                           </span>
                           <span className="text-[9px] font-[800] bg-cyan-400/20 text-cyan-200 border border-cyan-400/30 px-2 py-0.5 rounded-full uppercase">
                             {card.badge || 'FEATURED ARTICLE'}
@@ -4877,7 +4877,7 @@ export const CompanySubDetails = () => {
                             )}
                             <div className="flex justify-between items-center z-10">
                               <span className="text-[13px] font-[900] tracking-wider text-cyan-300">
-                                {post.brandText || 'firevy.co'}
+                                {post.brandText || 'Firevy.Co'}
                               </span>
                               <span className="text-[9.5px] font-[800] bg-cyan-400/20 text-cyan-200 border border-cyan-400/30 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                                 {post.badge || 'INSIGHT'}
@@ -5140,7 +5140,7 @@ export const CompanySubDetails = () => {
   return (
     <div className="bg-white min-h-screen text-slate-900 font-sans">
       <SEO
-        title={`${pageData.title} | firevy.co`}
+        title={`${pageData.title} | Firevy.Co`}
         description={pageData.subtitle}
         canonical={`/company/${pageKey}`}
       />
@@ -5225,7 +5225,7 @@ export const CompanySubDetails = () => {
 
             <div className="lg:col-span-4 space-y-6">
               <div className="p-8 rounded-[16px] bg-[#006B8F] text-white shadow-xl space-y-5 text-center">
-                <h4 className="text-2xl font-[800]">Ready to Partner With firevy.co?</h4>
+                <h4 className="text-2xl font-[800]">Ready to Partner With Firevy.Co?</h4>
                 <p className="text-sm text-blue-100 leading-relaxed">
                   Let us help you build scalable digital experiences with our senior engineering squads.
                 </p>

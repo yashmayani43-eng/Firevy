@@ -91,7 +91,7 @@ export const HireLlmEngineersService = () => {
       a: 'Yes! We seamlessly integrate LLM APIs and microservices into Web, iOS, Android, Salesforce, HubSpot, and custom enterprise ERPs via REST and gRPC APIs.'
     },
     {
-      q: '8. What is the cost to hire a dedicated LLM engineer from Firevy.co?',
+      q: '8. What is the cost to hire a dedicated LLM engineer from Firevy.Co?',
       a: 'Our dedicated LLM engineer pricing starts at $21/hour. We also offer flexible monthly ($2,850/mo) and quarterly engagement models with zero upfront recruitment costs.'
     },
     {
@@ -104,7 +104,7 @@ export const HireLlmEngineersService = () => {
     },
     {
       q: '11. Which company offers top LLM developers for hire in USA & India?',
-      a: 'Firevy.co is a top-rated AI development company in India and USA with 23+ years of IT experience, 320+ 5-star Clutch reviews, and certified AI/LLM engineers.'
+      a: 'Firevy.Co is a top-rated AI development company in India and USA with 23+ years of IT experience, 320+ 5-star Clutch reviews, and certified AI/LLM engineers.'
     }
   ];
 
@@ -112,7 +112,7 @@ export const HireLlmEngineersService = () => {
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#006095] selection:text-white">
       <SEO
         title="Hire LLM Engineers for AI Development | Large Language Model Experts"
-        description="Hire dedicated LLM engineers from Firevy.co. Expert Large Language Model, GPT-4, LLaMA, Claude, RAG, and fine-tuning AI developers."
+        description="Hire dedicated LLM engineers from Firevy.Co. Expert Large Language Model, GPT-4, LLaMA, Claude, RAG, and fine-tuning AI developers."
         keywords="Hire LLM Engineers, Hire LLM Developers, Hire Large Language Model Engineers, RAG Developers, Fine Tuning AI Engineers"
       />
 
@@ -129,7 +129,7 @@ export const HireLlmEngineersService = () => {
                   Hire LLM Engineers for AI Development
                 </h1>
                 <p className="text-sm sm:text-[15px] lg:text-[16px] text-slate-600 font-normal leading-[1.7] max-w-3xl">
-                  Engage Firevy.co's LLM Engineers to integrate Large Language Models (LLMs) into your products, processes, and services. From developing conversational AI, document processing automation, or internal GPT-like model customization, our engineers provide scalable, enterprise-level solutions. We are experts in open-source model fine-tuning and LLM deployment for real-world business use cases. Our LLM engineers are hands-on with GPT-4, LLaMA, Claude, Mistral, and other transformer-based models. From retrieval-augmented generation (RAG) to prompt engineering, we help you go to market faster, smarter AI apps.
+                  Engage Firevy.Co's LLM Engineers to integrate Large Language Models (LLMs) into your products, processes, and services. From developing conversational AI, document processing automation, or internal GPT-like model customization, our engineers provide scalable, enterprise-level solutions. We are experts in open-source model fine-tuning and LLM deployment for real-world business use cases. Our LLM engineers are hands-on with GPT-4, LLaMA, Claude, Mistral, and other transformer-based models. From retrieval-augmented generation (RAG) to prompt engineering, we help you go to market faster, smarter AI apps.
                 </p>
               </div>
 
@@ -213,7 +213,7 @@ export const HireLlmEngineersService = () => {
                 Hire LLM Engineers At Competitive Rates
               </h2>
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                Hire LLM Engineers at Competitive Rates to build custom Large Language Models, RAG vector pipelines, and domain-specific AI agents. With <strong>Hire dedicated AI engineering team</strong> services from Firevy.co, you can deploy enterprise-grade AI assistants that are fully configurable, secure, and seamlessly integrated into your cloud environment.
+                Hire LLM Engineers at Competitive Rates to build custom Large Language Models, RAG vector pipelines, and domain-specific AI agents. With <strong>Hire dedicated AI engineering team</strong> services from Firevy.Co, you can deploy enterprise-grade AI assistants that are fully configurable, secure, and seamlessly integrated into your cloud environment.
               </p>
             </div>
           </div>
@@ -231,7 +231,7 @@ export const HireLlmEngineersService = () => {
                 Our Flexible Hiring Models: Find the Perfect Fit For Your Project
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                Hire LLM Engineers from Firevy.co Starts from,
+                Hire LLM Engineers from Firevy.Co Starts from,
               </p>
             </div>
 
@@ -433,7 +433,7 @@ export const HireLlmEngineersService = () => {
               </h2>
               <div className="space-y-4 text-sm sm:text-[15px] lg:text-[16px] text-slate-600 font-normal leading-[1.7]">
                 <p>
-                  Firevy.co is a reputable AI development organization assisting businesses in the USA, UK, Canada, UAE, Australia, and India. Our LLM Prompt Engineer become part of your team—taking care of everything from model selection and training to deployment and scaling. We have flexible hiring models available so you can scale engineering capability on demand with full transparency, sprint planning, and quantifiable outcomes.
+                  Firevy.Co is a reputable AI development organization assisting businesses in the USA, UK, Canada, UAE, Australia, and India. Our LLM Prompt Engineer become part of your team—taking care of everything from model selection and training to deployment and scaling. We have flexible hiring models available so you can scale engineering capability on demand with full transparency, sprint planning, and quantifiable outcomes.
                 </p>
               </div>
             </div>
@@ -478,7 +478,7 @@ export const HireLlmEngineersService = () => {
               {/* Right Content Column */}
               <div className="lg:col-span-7 space-y-6 text-left">
                 <p className="text-sm sm:text-[15px] lg:text-[16px] text-slate-600 font-normal leading-[1.7]">
-                  An LLM Engineer develops, modifies, and optimizes large language models for particular functions such as summarization, Q&A, search, and generating content. They handle model architecture, prompt creation, dataset organization, performance optimization, and secure deployment. Hire LLM Engineer for AI Development from Firevy.co to integrate cutting-edge AI into your product—be it through comprehensive AI development, smart automation, or bespoke in-house LLMs designed for your business
+                  An LLM Engineer develops, modifies, and optimizes large language models for particular functions such as summarization, Q&A, search, and generating content. They handle model architecture, prompt creation, dataset organization, performance optimization, and secure deployment. Hire LLM Engineer for AI Development from Firevy.Co to integrate cutting-edge AI into your product—be it through comprehensive AI development, smart automation, or bespoke in-house LLMs designed for your business
                 </p>
 
                 <div>
@@ -517,7 +517,7 @@ export const HireLlmEngineersService = () => {
           <div className="space-y-8 max-w-6xl mx-auto">
             <div className="text-center space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
             </div>
 
@@ -610,12 +610,12 @@ export const HireLlmEngineersService = () => {
       {/* ============================================================
           SECTION 9: ABOUT US STATS BANNER
           ============================================================ */}
-      <AboutUsStats companyName="Firevy.co" />
+      <AboutUsStats companyName="Firevy.Co" />
 
       {/* ============================================================
           SECTION 10: SECTORS THRIVING SECTION
           ============================================================ */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy.co's Bespoke LLM Engineers" />
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy.Co's Bespoke LLM Engineers" />
 
       {/* ============================================================
           SECTION 10B: EMPLOY THE ADVANCED PROFICIENCY SECTION
@@ -625,10 +625,10 @@ export const HireLlmEngineersService = () => {
           <div className="space-y-12 max-w-6xl mx-auto">
             <div className="text-center space-y-3 max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team
+                Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+                At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
               </p>
             </div>
 
@@ -687,7 +687,7 @@ export const HireLlmEngineersService = () => {
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
                   }`}
                 >
-                  Firevy.co
+                  Firevy.Co
                 </button>
                 <button
                   onClick={() => setResponsibilityTab('client')}

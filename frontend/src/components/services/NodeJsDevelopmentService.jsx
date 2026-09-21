@@ -273,7 +273,7 @@ export const NodeJsDevelopmentService = () => {
       {/* =========================================================================
           OUR PREMIUM SERVICES (EXACT 1:1 MATCH)
           ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* =========================================================================
           MEET SAPPHIRE'S EXCEPTIONAL TEAM OF SEASONED EXPERTS (EXACT 1:1 MATCH)

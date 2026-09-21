@@ -88,10 +88,10 @@ export const ProductFinderAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Product Finder App Development Services | Firevy.co"
+        title="Product Finder App Development Services | Firevy.Co"
         description="Build custom Product Finder Apps & WooCommerce Product Search solutions. Enhance eCommerce customer buying experience with AI-powered search, guided quizzes & live inventory matching."
         keywords="Product Finder App Development, Product Search App, eCommerce Product Finder, WooCommerce Product Finder, Custom Product Recommender App, Smart Product Discovery"
-        url="https://firevy.co/services/product-finder-app-development"
+        url="https://Firevy.co/services/product-finder-app-development"
       />
 
       {/* =========================================================================

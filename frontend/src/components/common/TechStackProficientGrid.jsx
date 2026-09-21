@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Container from './Container';
 
 export const TechStackProficientGrid = ({
-  title = "Technology Stack That Firevy.co Dedicated Developers Use Proficiently",
+  title = "Technology Stack That Firevy.Co Dedicated Developers Use Proficiently",
   rows
 }) => {
   const defaultStackRows = [

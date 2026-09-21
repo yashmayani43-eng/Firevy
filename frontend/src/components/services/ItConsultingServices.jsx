@@ -484,37 +484,37 @@ export const ItConsultingServices = () => {
   const comparisonRows = [
     {
       feature: 'Senior Principal Architect Direct Access',
-      firevy: true,
+      Firevy: true,
       traditionalAgency: 'Rarely (Junior devs assigned)',
       inHouse: 'Very costly to recruit & retain'
     },
     {
       feature: 'Strategy + Hands-on Engineering Execution',
-      firevy: true,
+      Firevy: true,
       traditionalAgency: 'Advisory only (No execution)',
       inHouse: 'Limited by daily fire-fighting'
     },
     {
       feature: '100% Vendor-Agnostic Recommendations',
-      firevy: true,
+      Firevy: true,
       traditionalAgency: 'Biased to vendor commission',
       inHouse: 'Constrained by familiar tools'
     },
     {
       feature: 'Transparent Fixed & Agile Pricing',
-      firevy: true,
+      Firevy: true,
       traditionalAgency: 'Expensive hourly billing overruns',
       inHouse: 'Fixed high payroll & overhead'
     },
     {
       feature: 'Rapid 48-Hour Engagement Onboarding',
-      firevy: true,
+      Firevy: true,
       traditionalAgency: 'Weeks of bureaucratic delays',
       inHouse: '3-6 months hiring cycle'
     },
     {
       feature: 'Post-Consulting SLAs & FinOps Governance',
-      firevy: true,
+      Firevy: true,
       traditionalAgency: 'No post-project support',
       inHouse: 'Difficult with small teams'
     }
@@ -736,8 +736,8 @@ export const ItConsultingServices = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="IT Consulting Services | Strategic Technology Advisory | Firevy.co"
-        description="Transform your business with expert IT consulting services from Firevy.co. Enterprise architecture, cloud migration, cybersecurity, DevOps, and digital transformation roadmaps."
+        title="IT Consulting Services | Strategic Technology Advisory | Firevy.Co"
+        description="Transform your business with expert IT consulting services from Firevy.Co. Enterprise architecture, cloud migration, cybersecurity, DevOps, and digital transformation roadmaps."
         keywords="IT consulting services, technology consulting, cloud advisory, enterprise architecture, digital transformation, IT roadmap, cybersecurity audit, DevOps consulting"
       />
 

@@ -510,15 +510,15 @@ export const EventsActivitiesForm = ({
   // 2. Hero State
   const hero = {
     title: formData.hero?.title || rawContent.heroHeading || 'Events & Celebrations',
-    subtitle: formData.hero?.subtitle || rawContent.heroSubtitle || 'At firevy.co, we believe that celebrating success is just as important as achieving it. From casual dress-down days and monthly celebrations enjoy the celebration.',
+    subtitle: formData.hero?.subtitle || rawContent.heroSubtitle || 'At Firevy.Co, we believe that celebrating success is just as important as achieving it. From casual dress-down days and monthly celebrations enjoy the celebration.',
     ctaText: formData.hero?.ctaText || rawContent.heroButtonText || "Let's Talk",
     ctaLink: formData.hero?.ctaLink || rawContent.heroButtonLink || '/contact',
     image: formData.hero?.image ?? rawContent.heroImage ?? '/images/events-hero.svg'
   };
 
-  // 3. Life @firevy.co State
-  const lifeHeading = rawContent.lifeHeading || 'Life @firevy.co';
-  const lifeDescription = rawContent.lifeDescription || 'At firevy.co, we constantly try new ways to make our work environment, enjoyable and inspiring. From company outings to birthdays, we just need a reason to celebrate. Have a glimpse at life and culture @firevy.co!';
+  // 3. Life @Firevy.Co State
+  const lifeHeading = rawContent.lifeHeading || 'Life @Firevy.Co';
+  const lifeDescription = rawContent.lifeDescription || 'At Firevy.Co, we constantly try new ways to make our work environment, enjoyable and inspiring. From company outings to birthdays, we just need a reason to celebrate. Have a glimpse at life and culture @Firevy.Co!';
 
   // 4. Event Gallery Data
   const eventGalleryData = (rawContent.eventGalleryData && typeof rawContent.eventGalleryData === 'object' && Object.keys(rawContent.eventGalleryData).length > 0)
@@ -679,7 +679,7 @@ export const EventsActivitiesForm = ({
                 updateRootSection('hero', 'subtitle', e.target.value);
                 updateContentField('heroSubtitle', e.target.value);
               }}
-              placeholder="At firevy.co, we believe that celebrating success is just as important as achieving it..."
+              placeholder="At Firevy.Co, we believe that celebrating success is just as important as achieving it..."
             />
           </AdminFormField>
 
@@ -799,7 +799,7 @@ export const EventsActivitiesForm = ({
       {/* 2. LIFE @FIREVY.CO & DYNAMIC LIVE GALLERY GRID                             */}
       {/* ========================================================================= */}
       <AdminFormSection
-        title="2. Life @firevy.co & Interactive Photo Gallery Grid"
+        title="2. Life @Firevy.Co & Interactive Photo Gallery Grid"
         subtitle="Manage the gallery headline, description, year selector tabs, and photos directly in the live grid."
         badge="Live Gallery Editor"
       >
@@ -810,7 +810,7 @@ export const EventsActivitiesForm = ({
               className="form-control"
               value={lifeHeading}
               onChange={(e) => updateContentField('lifeHeading', e.target.value)}
-              placeholder="e.g. Life @firevy.co"
+              placeholder="e.g. Life @Firevy.Co"
               style={{ fontWeight: 700 }}
             />
           </AdminFormField>
@@ -821,7 +821,7 @@ export const EventsActivitiesForm = ({
               rows={3}
               value={lifeDescription}
               onChange={(e) => updateContentField('lifeDescription', e.target.value)}
-              placeholder="At firevy.co, we constantly try new ways to make our work environment, enjoyable and inspiring..."
+              placeholder="At Firevy.Co, we constantly try new ways to make our work environment, enjoyable and inspiring..."
             />
           </AdminFormField>
         </AdminFormGrid>

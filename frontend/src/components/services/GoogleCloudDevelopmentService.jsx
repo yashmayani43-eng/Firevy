@@ -293,7 +293,7 @@ export const GoogleCloudDevelopmentService = () => {
     }
   ];
 
-  // 9 Complete FAQs (Tailored to Google Cloud Platform & Firevy.co)
+  // 9 Complete FAQs (Tailored to Google Cloud Platform & Firevy.Co)
   const googleCloudFaqs = [
     {
       question: '1. What are Google Cloud Development Services, and why are they essential?',
@@ -320,15 +320,15 @@ export const GoogleCloudDevelopmentService = () => {
       answer: 'BigQuery is a serverless, multi-cloud enterprise data warehouse that executes complex SQL queries over petabytes of data in seconds, offering built-in machine learning (BigQuery ML) and direct integration with business intelligence dashboards.'
     },
     {
-      question: '7. Why should businesses choose Firevy.co for Google Cloud development services?',
-      answer: 'With certified Google Cloud Professional Architects and 500+ successful cloud deliveries, Firevy.co is trusted by global companies to modernize workloads, prevent downtime, and unlock unmatched performance.'
+      question: '7. Why should businesses choose Firevy.Co for Google Cloud development services?',
+      answer: 'With certified Google Cloud Professional Architects and 500+ successful cloud deliveries, Firevy.Co is trusted by global companies to modernize workloads, prevent downtime, and unlock unmatched performance.'
     },
     {
-      question: '8. What types of Google Cloud services does Firevy.co offer?',
+      question: '8. What types of Google Cloud services does Firevy.Co offer?',
       answer: 'We offer end-to-end GCP services including GKE Kubernetes deployment, serverless Cloud Run development, BigQuery analytics pipelines, Vertex AI integration, Cloud Spanner database architecture, and 24/7 SRE managed operations.'
     },
     {
-      question: '9. Does Firevy.co offer continuous Google Cloud cost optimization (FinOps)?',
+      question: '9. Does Firevy.Co offer continuous Google Cloud cost optimization (FinOps)?',
       answer: 'Yes, we implement proactive GCP FinOps practices, including committed use discounts (CUDs), instance rightsizing, preemptible VM scheduling, and automated Cloud Billing alerts to lower ongoing cloud expenses by up to 50%.'
     }
   ];
@@ -337,10 +337,10 @@ export const GoogleCloudDevelopmentService = () => {
     <div className="min-h-screen bg-white text-slate-800 selection:bg-[#005F96] selection:text-white">
       {/* SEO Metadata */}
       <SEO
-        title="Google Cloud Development Services | GCP Consulting & Architecture | Firevy.co"
+        title="Google Cloud Development Services | GCP Consulting & Architecture | Firevy.Co"
         description="Accelerate your enterprise digital transformation with Firevy's Google Cloud Development Services. GKE Kubernetes, BigQuery analytics, Cloud Run serverless, and Vertex AI solutions."
-        keywords="Google Cloud Development Services, GCP Consulting, Google Cloud Platform, Google Kubernetes Engine GKE, BigQuery Data Warehouse, Cloud Run, Vertex AI, Firevy.co"
-        url="https://firevy.co/services/google-cloud-development"
+        keywords="Google Cloud Development Services, GCP Consulting, Google Cloud Platform, Google Kubernetes Engine GKE, BigQuery Data Warehouse, Cloud Run, Vertex AI, Firevy.Co"
+        url="https://Firevy.co/services/google-cloud-development"
       />
 
       {/* ========================================================================= */}
@@ -574,7 +574,7 @@ export const GoogleCloudDevelopmentService = () => {
                 Cutting-Edge Technologies We Use For Development
               </h2>
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] max-w-2xl font-normal leading-relaxed">
-                As a leading Google Cloud development organization, Firevy.co leverages state-of-the-art GCP services and DevOps tooling to craft world-class cloud infrastructure.
+                As a leading Google Cloud development organization, Firevy.Co leverages state-of-the-art GCP services and DevOps tooling to craft world-class cloud infrastructure.
               </p>
             </div>
 
@@ -626,14 +626,14 @@ export const GoogleCloudDevelopmentService = () => {
       {/* ========================================================================= */}
       {/* 8. OUR PREMIUM SERVICES (MATCHING REFERENCE SCREENSHOT)                   */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 9. SUCCESS STORIES (MATCHING REFERENCE SCREENSHOT)                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
         cards={googleCloudSuccessCards}
-        subtitle="Know Firevy.co journey from concept to cloud success. Explore how we've deployed resilient Google Cloud architectures and achieved remarkable results for our enterprise clients."
+        subtitle="Know Firevy.Co journey from concept to cloud success. Explore how we've deployed resilient Google Cloud architectures and achieved remarkable results for our enterprise clients."
       />
 
       {/* ========================================================================= */}
@@ -779,7 +779,7 @@ export const GoogleCloudDevelopmentService = () => {
         title="Frequently Asked Questions"
         subtitle="We Listen To Queries And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mentioned Below."
         faqs={googleCloudFaqs}
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}
@@ -798,7 +798,7 @@ export const GoogleCloudDevelopmentService = () => {
       <div id="contact">
         <IWatchChallengeCtaBanner
           title="Have Google Cloud Development Challenge To Address ?"
-          subtitle="Get access to top Google Cloud Certified Architects & SRE Specialists at Firevy.co to transform your computing into a secure, hyper-scalable cloud ecosystem."
+          subtitle="Get access to top Google Cloud Certified Architects & SRE Specialists at Firevy.Co to transform your computing into a secure, hyper-scalable cloud ecosystem."
           buttonText="Hire Now"
         />
       </div>

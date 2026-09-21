@@ -105,9 +105,9 @@ export const Careers = () => {
   // Fallbacks
   const tabs = cmsData?.tabs?.map(t => t.label) || [
     'Who we are',
-    'Why firevy.co',
+    'Why Firevy.Co',
     'Benefits / What we offer',
-    'Life at firevy.co',
+    'Life at Firevy.Co',
     'Hiring Process',
     'Current Openings'
   ];
@@ -457,7 +457,7 @@ export const Careers = () => {
           )}
 
           {/* TAB 2: WHY FIREVY.CO */}
-          {activeTab === 'Why firevy.co' && (
+          {activeTab === 'Why Firevy.Co' && (
             <div className="space-y-10 font-sans">
               {(cmsData?.whyFirevy?.length ? cmsData.whyFirevy : [
                 {
@@ -580,7 +580,7 @@ export const Careers = () => {
           )}
 
           {/* TAB 4: LIFE AT FIREVY.CO */}
-          {activeTab === 'Life at firevy.co' && (
+          {activeTab === 'Life at Firevy.Co' && (
             <div className="bg-[#F4F7FB] rounded-[24px] p-8 sm:p-14 font-sans space-y-8 text-center">
               <h3 className="text-[34px] sm:text-[38px] font-[800] text-slate-900 tracking-tight font-sans">
                 Life at {BRAND.name}

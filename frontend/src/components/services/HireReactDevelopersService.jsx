@@ -280,7 +280,7 @@ export const HireReactDevelopersService = () => {
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
         title="Hire React.js Developer | Dedicated React.js Web Developers at $21/Hr"
-        description="Hire dedicated React.js developers from Firevy.co. We are among the leading providers of react development services tailored for responsive web & mobile apps."
+        description="Hire dedicated React.js developers from Firevy.Co. We are among the leading providers of react development services tailored for responsive web & mobile apps."
         canonical="/services/hire-react-developers"
       />
 
@@ -430,7 +430,7 @@ export const HireReactDevelopersService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium">
-              Hire React.js Developers from Firevy.co Starts from,
+              Hire React.js Developers from Firevy.Co Starts from,
             </p>
           </div>
 
@@ -1249,7 +1249,7 @@ export const HireReactDevelopersService = () => {
                   responsibilityTab === 'sapphire' ? 'bg-[#005F96] text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                Firevy.co
+                Firevy.Co
               </button>
               <button
                 onClick={() => setResponsibilityTab('client')}

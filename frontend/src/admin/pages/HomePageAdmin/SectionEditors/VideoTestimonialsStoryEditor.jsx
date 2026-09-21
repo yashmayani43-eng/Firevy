@@ -26,7 +26,7 @@ export const VideoTestimonialsStoryEditor = ({ data, onChange }) => {
       type: 'textarea',
       rows: 2,
       fullWidth: true,
-      placeholder: "e.g. Discover why Andrew trusted firevy.co with his mobile digital diary project...",
+      placeholder: "e.g. Discover why Andrew trusted Firevy.Co with his mobile digital diary project...",
       required: true
     },
     {

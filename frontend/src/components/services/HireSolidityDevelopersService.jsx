@@ -426,7 +426,7 @@ export const HireSolidityDevelopersService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-[400]">
-              Hire Solidity Developers from Firevy.co Starts from,
+              Hire Solidity Developers from Firevy.Co Starts from,
             </p>
           </div>
 
@@ -714,8 +714,8 @@ export const HireSolidityDevelopersService = () => {
       {/* Meet Sapphire's Exceptional Team of Seasoned Experts (Image 2) */}
       <SapphireSeasonedExpertsSection />
 
-      {/* Leverage The Expertise of Firevy.co Dedicated Developers (Images 3 & 4) */}
-      <LeverageExpertiseGridSection brandName="Firevy.co" />
+      {/* Leverage The Expertise of Firevy.Co Dedicated Developers (Images 3 & 4) */}
+      <LeverageExpertiseGridSection brandName="Firevy.Co" />
 
       {/* Industry-Focused Insights To Elevate Your Business (Screenshot 1) */}
       <IndustryFocusedInsightsSection
@@ -729,17 +729,17 @@ export const HireSolidityDevelopersService = () => {
       {/* Sectors Thriving (Screenshots 2 & 3) */}
       <SectorsThrivingSection />
 
-      {/* Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team (Screenshot 4) */}
+      {/* Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team (Screenshot 4) */}
       <section className="py-16 md:py-24 bg-[#F0F7FC] text-slate-900 font-sans border-b border-slate-100">
         <Container>
           <div className="space-y-12 max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center space-y-3 max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team
+                Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+                At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
               </p>
             </div>
 
@@ -788,7 +788,7 @@ export const HireSolidityDevelopersService = () => {
               </h2>
             </div>
 
-            {/* Firevy.co / Client Filter Capsule */}
+            {/* Firevy.Co / Client Filter Capsule */}
             <div className="flex justify-center">
               <div className="bg-[#DDECF5] p-1.5 rounded-full inline-flex items-center space-x-1 border border-cyan-100/60 shadow-xs">
                 <button
@@ -798,7 +798,7 @@ export const HireSolidityDevelopersService = () => {
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
                     }`}
                 >
-                  Firevy.co
+                  Firevy.Co
                 </button>
                 <button
                   onClick={() => setResponsibilityTab('client')}

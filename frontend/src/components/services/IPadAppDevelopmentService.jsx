@@ -332,8 +332,8 @@ export const IPadAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="iPad App Development Services Company in USA | Firevy.co"
-        description="Top iPad App Development Company. Build custom iPadOS applications, Apple Pencil integrations, multitasking iPad apps, and enterprise tablet solutions with Firevy.co."
+        title="iPad App Development Services Company in USA | Firevy.Co"
+        description="Top iPad App Development Company. Build custom iPadOS applications, Apple Pencil integrations, multitasking iPad apps, and enterprise tablet solutions with Firevy.Co."
         canonical="/services/ipad-app-development-services"
       />
 

@@ -91,7 +91,7 @@ export const HireOpenAiDevelopersService = () => {
       a: 'Yes, we perform custom dataset curation, synthetic data generation, and model fine-tuning via OpenAI API to align responses perfectly with your domain jargon, brand tone, and business logic.'
     },
     {
-      q: '8. How much does it cost to hire an OpenAI Developer from Firevy.co?',
+      q: '8. How much does it cost to hire an OpenAI Developer from Firevy.Co?',
       a: 'Our dedicated OpenAI Developer pricing starts at $21/hour. We also offer flexible monthly ($2,850/mo), quarterly, and dedicated team engagement models with zero recruitment overhead.'
     },
     {
@@ -104,7 +104,7 @@ export const HireOpenAiDevelopersService = () => {
     },
     {
       q: '11. Which company offers top OpenAI developers for hire in USA & India?',
-      a: 'Firevy.co is a top-rated AI development company in India and USA with 23+ years of IT excellence, 320+ 5-star Clutch reviews, and certified OpenAI engineers.'
+      a: 'Firevy.Co is a top-rated AI development company in India and USA with 23+ years of IT excellence, 320+ 5-star Clutch reviews, and certified OpenAI engineers.'
     }
   ];
 
@@ -112,7 +112,7 @@ export const HireOpenAiDevelopersService = () => {
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#006095] selection:text-white">
       <SEO
         title="Hire OpenAI Developer | Dedicated OpenAI API & LLM Engineers"
-        description="Hire dedicated OpenAI Developers from Firevy.co. Expert GPT-4o, GPT-4, Assistants API, RAG, Fine-tuning, and OpenAI integration developers."
+        description="Hire dedicated OpenAI Developers from Firevy.Co. Expert GPT-4o, GPT-4, Assistants API, RAG, Fine-tuning, and OpenAI integration developers."
         keywords="Hire OpenAI Developer, Hire OpenAI Engineers, Hire GPT-4 Developers, OpenAI API Integration, Hire LLM Engineers"
       />
 
@@ -231,7 +231,7 @@ export const HireOpenAiDevelopersService = () => {
                 Our Flexible Hiring Models: Find the Perfect Fit For Your Project
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                Hire OpenAI Developers from Firevy.co Starts from,
+                Hire OpenAI Developers from Firevy.Co Starts from,
               </p>
             </div>
 
@@ -517,7 +517,7 @@ export const HireOpenAiDevelopersService = () => {
           <div className="space-y-8 max-w-6xl mx-auto">
             <div className="text-center space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
             </div>
 
@@ -610,12 +610,12 @@ export const HireOpenAiDevelopersService = () => {
       {/* ============================================================
           SECTION 10: ABOUT US STATS BANNER
           ============================================================ */}
-      <AboutUsStats companyName="Firevy.co" />
+      <AboutUsStats companyName="Firevy.Co" />
 
       {/* ============================================================
           SECTION 11: SECTORS THRIVING SECTION
           ============================================================ */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy.co's Bespoke OpenAI Developers" />
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy.Co's Bespoke OpenAI Developers" />
 
       {/* =========================================================================
           SECTION 11B: EMPLOY THE ADVANCED PROFICIENCY OF FIREVY DEDICATED DEV TEAM
@@ -626,10 +626,10 @@ export const HireOpenAiDevelopersService = () => {
             {/* Header */}
             <div className="text-center space-y-3 max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team
+                Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+                At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
               </p>
             </div>
 
@@ -692,7 +692,7 @@ export const HireOpenAiDevelopersService = () => {
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
                   }`}
                 >
-                  Firevy.co
+                  Firevy.Co
                 </button>
                 <button
                   type="button"

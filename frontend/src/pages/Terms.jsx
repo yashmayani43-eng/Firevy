@@ -10,8 +10,8 @@ export const Terms = () => {
   return (
     <div className="bg-white min-h-screen text-slate-900 font-sans">
       <SEO
-        title="Terms & Conditions | Firevy.co"
-        description="Terms and conditions of use and service agreements for Firevy.co Software Solutions."
+        title="Terms & Conditions | Firevy.Co"
+        description="Terms and conditions of use and service agreements for Firevy.Co Software Solutions."
         canonical="/terms"
       />
 
@@ -41,17 +41,14 @@ export const Terms = () => {
               </div>
             </div>
 
-            {/* Right Column: 3D Isometric Illustration */}
+            {/* Right Column: 3D Isometric Illustration - Clean Transparent Background */}
             <div className="lg:col-span-6 flex justify-center lg:justify-end">
               <div className="relative w-full max-w-[480px] lg:max-w-[520px]">
                 <img
-                  src="/images/terms_hero_illustration.jpg"
+                  src="/images/terms_hero_illustration.png"
                   alt="Terms & Conditions Illustration"
-                  className="w-full h-auto object-contain drop-shadow-md rounded-2xl"
+                  className="w-full h-auto object-contain select-none pointer-events-none drop-shadow-sm"
                   loading="eager"
-                  onError={(e) => {
-                    e.target.src = '/images/c_sharp_expertise_illustration.png';
-                  }}
                 />
               </div>
             </div>

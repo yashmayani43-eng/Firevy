@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Container from '../common/Container';
 
-export const DataCleansingCuttingEdgeTechSection = ({ companyName = 'Firevy.co' }) => {
+export const DataCleansingCuttingEdgeTechSection = ({ companyName = 'Firevy.Co' }) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const technologies = [

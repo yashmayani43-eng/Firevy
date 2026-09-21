@@ -104,7 +104,7 @@ export const SitecoreDevelopmentService = () => {
       a: "Sitecore XM Cloud is Sitecore's next-generation cloud-native SaaS CMS. It decouples content authoring from rendering via modern headless frameworks like Next.js and Sitecore Experience Edge. Compared to on-premises XP, XM Cloud eliminates server management, delivers automatic updates, provides near-instant edge page speeds, and significantly lowers total cost of ownership."
     },
     {
-      q: "3. How does Firevy.co approach Sitecore migration and version upgrades?",
+      q: "3. How does Firevy.Co approach Sitecore migration and version upgrades?",
       a: "Our certified Sitecore architects follow the Sitecore Helix architecture standards and a phased migration methodology. We audit your existing codebase, templates, and analytics, plan automated data migration scripts, decouple legacy layouts into modular Next.js / JSS components, and conduct thorough UAT and SEO continuity testing to ensure zero downtime."
     },
     {
@@ -112,7 +112,7 @@ export const SitecoreDevelopmentService = () => {
       a: "Yes. Sitecore connects natively and via custom REST / GraphQL middleware with platforms like Salesforce, Microsoft Dynamics 365, SAP, Marketo, HubSpot, Segment, and enterprise payment gateways. We build robust, bidirectional integration pipelines with automated queue retry mechanisms."
     },
     {
-      q: "5. What are the flexible hiring and engagement models available at Firevy.co?",
+      q: "5. What are the flexible hiring and engagement models available at Firevy.Co?",
       a: "We offer 4 tailored models: Dedicated Sitecore Architects & Developers (full-time monthly allocation), Fixed Price Milestone delivery (for well-defined scopes), Time & Material (for agile feature evolution), and 24/7 Managed SLA & Support (for enterprise uptime, security patches, and ongoing optimization)."
     },
     {
@@ -128,7 +128,7 @@ export const SitecoreDevelopmentService = () => {
       a: "Sitecore CDP aggregates customer interactions across web, mobile, email, and in-store touchpoints into a unified customer profile. Sitecore Personalize then uses predictive machine learning to deliver tailored content, product recommendations, and promotional offers in real-time, boosting conversion rates by 25-40%."
     },
     {
-      q: "9. How quickly can Firevy.co onboard a certified Sitecore development team?",
+      q: "9. How quickly can Firevy.Co onboard a certified Sitecore development team?",
       a: "Depending on your project requirements, we can mobilize certified Sitecore developers, architects, and QA engineers within 3 to 5 business days, complete with NDA execution, code repository onboarding, and sprint planning kickoff."
     }
   ];
@@ -137,7 +137,7 @@ export const SitecoreDevelopmentService = () => {
     <div className="bg-white text-slate-800 font-sans antialiased overflow-hidden">
       <SEO
         title="Sitecore Development Company in USA | Certified Sitecore DXP & XM Cloud Services"
-        description="Firevy.co provides enterprise Sitecore development services. Certified Sitecore architects specializing in XM Cloud, Sitecore XP, Headless JSS, Next.js, and CDP integrations."
+        description="Firevy.Co provides enterprise Sitecore development services. Certified Sitecore architects specializing in XM Cloud, Sitecore XP, Headless JSS, Next.js, and CDP integrations."
       />
 
 
@@ -151,7 +151,7 @@ export const SitecoreDevelopmentService = () => {
                 Sitecore Development Services in USA
               </h1>
               <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl">
-                Firevy.co delivers enterprise-grade Sitecore DXP and XM Cloud development services to Fortune 500s and ambitious brands worldwide. Our certified Sitecore architects create personalized, high-performance digital experiences that convert.
+                Firevy.Co delivers enterprise-grade Sitecore DXP and XM Cloud development services to Fortune 500s and ambitious brands worldwide. Our certified Sitecore architects create personalized, high-performance digital experiences that convert.
               </p>
               <div className="pt-2">
                 <a
@@ -280,7 +280,7 @@ export const SitecoreDevelopmentService = () => {
                 Acquire Sitecore Digital Experience Development Services
               </h2>
               <p className="text-slate-600 leading-relaxed text-base">
-                With deep domain expertise in building enterprise Sitecore solutions, Firevy.co provides end-to-end consulting, architecture, development, and support for the Sitecore ecosystem. From modernizing legacy XP installations to architecting headless XM Cloud storefronts, our certified developers ensure enterprise agility and maximum return on investment.
+                With deep domain expertise in building enterprise Sitecore solutions, Firevy.Co provides end-to-end consulting, architecture, development, and support for the Sitecore ecosystem. From modernizing legacy XP installations to architecting headless XM Cloud storefronts, our certified developers ensure enterprise agility and maximum return on investment.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {[
@@ -658,7 +658,7 @@ export const SitecoreDevelopmentService = () => {
             {/* Left: What Sets Us Apart */}
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-[#005F96] text-xs font-bold uppercase tracking-widest rounded-full">
-                Why Firevy.co
+                Why Firevy.Co
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
                 What Sets Us Apart As Sitecore Development Company?

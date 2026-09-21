@@ -6,7 +6,7 @@ const FirevyLogo = () => (
   <div className="flex items-center select-none">
     <img
       src="/firevy_logo_dark.png"
-      alt="firevy.co"
+      alt="Firevy.Co"
       className="h-4 sm:h-[18px] w-auto object-contain drop-shadow-2xs"
     />
   </div>
@@ -30,9 +30,9 @@ const iwatchBlogsData = [
         {/* Soft Left Gradient Overlay to make Text 100% Crisp */}
         <div className="absolute inset-y-0 left-0 w-3/5 bg-gradient-to-r from-[#EAE8FE] via-[#EAE8FE]/90 to-transparent z-10 pointer-events-none" />
 
-        {/* Top Left: Official firevy.co Brand Logo */}
+        {/* Top Left: Official Firevy.Co Brand Logo */}
         <div className="absolute top-3.5 left-4 z-30">
-          <img src="/firevy_logo_dark.png" alt="firevy.co" className="h-4 sm:h-[18px] w-auto object-contain drop-shadow-xs" />
+          <img src="/firevy_logo_dark.png" alt="Firevy.Co" className="h-4 sm:h-[18px] w-auto object-contain drop-shadow-xs" />
         </div>
 
         {/* Left Typography */}
@@ -64,9 +64,9 @@ const iwatchBlogsData = [
         {/* Soft Left Gradient Overlay to make Text 100% Crisp */}
         <div className="absolute inset-y-0 left-0 w-3/5 bg-gradient-to-r from-[#D7EFFF] via-[#D7EFFF]/95 to-transparent z-10 pointer-events-none" />
 
-        {/* Top Left: Official firevy.co Brand Logo */}
+        {/* Top Left: Official Firevy.Co Brand Logo */}
         <div className="absolute top-3.5 left-4 z-30">
-          <img src="/firevy_logo_dark.png" alt="firevy.co" className="h-4 sm:h-[18px] w-auto object-contain drop-shadow-xs" />
+          <img src="/firevy_logo_dark.png" alt="Firevy.Co" className="h-4 sm:h-[18px] w-auto object-contain drop-shadow-xs" />
         </div>
 
         {/* Left Typography */}
@@ -101,9 +101,9 @@ const iwatchBlogsData = [
         {/* Soft Left Gradient Overlay to make Text 100% Crisp */}
         <div className="absolute inset-y-0 left-0 w-3/5 bg-gradient-to-r from-[#E0F2FE] via-[#E0F2FE]/95 to-transparent z-10 pointer-events-none" />
 
-        {/* Top Left: Official firevy.co Brand Logo */}
+        {/* Top Left: Official Firevy.Co Brand Logo */}
         <div className="absolute top-3.5 left-4 z-30">
-          <img src="/firevy_logo_dark.png" alt="firevy.co" className="h-4 sm:h-[18px] w-auto object-contain drop-shadow-xs" />
+          <img src="/firevy_logo_dark.png" alt="Firevy.Co" className="h-4 sm:h-[18px] w-auto object-contain drop-shadow-xs" />
         </div>
 
         {/* Left Typography */}
@@ -145,7 +145,7 @@ export const IWatchRecentBlogsSection = () => {
               key={blog.id}
               className="rounded-[20px] bg-white border border-slate-100/90 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden group cursor-pointer"
             >
-              {/* Top Banner Graphic with 1:1 firevy.co logo */}
+              {/* Top Banner Graphic with 1:1 Firevy.Co logo */}
               <div className="relative w-full h-48 sm:h-52 overflow-hidden bg-slate-50 flex items-center justify-center">
                 {blog.renderGraphic()}
               </div>

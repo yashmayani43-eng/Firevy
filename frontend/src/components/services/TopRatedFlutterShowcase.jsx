@@ -155,7 +155,7 @@ export const TopRatedFlutterShowcase = ({
               <div className="absolute top-4 right-5 sm:top-6 sm:right-8 flex items-center opacity-95 z-20">
                 <img
                   src="/firevy_logo_white.png"
-                  alt="firevy.co"
+                  alt="Firevy.Co"
                   className="h-5 sm:h-6 md:h-7 w-auto object-contain drop-shadow-md"
                 />
               </div>
@@ -246,7 +246,7 @@ export const TopRatedFlutterShowcase = ({
               <div className="absolute top-5 right-6 sm:top-6 sm:right-8 flex items-center opacity-90 z-20">
                 <img
                   src="/firevy_logo_white.png"
-                  alt="firevy.co"
+                  alt="Firevy.Co"
                   className="h-5 sm:h-6 md:h-7 w-auto object-contain drop-shadow-md"
                 />
               </div>

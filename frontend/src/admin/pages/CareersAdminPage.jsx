@@ -423,7 +423,7 @@ export const CareersAdminPage = () => {
                 className="form-input"
                 value={pageData.hero?.badge || ''}
                 onChange={(e) => handleFieldChange('hero', 'badge', e.target.value)}
-                placeholder="e.g. Careers at firevy.co"
+                placeholder="e.g. Careers at Firevy.Co"
               />
             </div>
           </div>
@@ -681,7 +681,7 @@ export const CareersAdminPage = () => {
         <div className="card" style={{ padding: '1.5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
             <div>
-              <h3 style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--text-primary)' }}>Life at firevy.co Photo Collage</h3>
+              <h3 style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--text-primary)' }}>Life at Firevy.Co Photo Collage</h3>
               <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)' }}>Upload, replace, and reorder company culture and event celebration photos.</p>
             </div>
             <button

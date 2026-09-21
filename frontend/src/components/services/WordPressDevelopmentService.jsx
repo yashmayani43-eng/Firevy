@@ -181,7 +181,7 @@ export const WordPressDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Top WordPress Development Company in USA | Firevy.co"
+        title="Top WordPress Development Company in USA | Firevy.Co"
         description="Our skilled developers offer AI-powered WordPress development services for businesses worldwide. Custom WordPress theme development, plugin customization, speed optimization and more."
         canonical="/services/wordpress"
       />
@@ -561,7 +561,7 @@ export const WordPressDevelopmentService = () => {
       {/* =========================================================================
           OUR PREMIUM SERVICES (10 White Rounded Cards on Deep Blue)
           ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* =========================================================================
           SUCCESS STORIES (3 Rich Case Study Mockups on Soft Cyan)
@@ -901,7 +901,7 @@ export const WordPressDevelopmentService = () => {
             
             <div className="lg:col-span-5 space-y-4">
               <span className="text-[12px] font-bold text-[#005F96] tracking-wider uppercase bg-[#E0F2FE] px-3 py-1 rounded-full">
-                Why Firevy.co
+                Why Firevy.Co
               </span>
               <h2 className="text-[28px] sm:text-[34px] font-[800] text-slate-950 tracking-tight leading-tight">
                 Engineering High-Performance WordPress Ecosystems
@@ -1872,7 +1872,7 @@ export const WordPressDevelopmentService = () => {
                       Message Sent Successfully!
                     </h3>
                     <p className="text-[14px] text-slate-600 max-w-sm mx-auto">
-                      Thank you for contacting Firevy.co. Our team will review your project requirements and get in touch within 24 hours.
+                      Thank you for contacting Firevy.Co. Our team will review your project requirements and get in touch within 24 hours.
                     </p>
                   </div>
                 ) : (

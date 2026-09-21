@@ -47,7 +47,7 @@ export const Footer = () => {
     company: {
       title: 'Company',
       links: [
-        { name: 'About firevy.co', path: '/about' },
+        { name: 'About Firevy.Co', path: '/about' },
         { name: 'Our Team', path: '/company/our-team' },
         { name: 'Events & Activities', path: '/company/events-activities' },
         { name: 'Careers (Jobs)', path: '/careers' },
@@ -206,11 +206,11 @@ export const Footer = () => {
           {/* LEFT GROUP (Col 5 / 12) */}
           <div className="lg:col-span-5 space-y-5">
             
-            {/* firevy.co Brand Logo */}
+            {/* Firevy.Co Brand Logo */}
             <Link to="/" className="inline-block">
               <img
                 src="/firevy_logo_dark.png"
-                alt="firevy.co"
+                alt="Firevy.Co"
                 className="h-10 sm:h-12 w-auto max-w-[220px] object-contain"
               />
             </Link>
@@ -439,7 +439,7 @@ export const Footer = () => {
       <div className="bg-[#006B8F] text-white py-3.5 px-4 sm:px-8 xl:px-10 mt-0 w-full">
         <div className="w-full flex flex-col sm:flex-row items-center justify-between text-[13px] font-sans">
           <div>
-            {footerConfig?.copyrightText || `© ${currentYear} firevy.co. All rights reserved.`}
+            {footerConfig?.copyrightText || `© ${currentYear} Firevy.Co. All rights reserved.`}
           </div>
           <div className="flex items-center space-x-4 mt-2 sm:mt-0 text-blue-100">
             <Link to={footerConfig?.privacyPolicyLink || "/privacy-policy"} className="hover:text-white transition-colors">

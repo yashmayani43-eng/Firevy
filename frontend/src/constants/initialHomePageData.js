@@ -638,7 +638,7 @@ export const initialHomePageData = {
           isActive: true
         },
         {
-          title: 'A Chat with a Client: Why They Chose firevy.co',
+          title: 'A Chat with a Client: Why They Chose Firevy.Co',
           image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80',
           desc: 'There are several mobile app development companies worldwide. While searching for a reliable IT services provider, I came across...',
           isActive: true
@@ -757,7 +757,7 @@ export const initialHomePageData = {
           company: 'Bee Car Care',
           bgColor: '#F4F2EC',
           logo: '/images/case_study_images/Images/new/finallogos_1/beecar.png',
-          desc: "If you provide car washing services and need to reach a wide range of customers, the car wash app is your best bet. Firevy.co has built a car wash application that allows people to book car wash services in a few clicks.",
+          desc: "If you provide car washing services and need to reach a wide range of customers, the car wash app is your best bet. Firevy.Co has built a car wash application that allows people to book car wash services in a few clicks.",
           bullets: [
             '96% customer retention rate',
             '92% increase in service bookings',
@@ -784,7 +784,7 @@ export const initialHomePageData = {
           id: 1,
           clientName: 'Andrew',
           company: 'Mobile Digital Diary',
-          title: "Discover why Andrew trusted firevy.co with his mobile digital diary project : A Client's Honest Experience.",
+          title: "Discover why Andrew trusted Firevy.Co with his mobile digital diary project : A Client's Honest Experience.",
           img: '/images/awards/hdimages/client_shay.webp',
           videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
           isActive: true
@@ -793,7 +793,7 @@ export const initialHomePageData = {
           id: 2,
           clientName: 'Bruno',
           company: 'Healthcare Innovation Brazil',
-          title: 'From Vision to Healthcare Innovation | Client Success With firevy.co - Top IT Company in Brazil',
+          title: 'From Vision to Healthcare Innovation | Client Success With Firevy.Co - Top IT Company in Brazil',
           img: '/images/awards/hdimages/bruno.webp',
           videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
           isActive: true
@@ -802,7 +802,7 @@ export const initialHomePageData = {
           id: 3,
           clientName: 'Enterprise Client',
           company: 'Mobile App Development',
-          title: "From Idea to Reality | Client's Success Story with firevy.co - Best Mobile App Development Company",
+          title: "From Idea to Reality | Client's Success Story with Firevy.Co - Best Mobile App Development Company",
           img: '/images/awards/hdimages/client_seven.webp',
           videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
           isActive: true
@@ -811,7 +811,7 @@ export const initialHomePageData = {
           id: 4,
           clientName: 'Wellness Founder',
           company: 'Digital Wellness App',
-          title: "From Vision to Wellness | Client's Success Story with firevy.co - Top Mobile App Development Company",
+          title: "From Vision to Wellness | Client's Success Story with Firevy.Co - Top Mobile App Development Company",
           img: '/images/awards/hdimages/client_eight.webp',
           videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
           isActive: true
@@ -820,7 +820,7 @@ export const initialHomePageData = {
           id: 5,
           clientName: 'Tim',
           company: 'Complex Web Application',
-          title: 'Hear out Tim got to say about working with Team firevy.co on building a complex and unique web application.',
+          title: 'Hear out Tim got to say about working with Team Firevy.Co on building a complex and unique web application.',
           img: '/images/awards/hdimages/clienttestimonial3.webp',
           videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
           isActive: true
@@ -829,7 +829,7 @@ export const initialHomePageData = {
           id: 6,
           clientName: 'Business Expansion Client',
           company: 'Global Enterprise Services',
-          title: 'Testimonial from client who has expanded their business using firevy.co Services',
+          title: 'Testimonial from client who has expanded their business using Firevy.Co Services',
           img: '/images/awards/hdimages/clienttestimonial2.webp',
           videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
           isActive: true
@@ -838,7 +838,7 @@ export const initialHomePageData = {
           id: 7,
           clientName: 'Pravin',
           company: 'Software Solutions Partner',
-          title: 'Hear what Pravin has got to say about working with firevy.co',
+          title: 'Hear what Pravin has got to say about working with Firevy.Co',
           img: '/images/awards/hdimages/clienttestimonial1.webp',
           videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
           isActive: true
@@ -847,7 +847,7 @@ export const initialHomePageData = {
           id: 8,
           clientName: 'Canadian Enterprise Partner',
           company: 'Web & Mobile Solutions Canada',
-          title: 'firevy.co Successfully Delivered Web & Mobile App Solutions - Leading IT Company in Canada',
+          title: 'Firevy.Co Successfully Delivered Web & Mobile App Solutions - Leading IT Company in Canada',
           img: '/images/awards/hdimages/img_client2.webp',
           videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
           isActive: true
@@ -865,7 +865,7 @@ export const initialHomePageData = {
           id: 10,
           clientName: 'Education Client',
           company: 'Vision Education Platform',
-          title: "From Vision to Education | Client's Success Story with firevy.co Solutions",
+          title: "From Vision to Education | Client's Success Story with Firevy.Co Solutions",
           img: '/images/awards/hdimages/vision_client.webp',
           videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
           isActive: true
@@ -923,8 +923,8 @@ export const initialHomePageData = {
       reviews: [
         {
           id: 1,
-          title: "firevy.co's team communicated effectively...",
-          comment: 'firevy.co successfully implemented all UX and design features on the app. The team has consistently delivered on milestones with remarkable technical agility.',
+          title: "Firevy.Co's team communicated effectively...",
+          comment: 'Firevy.Co successfully implemented all UX and design features on the app. The team has consistently delivered on milestones with remarkable technical agility.',
           author: 'Derrick Surratt',
           location: 'Arkansas',
           avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
@@ -936,7 +936,7 @@ export const initialHomePageData = {
         {
           id: 2,
           title: 'The team maintained excellent communication throughout...',
-          comment: "firevy.co's updates improved a product's UX per the end customer's requests. The team is personable, reaches their deliverables ahead of schedule, and maintains excellent communication.",
+          comment: "Firevy.Co's updates improved a product's UX per the end customer's requests. The team is personable, reaches their deliverables ahead of schedule, and maintains excellent communication.",
           author: 'Hamidah Nalwoga',
           location: 'Massachusetts',
           avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
@@ -948,7 +948,7 @@ export const initialHomePageData = {
         {
           id: 3,
           title: 'Intuitive, sleek, and high performing solution...',
-          comment: "The client was highly pleased with firevy.co's development work. The team met expectations, and the interface design was intuitive, sleek, and high performing.",
+          comment: "The client was highly pleased with Firevy.Co's development work. The team met expectations, and the interface design was intuitive, sleek, and high performing.",
           author: 'Christine Ine',
           location: 'Rockville, Maryland',
           avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
@@ -1005,7 +1005,7 @@ export const initialHomePageData = {
       isVisible: true,
       order: 22,
       bannerTitle: "Let's Work Together On Your Next Digital Project",
-      bannerDescription: 'Book a meeting with our specialists today to learn more about how firevy.co can help you unlock technology visions and drive your product strategy.',
+      bannerDescription: 'Book a meeting with our specialists today to learn more about how Firevy.Co can help you unlock technology visions and drive your product strategy.',
       bannerButtonText: 'Request A Free Quote',
       bannerButtonLink: '/contact',
       newsletterTitle: 'Subscribe us and Get the latest updates and news',
@@ -1091,7 +1091,7 @@ export const initialHomePageData = {
         instagram: 'https://instagram.com',
         youtube: 'https://youtube.com'
       },
-      copyrightText: '© 2026 firevy.co. All rights reserved.',
+      copyrightText: '© 2026 Firevy.Co. All rights reserved.',
       privacyPolicyText: 'Privacy Policy',
       privacyPolicyLink: '/privacy-policy',
       termsOfUseText: 'Terms of Use',
@@ -1104,7 +1104,7 @@ export const initialHomePageData = {
       order: 23,
       badge: 'WHO WE ARE',
       title: 'Technology Expertise. Business Thinking. Real Results.',
-      subtitle: 'At firevy.co, we bridge the gap between complex software engineering and strategic business growth. We help enterprises and high-growth scale-ups turn technological vision into high-throughput realities.',
+      subtitle: 'At Firevy.Co, we bridge the gap between complex software engineering and strategic business growth. We help enterprises and high-growth scale-ups turn technological vision into high-throughput realities.',
       points: [
         'Digital Transformation & Legacy System Modernization',
         'Enterprise Cloud-Native Microservices Architecture',

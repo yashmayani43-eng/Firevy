@@ -53,7 +53,7 @@ export const PAGE_HIERARCHY_REGISTRY = {
       // --- Group: ABOUT US ---
       {
         key: 'about-firevy',
-        title: 'About firevy.co',
+        title: 'About Firevy.Co',
         category: 'Company Profile',
         description: 'Manage corporate profile, vision, mission statements, core values, and milestones.',
         group: 'ABOUT US',
@@ -213,7 +213,7 @@ export const PAGE_HIERARCHY_REGISTRY = {
           },
           {
             key: 'lifeAtFirevy',
-            title: 'Team @ firevy.co',
+            title: 'Team @ Firevy.Co',
             category: 'Gallery',
             description: 'Culture narrative and 4 team moments photos.',
             type: 'gallery'
@@ -627,7 +627,7 @@ export const PAGE_HIERARCHY_REGISTRY = {
       },
       {
         key: 'podcast',
-        title: 'firevy.co Podcast',
+        title: 'Firevy.Co Podcast',
         category: 'Audio Series',
         description: 'Manage podcast episodes, audio player, guest speaker bios, and Spotify/Apple links.',
         group: 'ABOUT US',

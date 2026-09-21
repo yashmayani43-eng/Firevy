@@ -62,7 +62,7 @@ export const PatientManagementExpertiseServices = () => {
           Our Expertise in Dedicated Patient Management System Development
         </h2>
         <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-relaxed max-w-3xl mx-auto font-normal">
-          Firevy.co specializes in engineering scalable, secure, and intuitive Patient Management Systems tailored to hospitals, clinics, and digital health networks worldwide.
+          Firevy.Co specializes in engineering scalable, secure, and intuitive Patient Management Systems tailored to hospitals, clinics, and digital health networks worldwide.
         </p>
       </div>
 

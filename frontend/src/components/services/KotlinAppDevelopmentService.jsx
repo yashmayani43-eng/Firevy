@@ -335,8 +335,8 @@ export const KotlinAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Kotlin App Development Services | Top Kotlin Developers USA | Firevy.co"
-        description="Top-rated Kotlin App Development Company. Build scalable Android apps, Jetpack Compose UIs, and Kotlin Multiplatform Mobile (KMM) solutions with Firevy.co."
+        title="Kotlin App Development Services | Top Kotlin Developers USA | Firevy.Co"
+        description="Top-rated Kotlin App Development Company. Build scalable Android apps, Jetpack Compose UIs, and Kotlin Multiplatform Mobile (KMM) solutions with Firevy.Co."
         canonical="/services/kotlin-app-development"
       />
 

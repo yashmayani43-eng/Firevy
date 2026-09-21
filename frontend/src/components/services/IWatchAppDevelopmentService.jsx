@@ -378,8 +378,8 @@ export const IWatchAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="iWatch App Development Company USA | Custom WatchOS Solutions | Firevy.co"
-        description="Top iWatch App Development Company. Build custom WatchOS applications, HealthKit integrations, standalone Apple Watch apps, and wearable IoT solutions with Firevy.co."
+        title="iWatch App Development Company USA | Custom WatchOS Solutions | Firevy.Co"
+        description="Top iWatch App Development Company. Build custom WatchOS applications, HealthKit integrations, standalone Apple Watch apps, and wearable IoT solutions with Firevy.Co."
         canonical="/services/iwatch-app-development"
       />
 

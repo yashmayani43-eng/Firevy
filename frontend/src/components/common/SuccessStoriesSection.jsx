@@ -186,7 +186,7 @@ export const SuccessStoriesSection = ({
   category = 'ecommerce',
   cards: customCards,
   title,
-  subtitle = "Know Firevy.co's journey from concept to success. Explore how we’ve brought ideas to life and achieved remarkable results for our clients."
+  subtitle = "Know Firevy.Co's journey from concept to success. Explore how we’ve brought ideas to life and achieved remarkable results for our clients."
 }) => {
   const isEducation = category === 'education';
   const isAudio = category === 'audio' || category === 'spotify' || category === 'music';

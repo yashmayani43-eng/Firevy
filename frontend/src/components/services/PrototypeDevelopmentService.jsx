@@ -220,7 +220,7 @@ export const PrototypeDevelopmentService = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Prototype Development Services in USA | Prototype Development Company in USA | Firevy.co"
+        title="Prototype Development Services in USA | Prototype Development Company in USA | Firevy.Co"
         description="Sapphire offering top prototype development services in USA. We have the expertise in providing prototype development services like prototype app development, interactive prototyping, rapid prototype development, incremental prototyping & more."
         keywords="prototype development services, prototype development company in usa, prototype app development, interactive prototyping, rapid prototype development, incremental prototyping, prototype software development"
       />

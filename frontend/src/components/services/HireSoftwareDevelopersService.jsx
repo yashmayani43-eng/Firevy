@@ -94,7 +94,7 @@ export const HireSoftwareDevelopersService = () => {
     },
     {
       q: 'Which company is best for software development services?',
-      a: 'Firevy.co is a top-rated software engineering company with 20+ years of industry leadership and a team of senior engineers delivering enterprise software solutions globally.'
+      a: 'Firevy.Co is a top-rated software engineering company with 20+ years of industry leadership and a team of senior engineers delivering enterprise software solutions globally.'
     },
     {
       q: 'Do you give support and maintenance services after Development?',
@@ -105,7 +105,7 @@ export const HireSoftwareDevelopersService = () => {
       a: 'Yes, highly skilled full-stack, cloud, and backend software engineers are in high demand to power digital transformation and modern SaaS products.'
     },
     {
-      q: 'Why should I hire software developers from Firevy.co?',
+      q: 'Why should I hire software developers from Firevy.Co?',
       a: 'Our dedicated software developers bring deep domain expertise, bi-weekly agile velocity, 100% IP & code ownership, direct communication, and 15-day risk-free trials to guarantee project success.'
     },
     {
@@ -118,7 +118,7 @@ export const HireSoftwareDevelopersService = () => {
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#006095] selection:text-white">
       <SEO
         title="Hire Software Developers | Dedicated Software Engineers & Programmers"
-        description="Hire dedicated software developers from Firevy.co. Top 1% vetted full-stack, backend, frontend, and cloud software engineers for custom enterprise software development."
+        description="Hire dedicated software developers from Firevy.Co. Top 1% vetted full-stack, backend, frontend, and cloud software engineers for custom enterprise software development."
         keywords="Hire Software Developers, Hire Dedicated Software Engineers, Custom Software Development Company, Dedicated Programmers"
       />
 
@@ -239,7 +239,7 @@ export const HireSoftwareDevelopersService = () => {
                 Our Flexible Hiring Models: Find the Perfect Fit For Your Project
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                Hire Software Developers from Firevy.co Starts from,
+                Hire Software Developers from Firevy.Co Starts from,
               </p>
             </div>
 
@@ -529,7 +529,7 @@ export const HireSoftwareDevelopersService = () => {
           <div className="space-y-8">
             <div className="text-center max-w-6xl mx-auto space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-slate-900 tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
-                Meet Firevy.co's Exceptional Team of Seasoned Experts
+                Meet Firevy.Co's Exceptional Team of Seasoned Experts
               </h2>
             </div>
 
@@ -664,7 +664,7 @@ export const HireSoftwareDevelopersService = () => {
           <div className="space-y-8 max-w-6xl mx-auto">
             <div className="text-center space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
             </div>
 
@@ -758,12 +758,12 @@ export const HireSoftwareDevelopersService = () => {
       {/* ============================================================
           SECTION 11: ABOUT US STATS BANNER
           ============================================================ */}
-      <AboutUsStats companyName="Firevy.co" />
+      <AboutUsStats companyName="Firevy.Co" />
 
       {/* ============================================================
           SECTION 12: SECTORS THRIVING SECTION
           ============================================================ */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy.co's Bespoke Dedicated Developers" />
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy.Co's Bespoke Dedicated Developers" />
 
       {/* ============================================================
           SECTION 13: TECH STACK PROFICIENT GRID (EMPLOY ADVANCED PROFICIENCY)

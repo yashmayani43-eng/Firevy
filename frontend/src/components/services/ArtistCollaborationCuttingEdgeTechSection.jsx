@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Container from '../common/Container';
 
-export const ArtistCollaborationCuttingEdgeTechSection = ({ companyName = 'Firevy.co' }) => {
+export const ArtistCollaborationCuttingEdgeTechSection = ({ companyName = 'Firevy.Co' }) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const technologies = [

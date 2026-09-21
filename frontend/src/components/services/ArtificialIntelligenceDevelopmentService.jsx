@@ -399,11 +399,10 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                 <button
                   key={sol.id}
                   onClick={() => setActiveTab(idx)}
-                  className={`w-full text-left p-4.5 rounded-[12px] font-[700] text-[15px] transition-all flex items-center justify-between border cursor-pointer ${
-                    activeTab === idx
+                  className={`w-full text-left p-4.5 rounded-[12px] font-[700] text-[15px] transition-all flex items-center justify-between border cursor-pointer ${activeTab === idx
                       ? 'bg-[#006B8F] text-white border-[#006B8F] shadow-md'
                       : 'bg-white text-slate-800 border-slate-200 hover:border-[#006B8F]/50 hover:bg-slate-50'
-                  }`}
+                    }`}
                 >
                   <span className="flex items-center space-x-3">
                     <span className={activeTab === idx ? 'text-white' : 'text-[#006B8F]'}>

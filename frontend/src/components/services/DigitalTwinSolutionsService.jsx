@@ -148,7 +148,7 @@ export const DigitalTwinSolutionsService = () => {
     }
   ];
 
-  // 9 Complete FAQs (Firevy.co Branded)
+  // 9 Complete FAQs (Firevy.Co Branded)
   const digitalTwinFaqs = [
     {
       question: '1. What is a Digital Twin and how does it work?',
@@ -171,7 +171,7 @@ export const DigitalTwinSolutionsService = () => {
       answer: 'By continuously correlating real-time operational parameters against physics models and anomaly detection AI, Digital Twins forecast component failures weeks in advance. This prevents catastrophic downtime, reduces unnecessary routine servicing, and cuts maintenance costs by up to 35%.'
     },
     {
-      question: '6. Can Firevy.co build custom Digital Twins on NVIDIA Omniverse, Unreal Engine, or Azure?',
+      question: '6. Can Firevy.Co build custom Digital Twins on NVIDIA Omniverse, Unreal Engine, or Azure?',
       answer: 'Yes. We build enterprise digital twins on top-tier platforms including NVIDIA Omniverse, Unreal Engine 5, Unity 3D, Azure Digital Twins, and AWS IoT TwinMaker, tailoring the graphics fidelity, physics fidelity, and cloud pipeline to your exact operational requirements.'
     },
     {
@@ -183,7 +183,7 @@ export const DigitalTwinSolutionsService = () => {
       answer: 'A pilot Digital Twin covering a single machine or specialized production cell typically deploys within 6 to 10 weeks. Scaled multi-facility enterprise deployments with custom ERP/MES integrations generally take 3 to 6 months in phased milestones.'
     },
     {
-      question: '9. How can we get started with Firevy.co for our Digital Twin project?',
+      question: '9. How can we get started with Firevy.Co for our Digital Twin project?',
       answer: 'Simply share your asset specifications, sensor telemetry setup, and operational objectives. Our digital twin architects will provide an architectural blueprint, technology recommendation, and implementation roadmap within 24 hours.'
     }
   ];
@@ -192,7 +192,7 @@ export const DigitalTwinSolutionsService = () => {
     <div className="bg-white min-h-screen font-sans text-slate-900">
       <SEO
         title="Digital Twin Solutions Company | Real-Time Virtual Replicas"
-        description="Firevy.co delivers premier Digital Twin solutions. High-fidelity 3D cyber-physical models, IoT sensor telemetry, predictive maintenance, and NVIDIA Omniverse simulations."
+        description="Firevy.Co delivers premier Digital Twin solutions. High-fidelity 3D cyber-physical models, IoT sensor telemetry, predictive maintenance, and NVIDIA Omniverse simulations."
         keywords="digital twin solutions company, digital twin development, IoT digital twin, predictive maintenance, 3D simulation, cyber-physical systems, NVIDIA Omniverse, Azure Digital Twins"
       />
 
@@ -364,19 +364,19 @@ export const DigitalTwinSolutionsService = () => {
       {/* ========================================================================= */}
       {/* 7. CUTTING EDGE TECHNOLOGIES SECTION                                      */}
       {/* ========================================================================= */}
-      <DigitalTwinCuttingEdgeTechSection companyName="Firevy.co" />
+      <DigitalTwinCuttingEdgeTechSection companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 8. OUR PREMIUM SERVICES                                                   */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 9. SUCCESS STORIES                                                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
         cards={digitalTwinSuccessCards}
-        subtitle="Know Firevy.co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
+        subtitle="Know Firevy.Co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
       />
 
       {/* ========================================================================= */}
@@ -474,7 +474,7 @@ export const DigitalTwinSolutionsService = () => {
         title="Frequently Asked Questions"
         subtitle="We Listen To Query And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mention Below."
         faqs={digitalTwinFaqs}
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}

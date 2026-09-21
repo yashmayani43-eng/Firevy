@@ -35,7 +35,7 @@ export const NodeJsVideoShowcaseSection = () => {
             <div className="w-full flex justify-end items-center relative z-10">
               <img
                 src="/firevy_logo_white.png"
-                alt="Firevy.co"
+                alt="Firevy.Co"
                 className="h-5 sm:h-6 md:h-7 w-auto object-contain drop-shadow-md brightness-110"
               />
             </div>

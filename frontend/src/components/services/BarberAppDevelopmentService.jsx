@@ -132,10 +132,10 @@ export const BarberAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Barber App Development Company | Custom Salon Booking Apps | Firevy.co"
+        title="Barber App Development Company | Custom Salon Booking Apps | Firevy.Co"
         description="Build custom on-demand barber and salon booking mobile applications for iOS & Android. Empower clients with instant appointment booking, stylist selection, digital payments, and queue management."
         keywords="Barber App Development, Salon Booking App Development, Barber Appointment App, On-Demand Haircut App, Barber Shop App Developer, Hair Salon App"
-        url="https://firevy.co/services/barber-app-development"
+        url="https://Firevy.co/services/barber-app-development"
       />
 
       {/* =========================================================================

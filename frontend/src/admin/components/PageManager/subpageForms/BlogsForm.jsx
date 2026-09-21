@@ -194,14 +194,14 @@ const ImageThumbnailPicker = ({ label, value, onChange, width = '80px', height =
 /**
  * Reusable Spotlight / Insight Card Preview Component
  * Renders the exact visual card layout shown in the live spotlight design:
- * brandText ('firevy.co') + badge ('FEATURED ARTICLE' / 'INSIGHT')
+ * brandText ('Firevy.Co') + badge ('FEATURED ARTICLE' / 'INSIGHT')
  * topic tag ('</> AI TOOLS') + prominent title
  * subtext with sparkles icon ('✨ Next-Gen Engineering Insights')
  * category · date · readTime
  * excerpt paragraph + buttonText ('Read the full blog →')
  */
 export const BlogSpotlightCardPreview = ({
-  brandText = 'firevy.co',
+  brandText = 'Firevy.Co',
   badge = 'FEATURED ARTICLE',
   tag = '</> AI TOOLS',
   title = 'AI in Mobile App Development: Tools That Save Time and Money',
@@ -258,7 +258,7 @@ export const BlogSpotlightCardPreview = ({
         )}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 1 }}>
           <span style={{ fontSize: compact ? '15px' : '18px', fontWeight: 900, color: '#67E8F9', letterSpacing: '-0.2px' }}>
-            {brandText || 'firevy.co'}
+            {brandText || 'Firevy.Co'}
           </span>
           <span
             style={{
@@ -370,7 +370,7 @@ export const BlogsForm = ({
   // Extract nested section data with sensible defaults
   const content = formData.content || {};
   const heroFeatured = content.heroFeatured || formData.heroFeatured || {
-    brandText: 'firevy.co',
+    brandText: 'Firevy.Co',
     badge: 'FEATURED ARTICLE',
     tag: '</> AI TOOLS',
     title: 'AI in Mobile App Development: Tools That Save Time and Money',
@@ -387,7 +387,7 @@ export const BlogsForm = ({
 
   const secondaryFeatured = content.secondaryFeatured || formData.secondaryFeatured || [
     {
-      brandText: 'firevy.co',
+      brandText: 'Firevy.Co',
       badge: 'FEATURED ARTICLE',
       tag: '</> STARTUP',
       title: "Trending Tech Startup Ideas for Entrepreneurs Looking to Scale Fast",
@@ -402,7 +402,7 @@ export const BlogsForm = ({
       link: ""
     },
     {
-      brandText: 'firevy.co',
+      brandText: 'Firevy.Co',
       badge: 'FEATURED ARTICLE',
       tag: '</> MOBILE',
       title: "Why Investing in Legacy Modernization Services is Critical for Business Success?",
@@ -417,7 +417,7 @@ export const BlogsForm = ({
       link: ""
     },
     {
-      brandText: 'firevy.co',
+      brandText: 'Firevy.Co',
       badge: 'FEATURED ARTICLE',
       tag: '</> DESIGN',
       title: "Why Software Design Principles Matter for Successful IT Solutions?",
@@ -432,7 +432,7 @@ export const BlogsForm = ({
       link: ""
     },
     {
-      brandText: 'firevy.co',
+      brandText: 'Firevy.Co',
       badge: 'FEATURED ARTICLE',
       tag: '</> WEB TECH',
       title: "How to Scale Your IT Business with White Label Web Development Solutions?",
@@ -517,7 +517,7 @@ export const BlogsForm = ({
     slug: '',
     author: 'Kumaril Patel',
     category: 'Artificial Intelligence Development',
-    brandText: 'firevy.co',
+    brandText: 'Firevy.Co',
     badge: 'INSIGHT',
     tag: '</> TECH',
     subtext: 'Next-Gen Engineering Insights',
@@ -579,7 +579,7 @@ export const BlogsForm = ({
       slug: '',
       author: 'Kumaril Patel',
       category: 'Artificial Intelligence Development',
-      brandText: 'firevy.co',
+      brandText: 'Firevy.Co',
       badge: 'INSIGHT',
       tag: '</> TECH',
       subtext: 'Next-Gen Engineering Insights',
@@ -604,7 +604,7 @@ export const BlogsForm = ({
     setEditingPost(post);
     setPostForm({
       ...post,
-      brandText: post.brandText || 'firevy.co',
+      brandText: post.brandText || 'Firevy.Co',
       badge: post.badge || 'INSIGHT',
       tag: post.tag || (post.tags?.[0] ? `</> ${post.tags[0]}` : '</> TECH'),
       subtext: post.subtext || 'Next-Gen Engineering Insights',
@@ -792,7 +792,7 @@ export const BlogsForm = ({
               LIVE PREVIEW (HERO SPOTLIGHT CARD)
             </div>
             <BlogSpotlightCardPreview
-              brandText={heroFeatured.brandText || 'firevy.co'}
+              brandText={heroFeatured.brandText || 'Firevy.Co'}
               badge={heroFeatured.badge || 'FEATURED ARTICLE'}
               tag={heroFeatured.tag || '</> AI TOOLS'}
               title={heroFeatured.title || 'AI in Mobile App Development: Tools That Save Time and Money'}
@@ -814,7 +814,7 @@ export const BlogsForm = ({
               <input
                 type="text"
                 className="form-control"
-                value={heroFeatured.brandText || 'firevy.co'}
+                value={heroFeatured.brandText || 'Firevy.Co'}
                 onChange={(e) =>
                   updateContentField('heroFeatured', { ...heroFeatured, brandText: e.target.value })
                 }
@@ -997,7 +997,7 @@ export const BlogsForm = ({
                     Live Preview (Card #{idx + 1})
                   </div>
                   <BlogSpotlightCardPreview
-                    brandText={card.brandText || 'firevy.co'}
+                    brandText={card.brandText || 'Firevy.Co'}
                     badge={card.badge || 'FEATURED ARTICLE'}
                     tag={card.tag || '</> TECH'}
                     title={card.title || 'Untitled Card'}
@@ -1022,7 +1022,7 @@ export const BlogsForm = ({
                     <input
                       type="text"
                       className="form-control"
-                      value={card.brandText || 'firevy.co'}
+                      value={card.brandText || 'Firevy.Co'}
                       onChange={(e) => {
                         const updated = [...secondaryFeatured];
                         updated[idx] = { ...updated[idx], brandText: e.target.value };
@@ -1408,7 +1408,7 @@ export const BlogsForm = ({
                               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
                           ) : (
-                            <span style={{ fontSize: '9px', fontWeight: 900, opacity: 0.85, letterSpacing: '-0.2px' }}>firevy</span>
+                            <span style={{ fontSize: '9px', fontWeight: 900, opacity: 0.85, letterSpacing: '-0.2px' }}>Firevy</span>
                           )}
                         </div>
                       </td>
@@ -1675,7 +1675,7 @@ export const BlogsForm = ({
                   }}
                 >
                   <BlogSpotlightCardPreview
-                    brandText={post.brandText || 'firevy.co'}
+                    brandText={post.brandText || 'Firevy.Co'}
                     badge={post.badge || 'INSIGHT'}
                     tag={post.tag || (post.tags?.[0] ? `</> ${post.tags[0]}` : '</> TECH')}
                     title={post.title || 'Untitled Post'}
@@ -2004,7 +2004,7 @@ export const BlogsForm = ({
               LIVE PREVIEW (CARD SPOTLIGHT PREVIEW)
             </div>
             <BlogSpotlightCardPreview
-              brandText={postForm.brandText || 'firevy.co'}
+              brandText={postForm.brandText || 'Firevy.Co'}
               badge={postForm.badge || 'INSIGHT'}
               tag={postForm.tag || '</> TECH'}
               title={postForm.title || 'AI in Mobile App Development: Tools That Save Time and Money'}
@@ -2026,7 +2026,7 @@ export const BlogsForm = ({
               <input
                 type="text"
                 className="form-control"
-                value={postForm.brandText || 'firevy.co'}
+                value={postForm.brandText || 'Firevy.Co'}
                 onChange={(e) => setPostForm({ ...postForm, brandText: e.target.value })}
               />
             </AdminFormField>
@@ -2222,7 +2222,7 @@ export const BlogsForm = ({
         {viewingPost && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <BlogSpotlightCardPreview
-              brandText={viewingPost.brandText || 'firevy.co'}
+              brandText={viewingPost.brandText || 'Firevy.Co'}
               badge={viewingPost.badge || 'INSIGHT'}
               tag={viewingPost.tag || (viewingPost.tags?.[0] ? `</> ${viewingPost.tags[0]}` : '</> TECH')}
               title={viewingPost.title || ''}

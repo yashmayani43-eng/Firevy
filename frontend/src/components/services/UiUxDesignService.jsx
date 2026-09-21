@@ -220,7 +220,7 @@ export const UiUxDesignService = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="UI/UX Design Services | Top UI/UX Design Company in USA | Firevy.co"
+        title="UI/UX Design Services | Top UI/UX Design Company in USA | Firevy.Co"
         description="Transform your digital products with Firevy's UI/UX Design Services. User research, wireframing, high-fidelity interactive prototyping, and enterprise design systems in Figma."
         keywords="ui ux design services, ui ux design company, user experience design, user interface design, figma prototyping, design system, mobile app design, web design company"
       />

@@ -101,7 +101,7 @@ export const MagentoDevelopmentService = () => {
       a: "Magento (Adobe Commerce) is the undisputed industry standard for complex, high-volume e-commerce. It features native multi-store, multi-currency, and multi-language capabilities, advanced B2B quoting, headless PWA architecture, and infinite customization potential without licensing lock-in."
     },
     {
-      q: "2. How does Firevy.co optimize Magento 2 performance and page speed?",
+      q: "2. How does Firevy.Co optimize Magento 2 performance and page speed?",
       a: "We implement Hyvä Themes or Headless PWA Studio to reduce JS payload by over 80%. We also fine-tune Varnish Cache, configure Redis session clustering, optimize OpenSearch queries, and utilize Fastly CDN edge image optimization to achieve sub-second load times and 90+ Google Core Web Vitals."
     },
     {
@@ -129,7 +129,7 @@ export const MagentoDevelopmentService = () => {
       a: "We adhere strictly to OWASP and PCI-DSS Level 1 guidelines. We implement secure tokenized payment gateways (Stripe, Adyen, Authorize.Net, PayPal), two-factor authentication, database encryption, and Fastly WAF edge security."
     },
     {
-      q: "9. How quickly can we onboard a dedicated Magento team from Firevy.co?",
+      q: "9. How quickly can we onboard a dedicated Magento team from Firevy.Co?",
       a: "We can onboard certified Adobe Commerce / Magento developers to your project within 3 to 5 business days."
     }
   ];
@@ -138,7 +138,7 @@ export const MagentoDevelopmentService = () => {
     <div className="bg-white text-slate-800 font-sans antialiased overflow-hidden">
       <SEO
         title="Magento Development Company in USA | Certified Adobe Commerce Experts"
-        description="Firevy.co is a top Magento development company in USA. Certified Adobe Commerce architects specializing in Magento 2, Hyvä themes, PWA Studio, B2B commerce, and ERP integrations."
+        description="Firevy.Co is a top Magento development company in USA. Certified Adobe Commerce architects specializing in Magento 2, Hyvä themes, PWA Studio, B2B commerce, and ERP integrations."
       />
 
 
@@ -714,7 +714,7 @@ export const MagentoDevelopmentService = () => {
             {/* Left: What Sets Us Apart */}
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-[#005F96] text-xs font-bold uppercase tracking-widest rounded-full">
-                Why Firevy.co
+                Why Firevy.Co
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
                 What Sets Us Apart As Magento Development Company?

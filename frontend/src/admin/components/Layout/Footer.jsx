@@ -13,7 +13,7 @@ export const Footer = () => {
         <span>Build v1.0.0-PROD</span>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
           <Cpu size={13} />
-          <span>Firevy.co Core Engine</span>
+          <span>Firevy.Co Core Engine</span>
         </div>
       </div>
     </footer>

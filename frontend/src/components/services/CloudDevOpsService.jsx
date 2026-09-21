@@ -290,7 +290,7 @@ export const CloudDevOpsService = () => {
     }
   ];
 
-  // 9 Complete FAQs (Tailored to Cloud & DevOps Services & Firevy.co)
+  // 9 Complete FAQs (Tailored to Cloud & DevOps Services & Firevy.Co)
   const cloudDevOpsFaqs = [
     {
       question: '1. What are Cloud & DevOps Services, and why are they essential?',
@@ -317,15 +317,15 @@ export const CloudDevOpsService = () => {
       answer: 'Through proactive DevSecOps, we embed static application security testing (SAST), dynamic vulnerability scanning (DAST), container image audits (Trivy), and centralized secrets management (HashiCorp Vault) directly into every code commit.'
     },
     {
-      question: '7. Why should businesses choose Firevy.co for Cloud & DevOps services?',
-      answer: 'With certified multi-cloud architects and 500+ successfully automated cloud environments, Firevy.co is trusted by global enterprises to eliminate infrastructure bottlenecks, improve system reliability, and reduce operational waste.'
+      question: '7. Why should businesses choose Firevy.Co for Cloud & DevOps services?',
+      answer: 'With certified multi-cloud architects and 500+ successfully automated cloud environments, Firevy.Co is trusted by global enterprises to eliminate infrastructure bottlenecks, improve system reliability, and reduce operational waste.'
     },
     {
       question: '8. What deliverables will we receive from a Cloud & DevOps engagement?',
       answer: 'Deliverables include modular Infrastructure as Code (IaC) repositories, fully automated multi-branch CI/CD pipelines, containerized Kubernetes manifests, centralized monitoring dashboards, and comprehensive disaster recovery documentation.'
     },
     {
-      question: '9. Does Firevy.co provide continuous Cloud FinOps cost governance?',
+      question: '9. Does Firevy.Co provide continuous Cloud FinOps cost governance?',
       answer: 'Yes, we implement proactive Cloud FinOps practices, including compute rightsizing, spot instance scheduling, reserved capacity planning, and automated billing alerts to lower monthly cloud infrastructure expenditures by up to 50%.'
     }
   ];
@@ -334,10 +334,10 @@ export const CloudDevOpsService = () => {
     <div className="min-h-screen bg-white text-slate-800 selection:bg-[#005F96] selection:text-white">
       {/* SEO Metadata */}
       <SEO
-        title="Cloud & DevOps Services | Enterprise Cloud Infrastructure & CI/CD | Firevy.co"
+        title="Cloud & DevOps Services | Enterprise Cloud Infrastructure & CI/CD | Firevy.Co"
         description="Unify cloud computing and DevOps automation with Firevy's Cloud & DevOps Services. Multi-cloud architecture (AWS, Azure, GCP), CI/CD pipelines, Kubernetes, Terraform, and 24/7 SRE."
-        keywords="Cloud & DevOps Services, Cloud and DevOps, Cloud Infrastructure, CI/CD Automation, Kubernetes Orchestration, Terraform IaC, DevSecOps, SRE, Firevy.co"
-        url="https://firevy.co/services/cloud-devops"
+        keywords="Cloud & DevOps Services, Cloud and DevOps, Cloud Infrastructure, CI/CD Automation, Kubernetes Orchestration, Terraform IaC, DevSecOps, SRE, Firevy.Co"
+        url="https://Firevy.co/services/cloud-devops"
       />
 
       {/* ========================================================================= */}
@@ -571,7 +571,7 @@ export const CloudDevOpsService = () => {
                 Cutting-Edge Technologies We Use For Development
               </h2>
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] max-w-2xl font-normal leading-relaxed">
-                As a leading Cloud & DevOps engineering organization, Firevy.co leverages state-of-the-art cloud platforms, container orchestration, and continuous delivery tools.
+                As a leading Cloud & DevOps engineering organization, Firevy.Co leverages state-of-the-art cloud platforms, container orchestration, and continuous delivery tools.
               </p>
             </div>
 
@@ -623,14 +623,14 @@ export const CloudDevOpsService = () => {
       {/* ========================================================================= */}
       {/* 8. OUR PREMIUM SERVICES (MATCHING REFERENCE SCREENSHOT)                   */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 9. SUCCESS STORIES (MATCHING REFERENCE SCREENSHOT)                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
         cards={cloudDevOpsSuccessCards}
-        subtitle="Know Firevy.co journey from concept to cloud success. Explore how we've engineered resilient Cloud & DevOps ecosystems and achieved remarkable velocity for our enterprise clients."
+        subtitle="Know Firevy.Co journey from concept to cloud success. Explore how we've engineered resilient Cloud & DevOps ecosystems and achieved remarkable velocity for our enterprise clients."
       />
 
       {/* ========================================================================= */}
@@ -776,7 +776,7 @@ export const CloudDevOpsService = () => {
         title="Frequently Asked Questions"
         subtitle="We Listen To Queries And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mentioned Below."
         faqs={cloudDevOpsFaqs}
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}
@@ -795,7 +795,7 @@ export const CloudDevOpsService = () => {
       <div id="contact">
         <IWatchChallengeCtaBanner
           title="Have Cloud & DevOps Challenge To Address ?"
-          subtitle="Get access to top Cloud & DevOps Certified Architects at Firevy.co to transform your deployment pipelines into a high-speed, automated cloud ecosystem."
+          subtitle="Get access to top Cloud & DevOps Certified Architects at Firevy.Co to transform your deployment pipelines into a high-speed, automated cloud ecosystem."
           buttonText="Hire Now"
         />
       </div>

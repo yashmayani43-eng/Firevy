@@ -224,8 +224,8 @@ export const TestingQaService = () => {
   // 5. Custom FAQs tailored specifically for Software QA & Testing
   const testingQaFaqs = [
     {
-      question: 'What types of software testing and QA services does Firevy.co provide?',
-      answer: 'Firevy.co delivers end-to-end software quality assurance services covering Functional Testing, Performance & Load Testing, Security & Penetration Testing, Usability Testing, Cross-Platform Compatibility Testing, API Automation, Regression Testing, and Cloud CI/CD Integration.'
+      question: 'What types of software testing and QA services does Firevy.Co provide?',
+      answer: 'Firevy.Co delivers end-to-end software quality assurance services covering Functional Testing, Performance & Load Testing, Security & Penetration Testing, Usability Testing, Cross-Platform Compatibility Testing, API Automation, Regression Testing, and Cloud CI/CD Integration.'
     },
     {
       question: 'Why should my business invest in professional QA testing services?',
@@ -248,7 +248,7 @@ export const TestingQaService = () => {
       answer: 'Absolutely. Our QA engineers work as an extension of your team via Agile/Scrum ceremonies, daily standups, Jira/Azure DevOps sprint backlogs, and real-time Slack/Teams communication across your preferred timezone.'
     },
     {
-      question: 'How quickly can Firevy.co onboard dedicated QA testers for our project?',
+      question: 'How quickly can Firevy.Co onboard dedicated QA testers for our project?',
       answer: 'We can deploy vetted senior QA engineers or complete automated testing pods within 48 to 72 hours, backed by standard onboarding procedures and zero ramp-up downtime.'
     },
     {
@@ -272,8 +272,8 @@ export const TestingQaService = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Best Software QA Testing Company | Quality Assurance Services | Firevy.co"
-        description="As a top QA testing service provider, Firevy.co offers comprehensive software testing services to ensure your web and mobile applications are bug-free, secure, and fully functional."
+        title="Best Software QA Testing Company | Quality Assurance Services | Firevy.Co"
+        description="As a top QA testing service provider, Firevy.Co offers comprehensive software testing services to ensure your web and mobile applications are bug-free, secure, and fully functional."
         keywords="software qa testing company, quality assurance services, functional testing, performance testing, security testing, usability testing, compatibility testing"
       />
 

@@ -97,7 +97,7 @@ export const PremiumServicesEditor = ({ data, onChange }) => {
             <textarea
               className="form-control"
               rows={2}
-              value={data?.description || 'As a certified IT company, firevy.co helps organizations thrive digitally by offering innovative solutions using cutting-edge tools and frameworks.'}
+              value={data?.description || 'As a certified IT company, Firevy.Co helps organizations thrive digitally by offering innovative solutions using cutting-edge tools and frameworks.'}
               onChange={(e) => handleFieldChange('description', e.target.value)}
               style={{
                 width: '100%',

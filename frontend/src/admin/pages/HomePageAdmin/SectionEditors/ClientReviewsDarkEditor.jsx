@@ -49,7 +49,7 @@ export const ClientReviewsDarkEditor = ({ data, onChange }) => {
       name: 'title',
       label: 'Review Headline',
       type: 'text',
-      placeholder: "e.g. firevy.co's team communicated effectively...",
+      placeholder: "e.g. Firevy.Co's team communicated effectively...",
       required: true
     },
     {

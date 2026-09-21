@@ -103,11 +103,11 @@ export const HireChatGptDevelopersService = () => {
     },
     {
       q: '10. How do I Hire ChatGPT Programmers?',
-      a: 'You can hire ChatGPT programmers from Firevy.co in 4 easy steps: share your project requirements, screen candidate profiles, interview selected AI engineers, and start your risk-free trial.'
+      a: 'You can hire ChatGPT programmers from Firevy.Co in 4 easy steps: share your project requirements, screen candidate profiles, interview selected AI engineers, and start your risk-free trial.'
     },
     {
       q: '11. Which Indian company offer ChatGPT developer teams for hire?',
-      a: 'Firevy.co is a top-rated AI development company in India and USA offering dedicated ChatGPT developer teams with expertise in OpenAI APIs, RAG, and custom LLM engineering.'
+      a: 'Firevy.Co is a top-rated AI development company in India and USA offering dedicated ChatGPT developer teams with expertise in OpenAI APIs, RAG, and custom LLM engineering.'
     }
   ];
 
@@ -115,7 +115,7 @@ export const HireChatGptDevelopersService = () => {
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#006095] selection:text-white">
       <SEO
         title="Hire ChatGPT Developers | Dedicated OpenAI & LLM Engineers"
-        description="Hire dedicated ChatGPT developers from Firevy.co. Expert OpenAI API, LLM, Generative AI, and conversational AI engineers."
+        description="Hire dedicated ChatGPT developers from Firevy.Co. Expert OpenAI API, LLM, Generative AI, and conversational AI engineers."
         keywords="Hire ChatGPT Developers, Hire OpenAI Engineers, Hire LLM Developers, ChatGPT API Integration, Conversational AI Developers"
       />
 
@@ -216,7 +216,7 @@ export const HireChatGptDevelopersService = () => {
                 Hire ChatGPT Developers At Competitive Rates
               </h2>
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                Hire ChatGPT Developers at Competitive Rates to build intelligent conversational interfaces, fine-tune LLMs, and automate complex workflows. With <strong>Hire dedicated AI development team</strong> services from Firevy.co, you can deploy enterprise-grade AI assistants that are fully configurable, secure, and seamlessly integrated into your modern cloud stack.
+                Hire ChatGPT Developers at Competitive Rates to build intelligent conversational interfaces, fine-tune LLMs, and automate complex workflows. With <strong>Hire dedicated AI development team</strong> services from Firevy.Co, you can deploy enterprise-grade AI assistants that are fully configurable, secure, and seamlessly integrated into your modern cloud stack.
               </p>
             </div>
           </div>
@@ -234,7 +234,7 @@ export const HireChatGptDevelopersService = () => {
                 Our Flexible Hiring Models: Find the Perfect Fit For Your Project
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                Hire ChatGPT Developers from Firevy.co Starts from,
+                Hire ChatGPT Developers from Firevy.Co Starts from,
               </p>
             </div>
 
@@ -436,7 +436,7 @@ export const HireChatGptDevelopersService = () => {
               </h2>
               <div className="space-y-4 text-sm sm:text-[15px] lg:text-[16px] text-slate-600 font-normal leading-[1.7]">
                 <p>
-                  Firevy.co is a reputable AI development organization assisting businesses in the USA, UK, Canada, UAE, Australia, and India. Our ChatGPT Prompt Engineer become part of your team—taking care of everything from model selection and training to deployment and scaling. We have flexible hiring models available so you can scale engineering capability on demand with full transparency, sprint planning, and quantifiable outcomes.
+                  Firevy.Co is a reputable AI development organization assisting businesses in the USA, UK, Canada, UAE, Australia, and India. Our ChatGPT Prompt Engineer become part of your team—taking care of everything from model selection and training to deployment and scaling. We have flexible hiring models available so you can scale engineering capability on demand with full transparency, sprint planning, and quantifiable outcomes.
                 </p>
               </div>
             </div>
@@ -481,7 +481,7 @@ export const HireChatGptDevelopersService = () => {
               {/* Right Content Column */}
               <div className="lg:col-span-7 space-y-6 text-left">
                 <p className="text-sm sm:text-[15px] lg:text-[16px] text-slate-600 font-normal leading-[1.7]">
-                  A ChatGPT Developer develops, modifies, and optimizes generative AI models and GPT prompts for particular functions such as summarization, Q&A, search, and generating content. They handle model architecture, prompt creation, dataset organization, performance optimization, and secure deployment. Hire ChatGPT Developer for AI Development from Firevy.co to integrate cutting-edge AI into your product—be it through comprehensive AI development, smart automation, or bespoke in-house LLMs designed for your business
+                  A ChatGPT Developer develops, modifies, and optimizes generative AI models and GPT prompts for particular functions such as summarization, Q&A, search, and generating content. They handle model architecture, prompt creation, dataset organization, performance optimization, and secure deployment. Hire ChatGPT Developer for AI Development from Firevy.Co to integrate cutting-edge AI into your product—be it through comprehensive AI development, smart automation, or bespoke in-house LLMs designed for your business
                 </p>
 
                 <div>
@@ -520,7 +520,7 @@ export const HireChatGptDevelopersService = () => {
           <div className="space-y-8 max-w-6xl mx-auto">
             <div className="text-center space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
             </div>
 
@@ -613,12 +613,12 @@ export const HireChatGptDevelopersService = () => {
       {/* ============================================================
           SECTION 9: ABOUT US STATS BANNER
           ============================================================ */}
-      <AboutUsStats companyName="Firevy.co" />
+      <AboutUsStats companyName="Firevy.Co" />
 
       {/* ============================================================
           SECTION 10: SECTORS THRIVING SECTION
           ============================================================ */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy.co's Bespoke ChatGPT Developers" />
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy.Co's Bespoke ChatGPT Developers" />
 
       {/* ============================================================
           SECTION 10B: EMPLOY THE ADVANCED PROFICIENCY SECTION
@@ -628,10 +628,10 @@ export const HireChatGptDevelopersService = () => {
           <div className="space-y-12 max-w-6xl mx-auto">
             <div className="text-center space-y-3 max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team
+                Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+                At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
               </p>
             </div>
 
@@ -690,7 +690,7 @@ export const HireChatGptDevelopersService = () => {
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
                   }`}
                 >
-                  Firevy.co
+                  Firevy.Co
                 </button>
                 <button
                   onClick={() => setResponsibilityTab('client')}

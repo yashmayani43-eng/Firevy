@@ -39,7 +39,7 @@ export const techConfigurations = {
     title: 'Hire Backend Developers',
     techName: 'Backend',
     metaTitle: 'Hire Dedicated Backend Developers | Senior Backend Engineers at $21/Hr',
-    metaDesc: 'Hire dedicated backend developers from Firevy.co for high-concurrency microservices, cloud APIs, database optimization, and distributed architectures. Instant onboarding at $21/hr.',
+    metaDesc: 'Hire dedicated backend developers from Firevy.Co for high-concurrency microservices, cloud APIs, database optimization, and distributed architectures. Instant onboarding at $21/hr.',
     canonical: '/services/hire-backend-developers',
     heroDesc: 'We are one of the leading backend web development companies. Hire backend developers in USA that quickly achieve business objectives.',
     brandColor: '#006095',
@@ -57,7 +57,7 @@ export const techConfigurations = {
     briefP1: 'When developing mission-critical server-side architectures, take advantage of modern backend practices: event-driven microservices, distributed caching, database sharding, and high-throughput API gateways.',
     briefP2: 'Our backend developers engineer enterprise backends with Go, Python, Node.js, Java, .NET, PostgreSQL, Redis, Kafka, and Kubernetes. Benefit from scalable server architectures with sub-millisecond response times and 99.99% uptime.',
     faqs: [
-      { q: '1. Why should I hire dedicated backend developers from Firevy.co?', a: 'Our backend engineers are vetted distributed systems specialists with mastery over microservices, API architecture, database performance tuning, and cloud-native deployments.' },
+      { q: '1. Why should I hire dedicated backend developers from Firevy.Co?', a: 'Our backend engineers are vetted distributed systems specialists with mastery over microservices, API architecture, database performance tuning, and cloud-native deployments.' },
       { q: '2. What technologies do your backend developers specialize in?', a: 'Our backend developers cover Golang, Python, Node.js, Java Spring Boot, .NET Core, PHP Laravel, PostgreSQL, MongoDB, Redis, and Apache Kafka.' },
       { q: '3. What is the hourly rate to hire dedicated backend developers?', a: 'Our dedicated backend developer rates start from $21/Hourly* on flexible part-time, full-time, or hourly engagement models.' },
       { q: '4. How quickly can a backend developer start on our project?', a: 'We can match and onboard seasoned backend engineers within 24 to 48 hours.' }
@@ -68,7 +68,7 @@ export const techConfigurations = {
     title: 'Hire Python Developers',
     techName: 'Python',
     metaTitle: 'Hire Dedicated Python Developers | Senior Python Programmers at $21/Hr',
-    metaDesc: 'Hire skilled Python developers from Firevy.co for AI/ML, Django, FastAPI, data pipelines, and scalable cloud backends. Fast onboarding and flexible engagement models.',
+    metaDesc: 'Hire skilled Python developers from Firevy.Co for AI/ML, Django, FastAPI, data pipelines, and scalable cloud backends. Fast onboarding and flexible engagement models.',
     canonical: '/services/hire-python-developers',
     heroDesc: 'We are the top Python development company and have drawn up web portals that are feature-rich and versatile. These web portals are unique and will bring success to your organization.',
     brandColor: '#3776AB',
@@ -86,7 +86,7 @@ export const techConfigurations = {
     briefP1: 'When developing next-generation AI-driven systems and scalable web applications, take advantage of world-class Python development practices. Gain unmatched speed in prototyping, machine learning modeling, and clean backend APIs that scale effortlessly.',
     briefP2: 'Our Python developers engineer enterprise solutions with Django, FastAPI, Flask, PostgreSQL, Celery, and Docker. Benefit from clean, maintainable, and high-performance Python codebases running smoothly across AWS, GCP, and Azure.',
     faqs: [
-      { q: '1. Why should I hire Python developers from Firevy.co?', a: 'Our Python developers are top 1% vetted engineers with expertise in modern Python, AI/ML integrations, async FastAPI, Django architectures, and robust cloud deployments.' },
+      { q: '1. Why should I hire Python developers from Firevy.Co?', a: 'Our Python developers are top 1% vetted engineers with expertise in modern Python, AI/ML integrations, async FastAPI, Django architectures, and robust cloud deployments.' },
       { q: '2. What engagement models are available for hiring Python developers?', a: 'We offer full-time dedicated, part-time, and hourly ($21/hr) hiring models tailored to your roadmap.' },
       { q: '3. Can your Python engineers integrate AI and Large Language Models (LLMs)?', a: 'Yes! Our developers have hands-on experience integrating OpenAI, LangChain, PyTorch, LlamaIndex, and HuggingFace into enterprise workflows.' },
       { q: '4. How fast can a Python developer join my existing sprint?', a: 'We can onboard matched senior Python developers within 24 to 48 hours after assessing your requirements.' },
@@ -98,7 +98,7 @@ export const techConfigurations = {
     title: 'Hire Java Developers',
     techName: 'Java',
     metaTitle: 'Hire Dedicated Java Developers | Senior Java Programmers at $21/Hr',
-    metaDesc: 'Hire enterprise Java developers from Firevy.co for robust microservices, Spring Boot backends, and cloud-native systems. Vetted engineers starting at $21/hr.',
+    metaDesc: 'Hire enterprise Java developers from Firevy.Co for robust microservices, Spring Boot backends, and cloud-native systems. Vetted engineers starting at $21/hr.',
     canonical: '/services/hire-java-developers',
     heroDesc: 'When you employ skilled Java developers from us, we will collaborate with you throughout all phases to create high-performance enterprise applications.',
     brandColor: '#EA2D2E',
@@ -113,7 +113,7 @@ export const techConfigurations = {
     briefP1: 'When developing enterprise-grade systems, take advantage of proven Java architectures, multi-threading capabilities, and secure JVM ecosystems that power Fortune 500 workflows globally.',
     briefP2: 'Our Java developers engineer high-throughput microservices using Spring Boot, Hibernate, Apache Kafka, Docker, and Kubernetes with 99.99% uptime guarantees.',
     faqs: [
-      { q: '1. Why choose Firevy.co for hiring Java developers?', a: 'Our Java developers bring 5+ years of enterprise experience in microservices, secure transaction processing, and legacy JVM modernization.' },
+      { q: '1. Why choose Firevy.Co for hiring Java developers?', a: 'Our Java developers bring 5+ years of enterprise experience in microservices, secure transaction processing, and legacy JVM modernization.' },
       { q: '2. What is the hourly rate for Java programmers?', a: 'Our dedicated Java developer rates start from $21/Hourly* on flexible full-time, part-time, or hourly contracts.' },
       { q: '3. Can your Java developers modernize legacy Java 8 code to Java 17/21?', a: 'Yes. We execute zero-downtime refactoring, dependency upgrades, and cloud containerization.' }
     ]
@@ -123,7 +123,7 @@ export const techConfigurations = {
     title: 'Hire Spring Boot Developers',
     techName: 'Spring Boot',
     metaTitle: 'Hire Dedicated Spring Boot Developers | Microservices Experts at $21/Hr',
-    metaDesc: 'Hire certified Spring Boot developers from Firevy.co for high-concurrency microservices, REST/gRPC APIs, and cloud-native Java backends. Instant onboarding.',
+    metaDesc: 'Hire certified Spring Boot developers from Firevy.Co for high-concurrency microservices, REST/gRPC APIs, and cloud-native Java backends. Instant onboarding.',
     canonical: '/services/hire-spring-boot-developers',
     heroDesc: 'When you employ skilled Spring Boot developers from us, we will collaborate with you throughout all phases to create high-performance microservices architecture.',
     brandColor: '#6DB33F',
@@ -208,7 +208,7 @@ export const techConfigurations = {
     briefP1: 'Node.js non-blocking, event-driven I/O engine is ideal for building high-concurrency real-time chat, video streaming, collaborative tools, and IoT gateways.',
     briefP2: 'Our Node.js developers build scalable TypeScript-first microservices with NestJS, Express.js, GraphQL, Redis, and serverless AWS Lambda architectures.',
     faqs: [
-      { q: '1. Why hire Node.js engineers from Firevy.co?', a: 'Our Node.js specialists have deep expertise in asynchronous event loops, memory leak prevention, and microservices orchestration.' }
+      { q: '1. Why hire Node.js engineers from Firevy.Co?', a: 'Our Node.js specialists have deep expertise in asynchronous event loops, memory leak prevention, and microservices orchestration.' }
     ]
   },
   'hire-php-developers': {
@@ -216,7 +216,7 @@ export const techConfigurations = {
     title: 'Hire PHP Developers',
     techName: 'PHP',
     metaTitle: 'Hire Dedicated PHP Developers | Expert Laravel & Symfony Programmers at $21/Hr',
-    metaDesc: 'Hire dedicated PHP developers from Firevy.co. Expert Laravel, Symfony, and full-stack PHP engineers for custom web apps and enterprise portals. Instant onboarding.',
+    metaDesc: 'Hire dedicated PHP developers from Firevy.Co. Expert Laravel, Symfony, and full-stack PHP engineers for custom web apps and enterprise portals. Instant onboarding.',
     canonical: '/services/hire-php-developers',
     heroDesc: 'When you employ skilled PHP developers from us, we will collaborate with you throughout all phases to create high-performance web applications.',
     brandColor: '#777BB4',
@@ -239,7 +239,7 @@ export const techConfigurations = {
     title: 'Hire Express JS Developers',
     techName: 'Express JS',
     metaTitle: 'Hire Dedicated Express.js Developers | Fast REST API Engineers at $21/Hr',
-    metaDesc: 'Hire dedicated Express.js developers from Firevy.co for minimalist, high-speed RESTful APIs and microservices backends. Vetted developers at $21/hr.',
+    metaDesc: 'Hire dedicated Express.js developers from Firevy.Co for minimalist, high-speed RESTful APIs and microservices backends. Vetted developers at $21/hr.',
     canonical: '/services/hire-express-js-developers',
     heroDesc: 'When you employ skilled Express JS developers from us, we will collaborate with you throughout all phases to create high-performance API backends.',
     brandColor: '#000000',
@@ -998,7 +998,7 @@ export const HireDedicatedTechDevelopersService = ({ techKey }) => {
         <Container>
           <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-slate-900 tracking-tight leading-tight">
-              Hire {config.techName} Developers from Firevy.co Starts from,
+              Hire {config.techName} Developers from Firevy.Co Starts from,
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-normal">
               Select from our range of engagement models to build and scale your engineering team.

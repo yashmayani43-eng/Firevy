@@ -134,7 +134,7 @@ export const EngagementModels = () => {
       <TrustMarquee />
 
       {/* ============================================================
-          3. "firevy.co Engagement Models"
+          3. "Firevy.Co Engagement Models"
           ============================================================ */}
       <section className="py-16 md:py-24 bg-white text-slate-900 font-sans border-b border-slate-100">
         <Container>
@@ -217,7 +217,7 @@ export const EngagementModels = () => {
       </section>
 
       {/* ============================================================
-          4. "firevy.co's Engagement models for customer success"
+          4. "Firevy.Co's Engagement models for customer success"
           ============================================================ */}
       <section className="py-16 md:py-24 bg-[#F4F8FA] text-slate-900 font-sans border-b border-slate-200/80">
         <Container>

@@ -383,7 +383,7 @@ export const MegaMenu = ({ type, onClose }) => {
               <div className="space-y-5 relative z-10">
                 <h2 className="text-3xl font-extrabold tracking-tight text-white">Our Work</h2>
                 <p className="text-[13.5px] text-blue-100 leading-relaxed font-normal">
-                  Insights From firevy.co Experts Who Help The World's Most Successful Fortune 500 Companies Solve Key Challenges. Lets Shape Happier Tomorrow.
+                  Insights From Firevy.Co Experts Who Help The World's Most Successful Fortune 500 Companies Solve Key Challenges. Lets Shape Happier Tomorrow.
                 </p>
               </div>
 
@@ -1096,7 +1096,7 @@ export const MegaMenu = ({ type, onClose }) => {
                 </h4>
                 <div className="grid grid-cols-3 gap-2">
                   <ul className="space-y-1">
-                    <li><Link to="/company/about-firevy" onClick={onClose} className={subMenuLinkStyle}>About firevy.co</Link></li>
+                    <li><Link to="/company/about-firevy" onClick={onClose} className={subMenuLinkStyle}>About Firevy.Co</Link></li>
                     <li><Link to="/company/ceo-message" onClick={onClose} className={subMenuLinkStyle}>CEO Message</Link></li>
                     <li><Link to="/company/our-team" onClick={onClose} className={subMenuLinkStyle}>Our Team</Link></li>
                     <li><Link to="/company/events-activities" onClick={onClose} className={subMenuLinkStyle}>Events & Activities</Link></li>

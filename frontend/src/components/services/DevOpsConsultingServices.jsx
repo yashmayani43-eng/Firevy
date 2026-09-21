@@ -216,7 +216,7 @@ export const DevOpsConsultingServices = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="DevOps Consulting Services | Cloud, CI/CD & Kubernetes Advisory | Firevy.co"
+        title="DevOps Consulting Services | Cloud, CI/CD & Kubernetes Advisory | Firevy.Co"
         description="Accelerate software delivery velocity with Firevy's certified DevOps Consulting Services. Specializing in CI/CD automation, Kubernetes container orchestration, Infrastructure as Code, and 24/7 SRE monitoring."
         keywords="devops consulting service, devops consulting services, cloud migration, ci cd pipeline automation, kubernetes consulting, terraform infrastructure as code, devsecops, site reliability engineering"
       />

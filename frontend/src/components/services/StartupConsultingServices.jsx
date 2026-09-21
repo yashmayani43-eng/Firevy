@@ -229,7 +229,7 @@ export const StartupConsultingServices = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Startup Consulting Services | MVP, Tech Strategy & Scale | Firevy.co"
+        title="Startup Consulting Services | MVP, Tech Strategy & Scale | Firevy.Co"
         description="Accelerate your startup journey with Firevy's Startup Consulting Services. Ideation, rapid MVP development, scalable cloud architecture, pitch deck tech due diligence, and go-to-market execution."
         keywords="startup consulting services, startup tech consulting, MVP development consulting, fractional CTO services, startup advisory, lean startup consulting, tech due diligence for startups"
       />

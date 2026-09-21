@@ -239,7 +239,7 @@ export const HireFlutterDevelopersService = () => {
   // Flutter FAQs
   const faqs = [
     {
-      q: '1. Why should I hire Flutter developers from Firevy.co?',
+      q: '1. Why should I hire Flutter developers from Firevy.Co?',
       a: 'Our Flutter developers are top 1% vetted engineers with 5+ years of production experience in Dart, Bloc, Riverpod, and native iOS/Android bridge integrations.'
     },
     {
@@ -264,7 +264,7 @@ export const HireFlutterDevelopersService = () => {
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
         title="Hire Flutter App Developers | Dedicated Flutter Programmers at $21/Hr"
-        description="Hire dedicated Flutter app developers from Firevy.co. Expert cross-platform iOS & Android mobile app programmers. Flexible models, 100% IP ownership, and instant onboarding."
+        description="Hire dedicated Flutter app developers from Firevy.Co. Expert cross-platform iOS & Android mobile app programmers. Flexible models, 100% IP ownership, and instant onboarding."
         canonical="/services/hire-flutter-developers"
       />
 
@@ -920,7 +920,7 @@ export const HireFlutterDevelopersService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium">
-              Hire Flutter Developers from Firevy.co Starts from,
+              Hire Flutter Developers from Firevy.Co Starts from,
             </p>
           </div>
 

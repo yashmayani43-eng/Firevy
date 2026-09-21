@@ -110,13 +110,13 @@ export const DigitalMarketingService = () => {
     },
     {
       id: 3,
-      question: '3. Why Choose Firevy.co for Digital Marketing Services in USA?',
-      answer: 'Due to its skilled staff, unique tactics, established track record, clear reporting, complete services, and client-centric approach, Firevy.co is a premier digital marketing firm. We use competent digital marketers to oversee your campaigns. We customize digital marketing strategies for your company and audience. We produce results with our effective campaigns and delighted customers. You can track your marketing success with our frequent, thorough campaign reports. All your digital marketing demands are met by our services, from SEO to social media marketing. To integrate our tactics with your vision, we stress knowing your company and open communication.'
+      question: '3. Why Choose Firevy.Co for Digital Marketing Services in USA?',
+      answer: 'Due to its skilled staff, unique tactics, established track record, clear reporting, complete services, and client-centric approach, Firevy.Co is a premier digital marketing firm. We use competent digital marketers to oversee your campaigns. We customize digital marketing strategies for your company and audience. We produce results with our effective campaigns and delighted customers. You can track your marketing success with our frequent, thorough campaign reports. All your digital marketing demands are met by our services, from SEO to social media marketing. To integrate our tactics with your vision, we stress knowing your company and open communication.'
     },
     {
       id: 4,
-      question: '4. What makes Firevy.co a top Digital Marketing Services provider in USA?',
-      answer: 'Firevy.co stands out as a leading Digital Marketing Services provider in USA by delivering customized SEO, PPC, social media, and content marketing strategies tailored to each business’s goals.'
+      question: '4. What makes Firevy.Co a top Digital Marketing Services provider in USA?',
+      answer: 'Firevy.Co stands out as a leading Digital Marketing Services provider in USA by delivering customized SEO, PPC, social media, and content marketing strategies tailored to each business’s goals.'
     },
     {
       id: 5,
@@ -148,7 +148,7 @@ export const DigitalMarketingService = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Top Digital Marketing Services in USA | Best Digital Marketing Agency in USA | Firevy.co"
+        title="Top Digital Marketing Services in USA | Best Digital Marketing Agency in USA | Firevy.Co"
         description="Looking for top-notch digital marketing services in USA? Enhance your online presence, drive traffic, and increase conversions with our expert strategies. Boost your brand's visibility today."
         keywords="digital marketing services, digital marketing company usa, seo agency, ppc marketing, performance marketing, social media marketing, content marketing"
       />
@@ -479,7 +479,7 @@ export const DigitalMarketingService = () => {
             >
               <img
                 src="/images/seo_services_firevy.png"
-                alt="SEO Services - The Power of SEO - Firevy.co"
+                alt="SEO Services - The Power of SEO - Firevy.Co"
                 className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.02]"
               />
 
@@ -506,7 +506,7 @@ export const DigitalMarketingService = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center justify-between px-6 py-4 bg-slate-800 text-white border-b border-slate-700">
-                <h3 className="font-bold text-base sm:text-lg">SEO Services - The Power of SEO | Firevy.co</h3>
+                <h3 className="font-bold text-base sm:text-lg">SEO Services - The Power of SEO | Firevy.Co</h3>
                 <button
                   onClick={() => setIsVideoModalOpen(false)}
                   className="w-8 h-8 rounded-full bg-slate-700 hover:bg-slate-600 text-white flex items-center justify-center font-bold text-sm cursor-pointer"
@@ -519,7 +519,7 @@ export const DigitalMarketingService = () => {
               <div className="relative pt-[56.25%] bg-black">
                 <iframe
                   src="https://www.youtube.com/embed/SDT4Amkqj_A?autoplay=1"
-                  title="SEO Services - The Power of SEO | Firevy.co"
+                  title="SEO Services - The Power of SEO | Firevy.Co"
                   className="absolute inset-0 w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

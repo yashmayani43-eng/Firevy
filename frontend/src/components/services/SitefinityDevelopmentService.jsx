@@ -112,7 +112,7 @@ export const SitefinityDevelopmentService = () => {
       a: "Yes. Sitefinity provides native OData and REST APIs along with turnkey connectors for Salesforce, Microsoft Dynamics 365, Marketo, HubSpot, SharePoint, and custom enterprise databases."
     },
     {
-      q: "5. How does Firevy.co handle Sitefinity upgrades from older versions (e.g., Sitefinity 10, 11, 12, 13)?",
+      q: "5. How does Firevy.Co handle Sitefinity upgrades from older versions (e.g., Sitefinity 10, 11, 12, 13)?",
       a: "Our certified Sitefinity developers follow a structured multi-stage upgrade path. We perform a code audit, upgrade database schemas, refactor obsolete widget templates to ASP.NET Core, test custom modules, and verify SEO redirects for a seamless transition with zero data loss."
     },
     {
@@ -128,7 +128,7 @@ export const SitefinityDevelopmentService = () => {
       a: "Yes. Sitefinity includes built-in role-based security, granular permissions, Single Sign-On (SSO) via SAML 2.0 / OpenID Connect, database encryption, and automated cookie consent management to satisfy GDPR, HIPAA, and SOC2 compliance."
     },
     {
-      q: "9. How quickly can we get started with Firevy.co's Sitefinity team?",
+      q: "9. How quickly can we get started with Firevy.Co's Sitefinity team?",
       a: "We can assemble and deploy certified Sitefinity developers and architects within 3 to 5 business days following requirement alignment and contract execution."
     }
   ];
@@ -137,7 +137,7 @@ export const SitefinityDevelopmentService = () => {
     <div className="bg-white text-slate-800 font-sans antialiased overflow-hidden">
       <SEO
         title="Sitefinity Development Company in USA | Certified Progress Sitefinity CMS Services"
-        description="Firevy.co is a top Sitefinity development company in USA. Certified Progress Sitefinity CMS architects specializing in .NET Core, Sitefinity Cloud, multi-site portals, and custom modules."
+        description="Firevy.Co is a top Sitefinity development company in USA. Certified Progress Sitefinity CMS architects specializing in .NET Core, Sitefinity Cloud, multi-site portals, and custom modules."
       />
 
 
@@ -151,7 +151,7 @@ export const SitefinityDevelopmentService = () => {
                 Sitefinity Development Services in USA
               </h1>
               <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl">
-                Firevy.co provides expert Progress Sitefinity CMS development, migration, and cloud consulting services to enterprise businesses worldwide. Leverage .NET Core decoupled speed, intuitive content authoring, and AI-driven personalization.
+                Firevy.Co provides expert Progress Sitefinity CMS development, migration, and cloud consulting services to enterprise businesses worldwide. Leverage .NET Core decoupled speed, intuitive content authoring, and AI-driven personalization.
               </p>
               <div className="pt-2">
                 <a
@@ -280,7 +280,7 @@ export const SitefinityDevelopmentService = () => {
                 Acquire Progress Sitefinity Website Development Services
               </h2>
               <p className="text-slate-600 leading-relaxed text-base">
-                Firevy.co provides end-to-end Progress Sitefinity solutions from architectural consulting and custom widget development to version upgrades and multi-site enterprise deployments. Our certified developers ensure high performance, security compliance, and seamless marketing workflows.
+                Firevy.Co provides end-to-end Progress Sitefinity solutions from architectural consulting and custom widget development to version upgrades and multi-site enterprise deployments. Our certified developers ensure high performance, security compliance, and seamless marketing workflows.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {[
@@ -658,7 +658,7 @@ export const SitefinityDevelopmentService = () => {
             {/* Left: What Sets Us Apart */}
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-[#005F96] text-xs font-bold uppercase tracking-widest rounded-full">
-                Why Firevy.co
+                Why Firevy.Co
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
                 What Sets Us Apart As Sitefinity Development Company?

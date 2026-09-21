@@ -16,7 +16,7 @@ export const SettingsPage = () => {
   const [saving, setSaving] = useState(false);
 
   const [settings, setSettings] = useState({
-    companyName: 'Firevy.co',
+    companyName: 'Firevy.Co',
     tagline: 'Engineering Digital Experiences That Create Impact',
     contactEmail: 'contact@firevy.co',
     supportPhone: '+1 (800) 592-7410',

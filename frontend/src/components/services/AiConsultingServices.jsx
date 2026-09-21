@@ -224,7 +224,7 @@ export const AiConsultingServices = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="AI Consulting Services | Artificial Intelligence Advisory | Firevy.co"
+        title="AI Consulting Services | Artificial Intelligence Advisory | Firevy.Co"
         description="Accelerate enterprise transformation with Firevy's AI Consulting Services. Machine learning, predictive analytics, computer vision, NLP, and scalable MLOps architecture."
         keywords="ai consulting services, artificial intelligence consulting, machine learning consulting, ai advisory, mlops, predictive analytics, enterprise ai strategy, deep learning consulting"
       />

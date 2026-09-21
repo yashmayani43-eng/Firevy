@@ -91,7 +91,7 @@ const androidFaqList = [
   {
     id: 8,
     question: '8. Where can I find a reliable Android app development company?',
-    answer: 'Firevy.co is a globally recognized, top-rated Android app development partner with 23+ years of industry experience, 320+ 5-star Clutch reviews, and 1500+ completed projects trusted by Fortune 500 enterprises.'
+    answer: 'Firevy.Co is a globally recognized, top-rated Android app development partner with 23+ years of industry experience, 320+ 5-star Clutch reviews, and 1500+ completed projects trusted by Fortune 500 enterprises.'
   }
 ];
 
@@ -118,8 +118,8 @@ export const healthcareFaqList = [
   },
   {
     id: 5,
-    question: '5. Why should businesses choose Firevy.co for Healthcare App Development?',
-    answer: 'Firevy.co brings 23+ years of IT expertise, 320+ 5-star Clutch reviews, certified healthcare developers, HIPAA and GDPR compliance experience, and end-to-end custom healthcare app development tailored to your budget and timelines.'
+    question: '5. Why should businesses choose Firevy.Co for Healthcare App Development?',
+    answer: 'Firevy.Co brings 23+ years of IT expertise, 320+ 5-star Clutch reviews, certified healthcare developers, HIPAA and GDPR compliance experience, and end-to-end custom healthcare app development tailored to your budget and timelines.'
   },
   {
     id: 6,
@@ -151,8 +151,8 @@ export const educationFaqList = [
   },
   {
     id: 5,
-    question: '5. Why choose Firevy.co for Education App Development Services in USA?',
-    answer: 'Firevy.co brings 23+ years of IT expertise, 320+ 5-star Clutch reviews, dedicated EdTech engineers, and proven success delivering school ERPs and eLearning mobile applications.'
+    question: '5. Why choose Firevy.Co for Education App Development Services in USA?',
+    answer: 'Firevy.Co brings 23+ years of IT expertise, 320+ 5-star Clutch reviews, dedicated EdTech engineers, and proven success delivering school ERPs and eLearning mobile applications.'
   },
   {
     id: 6,
@@ -199,7 +199,7 @@ export const uberFaqList = [
   },
   {
     id: 6,
-    question: '6. What makes Firevy.co a trusted Uber-like app developer?',
+    question: '6. What makes Firevy.Co a trusted Uber-like app developer?',
     answer: 'With 23+ years of IT expertise, 1,500+ successful projects, and 2,800+ global clients across USA, UK, UAE, and Canada, we deliver robust, high-performance mobility apps backed by 24/7 SLA support.'
   },
   {
@@ -249,12 +249,12 @@ export const iwatchFaqList = [
   },
   {
     id: 5,
-    question: '5. How can Firevy.co help with iWatch app development in the USA?',
-    answer: 'Firevy.co delivers end-to-end WatchOS app development services across the USA—from wearable UI/UX wireframing and HealthKit integration to native Swift coding, companion iOS sync, BLE pairing, App Store submission, and SLA maintenance.'
+    question: '5. How can Firevy.Co help with iWatch app development in the USA?',
+    answer: 'Firevy.Co delivers end-to-end WatchOS app development services across the USA—from wearable UI/UX wireframing and HealthKit integration to native Swift coding, companion iOS sync, BLE pairing, App Store submission, and SLA maintenance.'
   },
   {
     id: 6,
-    question: '6. Does Firevy.co provide custom iWatch app development in USA?',
+    question: '6. Does Firevy.Co provide custom iWatch app development in USA?',
     answer: 'Yes, we provide 100% custom watchOS engineering tailored to your specific business model—including healthcare & fitness trackers, IoT enterprise controls, logistics dispatch, real-time alerts, and contactless NFC solutions.'
   },
   {
@@ -264,13 +264,13 @@ export const iwatchFaqList = [
   },
   {
     id: 8,
-    question: '8. How long does it take to develop an iWatch app with Firevy.co in USA?',
+    question: '8. How long does it take to develop an iWatch app with Firevy.Co in USA?',
     answer: 'A standard watchOS application typically takes 4 to 8 weeks for MVP release. Comprehensive enterprise wearable applications with custom watch complications and cloud microservices take approximately 8 to 14 weeks.'
   },
   {
     id: 9,
-    question: '9. Why should I choose Firevy.co as my iWatch app development company in USA?',
-    answer: 'Firevy.co brings 23+ years of IT engineering excellence, 320+ 5-star Clutch reviews, dedicated Apple-certified Swift/SwiftUI engineers, strict HIPAA & OWASP security compliance, and 1,500+ successful deployments worldwide.'
+    question: '9. Why should I choose Firevy.Co as my iWatch app development company in USA?',
+    answer: 'Firevy.Co brings 23+ years of IT engineering excellence, 320+ 5-star Clutch reviews, dedicated Apple-certified Swift/SwiftUI engineers, strict HIPAA & OWASP security compliance, and 1,500+ successful deployments worldwide.'
   },
   {
     id: 10,
@@ -334,7 +334,7 @@ export const SapphireFaqSection = ({
   items,
   title = "Frequently Asked Questions",
   subtitle = "We listen to query and provide solutions that captivate users. Feel free to contact us in case of any query which is not mention below.",
-  initialOpenIndex = 0,
+  initialOpenIndex = null,
   showPlusIcon = false
 }) => {
   const activeFaqs = customFaqs || faqList || faqs || items || kotlinFaqList;

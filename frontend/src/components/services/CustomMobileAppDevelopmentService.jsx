@@ -386,7 +386,7 @@ export const CustomMobileAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Custom Mobile App Development Company in USA | Firevy.co"
+        title="Custom Mobile App Development Company in USA | Firevy.Co"
         description="Leading Custom Mobile App Development Company in USA. We have a team of skilled custom app developers who are well-versed in creating custom applications. Connect with us today!"
         canonical="/services/custom-mobile-app-development"
       />

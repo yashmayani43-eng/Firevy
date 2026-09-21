@@ -421,9 +421,9 @@ export const FooterSectionEditor = ({ data, onChange }) => {
             <input
               type="text"
               className="form-control"
-              value={data?.copyrightText || '© 2026 firevy.co. All rights reserved.'}
+              value={data?.copyrightText || '© 2026 Firevy.Co. All rights reserved.'}
               onChange={(e) => handleDirectFieldChange('copyrightText', e.target.value)}
-              placeholder="© 2026 firevy.co. All rights reserved."
+              placeholder="© 2026 Firevy.Co. All rights reserved."
               style={{ width: '100%', padding: '8px 12px', borderRadius: '6px', border: '1px solid #CBD5E1', fontSize: '13px', color: '#0F172A', backgroundColor: '#FFFFFF' }}
             />
           </AdminFormField>

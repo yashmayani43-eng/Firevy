@@ -9,8 +9,8 @@ export const PrivacyPolicy = () => {
   return (
     <div className="bg-white min-h-screen text-slate-900 font-sans">
       <SEO
-        title="Privacy Policy | Firevy.co"
-        description="Privacy policy and data protection standards for Firevy.co Software Solutions."
+        title="Privacy Policy | Firevy.Co"
+        description="Privacy policy and data protection standards for Firevy.Co Software Solutions."
         canonical="/privacy-policy"
       />
 
@@ -26,7 +26,7 @@ export const PrivacyPolicy = () => {
               </h1>
               
               <p className="text-[14px] sm:text-[15px] font-[400] text-slate-600 leading-relaxed font-sans max-w-xl">
-                Firevy.co is not only a globally recognized IT company but also a family filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions.
+                Firevy.Co is not only a globally recognized IT company but also a family filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions.
               </p>
 
               <div className="pt-2">
@@ -78,7 +78,7 @@ export const PrivacyPolicy = () => {
 
             {/* Introductory Statement */}
             <p className="text-[14.5px] sm:text-[15px] text-slate-800 leading-relaxed font-sans font-normal">
-              Firevy.co Software Solutions (“we,” “our,” “us”) respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you interact with our website, services, and communication tools (including messaging services such as MMlite by Meta).
+              Firevy.Co Software Solutions (“we,” “our,” “us”) respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you interact with our website, services, and communication tools (including messaging services such as MMlite by Meta).
             </p>
 
             {/* Section 1 */}

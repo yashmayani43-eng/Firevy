@@ -135,10 +135,10 @@ export const CovidTrackerAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Covid Tracker App Development Services | Firevy.co"
+        title="Covid Tracker App Development Services | Firevy.Co"
         description="Cutting-edge Covid tracker software & monitoring app solutions. Real-time infection tracking, positive case alerts, hospital bed locator & health pass features."
         keywords="Covid Tracker App Development, Covid Monitoring App, Contact Tracing App, Infection Tracking Software, Health Pass App, Patient Monitoring App"
-        url="https://firevy.co/services/covid-tracker-app-development"
+        url="https://Firevy.co/services/covid-tracker-app-development"
       />
 
       {/* =========================================================================
