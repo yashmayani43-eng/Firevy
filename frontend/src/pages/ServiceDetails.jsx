@@ -75,10 +75,15 @@ import SharePointDevelopmentService from '../components/services/SharePointDevel
 import PowerAppsDevelopmentService from '../components/services/PowerAppsDevelopmentService';
 import KotlinAppDevelopmentService from '../components/services/KotlinAppDevelopmentService';
 import HybridAppDevelopmentService from '../components/services/HybridAppDevelopmentService';
+import NativeAppDevelopmentService from '../components/services/NativeAppDevelopmentService';
+import CustomMobileAppDevelopmentService from '../components/services/CustomMobileAppDevelopmentService';
 import PersonalFitnessAppService from '../components/services/PersonalFitnessAppService';
 import UsedCarAppDevelopmentService from '../components/services/UsedCarAppDevelopmentService';
 import EnneagramTestAppService from '../components/services/EnneagramTestAppService';
 import CreditCardAppDevelopmentService from '../components/services/CreditCardAppDevelopmentService';
+import SwiftAppDevelopmentService from '../components/services/SwiftAppDevelopmentService';
+import IBeaconAppDevelopmentService from '../components/services/IBeaconAppDevelopmentService';
+import WearableAppDevelopmentService from '../components/services/WearableAppDevelopmentService';
 import ItConsultingServices from '../components/services/ItConsultingServices';
 import AppDevelopmentConsultingService from '../components/services/AppDevelopmentConsultingService';
 import StartupConsultingServices from '../components/services/StartupConsultingServices';
@@ -97,6 +102,14 @@ import DataAnnotationService from '../components/services/DataAnnotationService'
 import PatientManagementService from '../components/services/PatientManagementService';
 import DigitalTwinSolutionsService from '../components/services/DigitalTwinSolutionsService';
 import ArtistCollaborationPlatformService from '../components/services/ArtistCollaborationPlatformService';
+import PrototypeDevelopmentService from '../components/services/PrototypeDevelopmentService';
+import CloudDevelopmentService from '../components/services/CloudDevelopmentService';
+import CloudComputingService from '../components/services/CloudComputingService';
+import DevOpsDevelopmentService from '../components/services/DevOpsDevelopmentService';
+import AwsCloudServices from '../components/services/AwsCloudServices';
+import GoogleCloudDevelopmentService from '../components/services/GoogleCloudDevelopmentService';
+import CloudDevOpsService from '../components/services/CloudDevOpsService';
+import CloudFoundrySoftwareDevelopmentService from '../components/services/CloudFoundrySoftwareDevelopmentService';
 import HireKotlinDevelopersService from '../components/services/HireKotlinDevelopersService';
 import HireDedicatedTechDevelopersService from '../components/services/HireDedicatedTechDevelopersService';
 import HireTechDevelopersService from '../components/services/HireTechDevelopersService';
@@ -250,6 +263,16 @@ export const ServiceDetails = () => {
 
   const isHybrid = currentSlug.includes('hybrid');
 
+  const isNativeApp = currentSlug === 'native-app-development' ||
+    currentSlug === 'native-app' ||
+    currentSlug.includes('native-app') ||
+    currentSlug === 'services/native-app-development';
+
+  const isCustomMobileApp = currentSlug === 'custom-mobile-app-development' ||
+    currentSlug === 'custom-mobile-app' ||
+    currentSlug.includes('custom-mobile') ||
+    currentSlug === 'services/custom-mobile-app-development';
+
   const isPersonalFitness = currentSlug === 'personal-fitness-app' ||
     currentSlug.includes('personal-fitness') ||
     currentSlug.includes('fitness-app') ||
@@ -271,11 +294,26 @@ export const ServiceDetails = () => {
     currentSlug.includes('credit-card') ||
     currentSlug === 'services/credit-card-app-development';
 
+  const isSwiftApp = currentSlug === 'swift-app-development' ||
+    currentSlug === 'swift-app' ||
+    currentSlug.includes('swift-app') ||
+    currentSlug === 'services/swift-app-development';
+
+  const isIBeacon = currentSlug === 'ibeacon-app-development' ||
+    currentSlug === 'ibeacon-app' ||
+    currentSlug.includes('ibeacon') ||
+    currentSlug === 'services/ibeacon-app-development';
+
+  const isWearableApp = currentSlug === 'wearable-app-development' ||
+    currentSlug === 'wearable-app' ||
+    currentSlug.includes('wearable-app') ||
+    currentSlug === 'services/wearable-app-development';
+
   const isCrossPlatform = currentSlug.includes('cross-platform') ||
     currentSlug.includes('crossplatform') ||
     currentSlug.includes('multi-platform');
 
-  const isIOS = !isHireIOS && !isHireIphone && !isHireSwift && (currentSlug.includes('ios') || currentSlug.includes('iphone')) && !isIPad;
+  const isIOS = !isHireIOS && !isHireIphone && !isHireSwift && !isSwiftApp && (currentSlug.includes('ios') || currentSlug.includes('iphone')) && !isIPad;
 
   const isEcommerceApp = (slug || currentSlug) && (
     (slug && slug.toLowerCase().includes('ecommerce')) ||
@@ -334,12 +372,93 @@ export const ServiceDetails = () => {
     currentSlug === 'services/artist-collaboration-platform' ||
     currentSlug.includes('artist-collaboration');
 
+  const isPrototypeDevelopment = currentSlug === 'prototype-development-services' ||
+    currentSlug === 'prototype-development-service' ||
+    currentSlug === 'prototype-development' ||
+    currentSlug.includes('prototype-development') ||
+    currentSlug === 'services/prototype-development-services' ||
+    currentSlug === 'services/prototype-development-service' ||
+    currentSlug === 'services/prototype-development';
+
+  const isCloudDevelopment = currentSlug === 'cloud-development' ||
+    currentSlug === 'cloud-application-development' ||
+    currentSlug === 'cloud-app-development' ||
+    currentSlug === 'cloud-development-services' ||
+    currentSlug === 'cloud-development-service' ||
+    currentSlug.includes('cloud-application') ||
+    currentSlug === 'services/cloud-development' ||
+    currentSlug === 'services/cloud-application-development' ||
+    currentSlug === 'services/cloud-app-development';
+
+  const isCloudComputing = currentSlug === 'cloud-computing-service' ||
+    currentSlug === 'cloud-computing-services' ||
+    currentSlug === 'cloud-computing' ||
+    currentSlug === 'cloud-computing-solutions' ||
+    currentSlug === 'services/cloud-computing-service' ||
+    currentSlug === 'services/cloud-computing-services' ||
+    currentSlug === 'services/cloud-computing' ||
+    currentSlug.includes('cloud-computing');
+
+  const isDevOpsDevelopment = currentSlug === 'devops-development-services' ||
+    currentSlug === 'devops-development-service' ||
+    currentSlug === 'devops-development' ||
+    currentSlug === 'services/devops-development-services' ||
+    currentSlug === 'services/devops-development-service' ||
+    currentSlug === 'services/devops-development' ||
+    (currentSlug.includes('devops') && currentSlug.includes('development'));
+
+  const isAwsCloud = currentSlug === 'aws-cloud-services' ||
+    currentSlug === 'aws-cloud-service' ||
+    currentSlug === 'aws-cloud' ||
+    currentSlug === 'services/aws-cloud-services' ||
+    currentSlug === 'services/aws-cloud-service' ||
+    currentSlug === 'services/aws-cloud' ||
+    (currentSlug.includes('aws') && currentSlug.includes('cloud'));
+
+  const isGoogleCloud = currentSlug === 'google-cloud-development' ||
+    currentSlug === 'google-cloud-development-service' ||
+    currentSlug === 'google-cloud-development-services' ||
+    currentSlug === 'google-cloud-services' ||
+    currentSlug === 'google-cloud-service' ||
+    currentSlug === 'google-cloud' ||
+    currentSlug === 'services/google-cloud-development' ||
+    currentSlug === 'services/google-cloud-development-service' ||
+    currentSlug === 'services/google-cloud-development-services' ||
+    currentSlug === 'services/google-cloud-services' ||
+    currentSlug === 'services/google-cloud-service' ||
+    currentSlug === 'services/google-cloud' ||
+    (currentSlug.includes('google') && currentSlug.includes('cloud'));
+
+  const isCloudDevOps = currentSlug === 'cloud-devops' ||
+    currentSlug === 'cloud-and-devops' ||
+    currentSlug === 'cloud-devops-services' ||
+    currentSlug === 'cloud-devops-service' ||
+    currentSlug === 'services/cloud-devops' ||
+    currentSlug === 'services/cloud-and-devops' ||
+    currentSlug === 'services/cloud-devops-services' ||
+    currentSlug === 'services/cloud-devops-service' ||
+    ((currentSlug.includes('cloud') && currentSlug.includes('devops')) &&
+     currentSlug !== 'devops-development-services' &&
+     currentSlug !== 'devops-development-service' &&
+     currentSlug !== 'devops-development' &&
+     currentSlug !== 'services/devops-development-services' &&
+     currentSlug !== 'services/devops-development-service' &&
+     currentSlug !== 'services/devops-development');
+
+  const isCloudFoundry = currentSlug === 'cloud-foundry-software-development' ||
+    currentSlug === 'cloud-foundry' ||
+    currentSlug === 'cloud-foundry-software' ||
+    currentSlug === 'cloud-foundry-development' ||
+    currentSlug === 'services/cloud-foundry-software-development' ||
+    currentSlug === 'services/cloud-foundry' ||
+    currentSlug.includes('cloud-foundry');
+
   const isMobileApp = !isHireMobile && !isEcommerceApp && !isMobileAppPorting && (
     currentSlug === 'mobile-app-development' ||
     currentSlug === 'mobile-app' ||
     currentSlug === 'mobile-application' ||
     currentSlug === 'mobile-application-development' ||
-    (currentSlug.includes('mobile-app') && !isReactNative && !isFlutter && !isIOS && !isAndroid && !isXamarin && !isIWatch && !isCrossPlatform && !isKotlin && !isHybrid && !isIPad && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard)
+    (currentSlug.includes('mobile-app') && !isReactNative && !isFlutter && !isIOS && !isAndroid && !isXamarin && !isIWatch && !isCrossPlatform && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isIPad && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp)
   );
 
   const isNet = currentSlug === 'net' ||
@@ -698,7 +817,7 @@ export const ServiceDetails = () => {
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
 
   useEffect(() => {
-    if (!isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting) {
+    if (!isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
       fetchServiceDetails();
     } else {
       setLoading(false);
@@ -894,6 +1013,14 @@ export const ServiceDetails = () => {
     return <HybridAppDevelopmentService />;
   }
 
+  if (isNativeApp) {
+    return <NativeAppDevelopmentService />;
+  }
+
+  if (isCustomMobileApp) {
+    return <CustomMobileAppDevelopmentService />;
+  }
+
   if (isPersonalFitness) {
     return <PersonalFitnessAppService />;
   }
@@ -908,6 +1035,18 @@ export const ServiceDetails = () => {
 
   if (isCreditCard) {
     return <CreditCardAppDevelopmentService />;
+  }
+
+  if (isSwiftApp) {
+    return <SwiftAppDevelopmentService />;
+  }
+
+  if (isIBeacon) {
+    return <IBeaconAppDevelopmentService />;
+  }
+
+  if (isWearableApp) {
+    return <WearableAppDevelopmentService />;
   }
 
   if (isCrossPlatform) {
@@ -1028,6 +1167,38 @@ export const ServiceDetails = () => {
 
   if (isArtistCollaboration) {
     return <ArtistCollaborationPlatformService />;
+  }
+
+  if (isPrototypeDevelopment) {
+    return <PrototypeDevelopmentService />;
+  }
+
+  if (isCloudDevelopment) {
+    return <CloudDevelopmentService />;
+  }
+
+  if (isCloudComputing) {
+    return <CloudComputingService />;
+  }
+
+  if (isDevOpsDevelopment) {
+    return <DevOpsDevelopmentService />;
+  }
+
+  if (isAwsCloud) {
+    return <AwsCloudServices />;
+  }
+
+  if (isGoogleCloud) {
+    return <GoogleCloudDevelopmentService />;
+  }
+
+  if (isCloudDevOps) {
+    return <CloudDevOpsService />;
+  }
+
+  if (isCloudFoundry) {
+    return <CloudFoundrySoftwareDevelopmentService />;
   }
 
   if (isPowerAutomate) {
@@ -1212,6 +1383,8 @@ export const ServiceDetails = () => {
 
   if (loading) return <LoadingSpinner fullPage message="Loading service details..." />;
   if (error || !service) return <Container className="py-20"><ErrorState message={error || 'Service not found.'} onRetry={fetchServiceDetails} /></Container>;
+
+  const currentService = service || {};
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-[#005F96] selection:text-white">

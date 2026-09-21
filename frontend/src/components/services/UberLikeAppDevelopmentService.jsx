@@ -65,11 +65,10 @@ const UberTransportationIcon = Car;
 const UberFemaleSafetyIcon = ShieldCheck;
 const UberCloudKitchenIcon = Utensils;
 const UberChildSafetyIcon = Baby;
-const UberCaregiversIcon = HeartHandshake;
-const FixedPriceIcon = DollarSign;
-const TimeMaterialIcon = Clock;
-const DedicatedTeamIcon = Users;
-const BucketsApproachIcon = Sliders;
+const FixedPriceIcon = () => <img src="/images/ic_fixed_price.svg" alt="Fixed Price" className="w-12 h-12 object-contain mx-auto" />;
+const TimeMaterialIcon = () => <img src="/images/ic_time_material.svg" alt="Time Material" className="w-12 h-12 object-contain mx-auto" />;
+const DedicatedTeamIcon = () => <img src="/images/ic_full_time.svg" alt="Dedicated Team" className="w-12 h-12 object-contain mx-auto" />;
+const BucketsApproachIcon = () => <img src="/images/bucketapproch.svg" alt="Buckets Approach" className="w-12 h-12 object-contain mx-auto" />;
 
 /* Super Ride Taxi – Cab Booking App Video Showcase Component (1:1 Screenshot Match) */
 const SuperRideTaxiVideoShowcase = () => {
