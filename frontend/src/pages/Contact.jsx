@@ -644,15 +644,14 @@ export const Contact = () => {
                     <Phone className="w-4 h-4 text-[#006085]" />
                   </div>
                   <div className="text-[13px] text-slate-700 space-y-0.5">
-                    <div><span className="font-semibold text-slate-500 text-[11px] uppercase tracking-wider">IN:</span>{' '}<a href="tel:+919429709662" className="font-[600] text-slate-800 hover:text-[#006085]">+91-942-970-9662</a></div>
-                    <div><span className="font-semibold text-slate-500 text-[11px] uppercase tracking-wider">US:</span>{' '}<a href="tel:+17542587670" className="font-[600] text-slate-800 hover:text-[#006085]">+1-754-258-7670</a></div>
+                    <div><span className="font-semibold text-slate-500 text-[11px] uppercase tracking-wider">IN:</span>{' '}<a href="tel:+917069370629" className="font-[600] text-slate-800 hover:text-[#006085]">+91 7069370629</a></div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-9 h-9 rounded-full bg-[#006085]/10 flex items-center justify-center shrink-0">
                     <Mail className="w-4 h-4 text-[#006085]" />
                   </div>
-                  <a href="mailto:contact@sapphiresolutions.net" className="text-[13px] font-[600] text-slate-800 hover:text-[#006085]">contact@sapphiresolutions.net</a>
+                  <a href="mailto:contact@firevy.co" className="text-[13px] font-[600] text-slate-800 hover:text-[#006085]">contact@firevy.co</a>
                 </div>
               </div>
             </div>
@@ -674,7 +673,7 @@ export const Contact = () => {
                   <div className="w-9 h-9 rounded-full bg-[#006085]/10 flex items-center justify-center shrink-0">
                     <Mail className="w-4 h-4 text-[#006085]" />
                   </div>
-                  <a href="mailto:careers@sapphiresolutions.net" className="text-[13px] font-[600] text-slate-800 hover:text-[#006085]">careers@sapphiresolutions.net</a>
+                  <a href="mailto:careers@firevy.co" className="text-[13px] font-[600] text-slate-800 hover:text-[#006085]">careers@firevy.co</a>
                 </div>
               </div>
             </div>

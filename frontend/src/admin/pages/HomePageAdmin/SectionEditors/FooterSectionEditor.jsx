@@ -18,8 +18,8 @@ export const FooterSectionEditor = ({ data, onChange }) => {
   const sales = data?.salesContact || {
     title: 'Contact For Sales',
     email: 'contact@firevy.co',
-    phoneIndia: 'IN:+91-942-970-9662',
-    phoneUS: 'US:+1-754-258-7670'
+    phoneIndia: 'IN: +91 7069370629',
+    phoneUS: ''
   };
 
   const career = data?.careerContact || {
@@ -171,13 +171,13 @@ export const FooterSectionEditor = ({ data, onChange }) => {
             />
           </AdminFormField>
 
-          <AdminFormField label="India Phone Number" helperText="e.g. IN:+91-942-970-9662">
+          <AdminFormField label="India Phone Number" helperText="e.g. IN: +91 7069370629">
             <input
               type="text"
               className="form-control"
               value={sales.phoneIndia || ''}
               onChange={(e) => handleSalesChange('phoneIndia', e.target.value)}
-              placeholder="IN:+91-942-970-9662"
+              placeholder="IN: +91 7069370629"
               style={{ width: '100%', padding: '8px 12px', borderRadius: '6px', border: '1px solid #CBD5E1', fontSize: '13px', color: '#0F172A', backgroundColor: '#FFFFFF' }}
             />
           </AdminFormField>

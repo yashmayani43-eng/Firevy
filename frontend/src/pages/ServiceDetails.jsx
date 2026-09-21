@@ -110,6 +110,11 @@ import AwsCloudServices from '../components/services/AwsCloudServices';
 import GoogleCloudDevelopmentService from '../components/services/GoogleCloudDevelopmentService';
 import CloudDevOpsService from '../components/services/CloudDevOpsService';
 import CloudFoundrySoftwareDevelopmentService from '../components/services/CloudFoundrySoftwareDevelopmentService';
+import CloudCostOptimizationSoftwareService from '../components/services/CloudCostOptimizationSoftwareService';
+import CloudBasedStorageServices from '../components/services/CloudBasedStorageServices';
+import CloudAnalyticsSoftwareDevelopmentService from '../components/services/CloudAnalyticsSoftwareDevelopmentService';
+import AugmentedRealityAppDevelopmentService from '../components/services/AugmentedRealityAppDevelopmentService';
+import VirtualRealityAppDevelopmentService from '../components/services/VirtualRealityAppDevelopmentService';
 import HireKotlinDevelopersService from '../components/services/HireKotlinDevelopersService';
 import HireDedicatedTechDevelopersService from '../components/services/HireDedicatedTechDevelopersService';
 import HireTechDevelopersService from '../components/services/HireTechDevelopersService';
@@ -124,6 +129,7 @@ import HireSolidityDevelopersService from '../components/services/HireSolidityDe
 import HireFastApiDevelopersService from '../components/services/HireFastApiDevelopersService';
 import HireApiDevelopersService from '../components/services/HireApiDevelopersService';
 import HireMeanStackDevelopersService from '../components/services/HireMeanStackDevelopersService';
+import BackendComingSoonService, { isBackendServiceSlug } from '../components/services/BackendComingSoonService';
 
 export const ServiceDetails = () => {
   const { slug } = useParams();
@@ -453,6 +459,35 @@ export const ServiceDetails = () => {
     currentSlug === 'services/cloud-foundry' ||
     currentSlug.includes('cloud-foundry');
 
+  const isCloudCostOptimization = currentSlug === 'cloud-cost-optimization-software' ||
+    currentSlug === 'cloud-cost-optimization' ||
+    currentSlug === 'cloud-cost-optimization-software-development' ||
+    currentSlug === 'cloud-cost-optimization-service' ||
+    currentSlug === 'cloud-cost-optimization-services' ||
+    currentSlug === 'services/cloud-cost-optimization-software' ||
+    currentSlug === 'services/cloud-cost-optimization' ||
+    currentSlug.includes('cloud-cost-optimization');
+
+  const isCloudBasedStorage = currentSlug === 'cloud-based-storage-services' ||
+    currentSlug === 'cloud-based-storage' ||
+    currentSlug === 'cloud-based-storage-services-provider' ||
+    currentSlug === 'cloud-storage-services' ||
+    currentSlug === 'services/cloud-based-storage-services' ||
+    currentSlug === 'services/cloud-based-storage' ||
+    currentSlug === 'services/cloud-based-storage-services-provider' ||
+    currentSlug.includes('cloud-based-storage') ||
+    currentSlug.includes('cloud-storage');
+
+  const isCloudAnalytics = currentSlug === 'cloud-analytics-software-development' ||
+    currentSlug === 'cloud-analytics-software' ||
+    currentSlug === 'cloud-analytics' ||
+    currentSlug === 'cloud-analytics-services' ||
+    currentSlug === 'cloud-analytics-service' ||
+    currentSlug === 'services/cloud-analytics-software-development' ||
+    currentSlug === 'services/cloud-analytics-software' ||
+    currentSlug === 'services/cloud-analytics' ||
+    currentSlug.includes('cloud-analytics');
+
   const isMobileApp = !isHireMobile && !isEcommerceApp && !isMobileAppPorting && (
     currentSlug === 'mobile-app-development' ||
     currentSlug === 'mobile-app' ||
@@ -507,11 +542,29 @@ export const ServiceDetails = () => {
     currentSlug.includes('fullstack') ||
     currentSlug.includes('hire-full-stack');
 
-  const isVR = currentSlug.includes('vr') ||
+  const isAugmentedReality = currentSlug === 'augmented-reality-app-development' ||
+    currentSlug === 'augmented-reality-app' ||
+    currentSlug === 'augmented-reality' ||
+    currentSlug === 'ar-app-development' ||
+    currentSlug === 'services/augmented-reality-app-development' ||
+    currentSlug.includes('augmented-reality');
+
+  const isVirtualRealityApp = currentSlug === 'virtual-reality-app-development' ||
+    currentSlug === 'virtual-reality-app' ||
+    currentSlug === 'services/virtual-reality-app-development' ||
+    currentSlug === 'services/virtual-reality-app' ||
+    currentSlug === 'vr-app-development' ||
+    currentSlug === 'services/vr-app-development' ||
+    currentSlug === 'virtual-reality-development' ||
+    currentSlug === 'services/virtual-reality-development';
+
+  const isVR = !isAugmentedReality && (
+    isVirtualRealityApp ||
+    currentSlug.includes('vr') ||
     currentSlug.includes('virtual-reality') ||
     currentSlug.includes('vr-ar') ||
-    currentSlug.includes('ar-vr') ||
-    currentSlug.includes('augmented-reality');
+    currentSlug.includes('ar-vr')
+  );
 
   const isIot = currentSlug.includes('iot') ||
     currentSlug.includes('internet-of-things') ||
@@ -815,15 +868,25 @@ export const ServiceDetails = () => {
   const isFastApi = currentSlug.includes('fastapi') || currentSlug.includes('fast-api') || currentSlug.includes('hire-fastapi');
   const isApi = (currentSlug.includes('hire-api') || currentSlug.includes('api-developer') || currentSlug.includes('api-developers')) && !currentSlug.includes('fastapi') && !currentSlug.includes('fast-api');
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
+  const isBackendComingSoon = isBackendServiceSlug(currentSlug);
 
   useEffect(() => {
-    if (!isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
+    if (isBackendComingSoon) {
+      setLoading(false);
+      window.scrollTo(0, 0);
+      return;
+    }
+    if (!isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry && !isCloudCostOptimization) {
       fetchServiceDetails();
     } else {
       setLoading(false);
     }
     window.scrollTo(0, 0);
-  }, [currentSlug]);
+  }, [currentSlug, isBackendComingSoon]);
+
+  if (isBackendComingSoon) {
+    return <BackendComingSoonService slug={currentSlug} />;
+  }
 
   if (isMeanStack) {
     return <HireMeanStackDevelopersService />;
@@ -1201,6 +1264,18 @@ export const ServiceDetails = () => {
     return <CloudFoundrySoftwareDevelopmentService />;
   }
 
+  if (isCloudCostOptimization) {
+    return <CloudCostOptimizationSoftwareService />;
+  }
+
+  if (isCloudBasedStorage) {
+    return <CloudBasedStorageServices />;
+  }
+
+  if (isCloudAnalytics) {
+    return <CloudAnalyticsSoftwareDevelopmentService />;
+  }
+
   if (isPowerAutomate) {
     return <PowerAutomateDevelopmentService />;
   }
@@ -1253,8 +1328,12 @@ export const ServiceDetails = () => {
     return <RpaDevelopmentService />;
   }
 
-  if (isVR) {
-    return <VirtualRealityDevelopmentService />;
+  if (isAugmentedReality) {
+    return <AugmentedRealityAppDevelopmentService />;
+  }
+
+  if (isVirtualRealityApp || isVR) {
+    return <VirtualRealityAppDevelopmentService />;
   }
 
   if (isFullStack) {

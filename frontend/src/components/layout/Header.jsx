@@ -60,38 +60,95 @@ export const Header = () => {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.1, ease: 'easeOut' }}
-            className="hidden lg:block border-b border-[#072439] bg-[#011422] text-slate-300 text-[12px] font-sans overflow-hidden transition-colors duration-300"
+            className="hidden lg:block border-b border-[#072439] bg-[#001726] text-white text-[12px] xl:text-[12.5px] font-sans overflow-hidden transition-colors duration-300"
           >
-            <div className="w-full px-6 lg:px-10 py-1.5 flex items-center justify-between">
-              {/* Sales Phone Numbers */}
-              <div className="flex items-center space-x-6">
-                <a href="tel:+17542587670" className="flex items-center space-x-2 hover:text-cyan-400 transition-colors">
-                  <span className="text-[13px]">🇺🇸</span>
-                  <span className="text-slate-400">For Sales:</span>
-                  <span className="font-semibold text-white">+1-754-258-7670</span>
-                </a>
-                <a href="tel:+919429709662" className="flex items-center space-x-2 hover:text-cyan-400 transition-colors">
-                  <span className="text-[13px]">🇮🇳</span>
-                  <span className="text-slate-400">For Sales:</span>
-                  <span className="font-semibold text-white">+91-942-970-9662</span>
+            <div className="w-full px-6 lg:px-10 xl:px-12 py-2 flex items-center justify-between">
+              {/* 1. UAE Sales */}
+              <div className="flex items-center shrink-0">
+                <a
+                  href="tel:+971569619780"
+                  className="flex items-center space-x-2 text-white hover:text-cyan-400 transition-colors"
+                >
+                  <img
+                    src="/images/uae.svg"
+                    alt="UAE Flag"
+                    className="w-[20px] h-[13px] object-cover rounded-[1px] shadow-sm shrink-0"
+                  />
+                  <span className="leading-none whitespace-nowrap">
+                    <span className="text-slate-300 font-normal">For Sales: </span>
+                    <span className="font-bold text-white">+971 569619780</span>
+                  </span>
                 </a>
               </div>
 
-              {/* Center / Right Links */}
-              <div className="flex items-center space-x-6">
-                <span className="flex items-center space-x-1.5 font-medium text-slate-200">
-                  <span className="text-cyan-400 font-bold text-xs">❖</span>
-                  <span className="font-semibold">{BRAND.name || 'Firevy.co'}</span>
-                </span>
-
-                <a href={`mailto:${BRAND.contact?.email || 'contact@firevy.co'}`} className="flex items-center space-x-1.5 text-slate-300 hover:text-cyan-400 transition-colors font-medium">
-                  <Mail className="w-3.5 h-3.5 text-red-400" />
-                  <span>{BRAND.contact?.email || 'contact@firevy.co'}</span>
+              {/* 2. India Sales */}
+              <div className="flex items-center shrink-0">
+                <a
+                  href="tel:+917069370629"
+                  className="flex items-center space-x-2 text-white hover:text-cyan-400 transition-colors"
+                >
+                  <img
+                    src="/images/india.svg"
+                    alt="India Flag"
+                    className="w-[20px] h-[13px] object-cover rounded-[1px] shadow-sm shrink-0"
+                  />
+                  <span className="leading-none whitespace-nowrap">
+                    <span className="text-slate-300 font-normal">For Sales: </span>
+                    <span className="font-bold text-white">+91 7069370629</span>
+                  </span>
                 </a>
+              </div>
 
-                <Link to="/contact" className="flex items-center space-x-1.5 text-cyan-400 hover:text-cyan-300 font-bold transition-colors">
-                  <Calendar className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>Schedule a Meeting</span>
+              {/* 3. Teams / Company Name */}
+              <div className="flex items-center shrink-0">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://teams.live.com/"
+                  className="flex items-center space-x-2 text-white hover:text-cyan-400 transition-colors"
+                >
+                  <img
+                    src="/images/ic_teams.svg"
+                    alt="Teams"
+                    className="w-[18px] h-[18px] object-contain shrink-0"
+                  />
+                  <span className="font-bold text-white leading-none whitespace-nowrap">
+                    Firevy.co
+                  </span>
+                </a>
+              </div>
+
+              {/* 4. Gmail */}
+              <div className="flex items-center shrink-0">
+                <a
+                  href="mailto:contact@firevy.co"
+                  className="flex items-center space-x-2 text-white hover:text-cyan-400 transition-colors"
+                >
+                  <img
+                    src="/images/gmail_new.svg"
+                    alt="Gmail"
+                    className="w-[18px] h-[14px] object-contain shrink-0"
+                  />
+                  <span className="font-bold text-white leading-none whitespace-nowrap">
+                    contact@firevy.co
+                  </span>
+                </a>
+              </div>
+
+              {/* 5. Schedule a Meeting */}
+              <div className="flex items-center shrink-0">
+                <Link
+                  to="/contact"
+                  className="flex items-center space-x-2 text-white hover:text-cyan-400 transition-colors"
+                >
+                  <img
+                    src="/images/schedule.svg"
+                    alt="Schedule a Meeting"
+                    className="w-[18px] h-[18px] object-contain shrink-0"
+                  />
+                  <span className="font-bold text-white leading-none whitespace-nowrap">
+                    Schedule a Meeting
+                  </span>
                 </Link>
               </div>
             </div>

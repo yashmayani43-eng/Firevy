@@ -37,11 +37,14 @@ import {
   Server,
   Award,
   Cloud,
-  ChevronLeft,
-  ChevronRight
+  TrendingDown,
+  DollarSign,
+  PieChart,
+  Activity,
+  Sliders
 } from 'lucide-react';
 
-export const CloudFoundrySoftwareDevelopmentService = () => {
+export const CloudCostOptimizationSoftwareService = () => {
   // Ref for Cutting-Edge Technologies Horizontal Slider
   const techScrollRef = useRef(null);
 
@@ -102,200 +105,170 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
     },
     {
       id: 4,
-      title: 'AR/VR',
-      desc: 'We create software that provides a feeling of realism that spans the actual and digital worlds, whether it is used for interactive marketing, immersive training, or other purposes.',
+      title: 'AR / VR',
+      desc: 'Our AR/VR development services provide realistic simulations and immersive digital experiences that increase brand engagement, boost operational effectiveness, and change customer experiences.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="13" y="6" width="22" height="36" rx="4" />
-          <line x1="21" y1="10" x2="27" y2="10" />
-          <circle cx="24" cy="38" r="1.5" fill="#0084D1" />
-          <path d="M24 16l7 4v8l-7 4-7-4v-8l7-4z" />
-          <path d="M24 16v12M31 20l-7 4M17 20l7 4" />
+          <path d="M9 16h30a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V20a4 4 0 0 1 4-4z" />
+          <path d="M19 34c1.5-3 3-5 5-5s3.5 2 5 5" />
+          <circle cx="15" cy="24" r="3" />
+          <circle cx="33" cy="24" r="3" />
+          <path d="M5 24H2M46 24h-3" />
         </svg>
       )
     },
     {
       id: 5,
-      title: 'Cloud Foundry & Diego PaaS',
-      desc: 'Deploy, orchestrate, and scale enterprise microservices with automated buildpacks, self-healing Diego container cells, and zero-downtime traffic routing.',
+      title: 'Blockchain',
+      desc: 'Our blockchain development services assist businesses in creating transparent, decentralized, and tamper-resistant systems that increase transaction speed, reduce fraud, and improve data security.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <polygon points="24 6 40 15 40 33 24 42 8 33 8 15 24 6" />
-          <line x1="24" y1="6" x2="24" y2="42" />
-          <circle cx="24" cy="24" r="4" fill="#0084D1" />
+          <rect x="7" y="7" width="12" height="12" rx="2" />
+          <rect x="29" y="7" width="12" height="12" rx="2" />
+          <rect x="7" y="29" width="12" height="12" rx="2" />
+          <rect x="29" y="29" width="12" height="12" rx="2" />
+          <path d="M19 13h10M13 19v10M35 19v10M19 35h10" />
+          <circle cx="24" cy="24" r="2.5" fill="#0084D1" />
         </svg>
       )
     },
     {
       id: 6,
-      title: 'AI & Machine Learning',
-      desc: 'We use AI solutions to automate software processes, provide predictive insights, and promote intelligent decision-making by leveraging advanced machine learning models.',
+      title: 'Artificial Intelligence',
+      desc: 'Our AI solutions empower companies to automate labor-intensive processes, discover strategic insights, and deliver hyper-personalized user experiences with precision and intelligence.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="14" y="14" width="20" height="20" rx="3" />
-          <circle cx="24" cy="24" r="5" />
-          <circle cx="24" cy="24" r="2" fill="#0084D1" />
-          <path d="M19 8v6M29 8v6M19 34v6M29 34v6M8 19h6M8 29h6M34 19h6M34 29h6" />
+          <circle cx="24" cy="24" r="14" />
+          <path d="M24 10v4M24 34v4M10 24h4M34 24h4" />
+          <circle cx="19" cy="21" r="2" fill="#0084D1" />
+          <circle cx="29" cy="21" r="2" fill="#0084D1" />
+          <path d="M19 28c1.5 2 3.5 3 5 3s3.5-1 5-3" />
         </svg>
       )
     },
     {
       id: 7,
-      title: 'Blockchain',
-      desc: 'We build decentralized, tamper-proof blockchain solutions that ensure high security, transparency, and data integrity for enterprise transactions and smart contracts.',
+      title: 'Cyber Security',
+      desc: 'Our comprehensive cybersecurity services safeguard your enterprise data, infrastructure, and brand reputation through proactive threat identification and zero-trust engineering.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="8" y="8" width="12" height="12" rx="2" />
-          <rect x="28" y="8" width="12" height="12" rx="2" />
-          <rect x="8" y="28" width="12" height="12" rx="2" />
-          <rect x="28" y="28" width="12" height="12" rx="2" />
-          <path d="M20 14h8M20 34h8M14 20v8M34 20v8" strokeDasharray="2 2" />
-          <circle cx="24" cy="14" r="2" fill="#0084D1" />
-          <circle cx="24" cy="34" r="2" fill="#0084D1" />
+          <path d="M24 6l14 6v12c0 10-7 16-14 18-7-2-14-8-14-18V12l14-6z" />
+          <path d="M24 18v10M20 23h8" />
         </svg>
       )
     }
   ];
 
-  // 6 Benefits Cards Grid (Exact 1:1 Match to Reference Layout & SVG Styling)
-  const cloudFoundryBenefits = [
+  // 6 Core Pillars of Cloud Cost Optimization Services
+  const cloudCostBenefits = [
     {
-      title: 'Seasoned Cloud Foundry Certified Architects',
-      desc: 'Cloud Foundry PaaS architecture, Diego clustering, and multi-region deployment are among the subjects our certified engineers are well familiar with, ensuring peak scalability.',
+      title: 'Continuous FinOps Automation',
+      desc: 'Automate idle compute discovery, schedule dev/test environment shutdowns, and eliminate abandoned storage volumes automatically without human intervention.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="8" y="7" width="32" height="13" rx="2" />
-          <line x1="13" y1="13.5" x2="15" y2="13.5" strokeWidth="2.5" />
-          <line x1="18" y1="13.5" x2="20" y2="13.5" strokeWidth="2.5" />
-          <line x1="23" y1="13.5" x2="25" y2="13.5" strokeWidth="2.5" />
-          <circle cx="34" cy="13.5" r="1.3" fill="#0084D1" />
-          <circle cx="30" cy="13.5" r="1.3" fill="#0084D1" />
-          <rect x="8" y="25" width="32" height="13" rx="2" />
-          <line x1="13" y1="31.5" x2="15" y2="31.5" strokeWidth="2.5" />
-          <line x1="18" y1="31.5" x2="20" y2="31.5" strokeWidth="2.5" />
-          <line x1="23" y1="31.5" x2="25" y2="31.5" strokeWidth="2.5" />
-          <circle cx="34" cy="31.5" r="1.3" fill="#0084D1" />
-          <circle cx="30" cy="31.5" r="1.3" fill="#0084D1" />
-          <path d="M14 20v5M34 20v5" />
+          <rect x="8" y="10" width="32" height="28" rx="4" />
+          <path d="M16 22l5 5 11-11" />
+          <path d="M8 18h32" />
         </svg>
       )
     },
     {
-      title: 'Mastery of Leading PaaS & Container Tools',
-      desc: 'To execute exact and reliable cloud solutions, our team makes use of modern Cloud Foundry technologies like Diego cells, BOSH, Gorouter, Cloud Native Buildpacks, and OSBAPI brokers.',
+      title: 'Intelligent Compute Rightsizing',
+      desc: 'Analyze historic CPU, RAM, and IOPS utilization algorithms to downscale oversized VMs, instances, and databases with zero disruption to active production workloads.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M10 16 L38 16 L28 28 L28 38 L20 38 L20 28 Z" />
-          <line x1="15" y1="7" x2="15" y2="12" />
-          <circle cx="15" cy="6" r="1.8" fill="#0084D1" />
-          <line x1="24" y1="4" x2="24" y2="12" />
-          <circle cx="24" cy="3" r="1.8" fill="#0084D1" />
-          <line x1="33" y1="7" x2="33" y2="12" />
-          <circle cx="33" cy="6" r="1.8" fill="#0084D1" />
-          <circle cx="24" cy="43" r="1.5" fill="#0084D1" />
+          <path d="M6 38V10M42 38V10M6 24h36M18 16l-6 8 6 8M30 16l6 8-6 8" />
         </svg>
       )
     },
     {
-      title: 'Agile and Group Cloud Migration',
-      desc: 'Working directly with your team, we use an agile approach to identify your application challenges and provide tailored Cloud Foundry migration solutions fit for your company goals.',
+      title: 'Multi-Cloud Expense Visibility',
+      desc: 'Unify AWS, Microsoft Azure, Google Cloud, and private cloud billing telemetry into a single interactive dashboard with granular department chargeback allocation.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M24 7 A 17 17 0 1 1 9 24" />
-          <polyline points="5 14 9 24 19 20" />
-          <circle cx="24" cy="24" r="5" />
-          <path d="M24 16v2M24 30v2M16 24h2M30 24h2M18.5 18.5l1.4 1.4M28.1 28.1l1.4 1.4M18.5 29.5l1.4-1.4M28.1 19.9l1.4-1.4" />
+          <circle cx="24" cy="24" r="16" />
+          <path d="M24 8v16l11 6" />
+          <circle cx="24" cy="24" r="3" fill="#0084D1" />
         </svg>
       )
     },
     {
-      title: 'Testing for Quality & High Availability',
-      desc: 'To guarantee resilience and speed, every Cloud Foundry deployment goes through thorough chaos testing and performance validation under real-time global traffic loads.',
+      title: 'Kubernetes Pod Bin-Packing',
+      desc: 'Maximize container cluster density through automated Horizontal Pod Autoscaler (HPA) and Vertical Pod Autoscaler (VPA) tuning to eliminate node sprawl.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="11" y="9" width="26" height="32" rx="3" />
-          <path d="M18 9V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3" />
-          <path d="M16 19l2 2 4-4" />
-          <line x1="25" y1="19" x2="31" y2="19" />
-          <path d="M16 27l2 2 4-4" />
-          <line x1="25" y1="27" x2="31" y2="27" />
-          <circle cx="37" cy="11" r="3" />
+          <rect x="10" y="8" width="12" height="12" rx="2" />
+          <rect x="26" y="8" width="12" height="12" rx="2" />
+          <rect x="10" y="24" width="12" height="12" rx="2" />
+          <rect x="26" y="24" width="12" height="12" rx="2" />
         </svg>
       )
     },
     {
-      title: 'Future-Ready, Scalable PaaS Solutions',
-      desc: 'Our developers provide scalable Cloud Foundry architectures meant to expand with your company, effortlessly managing microservices scaling, event streaming, and analytics.',
+      title: 'Commitment & RI Optimization',
+      desc: 'Strategically manage Reserved Instances (RIs), Savings Plans, and Spot instances to achieve up to 72% discounts without risky over-commitment lock-in.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="18" y="8" width="12" height="12" rx="2" />
-          <circle cx="24" cy="14" r="2" fill="#0084D1" />
-          <line x1="24" y1="4" x2="24" y2="8" />
-          <line x1="14" y1="14" x2="18" y2="14" />
-          <line x1="30" y1="14" x2="34" y2="14" />
-          <path d="M9 34c4-2 9-2 13-2h4a6 6 0 0 1 6 6v3H7v-3a4 4 0 0 1 2-4z" />
-          <path d="M22 32l3-5a2 2 0 0 1 3 2l-2 3" />
+          <circle cx="24" cy="24" r="16" />
+          <text x="24" y="30" textAnchor="middle" fontSize="16" fontWeight="bold" fill="#0084D1" stroke="none" fontFamily="sans-serif">$</text>
         </svg>
       )
     },
     {
-      title: 'Constant Support & FinOps Optimization',
-      desc: 'We provide ongoing assistance for Cloud Foundry services to maintain the current and optimal state of your infrastructure, offering 24/7 SRE monitoring, right-sizing, and cost optimization.',
+      title: 'Zero-Impact Uptime & Security',
+      desc: 'Implement non-intrusive optimization guardrails that maintain 99.99% system availability, zero-trust perimeter security, and full regulatory compliance.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M14 26V20a10 10 0 0 1 20 0v6" />
-          <rect x="11" y="24" width="6" height="10" rx="2" />
-          <rect x="31" y="24" width="6" height="10" rx="2" />
-          <path d="M34 32v2a4 4 0 0 1-4 4h-6" />
-          <circle cx="21" cy="38" r="2" fill="#0084D1" />
+          <path d="M24 6l14 6v12c0 10-7 16-14 18-7-2-14-8-14-18V12l14-6z" />
+          <path d="M18 24l4 4 8-8" />
         </svg>
       )
     }
   ];
 
-  // Carousel State for Our Expertise Section
+  // Carousel State for Section 12 (End-to-End Cloud Cost Optimization Services)
   const [expertiseIndex, setExpertiseIndex] = useState(0);
   const [isExpertiseHovered, setIsExpertiseHovered] = useState(false);
   const expertiseScrollRef = useRef(null);
 
-  const cloudFoundryExpertiseCards = [
+  const cloudCostExpertiseCards = [
     {
-      title: 'Automated CI/CD Integration',
-      desc: 'Implement continuous integration and continuous deployment pipelines to speed up time-to-market and ensure reliable, zero-downtime releases.'
+      title: 'Automated Cloud Resource Scheduling',
+      desc: 'Implement automated start/stop schedules for non-production environments to eliminate overnight and weekend compute waste.'
     },
     {
       title: 'Performance Monitoring & Optimization',
-      desc: 'Leverage real time analytics and monitoring tools to guarantee app performance, availability, and uptime.'
+      desc: 'Leverage real-time analytics, metric anomaly alerts, and unit-economics dashboards to guarantee cost efficiency and uptime.'
     },
     {
       title: 'Third-Party API & Service Integrations',
-      desc: 'Integrate databases, messaging queues, identity, and more with your Cloud Foundry apps to add functionality.'
+      desc: 'Integrate AWS Cost Explorer, Azure Cost Management, Datadog, Slack, and Jira with custom FinOps pipelines.'
     },
     {
-      title: 'Custom Cloud Native Application Development',
-      desc: 'Utilize Cloud Foundry’s open-source platform to develop and deploy highly scalable applications specific to your business needs.'
+      title: 'Custom Cloud Native FinOps Software',
+      desc: 'Build bespoke cost governance platforms tailored to your company’s unique multi-cloud architecture and business workflows.'
     },
     {
       title: 'Microservices Architecture Implementation',
-      desc: 'Transitioning legacy systems to microservices architecture for increased agility, fault tolerance, and independent scaling of services.'
+      desc: 'Transitioning legacy systems to microservices and Kubernetes pod bin-packing for increased resource density and reduced cluster footprint.'
     },
     {
       title: 'Multi-Cloud Migration & Deployment',
-      desc: 'Seamlessly migrate workloads to Cloud Foundry across AWS, Azure, GCP, or private clouds with zero downtime and vendor independence.'
+      desc: 'Systematically audit, tag, and rightsize workloads across AWS, Azure, and GCP with zero downtime and vendor independence.'
     }
   ];
 
   useEffect(() => {
     if (isExpertiseHovered) return;
     const interval = setInterval(() => {
-      setExpertiseIndex((prev) => (prev + 1) % cloudFoundryExpertiseCards.length);
+      setExpertiseIndex((prev) => (prev + 1) % cloudCostExpertiseCards.length);
     }, 3200);
     return () => clearInterval(interval);
   }, [isExpertiseHovered]);
 
   useEffect(() => {
     if (expertiseScrollRef.current) {
-      const cardStep = 390;
+      const cardStep = 370;
       expertiseScrollRef.current.scrollTo({
         left: expertiseIndex * cardStep,
         behavior: 'smooth'
@@ -303,63 +276,63 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
     }
   }, [expertiseIndex]);
 
-  // Success Stories tailored to Cloud Foundry
-  const cloudFoundrySuccessCards = [
+  // Success Stories matching Image 1 exactly
+  const cloudCostSuccessCards = [
     {
       id: 1,
-      title: 'Enterprise Microservices & Cloud-Native Tanzu Cluster',
+      title: 'Document Quality Analyzer Website Development',
       image: '/images/success_stories/redetect.svg',
       badge: 'Case Study'
     },
     {
       id: 2,
-      title: 'Real-Time Diego Container Orchestration & API Mesh Platform',
+      title: 'File Sharing App Development',
       image: '/images/success_stories/file_sharing_application.svg'
     },
     {
       id: 3,
-      title: 'Automated Zero-Downtime BOSH CI/CD Deployment Pipeline',
+      title: 'Data Analytics Website Development',
       image: '/images/success_stories/data_analytics.svg'
     }
   ];
 
-  // 9 Complete FAQs (Tailored to Cloud Foundry Platform & Firevy.co)
-  const cloudFoundryFaqs = [
+  // 9 Tailored Cloud Cost Optimization FAQs
+  const cloudCostFaqs = [
     {
-      question: '1. What are Cloud Foundry Software Development Services, and why are they essential?',
-      answer: 'Cloud Foundry Software Development Services encompass enterprise PaaS architecture design, application containerization (Diego), automated builds (Buildpacks), service broker binding (OSBAPI), and multi-cloud lifecycle management (BOSH). They ensure lightning-fast developer velocity, zero-downtime deployments, and multi-cloud independence.'
+      question: '1. What is Cloud Cost Optimization and how does it benefit our business?',
+      answer: 'Cloud Cost Optimization (FinOps) is the strategic discipline of analyzing, rightsizing, and automating cloud resource usage across AWS, Azure, and GCP. It eliminates waste, reclaims idle infrastructure, and optimizes reservation pricing models to slash recurring cloud bills by up to 50% without slowing engineering velocity.'
     },
     {
-      question: '2. How do your Cloud Foundry migration services work?',
-      answer: 'Our process includes legacy infrastructure auditing, 12-factor application refactoring, automated service broker configuration for persistent state, Diego containerization, validation testing, and live traffic cutover with zero downtime.'
+      question: '2. How quickly can we expect to see tangible cost reductions?',
+      answer: 'Initial quick-win optimizations—such as terminating orphaned volumes, removing unattached elastic IPs, rightsizing idle instances, and scheduling non-production environments—typically deliver measurable savings within the first 14 to 30 days of implementation.'
     },
     {
-      question: '3. What makes Cloud Foundry Diego superior for container management?',
-      answer: 'Diego is Cloud Foundry’s purpose-built container management engine. It distributes workloads across cell nodes using an auction algorithm, continuously monitors instance health, automatically restarts crashed instances, and eliminates complex orchestration script maintenance.'
+      question: '3. Will cloud cost optimization cause any downtime or latency for our users?',
+      answer: 'No. Our certified cloud architects use zero-downtime rolling strategies, shadow telemetry audits, and automated rollback guardrails. All compute rightsizing, container bin-packing, and reservation reallocation is performed without any disruption to your live production users.'
     },
     {
-      question: '4. Do you provide Cloud Foundry development services tailored to our sector?',
-      answer: 'Yes, we serve diverse industries including Fintech, Healthcare, eCommerce, Logistics, and SaaS, ensuring full regulatory compliance with HIPAA, SOC 2, and PCI-DSS standards.'
+      question: '4. Do you support multi-cloud architectures across AWS, Azure, and GCP?',
+      answer: 'Yes, our custom cost optimization software connects seamlessly to AWS Cost Explorer, Azure Cost Management, Google Cloud Billing, and hybrid private cloud infrastructures through native APIs and automated telemetry collectors.'
     },
     {
-      question: '5. How secure is our enterprise infrastructure on Cloud Foundry?',
-      answer: 'Cloud Foundry is built with security-by-design principles. We enforce container isolation via Garden, User Account and Authentication (UAA) identity access control, TLS termination, mutual TLS between internal components, and automated platform-wide CVE security patch rollouts.'
+      question: '5. How do you optimize Kubernetes and microservice cluster costs?',
+      answer: 'We deploy automated Horizontal Pod Autoscaling (HPA) and Vertical Pod Autoscaling (VPA), configure Karpenter/Cluster Autoscaler node provisioning, eliminate CPU/RAM throttling over-allocation, and blend low-cost Spot/Preemptible instances for stateless microservices.'
     },
     {
-      question: '6. How does Cloud Foundry eliminate vendor lock-in across multi-cloud?',
-      answer: 'Cloud Foundry abstracts underlying infrastructure through BOSH Cloud Provider Interfaces (CPIs). The exact same application package and deployment manifest runs consistently on AWS, Microsoft Azure, Google Cloud, and private VMware vSphere without changing application code.'
+      question: '6. How do you manage Reserved Instances (RIs) and Savings Plans?',
+      answer: 'We analyze your 6-to-12 month historical workload baseline to architect a dynamic blend of 1-year and 3-year Compute Savings Plans and Convertible RIs, maximizing discount rates (up to 72%) while ensuring flexible coverage as workloads evolve.'
     },
     {
-      question: '7. Why should businesses choose Firevy.co for Cloud Foundry development services?',
-      answer: 'With certified Cloud Foundry & Tanzu Architects and 500+ successful cloud deliveries, Firevy.co is trusted by global companies to modernize workloads, eliminate release bottlenecks, and unlock unmatched developer productivity.'
+      question: '7. Why should businesses partner with Firevy.co for cloud cost optimization?',
+      answer: 'With certified FinOps practitioners, 500+ successful cloud engineering engagements, and proven automated software blueprints, Firevy.co delivers measurable ROI with guaranteed cost reduction and ongoing infrastructure governance.'
     },
     {
-      question: '8. What types of Cloud Foundry services does Firevy.co offer?',
-      answer: 'We offer end-to-end Cloud Foundry services including Diego runtime deployment, custom Buildpack engineering, Open Service Broker integrations, VMware Tanzu Application Service (TAS) migration, BOSH lifecycle automation, and 24/7 SRE managed operations.'
+      question: '8. What security permissions are required for your cost optimization tools?',
+      answer: 'We strictly adhere to least-privilege zero-trust standards. Our audit and analysis tools require read-only metadata permissions (e.g. AWS Cost Explorer, CloudWatch metrics) and never access or inspect your underlying database records or customer data.'
     },
     {
-      question: '9. Does Firevy.co offer continuous Cloud Foundry cost optimization (FinOps)?',
-      answer: 'Yes, we implement proactive Cloud Foundry FinOps practices, including cell container bin-packing, auto-scaling policy tuning, idle instance hibernation, and automated resource metering to lower ongoing multi-cloud infrastructure expenses by up to 50%.'
+      question: '9. Does Firevy.co offer continuous ongoing FinOps and cost governance?',
+      answer: 'Yes, we provide 24/7 proactive FinOps management, including automated spend anomaly alerts, weekly executive cost dashboards, and monthly architecture rightsizing sprints to prevent cost creep permanently.'
     }
   ];
 
@@ -367,10 +340,10 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
     <div className="min-h-screen bg-white text-slate-800 selection:bg-[#005F96] selection:text-white">
       {/* SEO Metadata */}
       <SEO
-        title="Cloud Foundry Software Development Services | PaaS Consulting & Architecture | Firevy.co"
-        description="Accelerate your enterprise digital transformation with Firevy's Cloud Foundry Software Development Services. Diego container orchestration, BOSH automation, Cloud Native Buildpacks, and multi-cloud PaaS solutions."
-        keywords="Cloud Foundry Software Development Services, Cloud Foundry PaaS, Cloud Foundry Consulting, Diego Container Runtime, BOSH Multi-Cloud, Cloud Native Buildpacks, VMware Tanzu, Firevy.co"
-        url="https://firevy.co/services/cloud-foundry-software-development"
+        title="Cloud Cost Optimization Software Development Services | FinOps Solutions | Firevy.co"
+        description="Slash multi-cloud spend by up to 50% with Firevy's Cloud Cost Optimization Software Development Services. FinOps automation, intelligent compute rightsizing, Kubernetes bin-packing, and multi-cloud analytics."
+        keywords="Cloud Cost Optimization Software Development Services, Cloud Cost Optimization, Cloud FinOps, AWS Cost Reduction, Azure Cost Management, GCP Cost Optimization, Kubernetes FinOps, Cloud Waste Elimination, Firevy.co"
+        url="https://firevy.co/services/cloud-cost-optimization-software"
       />
 
       {/* ========================================================================= */}
@@ -383,46 +356,46 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
             {/* Left Column: Title + Paragraph + 4 Stats + CTA */}
             <div className="lg:col-span-7 space-y-6">
               <h1 className="text-[32px] sm:text-[40px] lg:text-[44px] font-extrabold text-[#0B0F19] tracking-tight leading-[1.18] font-sans">
-                Cloud Foundry Software Development <br />
-                Services
+                Cloud Cost Optimization <br />
+                Software Development
               </h1>
 
               <p className="text-[14px] sm:text-[15px] text-[#475569] font-normal leading-[1.75] max-w-2xl font-sans">
-                Go that extra mile with best Cloud Foundry Software Development Services, an epitome in advancement and cost-effective services designed for altogether different products and sizes. I am more than a startup trying to grow or an enterprise in need of modernizing. We build cloud-native web and mobile apps that scale and secure the handling of their business. Flexibility and speed are neatly integrated into our made to fit software so that your charges will be minimal. Conduct your app development today! Enjoy the deals by Affordable Cloud Foundry consulting and development services provider that has store for you from here until eternity.
+                In the cloud-based age today, through-the-roof infrastructure expenses can creep in unnoticed and leach away business funds. At our organization, we are experts at Cloud Cost Optimization Software Development that gives businesses control to eliminate wasteful expenditures and get complete visibility into their cloud expenditure. You may be a small startup or an enterprise, but our tailored cloud cost optimization services are designed for affordability, efficacy, and long-term value. Are you ready to get the upper hand on your cloud budget? Get your free quote today and begin saving smartly.
               </p>
 
-              {/* 4 Stats (Exact layout from First Image - clean text without card borders) */}
+              {/* 4 Stats (Exact 1:1 match to First Image) */}
               <div className="flex flex-wrap items-start gap-8 sm:gap-11 pt-2">
                 <div className="text-left">
-                  <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">100+</div>
+                  <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">53+</div>
                   <div className="text-xs sm:text-[13px] text-slate-800 font-semibold leading-snug mt-2">
                     Software<br />Developers
                   </div>
                 </div>
 
                 <div className="text-left">
-                  <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">20+</div>
+                  <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">10+</div>
                   <div className="text-xs sm:text-[13px] text-slate-800 font-semibold leading-snug mt-2">
                     Fortunes 500<br />Companies
                   </div>
                 </div>
 
                 <div className="text-left">
-                  <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">1000+</div>
+                  <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">530+</div>
                   <div className="text-xs sm:text-[13px] text-slate-800 font-semibold leading-snug mt-2">
                     Project Completed in<br />Software
                   </div>
                 </div>
 
                 <div className="text-left">
-                  <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">320+</div>
+                  <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">169+</div>
                   <div className="text-xs sm:text-[13px] text-slate-800 font-semibold leading-snug mt-2">
                     5-Star Clutch Reviews
                   </div>
                 </div>
               </div>
 
-              {/* Action Button (Exact from First Image) */}
+              {/* Action Button (Exact 1:1 match to First Image) */}
               <div className="pt-2">
                 <a
                   href="#contact"
@@ -434,13 +407,13 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
               </div>
             </div>
 
-            {/* Right Column: Exact Matching 2D Vector Illustration */}
+            {/* Right Column: Exact Matching 2D Flat Vector Illustration (No Box, Pure Clean Canvas) */}
             <div className="lg:col-span-5 flex items-center justify-center relative">
               <div className="relative w-full max-w-[540px] mx-auto flex items-center justify-center">
                 <img
-                  src="/images/cloud_foundry_hero.jpg"
-                  alt="Cloud Foundry Software Development Services"
-                  className="w-full h-auto object-contain drop-shadow-md transition-transform duration-500 ease-out hover:scale-105 cursor-pointer"
+                  src="/images/cloud_cost_optimization_hero.svg"
+                  alt="Cloud Cost Optimization Software Development"
+                  className="w-full h-auto object-contain transition-transform duration-500 ease-out hover:scale-105 cursor-pointer"
                   loading="eager"
                 />
               </div>
@@ -456,41 +429,36 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       <BrandLogoMarquee />
 
       {/* ========================================================================= */}
-      {/* 3. SAFEST BEST CLOUD FOUNDRY COMPANY (Image Left + Narrative Right)       */}
+      {/* 3. SAFEST BEST CLOUD COST OPTIMIZATION COMPANY (Image Left + Narrative)   */}
       {/* ========================================================================= */}
       <section className="py-14 sm:py-20 bg-white text-slate-900 font-sans text-left overflow-hidden">
         <Container className="max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Cloud Foundry Pipeline Illustration */}
+            {/* Left Column: Cloud Cost About Illustration */}
             <div className="lg:col-span-6 flex justify-center items-center">
-              <div className="relative w-full max-w-[480px] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+              <div className="relative w-full max-w-[480px] flex items-center justify-center">
                 <img
-                  src="/images/cloud_foundry_pipeline.jpg"
-                  alt="Automated Cloud Foundry PaaS Architecture"
-                  className="w-full h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                  src="/images/cloud_cost_optimization_about.svg"
+                  alt="Automated Cloud Cost Optimization Architecture"
+                  className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500 cursor-pointer"
                   loading="lazy"
                 />
               </div>
             </div>
 
-            {/* Right Column: Content */}
+            {/* Right Column: Content (Matching First Image 1:1) */}
             <div className="lg:col-span-6 space-y-4 text-left">
               <h2 className="text-[26px] sm:text-[32px] lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-[1.2]">
-                Count on us for the Safest Best Cloud Foundry Software Development Company
+                Expert Custom Cloud Cost Optimization Software Developers
               </h2>
 
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] font-normal leading-[1.8]">
-                Enterprises handle enormous volumes of microservices and workloads in the digital age. Monolithic on-premise servers and unstandardized infrastructure may, however, be rife with scaling bottlenecks, configuration drift, and excessive operational costs, causing business slowdowns and missed opportunities.
-              </p>
-
-              <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] font-normal leading-[1.8]">
-                By deploying Cloud Foundry PaaS, our specialist cloud engineers enable organizations to leverage resilient Diego container orchestration, automated Cloud Native Buildpacks, and secure multi-cloud networking to guarantee high availability and continuous uptime.
+                Being a top-rated AI-driven Cloud Cost Optimization Software company, we assist startups, businesses, and entrepreneurs to realize maximum ROI on their cloud investments. With in-depth knowledge in cloud cost optimization solutions, secure systems architecture, and scalable software development, we provide customized platforms to ease cost control. Our sector-specific solutions along with our innovative methods ensure enhanced cloud governance and sustainable cost savings. From Google Cloud Cost Optimization to hybrid and multi-cloud platforms, our secure systems are designed to meet your specific requirements.
               </p>
             </div>
           </div>
         </Container>
       </section>
-
 
       {/* ========================================================================= */}
       {/* 5. AWARDS & TRUST RECOGNITION CLUTCH BANNER                               */}
@@ -498,13 +466,13 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       <ClutchTopRatedBanner title="World Wide Top Rated IT Company on Clutch" />
 
       {/* ========================================================================= */}
-      {/* 6. 100% CUSTOMIZABLE CLOUD FOUNDRY SERVICES (Quote Card + Narrative)      */}
+      {/* 6. 100% CUSTOMIZABLE SERVICES (Quote Card + Narrative)                    */}
       {/* ========================================================================= */}
       <section className="py-14 sm:py-20 bg-white text-slate-900 font-sans text-left overflow-hidden">
         <Container className="max-w-6xl">
           {/* Centered Main Section Heading Matching Reference Screenshot */}
           <h2 className="text-center text-[26px] sm:text-[32px] lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight mb-10 sm:mb-14">
-            Get 100% Customizable Cloud Foundry Software Development Services
+            Get 100% Customizable Cloud Cost Optimization Software Services
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -530,17 +498,17 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
               </div>
 
               <h3 className="text-[26px] sm:text-[30px] lg:text-[32px] font-[800] text-[#005F96] leading-[1.22] tracking-tight relative z-10 font-sans">
-                Developer-first,<br />zero-downtime PaaS<br />guarantee
+                Intelligent FinOps,<br />zero-waste multi-cloud<br />guarantee
               </h3>
             </div>
 
             {/* Right Column: Detailed Narrative (Exact 1:1 Match to Reference Layout) */}
             <div className="lg:col-span-7 flex flex-col justify-center space-y-4 text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.78] font-normal text-left">
               <p>
-                Operating with peak velocity in the data-driven world of today depends on resilient and hyper-scalable infrastructure. Legacy monoliths may, however, suffer from resource lock-in, unbudgeted downtime, and sluggish release cycles. As a Cloud Foundry Development Company, our customizable cloud solutions provide immediate agility and resilience.
+                Operating with peak financial efficiency in the data-driven world of today depends on resilient and hyper-optimized infrastructure. Legacy cloud architectures may, however, suffer from runaway expenses, idle VM instances, and unmonitored data transfers. As a Cloud Cost Optimization Company, our customizable solutions provide immediate savings and operational transparency.
               </p>
               <p>
-                Our 100% personalized Cloud Foundry Solutions are designed for your unique enterprise workloads. Whether your needs are for Diego container runtime orchestration, BOSH multi-cloud cluster lifecycle management, custom buildpack development, or VMware Tanzu modernization, our certified team provides architectures that strengthen system uptime, accelerate release velocity, and maximize business growth.
+                Our 100% personalized Cloud Cost Optimization Solutions are designed for your unique enterprise workloads. Whether your needs are for automated resource rightsizing, Kubernetes cluster density optimization, Savings Plan orchestration, or multi-cloud FinOps dashboards, our certified team provides architectures that strengthen margins, preserve velocity, and maximize business growth.
               </p>
             </div>
 
@@ -627,8 +595,8 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       {/* 9. SUCCESS STORIES (MATCHING REFERENCE SCREENSHOT)                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
-        cards={cloudFoundrySuccessCards}
-        subtitle="Know Firevy.co journey from concept to cloud success. Explore how we've deployed resilient Cloud Foundry architectures and achieved remarkable results for our enterprise clients."
+        cards={cloudCostSuccessCards}
+        subtitle="Know Firevy.co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
       />
 
       {/* ========================================================================= */}
@@ -637,21 +605,21 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       <ProudAwardsBanner />
 
       {/* ========================================================================= */}
-      {/* 11. BENEFITS OF OUR CLOUD FOUNDRY SERVICES (EXACT 1:1 MATCH TO REFERENCE) */}
+      {/* 11. BENEFITS OF OUR CLOUD COST OPTIMIZATION SERVICES                      */}
       {/* ========================================================================= */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container className="max-w-6xl">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B0F19] tracking-tight leading-tight mb-3.5 font-sans">
-              Benefits of Our Cloud Foundry Development Services
+              Benefits of Our Cloud Cost Optimization Services
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
-              Years of enterprise cloud engineering, Diego orchestration, and BOSH automation have made our certified Cloud Foundry developers very talented individuals.
+              Years of enterprise cloud engineering, intelligent compute rightsizing, and FinOps automation have made our certified cloud architects very talented individuals.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {cloudFoundryBenefits.map((benefit, i) => (
+            {cloudCostBenefits.map((benefit, i) => (
               <div
                 key={i}
                 className="bg-white rounded-[16px] p-7 sm:p-8 shadow-[0_4px_25px_rgba(0,0,0,0.03)] border border-slate-100/90 hover:border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-start group"
@@ -672,7 +640,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       </section>
 
       {/* ========================================================================= */}
-      {/* 12. END-TO-END CLOUD FOUNDRY DEVELOPMENT SERVICES                         */}
+      {/* 12. END-TO-END CLOUD COST OPTIMIZATION SERVICES                           */}
       {/* ========================================================================= */}
       <section
         className="py-14 sm:py-18 bg-white font-sans w-full overflow-hidden border-t border-slate-100 text-left"
@@ -682,10 +650,10 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
         {/* Header Container */}
         <div className="max-w-4xl mx-auto px-4 text-center mb-8 sm:mb-12">
           <h2 className="font-[800] text-[#0B0F19] tracking-tight leading-tight mb-3 text-[26px] sm:text-[32px] lg:text-[36px]">
-            End-to-End Cloud Foundry Development Services
+            End-to-End Cloud Cost Optimization Services
           </h2>
           <p className="text-[13.5px] sm:text-[15px] text-[#475569] leading-relaxed max-w-3xl mx-auto font-normal">
-            We provide all services in Cloud Foundry environments to guarantee scale, performance, and productivity through
+            We provide all services in cloud cost governance and FinOps environments to guarantee scale, savings, and productivity through
           </p>
         </div>
 
@@ -696,7 +664,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
             className="flex gap-5 sm:gap-6 overflow-x-auto scrollbar-none py-2 px-6 sm:px-12 md:px-16 lg:px-20 scroll-smooth"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {cloudFoundryExpertiseCards.map((card, idx) => (
+            {cloudCostExpertiseCards.map((card, idx) => (
               <div
                 key={idx}
                 className="w-[300px] sm:w-[340px] lg:w-[360px] shrink-0 bg-[#DDF1FC] rounded-[16px] p-6 sm:p-7 flex flex-col justify-start border border-[#CEEAFA] select-none min-h-[220px] sm:min-h-[240px] transition-all duration-300 hover:shadow-md hover:bg-[#D5EEFA]"
@@ -727,8 +695,8 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       {/* 15. PROCESS WE FOLLOW                                                     */}
       {/* ========================================================================= */}
       <ProcessWeFollow
-        title="Cloud Foundry Development Process We Follow"
-        subtitle="Our systematic cloud pipeline from initial architecture auditing and workload assessment to automated Diego deployment, BOSH integration, and 24/7 SRE monitoring."
+        title="Cloud Cost Optimization Process We Follow"
+        subtitle="Our systematic FinOps pipeline from initial cloud bill auditing and waste identification to automated rightsizing, continuous monitoring, and ongoing cost governance."
       />
 
       {/* ========================================================================= */}
@@ -757,12 +725,12 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       <DigitalTransformationSlider />
 
       {/* ========================================================================= */}
-      {/* 21. FREQUENTLY ASKED QUESTIONS (Exact 9 Reference FAQs)                   */}
+      {/* 21. FREQUENTLY ASKED QUESTIONS                                            */}
       {/* ========================================================================= */}
       <SapphireFaqSection
         title="Frequently Asked Questions"
         subtitle="We Listen To Queries And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mentioned Below."
-        faqs={cloudFoundryFaqs}
+        faqs={cloudCostFaqs}
         companyName="Firevy.co"
       />
 
@@ -781,8 +749,8 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       {/* ========================================================================= */}
       <div id="contact">
         <IWatchChallengeCtaBanner
-          title="Have Cloud Foundry Development Challenge To Address ?"
-          subtitle="Get access to top Cloud Foundry Certified Architects & Tanzu Specialists at Firevy.co to transform your computing into a secure, hyper-scalable cloud ecosystem."
+          title="Have Cloud Cost Optimization Challenge To Address ?"
+          subtitle="Get access to top Cloud FinOps Certified Architects & Cloud Cost Engineers at Firevy.co to reduce your monthly cloud infrastructure spend by up to 50%."
           buttonText="Hire Now"
         />
       </div>
@@ -790,4 +758,4 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
   );
 };
 
-export default CloudFoundrySoftwareDevelopmentService;
+export default CloudCostOptimizationSoftwareService;

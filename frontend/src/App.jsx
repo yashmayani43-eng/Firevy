@@ -150,6 +150,82 @@ export function App() {
                 <Route path="/native-app-development" element={<ServiceDetails />} />
                 <Route path="/services/custom-mobile-app-development" element={<ServiceDetails />} />
                 <Route path="/custom-mobile-app-development" element={<ServiceDetails />} />
+
+                {/* Back End Development Services - Coming Soon */}
+                <Route path="/services/symfony-development" element={<ServiceDetails />} />
+                <Route path="/symfony-development" element={<ServiceDetails />} />
+                <Route path="/services/django-development" element={<ServiceDetails />} />
+                <Route path="/django-development" element={<ServiceDetails />} />
+                <Route path="/services/laravel-development" element={<ServiceDetails />} />
+                <Route path="/laravel-development" element={<ServiceDetails />} />
+                <Route path="/services/lamp-development" element={<ServiceDetails />} />
+                <Route path="/lamp-development" element={<ServiceDetails />} />
+                <Route path="/services/python-development-services" element={<ServiceDetails />} />
+                <Route path="/python-development-services" element={<ServiceDetails />} />
+                <Route path="/services/golang-development-services" element={<ServiceDetails />} />
+                <Route path="/golang-development-services" element={<ServiceDetails />} />
+                <Route path="/services/big-commerce-development" element={<ServiceDetails />} />
+                <Route path="/big-commerce-development" element={<ServiceDetails />} />
+                <Route path="/services/mongodb-development-services" element={<ServiceDetails />} />
+                <Route path="/mongodb-development-services" element={<ServiceDetails />} />
+                <Route path="/services/phalcon-development-services" element={<ServiceDetails />} />
+                <Route path="/phalcon-development-services" element={<ServiceDetails />} />
+                <Route path="/services/azure-web-services" element={<ServiceDetails />} />
+                <Route path="/azure-web-services" element={<ServiceDetails />} />
+                <Route path="/services/mysql-development-company" element={<ServiceDetails />} />
+                <Route path="/mysql-development-company" element={<ServiceDetails />} />
+                <Route path="/services/backend-development" element={<ServiceDetails />} />
+                <Route path="/backend-development" element={<ServiceDetails />} />
+                <Route path="/services/back-end-development" element={<ServiceDetails />} />
+                <Route path="/back-end-development" element={<ServiceDetails />} />
+
+                {/* AI & ML Development Services - Coming Soon */}
+                <Route path="/services/artificial-intelligence-development" element={<ServiceDetails />} />
+                <Route path="/artificial-intelligence-development" element={<ServiceDetails />} />
+                <Route path="/services/machine-learning-development" element={<ServiceDetails />} />
+                <Route path="/machine-learning-development" element={<ServiceDetails />} />
+                <Route path="/services/chatbot-development" element={<ServiceDetails />} />
+                <Route path="/chatbot-development" element={<ServiceDetails />} />
+                <Route path="/services/data-analytics-services" element={<ServiceDetails />} />
+                <Route path="/data-analytics-services" element={<ServiceDetails />} />
+                <Route path="/services/data-migration-services" element={<ServiceDetails />} />
+                <Route path="/data-migration-services" element={<ServiceDetails />} />
+                <Route path="/services/business-intelligence-development" element={<ServiceDetails />} />
+                <Route path="/business-intelligence-development" element={<ServiceDetails />} />
+                <Route path="/services/iot-app-development" element={<ServiceDetails />} />
+                <Route path="/iot-app-development" element={<ServiceDetails />} />
+                <Route path="/services/blockchain-development" element={<ServiceDetails />} />
+                <Route path="/blockchain-development" element={<ServiceDetails />} />
+                <Route path="/services/ai-ionic-app-development" element={<ServiceDetails />} />
+                <Route path="/ai-ionic-app-development" element={<ServiceDetails />} />
+                <Route path="/services/enterprise-ai-development" element={<ServiceDetails />} />
+                <Route path="/enterprise-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/ai-in-payments-industry" element={<ServiceDetails />} />
+                <Route path="/ai-in-payments-industry" element={<ServiceDetails />} />
+                <Route path="/services/ai-ml-development" element={<ServiceDetails />} />
+                <Route path="/ai-ml-development" element={<ServiceDetails />} />
+
+                {/* AR/VR Development Services - Coming Soon (Extended Reality, Metaverse, Digital Twin) */}
+                <Route path="/services/extended-reality-development" element={<ServiceDetails />} />
+                <Route path="/extended-reality-development" element={<ServiceDetails />} />
+                <Route path="/services/metaverse-development-company" element={<ServiceDetails />} />
+                <Route path="/metaverse-development-company" element={<ServiceDetails />} />
+                <Route path="/services/digital-twin-solutions" element={<ServiceDetails />} />
+                <Route path="/digital-twin-solutions" element={<ServiceDetails />} />
+
+                {/* Hire Back End Developers (Below Spring Boot) - Coming Soon */}
+                <Route path="/services/hire-django-developers" element={<ServiceDetails />} />
+                <Route path="/hire-django-developers" element={<ServiceDetails />} />
+                <Route path="/services/hire-net-developers" element={<ServiceDetails />} />
+                <Route path="/hire-net-developers" element={<ServiceDetails />} />
+                <Route path="/services/hire-node-js-developers" element={<ServiceDetails />} />
+                <Route path="/hire-node-js-developers" element={<ServiceDetails />} />
+                <Route path="/services/hire-php-developers" element={<ServiceDetails />} />
+                <Route path="/hire-php-developers" element={<ServiceDetails />} />
+                <Route path="/services/hire-express-js-developers" element={<ServiceDetails />} />
+                <Route path="/hire-express-js-developers" element={<ServiceDetails />} />
+                <Route path="/services/hire-fintech-developers" element={<ServiceDetails />} />
+                <Route path="/hire-fintech-developers" element={<ServiceDetails />} />
                 <Route path="/services/it-consulting-services" element={<ServiceDetails />} />
                 <Route path="/it-consulting-services" element={<ServiceDetails />} />
                 <Route path="/services/app-development-consulting" element={<ServiceDetails />} />
@@ -180,6 +256,52 @@ export function App() {
                 <Route path="/ai-consulting" element={<ServiceDetails />} />
                 <Route path="/services/cloud-foundry-software-development" element={<ServiceDetails />} />
                 <Route path="/cloud-foundry-software-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-foundry-software-development-service" element={<ServiceDetails />} />
+                <Route path="/cloud-foundry-software-development-service" element={<ServiceDetails />} />
+                <Route path="/services/cloud-foundry-software-development-services" element={<ServiceDetails />} />
+                <Route path="/cloud-foundry-software-development-services" element={<ServiceDetails />} />
+                <Route path="/services/cloud-foundry-development" element={<ServiceDetails />} />
+                <Route path="/cloud-foundry-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-foundry-development-services" element={<ServiceDetails />} />
+                <Route path="/cloud-foundry-development-services" element={<ServiceDetails />} />
+                <Route path="/services/cloud-foundry-services" element={<ServiceDetails />} />
+                <Route path="/cloud-foundry-services" element={<ServiceDetails />} />
+                <Route path="/services/cloud-foundry" element={<ServiceDetails />} />
+                <Route path="/cloud-foundry" element={<ServiceDetails />} />
+                <Route path="/services/cloud-cost-optimization-software" element={<ServiceDetails />} />
+                <Route path="/cloud-cost-optimization-software" element={<ServiceDetails />} />
+                <Route path="/services/cloud-cost-optimization-software-development" element={<ServiceDetails />} />
+                <Route path="/cloud-cost-optimization-software-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-cost-optimization" element={<ServiceDetails />} />
+                <Route path="/cloud-cost-optimization" element={<ServiceDetails />} />
+                <Route path="/services/augmented-reality-app-development" element={<ServiceDetails />} />
+                <Route path="/augmented-reality-app-development" element={<ServiceDetails />} />
+                <Route path="/services/augmented-reality-app" element={<ServiceDetails />} />
+                <Route path="/augmented-reality-app" element={<ServiceDetails />} />
+                <Route path="/services/augmented-reality" element={<ServiceDetails />} />
+                <Route path="/augmented-reality" element={<ServiceDetails />} />
+                <Route path="/services/virtual-reality-app-development" element={<ServiceDetails />} />
+                <Route path="/virtual-reality-app-development" element={<ServiceDetails />} />
+                <Route path="/services/virtual-reality-app" element={<ServiceDetails />} />
+                <Route path="/virtual-reality-app" element={<ServiceDetails />} />
+                <Route path="/services/virtual-reality-development" element={<ServiceDetails />} />
+                <Route path="/virtual-reality-development" element={<ServiceDetails />} />
+                <Route path="/services/virtual-reality" element={<ServiceDetails />} />
+                <Route path="/virtual-reality" element={<ServiceDetails />} />
+                <Route path="/services/vr-app-development" element={<ServiceDetails />} />
+                <Route path="/vr-app-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-analytics-software-development" element={<ServiceDetails />} />
+                <Route path="/cloud-analytics-software-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-analytics-software" element={<ServiceDetails />} />
+                <Route path="/cloud-analytics-software" element={<ServiceDetails />} />
+                <Route path="/services/cloud-analytics" element={<ServiceDetails />} />
+                <Route path="/cloud-analytics" element={<ServiceDetails />} />
+                <Route path="/services/cloud-based-storage-services" element={<ServiceDetails />} />
+                <Route path="/cloud-based-storage-services" element={<ServiceDetails />} />
+                <Route path="/services/cloud-based-storage-services-provider" element={<ServiceDetails />} />
+                <Route path="/cloud-based-storage-services-provider" element={<ServiceDetails />} />
+                <Route path="/services/cloud-based-storage" element={<ServiceDetails />} />
+                <Route path="/cloud-based-storage" element={<ServiceDetails />} />
                 <Route path="/services/cloud-devops" element={<ServiceDetails />} />
                 <Route path="/cloud-devops" element={<ServiceDetails />} />
                 <Route path="/services/google-cloud-development" element={<ServiceDetails />} />
