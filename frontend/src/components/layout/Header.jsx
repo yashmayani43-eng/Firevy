@@ -582,8 +582,6 @@ export const Header = () => {
                   </span>
                 </a>
               </div>
-                </a>
-              </div>
 
               {/* 3. Teams / Company Name */}
               <div className="flex items-center shrink-0">
@@ -787,6 +785,7 @@ export const Header = () => {
                   >
                     <X className="w-5 h-5 text-white stroke-[2.5]" />
                     <span>Close</span>
+                  </button>
                 )}
               </div>
 
