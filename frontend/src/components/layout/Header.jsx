@@ -582,8 +582,6 @@ export const Header = () => {
                   </span>
                 </a>
               </div>
-                </a>
-              </div>
 
               {/* 3. Teams / Company Name */}
               <div className="flex items-center shrink-0">
