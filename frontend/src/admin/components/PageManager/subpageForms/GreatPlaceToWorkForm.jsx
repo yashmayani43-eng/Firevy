@@ -38,7 +38,7 @@ export const DEFAULT_BENEFITS = [
   {
     id: 2,
     title: 'Equal Opportunity Employer',
-    desc: 'firevy.co promises not to discriminate against employees because of their race, color, religion, sex, national origin, age, disability, or genetic information.',
+    desc: 'Firevy.Co promises not to discriminate against employees because of their race, color, religion, sex, national origin, age, disability, or genetic information.',
     iconName: 'Users',
     iconImage: ''
   },
@@ -86,7 +86,7 @@ export const DEFAULT_CULTURE_PILLARS = [
   {
     id: 4,
     title: 'Making Impact',
-    desc: 'We aim to give you a chance to advance your career and alter the course of history. Our work at firevy.co significantly impacts the world we live in.',
+    desc: 'We aim to give you a chance to advance your career and alter the course of history. Our work at Firevy.Co significantly impacts the world we live in.',
     iconName: 'Target',
     iconImage: ''
   }
@@ -100,7 +100,7 @@ export const DEFAULT_CLUTCH_REVIEWS = [
     location: 'Rockville, Maryland',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80',
     title: '"They are very professional, respectful, competent, and approachable."',
-    quote: "The client was highly pleased with firevy.co's software development work. The team met all timeline goals and kept the cost within budget...",
+    quote: "The client was highly pleased with Firevy.Co's software development work. The team met all timeline goals and kept the cost within budget...",
     rating: '4.5',
     quality: '4.0',
     schedule: '4.5',
@@ -112,8 +112,8 @@ export const DEFAULT_CLUTCH_REVIEWS = [
     name: 'Derrick Surratt',
     location: 'Arkansas',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80',
-    title: '"firevy.co\'s team communicated effectively..."',
-    quote: 'firevy.co successfully implemented all UX and design features on the app. The team has consistently delivered on schedule...',
+    title: '"Firevy.Co\'s team communicated effectively..."',
+    quote: 'Firevy.Co successfully implemented all UX and design features on the app. The team has consistently delivered on schedule...',
     rating: '5.0',
     quality: '5.0',
     schedule: '5.0',
@@ -126,7 +126,7 @@ export const DEFAULT_CLUTCH_REVIEWS = [
     location: 'Massachusetts',
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80',
     title: "\"They're able to listen to customer requests and attend...\"",
-    quote: "firevy.co's updates improved a product's UX per the end customer's requests. The team is personable, reaches their goals...",
+    quote: "Firevy.Co's updates improved a product's UX per the end customer's requests. The team is personable, reaches their goals...",
     rating: '5.0',
     quality: '5.0',
     schedule: '5.0',
@@ -217,14 +217,14 @@ export const GreatPlaceToWorkForm = ({
   // 1. How We Did It Section Data
   const howWeDidIt = content.howWeDidIt || {
     heading: 'How We Did It?',
-    description: 'It was the first time we tried to offer 360-degree IT services, so getting here took a lot of work. A few years ago, we worked hard for our first client before receiving our first lead. At that very moment, firevy.co chose to group its IT services under a single umbrella. We were fortunate to receive further leads over the following few months, and they were gracious enough to provide us with as much input as we could reasonably process. Additionally, several of our clients began requesting digital marketing solutions. We started a small team for digital marketing from there and have yet to look back. All due to our incredible partners, clients, and, of course, our extraordinarily bright personnel who put in a lot of effort for us.',
+    description: 'It was the first time we tried to offer 360-degree IT services, so getting here took a lot of work. A few years ago, we worked hard for our first client before receiving our first lead. At that very moment, Firevy.Co chose to group its IT services under a single umbrella. We were fortunate to receive further leads over the following few months, and they were gracious enough to provide us with as much input as we could reasonably process. Additionally, several of our clients began requesting digital marketing solutions. We started a small team for digital marketing from there and have yet to look back. All due to our incredible partners, clients, and, of course, our extraordinarily bright personnel who put in a lot of effort for us.',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80'
   };
 
   // 2. Video Banner Section Data
   const videoBanner = content.videoBanner || {
-    heading: 'What Makes firevy.co Great Place To Work',
-    subtitle: 'What Makes firevy.co Great Place to work',
+    heading: 'What Makes Firevy.Co Great Place To Work',
+    subtitle: 'What Makes Firevy.Co Great Place to work',
     coverImage: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
   };
@@ -255,7 +255,7 @@ export const GreatPlaceToWorkForm = ({
     awardsHeading: 'Awards And Recognition',
     awardsSubtitle: 'The world is fueled by money. However, at our organization, rewards go beyond money. We provide a variety of attractive incentives to support you in working your magic.',
     heading: 'Meet Our Heroes',
-    description: "We reward them because our team's strength grows enormously from our accomplishments. When an individual or team exemplifies your company's values, mission, or objectives, we have a culture that values and rewards their effort, successes, and contributions. Employees that take part in initiatives like these realize the significance and value of their work. Their ability to accomplish their jobs better is thereby significantly increased. At firevy.co, increasing employee productivity and recruiting and keeping top talent is done in a variety of ways, from work incentives to more freedom. We recognize the significance of feeling valued in order to succeed as a business owner or entrepreneur.",
+    description: "We reward them because our team's strength grows enormously from our accomplishments. When an individual or team exemplifies your company's values, mission, or objectives, we have a culture that values and rewards their effort, successes, and contributions. Employees that take part in initiatives like these realize the significance and value of their work. Their ability to accomplish their jobs better is thereby significantly increased. At Firevy.Co, increasing employee productivity and recruiting and keeping top talent is done in a variety of ways, from work incentives to more freedom. We recognize the significance of feeling valued in order to succeed as a business owner or entrepreneur.",
     image1: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80',
     image2: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
     image3: 'https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=600&q=80'
@@ -316,7 +316,7 @@ export const GreatPlaceToWorkForm = ({
 
   // 6. Culture Pillars Data
   const culture = content.culture || {
-    heading: 'firevy.co Culture',
+    heading: 'Firevy.Co Culture',
     subtitle: 'We embrace a culture that fosters an environment where workers are happy and produce better work...',
     backgroundImage: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80',
     pillars: DEFAULT_CULTURE_PILLARS
@@ -384,7 +384,7 @@ export const GreatPlaceToWorkForm = ({
               type="text"
               className="form-control"
               placeholder="e.g. Great Place To Work"
-              value={hero.title || formData.title || 'What Makes firevy.co An Exciting Place To Work?'}
+              value={hero.title || formData.title || 'What Makes Firevy.Co An Exciting Place To Work?'}
               onChange={(e) => {
                 updateSection('hero', 'title', e.target.value);
                 updateRootField('title', e.target.value);
@@ -401,7 +401,7 @@ export const GreatPlaceToWorkForm = ({
               value={
                 hero.subtitle ||
                 formData.subtitle ||
-                'Working with firevy.co is much more than doing a set of tasks daily. You can think, innovate, and tell us your ideas to improve this organization! You have exciting new opportunities to follow your curiosity wherever it takes you and pursue a career with our company.'
+                'Working with Firevy.Co is much more than doing a set of tasks daily. You can think, innovate, and tell us your ideas to improve this organization! You have exciting new opportunities to follow your curiosity wherever it takes you and pursue a career with our company.'
               }
               onChange={(e) => {
                 updateSection('hero', 'subtitle', e.target.value);
@@ -492,10 +492,10 @@ export const GreatPlaceToWorkForm = ({
                 {hero.badge || formData.badge || 'COMPANY CULTURE'}
               </div>
               <h4 style={{ fontSize: '18px', fontWeight: 800, color: '#0F172A', margin: '0 0 6px 0', lineHeight: 1.25 }}>
-                {hero.title || formData.title || 'What Makes firevy.co An Inspiring, Fun, and Rewarding Workplace?'}
+                {hero.title || formData.title || 'What Makes Firevy.Co An Inspiring, Fun, and Rewarding Workplace?'}
               </h4>
               <p style={{ fontSize: '12px', color: '#64748B', margin: '0 0 12px 0', lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                {hero.subtitle || formData.subtitle || 'What Makes firevy.co An Inspiring, Fun, and Rewarding Workplace?'}
+                {hero.subtitle || formData.subtitle || 'What Makes Firevy.Co An Inspiring, Fun, and Rewarding Workplace?'}
               </p>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', background: '#00668C', color: '#FFF', borderRadius: '6px', fontSize: '12px', fontWeight: 700 }}>
                 <span>{hero.ctaText || formData.ctaText || 'Discuss Your Project'}</span>
@@ -602,7 +602,7 @@ export const GreatPlaceToWorkForm = ({
 
       {/* 3. VIDEO BANNER SECTION */}
       <AdminFormSection
-        title='3. "What Makes firevy.co Great Place To Work" Video Banner'
+        title='3. "What Makes Firevy.Co Great Place To Work" Video Banner'
         subtitle="Cyan bordered video player section with cover thumbnail and play button."
         badge="Video Banner"
       >
@@ -611,8 +611,8 @@ export const GreatPlaceToWorkForm = ({
             <input
               type="text"
               className="form-control"
-              placeholder="e.g. What Makes firevy.co Great Place To Work"
-              value={videoBanner.heading || 'What Makes firevy.co Great Place To Work'}
+              placeholder="e.g. What Makes Firevy.Co Great Place To Work"
+              value={videoBanner.heading || 'What Makes Firevy.Co Great Place To Work'}
               onChange={(e) => updateContentField('videoBanner', 'heading', e.target.value)}
             />
           </AdminFormField>
@@ -621,8 +621,8 @@ export const GreatPlaceToWorkForm = ({
             <input
               type="text"
               className="form-control"
-              placeholder="e.g. What Makes firevy.co Great Place to work"
-              value={videoBanner.subtitle || 'What Makes firevy.co Great Place to work'}
+              placeholder="e.g. What Makes Firevy.Co Great Place to work"
+              value={videoBanner.subtitle || 'What Makes Firevy.Co Great Place to work'}
               onChange={(e) => updateContentField('videoBanner', 'subtitle', e.target.value)}
             />
           </AdminFormField>
@@ -919,7 +919,7 @@ export const GreatPlaceToWorkForm = ({
 
       {/* 7. CULTURE SECTION & 4 PILLARS */}
       <AdminFormSection
-        title='7. "firevy.co Culture" Section (Background Image & 4 Pillars)'
+        title='7. "Firevy.Co Culture" Section (Background Image & 4 Pillars)'
         subtitle="Manage the culture backdrop image and the 4 key culture pillars."
         badge="Culture & 4 Pillars"
       >
@@ -928,7 +928,7 @@ export const GreatPlaceToWorkForm = ({
             <input
               type="text"
               className="form-control"
-              value={culture.heading || 'firevy.co Culture'}
+              value={culture.heading || 'Firevy.Co Culture'}
               onChange={(e) => updateContentField('culture', 'heading', e.target.value)}
             />
           </AdminFormField>

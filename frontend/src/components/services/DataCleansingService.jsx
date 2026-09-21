@@ -165,7 +165,7 @@ export const DataCleansingService = () => {
     }
   ];
 
-  // 9 Complete FAQs (Firevy.co Branded)
+  // 9 Complete FAQs (Firevy.Co Branded)
   const cleansingFaqs = [
     {
       question: '1. What is data cleaning, and why is it important?',
@@ -192,15 +192,15 @@ export const DataCleansingService = () => {
       answer: 'Maintaining accuracy calls for regular data cleaning. We provide one-time deep cleans, monthly rolling cleans, or real-time streaming data cleaning solutions based on your company’s demands.'
     },
     {
-      question: '7. Why should businesses choose Firevy.co for data cleansing services?',
-      answer: 'With deep engineering experience and 500+ successful data projects, Firevy.co is trusted by global enterprises to eliminate data corruption, improve quality, and accelerate analytics intelligence.'
+      question: '7. Why should businesses choose Firevy.Co for data cleansing services?',
+      answer: 'With deep engineering experience and 500+ successful data projects, Firevy.Co is trusted by global enterprises to eliminate data corruption, improve quality, and accelerate analytics intelligence.'
     },
     {
-      question: '8. What types of data cleansing services does Firevy.co offer?',
+      question: '8. What types of data cleansing services does Firevy.Co offer?',
       answer: 'We offer data deduplication, standardization, validation, enrichment, formatting, normalization, and error correction for structured databases and unstructured document repositories.'
     },
     {
-      question: '9. Does Firevy.co offer real-time or scheduled data cleansing services?',
+      question: '9. Does Firevy.Co offer real-time or scheduled data cleansing services?',
       answer: 'Yes, we provide both real-time data cleansing for continuous data streams and scheduled batch cleansing for periodic database updates.'
     }
   ];
@@ -209,10 +209,10 @@ export const DataCleansingService = () => {
     <div className="min-h-screen bg-white text-slate-800 selection:bg-[#005F96] selection:text-white">
       {/* SEO Metadata */}
       <SEO
-        title="Data Cleansing Services | Database Cleansing Services | Firevy.co"
+        title="Data Cleansing Services | Database Cleansing Services | Firevy.Co"
         description="Transform messy data into valuable insights! Our professional Data Cleansing Services and Database Cleansing Services eliminate redundancies & errors, improving business intelligence."
-        keywords="Data Cleansing Services, Database Cleansing Services, Data Scrubbing, CRM Data Cleaning, Data Deduplication, Firevy.co"
-        url="https://firevy.co/services/data-cleansing-services"
+        keywords="Data Cleansing Services, Database Cleansing Services, Data Scrubbing, CRM Data Cleaning, Data Deduplication, Firevy.Co"
+        url="https://Firevy.co/services/data-cleansing-services"
       />
 
       {/* ========================================================================= */}
@@ -429,19 +429,19 @@ export const DataCleansingService = () => {
       {/* ========================================================================= */}
       {/* 7. CUTTING EDGE TECHNOLOGIES SECTION (MATCHING REFERENCE SCREENSHOT)      */}
       {/* ========================================================================= */}
-      <DataCleansingCuttingEdgeTechSection companyName="Firevy.co" />
+      <DataCleansingCuttingEdgeTechSection companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 8. OUR PREMIUM SERVICES (MATCHING REFERENCE SCREENSHOT)                   */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 9. SUCCESS STORIES (MATCHING REFERENCE SCREENSHOT)                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
         cards={dataCleansingSuccessCards}
-        subtitle="Know Firevy.co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
+        subtitle="Know Firevy.Co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
       />
 
       {/* ========================================================================= */}
@@ -539,7 +539,7 @@ export const DataCleansingService = () => {
         title="Frequently Asked Questions"
         subtitle="We Listen To Query And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mention Below."
         faqs={cleansingFaqs}
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}
@@ -558,7 +558,7 @@ export const DataCleansingService = () => {
       <div id="contact">
         <IWatchChallengeCtaBanner
           title="Have Data Cleansing Services Challenge To Address ?"
-          subtitle="Get access to top Data Cleansing & Database Specialists at Firevy.co to transform your raw data into accurate, reliable insights."
+          subtitle="Get access to top Data Cleansing & Database Specialists at Firevy.Co to transform your raw data into accurate, reliable insights."
           buttonText="Hire Now"
         />
       </div>

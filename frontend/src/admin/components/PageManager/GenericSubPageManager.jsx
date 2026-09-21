@@ -224,7 +224,7 @@ export const GenericSubPageManager = ({
           missionVision: {
             ...(data.content?.missionVision || {}),
             heading: data.content?.missionVision?.heading || 'We Create, We Enhance, We Deliver',
-            subheading: data.content?.missionVision?.subheading || "More Than Expected – That's firevy.co",
+            subheading: data.content?.missionVision?.subheading || "More Than Expected – That's Firevy.Co",
             missionTitle: data.content?.missionHeading || data.content?.missionVision?.missionTitle || 'Our Mission',
             missionText: data.content?.missionText || data.content?.missionVision?.missionText || '',
             visionTitle: data.content?.visionHeading || data.content?.missionVision?.visionTitle || 'Our Vision',
@@ -270,7 +270,7 @@ export const GenericSubPageManager = ({
             buttonLink: data.content?.cta?.buttonLink || data.ctaBtnLink || '/contact'
           },
           seo: {
-            metaTitle: data.seo?.metaTitle || `${currentSubPage.title} | Firevy.co`,
+            metaTitle: data.seo?.metaTitle || `${currentSubPage.title} | Firevy.Co`,
             metaDescription: data.seo?.metaDescription || currentSubPage.description || '',
             metaKeywords: data.seo?.metaKeywords || '',
             canonical: data.seo?.canonical || currentSubPage.publicRoute || ''
@@ -324,7 +324,7 @@ export const GenericSubPageManager = ({
           buttonLink: '/contact'
         },
         seo: {
-          metaTitle: `${currentSubPage.title} | Firevy.co`,
+          metaTitle: `${currentSubPage.title} | Firevy.Co`,
           metaDescription: currentSubPage.description || '',
           metaKeywords: '',
           canonical: currentSubPage.publicRoute || ''

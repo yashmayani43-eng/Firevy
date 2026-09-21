@@ -225,7 +225,7 @@ export const MicroservicesConsultingServices = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Microservices Consulting Services | Scalable Cloud Architecture | Firevy.co"
+        title="Microservices Consulting Services | Scalable Cloud Architecture | Firevy.Co"
         description="Accelerate enterprise scalability with Firevy's Microservices Consulting Services. Monolith decomposition, Kubernetes orchestration, Docker, Domain-Driven Design, and API gateways."
         keywords="microservices consulting services, microservices consulting, microservices architecture consulting, monolith to microservices, kubernetes consulting, docker, event driven architecture, api gateway, service mesh"
       />

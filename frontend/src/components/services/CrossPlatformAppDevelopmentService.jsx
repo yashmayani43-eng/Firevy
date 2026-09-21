@@ -387,8 +387,8 @@ export const CrossPlatformAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Cross-Platform App Development Company | Multi-Platform Solutions | Firevy.co"
-        description="Top Cross-Platform App Development Company. Build custom multi-platform applications, high performance integrations, and scalable cross-platform solutions with Firevy.co."
+        title="Cross-Platform App Development Company | Multi-Platform Solutions | Firevy.Co"
+        description="Top Cross-Platform App Development Company. Build custom multi-platform applications, high performance integrations, and scalable cross-platform solutions with Firevy.Co."
         canonical="/services/cross-platform-app-development"
       />
 

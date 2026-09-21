@@ -104,7 +104,7 @@ export const ShopifyDevelopmentService = () => {
       a: "Checkout Extensibility is Shopify's modern, app-based architecture replacing legacy checkout.liquid. It allows us to build fast, secure custom checkout apps, post-purchase one-click upsells, custom shipping rules, and loyalty discounts without breaking future Shopify core updates."
     },
     {
-      q: "3. How does Firevy.co build custom Shopify apps?",
+      q: "3. How does Firevy.Co build custom Shopify apps?",
       a: "We develop custom private and public Shopify apps using Node.js, React (Shopify Polaris), GraphQL Admin API, and Shopify Functions. Whether you need custom ERP inventory synchronizers, tiered discount engines, or bespoke fulfillment workflows, our apps run seamlessly in your Shopify admin."
     },
     {
@@ -128,7 +128,7 @@ export const ShopifyDevelopmentService = () => {
       a: "We provide dedicated full-time Shopify developers, fixed-price turnkey store design and builds, agile Time & Material development, and 24/7 ongoing store maintenance and conversion optimization."
     },
     {
-      q: "9. How quickly can we start our Shopify project with Firevy.co?",
+      q: "9. How quickly can we start our Shopify project with Firevy.Co?",
       a: "Our Shopify Plus certified experts can kick off your project within 2 to 4 business days following discovery and project scoping."
     }
   ];
@@ -137,7 +137,7 @@ export const ShopifyDevelopmentService = () => {
     <div className="bg-white text-slate-800 font-sans antialiased overflow-hidden">
       <SEO
         title="Shopify Development Company in USA | Certified Shopify Plus Experts"
-        description="Firevy.co is a premier Shopify development company in USA. Certified Shopify Plus experts specializing in custom theme design, app development, headless Hydrogen, and store migrations."
+        description="Firevy.Co is a premier Shopify development company in USA. Certified Shopify Plus experts specializing in custom theme design, app development, headless Hydrogen, and store migrations."
       />
 
 
@@ -151,7 +151,7 @@ export const ShopifyDevelopmentService = () => {
                 Shopify Development Services in USA
               </h1>
               <p className="text-sm sm:text-base text-[#475569] leading-[1.8] max-w-xl font-normal">
-                At Firevy.co, we are dedicated to providing top-notch Shopify Website Development Services suited to your particular company's demands as an industry leader. Our team of knowledgeable Shopify specialists is here to support you to be successful in the ever-changing e-commerce industry.
+                At Firevy.Co, we are dedicated to providing top-notch Shopify Website Development Services suited to your particular company's demands as an industry leader. Our team of knowledgeable Shopify specialists is here to support you to be successful in the ever-changing e-commerce industry.
               </p>
               <div className="pt-2">
                 <a
@@ -364,7 +364,7 @@ export const ShopifyDevelopmentService = () => {
                 Acquire Shopify Store Development Services
               </h2>
               <p className="text-slate-600 leading-relaxed text-base">
-                Firevy.co provides end-to-end Shopify and Shopify Plus development services designed to maximize conversions, average order value (AOV), and customer retention. From custom theme engineering (Online Store 2.0) to custom app creation and headless Hydrogen implementations, we deliver turnkey e-commerce success.
+                Firevy.Co provides end-to-end Shopify and Shopify Plus development services designed to maximize conversions, average order value (AOV), and customer retention. From custom theme engineering (Online Store 2.0) to custom app creation and headless Hydrogen implementations, we deliver turnkey e-commerce success.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {[
@@ -742,7 +742,7 @@ export const ShopifyDevelopmentService = () => {
             {/* Left: What Sets Us Apart */}
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-[#005F96] text-xs font-bold uppercase tracking-widest rounded-full">
-                Why Firevy.co
+                Why Firevy.Co
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
                 What Sets Us Apart As Shopify Development Company?

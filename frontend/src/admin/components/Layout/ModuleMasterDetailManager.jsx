@@ -21,7 +21,7 @@ import ErrorBoundary from '../UI/ErrorBoundary';
  * @param {Array} props.items - Array of item definitions:
  *   [{
  *      key: 'about-firevy',
- *      title: 'About firevy.co',
+ *      title: 'About Firevy.Co',
  *      category: 'Company Profile',
  *      description: '...',
  *      slug: '/company/about-firevy',

@@ -120,7 +120,7 @@ export const HireBlackberryDevelopersService = () => {
   // BlackBerry FAQs matching Sapphire reference page style
   const faqs = [
     {
-      q: 'How much does it cost to hire a BlackBerry app developer from Firevy.co?',
+      q: 'How much does it cost to hire a BlackBerry app developer from Firevy.Co?',
       a: 'Our pricing is straightforward to understand. You may hire a dedicated BlackBerry app developer from us starting at $21/hour or on flexible monthly dedicated contracts based on experience level.'
     },
     {
@@ -129,7 +129,7 @@ export const HireBlackberryDevelopersService = () => {
     },
     {
       q: 'Which company is best for enterprise mobile & BlackBerry app development?',
-      a: 'Firevy.co is a top-rated mobile & security engineering company with 20+ years of industry leadership and a team of senior engineers delivering containerized enterprise mobile applications globally.'
+      a: 'Firevy.Co is a top-rated mobile & security engineering company with 20+ years of industry leadership and a team of senior engineers delivering containerized enterprise mobile applications globally.'
     },
     {
       q: 'Do you offer support and SLA maintenance for BlackBerry enterprise solutions?',
@@ -140,7 +140,7 @@ export const HireBlackberryDevelopersService = () => {
       a: 'Yes, our BlackBerry developers specialize in integrating mobile apps with BlackBerry UEM (Unified Endpoint Management), Microsoft Intune, AirWatch, and custom enterprise container solutions.'
     },
     {
-      q: 'Why should I hire BlackBerry app developers from Firevy.co?',
+      q: 'Why should I hire BlackBerry app developers from Firevy.Co?',
       a: 'Our dedicated BlackBerry app developers bring deep mobile security expertise, bi-weekly agile velocity, 100% IP & code ownership, direct communication, and 15-day risk-free trials to guarantee project success.'
     },
     {
@@ -157,7 +157,7 @@ export const HireBlackberryDevelopersService = () => {
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#006095] selection:text-white">
       <SEO
         title="Hire BlackBerry App Developers | Enterprise Mobile Security Engineers"
-        description="Hire dedicated BlackBerry app developers from Firevy.co. Top 1% vetted enterprise mobile security, BlackBerry Dynamics SDK, containerized apps, and C++/Java developers."
+        description="Hire dedicated BlackBerry app developers from Firevy.Co. Top 1% vetted enterprise mobile security, BlackBerry Dynamics SDK, containerized apps, and C++/Java developers."
         keywords="Hire BlackBerry App Developers, Hire Blackberry Developer, BlackBerry Mobile Development Company, Enterprise MDM Developers, Secure Mobile Application Development"
       />
 
@@ -254,7 +254,7 @@ export const HireBlackberryDevelopersService = () => {
                 Hire Dedicated BlackBerry App Developers For Enterprise Security & MDM Solutions
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
-                By hiring BlackBerry app development professionals from Firevy.co, you gain immediate access to top 1% vetted developers who excel in enterprise mobile security, BlackBerry Dynamics SDK, containerized apps, encryption protocols, and BlackBerry UEM integrations. Hire BlackBerry Developers that deliver secure, compliant, high-availability mobile solutions while ensuring enterprise data protection is prioritized. From building secure corporate communication tools to managing legacy mobile app modernizations, our BlackBerry development team enhances mobile security seamlessly.
+                By hiring BlackBerry app development professionals from Firevy.Co, you gain immediate access to top 1% vetted developers who excel in enterprise mobile security, BlackBerry Dynamics SDK, containerized apps, encryption protocols, and BlackBerry UEM integrations. Hire BlackBerry Developers that deliver secure, compliant, high-availability mobile solutions while ensuring enterprise data protection is prioritized. From building secure corporate communication tools to managing legacy mobile app modernizations, our BlackBerry development team enhances mobile security seamlessly.
               </p>
             </div>
           </div>
@@ -274,7 +274,7 @@ export const HireBlackberryDevelopersService = () => {
               </h2>
               <div className="space-y-4 text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
                 <p>
-                  Our blackberry developers are pretty efficient and hold years of expertise. Other perks of hiring our developers include: We enable you to communicate with your development team in real-time and directly using Skype, Slack, or Teams. You are free to receive demonstrations whenever it is convenient for you. Stop wishing things are going according to plan and start realizing they are. From the initial conception to the final invoicing of your projects, you will have the ability to see the whole process personally. Hire Dedicated Blackberry Mobile App Developers who have received instruction in efficient communication and are always accessible to speak with you in real-time. Without mutual trust, there can be no successful collaboration. Trust is the foundation upon which Firevy.co was formed, and we are aware that it is something that must be gained, appreciated, and maintained.
+                  Our blackberry developers are pretty efficient and hold years of expertise. Other perks of hiring our developers include: We enable you to communicate with your development team in real-time and directly using Skype, Slack, or Teams. You are free to receive demonstrations whenever it is convenient for you. Stop wishing things are going according to plan and start realizing they are. From the initial conception to the final invoicing of your projects, you will have the ability to see the whole process personally. Hire Dedicated Blackberry Mobile App Developers who have received instruction in efficient communication and are always accessible to speak with you in real-time. Without mutual trust, there can be no successful collaboration. Trust is the foundation upon which Firevy.Co was formed, and we are aware that it is something that must be gained, appreciated, and maintained.
                 </p>
               </div>
             </div>
@@ -406,7 +406,7 @@ export const HireBlackberryDevelopersService = () => {
           <div className="space-y-8">
             <div className="text-center max-w-6xl mx-auto space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-slate-900 tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
-                Meet Firevy.co's Exceptional Team of Seasoned Experts
+                Meet Firevy.Co's Exceptional Team of Seasoned Experts
               </h2>
             </div>
 
@@ -550,7 +550,7 @@ export const HireBlackberryDevelopersService = () => {
           <div className="space-y-8 max-w-6xl mx-auto">
             <div className="text-center space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
             </div>
 
@@ -749,7 +749,7 @@ export const HireBlackberryDevelopersService = () => {
                 About Us
               </h2>
               <p className="text-xs sm:text-sm md:text-base text-cyan-100 font-medium">
-                Firevy.co delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success
+                Firevy.Co delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success
               </p>
             </div>
 
@@ -831,10 +831,10 @@ export const HireBlackberryDevelopersService = () => {
           <div className="space-y-12 max-w-6xl mx-auto">
             <div className="text-center space-y-3 max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team
+                Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+                At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
               </p>
             </div>
 
@@ -893,7 +893,7 @@ export const HireBlackberryDevelopersService = () => {
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
                   }`}
                 >
-                  Firevy.co
+                  Firevy.Co
                 </button>
                 <button
                   onClick={() => setResponsibilityTab('client')}

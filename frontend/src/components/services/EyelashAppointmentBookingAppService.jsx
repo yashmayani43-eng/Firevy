@@ -109,10 +109,10 @@ export const EyelashAppointmentBookingAppService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Eyelash Appointment Booking App Development Services | Firevy.co"
+        title="Eyelash Appointment Booking App Development Services | Firevy.Co"
         description="Build on-demand eyelash appointment booking mobile apps for salons & estheticians. Accept reservations, manage schedules, and provide seamless customer booking experiences."
         keywords="Eyelash Appointment Booking App, Salon Booking App Development, Esthetician App Development, Beauty Parlour Booking App, Lash Booking App"
-        url="https://firevy.co/services/eyelash-appointment-booking-app"
+        url="https://Firevy.co/services/eyelash-appointment-booking-app"
       />
 
       {/* =========================================================================

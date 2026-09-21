@@ -148,7 +148,7 @@ export const ArtistCollaborationPlatformService = () => {
     }
   ];
 
-  // 9 Complete FAQs (Firevy.co Branded)
+  // 9 Complete FAQs (Firevy.Co Branded)
   const artistCollabFaqs = [
     {
       question: '1. What is an Artist Collaboration Platform?',
@@ -183,7 +183,7 @@ export const ArtistCollaborationPlatformService = () => {
       answer: 'A targeted MVP with core co-creation, stem upload, and split-sheet tracking usually deploys within 8 to 12 weeks. Comprehensive platforms with cloud DAWs, AI stem extraction, and escrow marketplaces typically require 3 to 6 months.'
     },
     {
-      question: '9. How can we get started with Firevy.co for our creative platform?',
+      question: '9. How can we get started with Firevy.Co for our creative platform?',
       answer: 'Reach out through our consultation form with your vision and target creative demographic. Our media streaming and cloud architects will deliver an architectural blueprint, feature roadmap, and cost estimate within 24 hours.'
     }
   ];
@@ -191,8 +191,8 @@ export const ArtistCollaborationPlatformService = () => {
   return (
     <div className="bg-white min-h-screen font-sans text-slate-900">
       <SEO
-        title="Artist Collaboration Platform Development | Firevy.co"
-        description="Firevy.co engineers custom artist collaboration platforms. Multi-track cloud recording, real-time visual art co-creation, automated royalty split sheets, and talent marketplaces."
+        title="Artist Collaboration Platform Development | Firevy.Co"
+        description="Firevy.Co engineers custom artist collaboration platforms. Multi-track cloud recording, real-time visual art co-creation, automated royalty split sheets, and talent marketplaces."
         keywords="artist collaboration platform development, music collaboration software, creative co-creation platform, cloud DAW, royalty split sheets, digital art collaboration"
       />
 
@@ -364,19 +364,19 @@ export const ArtistCollaborationPlatformService = () => {
       {/* ========================================================================= */}
       {/* 7. CUTTING EDGE TECHNOLOGIES SECTION                                      */}
       {/* ========================================================================= */}
-      <ArtistCollaborationCuttingEdgeTechSection companyName="Firevy.co" />
+      <ArtistCollaborationCuttingEdgeTechSection companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 8. OUR PREMIUM SERVICES                                                   */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 9. SUCCESS STORIES                                                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
         cards={artistCollabSuccessCards}
-        subtitle="Know Firevy.co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
+        subtitle="Know Firevy.Co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
       />
 
       {/* ========================================================================= */}
@@ -474,7 +474,7 @@ export const ArtistCollaborationPlatformService = () => {
         title="Frequently Asked Questions"
         subtitle="We Listen To Query And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mention Below."
         faqs={artistCollabFaqs}
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}

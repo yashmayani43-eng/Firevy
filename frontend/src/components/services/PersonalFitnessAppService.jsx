@@ -268,7 +268,7 @@ export const PersonalFitnessAppService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Personal Fitness Coach App Development Company | Custom Fitness Apps | Firevy.co"
+        title="Personal Fitness Coach App Development Company | Custom Fitness Apps | Firevy.Co"
         description="We have expertise in developing Personal Fitness Coach App that enable people and businesses to deliver personalized fitness experiences to users across the globe."
         canonical="/services/personal-fitness-app"
       />

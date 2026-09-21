@@ -158,11 +158,11 @@ export const MobileAppRecentBlogsSection = () => {
             >
               {/* Top Banner Matching Screenshot */}
               <div className={`relative w-full h-48 sm:h-52 overflow-hidden bg-gradient-to-br ${blog.banner.bgGradient} p-4 flex flex-col justify-between select-none`}>
-                {/* Top Left firevy.co Logo */}
+                {/* Top Left Firevy.Co Logo */}
                 <div className="flex items-center">
                   <img
                     src="/firevy_logo_dark.png"
-                    alt="firevy.co"
+                    alt="Firevy.Co"
                     className="h-5 sm:h-5.5 w-auto max-w-[110px] object-contain select-none"
                   />
                 </div>

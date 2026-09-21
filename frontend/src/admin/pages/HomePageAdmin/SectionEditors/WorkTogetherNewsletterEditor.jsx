@@ -48,7 +48,7 @@ export const WorkTogetherNewsletterEditor = ({ data, onChange }) => {
             <textarea
               className="form-control"
               rows={2}
-              value={data?.bannerDescription || data?.description || 'Book a meeting with our specialists today to learn more about how firevy.co can help you unlock technology visions.'}
+              value={data?.bannerDescription || data?.description || 'Book a meeting with our specialists today to learn more about how Firevy.Co can help you unlock technology visions.'}
               onChange={(e) => {
                 handleFieldChange('bannerDescription', e.target.value);
                 handleFieldChange('description', e.target.value);

@@ -1,0 +1,85 @@
+<svg width="540" height="400" viewBox="0 0 540 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aboutCloudGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <filter id="aboutCardShadow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#005F96" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Light Blue Background Cloud -->
+  <path d="M100 180 C60 180 40 140 50 100 C60 60 110 50 140 60 C170 20 240 10 290 40 C330 20 390 30 420 70 C470 70 490 110 480 150 C510 180 500 230 460 250 C440 280 360 290 310 270 C270 290 180 290 140 250 C100 250 80 210 100 180 Z" fill="url(#aboutCloudGrad)" opacity="0.4"/>
+
+  <!-- Base Platform -->
+  <ellipse cx="270" cy="360" rx="220" ry="22" fill="#E2E8F0" opacity="0.65"/>
+
+  <!-- Center Big Data Analytics Engine Cube / Server Stack -->
+  <g filter="url(#aboutCardShadow)">
+    <!-- Central Cloud Analytics Engine Tower -->
+    <rect x="200" y="110" width="140" height="190" rx="14" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+    <rect x="210" y="122" width="120" height="34" rx="8" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1.2"/>
+    <circle cx="225" cy="139" r="4" fill="#10B981"/>
+    <text x="236" y="142" font-size="10" fill="#0369A1" font-family="sans-serif" font-weight="700">Analytics Core</text>
+
+    <!-- Mid Section - Query Engine Status -->
+    <rect x="210" y="164" width="120" height="60" rx="8" fill="#0F172A"/>
+    <text x="220" y="180" font-size="8" fill="#38BDF8" font-family="sans-serif" font-weight="700">QUERY LATENCY</text>
+    <text x="220" y="198" font-size="15" fill="#FFFFFF" font-family="sans-serif" font-weight="800">8.4 ms</text>
+    <path d="M280 196 L295 186 L305 192 L320 178" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Bottom Section - Storage Lakehouse Status -->
+    <rect x="210" y="232" width="120" height="56" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="220" y="248" font-size="8" fill="#64748B" font-family="sans-serif" font-weight="700">DATA VOLUME</text>
+    <text x="220" y="266" font-size="13" fill="#0F172A" font-family="sans-serif" font-weight="800">12.6 PB Ingested</text>
+    <rect x="220" y="274" width="100" height="4" rx="2" fill="#E2E8F0"/>
+    <rect x="220" y="274" width="76" height="4" rx="2" fill="#0284C7"/>
+  </g>
+
+  <!-- Left Connected Node: Data Source / Database Stack -->
+  <g filter="url(#aboutCardShadow)">
+    <rect x="40" y="160" width="120" height="110" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="52" y="174" width="28" height="28" rx="6" fill="#EFF6FF"/>
+    <!-- Cylinder database icon -->
+    <ellipse cx="66" cy="183" rx="8" ry="3" fill="#0284C7"/>
+    <path d="M58 183 v8 c0 1.6 3.6 3 8 3 s8 -1.4 8 -3 v-8" fill="#0284C7"/>
+    <ellipse cx="66" cy="187" rx="8" ry="2" fill="#38BDF8"/>
+    <text x="86" y="186" font-size="10" fill="#0F172A" font-family="sans-serif" font-weight="700">Data Sources</text>
+    <text x="86" y="196" font-size="8" fill="#64748B" font-family="sans-serif">ETL &amp; Streaming</text>
+
+    <!-- Mini pulse rows -->
+    <rect x="52" y="214" width="96" height="18" rx="4" fill="#F0F9FF"/>
+    <text x="58" y="226" font-size="7.5" fill="#0284C7" font-family="sans-serif" font-weight="600">● Snowflake / BigQuery</text>
+    <rect x="52" y="238" width="96" height="18" rx="4" fill="#F8FAFC"/>
+    <text x="58" y="250" font-size="7.5" fill="#64748B" font-family="sans-serif" font-weight="600">● Kafka Event Feeds</text>
+  </g>
+
+  <!-- Right Connected Node: Executive BI Dashboards -->
+  <g filter="url(#aboutCardShadow)">
+    <rect x="380" y="150" width="130" height="120" rx="12" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.5"/>
+    <!-- Dashboard mini preview -->
+    <rect x="392" y="162" width="106" height="50" rx="6" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+    <!-- Mini Donut / Pie chart -->
+    <circle cx="418" cy="187" r="14" fill="none" stroke="#E2E8F0" stroke-width="6"/>
+    <circle cx="418" cy="187" r="14" fill="none" stroke="#16A34A" stroke-width="6" stroke-dasharray="60 100" stroke-dashoffset="25"/>
+    <text x="440" y="182" font-size="8" fill="#166534" font-family="sans-serif" font-weight="700">ROI: +340%</text>
+    <text x="440" y="194" font-size="7.5" fill="#64748B" font-family="sans-serif">Automated BI</text>
+
+    <text x="394" y="230" font-size="9.5" fill="#0F172A" font-family="sans-serif" font-weight="700">Real-Time Insights</text>
+    <text x="394" y="242" font-size="8" fill="#64748B" font-family="sans-serif">Executive Dashboards</text>
+    <rect x="392" y="252" width="106" height="6" rx="3" fill="#BAE6FD"/>
+    <rect x="392" y="252" width="80" height="6" rx="3" fill="#0284C7"/>
+  </g>
+
+  <!-- Connector Lines with Energy Pulses -->
+  <path d="M160 215 L200 215" stroke="#0284C7" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <circle cx="180" cy="215" r="4" fill="#0284C7"/>
+
+  <path d="M340 210 L380 210" stroke="#0EA5E9" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <circle cx="360" cy="210" r="4" fill="#0EA5E9"/>
+</svg>

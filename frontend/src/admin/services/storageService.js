@@ -1,11 +1,11 @@
 // Storage service for maintaining admin state, pipeline status, simulated items and history
 
 const STORAGE_KEYS = {
-  INQUIRIES: 'firevy_admin_inquiries',
-  APPLICATIONS: 'firevy_admin_applications',
-  ACTIVITY_LOGS: 'firevy_admin_activity_logs',
-  SETTINGS: 'firevy_admin_settings_override',
-  AUTH: 'firevy_admin_auth'
+  INQUIRIES: 'Firevy_admin_inquiries',
+  APPLICATIONS: 'Firevy_admin_applications',
+  ACTIVITY_LOGS: 'Firevy_admin_activity_logs',
+  SETTINGS: 'Firevy_admin_settings_override',
+  AUTH: 'Firevy_admin_auth'
 };
 
 const defaultInquiries = [

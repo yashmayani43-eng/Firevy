@@ -155,10 +155,10 @@ export const CloudComputingService = () => {
     <div className="min-h-screen bg-white text-slate-800 selection:bg-[#005F96] selection:text-white">
       {/* SEO Metadata */}
       <SEO
-        title="Best Cloud Computing Services Company | Hire Cloud Engineers | Firevy.co"
+        title="Best Cloud Computing Services Company | Hire Cloud Engineers | Firevy.Co"
         description="As a leading cloud computing and DevOps engineering company with Good Review and High Rating, we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design scalable cloud infrastructure that surpasses your expectations."
-        keywords="Cloud computing service, cloud computing company, cloud development services, hire cloud developers, aws cloud services, azure cloud migration, gcp devops, Firevy.co"
-        url="https://firevy.co/services/cloud-computing-service"
+        keywords="Cloud computing service, cloud computing company, cloud development services, hire cloud developers, aws cloud services, azure cloud migration, gcp devops, Firevy.Co"
+        url="https://Firevy.co/services/cloud-computing-service"
       />
 
       {/* ========================================================================= */}
@@ -376,7 +376,7 @@ export const CloudComputingService = () => {
       {/* ========================================================================= */}
       {/* 9. OUR PREMIUM SERVICES GRID                                              */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 10. MEET FIREVY'S EXCEPTIONAL TEAM OF SEASONED EXPERTS                    */}
@@ -391,7 +391,7 @@ export const CloudComputingService = () => {
       {/* ========================================================================= */}
       {/* 12. ABOUT US STATS (8-CARD GRID)                                          */}
       {/* ========================================================================= */}
-      <AboutUsStats companyName="Firevy.co" />
+      <AboutUsStats companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 13. EXPLORE THE TRANSFORMATIVE IMPACT OF CLOUD COMPUTING                  */}
@@ -406,7 +406,7 @@ export const CloudComputingService = () => {
       {/* ========================================================================= */}
       {/* 15. SECTORS THRIVING THROUGH FIREVY BESPOKE CLOUD SERVICES                */}
       {/* ========================================================================= */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy.co’s Bespoke Cloud Computing Services" />
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy.Co’s Bespoke Cloud Computing Services" />
 
       {/* ========================================================================= */}
       {/* 16. SUCCESS STORIES PORTFOLIO & METRICS                                   */}
@@ -497,7 +497,7 @@ export const CloudComputingService = () => {
       <SapphireFaqSection
         title="Frequently Asked Questions"
         subtitle="We listen to queries and provide solutions that captivate users. Feel free to contact us in case of any question."
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}

@@ -61,10 +61,10 @@ export const EcommerceMobileAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="E-Commerce Mobile App Development Company | Firevy.co"
+        title="E-Commerce Mobile App Development Company | Firevy.Co"
         description="We offer a comprehensive range of best ecommerce app development company services to businesses of all types and sizes. Contact us now for mobile eCommerce app development services under budget."
         keywords="E-Commerce Mobile App Development Company, Ecommerce App Developers, Shopping App Development, Retail App Solutions, Online Store App"
-        url="https://firevy.co/services/ecommerce-mobile-app-development"
+        url="https://Firevy.co/services/ecommerce-mobile-app-development"
       />
 
       {/* =========================================================================

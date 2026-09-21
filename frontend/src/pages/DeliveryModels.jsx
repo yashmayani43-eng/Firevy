@@ -30,7 +30,7 @@ export const DeliveryModels = () => {
     <div className="bg-white min-h-screen text-slate-900 font-sans">
       <SEO
         title={dynamicSection?.seo?.metaTitle || `Explore Our Delivery Model | Flexible Project Delivery | ${BRAND.name}`}
-        description={dynamicSection?.seo?.metaDescription || "The Delivery Model defines the way of project delivery depending on manpower resources. firevy.co offers flexible Onsite, Offshore, and Hybrid delivery models."}
+        description={dynamicSection?.seo?.metaDescription || "The Delivery Model defines the way of project delivery depending on manpower resources. Firevy.Co offers flexible Onsite, Offshore, and Hybrid delivery models."}
         canonical="/company/delivery-models"
       />
 

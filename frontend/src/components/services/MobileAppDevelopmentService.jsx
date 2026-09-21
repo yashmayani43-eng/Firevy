@@ -162,7 +162,7 @@ export const MobileAppDevelopmentService = () => {
       <MobileAppCuttingEdgeTechnologiesSection />
 
       {/* SECTION: Our Premium Services Grid (1:1 Screenshot Match) */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* SECTION: Meet Sapphire's Exceptional Team of Seasoned Experts (1:1 Screenshot Match) */}
       <SapphireSeasonedExpertsSection />

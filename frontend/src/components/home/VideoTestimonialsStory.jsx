@@ -6,7 +6,7 @@ const defaultTestimonials = [
     id: 1,
     clientName: 'Wellness Founder',
     company: 'Digital Wellness App',
-    title: "From Vision to Wellness | Client's Success Story with firevy.co - Top Mobile App Development Company",
+    title: "From Vision to Wellness | Client's Success Story with Firevy.Co - Top Mobile App Development Company",
     img: '/images/client_eight.webp',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     isActive: true
@@ -15,7 +15,7 @@ const defaultTestimonials = [
     id: 2,
     clientName: 'Tim',
     company: 'Complex Web Application',
-    title: 'Hear out Tim got to say about working with Team firevy.co on building a complex and unique web application.',
+    title: 'Hear out Tim got to say about working with Team Firevy.Co on building a complex and unique web application.',
     img: '/images/clienttestimonial1.webp',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     isActive: true
@@ -33,7 +33,7 @@ const defaultTestimonials = [
     id: 4,
     clientName: 'Education Client',
     company: 'Vision Education Platform',
-    title: "From Vision to Education | Client's Success Story with firevy.co Solutions",
+    title: "From Vision to Education | Client's Success Story with Firevy.Co Solutions",
     img: '/images/clienttestimonial2.webp',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     isActive: true
@@ -51,7 +51,7 @@ const defaultTestimonials = [
     id: 6,
     clientName: 'Bruno Silva',
     company: 'Healthcare Innovation Brazil',
-    title: 'From Vision to Healthcare Innovation | Client Success With firevy.co - Top IT Company in Brazil',
+    title: 'From Vision to Healthcare Innovation | Client Success With Firevy.Co - Top IT Company in Brazil',
     img: '/images/bruno.webp',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     isActive: true
@@ -60,7 +60,7 @@ const defaultTestimonials = [
     id: 7,
     clientName: 'Andrew Mitchell',
     company: 'Mobile Digital Diary',
-    title: "Discover why Andrew trusted firevy.co with his mobile digital diary project : A Client's Honest Experience.",
+    title: "Discover why Andrew trusted Firevy.Co with his mobile digital diary project : A Client's Honest Experience.",
     img: '/images/client_shay.webp',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     isActive: true
@@ -69,7 +69,7 @@ const defaultTestimonials = [
     id: 8,
     clientName: 'Enterprise Client',
     company: 'Mobile App Development',
-    title: "From Idea to Reality | Client's Success Story with firevy.co - Best Mobile App Development Company",
+    title: "From Idea to Reality | Client's Success Story with Firevy.Co - Best Mobile App Development Company",
     img: '/images/client_seven.webp',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     isActive: true

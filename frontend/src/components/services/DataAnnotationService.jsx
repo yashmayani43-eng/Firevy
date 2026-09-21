@@ -166,14 +166,14 @@ export const DataAnnotationService = () => {
     }
   ];
 
-  // 9 Complete FAQs (Firevy.co Branded)
+  // 9 Complete FAQs (Firevy.Co Branded)
   const annotationFaqs = [
     {
       question: '1. What is data annotation and why is it crucial for AI?',
       answer: 'Data annotation is the categorization and labeling of raw data (such as images, videos, audio, text, and 3D point clouds) to make it readable and interpretable for machine learning algorithms. High-quality annotated training data determines how accurately AI models learn, predict, and make decisions in real-world scenarios.'
     },
     {
-      question: '2. Which types of data annotation services does Firevy.co offer?',
+      question: '2. Which types of data annotation services does Firevy.Co offer?',
       answer: 'We provide end-to-end data annotation across all modalities: 2D Bounding Boxes, Polygon Segmentation, 3D LiDAR Point Clouds, Keypoint Annotation, Named Entity Recognition (NER), Text Classification, Multilingual Audio Diarization, and Human-in-the-Loop RLHF for Large Language Models.'
     },
     {
@@ -210,7 +210,7 @@ export const DataAnnotationService = () => {
     <div className="bg-white min-h-screen font-sans text-slate-900">
       <SEO
         title="#1 Data Annotation Company Worldwide | AI & ML Data Labeling"
-        description="Firevy.co delivers top-rated data annotation and labeling services. Computer vision, 3D LiDAR point clouds, NLP text, and LLM RLHF labeled datasets by expert annotators."
+        description="Firevy.Co delivers top-rated data annotation and labeling services. Computer vision, 3D LiDAR point clouds, NLP text, and LLM RLHF labeled datasets by expert annotators."
         keywords="data annotation company, data labeling services, computer vision annotation, AI training data, LiDAR 3D labeling, NLP annotation, RLHF human feedback"
       />
 
@@ -383,19 +383,19 @@ export const DataAnnotationService = () => {
       {/* ========================================================================= */}
       {/* 7. CUTTING EDGE TECHNOLOGIES SECTION (MATCHING REFERENCE CAROUSEL)         */}
       {/* ========================================================================= */}
-      <DataAnnotationCuttingEdgeTechSection companyName="Firevy.co" />
+      <DataAnnotationCuttingEdgeTechSection companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 8. OUR PREMIUM SERVICES (MATCHING REFERENCE SCREENSHOT)                   */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 9. SUCCESS STORIES (MATCHING REFERENCE SCREENSHOT)                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
         cards={dataAnnotationSuccessCards}
-        subtitle="Know Firevy.co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
+        subtitle="Know Firevy.Co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
       />
 
       {/* ========================================================================= */}
@@ -493,7 +493,7 @@ export const DataAnnotationService = () => {
         title="Frequently Asked Questions"
         subtitle="We Listen To Query And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mention Below."
         faqs={annotationFaqs}
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}

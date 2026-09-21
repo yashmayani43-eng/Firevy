@@ -2169,7 +2169,7 @@ export const HireCSharpDevelopersService = () => {
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                Firevy.co
+                Firevy.Co
               </button>
               <button
                 onClick={() => setResponsibilityTab('client')}

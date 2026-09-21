@@ -280,7 +280,7 @@ export const HireAngularDevelopersService = () => {
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
         title="Hire Angular Developer | Dedicated Angular Web Developers at $21/Hr"
-        description="Hire dedicated Angular developers from Firevy.co. We are among the leading providers of angular development services tailored for responsive web & mobile apps."
+        description="Hire dedicated Angular developers from Firevy.Co. We are among the leading providers of angular development services tailored for responsive web & mobile apps."
         canonical="/services/hire-angular-developers"
       />
 
@@ -430,7 +430,7 @@ export const HireAngularDevelopersService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium">
-              Hire Angular Developers from Firevy.co Starts from,
+              Hire Angular Developers from Firevy.Co Starts from,
             </p>
           </div>
 
@@ -922,7 +922,7 @@ export const HireAngularDevelopersService = () => {
           <div className="space-y-8">
             <div className="text-center max-w-4xl mx-auto space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
 
               <div className="flex justify-center space-x-2 bg-slate-200/60 p-1.5 rounded-full max-w-md mx-auto">
@@ -1111,7 +1111,7 @@ export const HireAngularDevelopersService = () => {
                 About Us
               </h2>
               <p className="text-sm sm:text-base text-cyan-100 font-medium leading-relaxed">
-                Firevy.co delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success
+                Firevy.Co delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success
               </p>
             </div>
 
@@ -1184,7 +1184,7 @@ export const HireAngularDevelopersService = () => {
       {/* ============================================================
           SECTION 13: SECTORS THRIVING THROUGH SAPPHIRE'S BESPOKE DEDICATED DEVELOPERS (Screenshot 2 Match)
           ============================================================ */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy.co's Bespoke Dedicated Developers" />
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy.Co's Bespoke Dedicated Developers" />
 
       {/* ============================================================
           SECTION 14: EMPLOY THE ADVANCED PROFICIENCY OF SAPPHIRE'S DEDICATED DEVELOPMENT TEAM (Screenshot 3 Match)
@@ -1193,10 +1193,10 @@ export const HireAngularDevelopersService = () => {
         <Container className="max-w-6xl">
           <div className="text-center max-w-3xl mx-auto mb-10 space-y-2">
             <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight leading-tight">
-              Employ the Advanced Proficiency of Firevy.co’s Dedicated Development Team
+              Employ the Advanced Proficiency of Firevy.Co’s Dedicated Development Team
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 font-normal max-w-2xl mx-auto">
-              At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+              At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
             </p>
           </div>
 
@@ -1249,7 +1249,7 @@ export const HireAngularDevelopersService = () => {
                   responsibilityTab === 'sapphire' ? 'bg-[#005F96] text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                Firevy.co
+                Firevy.Co
               </button>
               <button
                 onClick={() => setResponsibilityTab('client')}
@@ -1303,7 +1303,7 @@ export const HireAngularDevelopersService = () => {
       {/* ============================================================
           SECTION 16: TECHNOLOGY STACK THAT SAPPHIRE DEDICATED DEVELOPERS USE PROFICIENTLY
           ============================================================ */}
-      <TechStackProficientGrid title="Technology Stack That Firevy.co Dedicated Developers Use Proficiently" />
+      <TechStackProficientGrid title="Technology Stack That Firevy.Co Dedicated Developers Use Proficiently" />
 
       {/* ============================================================
           SECTION 17: THE EXPERTISE OF OUR BOOTSTRAP DEVELOPMENT SERVICES (Screenshot 1 Match)
@@ -1518,7 +1518,7 @@ export const HireAngularDevelopersService = () => {
           ============================================================ */}
       <WhatSetsUsApartSection
         title="What Sets Us Apart As Angular Development Company?"
-        subtitle="Being unique is our quality! Firevy.co believes in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
+        subtitle="Being unique is our quality! Firevy.Co believes in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
       />
 
       <IWatchChallengeCtaBanner

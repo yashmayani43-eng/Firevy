@@ -111,6 +111,11 @@ import AwsCloudServices from '../components/services/AwsCloudServices';
 import GoogleCloudDevelopmentService from '../components/services/GoogleCloudDevelopmentService';
 import CloudDevOpsService from '../components/services/CloudDevOpsService';
 import CloudFoundrySoftwareDevelopmentService from '../components/services/CloudFoundrySoftwareDevelopmentService';
+import CloudCostOptimizationSoftwareService from '../components/services/CloudCostOptimizationSoftwareService';
+import CloudBasedStorageServices from '../components/services/CloudBasedStorageServices';
+import CloudAnalyticsSoftwareDevelopmentService from '../components/services/CloudAnalyticsSoftwareDevelopmentService';
+import AugmentedRealityAppDevelopmentService from '../components/services/AugmentedRealityAppDevelopmentService';
+import VirtualRealityAppDevelopmentService from '../components/services/VirtualRealityAppDevelopmentService';
 import HireKotlinDevelopersService from '../components/services/HireKotlinDevelopersService';
 import HireDedicatedTechDevelopersService from '../components/services/HireDedicatedTechDevelopersService';
 import HireTechDevelopersService from '../components/services/HireTechDevelopersService';
@@ -124,10 +129,17 @@ import HireOpenAiDevelopersService from '../components/services/HireOpenAiDevelo
 import HireSolidityDevelopersService from '../components/services/HireSolidityDevelopersService';
 import HireFastApiDevelopersService from '../components/services/HireFastApiDevelopersService';
 import HireApiDevelopersService from '../components/services/HireApiDevelopersService';
+import Windows11AppDevelopmentService from '../components/services/Windows11AppDevelopmentService';
+import RideSharingAppDevelopmentService from '../components/services/RideSharingAppDevelopmentService';
+import VisaCardAppDevelopmentService from '../components/services/VisaCardAppDevelopmentService';
+import WellnessAppDevelopmentService from '../components/services/WellnessAppDevelopmentService';
+import WindowsAppDevelopmentService from '../components/services/WindowsAppDevelopmentService';
+import B2BMobileAppDevelopmentService from '../components/services/B2BMobileAppDevelopmentService';
 import HireMeanStackDevelopersService from '../components/services/HireMeanStackDevelopersService';
 import HireMernStackDevelopersService from '../components/services/HireMernStackDevelopersService';
 import HireSpringBootDevelopersService from '../components/services/HireSpringBootDevelopersService';
 import HireDjangoDevelopersService from '../components/services/HireDjangoDevelopersService';
+import BackendComingSoonService, { isBackendServiceSlug } from '../components/services/BackendComingSoonService';
 
 export const ServiceDetails = () => {
   const { slug } = useParams();
@@ -313,6 +325,45 @@ export const ServiceDetails = () => {
     currentSlug.includes('wearable-app') ||
     currentSlug === 'services/wearable-app-development';
 
+  const isWindows11 = currentSlug === 'windows-11-app-development' ||
+    currentSlug === 'windows-11-app' ||
+    currentSlug === 'windows-11' ||
+    currentSlug.includes('windows-11') ||
+    currentSlug === 'services/windows-11-app-development';
+
+  const isWindowsApp = !isWindows11 && (
+    currentSlug === 'windows-app-development' ||
+    currentSlug === 'windows-app' ||
+    currentSlug === 'windows-application-development' ||
+    currentSlug === 'services/windows-app-development'
+  );
+
+  const isB2BMobileApp = currentSlug === 'b2b-mobile-app-development' ||
+    currentSlug === 'b2b-mobile-app' ||
+    currentSlug === 'b2b-app-development' ||
+    currentSlug === 'b2b-app' ||
+    currentSlug.includes('b2b-mobile') ||
+    currentSlug === 'services/b2b-mobile-app-development';
+
+  const isRideSharing = currentSlug === 'ride-sharing-app-development' ||
+    currentSlug === 'ride-sharing-app' ||
+    currentSlug === 'ride-sharing' ||
+    currentSlug.includes('ride-sharing') ||
+    currentSlug.includes('ridesharing') ||
+    currentSlug === 'services/ride-sharing-app-development';
+
+  const isVisaCard = currentSlug === 'visa-card-app-development' ||
+    currentSlug === 'visa-card-app' ||
+    currentSlug === 'visa-card' ||
+    currentSlug.includes('visa-card') ||
+    currentSlug === 'services/visa-card-app-development';
+
+  const isWellness = currentSlug === 'wellness-app-development' ||
+    currentSlug === 'wellness-app' ||
+    currentSlug === 'wellness' ||
+    currentSlug.includes('wellness') ||
+    currentSlug === 'services/wellness-app-development';
+
   const isCrossPlatform = currentSlug.includes('cross-platform') ||
     currentSlug.includes('crossplatform') ||
     currentSlug.includes('multi-platform');
@@ -442,12 +493,12 @@ export const ServiceDetails = () => {
     currentSlug === 'services/cloud-devops-services' ||
     currentSlug === 'services/cloud-devops-service' ||
     ((currentSlug.includes('cloud') && currentSlug.includes('devops')) &&
-     currentSlug !== 'devops-development-services' &&
-     currentSlug !== 'devops-development-service' &&
-     currentSlug !== 'devops-development' &&
-     currentSlug !== 'services/devops-development-services' &&
-     currentSlug !== 'services/devops-development-service' &&
-     currentSlug !== 'services/devops-development');
+      currentSlug !== 'devops-development-services' &&
+      currentSlug !== 'devops-development-service' &&
+      currentSlug !== 'devops-development' &&
+      currentSlug !== 'services/devops-development-services' &&
+      currentSlug !== 'services/devops-development-service' &&
+      currentSlug !== 'services/devops-development');
 
   const isCloudFoundry = currentSlug === 'cloud-foundry-software-development' ||
     currentSlug === 'cloud-foundry' ||
@@ -457,12 +508,41 @@ export const ServiceDetails = () => {
     currentSlug === 'services/cloud-foundry' ||
     currentSlug.includes('cloud-foundry');
 
+  const isCloudCostOptimization = currentSlug === 'cloud-cost-optimization-software' ||
+    currentSlug === 'cloud-cost-optimization' ||
+    currentSlug === 'cloud-cost-optimization-software-development' ||
+    currentSlug === 'cloud-cost-optimization-service' ||
+    currentSlug === 'cloud-cost-optimization-services' ||
+    currentSlug === 'services/cloud-cost-optimization-software' ||
+    currentSlug === 'services/cloud-cost-optimization' ||
+    currentSlug.includes('cloud-cost-optimization');
+
+  const isCloudBasedStorage = currentSlug === 'cloud-based-storage-services' ||
+    currentSlug === 'cloud-based-storage' ||
+    currentSlug === 'cloud-based-storage-services-provider' ||
+    currentSlug === 'cloud-storage-services' ||
+    currentSlug === 'services/cloud-based-storage-services' ||
+    currentSlug === 'services/cloud-based-storage' ||
+    currentSlug === 'services/cloud-based-storage-services-provider' ||
+    currentSlug.includes('cloud-based-storage') ||
+    currentSlug.includes('cloud-storage');
+
+  const isCloudAnalytics = currentSlug === 'cloud-analytics-software-development' ||
+    currentSlug === 'cloud-analytics-software' ||
+    currentSlug === 'cloud-analytics' ||
+    currentSlug === 'cloud-analytics-services' ||
+    currentSlug === 'cloud-analytics-service' ||
+    currentSlug === 'services/cloud-analytics-software-development' ||
+    currentSlug === 'services/cloud-analytics-software' ||
+    currentSlug === 'services/cloud-analytics' ||
+    currentSlug.includes('cloud-analytics');
+
   const isMobileApp = !isHireMobile && !isEcommerceApp && !isMobileAppPorting && (
     currentSlug === 'mobile-app-development' ||
     currentSlug === 'mobile-app' ||
     currentSlug === 'mobile-application' ||
     currentSlug === 'mobile-application-development' ||
-    (currentSlug.includes('mobile-app') && !isReactNative && !isFlutter && !isIOS && !isAndroid && !isXamarin && !isIWatch && !isCrossPlatform && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isIPad && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp)
+    (currentSlug.includes('mobile-app') && !isReactNative && !isFlutter && !isIOS && !isAndroid && !isXamarin && !isIWatch && !isCrossPlatform && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isIPad && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isWindows11)
   );
 
   const isNet = currentSlug === 'net' ||
@@ -518,11 +598,29 @@ export const ServiceDetails = () => {
     currentSlug.includes('fullstack') ||
     currentSlug.includes('hire-full-stack');
 
-  const isVR = currentSlug.includes('vr') ||
+  const isAugmentedReality = currentSlug === 'augmented-reality-app-development' ||
+    currentSlug === 'augmented-reality-app' ||
+    currentSlug === 'augmented-reality' ||
+    currentSlug === 'ar-app-development' ||
+    currentSlug === 'services/augmented-reality-app-development' ||
+    currentSlug.includes('augmented-reality');
+
+  const isVirtualRealityApp = currentSlug === 'virtual-reality-app-development' ||
+    currentSlug === 'virtual-reality-app' ||
+    currentSlug === 'services/virtual-reality-app-development' ||
+    currentSlug === 'services/virtual-reality-app' ||
+    currentSlug === 'vr-app-development' ||
+    currentSlug === 'services/vr-app-development' ||
+    currentSlug === 'virtual-reality-development' ||
+    currentSlug === 'services/virtual-reality-development';
+
+  const isVR = !isAugmentedReality && (
+    isVirtualRealityApp ||
+    currentSlug.includes('vr') ||
     currentSlug.includes('virtual-reality') ||
     currentSlug.includes('vr-ar') ||
-    currentSlug.includes('ar-vr') ||
-    currentSlug.includes('augmented-reality');
+    currentSlug.includes('ar-vr')
+  );
 
   const isIot = currentSlug.includes('iot') ||
     currentSlug.includes('internet-of-things') ||
@@ -737,9 +835,9 @@ export const ServiceDetails = () => {
       slug: serviceSlug,
       icon: 'Code2',
       description: isHire
-        ? `Empower your engineering organization by hiring world-class dedicated ${formattedTitle} specialists from Firevy.co. Access top 1% vetted developers with deep industry expertise, agile workflows, and zero onboarding overhead.`
-        : `Drive innovation and scale your business with enterprise-grade ${formattedTitle} services from Firevy.co. Designed for security, high-throughput scalability, and seamless integration into modern cloud environments.`,
-      shortDescription: `Top-tier ${formattedTitle} solutions engineered by Firevy.co. High performance, security, and enterprise scalability.`,
+        ? `Empower your engineering organization by hiring world-class dedicated ${formattedTitle} specialists from Firevy.Co. Access top 1% vetted developers with deep industry expertise, agile workflows, and zero onboarding overhead.`
+        : `Drive innovation and scale your business with enterprise-grade ${formattedTitle} services from Firevy.Co. Designed for security, high-throughput scalability, and seamless integration into modern cloud environments.`,
+      shortDescription: `Top-tier ${formattedTitle} solutions engineered by Firevy.Co. High performance, security, and enterprise scalability.`,
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
       features: [
         {
@@ -776,7 +874,7 @@ export const ServiceDetails = () => {
       technologies: ["React", "Node.js", "TypeScript", "Python", "Docker", "AWS Cloud", "Kubernetes", "GraphQL", "PostgreSQL", "Redis"],
       faqs: [
         {
-          q: `How do Firevy.co's ${formattedTitle} services accelerate time-to-market?`,
+          q: `How do Firevy.Co's ${formattedTitle} services accelerate time-to-market?`,
           a: "Our pre-built architectural blueprints, vetted domain architects, and DevOps automation allow us to deliver production-ready features up to 40% faster than traditional agencies."
         },
         {
@@ -827,15 +925,25 @@ export const ServiceDetails = () => {
   const isApi = (currentSlug.includes('hire-api') || currentSlug.includes('api-developer') || currentSlug.includes('api-developers')) && !currentSlug.includes('fastapi') && !currentSlug.includes('fast-api');
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
   const isMernStack = currentSlug.includes('mern-stack') || currentSlug.includes('hire-mern-stack') || currentSlug === 'services/hire-mern-stack-developers' || currentSlug === 'hire-mern-stack-developers' || currentSlug === 'services/hire-mern-stack-developer' || currentSlug === 'hire-mern-stack-developer' || currentSlug === 'mern-stack-development' || currentSlug === 'services/mern-stack-development';
+  const isBackendComingSoon = isBackendServiceSlug(currentSlug);
 
   useEffect(() => {
-    if (!isMernStack && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
+    if (isBackendComingSoon) {
+      setLoading(false);
+      window.scrollTo(0, 0);
+      return;
+    }
+    if (!isMernStack && !isWindows11 && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
       fetchServiceDetails();
     } else {
       setLoading(false);
     }
     window.scrollTo(0, 0);
-  }, [currentSlug]);
+  }, [currentSlug, isBackendComingSoon]);
+
+  if (isBackendComingSoon) {
+    return <BackendComingSoonService slug={currentSlug} />;
+  }
 
   if (isMernStack) {
     return <HireMernStackDevelopersService />;
@@ -1069,6 +1177,30 @@ export const ServiceDetails = () => {
     return <WearableAppDevelopmentService />;
   }
 
+  if (isWindows11) {
+    return <Windows11AppDevelopmentService />;
+  }
+
+  if (isWindowsApp) {
+    return <WindowsAppDevelopmentService />;
+  }
+
+  if (isB2BMobileApp) {
+    return <B2BMobileAppDevelopmentService />;
+  }
+
+  if (isRideSharing) {
+    return <RideSharingAppDevelopmentService />;
+  }
+
+  if (isVisaCard) {
+    return <VisaCardAppDevelopmentService />;
+  }
+
+  if (isWellness) {
+    return <WellnessAppDevelopmentService />;
+  }
+
   if (isCrossPlatform) {
     return <CrossPlatformAppDevelopmentService />;
   }
@@ -1221,6 +1353,18 @@ export const ServiceDetails = () => {
     return <CloudFoundrySoftwareDevelopmentService />;
   }
 
+  if (isCloudCostOptimization) {
+    return <CloudCostOptimizationSoftwareService />;
+  }
+
+  if (isCloudBasedStorage) {
+    return <CloudBasedStorageServices />;
+  }
+
+  if (isCloudAnalytics) {
+    return <CloudAnalyticsSoftwareDevelopmentService />;
+  }
+
   if (isPowerAutomate) {
     return <PowerAutomateDevelopmentService />;
   }
@@ -1273,8 +1417,12 @@ export const ServiceDetails = () => {
     return <RpaDevelopmentService />;
   }
 
-  if (isVR) {
-    return <VirtualRealityDevelopmentService />;
+  if (isAugmentedReality) {
+    return <AugmentedRealityAppDevelopmentService />;
+  }
+
+  if (isVirtualRealityApp || isVR) {
+    return <VirtualRealityAppDevelopmentService />;
   }
 
   if (isFullStack) {

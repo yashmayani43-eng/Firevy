@@ -92,18 +92,18 @@ export const Sidebar = ({ isCollapsed, onToggleCollapse, isMobileOpen, onCloseMo
           to="/admin/dashboard"
           className="brand-logo-wrap flex items-center"
           onClick={onCloseMobile}
-          title="Firevy.co Admin Panel"
+          title="Firevy.Co Admin Panel"
         >
           {!isCollapsed ? (
             <div className="brand-logo-full">
               <img
                 src="/firevy_logo_dark.png"
-                alt="Firevy.co"
+                alt="Firevy.Co"
                 className="brand-logo-img brand-logo-img-light"
               />
               <img
                 src="/firevy_logo_white.png"
-                alt="Firevy.co"
+                alt="Firevy.Co"
                 className="brand-logo-img brand-logo-img-dark"
               />
             </div>
@@ -111,12 +111,12 @@ export const Sidebar = ({ isCollapsed, onToggleCollapse, isMobileOpen, onCloseMo
             <div className="brand-icon-wrap">
               <img
                 src="/firevy_icon_dark.png"
-                alt="Firevy.co"
+                alt="Firevy.Co"
                 className="brand-icon-img brand-icon-img-light"
               />
               <img
                 src="/firevy_icon_white.png"
-                alt="Firevy.co"
+                alt="Firevy.Co"
                 className="brand-icon-img brand-icon-img-dark"
               />
             </div>

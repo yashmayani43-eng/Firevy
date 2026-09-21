@@ -300,8 +300,8 @@ export const PwaDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Progressive Web App Development Company USA | Custom PWA Solutions | Firevy.co"
-        description="Top Progressive Web App Development Company in USA. Build offline-first, high-performance, and installable Progressive Web Apps (PWAs) with Firevy.co."
+        title="Progressive Web App Development Company USA | Custom PWA Solutions | Firevy.Co"
+        description="Top Progressive Web App Development Company in USA. Build offline-first, high-performance, and installable Progressive Web Apps (PWAs) with Firevy.Co."
         canonical="/services/progressive-web-app-development"
       />
 

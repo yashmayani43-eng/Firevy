@@ -36,7 +36,7 @@ export const DevOpsTrendsShowcase = ({
           {/* Left Dark Gradient Overlay for Maximum Text Legibility */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#091124]/95 via-[#091124]/65 to-transparent z-10 pointer-events-none" />
 
-          {/* Top-Right Brand Badge (Firevy.co replacing Sapphire) */}
+          {/* Top-Right Brand Badge (Firevy.Co replacing Sapphire) */}
           <div className="absolute top-4 sm:top-7 right-5 sm:right-8 z-20 flex items-center space-x-2.5 bg-[#091124]/90 sm:bg-[#091124]/75 backdrop-blur-md px-4 py-2 rounded-xl border border-cyan-400/30 shadow-lg">
             <svg
               className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-400"
@@ -47,7 +47,7 @@ export const DevOpsTrendsShowcase = ({
             </svg>
             <div className="flex flex-col text-right">
               <span className="font-[900] text-[15px] sm:text-[17px] text-white tracking-tight leading-none">
-                firevy<span className="text-[#00D2F4]">.co</span>
+                Firevy<span className="text-[#00D2F4]">.co</span>
               </span>
               <span className="text-[8.5px] font-semibold tracking-wider text-slate-300 uppercase leading-none mt-1">
                 DevOps Enterprise

@@ -450,7 +450,7 @@ export const CompanySectionEditor = ({
                 type="text"
                 value={sectionData.title || ''}
                 onChange={(e) => handleFieldChange('title', e.target.value)}
-                placeholder="e.g. About firevy.co"
+                placeholder="e.g. About Firevy.Co"
                 className="form-input"
               />
             </div>
@@ -740,7 +740,7 @@ export const CompanySectionEditor = ({
               type="text"
               value={sectionData.seo?.metaTitle || ''}
               onChange={(e) => handleSeoFieldChange('metaTitle', e.target.value)}
-              placeholder="e.g. About Us | We Shape Digital Solutions | firevy.co"
+              placeholder="e.g. About Us | We Shape Digital Solutions | Firevy.Co"
               className="form-input"
             />
           </div>
@@ -762,7 +762,7 @@ export const CompanySectionEditor = ({
               type="text"
               value={sectionData.seo?.metaKeywords || ''}
               onChange={(e) => handleSeoFieldChange('metaKeywords', e.target.value)}
-              placeholder="e.g. about firevy, software development company, mobile app developers"
+              placeholder="e.g. about Firevy, software development company, mobile app developers"
               className="form-input"
             />
           </div>

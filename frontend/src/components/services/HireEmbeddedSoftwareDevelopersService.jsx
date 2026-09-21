@@ -257,7 +257,7 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
     },
     {
       id: 6,
-      question: '6. Why should I hire an Embedded Software Developer from Firevy.co?',
+      question: '6. Why should I hire an Embedded Software Developer from Firevy.Co?',
       answer: 'Our dedicated embedded engineers bring senior domain expertise in C/C++, FreeRTOS, Embedded Linux, hardware security, MISRA C compliance, zero-leak memory guarantees, and 100% IP code ownership.'
     },
     {
@@ -275,8 +275,8 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Hire Dedicated Embedded Software Developers | Custom Firmware & RTOS Experts - Firevy.co"
-        description="Hire dedicated Embedded Software Developers from Firevy.co. We are among the leading providers of embedded development services tailored for firmware, RTOS, & IoT hardware."
+        title="Hire Dedicated Embedded Software Developers | Custom Firmware & RTOS Experts - Firevy.Co"
+        description="Hire dedicated Embedded Software Developers from Firevy.Co. We are among the leading providers of embedded development services tailored for firmware, RTOS, & IoT hardware."
         canonical="/services/hire-embedded-software-developers"
       />
 
@@ -293,7 +293,7 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
                 Hire Embedded Software Developers
               </h1>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal max-w-2xl">
-                The term 'embedded software' refers to a collection of code instructions for non-PC devices that are either a component of a microcontroller or are a part of another program that sits on top of the chip. Hire top-rated embedded software developers from Firevy.co to engineer ultra-reliable, microsecond-deterministic firmware, RTOS kernels, IoT connectivity stacks, and custom Board Support Packages.
+                The term 'embedded software' refers to a collection of code instructions for non-PC devices that are either a component of a microcontroller or are a part of another program that sits on top of the chip. Hire top-rated embedded software developers from Firevy.Co to engineer ultra-reliable, microsecond-deterministic firmware, RTOS kernels, IoT connectivity stacks, and custom Board Support Packages.
               </p>
 
               {/* 4 Metrics / Stats Row */}
@@ -525,7 +525,7 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
           <div className="space-y-8">
             <div className="text-center max-w-4xl mx-auto space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Meet Firevy.co's Exceptional Team of Seasoned Experts
+                Meet Firevy.Co's Exceptional Team of Seasoned Experts
               </h2>
             </div>
 
@@ -656,7 +656,7 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
           <div className="space-y-8">
             <div className="text-center max-w-4xl mx-auto space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
 
               <div className="flex justify-center space-x-2 bg-slate-200/60 p-1.5 rounded-full max-w-md mx-auto">
@@ -836,7 +836,7 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
                 About Us
               </h2>
               <p className="text-sm sm:text-base text-cyan-100 font-medium leading-relaxed">
-                Firevy.co delivers cutting-edge digital and embedded solutions that drive our clients to achieve unparalleled hardware success
+                Firevy.Co delivers cutting-edge digital and embedded solutions that drive our clients to achieve unparalleled hardware success
               </p>
             </div>
 
@@ -876,7 +876,7 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
       {/* ============================================================
           SECTION 14: SECTORS THRIVING
           ============================================================ */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy.co's Bespoke Dedicated Developers" />
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy.Co's Bespoke Dedicated Developers" />
 
       {/* ============================================================
           SECTION 15: ADVANCED TECHNICAL PROFICIENCY
@@ -885,10 +885,10 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
         <Container className="max-w-6xl">
           <div className="text-center max-w-3xl mx-auto mb-10 space-y-2">
             <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight leading-tight">
-              Employ the Advanced Proficiency of Firevy.co’s Dedicated Development Team
+              Employ the Advanced Proficiency of Firevy.Co’s Dedicated Development Team
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 font-normal max-w-2xl mx-auto">
-              At Firevy.co, we have a dedicated development team to deliver hardware & firmware services that surpass expectations.
+              At Firevy.Co, we have a dedicated development team to deliver hardware & firmware services that surpass expectations.
             </p>
           </div>
 
@@ -941,7 +941,7 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
                   responsibilityTab === 'sapphire' ? 'bg-[#005F96] text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                Firevy.co
+                Firevy.Co
               </button>
               <button
                 onClick={() => setResponsibilityTab('client')}
@@ -995,7 +995,7 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
       {/* ============================================================
           SECTION 17: TECHNOLOGY STACK THAT FIREVY.CO DEDICATED DEVELOPERS USE PROFICIENTLY
           ============================================================ */}
-      <TechStackProficientGrid title="Technology Stack That Firevy.co Dedicated Developers Use Proficiently" />
+      <TechStackProficientGrid title="Technology Stack That Firevy.Co Dedicated Developers Use Proficiently" />
 
       {/* ============================================================
           SECTION 18: THE EXPERTISE OF OUR EMBEDDED SOFTWARE DEVELOPMENT SERVICES
@@ -1209,7 +1209,7 @@ export const HireEmbeddedSoftwareDevelopersService = () => {
           ============================================================ */}
       <WhatSetsUsApartSection
         title="What Sets Us Apart As Embedded Software Development Company?"
-        subtitle="Being unique is our quality! Firevy.co believes in the things that give us an edge over our competitors. We are a renowned software and embedded application organization serving customers with end-to-end support."
+        subtitle="Being unique is our quality! Firevy.Co believes in the things that give us an edge over our competitors. We are a renowned software and embedded application organization serving customers with end-to-end support."
       />
 
       <IWatchChallengeCtaBanner

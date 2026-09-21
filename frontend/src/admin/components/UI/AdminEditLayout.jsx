@@ -849,8 +849,8 @@ export const AdminSeoSection = ({ data = {}, onChange }) => {
   const rawCanonical = canonical.trim();
   const cleanCanonicalSlug = rawCanonical.replace(/^https?:\/\/[^/]+/, '');
   const displayUrl = rawCanonical
-    ? (rawCanonical.startsWith('http') ? rawCanonical : `https://firevy.co${cleanCanonicalSlug.startsWith('/') ? '' : '/'}${cleanCanonicalSlug}`)
-    : 'https://firevy.co/company/blog';
+    ? (rawCanonical.startsWith('http') ? rawCanonical : `https://Firevy.co${cleanCanonicalSlug.startsWith('/') ? '' : '/'}${cleanCanonicalSlug}`)
+    : 'https://Firevy.co/company/blog';
 
   const breadcrumbDisplay = displayUrl
     .replace(/^https?:\/\//, '')
@@ -912,7 +912,7 @@ export const AdminSeoSection = ({ data = {}, onChange }) => {
               borderColor: metaTitleLength > 60 ? '#FCA5A5' : metaTitleLength >= 50 ? '#86EFAC' : undefined,
               boxShadow: metaTitleLength > 60 ? '0 0 0 2px rgba(220, 38, 38, 0.1)' : undefined
             }}
-            placeholder="e.g. About Us | We Shape Digital Solutions | firevy.co"
+            placeholder="e.g. About Us | We Shape Digital Solutions | Firevy.Co"
             value={metaTitle}
             onChange={(e) => updateField('metaTitle', e.target.value)}
           />
@@ -964,7 +964,7 @@ export const AdminSeoSection = ({ data = {}, onChange }) => {
               }}
             >
               <Globe size={12} style={{ marginRight: '5px', color: '#006B8F' }} />
-              firevy.co
+              Firevy.Co
             </span>
             <input
               type="text"
@@ -1194,7 +1194,7 @@ export const AdminSeoSection = ({ data = {}, onChange }) => {
             </div>
             <div style={{ overflow: 'hidden' }}>
               <div style={{ fontSize: '13px', fontWeight: 500, color: '#202124', lineHeight: 1.2 }}>
-                firevy.co
+                Firevy.Co
               </div>
               <div
                 style={{
@@ -1206,7 +1206,7 @@ export const AdminSeoSection = ({ data = {}, onChange }) => {
                   lineHeight: 1.2
                 }}
               >
-                {breadcrumbDisplay || 'firevy.co › company › blog'}
+                {breadcrumbDisplay || 'Firevy.Co › company › blog'}
               </div>
             </div>
             <div style={{ marginLeft: 'auto', color: '#70757A' }}>
@@ -1229,7 +1229,7 @@ export const AdminSeoSection = ({ data = {}, onChange }) => {
             onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
             onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
           >
-            {metaTitle || 'Page Meta Title | firevy.co'}
+            {metaTitle || 'Page Meta Title | Firevy.Co'}
           </div>
 
           {/* Meta Description */}
@@ -1244,7 +1244,7 @@ export const AdminSeoSection = ({ data = {}, onChange }) => {
               overflow: 'hidden'
             }}
           >
-            {metaDescription || 'firevy.co provides the solutions you need to innovate & accelerate business. We are a leading software development company.'}
+            {metaDescription || 'Firevy.Co provides the solutions you need to innovate & accelerate business. We are a leading software development company.'}
           </div>
         </div>
       </div>

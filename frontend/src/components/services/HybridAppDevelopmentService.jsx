@@ -236,7 +236,7 @@ export const HybridAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Hybrid App Development Company in USA | Custom Cross-Platform Apps | Firevy.co"
+        title="Hybrid App Development Company in USA | Custom Cross-Platform Apps | Firevy.Co"
         description="Leading Hybrid App Development Company. We engineer fast, scalable, and cross-platform mobile apps for iOS and Android using modern hybrid technologies."
         canonical="/services/hybrid-app-development"
       />

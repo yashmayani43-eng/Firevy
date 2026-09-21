@@ -86,12 +86,12 @@ export const LoginPage = () => {
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <Link
             to="/"
-            title="Firevy.co"
+            title="Firevy.Co"
             style={{ display: 'inline-block', marginBottom: '1.25rem' }}
           >
             <img
               src="/firevy_logo_dark.png"
-              alt="Firevy.co"
+              alt="Firevy.Co"
               style={{
                 height: '42px',
                 width: 'auto',
@@ -218,7 +218,7 @@ export const LoginPage = () => {
             gap: '0.5rem'
           }}
         >
-          <span>Firevy.co Management Control Suite</span>
+          <span>Firevy.Co Management Control Suite</span>
           <Link to="/" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 600 }}>
             Return to Public Website
           </Link>

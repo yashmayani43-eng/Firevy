@@ -13,7 +13,7 @@ const videoSolutions = [
     renderThumb: () => (
       <div className="relative w-full h-[145px] sm:h-[155px] bg-gradient-to-r from-[#0C1E38] via-[#102A4E] to-[#0A182E] p-3 sm:p-3.5 flex items-center justify-between text-white overflow-hidden select-none">
         <div className="absolute top-2.5 right-3 flex items-center opacity-95">
-          <img src="/firevy_logo_white.png" alt="firevy.co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
+          <img src="/firevy_logo_white.png" alt="Firevy.Co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
         </div>
 
         <div className="w-[38%] flex justify-center items-center z-10">
@@ -54,7 +54,7 @@ const videoSolutions = [
     renderThumb: () => (
       <div className="relative w-full h-[145px] sm:h-[155px] bg-[#0E1726] p-3 sm:p-3.5 flex items-center justify-between text-white overflow-hidden select-none">
         <div className="absolute top-2.5 right-3 flex items-center opacity-95">
-          <img src="/firevy_logo_white.png" alt="firevy.co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
+          <img src="/firevy_logo_white.png" alt="Firevy.Co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
         </div>
 
         <div className="w-[46%] z-10 text-left space-y-1">
@@ -93,7 +93,7 @@ const videoSolutions = [
     renderThumb: () => (
       <div className="relative w-full h-[145px] sm:h-[155px] bg-gradient-to-r from-[#064E3B] via-[#047857] to-[#022C22] p-3 sm:p-3.5 flex items-center justify-between text-white overflow-hidden select-none">
         <div className="absolute top-2.5 right-3 flex items-center opacity-95">
-          <img src="/firevy_logo_white.png" alt="firevy.co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
+          <img src="/firevy_logo_white.png" alt="Firevy.Co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
         </div>
 
         <div className="w-[58%] z-10 text-left space-y-0.5">
@@ -133,7 +133,7 @@ const videoSolutions = [
     renderThumb: () => (
       <div className="relative w-full h-[145px] sm:h-[155px] bg-gradient-to-r from-[#083344] via-[#0E7490] to-[#164E63] p-3 sm:p-3.5 flex items-center justify-between text-white overflow-hidden select-none">
         <div className="absolute top-2.5 right-3 flex items-center opacity-95">
-          <img src="/firevy_logo_white.png" alt="firevy.co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
+          <img src="/firevy_logo_white.png" alt="Firevy.Co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
         </div>
 
         <div className="w-[58%] z-10 text-left space-y-0.5">
@@ -173,7 +173,7 @@ const videoSolutions = [
     renderThumb: () => (
       <div className="relative w-full h-[145px] sm:h-[155px] bg-[#111827] p-3 sm:p-3.5 flex items-center justify-between text-white overflow-hidden select-none">
         <div className="absolute top-2.5 right-3 flex items-center opacity-95">
-          <img src="/firevy_logo_white.png" alt="firevy.co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
+          <img src="/firevy_logo_white.png" alt="Firevy.Co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
         </div>
 
         <div className="w-[58%] z-10 text-left space-y-0.5">
@@ -212,7 +212,7 @@ const videoSolutions = [
     renderThumb: () => (
       <div className="relative w-full h-[145px] sm:h-[155px] bg-gradient-to-r from-[#181109] via-[#2A1D11] to-[#120C06] p-3 sm:p-3.5 flex items-center justify-between text-white overflow-hidden select-none">
         <div className="absolute top-2.5 right-3 flex items-center opacity-95">
-          <img src="/firevy_logo_white.png" alt="firevy.co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
+          <img src="/firevy_logo_white.png" alt="Firevy.Co" className="h-3.5 sm:h-4 w-auto object-contain drop-shadow-xs" />
         </div>
 
         <div className="w-[58%] z-10 text-left space-y-1">

@@ -12,7 +12,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 
-export const MobileAppCuttingEdgeTechnologiesSection = ({ companyName = 'Firevy.co' }) => {
+export const MobileAppCuttingEdgeTechnologiesSection = ({ companyName = 'Firevy.Co' }) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const technologies = [

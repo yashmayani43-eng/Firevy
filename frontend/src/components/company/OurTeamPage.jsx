@@ -36,7 +36,7 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
     messageHeading: dynamicSection?.content?.ceo?.messageHeading || 'CEO Message',
     paragraph1:
       dynamicSection?.content?.ceo?.paragraph1 ||
-      "Welcome to firevy.co— a hub where ingenuity meets ambition. As the CEO, I firmly believe that leadership is not just about steering the ship but about inspiring every hand on deck to innovate, dream, and achieve. Our success stems from a shared commitment to excellence, where each solution is crafted with purpose and passion. At firevy.co, we don't merely adapt to change; we define it. By blending cutting-edge technology with human ingenuity, we create software solutions that empower businesses and individuals alike. This is not just a company; it's a vision brought to life by a team that dares to dream bigger every day.",
+      "Welcome to Firevy.Co— a hub where ingenuity meets ambition. As the CEO, I firmly believe that leadership is not just about steering the ship but about inspiring every hand on deck to innovate, dream, and achieve. Our success stems from a shared commitment to excellence, where each solution is crafted with purpose and passion. At Firevy.Co, we don't merely adapt to change; we define it. By blending cutting-edge technology with human ingenuity, we create software solutions that empower businesses and individuals alike. This is not just a company; it's a vision brought to life by a team that dares to dream bigger every day.",
     paragraph2:
       dynamicSection?.content?.ceo?.paragraph2 ||
       'Never stop believing in the power of technology that can change the world. One Revolutionary idea... One brilliant Invention can enlighten billions of the Human lives. Nothing is Impossible when you Dream it & believe it you can Do it. Together, let us embrace the challenges and opportunities. Thank you for trusting us to be your partner in progress. Together, we are not just building software —we are creating a legacy of innovation and impact.'
@@ -53,10 +53,10 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
     messageHeading: dynamicSection?.content?.cto?.messageHeading || 'CTO Message',
     paragraph1:
       dynamicSection?.content?.cto?.paragraph1 ||
-      "At firevy.co, technology is not just a means to an end—it's the essence of our identity and the foundation of our future. As the CTO, my mission is to push the boundaries of innovation, ensuring that every line of code we write and every solution we deliver drives meaningful impact. Our approach is simple yet profound: embrace challenges as opportunities and ideas as catalysts for change. By staying at the forefront of technological advancements and fostering a culture of continuous learning, we empower businesses to thrive in a dynamic digital landscape. Crafting success stories from startups to Fortune 500 stalwarts.",
+      "At Firevy.Co, technology is not just a means to an end—it's the essence of our identity and the foundation of our future. As the CTO, my mission is to push the boundaries of innovation, ensuring that every line of code we write and every solution we deliver drives meaningful impact. Our approach is simple yet profound: embrace challenges as opportunities and ideas as catalysts for change. By staying at the forefront of technological advancements and fostering a culture of continuous learning, we empower businesses to thrive in a dynamic digital landscape. Crafting success stories from startups to Fortune 500 stalwarts.",
     paragraph2:
       dynamicSection?.content?.cto?.paragraph2 ||
-      'Our dedication to user-centric design and cutting-edge solutions has garnered prestigious accolades. Innovation is a journey, and at firevy.co, we walk that path with purpose and passion, transforming visions into reality and possibilities into achievements. Thank you for trusting us as your technology partner. Together, we are building a smarter, more connected happy world.'
+      'Our dedication to user-centric design and cutting-edge solutions has garnered prestigious accolades. Innovation is a journey, and at Firevy.Co, we walk that path with purpose and passion, transforming visions into reality and possibilities into achievements. Thank you for trusting us as your technology partner. Together, we are building a smarter, more connected happy world.'
   };
 
   // 2.3 Business Heads
@@ -115,7 +115,7 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
     role: dynamicSection?.content?.firevianSay?.role || 'Team Lead',
     quote:
       dynamicSection?.content?.firevianSay?.quote ||
-      "I am proud to be working for a company like firevy.co that values honesty and a fair attitude to all which has also contributed to a very valuable and delightful experience. The work culture and the integrity of the company's management are remarkable. In firevy.co, we get all the freedom to think out-of-the-box and take complete ownership of the work we do. Being a client-focused company, firevy.co makes us understand the clients' requirements easily so that the work can be coordinated effectively. There are always opportunities to learn and no limitations to scale new heights in this organization."
+      "I am proud to be working for a company like Firevy.Co that values honesty and a fair attitude to all which has also contributed to a very valuable and delightful experience. The work culture and the integrity of the company's management are remarkable. In Firevy.Co, we get all the freedom to think out-of-the-box and take complete ownership of the work we do. Being a client-focused company, Firevy.Co makes us understand the clients' requirements easily so that the work can be coordinated effectively. There are always opportunities to learn and no limitations to scale new heights in this organization."
   };
 
   // 6. Learning & Growth
@@ -123,10 +123,10 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
     heading: dynamicSection?.content?.learningGrowth?.heading || 'Learning & Growth',
     p1:
       dynamicSection?.content?.learningGrowth?.p1 ||
-      'Learning and growth go hand-in-hand fundamentally, and so is the story at firevy.co. We offer ample amounts of training to each individual and help them to improve their skills with subject matter specialists from the industry and within the company. We always believe in continuous learning culture so it gives opportunity to achieve better be it, Business interactions, Design Thinking or Technology.',
+      'Learning and growth go hand-in-hand fundamentally, and so is the story at Firevy.Co. We offer ample amounts of training to each individual and help them to improve their skills with subject matter specialists from the industry and within the company. We always believe in continuous learning culture so it gives opportunity to achieve better be it, Business interactions, Design Thinking or Technology.',
     p2:
       dynamicSection?.content?.learningGrowth?.p2 ||
-      'We want our team to grow and develop at firevy.co, meet your career goals and make the most of your potential, all while embracing your own exceptional talents.',
+      'We want our team to grow and develop at Firevy.Co, meet your career goals and make the most of your potential, all while embracing your own exceptional talents.',
     p3:
       dynamicSection?.content?.learningGrowth?.p3 ||
       "That's why we are committed to helping you drive your career in a dynamic environment. Across all levels of our organization, we are nurturing a culture of trust and dialogue. We offer tools to support this culture such as 360 feedback, online coaching and a mutual mentoring program.",
@@ -143,12 +143,12 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
       'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80'
   };
 
-  // 7. Team @ firevy.co (Life at Firevy)
+  // 7. Team @ Firevy.Co (Life at Firevy)
   const lifeAtFirevy = {
-    heading: dynamicSection?.content?.lifeAtFirevy?.heading || 'Team @ firevy.co',
+    heading: dynamicSection?.content?.lifeAtFirevy?.heading || 'Team @ Firevy.Co',
     description:
       dynamicSection?.content?.lifeAtFirevy?.description ||
-      'At firevy.co, we have a friendly, inspiring and fun loving yet professional environment. We celebrate all the good moments in terms of our growth and accomplishments. Our closeness always makes us feel strengthened and energetic to improve our actions, to go stress-free, and to work untiringly as a team.',
+      'At Firevy.Co, we have a friendly, inspiring and fun loving yet professional environment. We celebrate all the good moments in terms of our growth and accomplishments. Our closeness always makes us feel strengthened and energetic to improve our actions, to go stress-free, and to work untiringly as a team.',
     photo1:
       dynamicSection?.content?.lifeAtFirevy?.photo1 ||
       'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
@@ -184,10 +184,10 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
   };
 
   // 9. SEO
-  const pageTitle = dynamicSection?.seo?.metaTitle || 'Our Team | Innovative & Passionate Minds | firevy.co';
+  const pageTitle = dynamicSection?.seo?.metaTitle || 'Our Team | Innovative & Passionate Minds | Firevy.Co';
   const pageDescription =
     dynamicSection?.seo?.metaDescription ||
-    'Meet the team of innovative, driven and passionate individuals at firevy.co. We cultivate diverse talents to make firevy.co the industry leader.';
+    'Meet the team of innovative, driven and passionate individuals at Firevy.Co. We cultivate diverse talents to make Firevy.Co the industry leader.';
 
   return (
     <div className="bg-white min-h-screen text-slate-900 font-sans">
@@ -630,7 +630,7 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
         </div>
       </section>
 
-      {/* 7. "Team @ firevy.co" SECTION */}
+      {/* 7. "Team @ Firevy.Co" SECTION */}
       <section className="py-20 bg-[#F8FAFC] border-t border-slate-200 text-slate-900 font-sans">
         <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
           <div className="text-center max-w-4xl mx-auto mb-14">

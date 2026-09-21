@@ -1,20 +1,22 @@
 import React from 'react';
 
-const defaultTopRowSteps = [
+const topRowSteps = [
   {
     step: '01',
     title: 'Requirement Gathering',
     desc: 'Focus would be on documentation first for clarity and better understanding from both sides and come to the same page.',
     bg: 'bg-[#ECE7FE] border-[#DDD8FE]',
+    nodeColor: '#A855F7',
     icon: (
-      <svg className="w-12 h-12 sm:w-14 sm:h-14 text-[#8B5CF6]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M24 10a11 11 0 0 0-8 18.5v4.5a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-4.5A11 11 0 0 0 24 10z" />
-        <line x1="19" y1="41" x2="29" y2="41" />
-        <line x1="24" y1="3" x2="24" y2="6" />
-        <line x1="9" y1="9" x2="12" y2="12" />
-        <line x1="39" y1="9" x2="36" y2="12" />
-        <line x1="3" y1="24" x2="6" y2="24" />
-        <line x1="45" y1="24" x2="42" y2="24" />
+      <svg className="w-12 h-12 text-[#8B5CF6]" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M16 4v2" />
+        <path d="M7.5 7.5l1.5 1.5" />
+        <path d="M24.5 7.5l-1.5 1.5" />
+        <path d="M4 16h2" />
+        <path d="M26 16h2" />
+        <path d="M11 16a5 5 0 0 1 10 0c0 2-1.5 3.5-2.5 4.5v1.5h-5V20.5c-1-1-2.5-2.5-2.5-4.5z" />
+        <line x1="13.5" y1="25" x2="18.5" y2="25" />
+        <line x1="14.5" y1="28" x2="17.5" y2="28" />
       </svg>
     )
   },
@@ -23,14 +25,16 @@ const defaultTopRowSteps = [
     title: 'Designs, Wireframes, & Mockups',
     desc: 'We help our clients to create an interactive and wonder to watch UI designs that describes user-friendly flow of web/app/platform.',
     bg: 'bg-[#E5F7E8] border-[#C8EED0]',
+    nodeColor: '#22C55E',
     icon: (
-      <svg className="w-12 h-12 sm:w-14 sm:h-14 text-[#06B6D4]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="6" y="6" width="7" height="7" rx="1.5" fill="#06B6D4" />
-        <rect x="35" y="6" width="7" height="7" rx="1.5" fill="#06B6D4" />
-        <rect x="20.5" y="35" width="7" height="7" rx="1.5" fill="#06B6D4" />
-        <path d="M9.5 13c0 12 14.5 22 14.5 22s14.5-10 14.5-22" />
-        <line x1="13" y1="9.5" x2="35" y2="9.5" />
-        <path d="M20 20l5 5-2.5 7.5-7.5-2.5 5-10z" fill="#06B6D4" />
+      <svg className="w-12 h-12 text-[#0D9488]" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="8" cy="8" r="3.2" fill="#0D9488" stroke="#0D9488" />
+        <circle cx="24" cy="8" r="3.2" fill="#0D9488" stroke="#0D9488" />
+        <circle cx="16" cy="24" r="3.2" fill="#0D9488" stroke="#0D9488" />
+        <line x1="11.5" y1="8" x2="20.5" y2="8" />
+        <line x1="9.5" y1="10.8" x2="14.5" y2="21.5" />
+        <line x1="22.5" y1="10.8" x2="17.5" y2="21.5" />
+        <circle cx="16" cy="14" r="1.5" fill="#0D9488" />
       </svg>
     )
   },
@@ -39,15 +43,15 @@ const defaultTopRowSteps = [
     title: 'Prototype Demo',
     desc: 'After finalizing and designs approval, we freeze the scope and help our client with demo or prototype to have a look and feel of the app/web/platform.',
     bg: 'bg-[#FDF0E7] border-[#FADCD0]',
+    nodeColor: '#F97316',
     icon: (
-      <svg className="w-12 h-12 sm:w-14 sm:h-14 text-[#F97316]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="6" y="12" width="18" height="28" rx="4" />
-        <rect x="24" y="8" width="18" height="28" rx="4" />
-        <line x1="12" y1="18" x2="18" y2="18" />
-        <line x1="30" y1="14" x2="36" y2="14" />
-        <circle cx="15" cy="34" r="1.5" fill="currentColor" />
-        <circle cx="33" cy="30" r="1.5" fill="currentColor" />
-        <path d="M15 24h6a3 3 0 0 1 3 3v0a3 3 0 0 0 3 3h6" strokeDasharray="3 3" />
+      <svg className="w-12 h-12 text-[#EA580C]" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="5" y="8" width="10" height="18" rx="2.5" />
+        <line x1="8" y1="11" x2="12" y2="11" />
+        <circle cx="10" cy="23" r="0.8" fill="currentColor" />
+        <rect x="17" y="5" width="10" height="18" rx="2.5" />
+        <line x1="20" y1="8" x2="24" y2="8" />
+        <circle cx="22" cy="20" r="0.8" fill="currentColor" />
       </svg>
     )
   },
@@ -56,31 +60,33 @@ const defaultTopRowSteps = [
     title: 'Changes And Confirmation',
     desc: "Clients can feel free to add and mention the required changes as per expectations they need in the existing platform. We'll proceed with client's confirmation on the same.",
     bg: 'bg-[#FEF8DB] border-[#F7EDB3]',
+    nodeColor: '#F59E0B',
     icon: (
-      <svg className="w-12 h-12 sm:w-14 sm:h-14 text-[#EAB308]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M24 8a16 16 0 1 1-11.3 4.7" />
-        <path d="M12.5 7v6h6" />
-        <circle cx="24" cy="24" r="7" />
-        <path d="M24 13v4" />
-        <path d="M24 31v4" />
-        <path d="M13 24h4" />
-        <path d="M31 24h4" />
+      <svg className="w-12 h-12 text-[#D97706]" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="16" cy="16" r="11" />
+        <circle cx="16" cy="16" r="6" />
+        <circle cx="16" cy="16" r="1.8" fill="currentColor" />
+        <line x1="16" y1="2" x2="16" y2="6" />
+        <line x1="16" y1="26" x2="16" y2="30" />
+        <line x1="2" y1="16" x2="6" y2="16" />
+        <line x1="26" y1="16" x2="30" y2="16" />
       </svg>
     )
   }
 ];
 
-const defaultBottomRowSteps = [
+const bottomRowSteps = [
   {
     step: '08',
     title: 'SEO',
     desc: 'We are open to help our clients for promoting their businesses/products with providing complimentary SEO services, providing them a help hand to market their product/business.',
     bg: 'bg-[#F6FBDD] border-[#E5F2A8]',
+    nodeColor: '#84CC16',
     icon: (
-      <svg className="w-12 h-12 sm:w-14 sm:h-14 text-[#84CC16]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="20" cy="20" r="13" fill="#F7FEE7" />
-        <line x1="30" y1="30" x2="42" y2="42" strokeWidth="4" />
-        <text x="20" y="24" textAnchor="middle" fontSize="10" fontWeight="900" fill="currentColor" stroke="none" fontFamily="sans-serif">SEO</text>
+      <svg className="w-12 h-12 text-[#65A30D]" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="14" cy="14" r="9" />
+        <line x1="20.5" y1="20.5" x2="28" y2="28" strokeWidth="3" />
+        <text x="14" y="17" textAnchor="middle" fontSize="6.5" fontWeight="900" fill="#65A30D" stroke="none" fontFamily="sans-serif">SEO</text>
       </svg>
     )
   },
@@ -89,15 +95,16 @@ const defaultBottomRowSteps = [
     title: 'Support And Maintenance',
     desc: 'We provide free service and support as per decided terms in our agreement. We also provide packages further monthly or yearly based on your requirement',
     bg: 'bg-[#F6E8FD] border-[#E9D5FF]',
+    nodeColor: '#A855F7',
     icon: (
-      <svg className="w-12 h-12 sm:w-14 sm:h-14 text-[#A855F7]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="6" y="8" width="36" height="28" rx="4" />
-        <line x1="6" y1="16" x2="42" y2="16" />
-        <circle cx="11" cy="12" r="1.5" fill="currentColor" />
-        <circle cx="16" cy="12" r="1.5" fill="currentColor" />
-        <circle cx="21" cy="12" r="1.5" fill="currentColor" />
-        <path d="M20 26l6 6a3 3 0 0 0 4.2-4.2l-6-6" />
-        <path d="M28 20a4 4 0 0 0-4-4 4 4 0 0 0-1 2l3 3z" />
+      <svg className="w-12 h-12 text-[#9333EA]" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4" y="6" width="24" height="20" rx="3" />
+        <line x1="4" y1="12" x2="28" y2="12" />
+        <circle cx="7.5" cy="9" r="0.8" fill="currentColor" />
+        <circle cx="10.5" cy="9" r="0.8" fill="currentColor" />
+        <circle cx="13.5" cy="9" r="0.8" fill="currentColor" />
+        <path d="M19 16a2.5 2.5 0 0 0-3.5 0l-4 4a1.8 1.8 0 0 0 2.5 2.5l4-4a2.5 2.5 0 0 0 0-3.5" />
+        <path d="M19.5 15.5l1.5-1.5" />
       </svg>
     )
   },
@@ -106,13 +113,17 @@ const defaultBottomRowSteps = [
     title: 'Deployment',
     desc: "We are open to help our clients with final testing, UAT, training, and final deployment of the source code, and launching in client's platform.",
     bg: 'bg-[#E2F7F8] border-[#BAE6FD]',
+    nodeColor: '#06B6D4',
     icon: (
-      <svg className="w-12 h-12 sm:w-14 sm:h-14 text-[#10B981]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="6" y="8" width="36" height="28" rx="4" />
-        <line x1="6" y1="16" x2="42" y2="16" />
-        <path d="M24 13c4 0 7 3 7 7v4h-14v-4c0-4 3-7 7-7z" />
-        <path d="M20 28l4 4 4-4" />
-        <circle cx="24" cy="20" r="1.5" fill="currentColor" />
+      <svg className="w-12 h-12 text-[#0891B2]" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4" y="6" width="24" height="20" rx="3" />
+        <line x1="4" y1="12" x2="28" y2="12" />
+        <circle cx="7.5" cy="9" r="0.8" fill="currentColor" />
+        <circle cx="10.5" cy="9" r="0.8" fill="currentColor" />
+        <circle cx="13.5" cy="9" r="0.8" fill="currentColor" />
+        <line x1="16" y1="15" x2="16" y2="21" />
+        <polyline points="13 18.5 16 21.5 19 18.5" />
+        <line x1="11" y1="23.5" x2="21" y2="23.5" />
       </svg>
     )
   },
@@ -121,16 +132,17 @@ const defaultBottomRowSteps = [
     title: 'Development',
     desc: 'With client approval, we start the development with the technologies best suited for you, and deliver you results in the timeframe as committed by our technical team.',
     bg: 'bg-[#FDE7EE] border-[#FBCFE8]',
+    nodeColor: '#EC4899',
     icon: (
-      <svg className="w-12 h-12 sm:w-14 sm:h-14 text-[#EC4899]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="6" y="8" width="36" height="28" rx="4" />
-        <line x1="6" y1="16" x2="42" y2="16" />
-        <circle cx="11" cy="12" r="1.5" fill="currentColor" />
-        <circle cx="16" cy="12" r="1.5" fill="currentColor" />
-        <circle cx="21" cy="12" r="1.5" fill="currentColor" />
-        <path d="M17 22l-4 4 4 4" />
-        <path d="M31 22l4 4-4 4" />
-        <path d="M26 21l-4 10" />
+      <svg className="w-12 h-12 text-[#DB2777]" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4" y="6" width="24" height="20" rx="3" />
+        <line x1="4" y1="12" x2="28" y2="12" />
+        <circle cx="7.5" cy="9" r="0.8" fill="currentColor" />
+        <circle cx="10.5" cy="9" r="0.8" fill="currentColor" />
+        <circle cx="13.5" cy="9" r="0.8" fill="currentColor" />
+        <polyline points="12 17 9 20 12 23" />
+        <polyline points="20 17 23 20 20 23" />
+        <line x1="17.5" y1="16" x2="14.5" y2="24" />
       </svg>
     )
   }
@@ -138,15 +150,6 @@ const defaultBottomRowSteps = [
 
 export const WorkProcessGrid = ({ data }) => {
   const title = data?.title || 'Process We Follow';
-
-  let topRow = defaultTopRowSteps;
-  let bottomRow = defaultBottomRowSteps;
-
-  if (data?.steps && Array.isArray(data.steps) && data.steps.filter(s => s.isActive !== false).length >= 8) {
-    const activeSteps = data.steps.filter(s => s.isActive !== false);
-    topRow = activeSteps.slice(0, 4);
-    bottomRow = [activeSteps[7], activeSteps[6], activeSteps[5], activeSteps[4]];
-  }
 
   return (
     <section className="py-16 sm:py-20 bg-white border-b border-slate-200 relative font-sans overflow-hidden">
@@ -160,81 +163,166 @@ export const WorkProcessGrid = ({ data }) => {
 
         {/* Top Row Cards (01 -> 02 -> 03 -> 04) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {topRow.map((stepItem, idx) => {
-            const stepNum = stepItem.step || `0${idx + 1}`;
-            const cardTitle = stepItem.title || (stepItem.titleLine1 ? `${stepItem.titleLine1} ${stepItem.titleLine2 || ''}` : 'Phase');
-            const desc = stepItem.desc || stepItem.description || '';
-            const bgClass = stepItem.bg || defaultTopRowSteps[idx % defaultTopRowSteps.length].bg;
-
-            return (
-              <div
-                key={idx}
-                className={`rounded-[16px] p-6 sm:p-7 border ${bgClass} flex flex-col justify-between min-h-[300px] shadow-xs hover:shadow-md transition-all duration-300 relative group`}
-              >
-                <div className="flex justify-between items-center mb-5">
-                  <div className="shrink-0 w-14 h-14 flex items-center justify-start">
-                    {stepItem.icon || defaultTopRowSteps[idx % defaultTopRowSteps.length].icon}
-                  </div>
-                  <span className="text-[36px] font-[900] text-slate-700/90 font-sans tracking-tight leading-none">
-                    {stepNum}
-                  </span>
+          {topRowSteps.map((stepItem, idx) => (
+            <div
+              key={idx}
+              className={`rounded-[20px] p-6 sm:p-7 border ${stepItem.bg} flex flex-col justify-between min-h-[290px] shadow-xs hover:shadow-md transition-all duration-300 relative group`}
+            >
+              <div className="flex justify-between items-center mb-5">
+                <div className="shrink-0 flex items-center justify-start">
+                  {stepItem.icon}
                 </div>
-
-                <div className="space-y-2 mt-auto">
-                  <h3 className="text-[17px] sm:text-[18px] font-[800] text-slate-950 leading-tight font-sans">
-                    {cardTitle}
-                  </h3>
-                  <p className="text-[13px] sm:text-[13.5px] text-slate-700 font-[400] leading-relaxed font-sans">
-                    {desc}
-                  </p>
-                </div>
+                <span className="text-[34px] sm:text-[38px] font-[900] text-slate-800 font-sans tracking-tight leading-none">
+                  {stepItem.step}
+                </span>
               </div>
-            );
-          })}
+
+              <div className="space-y-2 mt-auto text-left">
+                <h3 className="text-[17px] sm:text-[18px] font-[800] text-slate-950 leading-tight font-sans">
+                  {stepItem.title}
+                </h3>
+                <p className="text-[13px] sm:text-[13.5px] text-slate-600 font-[400] leading-relaxed font-sans">
+                  {stepItem.desc}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* Middle Process Connector Track SVG (Visible on Desktop) */}
-        <div className="hidden lg:block w-full my-4 px-2">
-          <img
-            src="/images/process_we_follow_arrow.cb4604ab.svg"
-            alt="Process Workflow Pipeline"
-            className="w-full max-w-[1280px] mx-auto object-contain pointer-events-none select-none"
-          />
+        {/* Middle Process Connector Track (1:1 Reference Match to Image 1) */}
+        <div className="hidden lg:block w-full my-2 select-none pointer-events-none">
+          <svg
+            viewBox="0 0 1200 130"
+            className="w-full h-auto max-w-[1240px] mx-auto overflow-visible"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {/* Top Row: 4 Vertical Downward Arrows (from Cards 01-04 to Top Nodes) */}
+            <g stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none">
+              {/* Above Node 01 */}
+              <line x1="141" y1="2" x2="141" y2="28" />
+              <polyline points="137,24 141,28 145,24" />
+
+              {/* Above Node 02 */}
+              <line x1="447" y1="2" x2="447" y2="28" />
+              <polyline points="443,24 447,28 451,24" />
+
+              {/* Above Node 03 */}
+              <line x1="753" y1="2" x2="753" y2="28" />
+              <polyline points="749,24 753,28 757,24" />
+
+              {/* Above Node 04 */}
+              <line x1="1059" y1="2" x2="1059" y2="28" />
+              <polyline points="1055,24 1059,28 1063,24" />
+            </g>
+
+            {/* Main Rounded Pathway Container Box matching Image 1 */}
+            <rect
+              x="50"
+              y="32"
+              width="1100"
+              height="66"
+              rx="16"
+              fill="#FFFFFF"
+              stroke="#CBD5E1"
+              strokeWidth="1.2"
+            />
+
+            {/* Top Lane Connections (01 -> 02 -> 03 -> 04) */}
+            <g stroke="#CBD5E1" strokeWidth="1.5" strokeLinecap="round">
+              <line x1="152" y1="48" x2="436" y2="48" />
+              <line x1="458" y1="48" x2="742" y2="48" />
+              <line x1="764" y1="48" x2="1048" y2="48" />
+            </g>
+
+            {/* Top Lane Grey Right Arrows */}
+            <g fill="#94A3B8">
+              <polygon points="300,44 308,48 300,52" />
+              <polygon points="606,44 614,48 606,52" />
+              <polygon points="912,44 920,48 912,52" />
+            </g>
+
+            {/* Top Row Nodes (Hollow circles with colored outlines) */}
+            {/* Node 01: Purple */}
+            <circle cx="141" cy="48" r="8" fill="#FFFFFF" stroke="#A855F7" strokeWidth="2.5" />
+            {/* Node 02: Green */}
+            <circle cx="447" cy="48" r="8" fill="#FFFFFF" stroke="#22C55E" strokeWidth="2.5" />
+            {/* Node 03: Orange */}
+            <circle cx="753" cy="48" r="8" fill="#FFFFFF" stroke="#F97316" strokeWidth="2.5" />
+            {/* Node 04: Yellow */}
+            <circle cx="1059" cy="48" r="8" fill="#FFFFFF" stroke="#F59E0B" strokeWidth="2.5" />
+
+            {/* Bottom Lane Connections (08 <- 07 <- 06 <- 05) */}
+            <g stroke="#CBD5E1" strokeWidth="1.5" strokeLinecap="round">
+              <line x1="152" y1="82" x2="436" y2="82" />
+              <line x1="458" y1="82" x2="742" y2="82" />
+              <line x1="764" y1="82" x2="1048" y2="82" />
+            </g>
+
+            {/* Bottom Lane Grey Left Arrows */}
+            <g fill="#94A3B8">
+              <polygon points="908,82 916,78 916,86" />
+              <polygon points="602,82 610,78 610,86" />
+              <polygon points="296,82 304,78 304,86" />
+            </g>
+
+            {/* Bottom Row Nodes (Hollow circles with colored outlines) */}
+            {/* Node 08: Lime */}
+            <circle cx="141" cy="82" r="8" fill="#FFFFFF" stroke="#84CC16" strokeWidth="2.5" />
+            {/* Node 07: Purple */}
+            <circle cx="447" cy="82" r="8" fill="#FFFFFF" stroke="#A855F7" strokeWidth="2.5" />
+            {/* Node 06: Cyan */}
+            <circle cx="753" cy="82" r="8" fill="#FFFFFF" stroke="#06B6D4" strokeWidth="2.5" />
+            {/* Node 05: Pink */}
+            <circle cx="1059" cy="82" r="8" fill="#FFFFFF" stroke="#EC4899" strokeWidth="2.5" />
+
+            {/* Bottom Row: 4 Vertical Downward Arrows (from Bottom Nodes to Cards 08-05) */}
+            <g stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none">
+              {/* Below Node 08 */}
+              <line x1="141" y1="98" x2="141" y2="126" />
+              <polyline points="137,122 141,126 145,122" />
+
+              {/* Below Node 07 */}
+              <line x1="447" y1="98" x2="447" y2="126" />
+              <polyline points="443,122 447,126 451,122" />
+
+              {/* Below Node 06 */}
+              <line x1="753" y1="98" x2="753" y2="126" />
+              <polyline points="749,122 753,126 757,122" />
+
+              {/* Below Node 05 */}
+              <line x1="1059" y1="98" x2="1059" y2="126" />
+              <polyline points="1055,122 1059,126 1063,122" />
+            </g>
+          </svg>
         </div>
 
         {/* Bottom Row Cards (08 <- 07 <- 06 <- 05) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 lg:mt-0">
-          {bottomRow.map((stepItem, idx) => {
-            const stepNum = stepItem.step || (idx === 0 ? '08' : idx === 1 ? '07' : idx === 2 ? '06' : '05');
-            const cardTitle = stepItem.title || (stepItem.titleLine1 ? `${stepItem.titleLine1} ${stepItem.titleLine2 || ''}` : 'Phase');
-            const desc = stepItem.desc || stepItem.description || '';
-            const bgClass = stepItem.bg || defaultBottomRowSteps[idx % defaultBottomRowSteps.length].bg;
-
-            return (
-              <div
-                key={idx}
-                className={`rounded-[16px] p-6 sm:p-7 border ${bgClass} flex flex-col justify-between min-h-[300px] shadow-xs hover:shadow-md transition-all duration-300 relative group`}
-              >
-                <div className="flex justify-between items-center mb-5">
-                  <div className="shrink-0 w-14 h-14 flex items-center justify-start">
-                    {stepItem.icon || defaultBottomRowSteps[idx % defaultBottomRowSteps.length].icon}
-                  </div>
-                  <span className="text-[36px] font-[900] text-slate-700/90 font-sans tracking-tight leading-none">
-                    {stepNum}
-                  </span>
+          {bottomRowSteps.map((stepItem, idx) => (
+            <div
+              key={idx}
+              className={`rounded-[20px] p-6 sm:p-7 border ${stepItem.bg} flex flex-col justify-between min-h-[290px] shadow-xs hover:shadow-md transition-all duration-300 relative group`}
+            >
+              <div className="flex justify-between items-center mb-5">
+                <div className="shrink-0 flex items-center justify-start">
+                  {stepItem.icon}
                 </div>
-
-                <div className="space-y-2 mt-auto">
-                  <h3 className="text-[17px] sm:text-[18px] font-[800] text-slate-950 leading-tight font-sans">
-                    {cardTitle}
-                  </h3>
-                  <p className="text-[13px] sm:text-[13.5px] text-slate-700 font-[400] leading-relaxed font-sans">
-                    {desc}
-                  </p>
-                </div>
+                <span className="text-[34px] sm:text-[38px] font-[900] text-slate-800 font-sans tracking-tight leading-none">
+                  {stepItem.step}
+                </span>
               </div>
-            );
-          })}
+
+              <div className="space-y-2 mt-auto text-left">
+                <h3 className="text-[17px] sm:text-[18px] font-[800] text-slate-950 leading-tight font-sans">
+                  {stepItem.title}
+                </h3>
+                <p className="text-[13px] sm:text-[13.5px] text-slate-600 font-[400] leading-relaxed font-sans">
+                  {stepItem.desc}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -28,9 +28,9 @@ import Badge from '../../components/UI/Badge';
 export const AboutFirevyAdminPage = () => (
   <CompanySectionEditor
     slug="about-firevy"
-    title="About firevy.co"
+    title="About Firevy.Co"
     category="Company Profile"
-    description="Manage About firevy.co profile, vision & mission statements, core values, and corporate milestones."
+    description="Manage About Firevy.Co profile, vision & mission statements, core values, and corporate milestones."
     publicRoute="/company/about-firevy"
     itemTitle="Core Value"
     itemFields={[
@@ -194,7 +194,7 @@ export const EventsActivitiesAdminPage = () => {
 // ============================================================
 export const BrochureAdminPage = () => {
   const fields = [
-    { name: 'title', label: 'Brochure Title', type: 'text', required: true, placeholder: 'e.g. firevy.co Corporate Brochure 2026' },
+    { name: 'title', label: 'Brochure Title', type: 'text', required: true, placeholder: 'e.g. Firevy.Co Corporate Brochure 2026' },
     { name: 'thumbnail', label: 'Brochure Thumbnail Image', type: 'image' },
     { name: 'pdfUrl', label: 'PDF Document File / URL', type: 'file', required: true, helpText: 'Upload PDF file or paste public document link.' },
     { name: 'fileSize', label: 'File Size Indicator', type: 'text', placeholder: 'e.g. 4.8 MB' },
@@ -257,7 +257,7 @@ export const BrochureAdminPage = () => {
 export const WhyChooseUsAdminPage = () => (
   <CompanySectionEditor
     slug="why-choose-us"
-    title="Why Choose firevy.co"
+    title="Why Choose Firevy.Co"
     category="Value Proposition"
     description="Manage differentiator benefit cards, enterprise value propositions, and quality guarantees."
     publicRoute="/company/why-choose-us"
@@ -563,7 +563,7 @@ export const PodcastAdminPage = () => {
           />
           <div>
             <div style={{ fontWeight: 700, color: 'var(--text-primary)' }}>Ep {row.episodeNumber}: {row.title}</div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{row.host || 'firevy.co'} · {row.duration}</div>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{row.host || 'Firevy.Co'} · {row.duration}</div>
           </div>
         </div>
       )

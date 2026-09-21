@@ -263,7 +263,7 @@ export const CSR = () => {
         </Container>
       </section>
 
-      {/* 4. SECTION 4: "CSR initiatives by firevy.co Team" (Exact Reference Screenshot 3 Match) */}
+      {/* 4. SECTION 4: "CSR initiatives by Firevy.Co Team" (Exact Reference Screenshot 3 Match) */}
       <section className="py-20 bg-white font-sans text-center">
         <Container>
           <h2 className="text-[32px] sm:text-[38px] font-[800] text-slate-900 mb-12 tracking-tight font-sans">

@@ -391,7 +391,7 @@ export const HireLaravelDevelopersService = () => {
     },
     {
       q: 'Which company is best for Laravel development?',
-      a: 'Firevy.co is a top-rated Laravel development company with 20+ years of experience, a team of dedicated Laravel experts, and a track record of delivering high-performing web applications globally.'
+      a: 'Firevy.Co is a top-rated Laravel development company with 20+ years of experience, a team of dedicated Laravel experts, and a track record of delivering high-performing web applications globally.'
     },
     {
       q: 'Do you give support and maintenance services after Development?',
@@ -406,7 +406,7 @@ export const HireLaravelDevelopersService = () => {
       a: 'Laravel offers elegant syntax, built-in authentication, ORM (Eloquent), robust migration tools, queue management, and an expansive ecosystem.'
     },
     {
-      q: 'Why should I hire Laravel developers from Firevy.co?',
+      q: 'Why should I hire Laravel developers from Firevy.Co?',
       a: 'Our dedicated Laravel developers bring deep domain expertise, bi-weekly agile velocity, 100% IP & code ownership, direct communication, and 15-day risk-free trials to guarantee project success.'
     },
     {
@@ -418,8 +418,8 @@ export const HireLaravelDevelopersService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Hire Dedicated Laravel Developers | Expert Laravel 11 Engineers | Firevy.co"
-        description="Hire top 1% vetted dedicated Laravel developers from Firevy.co. Expert Laravel 11, Livewire, Inertia.js, Eloquent, and Filament specialists. Flexible hiring models, zero onboarding overhead, and 100% IP ownership."
+        title="Hire Dedicated Laravel Developers | Expert Laravel 11 Engineers | Firevy.Co"
+        description="Hire top 1% vetted dedicated Laravel developers from Firevy.Co. Expert Laravel 11, Livewire, Inertia.js, Eloquent, and Filament specialists. Flexible hiring models, zero onboarding overhead, and 100% IP ownership."
       />
 
       {/* ============================================================
@@ -779,7 +779,7 @@ export const HireLaravelDevelopersService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium">
-              Hire Laravel Developers from Firevy.co Starts from,
+              Hire Laravel Developers from Firevy.Co Starts from,
             </p>
           </div>
 
@@ -1087,7 +1087,7 @@ export const HireLaravelDevelopersService = () => {
             {/* Section Header */}
             <div className="text-center max-w-6xl mx-auto space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-slate-900 tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
-                Meet Firevy.co's Exceptional Team of Seasoned Experts
+                Meet Firevy.Co's Exceptional Team of Seasoned Experts
               </h2>
             </div>
 
@@ -1233,7 +1233,7 @@ export const HireLaravelDevelopersService = () => {
             {/* Title */}
             <div className="text-center space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
             </div>
 
@@ -1440,7 +1440,7 @@ export const HireLaravelDevelopersService = () => {
                 About Us
               </h2>
               <p className="text-xs sm:text-sm md:text-base text-cyan-100 font-medium">
-                Firevy.co delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success
+                Firevy.Co delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success
               </p>
             </div>
 
@@ -1524,10 +1524,10 @@ export const HireLaravelDevelopersService = () => {
             {/* Header */}
             <div className="text-center space-y-3 max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team
+                Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+                At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
               </p>
             </div>
 
@@ -1588,7 +1588,7 @@ export const HireLaravelDevelopersService = () => {
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
                     }`}
                 >
-                  Firevy.co
+                  Firevy.Co
                 </button>
                 <button
                   onClick={() => setResponsibilityTab('client')}

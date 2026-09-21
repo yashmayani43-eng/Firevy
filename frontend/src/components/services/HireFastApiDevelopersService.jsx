@@ -240,7 +240,7 @@ export const HireFastApiDevelopersService = () => {
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
         title="Hire FastAPI Developer | Dedicated Python API Engineers at $21/Hr"
-        description="Hire dedicated FastAPI developers from Firevy.co. Seasoned Python async API programmers for high-performance microservices, REST APIs, and AI integrations starting at $21/hour."
+        description="Hire dedicated FastAPI developers from Firevy.Co. Seasoned Python async API programmers for high-performance microservices, REST APIs, and AI integrations starting at $21/hour."
         canonical="/services/hire-fastapi-developers"
       />
 
@@ -257,7 +257,7 @@ export const HireFastApiDevelopersService = () => {
                 Hire FastAPI Developer
               </h1>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal max-w-2xl">
-                Hire FastAPI developer from Firevy.co to build ultra-fast, secure, and scalable APIs that power modern web and mobile applications. Our experienced developers specialize in building production-ready backend solutions using Python's FastAPI framework.
+                Hire FastAPI developer from Firevy.Co to build ultra-fast, secure, and scalable APIs that power modern web and mobile applications. Our experienced developers specialize in building production-ready backend solutions using Python's FastAPI framework.
               </p>
 
               {/* 4 Metrics / Stats Row */}
@@ -469,7 +469,7 @@ export const HireFastApiDevelopersService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-[400]">
-              Hire FastAPI Developers from Firevy.co Starts from,
+              Hire FastAPI Developers from Firevy.Co Starts from,
             </p>
           </div>
 
@@ -815,8 +815,8 @@ export const HireFastApiDevelopersService = () => {
       {/* Meet Exceptional Team of Seasoned Experts */}
       <SapphireSeasonedExpertsSection />
 
-      {/* Leverage The Expertise of Firevy.co Dedicated Developers */}
-      <LeverageExpertiseGridSection brandName="Firevy.co" />
+      {/* Leverage The Expertise of Firevy.Co Dedicated Developers */}
+      <LeverageExpertiseGridSection brandName="Firevy.Co" />
 
       {/* Industry-Focused Insights To Elevate Your Business */}
       <IndustryFocusedInsightsSection
@@ -830,16 +830,16 @@ export const HireFastApiDevelopersService = () => {
       {/* Sectors Thriving */}
       <SectorsThrivingSection />
 
-      {/* Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team */}
+      {/* Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team */}
       <section className="py-16 md:py-24 bg-[#F0F7FC] text-slate-900 font-sans border-b border-slate-100">
         <Container>
           <div className="space-y-12 max-w-6xl mx-auto">
             <div className="text-center space-y-3 max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team
+                Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+                At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
               </p>
             </div>
 
@@ -896,7 +896,7 @@ export const HireFastApiDevelopersService = () => {
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
                   }`}
                 >
-                  Firevy.co
+                  Firevy.Co
                 </button>
                 <button
                   onClick={() => setResponsibilityTab('client')}

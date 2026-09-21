@@ -164,10 +164,10 @@ export const LanguageLearningAppService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Language Learning App Development Services | Custom eLearning Apps | Firevy.co"
+        title="Language Learning App Development Services | Custom eLearning Apps | Firevy.Co"
         description="Build custom language learning mobile applications for iOS & Android. Empower learners with AI speech recognition, interactive quizzes, multi-language support, and gamified lessons."
         keywords="Language Learning App Development, eLearning App Development, Custom Language App, Duolingo Clone App, AI Language Tutor App, Speech Recognition Learning"
-        url="https://firevy.co/services/language-learning-app"
+        url="https://Firevy.co/services/language-learning-app"
       />
 
       {/* =========================================================================

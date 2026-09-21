@@ -109,7 +109,7 @@ export const WomenEmpowermentForm = ({
       {/* PAGE INFORMATION */}
       <AdminPageInfoSection
         number={pageNumber}
-        title={subPageMeta?.title || 'Empowering Women At firevy.co'}
+        title={subPageMeta?.title || 'Empowering Women At Firevy.Co'}
         slug={subPageMeta?.slug || 'women-empowerment'}
         status={formData.status || 'published'}
         onChangeStatus={(st) => updateRootField('status', st)}
@@ -137,7 +137,7 @@ export const WomenEmpowermentForm = ({
             <input
               type="text"
               className="form-control"
-              placeholder="e.g. Empowering Women At firevy.co"
+              placeholder="e.g. Empowering Women At Firevy.Co"
               value={hero.title || ''}
               onChange={(e) => updateSection('hero', 'title', e.target.value)}
               required

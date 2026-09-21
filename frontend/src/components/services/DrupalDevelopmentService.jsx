@@ -119,24 +119,24 @@ export const DrupalDevelopmentService = () => {
       a: "Selection of the best Drupal development firm is vital for project success. The agency's experience, knowledge, and project success should be considered. Portfolios, customer testimonials, and communication procedures might reveal their skills and client happiness. Examining their readiness to engage and provide continuing support and maintenance might help your Drupal development project succeed."
     },
     {
-      q: "7. How does Firevy.co handle Drupal website security?",
+      q: "7. How does Firevy.Co handle Drupal website security?",
       a: "We implement best-in-class security measures including secure coding, regular updates, vulnerability assessments, and configuration hardening. Our team ensures your Drupal website complies with industry standards and protects against common threats such as SQL injection, XSS, and data breaches."
     },
     {
-      q: "8. Can Firevy.co help migrate existing websites to Drupal?",
+      q: "8. Can Firevy.Co help migrate existing websites to Drupal?",
       a: "Yes, we offer seamless website migration services to Drupal from platforms like WordPress, Joomla, and custom CMSs. Our migration process preserves SEO rankings, content integrity, and design aesthetics while upgrading your site's capabilities and performance."
     },
     {
-      q: "9. What makes Firevy.co the best Drupal development company in USA?",
-      a: "With a 23+ years of proven track record, certified Drupal developers, and a client-centric approach, Firevy.co with 320+ verified reviews stands out by offering comprehensive Drupal services—from custom development to migration, support, and enterprise maintenance."
+      q: "9. What makes Firevy.Co the best Drupal development company in USA?",
+      a: "With a 23+ years of proven track record, certified Drupal developers, and a client-centric approach, Firevy.Co with 320+ verified reviews stands out by offering comprehensive Drupal services—from custom development to migration, support, and enterprise maintenance."
     }
   ];
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Top Drupal Development Company in USA | Drupal Development Services | Firevy.co"
-        description="Firevy.co is a top-rated Drupal Development Company in USA. Our Drupal Development services are secure, innovative, robust, and scalable. Get a Free Quote!"
+        title="Top Drupal Development Company in USA | Drupal Development Services | Firevy.Co"
+        description="Firevy.Co is a top-rated Drupal Development Company in USA. Our Drupal Development services are secure, innovative, robust, and scalable. Get a Free Quote!"
       />
 
       {/* =========================================================================
@@ -189,7 +189,7 @@ export const DrupalDevelopmentService = () => {
                     {/* Simulated Top Website Navigation Bar */}
                     <div className="bg-[#0F172A] text-white px-3 py-1.5 flex items-center justify-between text-[7px]">
                       <div className="flex items-center space-x-2">
-                        <span className="font-extrabold text-[8px] text-[#38BDF8]">Firevy.co</span>
+                        <span className="font-extrabold text-[8px] text-[#38BDF8]">Firevy.Co</span>
                       </div>
                       <div className="flex items-center space-x-2 text-slate-300 font-medium">
                         <span>Solutions</span>
@@ -423,7 +423,7 @@ export const DrupalDevelopmentService = () => {
       {/* =========================================================================
           OUR PREMIUM SERVICES (10 White Rounded Cards on Deep Blue)
           ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* =========================================================================
           SUCCESS STORIES (3 Rich Case Study Mockups on Soft Cyan)
@@ -1607,7 +1607,7 @@ export const DrupalDevelopmentService = () => {
                       Message Sent Successfully!
                     </h3>
                     <p className="text-[14px] text-slate-600 max-w-sm mx-auto">
-                      Thank you for contacting Firevy.co. Our Drupal technical lead will review your project requirements and get in touch within 24 hours.
+                      Thank you for contacting Firevy.Co. Our Drupal technical lead will review your project requirements and get in touch within 24 hours.
                     </p>
                   </div>
                 ) : (

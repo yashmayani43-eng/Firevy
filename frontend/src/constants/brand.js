@@ -1,5 +1,5 @@
 export const BRAND = {
-  name: "firevy.co",
+  name: "Firevy.Co",
   shortName: "Firevy",
   tagline: "Engineering Digital Experiences That Create Impact",
   subHeadline: "We design and develop scalable web, mobile, cloud, AI and enterprise software solutions that transform ambitious ideas into measurable business outcomes.",
@@ -10,7 +10,7 @@ export const BRAND = {
     salesEmail: "sales@firevy.co",
     careersEmail: "careers@firevy.co",
     phoneUS: "+1 (800) 592-7410",
-    phoneIN: "+91 942-970-9662",
+    phoneIN: "+91 7069370629",
     address: {
       street: "500 Howard Street, Suite 400",
       city: "San Francisco",
@@ -47,9 +47,9 @@ export const BRAND = {
   },
 
   meta: {
-    defaultTitle: "firevy.co | Enterprise Software & AI Solutions",
-    titleTemplate: "%s | firevy.co",
-    defaultDescription: "firevy.co is a premium IT software development agency specializing in Web, Mobile, AI, Cloud Engineering & Enterprise Solutions.",
+    defaultTitle: "Firevy.Co | Enterprise Software & AI Solutions",
+    titleTemplate: "%s | Firevy.Co",
+    defaultDescription: "Firevy.Co is a premium IT software development agency specializing in Web, Mobile, AI, Cloud Engineering & Enterprise Solutions.",
     siteUrl: "https://firevy.co"
   }
 };

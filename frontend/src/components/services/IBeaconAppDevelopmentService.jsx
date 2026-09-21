@@ -346,11 +346,11 @@ export const IBeaconAppDevelopmentService = () => {
 
             {/* Right Illustration */}
             <div className="lg:col-span-6 flex justify-center lg:justify-end items-center">
-              <div className="relative w-full max-w-xl overflow-hidden flex items-center justify-center lg:justify-end rounded-2xl">
+              <div className="relative w-full max-w-xl flex items-center justify-center lg:justify-end">
                 <img
-                  src="/images/iot_hero_illustration.jpg"
+                  src="/images/services/ibeacon_hero_illustration.png"
                   alt="iBeacon Application Development Company Illustration"
-                  className="w-full max-w-[520px] h-auto object-contain rounded-2xl drop-shadow-sm select-none"
+                  className="w-full max-w-[520px] h-auto object-contain select-none"
                 />
               </div>
             </div>
@@ -502,11 +502,11 @@ export const IBeaconAppDevelopmentService = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-16 sm:mb-24">
             {/* Left 3D Illustration */}
             <div className="lg:col-span-6 flex justify-center items-center">
-              <div className="relative w-full max-w-lg rounded-2xl overflow-hidden shadow-[0_4px_25px_rgba(0,0,0,0.06)] border border-slate-100 bg-white p-2">
+              <div className="relative w-full max-w-lg flex items-center justify-center">
                 <img
-                  src="/images/ibeacon_delivering_services_3d.jpg"
+                  src="/images/services/ibeacon_delivering_services_3d.png"
                   alt="Delivering Excellent IBeacon Applications For Your Business"
-                  className="w-full h-auto object-contain rounded-xl select-none"
+                  className="w-full h-auto object-contain select-none"
                 />
               </div>
             </div>
@@ -551,11 +551,11 @@ export const IBeaconAppDevelopmentService = () => {
 
             {/* Right 3D Illustration */}
             <div className="lg:col-span-6 flex justify-center items-center order-1 lg:order-2">
-              <div className="relative w-full max-w-lg rounded-2xl overflow-hidden shadow-[0_4px_25px_rgba(0,0,0,0.06)] border border-slate-100 bg-white p-2">
+              <div className="relative w-full max-w-lg flex items-center justify-center">
                 <img
-                  src="/images/ibeacon_brief_services_3d.jpg"
+                  src="/images/services/ibeacon_brief_services_3d.png"
                   alt="Brief About Ibeacon App Development Services"
-                  className="w-full h-auto object-contain rounded-xl select-none"
+                  className="w-full h-auto object-contain select-none"
                 />
               </div>
             </div>

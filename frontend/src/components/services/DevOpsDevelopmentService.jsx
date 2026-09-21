@@ -225,10 +225,10 @@ export const DevOpsDevelopmentService = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="DevOps Development Services | CI/CD & Cloud Infrastructure | Firevy.co"
+        title="DevOps Development Services | CI/CD & Cloud Infrastructure | Firevy.Co"
         description="Accelerate your product delivery lifecycle with Firevy's DevOps Development Services. CI/CD automation, Kubernetes container orchestration, Terraform IaC, and 24/7 site reliability engineering."
-        keywords="devops development services, devops consulting, ci cd automation, kubernetes orchestration, terraform iac, devops services in usa, site reliability engineering, Firevy.co"
-        url="https://firevy.co/services/devops-development-services"
+        keywords="devops development services, devops consulting, ci cd automation, kubernetes orchestration, terraform iac, devops services in usa, site reliability engineering, Firevy.Co"
+        url="https://Firevy.co/services/devops-development-services"
       />
 
       {/* ========================================================================= */}
@@ -416,7 +416,7 @@ export const DevOpsDevelopmentService = () => {
       {/* ========================================================================= */}
       {/* 6. OUR PREMIUM SERVICES (IMAGE 3) */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
 
 
@@ -578,7 +578,7 @@ export const DevOpsDevelopmentService = () => {
       {/* ========================================================================= */}
       <WhatSetsUsApartSection
         title="What Sets Us Apart As DevOps Development Services?"
-        subtitle="Being unique is our quality! Firevy.co believes in the engineering principles that give our clients an edge over their competition. We are a renowned cloud infrastructure and DevOps development organization serving global enterprises with end-to-end continuous delivery support. Our automated CI/CD pipelines, Kubernetes container orchestration, and proactive SRE monitoring stand us one level above the rest."
+        subtitle="Being unique is our quality! Firevy.Co believes in the engineering principles that give our clients an edge over their competition. We are a renowned cloud infrastructure and DevOps development organization serving global enterprises with end-to-end continuous delivery support. Our automated CI/CD pipelines, Kubernetes container orchestration, and proactive SRE monitoring stand us one level above the rest."
       />
 
       {/* ========================================================================= */}

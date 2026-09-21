@@ -132,10 +132,10 @@ export const OnDemandAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="On Demand App Development Company | Custom On-Demand Solutions | Firevy.co"
+        title="On Demand App Development Company | Custom On-Demand Solutions | Firevy.Co"
         description="We are a global on-demand app development company offering custom mobile app solutions for food delivery, taxi booking, courier, healthcare, and home services."
         keywords="On Demand App Development, On Demand App Development Company, Custom Mobile App Development, On Demand Delivery App, Taxi Booking App, Food Delivery App"
-        url="https://firevy.co/services/on-demand-app-development"
+        url="https://Firevy.co/services/on-demand-app-development"
       />
 
       {/* =========================================================================

@@ -42,266 +42,357 @@ import {
 } from 'lucide-react';
 
 export const CloudFoundrySoftwareDevelopmentService = () => {
-  // Carousel State for Cutting-Edge Technologies Section
-  const [techCarouselIndex, setTechCarouselIndex] = useState(0);
+  // Ref for Cutting-Edge Technologies Horizontal Slider
+  const techScrollRef = useRef(null);
 
-  // 6 Cutting-Edge Technologies tailored to Cloud Foundry PaaS
-  const cloudFoundryTechnologies = [
+  // Cutting-Edge Technologies matching reference First Image (IoT, Data Science, Cloud Computing, AR/VR, etc.)
+  const cuttingEdgeTechnologies = [
     {
       id: 1,
-      title: 'Diego Container Runtime & Orchestration',
-      desc: 'Deploy resilient container workloads managed by Diego auctioneers and rep cells. Diego continuously monitors application instance health, rescheduling containers automatically in failure scenarios.',
+      title: 'IoT',
+      desc: 'Our software for Internet of Things solutions is designed to provide customers with intelligent automation, smooth integration, and real-time monitoring, resulting in dramatic results for your company.',
       icon: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <circle cx="20" cy="20" r="14" />
-          <path d="M12 20h16M20 12v16" strokeLinecap="round" />
-          <circle cx="20" cy="20" r="4" fill="#0084D1" />
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="14" y="14" width="20" height="20" rx="3" />
+          <text x="24" y="27" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#0084D1" stroke="none" fontFamily="sans-serif">IoT</text>
+          <path d="M20 14V8M28 14V8M20 34v6M28 34v6M14 20H8M14 28H8M34 20h6M34 28h6" />
+          <circle cx="20" cy="7" r="1.5" fill="#0084D1" />
+          <circle cx="28" cy="7" r="1.5" fill="#0084D1" />
+          <circle cx="20" cy="41" r="1.5" fill="#0084D1" />
+          <circle cx="28" cy="41" r="1.5" fill="#0084D1" />
+          <circle cx="7" cy="20" r="1.5" fill="#0084D1" />
+          <circle cx="7" cy="28" r="1.5" fill="#0084D1" />
+          <circle cx="41" cy="20" r="1.5" fill="#0084D1" />
+          <circle cx="41" cy="28" r="1.5" fill="#0084D1" />
         </svg>
       )
     },
     {
       id: 2,
-      title: 'BOSH Multi-Cloud Lifecycle Management',
-      desc: 'Orchestrate infrastructure release engineering, software packaging, and VM provisioning across AWS, Azure, GCP, and vSphere using BOSH manifests for automated self-healing clusters.',
+      title: 'Data Science',
+      desc: 'Our services, which range from big data solutions to predictive analytics, enable you to find hidden trends, streamline processes, and make data-driven choices that advance your company.',
       icon: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <polygon points="20 4 34 12 34 28 20 36 6 28 6 12 20 4" />
-          <line x1="20" y1="4" x2="20" y2="36" />
-          <circle cx="20" cy="20" r="3" fill="#0084D1" />
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <ellipse cx="24" cy="24" rx="20" ry="7" transform="rotate(-30 24 24)" />
+          <ellipse cx="24" cy="24" rx="20" ry="7" transform="rotate(30 24 24)" />
+          <ellipse cx="24" cy="24" rx="20" ry="7" transform="rotate(90 24 24)" />
+          <rect x="19" y="19" width="10" height="10" rx="2" fill="#E1F3FD" />
+          <rect x="19" y="19" width="10" height="10" rx="2" stroke="#0084D1" />
+          <line x1="22" y1="22" x2="26" y2="22" />
+          <line x1="22" y1="26" x2="26" y2="26" />
         </svg>
       )
     },
     {
       id: 3,
-      title: 'Cloud-Native Buildpacks (CNB)',
-      desc: 'Transform source code directly into production-ready OCI container images without Dockerfiles. Buildpacks standardize runtime versions, patch vulnerabilities, and streamline CI/CD builds.',
+      title: 'Cloud Computing',
+      desc: 'With the help of our cloud software solutions, your company may run more adaptable and resiliently, thanks to their smooth migration, strong infrastructure, and affordable administration.',
       icon: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <rect x="5" y="7" width="30" height="26" rx="3" />
-          <path d="M12 21l-3 3 3 3M20 21l3 3-3 3" strokeLinecap="round" strokeLinejoin="round" />
-          <circle cx="28" cy="20" r="3" fill="#0084D1" />
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M16 16a5 5 0 0 1 9-2 4 4 0 0 1 7 3 3.5 3.5 0 0 1-1 7H16a4 4 0 0 1 0-8z" />
+          <rect x="8" y="27" width="14" height="13" rx="2" />
+          <line x1="11" y1="31" x2="19" y2="31" />
+          <line x1="11" y1="35" x2="19" y2="35" />
+          <circle cx="12" cy="29" r="0.5" fill="#0084D1" />
+          <rect x="26" y="27" width="15" height="10" rx="2" />
+          <line x1="33.5" y1="37" x2="33.5" y2="40" />
+          <line x1="30" y1="40" x2="37" y2="40" />
         </svg>
       )
     },
     {
       id: 4,
-      title: 'Open Service Broker API (OSBAPI)',
-      desc: 'Seamlessly bind stateful data services, Redis caches, message queues (RabbitMQ, Kafka), and relational databases (PostgreSQL, MySQL) to microservices via automated service instances.',
+      title: 'AR/VR',
+      desc: 'We create software that provides a feeling of realism that spans the actual and digital worlds, whether it is used for interactive marketing, immersive training, or other purposes.',
       icon: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <ellipse cx="20" cy="10" rx="14" ry="5" />
-          <path d="M6 10v10c0 2.8 6.3 5 14 5s14-2.2 14-5V10" />
-          <path d="M6 20v10c0 2.8 6.3 5 14 5s14-2.2 14-5V20" />
-          <circle cx="20" cy="25" r="2" fill="#0084D1" />
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="13" y="6" width="22" height="36" rx="4" />
+          <line x1="21" y1="10" x2="27" y2="10" />
+          <circle cx="24" cy="38" r="1.5" fill="#0084D1" />
+          <path d="M24 16l7 4v8l-7 4-7-4v-8l7-4z" />
+          <path d="M24 16v12M31 20l-7 4M17 20l7 4" />
         </svg>
       )
     },
     {
       id: 5,
-      title: 'Gorouter & Dynamic Traffic Mesh',
-      desc: 'Handle high-throughput ingress routing with intelligent session affinity, zero-downtime blue-green deployments, and automatic TLS termination across dynamic container IP endpoints.',
+      title: 'Cloud Foundry & Diego PaaS',
+      desc: 'Deploy, orchestrate, and scale enterprise microservices with automated buildpacks, self-healing Diego container cells, and zero-downtime traffic routing.',
       icon: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <circle cx="12" cy="12" r="5" />
-          <circle cx="28" cy="12" r="5" />
-          <circle cx="20" cy="30" r="6" />
-          <path d="M15 16l3 8M25 16l-3 8" strokeLinecap="round" />
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <polygon points="24 6 40 15 40 33 24 42 8 33 8 15 24 6" />
+          <line x1="24" y1="6" x2="24" y2="42" />
+          <circle cx="24" cy="24" r="4" fill="#0084D1" />
         </svg>
       )
     },
     {
       id: 6,
-      title: 'VMware Tanzu & Enterprise PaaS Modernization',
-      desc: 'Modernize enterprise legacy monoliths into Kubernetes-backed Tanzu Application Service (TAS). Unify developer experiences across hybrid private and public cloud ecosystems.',
+      title: 'AI & Machine Learning',
+      desc: 'We use AI solutions to automate software processes, provide predictive insights, and promote intelligent decision-making by leveraging advanced machine learning models.',
       icon: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <rect x="7" y="7" width="26" height="26" rx="4" />
-          <path d="M14 20h12M20 14v12" strokeLinecap="round" />
-          <circle cx="20" cy="20" r="8" strokeDasharray="3 3" />
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="14" y="14" width="20" height="20" rx="3" />
+          <circle cx="24" cy="24" r="5" />
+          <circle cx="24" cy="24" r="2" fill="#0084D1" />
+          <path d="M19 8v6M29 8v6M19 34v6M29 34v6M8 19h6M8 29h6M34 19h6M34 29h6" />
+        </svg>
+      )
+    },
+    {
+      id: 7,
+      title: 'Blockchain',
+      desc: 'We build decentralized, tamper-proof blockchain solutions that ensure high security, transparency, and data integrity for enterprise transactions and smart contracts.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="8" y="8" width="12" height="12" rx="2" />
+          <rect x="28" y="8" width="12" height="12" rx="2" />
+          <rect x="8" y="28" width="12" height="12" rx="2" />
+          <rect x="28" y="28" width="12" height="12" rx="2" />
+          <path d="M20 14h8M20 34h8M14 20v8M34 20v8" strokeDasharray="2 2" />
+          <circle cx="24" cy="14" r="2" fill="#0084D1" />
+          <circle cx="24" cy="34" r="2" fill="#0084D1" />
         </svg>
       )
     }
   ];
 
-  const maxTechIndex = Math.max(0, cloudFoundryTechnologies.length - 3);
-
-  // 6 Cloud Foundry Benefits
+  // 6 Benefits Cards Grid (Exact 1:1 Match to Reference Layout & SVG Styling)
   const cloudFoundryBenefits = [
     {
-      icon: <Zap className="w-7 h-7 text-[#005F96]" />,
-      title: 'Instant cf push Velocity',
-      desc: 'Developers focus purely on code while Cloud Foundry handles container compilation, dependency resolution, networking, and zero-downtime deployment in seconds.'
+      title: 'Seasoned Cloud Foundry Certified Architects',
+      desc: 'Cloud Foundry PaaS architecture, Diego clustering, and multi-region deployment are among the subjects our certified engineers are well familiar with, ensuring peak scalability.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="8" y="7" width="32" height="13" rx="2" />
+          <line x1="13" y1="13.5" x2="15" y2="13.5" strokeWidth="2.5" />
+          <line x1="18" y1="13.5" x2="20" y2="13.5" strokeWidth="2.5" />
+          <line x1="23" y1="13.5" x2="25" y2="13.5" strokeWidth="2.5" />
+          <circle cx="34" cy="13.5" r="1.3" fill="#0084D1" />
+          <circle cx="30" cy="13.5" r="1.3" fill="#0084D1" />
+          <rect x="8" y="25" width="32" height="13" rx="2" />
+          <line x1="13" y1="31.5" x2="15" y2="31.5" strokeWidth="2.5" />
+          <line x1="18" y1="31.5" x2="20" y2="31.5" strokeWidth="2.5" />
+          <line x1="23" y1="31.5" x2="25" y2="31.5" strokeWidth="2.5" />
+          <circle cx="34" cy="31.5" r="1.3" fill="#0084D1" />
+          <circle cx="30" cy="31.5" r="1.3" fill="#0084D1" />
+          <path d="M14 20v5M34 20v5" />
+        </svg>
+      )
     },
     {
-      icon: <Layers className="w-7 h-7 text-[#005F96]" />,
-      title: 'Multi-Cloud Portability',
-      desc: 'Avoid vendor lock-in by executing identical applications across AWS, Microsoft Azure, Google Cloud, and private VMware vSphere without changing single lines of source code.'
+      title: 'Mastery of Leading PaaS & Container Tools',
+      desc: 'To execute exact and reliable cloud solutions, our team makes use of modern Cloud Foundry technologies like Diego cells, BOSH, Gorouter, Cloud Native Buildpacks, and OSBAPI brokers.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M10 16 L38 16 L28 28 L28 38 L20 38 L20 28 Z" />
+          <line x1="15" y1="7" x2="15" y2="12" />
+          <circle cx="15" cy="6" r="1.8" fill="#0084D1" />
+          <line x1="24" y1="4" x2="24" y2="12" />
+          <circle cx="24" cy="3" r="1.8" fill="#0084D1" />
+          <line x1="33" y1="7" x2="33" y2="12" />
+          <circle cx="33" cy="6" r="1.8" fill="#0084D1" />
+          <circle cx="24" cy="43" r="1.5" fill="#0084D1" />
+        </svg>
+      )
     },
     {
-      icon: <RefreshCw className="w-7 h-7 text-[#005F96]" />,
-      title: 'Self-Healing & Auto-Scaling',
-      desc: 'Built-in Diego health management monitors CPU, memory, and HTTP response metrics, automatically restarting crashed instances and dynamically scaling under peak traffic.'
+      title: 'Agile and Group Cloud Migration',
+      desc: 'Working directly with your team, we use an agile approach to identify your application challenges and provide tailored Cloud Foundry migration solutions fit for your company goals.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M24 7 A 17 17 0 1 1 9 24" />
+          <polyline points="5 14 9 24 19 20" />
+          <circle cx="24" cy="24" r="5" />
+          <path d="M24 16v2M24 30v2M16 24h2M30 24h2M18.5 18.5l1.4 1.4M28.1 28.1l1.4 1.4M18.5 29.5l1.4-1.4M28.1 19.9l1.4-1.4" />
+        </svg>
+      )
     },
     {
-      icon: <ShieldCheck className="w-7 h-7 text-[#005F96]" />,
-      title: 'Zero-Downtime Deployments',
-      desc: 'Perform seamless blue-green releases and rolling application updates with instantaneous Gorouter traffic shifting, eliminating scheduled maintenance windows.'
+      title: 'Testing for Quality & High Availability',
+      desc: 'To guarantee resilience and speed, every Cloud Foundry deployment goes through thorough chaos testing and performance validation under real-time global traffic loads.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="11" y="9" width="26" height="32" rx="3" />
+          <path d="M18 9V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3" />
+          <path d="M16 19l2 2 4-4" />
+          <line x1="25" y1="19" x2="31" y2="19" />
+          <path d="M16 27l2 2 4-4" />
+          <line x1="25" y1="27" x2="31" y2="27" />
+          <circle cx="37" cy="11" r="3" />
+        </svg>
+      )
     },
     {
-      icon: <Lock className="w-7 h-7 text-[#005F96]" />,
-      title: 'Integrated Enterprise Security',
-      desc: 'Enforce platform-wide OS patching, isolated application containers (Garden), encrypted TLS communication, and granular role-based identity access controls (UAA).'
+      title: 'Future-Ready, Scalable PaaS Solutions',
+      desc: 'Our developers provide scalable Cloud Foundry architectures meant to expand with your company, effortlessly managing microservices scaling, event streaming, and analytics.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="18" y="8" width="12" height="12" rx="2" />
+          <circle cx="24" cy="14" r="2" fill="#0084D1" />
+          <line x1="24" y1="4" x2="24" y2="8" />
+          <line x1="14" y1="14" x2="18" y2="14" />
+          <line x1="30" y1="14" x2="34" y2="14" />
+          <path d="M9 34c4-2 9-2 13-2h4a6 6 0 0 1 6 6v3H7v-3a4 4 0 0 1 2-4z" />
+          <path d="M22 32l3-5a2 2 0 0 1 3 2l-2 3" />
+        </svg>
+      )
     },
     {
-      icon: <BarChart3 className="w-7 h-7 text-[#005F96]" />,
-      title: 'Optimized Infrastructure TCO',
-      desc: 'Maximize physical and virtual resource density through automated container packing, reducing underlying cloud VM costs and cutting sysadmin operational overhead by up to 50%.'
+      title: 'Constant Support & FinOps Optimization',
+      desc: 'We provide ongoing assistance for Cloud Foundry services to maintain the current and optimal state of your infrastructure, offering 24/7 SRE monitoring, right-sizing, and cost optimization.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0084D1]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M14 26V20a10 10 0 0 1 20 0v6" />
+          <rect x="11" y="24" width="6" height="10" rx="2" />
+          <rect x="31" y="24" width="6" height="10" rx="2" />
+          <path d="M34 32v2a4 4 0 0 1-4 4h-6" />
+          <circle cx="21" cy="38" r="2" fill="#0084D1" />
+        </svg>
+      )
     }
   ];
 
-  // Cloud Foundry Expertise Cards for Horizontal Carousel
+  // Carousel State for Our Expertise Section
+  const [expertiseIndex, setExpertiseIndex] = useState(0);
+  const [isExpertiseHovered, setIsExpertiseHovered] = useState(false);
+  const expertiseScrollRef = useRef(null);
+
   const cloudFoundryExpertiseCards = [
     {
-      title: 'Cloud Foundry App Modernization',
-      desc: 'Refactor monolithic legacy enterprise apps into 12-factor cloud-native microservices engineered to run natively on Cloud Foundry PaaS.'
+      title: 'Automated CI/CD Integration',
+      desc: 'Implement continuous integration and continuous deployment pipelines to speed up time-to-market and ensure reliable, zero-downtime releases.'
     },
     {
-      title: 'BOSH Deployment & Cluster Ops',
-      desc: 'Architect, configure, and maintain production-grade Cloud Foundry installations with automated health recovery and rolling upgrades via BOSH.'
+      title: 'Performance Monitoring & Optimization',
+      desc: 'Leverage real time analytics and monitoring tools to guarantee app performance, availability, and uptime.'
     },
     {
-      title: 'VMware Tanzu Platform Engineering',
-      desc: 'Deploy and manage VMware Tanzu Application Service (TAS) and Tanzu Kubernetes Grid (TKG) for mission-critical enterprise environments.'
+      title: 'Third-Party API & Service Integrations',
+      desc: 'Integrate databases, messaging queues, identity, and more with your Cloud Foundry apps to add functionality.'
     },
     {
-      title: 'Custom Buildpack Development',
-      desc: 'Create secure, enterprise-tailored buildpacks for custom runtimes, proprietary frameworks, and hardened compliance environments.'
+      title: 'Custom Cloud Native Application Development',
+      desc: 'Utilize Cloud Foundry’s open-source platform to develop and deploy highly scalable applications specific to your business needs.'
     },
     {
-      title: 'Open Service Broker Integration',
-      desc: 'Develop bespoke OSBAPI brokers to connect custom internal enterprise databases, legacy systems, and external SaaS solutions to Cloud Foundry.'
+      title: 'Microservices Architecture Implementation',
+      desc: 'Transitioning legacy systems to microservices architecture for increased agility, fault tolerance, and independent scaling of services.'
     },
     {
-      title: 'Multi-Cloud PaaS Migration',
-      desc: 'Safely migrate on-premise application portfolios to Cloud Foundry hosted across AWS, Google Cloud, or Microsoft Azure with zero business disruption.'
+      title: 'Multi-Cloud Migration & Deployment',
+      desc: 'Seamlessly migrate workloads to Cloud Foundry across AWS, Azure, GCP, or private clouds with zero downtime and vendor independence.'
     }
   ];
 
-  // Auto-scroll logic for Expertise Carousel
-  const expertiseScrollRef = useRef(null);
-  const [isExpertiseHovered, setIsExpertiseHovered] = useState(false);
-
   useEffect(() => {
+    if (isExpertiseHovered) return;
     const interval = setInterval(() => {
-      if (!isExpertiseHovered && expertiseScrollRef.current) {
-        const { scrollLeft, scrollWidth, clientWidth } = expertiseScrollRef.current;
-        if (scrollLeft + clientWidth >= scrollWidth - 10) {
-          expertiseScrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
-        } else {
-          expertiseScrollRef.current.scrollBy({ left: 320, behavior: 'smooth' });
-        }
-      }
-    }, 3500);
+      setExpertiseIndex((prev) => (prev + 1) % cloudFoundryExpertiseCards.length);
+    }, 3200);
     return () => clearInterval(interval);
   }, [isExpertiseHovered]);
 
-  // Success Stories for Cloud Foundry
+  useEffect(() => {
+    if (expertiseScrollRef.current) {
+      const cardStep = 390;
+      expertiseScrollRef.current.scrollTo({
+        left: expertiseIndex * cardStep,
+        behavior: 'smooth'
+      });
+    }
+  }, [expertiseIndex]);
+
+  // Success Stories tailored to Cloud Foundry
   const cloudFoundrySuccessCards = [
     {
       id: 1,
-      tag: 'FINTECH PLATFORM',
-      title: 'Global Bank Achieves 10x Deployment Frequency with Cloud Foundry',
-      desc: 'Modernized core transactional banking systems into containerized Spring Boot microservices on Cloud Foundry, cutting deployment cycles from 6 weeks to 4 hours with 99.999% availability.',
-      image: '/images/cloud_foundry_pipeline.jpg',
-      metric: '10x Faster Releases',
-      metricLabel: 'Continuous Delivery'
+      title: 'Enterprise Microservices & Cloud-Native Tanzu Cluster',
+      image: '/images/success_stories/redetect.svg',
+      badge: 'Case Study'
     },
     {
       id: 2,
-      tag: 'ENTERPRISE SAAS',
-      title: 'Multi-Tenant SaaS Scaling to 15 Million Users on Tanzu PaaS',
-      desc: 'Architected automated autoscaling policies and custom Open Service Brokers for RabbitMQ and PostgreSQL, handling 20,000 requests per second with zero dropped transactions.',
-      image: '/images/cloud_foundry_hero.jpg',
-      metric: '15M+ Users',
-      metricLabel: 'Zero Downtime'
+      title: 'Real-Time Diego Container Orchestration & API Mesh Platform',
+      image: '/images/success_stories/file_sharing_application.svg'
     },
     {
       id: 3,
-      tag: 'HEALTHCARE & PHARMA',
-      title: 'HIPAA-Compliant Patient Portal on Multi-Cloud Foundry Architecture',
-      desc: 'Deployed high-security Cloud Foundry platform across hybrid on-prem and AWS clouds, delivering automated end-to-end TLS encryption, audit logging, and automated OS security patch rollouts.',
-      image: '/images/cloud_foundry_team.jpg',
-      metric: '100% Compliant',
-      metricLabel: 'Automated Patching'
+      title: 'Automated Zero-Downtime BOSH CI/CD Deployment Pipeline',
+      image: '/images/success_stories/data_analytics.svg'
     }
   ];
 
-  // 9 Cloud Foundry FAQs
+  // 9 Complete FAQs (Tailored to Cloud Foundry Platform & Firevy.co)
   const cloudFoundryFaqs = [
     {
-      q: 'What is Cloud Foundry Software Development?',
-      a: 'Cloud Foundry is the industry-leading open-source Platform as a Service (PaaS) that enables developers to build, test, deploy, and scale cloud-native applications across multi-cloud environments (AWS, Azure, Google Cloud, vSphere) using simple CLI commands like "cf push", abstracting away underlying server infrastructure.'
+      question: '1. What are Cloud Foundry Software Development Services, and why are they essential?',
+      answer: 'Cloud Foundry Software Development Services encompass enterprise PaaS architecture design, application containerization (Diego), automated builds (Buildpacks), service broker binding (OSBAPI), and multi-cloud lifecycle management (BOSH). They ensure lightning-fast developer velocity, zero-downtime deployments, and multi-cloud independence.'
     },
     {
-      q: 'How does Cloud Foundry differ from standard Kubernetes?',
-      a: 'Kubernetes is a low-level container orchestrator requiring teams to manage container manifests, ingresses, and cluster networking manually. Cloud Foundry provides a higher-level developer-centric Platform as a Service (PaaS) abstraction where code is automatically packaged into containers via buildpacks, routed through Gorouter, and managed with self-healing features out of the box.'
+      question: '2. How do your Cloud Foundry migration services work?',
+      answer: 'Our process includes legacy infrastructure auditing, 12-factor application refactoring, automated service broker configuration for persistent state, Diego containerization, validation testing, and live traffic cutover with zero downtime.'
     },
     {
-      q: 'Can Firevy.co help migrate our legacy applications to Cloud Foundry?',
-      a: 'Yes. Our Cloud Foundry specialists evaluate your current architecture, modernize codebases into 12-factor cloud-native applications, configure custom buildpacks, bind enterprise data services via Open Service Brokers, and execute zero-downtime blue-green migrations.'
+      question: '3. What makes Cloud Foundry Diego superior for container management?',
+      answer: 'Diego is Cloud Foundry’s purpose-built container management engine. It distributes workloads across cell nodes using an auction algorithm, continuously monitors instance health, automatically restarts crashed instances, and eliminates complex orchestration script maintenance.'
     },
     {
-      q: 'What programming languages and frameworks are supported on Cloud Foundry?',
-      a: 'Cloud Foundry natively supports Java (Spring Boot), Node.js, Python, Go, Ruby, PHP, .NET Core, and static web apps via official Cloud Native Buildpacks. Additionally, custom buildpacks can be engineered for proprietary runtimes.'
+      question: '4. Do you provide Cloud Foundry development services tailored to our sector?',
+      answer: 'Yes, we serve diverse industries including Fintech, Healthcare, eCommerce, Logistics, and SaaS, ensuring full regulatory compliance with HIPAA, SOC 2, and PCI-DSS standards.'
     },
     {
-      q: 'What is VMware Tanzu Application Service (TAS)?',
-      a: 'VMware Tanzu Application Service (formerly Pivotal Cloud Foundry / PCF) is the commercial enterprise distribution of Cloud Foundry, featuring automated operations, integrated security scanning, enterprise service marketplaces, and multi-cloud management tools.'
+      question: '5. How secure is our enterprise infrastructure on Cloud Foundry?',
+      answer: 'Cloud Foundry is built with security-by-design principles. We enforce container isolation via Garden, User Account and Authentication (UAA) identity access control, TLS termination, mutual TLS between internal components, and automated platform-wide CVE security patch rollouts.'
     },
     {
-      q: 'How does Cloud Foundry handle zero-downtime deployments?',
-      a: 'Cloud Foundry utilizes blue-green deployment strategies through its Gorouter component. A new version of the app is deployed side-by-side with the old version. Once the new version passes health checks, traffic is dynamically shifted without interrupting active client requests.'
+      question: '6. How does Cloud Foundry eliminate vendor lock-in across multi-cloud?',
+      answer: 'Cloud Foundry abstracts underlying infrastructure through BOSH Cloud Provider Interfaces (CPIs). The exact same application package and deployment manifest runs consistently on AWS, Microsoft Azure, Google Cloud, and private VMware vSphere without changing application code.'
     },
     {
-      q: 'What role does BOSH play in Cloud Foundry ecosystems?',
-      a: 'BOSH is an open-source tool chain for release engineering, deployment, lifecycle management, and monitoring of distributed systems. It provisions VMs, installs software packages, performs rolling upgrades, and automatically reboots failed virtual machines across any hypervisor or cloud.'
+      question: '7. Why should businesses choose Firevy.co for Cloud Foundry development services?',
+      answer: 'With certified Cloud Foundry & Tanzu Architects and 500+ successful cloud deliveries, Firevy.co is trusted by global companies to modernize workloads, eliminate release bottlenecks, and unlock unmatched developer productivity.'
     },
     {
-      q: 'Can we run stateful applications like databases on Cloud Foundry?',
-      a: 'Yes. Stateful services (PostgreSQL, MySQL, Redis, RabbitMQ, Kafka) are connected via the Open Service Broker API (OSBAPI). Cloud Foundry provisions dedicated instances and injects secure connection credentials directly into the application environment.'
+      question: '8. What types of Cloud Foundry services does Firevy.co offer?',
+      answer: 'We offer end-to-end Cloud Foundry services including Diego runtime deployment, custom Buildpack engineering, Open Service Broker integrations, VMware Tanzu Application Service (TAS) migration, BOSH lifecycle automation, and 24/7 SRE managed operations.'
     },
     {
-      q: 'How do I hire dedicated Cloud Foundry developers from Firevy.co?',
-      a: 'You can hire experienced Cloud Foundry architects, PaaS engineers, and DevOps specialists on flexible engagement models (dedicated team, time & materials, or project-based). Contact our team today for a free architecture review and consultation.'
+      question: '9. Does Firevy.co offer continuous Cloud Foundry cost optimization (FinOps)?',
+      answer: 'Yes, we implement proactive Cloud Foundry FinOps practices, including cell container bin-packing, auto-scaling policy tuning, idle instance hibernation, and automated resource metering to lower ongoing multi-cloud infrastructure expenses by up to 50%.'
     }
   ];
 
   return (
-    <div className="w-full bg-white font-sans text-slate-900 overflow-hidden">
+    <div className="min-h-screen bg-white text-slate-800 selection:bg-[#005F96] selection:text-white">
+      {/* SEO Metadata */}
       <SEO
-        title="Cloud Foundry Software Development Company | Firevy.co"
-        description="Enterprise Cloud Foundry software development, PaaS engineering, BOSH lifecycle automation, and VMware Tanzu architecture by certified experts at Firevy.co."
+        title="Cloud Foundry Software Development Services | PaaS Consulting & Architecture | Firevy.co"
+        description="Accelerate your enterprise digital transformation with Firevy's Cloud Foundry Software Development Services. Diego container orchestration, BOSH automation, Cloud Native Buildpacks, and multi-cloud PaaS solutions."
+        keywords="Cloud Foundry Software Development Services, Cloud Foundry PaaS, Cloud Foundry Consulting, Diego Container Runtime, BOSH Multi-Cloud, Cloud Native Buildpacks, VMware Tanzu, Firevy.co"
+        url="https://firevy.co/services/cloud-foundry-software-development"
       />
 
       {/* ========================================================================= */}
-      {/* 1. HERO SECTION (EXACT 1:1 REPLICATION OF SAPPHIRE / GOOGLE CLOUD HERO)   */}
+      {/* 1. HERO SECTION (EXACT 1:1 MATCH TO REFERENCE FIRST IMAGE)               */}
       {/* ========================================================================= */}
-      <section className="relative bg-white pt-8 sm:pt-14 pb-12 sm:pb-16 border-b border-slate-100">
-        <Container className="max-w-6xl">
+      <section className="pt-10 pb-12 sm:pt-14 sm:pb-16 bg-white overflow-hidden text-left border-b border-slate-100">
+        <Container className="max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
-            {/* Left Column: Content */}
-            <div className="lg:col-span-7 space-y-6 text-left">
-              <h1 className="text-3xl sm:text-4xl lg:text-[46px] font-[800] text-[#0B0F19] leading-[1.18] tracking-tight font-sans">
-                Cloud Foundry Software<br className="hidden sm:inline" /> Development Company
+            {/* Left Column: Title + Paragraph + 4 Stats + CTA */}
+            <div className="lg:col-span-7 space-y-6">
+              <h1 className="text-[32px] sm:text-[40px] lg:text-[44px] font-extrabold text-[#0B0F19] tracking-tight leading-[1.18] font-sans">
+                Cloud Foundry Software Development <br />
+                Services
               </h1>
 
-              <p className="text-sm sm:text-[14.5px] text-[#475569] font-normal leading-[1.78] font-sans max-w-2xl">
-                Unlock opportunities for scalable, efficient, and customizable digital solutions with Cloud Foundry software development company, designed for large and small businesses alike. If you are a startup in search of agility or an established Enterprise Cloud Foundry solutions provider wanting to streamline your cloud-native deployment, Cloud Foundry consulting and implementation services provide affordable web and application development and application customization supported by Cloud Foundry's PaaS environment. Get a free project quote today to see how we might help build and transform your infrastructure into a high-performing, cloud-first environment.
+              <p className="text-[14px] sm:text-[15px] text-[#475569] font-normal leading-[1.75] max-w-2xl font-sans">
+                Go that extra mile with best Cloud Foundry Software Development Services, an epitome in advancement and cost-effective services designed for altogether different products and sizes. I am more than a startup trying to grow or an enterprise in need of modernizing. We build cloud-native web and mobile apps that scale and secure the handling of their business. Flexibility and speed are neatly integrated into our made to fit software so that your charges will be minimal. Conduct your app development today! Enjoy the deals by Affordable Cloud Foundry consulting and development services provider that has store for you from here until eternity.
               </p>
 
-              {/* 4 Stats Grid (Exact 1:1 Match with Reference Image) */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-5 pt-2 pb-2">
+              {/* 4 Stats (Exact layout from First Image - clean text without card borders) */}
+              <div className="flex flex-wrap items-start gap-8 sm:gap-11 pt-2">
                 <div className="text-left">
                   <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">100+</div>
                   <div className="text-xs sm:text-[13px] text-slate-800 font-semibold leading-snug mt-2">
@@ -326,12 +417,12 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
                 <div className="text-left">
                   <div className="text-3xl sm:text-[34px] font-extrabold text-[#005F96] tracking-tight leading-none">320+</div>
                   <div className="text-xs sm:text-[13px] text-slate-800 font-semibold leading-snug mt-2">
-                    5-Star Clutch<br />Reviews
+                    5-Star Clutch Reviews
                   </div>
                 </div>
               </div>
 
-              {/* Action Button */}
+              {/* Action Button (Exact from First Image) */}
               <div className="pt-2">
                 <a
                   href="#contact"
@@ -343,13 +434,13 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
               </div>
             </div>
 
-            {/* Right Column: High-Res 2D Vector Illustration */}
+            {/* Right Column: Exact Matching 2D Vector Illustration */}
             <div className="lg:col-span-5 flex items-center justify-center relative">
               <div className="relative w-full max-w-[540px] mx-auto flex items-center justify-center">
                 <img
-                  src="/images/cloud_foundry_hero.svg"
+                  src="/images/cloud_foundry_hero.jpg"
                   alt="Cloud Foundry Software Development Services"
-                  className="w-full h-auto object-contain transition-transform duration-500 ease-out hover:scale-105 cursor-pointer"
+                  className="w-full h-auto object-contain drop-shadow-md transition-transform duration-500 ease-out hover:scale-105 cursor-pointer"
                   loading="eager"
                 />
               </div>
@@ -370,13 +461,13 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       <section className="py-14 sm:py-20 bg-white text-slate-900 font-sans text-left overflow-hidden">
         <Container className="max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Pipeline Illustration */}
+            {/* Left Column: Cloud Foundry Pipeline Illustration */}
             <div className="lg:col-span-6 flex justify-center items-center">
-              <div className="relative w-full max-w-[480px] flex items-center justify-center">
+              <div className="relative w-full max-w-[480px] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
                 <img
-                  src="/images/cloud_foundry_pipeline.svg"
-                  alt="Automated Cloud Foundry PaaS Architecture and Diego Cells"
-                  className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500 cursor-pointer"
+                  src="/images/cloud_foundry_pipeline.jpg"
+                  alt="Automated Cloud Foundry PaaS Architecture"
+                  className="w-full h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-500 cursor-pointer"
                   loading="lazy"
                 />
               </div>
@@ -389,62 +480,17 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
               </h2>
 
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] font-normal leading-[1.8]">
-                Enterprise software teams face increasing overhead managing low-level container infrastructure, custom Kubernetes manifests, and complex CI/CD scripts. By deploying Cloud Foundry PaaS, your engineering teams can shift 100% of their attention to business logic while the platform handles automated container compilation, Diego routing, and self-healing.
+                Enterprises handle enormous volumes of microservices and workloads in the digital age. Monolithic on-premise servers and unstandardized infrastructure may, however, be rife with scaling bottlenecks, configuration drift, and excessive operational costs, causing business slowdowns and missed opportunities.
               </p>
 
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] font-normal leading-[1.8]">
-                At Firevy.co, our Cloud Foundry certified engineers architect resilient multi-cloud PaaS systems backed by BOSH lifecycle automation, Cloud Native Buildpacks, and custom Open Service Brokers. We empower enterprises to achieve continuous delivery with guaranteed 99.99% uptime.
+                At Firevy.Co, our Cloud Foundry certified engineers architect resilient multi-cloud PaaS systems backed by BOSH lifecycle automation, Cloud Native Buildpacks, and custom Open Service Brokers. We empower enterprises to achieve continuous delivery with guaranteed 99.99% uptime.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* ========================================================================= */}
-      {/* 4. BRIEF ABOUT CLOUD FOUNDRY (Content Left + Image Right)                 */}
-      {/* ========================================================================= */}
-      <section className="py-14 sm:py-20 bg-[#F8FAFC] text-slate-900 font-sans text-left overflow-hidden border-y border-slate-100">
-        <Container className="max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Content */}
-            <div className="lg:col-span-6 space-y-4 text-left">
-              <h2 className="text-[26px] sm:text-[32px] lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-[1.2]">
-                Brief About Cloud Foundry Software Development Services
-              </h2>
-
-              <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] font-normal leading-[1.8]">
-                Cloud Foundry abstracts complex cloud infrastructure into an intuitive developer experience. With a single command (`cf push`), your application source code is bound to production runtimes, packaged into secure OCI containers, and dynamically routed to live traffic.
-              </p>
-
-              <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] font-normal leading-[1.8]">
-                Whether you operate on private OpenStack/vSphere clusters or public clouds like AWS, Azure, and Google Cloud, our Cloud Foundry solutions eliminate vendor lock-in. We build automated failover, autoscaling policies, and integrated DevSecOps pipelines to optimize cloud spending and maximize release velocity.
-              </p>
-
-              <div className="pt-2">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center space-x-2 px-6 py-2.5 rounded-[4px] bg-[#005F96] hover:bg-[#004B77] text-white font-[700] text-[13.5px] shadow-sm hover:shadow transition-all duration-200 cursor-pointer"
-                >
-                  <span>Connect With An Expert</span>
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
-
-            {/* Right Column: Cloud Foundry Architecture Team Illustration */}
-            <div className="lg:col-span-6 flex justify-center items-center">
-              <div className="relative w-full max-w-[480px] flex items-center justify-center">
-                <img
-                  src="/images/cloud_foundry_team.jpg"
-                  alt="Cloud Foundry PaaS Engineering Team"
-                  className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500 cursor-pointer"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
 
       {/* ========================================================================= */}
       {/* 5. AWARDS & TRUST RECOGNITION CLUTCH BANNER                               */}
@@ -452,10 +498,11 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       <ClutchTopRatedBanner title="World Wide Top Rated IT Company on Clutch" />
 
       {/* ========================================================================= */}
-      {/* 6. 100% CUSTOMIZABLE SERVICES (Quote Card + Narrative)                    */}
+      {/* 6. 100% CUSTOMIZABLE CLOUD FOUNDRY SERVICES (Quote Card + Narrative)      */}
       {/* ========================================================================= */}
       <section className="py-14 sm:py-20 bg-white text-slate-900 font-sans text-left overflow-hidden">
         <Container className="max-w-6xl">
+          {/* Centered Main Section Heading Matching Reference Screenshot */}
           <h2 className="text-center text-[26px] sm:text-[32px] lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight mb-10 sm:mb-14">
             Get 100% Customizable Cloud Foundry Software Development Services
           </h2>
@@ -474,7 +521,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
                 <path d="M-20 300 C80 260, 160 340, 240 290 C290 260, 320 330, 360 300" stroke="#005F96" strokeWidth="2" />
               </svg>
 
-              {/* Speech pointer */}
+              {/* Speech bubble pointer arrow pointing right towards narrative */}
               <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[10px] border-y-transparent border-l-[12px] border-l-[#EFF7FE] z-20" />
               <div className="hidden lg:block absolute -right-[14px] top-1/2 -translate-y-1/2 w-0 h-0 border-y-[11px] border-y-transparent border-l-[14px] border-l-[#BAE6FD] z-10" />
 
@@ -487,13 +534,13 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
               </h3>
             </div>
 
-            {/* Right Column: Detailed Narrative */}
+            {/* Right Column: Detailed Narrative (Exact 1:1 Match to Reference Layout) */}
             <div className="lg:col-span-7 flex flex-col justify-center space-y-4 text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.78] font-normal text-left">
               <p>
-                Navigating complex multi-cloud deployments without a standardized Platform as a Service leads to configuration drift, security gaps, and sluggish release cycles. As an enterprise Cloud Foundry Software Development Company, Firevy.co provides tailored PaaS architectures that empower developers to ship code rapidly without touching servers.
+                Navigating complex multi-cloud deployments without a standardized Platform as a Service leads to configuration drift, security gaps, and sluggish release cycles. As an enterprise Cloud Foundry Software Development Company, Firevy.Co provides tailored PaaS architectures that empower developers to ship code rapidly without touching servers.
               </p>
               <p>
-                Our 100% personalized Cloud Foundry Services are customized to your specific runtime, database binding, and compliance mandates. From Diego cell tuning to VMware Tanzu Application Service (TAS) enterprise migrations, we deliver scalable infrastructure that cuts operational toil and delivers true multi-cloud agility.
+                Our 100% personalized Cloud Foundry Solutions are designed for your unique enterprise workloads. Whether your needs are for Diego container runtime orchestration, BOSH multi-cloud cluster lifecycle management, custom buildpack development, or VMware Tanzu modernization, our certified team provides architectures that strengthen system uptime, accelerate release velocity, and maximize business growth.
               </p>
             </div>
 
@@ -502,7 +549,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       </section>
 
       {/* ========================================================================= */}
-      {/* 7. CUTTING EDGE TECHNOLOGIES SECTION                                      */}
+      {/* 7. CUTTING EDGE TECHNOLOGIES SECTION (EXACT 1:1 MATCH TO FIRST IMAGE)     */}
       {/* ========================================================================= */}
       <section className="py-14 sm:py-20 bg-[#F4F8FA] font-sans text-left border-y border-slate-100">
         <Container className="max-w-6xl">
@@ -512,75 +559,89 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
                 Cutting-Edge Technologies We Use For Cloud Foundry
               </h2>
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] max-w-2xl font-normal leading-relaxed">
-                As a premier Cloud Foundry engineering firm, Firevy.co leverages enterprise-grade PaaS orchestration, lifecycle tooling, and cloud-native frameworks.
+                As a premier Cloud Foundry engineering firm, Firevy.Co leverages enterprise-grade PaaS orchestration, lifecycle tooling, and cloud-native frameworks.
               </p>
             </div>
 
-            {/* Navigation Arrows */}
-            <div className="flex items-center space-x-2.5 mt-4 md:mt-0">
-              <button
-                onClick={() => setTechCarouselIndex((prev) => Math.max(0, prev - 1))}
-                disabled={techCarouselIndex === 0}
-                className="w-10 h-10 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:text-[#005F96] hover:border-[#005F96] disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-xs cursor-pointer"
-                aria-label="Previous technologies"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              <button
-                onClick={() => setTechCarouselIndex((prev) => Math.min(maxTechIndex, prev + 1))}
-                disabled={techCarouselIndex >= maxTechIndex}
-                className="w-10 h-10 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:text-[#005F96] hover:border-[#005F96] disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-xs cursor-pointer"
-                aria-label="Next technologies"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
-
-          {/* 3 Visible Cards Carousel */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {cloudFoundryTechnologies.slice(techCarouselIndex, techCarouselIndex + 3).map((tech) => (
+        {/* Full-Width Edge-to-Edge Cards Carousel Track */}
+        <div className="relative overflow-hidden w-full select-none py-1">
+          <div
+            ref={techScrollRef}
+            className="flex gap-5 sm:gap-6 overflow-x-auto scrollbar-none px-4 sm:px-8 lg:px-12 scroll-smooth py-2"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {cuttingEdgeTechnologies.map((tech) => (
               <div
                 key={tech.id}
-                className="bg-white rounded-[16px] p-7 sm:p-8 shadow-xs border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all duration-300 group"
+                className="w-[300px] sm:w-[340px] lg:w-[370px] shrink-0 rounded-[14px] bg-[#E1F3FD] p-6 sm:p-7 min-h-[220px] flex flex-col justify-start text-left select-none transition-all duration-300 hover:shadow-md hover:bg-[#D7EFFC] border border-[#CCE8FA] group cursor-pointer"
               >
-                <div>
-                  <div className="mb-5 transition-transform duration-300 group-hover:scale-105">
-                    {tech.icon}
-                  </div>
-                  <h3 className="text-[18px] font-[800] text-[#0B0F19] mb-3 leading-snug tracking-tight">
-                    {tech.title}
-                  </h3>
-                  <p className="text-[13px] sm:text-[13.8px] text-[#475569] leading-[1.68] font-normal">
-                    {tech.desc}
-                  </p>
+                {/* Top Icon */}
+                <div className="mb-4 transition-transform duration-300 group-hover:scale-105">
+                  {tech.icon}
                 </div>
+
+                {/* Tech Title */}
+                <h3 className="font-[800] text-[18px] sm:text-[19px] text-[#0B0F19] mb-2 leading-snug tracking-tight">
+                  {tech.title}
+                </h3>
+
+                {/* Tech Description */}
+                <p className="font-normal text-[#334155] text-[13px] sm:text-[13.5px] leading-[1.65]">
+                  {tech.desc}
+                </p>
               </div>
             ))}
           </div>
-        </Container>
+        </div>
+
+        {/* Bottom Center Navigation Arrows Matching Reference First Image */}
+        <div className="flex items-center justify-center space-x-6 mt-8 sm:mt-10">
+          <button
+            onClick={() => {
+              if (techScrollRef.current) {
+                techScrollRef.current.scrollBy({ left: -390, behavior: 'smooth' });
+              }
+            }}
+            aria-label="Previous technologies"
+            className="w-10 h-10 flex items-center justify-center text-slate-800 hover:text-black hover:scale-110 active:scale-95 transition-all cursor-pointer select-none text-2xl font-bold"
+          >
+            ←
+          </button>
+
+          <button
+            onClick={() => {
+              if (techScrollRef.current) {
+                techScrollRef.current.scrollBy({ left: 390, behavior: 'smooth' });
+              }
+            }}
+            aria-label="Next technologies"
+            className="w-10 h-10 flex items-center justify-center text-slate-800 hover:text-black hover:scale-110 active:scale-95 transition-all cursor-pointer select-none text-2xl font-bold"
+          >
+            →
+          </button>
+        </div>
       </section>
 
       {/* ========================================================================= */}
-      {/* 8. OUR PREMIUM SERVICES                                                   */}
+      {/* 8. OUR PREMIUM SERVICES (MATCHING REFERENCE SCREENSHOT)                   */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
-      {/* 9. SUCCESS STORIES                                                        */}
+      {/* 9. SUCCESS STORIES (MATCHING REFERENCE SCREENSHOT)                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
         cards={cloudFoundrySuccessCards}
-        subtitle="Explore how Firevy.co has enabled global enterprises to transform software velocity and achieve resilient multi-cloud operations with Cloud Foundry PaaS."
+        subtitle="Explore how Firevy.Co has enabled global enterprises to transform software velocity and achieve resilient multi-cloud operations with Cloud Foundry PaaS."
       />
 
       {/* ========================================================================= */}
-      {/* 10. PROUD AWARDS BANNER                                                   */}
+      {/* 10. PROUD AWARDS BANNER (PROUD TO HAVE PICKED THESE UP ALONG THE WAY)     */}
       {/* ========================================================================= */}
       <ProudAwardsBanner />
 
       {/* ========================================================================= */}
-      {/* 11. BENEFITS OF OUR CLOUD FOUNDRY SERVICES                                */}
+      {/* 11. BENEFITS OF OUR CLOUD FOUNDRY SERVICES (EXACT 1:1 MATCH TO REFERENCE) */}
       {/* ========================================================================= */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container className="max-w-6xl">
@@ -589,7 +650,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
               Benefits of Our Cloud Foundry Development Services
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
-              A decade of enterprise PaaS engineering, Diego cell optimization, and BOSH automation makes our dedicated Cloud Foundry engineers the ideal technology partners.
+              Years of enterprise cloud engineering, Diego orchestration, and BOSH automation have made our certified Cloud Foundry developers very talented individuals.
             </p>
           </div>
 
@@ -615,22 +676,24 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       </section>
 
       {/* ========================================================================= */}
-      {/* 12. OUR EXPERTISE IN CLOUD FOUNDRY SERVICES (Edge-to-edge Carousel)       */}
+      {/* 12. END-TO-END CLOUD FOUNDRY DEVELOPMENT SERVICES                         */}
       {/* ========================================================================= */}
       <section
         className="py-14 sm:py-18 bg-white font-sans w-full overflow-hidden border-t border-slate-100 text-left"
         onMouseEnter={() => setIsExpertiseHovered(true)}
         onMouseLeave={() => setIsExpertiseHovered(false)}
       >
-        <div className="max-w-4xl mx-auto px-4 text-center mb-8 sm:mb-10">
+        {/* Header Container */}
+        <div className="max-w-4xl mx-auto px-4 text-center mb-8 sm:mb-12">
           <h2 className="font-[800] text-[#0B0F19] tracking-tight leading-tight mb-3 text-[26px] sm:text-[32px] lg:text-[36px]">
-            Our Expertise in Dedicated Cloud Foundry Services
+            End-to-End Cloud Foundry Development Services
           </h2>
-          <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-relaxed max-w-3xl mx-auto font-normal">
-            Our Cloud Foundry team delivers bespoke architecture, deployment automation, and lifecycle operations across hybrid private and public clouds.
+          <p className="text-[13.5px] sm:text-[15px] text-[#475569] leading-relaxed max-w-3xl mx-auto font-normal">
+            We provide all services in Cloud Foundry environments to guarantee scale, performance, and productivity through
           </p>
         </div>
 
+        {/* Edge-to-edge Full-width Carousel */}
         <div className="w-full relative">
           <div
             ref={expertiseScrollRef}
@@ -640,25 +703,14 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
             {cloudFoundryExpertiseCards.map((card, idx) => (
               <div
                 key={idx}
-                className="w-[310px] sm:w-[350px] lg:w-[370px] shrink-0 bg-[#DDF1FC] rounded-[16px] p-6 sm:p-7 flex flex-col justify-between shadow-2xs border border-[#D0EBFB] select-none h-[220px] sm:h-[230px] transition-all duration-300 hover:shadow-md hover:bg-[#D4EDFA]"
+                className="w-[300px] sm:w-[340px] lg:w-[360px] shrink-0 bg-[#DDF1FC] rounded-[16px] p-6 sm:p-7 flex flex-col justify-start border border-[#CEEAFA] select-none min-h-[220px] sm:min-h-[240px] transition-all duration-300 hover:shadow-md hover:bg-[#D5EEFA]"
               >
-                <div>
-                  <h3 className="font-[800] text-[16.5px] sm:text-[18px] text-[#0B0F19] mb-2 text-left leading-snug tracking-tight">
-                    {card.title}
-                  </h3>
-                  <p className="text-[12.5px] sm:text-[13px] text-[#334155] leading-[1.6] text-left font-normal">
-                    {card.desc}
-                  </p>
-                </div>
-
-                <div className="pt-3 text-left">
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center justify-center px-5 py-2 rounded-[5px] bg-[#005F96] hover:bg-[#004A75] text-white font-[700] text-[12.5px] sm:text-[13px] transition-all shadow-2xs cursor-pointer"
-                  >
-                    View More
-                  </a>
-                </div>
+                <h3 className="font-[800] text-[16.5px] sm:text-[18px] text-[#0B0F19] mb-3 text-left leading-snug tracking-tight">
+                  {card.title}
+                </h3>
+                <p className="text-[13px] sm:text-[13.5px] text-[#334155] leading-[1.65] text-left font-normal">
+                  {card.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -680,11 +732,11 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       {/* ========================================================================= */}
       <ProcessWeFollow
         title="Cloud Foundry Development Process We Follow"
-        subtitle="Our structured delivery pipeline: Architecture Assessment -> Buildpack Optimization -> Service Broker Binding -> Automated CI/CD cf push -> 24/7 SRE Monitoring."
+        subtitle="Our systematic cloud pipeline from initial architecture auditing and workload assessment to automated Diego deployment, BOSH integration, and 24/7 SRE monitoring."
       />
 
       {/* ========================================================================= */}
-      {/* 16. OUR STORY, THEIR WORDS                                                */}
+      {/* 16. OUR STORY, THEIR WORDS (VIDEO TESTIMONIALS)                           */}
       {/* ========================================================================= */}
       <OurStoryTheirWordsSection />
 
@@ -709,13 +761,13 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       <DigitalTransformationSlider />
 
       {/* ========================================================================= */}
-      {/* 21. FREQUENTLY ASKED QUESTIONS                                            */}
+      {/* 21. FREQUENTLY ASKED QUESTIONS (Exact 9 Reference FAQs)                   */}
       {/* ========================================================================= */}
       <SapphireFaqSection
         title="Frequently Asked Questions"
         subtitle="We Listen To Queries And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mentioned Below."
         faqs={cloudFoundryFaqs}
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}
@@ -734,7 +786,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
       <div id="contact">
         <IWatchChallengeCtaBanner
           title="Have Cloud Foundry Challenge To Address ?"
-          subtitle="Get access to top Cloud Foundry Certified Architects and Tanzu specialists at Firevy.co to transform your deployment pipeline into an automated PaaS ecosystem."
+          subtitle="Get access to top Cloud Foundry Certified Architects and Tanzu specialists at Firevy.Co to transform your deployment pipeline into an automated PaaS ecosystem."
           buttonText="Hire Now"
         />
       </div>

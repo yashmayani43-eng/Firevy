@@ -267,7 +267,7 @@ export const NativeAppDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Native App Development Services in USA | Custom iOS & Android Apps | Firevy.co"
+        title="Native App Development Services in USA | Custom iOS & Android Apps | Firevy.Co"
         description="Leading Native App Development Company. We engineer fast, secure, and intuitive native mobile apps for iOS and Android using Swift, Kotlin, and modern native frameworks."
         canonical="/services/native-app-development"
       />

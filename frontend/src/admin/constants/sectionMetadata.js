@@ -382,16 +382,16 @@ export const SECTION_METADATA = {
   // Aliases for Company sub-page slugs
   'about-firevy': {
     key: 'aboutKeyMetrics',
-    title: 'About firevy.co & Key Metrics',
+    title: 'About Firevy.Co & Key Metrics',
     category: 'Company Profile',
-    description: 'Manage About firevy.co content, vision, mission, and milestone cards.',
+    description: 'Manage About Firevy.Co content, vision, mission, and milestone cards.',
     editor: AboutKeyMetricsEditor
   },
   about: {
     key: 'aboutKeyMetrics',
-    title: 'About firevy.co & Key Metrics',
+    title: 'About Firevy.Co & Key Metrics',
     category: 'Company Profile',
-    description: 'Manage About firevy.co content, vision, mission, and milestone cards.',
+    description: 'Manage About Firevy.Co content, vision, mission, and milestone cards.',
     editor: AboutKeyMetricsEditor
   },
   'ceo-message': {

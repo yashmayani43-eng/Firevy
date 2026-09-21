@@ -227,7 +227,7 @@ export const AppDevelopmentConsultingService = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="App Development Consulting Services | Mobile App Strategy | Firevy.co"
+        title="App Development Consulting Services | Mobile App Strategy | Firevy.Co"
         description="Accelerate your mobile product journey with Firevy's App Development Consulting Services. Native iOS, Android, Flutter, React Native, UI/UX audits, and scalable cloud architecture."
         keywords="app development consulting, mobile app consulting, mobile app strategy, iOS consulting, Android consulting, Flutter consulting, React Native advisory, mobile product roadmap"
       />

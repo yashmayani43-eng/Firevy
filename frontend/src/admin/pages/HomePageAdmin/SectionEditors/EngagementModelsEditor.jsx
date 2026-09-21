@@ -115,7 +115,7 @@ export const EngagementModelsEditor = ({ data, onChange }) => {
             <textarea
               className="form-control"
               rows={2}
-              value={data?.description || 'At firevy.co, we provide full-cycle custom software development services to meet your financial requirements.'}
+              value={data?.description || 'At Firevy.Co, we provide full-cycle custom software development services to meet your financial requirements.'}
               onChange={(e) => handleFieldChange('description', e.target.value)}
               style={{
                 width: '100%',

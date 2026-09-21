@@ -848,7 +848,7 @@ export const UsedCarAppDevelopmentService = () => {
               >
                 {/* Top Banner Graphic */}
                 <div className={`relative w-full h-48 sm:h-52 overflow-hidden bg-gradient-to-br ${blog.banner.bgGradient} p-4 flex flex-col justify-between select-none`}>
-                  {/* Top Left firevy Logo */}
+                  {/* Top Left Firevy Logo */}
                   <div className="flex items-center">
                     <img
                       src="/firevy_logo_dark.png"

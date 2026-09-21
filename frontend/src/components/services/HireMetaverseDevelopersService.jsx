@@ -146,7 +146,7 @@ export const HireMetaverseDevelopersService = () => {
     },
     {
       q: 'Which company is best for Metaverse development?',
-      a: 'Firevy.co is a top-rated Metaverse & 3D Spatial development company with 20+ years of industry leadership and a team of senior 3D graphics engineers and Web3 developers delivering virtual solutions globally.'
+      a: 'Firevy.Co is a top-rated Metaverse & 3D Spatial development company with 20+ years of industry leadership and a team of senior 3D graphics engineers and Web3 developers delivering virtual solutions globally.'
     },
     {
       q: 'Do you offer post-launch maintenance for 3D virtual worlds?',
@@ -157,7 +157,7 @@ export const HireMetaverseDevelopersService = () => {
       a: 'Yes, Metaverse and spatial computing platforms are growing rapidly across gaming, corporate virtual offices, e-commerce try-ons, real estate walkthroughs, and interactive educational training environments.'
     },
     {
-      q: 'Why should I hire Metaverse developers from Firevy.co?',
+      q: 'Why should I hire Metaverse developers from Firevy.Co?',
       a: 'Our dedicated Metaverse developers bring deep 3D spatial domain expertise, bi-weekly agile velocity, 100% IP & code ownership, direct communication, and 15-day risk-free trials to guarantee project success.'
     },
     {
@@ -174,7 +174,7 @@ export const HireMetaverseDevelopersService = () => {
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#006095] selection:text-white">
       <SEO
         title="Hire Metaverse Developers | Dedicated 3D, VR/AR & Web3 Engineers"
-        description="Hire dedicated Metaverse developers from Firevy.co. Top 1% vetted 3D Spatial, Unity, Unreal Engine, WebGL & VR/AR experts for high-performance virtual worlds and Web3 environments."
+        description="Hire dedicated Metaverse developers from Firevy.Co. Top 1% vetted 3D Spatial, Unity, Unreal Engine, WebGL & VR/AR experts for high-performance virtual worlds and Web3 environments."
         keywords="Hire Metaverse Developers, Hire Metaverse Developer, Metaverse Development Company, Dedicated VR AR Engineers, Web3 3D Developers"
       />
 
@@ -191,7 +191,7 @@ export const HireMetaverseDevelopersService = () => {
                   Hire Metaverse Developers
                 </h1>
                 <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed max-w-2xl">
-                  Hire Firevy.co's dedicated Metaverse development experts to create immersive 3D virtual worlds, augmented and virtual reality (AR/VR) platforms, spatial computing solutions, or full-stack Web3 metaverse platforms that scale with your vision. Firevy.co development has an array of skilled Metaverse 3D developers, Unity/Unreal engineers, WebGL developers, and Web3 spatial computing specialists for hire. Whether you're developing a virtual real estate platform, 3D avatar ecosystem, VR gaming arena, or enterprise virtual collaboration environment, we provide secure, high-performance, and production-grade solutions for your unique use case. Collaborating with our developers allows you to cut down on development time and speed up your time-to-market using modern 3D spatial engineering methodology.
+                  Hire Firevy.Co's dedicated Metaverse development experts to create immersive 3D virtual worlds, augmented and virtual reality (AR/VR) platforms, spatial computing solutions, or full-stack Web3 metaverse platforms that scale with your vision. Firevy.Co development has an array of skilled Metaverse 3D developers, Unity/Unreal engineers, WebGL developers, and Web3 spatial computing specialists for hire. Whether you're developing a virtual real estate platform, 3D avatar ecosystem, VR gaming arena, or enterprise virtual collaboration environment, we provide secure, high-performance, and production-grade solutions for your unique use case. Collaborating with our developers allows you to cut down on development time and speed up your time-to-market using modern 3D spatial engineering methodology.
                 </p>
               </div>
 
@@ -343,7 +343,7 @@ export const HireMetaverseDevelopersService = () => {
               </h2>
               <div className="space-y-4 text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
                 <p>
-                  Our metaverse developers are pretty efficient and hold years of expertise. Other perks of hiring our developers include: We enable you to communicate with your development team in real-time and directly using Skype, Slack, or Teams. You are free to receive demonstrations whenever it is convenient for you. Stop wishing things are going according to plan and start realizing they are. From the initial conception to the final invoicing of your projects, you will have the ability to see the whole process personally. Hire Dedicated Metaverse Developers who have received instruction in efficient communication and are always accessible to speak with you in real-time. Without mutual trust, there can be no successful collaboration. Trust is the foundation upon which Firevy.co was formed, and we are aware that it is something that must be gained, appreciated, and maintained.
+                  Our metaverse developers are pretty efficient and hold years of expertise. Other perks of hiring our developers include: We enable you to communicate with your development team in real-time and directly using Skype, Slack, or Teams. You are free to receive demonstrations whenever it is convenient for you. Stop wishing things are going according to plan and start realizing they are. From the initial conception to the final invoicing of your projects, you will have the ability to see the whole process personally. Hire Dedicated Metaverse Developers who have received instruction in efficient communication and are always accessible to speak with you in real-time. Without mutual trust, there can be no successful collaboration. Trust is the foundation upon which Firevy.Co was formed, and we are aware that it is something that must be gained, appreciated, and maintained.
                 </p>
               </div>
             </div>
@@ -473,7 +473,7 @@ export const HireMetaverseDevelopersService = () => {
           <div className="space-y-8">
             <div className="text-center max-w-6xl mx-auto space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-slate-900 tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
-                Meet Firevy.co's Exceptional Team of Seasoned Experts
+                Meet Firevy.Co's Exceptional Team of Seasoned Experts
               </h2>
             </div>
 
@@ -617,7 +617,7 @@ export const HireMetaverseDevelopersService = () => {
           <div className="space-y-8 max-w-6xl mx-auto">
             <div className="text-center space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
             </div>
 
@@ -816,7 +816,7 @@ export const HireMetaverseDevelopersService = () => {
                 About Us
               </h2>
               <p className="text-xs sm:text-sm md:text-base text-cyan-100 font-medium">
-                Firevy.co delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success
+                Firevy.Co delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success
               </p>
             </div>
 
@@ -898,10 +898,10 @@ export const HireMetaverseDevelopersService = () => {
           <div className="space-y-12 max-w-6xl mx-auto">
             <div className="text-center space-y-3 max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team
+                Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+                At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
               </p>
             </div>
 
@@ -960,7 +960,7 @@ export const HireMetaverseDevelopersService = () => {
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
                   }`}
                 >
-                  Firevy.co
+                  Firevy.Co
                 </button>
                 <button
                   onClick={() => setResponsibilityTab('client')}

@@ -280,7 +280,7 @@ export const HireCodeIgniterDevelopersService = () => {
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
         title="Hire CodeIgniter Developer | Dedicated CodeIgniter Web Developers at $21/Hr"
-        description="Hire dedicated CodeIgniter developers from Firevy.co. We are among the leading providers of codeigniter development services tailored for responsive web & mobile apps."
+        description="Hire dedicated CodeIgniter developers from Firevy.Co. We are among the leading providers of codeigniter development services tailored for responsive web & mobile apps."
         canonical="/services/hire-codeigniter-developers"
       />
 
@@ -430,7 +430,7 @@ export const HireCodeIgniterDevelopersService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium">
-              Hire CodeIgniter Developers from Firevy.co Starts from,
+              Hire CodeIgniter Developers from Firevy.Co Starts from,
             </p>
           </div>
 
@@ -1249,7 +1249,7 @@ export const HireCodeIgniterDevelopersService = () => {
                   responsibilityTab === 'sapphire' ? 'bg-[#005F96] text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                Firevy.co
+                Firevy.Co
               </button>
               <button
                 onClick={() => setResponsibilityTab('client')}

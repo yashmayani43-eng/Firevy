@@ -335,7 +335,7 @@ export const EpicorErpConsultingServices = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Epicor ERP Consulting Services | Kinetic, P21 & Custom Integrations | Firevy.co"
+        title="Epicor ERP Consulting Services | Kinetic, P21 & Custom Integrations | Firevy.Co"
         description="Maximize enterprise efficiency with Firevy's certified Epicor ERP Consulting Services. Specializing in Epicor Kinetic cloud migrations, Prophet 21 distribution, custom BPM workflows, and REST API integrations."
         keywords="epicor erp consulting services, epicor kinetic consulting, prophet 21 consulting, epicor erp implementation, epicor customization, epicor bpm, epicor integration partner"
       />

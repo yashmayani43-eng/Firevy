@@ -135,7 +135,7 @@ export const BrochureForm = ({
               value={
                 hero.subtitle !== undefined
                   ? hero.subtitle
-                  : 'firevy.co is a Leading software and app development company with offices worldwide. If you want to know more about our business.'
+                  : 'Firevy.Co is a Leading software and app development company with offices worldwide. If you want to know more about our business.'
               }
               onChange={(e) => updateSection('hero', 'subtitle', e.target.value)}
             />
@@ -218,7 +218,7 @@ export const BrochureForm = ({
               value={
                 downloadableInfo.description !== undefined
                   ? downloadableInfo.description
-                  : "As a global leader in the software development market, we have 2800+ satisfied clients in 30+ countries. Established in 2002, we are a leading Mobile App Development Company in the USA with ISO 27001:2013 certification. As a Multinational company, we provide software and website development services from our cutting-edge delivery centers in Ahmedabad, India. We have experience working with several Fortune 100 companies and popular brands like American Express, Bayer, Chevron, Almarai, Adani, L&T, Vedanta, Orient Cement, Dr Reddy, and LOREAL. Additionally, we take great pride in being Clutch and Google's top-rated mobile app development company. Whether you are looking for mobile app development services, website design, or software development, firevy.co is your right destination. firevy.co can deliver 1500+ projects and assists big clients like Adani and American Express skyrocket their business by delivering top-notch services."
+                  : "As a global leader in the software development market, we have 2800+ satisfied clients in 30+ countries. Established in 2002, we are a leading Mobile App Development Company in the USA with ISO 27001:2013 certification. As a Multinational company, we provide software and website development services from our cutting-edge delivery centers in Ahmedabad, India. We have experience working with several Fortune 100 companies and popular brands like American Express, Bayer, Chevron, Almarai, Adani, L&T, Vedanta, Orient Cement, Dr Reddy, and LOREAL. Additionally, we take great pride in being Clutch and Google's top-rated mobile app development company. Whether you are looking for mobile app development services, website design, or software development, Firevy.Co is your right destination. Firevy.Co can deliver 1500+ projects and assists big clients like Adani and American Express skyrocket their business by delivering top-notch services."
               }
               onChange={(e) => updateContentField('downloadableInfo', 'description', e.target.value)}
             />
@@ -315,8 +315,8 @@ export const BrochureForm = ({
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="firevy"
-                      value={downloadableInfo.card3Brand || 'firevy'}
+                      placeholder="Firevy"
+                      value={downloadableInfo.card3Brand || 'Firevy'}
                       onChange={(e) => updateContentField('downloadableInfo', 'card3Brand', e.target.value)}
                     />
                   </AdminFormField>
@@ -362,8 +362,8 @@ export const BrochureForm = ({
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="www.firevy.co"
-                      value={downloadableInfo.card3Website || 'www.firevy.co'}
+                      placeholder="www.Firevy.Co"
+                      value={downloadableInfo.card3Website || 'www.Firevy.Co'}
                       onChange={(e) => updateContentField('downloadableInfo', 'card3Website', e.target.value)}
                     />
                   </AdminFormField>
@@ -408,10 +408,10 @@ export const BrochureForm = ({
             <input
               type="text"
               className="form-control"
-              placeholder="Thank you! Your firevy.co digital brochure download has started."
+              placeholder="Thank you! Your Firevy.Co digital brochure download has started."
               value={
                 brochureForm.successMessage ||
-                'Thank you! Your firevy.co digital brochure download has started.'
+                'Thank you! Your Firevy.Co digital brochure download has started.'
               }
               onChange={(e) => updateContentField('brochureForm', 'successMessage', e.target.value)}
             />
@@ -438,7 +438,7 @@ export const BrochureForm = ({
                   updateContentField('brochureForm', 'pdfUrl', url);
                   updateRootField('brochurePdf', url);
                 }}
-                helperText="Upload a valid PDF file (e.g. firevy-corporate-brochure.pdf). Max recommended size: 25 MB."
+                helperText="Upload a valid PDF file (e.g. Firevy-corporate-brochure.pdf). Max recommended size: 25 MB."
               />
             </AdminFormField>
           </div>

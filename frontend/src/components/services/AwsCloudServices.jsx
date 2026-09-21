@@ -224,10 +224,10 @@ export const AwsCloudServices = () => {
   return (
     <div className="bg-white min-h-screen text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="AWS Cloud Services | Enterprise Cloud Migration & Architecture | Firevy.co"
+        title="AWS Cloud Services | Enterprise Cloud Migration & Architecture | Firevy.Co"
         description="Accelerate your cloud journey with Firevy's AWS Cloud Services. AWS certified cloud architects, cloud migration, serverless Lambda, Kubernetes EKS, and 24/7 managed cloud operations."
-        keywords="aws cloud services, aws cloud consulting, amazon web services, aws cloud migration, aws serverless lambda, aws well-architected framework, aws cloud devops, aws cost optimization, Firevy.co"
-        url="https://firevy.co/services/aws-cloud-services"
+        keywords="aws cloud services, aws cloud consulting, amazon web services, aws cloud migration, aws serverless lambda, aws well-architected framework, aws cloud devops, aws cost optimization, Firevy.Co"
+        url="https://Firevy.co/services/aws-cloud-services"
       />
 
       {/* ========================================================================= */}
@@ -415,7 +415,7 @@ export const AwsCloudServices = () => {
       {/* ========================================================================= */}
       {/* 6. OUR PREMIUM SERVICES (IMAGE 3) */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 7. EXPERTISE IN OUR AWS CLOUD SERVICES (IMAGE 1) */}
@@ -575,7 +575,7 @@ export const AwsCloudServices = () => {
       {/* ========================================================================= */}
       <WhatSetsUsApartSection
         title="What Sets Us Apart As AWS Cloud Services Provider?"
-        subtitle="Being unique is our quality! Firevy.co believes in the engineering principles that give our clients an edge over their competition. We are a renowned Amazon Web Services consulting and cloud engineering organization serving global enterprises with end-to-end cloud adoption support. Our AWS Well-Architected Framework compliance, containerized microservices, serverless innovation, and proactive FinOps monitoring stand us one level above the rest."
+        subtitle="Being unique is our quality! Firevy.Co believes in the engineering principles that give our clients an edge over their competition. We are a renowned Amazon Web Services consulting and cloud engineering organization serving global enterprises with end-to-end cloud adoption support. Our AWS Well-Architected Framework compliance, containerized microservices, serverless innovation, and proactive FinOps monitoring stand us one level above the rest."
       />
 
       {/* ========================================================================= */}

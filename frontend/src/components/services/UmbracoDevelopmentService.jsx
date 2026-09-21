@@ -103,7 +103,7 @@ export const UmbracoDevelopmentService = () => {
       a: "Unlike PHP-based CMSs, Umbraco is built on Microsoft .NET, providing faster execution, superior type-safety, and seamless integration with Microsoft Azure, SQL Server, and enterprise systems. It provides full control over HTML markup and has zero bloat."
     },
     {
-      q: "3. What Umbraco development services does Firevy.co offer?",
+      q: "3. What Umbraco development services does Firevy.Co offer?",
       a: "We offer end-to-end Umbraco solutions including bespoke website and portal development, version upgrades (to Umbraco 13+ on .NET 8), seamless CMS migrations, headless architecture implementations, Umbraco Commerce integration, and 24/7 SLA maintenance."
     },
     {
@@ -119,7 +119,7 @@ export const UmbracoDevelopmentService = () => {
       a: "Absolutely. Using Umbraco Commerce (formerly Vendr), we build high-converting, scalable online shopping platforms with custom product catalogs, multi-currency support, tax calculation engines, and integrations with Stripe, PayPal, and ERPs."
     },
     {
-      q: "7. How does Firevy.co ensure Umbraco security?",
+      q: "7. How does Firevy.Co ensure Umbraco security?",
       a: "We apply Microsoft security best practices including role-based access control (RBAC), multi-factor authentication (MFA), OWASP Top 10 threat mitigation, HTTPS enforcement, encrypted connection strings in Azure Key Vault, and scheduled automated updates."
     },
     {
@@ -127,16 +127,16 @@ export const UmbracoDevelopmentService = () => {
       a: "Yes! We provide certified senior .NET / Umbraco developers on flexible engagement models including Dedicated Monthly Teams, Hourly Time & Material, and Fixed-Price sprints to supplement your in-house team."
     },
     {
-      q: "9. Why partner with Firevy.co for Umbraco development?",
-      a: "With 23+ years of enterprise engineering excellence, 320+ verified 5-star Clutch reviews, and certified Microsoft .NET architects, Firevy.co delivers future-proof, high-speed, and secure Umbraco digital solutions on time and on budget."
+      q: "9. Why partner with Firevy.Co for Umbraco development?",
+      a: "With 23+ years of enterprise engineering excellence, 320+ verified 5-star Clutch reviews, and certified Microsoft .NET architects, Firevy.Co delivers future-proof, high-speed, and secure Umbraco digital solutions on time and on budget."
     }
   ];
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Umbraco Development Company in USA | Umbraco CMS Development Services | Firevy.co"
-        description="Firevy.co offers top-rated Umbraco development services in USA. Expert .NET CMS web development, custom modules, migrations & enterprise solutions. Get a quote!"
+        title="Umbraco Development Company in USA | Umbraco CMS Development Services | Firevy.Co"
+        description="Firevy.Co offers top-rated Umbraco development services in USA. Expert .NET CMS web development, custom modules, migrations & enterprise solutions. Get a quote!"
       />
 
       {/* =========================================================================
@@ -158,7 +158,7 @@ export const UmbracoDevelopmentService = () => {
 
               {/* Description Paragraph */}
               <p className="text-[14px] sm:text-[15px] text-[#475569] font-normal leading-[1.75] max-w-xl">
-                Firevy.co offer Umbraco development services to businesses throughout the world with the help of our team of professionals and highly experienced developers.
+                Firevy.Co offer Umbraco development services to businesses throughout the world with the help of our team of professionals and highly experienced developers.
               </p>
 
               {/* Single "Let's Talk" Button Matching Screenshot */}
@@ -189,7 +189,7 @@ export const UmbracoDevelopmentService = () => {
                     {/* Simulated Top Website Navigation Bar */}
                     <div className="bg-[#0F172A] text-white px-3 py-1.5 flex items-center justify-between text-[7px]">
                       <div className="flex items-center space-x-2">
-                        <span className="font-extrabold text-[8px] text-[#38BDF8]">Firevy.co</span>
+                        <span className="font-extrabold text-[8px] text-[#38BDF8]">Firevy.Co</span>
                       </div>
                       <div className="flex items-center space-x-2 text-slate-300 font-medium">
                         <span>Solutions</span>
@@ -398,7 +398,7 @@ export const UmbracoDevelopmentService = () => {
             {/* Right Box: In-Depth Narrative */}
             <div className="lg:col-span-7 flex flex-col justify-center space-y-4 text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal text-left">
               <p>
-                Umbraco is an enterprise-level, open-source CMS platform built on the Microsoft .NET framework. It gives your marketing and engineering teams complete creative freedom over UI layouts and robust integrations without restrictive monolithic limits. As a premier Umbraco development company in USA, Firevy.co delivers agile, custom-engineered digital solutions tailored to your business objectives.
+                Umbraco is an enterprise-level, open-source CMS platform built on the Microsoft .NET framework. It gives your marketing and engineering teams complete creative freedom over UI layouts and robust integrations without restrictive monolithic limits. As a premier Umbraco development company in USA, Firevy.Co delivers agile, custom-engineered digital solutions tailored to your business objectives.
               </p>
 
               <p>
@@ -413,7 +413,7 @@ export const UmbracoDevelopmentService = () => {
       {/* =========================================================================
           OUR PREMIUM SERVICES (10 White Rounded Cards on Deep Blue)
           ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* =========================================================================
           SUCCESS STORIES (3 Rich Case Study Mockups on Soft Cyan)
@@ -1579,7 +1579,7 @@ export const UmbracoDevelopmentService = () => {
                       Message Sent Successfully!
                     </h3>
                     <p className="text-[14px] text-slate-600 max-w-sm mx-auto">
-                      Thank you for contacting Firevy.co. Our Umbraco .NET technical lead will review your project requirements and get in touch within 24 hours.
+                      Thank you for contacting Firevy.Co. Our Umbraco .NET technical lead will review your project requirements and get in touch within 24 hours.
                     </p>
                   </div>
                 ) : (

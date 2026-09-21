@@ -84,53 +84,53 @@ export const DEFAULT_51_WHY_CHOOSE_CARDS = [
   { id: 1, title: 'Fortune 100 clientele', desc: 'Effective solutions with delivering satisfactory outcomes has enabled us to add fortune 100-1000 clients to list.', iconName: 'Award', iconImage: '' },
   { id: 2, title: 'ISO Certified 27001', desc: 'We are an ISO certified company, hence you can expect genuinity with no frauds or misery.', iconName: 'Globe', iconImage: '' },
   { id: 3, title: '1500+ Success Stories', desc: 'Covered 1500+ satisfied clients for the product (education domain) across the globe.', iconName: 'Star', iconImage: '' },
-  { id: 4, title: 'Clients Presence', desc: "Clients in more than 25 countries across the globe are advocates of firevy.co's deliverability, quality, and production.", iconName: 'Users', iconImage: '' },
+  { id: 4, title: 'Clients Presence', desc: "Clients in more than 25 countries across the globe are advocates of Firevy.Co's deliverability, quality, and production.", iconName: 'Users', iconImage: '' },
   { id: 5, title: 'Since', desc: '2002! Yes, having presence in market from more than 20 years and still counting. Choosing us benefits you to get your product deployed under expert technicians as per your expectations.', iconName: 'Calendar', iconImage: '' },
-  { id: 6, title: 'Awards & Achievements', desc: 'firevy.co is an award winning and well known name in education domain with amazing ranking on google (SEO) and holding more than 15+ awards for the product.', iconName: 'Award', iconImage: '' },
-  { id: 7, title: 'No Hidden Costs', desc: 'Pay for what service you get and nothing else. firevy.co has a strict policy of avoiding any additional charges and taking payments once the work is completely done (in freelancing portals).', iconName: 'FileText', iconImage: '' },
+  { id: 6, title: 'Awards & Achievements', desc: 'Firevy.Co is an award winning and well known name in education domain with amazing ranking on google (SEO) and holding more than 15+ awards for the product.', iconName: 'Award', iconImage: '' },
+  { id: 7, title: 'No Hidden Costs', desc: 'Pay for what service you get and nothing else. Firevy.Co has a strict policy of avoiding any additional charges and taking payments once the work is completely done (in freelancing portals).', iconName: 'FileText', iconImage: '' },
   { id: 8, title: 'Recommendations', desc: '127+ verified reviews on clutch platform, top-rated profile on Upwork (100% client retention and satisfaction noted), amongst top 1% players on freelancer portal (Preferred freelancer badge), and some other recommendation on Good firms, cafeteria , and other review platforms.', iconName: 'Sparkles', iconImage: '' },
-  { id: 9, title: 'Free Guidance', desc: 'New to web development or app development? please feel free for any guidance or consultation, firevy.co provides it completely free of charge and keeps no charge for guiding or communicating with new clients in the market.', iconName: 'MessageSquare', iconImage: '' },
-  { id: 10, title: 'One Stop Shop', desc: 'Tired of finding & paying for individuals with different skills? firevy.co comes up with a one roof solution, enabling you to get everything from designs to QA and support at a single stop. Allow firevy.co to minimize your efforts.', iconName: 'Briefcase', iconImage: '' },
-  { id: 11, title: 'Trust', desc: 'Hire firevy.co and get secured. Handover all your worries and concerns to a 23+ years + 270001 ISO-Certified firm and get rid of any frauds or worries. Not only this, Our reputation is our shadow, hence we cannot at all afford ruining our reputation because of any fraud or misbehaves.', iconName: 'ShieldCheck', iconImage: '' },
+  { id: 9, title: 'Free Guidance', desc: 'New to web development or app development? please feel free for any guidance or consultation, Firevy.Co provides it completely free of charge and keeps no charge for guiding or communicating with new clients in the market.', iconName: 'MessageSquare', iconImage: '' },
+  { id: 10, title: 'One Stop Shop', desc: 'Tired of finding & paying for individuals with different skills? Firevy.Co comes up with a one roof solution, enabling you to get everything from designs to QA and support at a single stop. Allow Firevy.Co to minimize your efforts.', iconName: 'Briefcase', iconImage: '' },
+  { id: 11, title: 'Trust', desc: 'Hire Firevy.Co and get secured. Handover all your worries and concerns to a 23+ years + 270001 ISO-Certified firm and get rid of any frauds or worries. Not only this, Our reputation is our shadow, hence we cannot at all afford ruining our reputation because of any fraud or misbehaves.', iconName: 'ShieldCheck', iconImage: '' },
   { id: 12, title: 'Enterprise Solutions', desc: 'Enterprise solutions quality guaranteed; covered clients with employee strength more than 500000, and their branches spread in more than 300 locations.', iconName: 'Target', iconImage: '' },
-  { id: 13, title: 'Customer Retention', desc: "Adani group has been part of firevy.co's client library since 2012.", iconName: 'Heart', iconImage: '' },
+  { id: 13, title: 'Customer Retention', desc: "Adani group has been part of Firevy.Co's client library since 2012.", iconName: 'Heart', iconImage: '' },
   { id: 14, title: 'Proud To Have', desc: '2 decades of experience in education domain and 10+ of experience in Healthcare domain.', iconName: 'Award', iconImage: '' },
   { id: 15, title: 'Diversified Portfolio', desc: 'We provide diversified services in domain industries like: Cement, power, refinery, logistics, engineering, Finance, Automotive, steel, energy, chemicals.', iconName: 'BookOpen', iconImage: '' },
-  { id: 16, title: 'Dedicated', desc: 'Facing issues of unavailability from freelancers? firevy.co comes with full time availability with multiple options of developers incase the one gets unavailable.', iconName: 'Users', iconImage: '' },
-  { id: 17, title: 'Cost And ROI', desc: 'firevy.co takes care of your budget and helps you to workout even in low budgets, the idea of going for a MVP comes into picture under such scenarios and we proceed with helping you with a model that helps you to generate ROI first.', iconName: 'FileText', iconImage: '' },
-  { id: 18, title: 'Boutique Agency', desc: 'Services that firevy.co provides from a single roof includes: Web Development, Mobile App Development, Cloud & DevOps, Product Development, Software Testing & QA, Digital Marketing, Software Maintenance & Support.', iconName: 'Briefcase', iconImage: '' },
-  { id: 19, title: 'Domain Expertise', desc: 'firevy.co comes up with attitude of learning though it has been providing its services from last 2 decades. With time we have evolved to latest technologies and languages like flutter, react-native, ML, react JS, Node JS, etc. Making it easy for you to find all under a single roof.', iconName: 'Globe', iconImage: '' },
-  { id: 20, title: 'Secured & Safe', desc: 'firevy.co is bound to keep all your data private by signing NDAs We understand sensitivity of project information, and insured to work on high-security/high-safety systems. In this way we will implement essential steps to protect proprietary and personal data.', iconName: 'ShieldCheck', iconImage: '' },
-  { id: 21, title: 'Easy Handover', desc: "Honest enough to say 'Sorry, not good fit for you'. Need to switch your preference? please don't hesitate at all. firevy.co provides the complete KT (Knowledge Transfer) to next party keep you updated of everything with an easy exit process.", iconName: 'CheckCircle2', iconImage: '' },
-  { id: 22, title: 'Enterprise Apps', desc: 'firevy.co is not only focused on on-demand services apps development. But, also have an expert eye on providing enterprise apps and solution like ERP development, CRM development, CRMS, SaaS product development, and Sharepoint/Ninetex solutions too.', iconName: 'Target', iconImage: '' },
-  { id: 23, title: 'Problem Solving', desc: 'firevy.co believes in client satisfaction, hence enables you to work or communicate with techie who would not only provide problem solving approaches, but will also help to make a road map and fulfill your requirement in best possible manner.', iconName: 'Sparkles', iconImage: '' },
+  { id: 16, title: 'Dedicated', desc: 'Facing issues of unavailability from freelancers? Firevy.Co comes with full time availability with multiple options of developers incase the one gets unavailable.', iconName: 'Users', iconImage: '' },
+  { id: 17, title: 'Cost And ROI', desc: 'Firevy.Co takes care of your budget and helps you to workout even in low budgets, the idea of going for a MVP comes into picture under such scenarios and we proceed with helping you with a model that helps you to generate ROI first.', iconName: 'FileText', iconImage: '' },
+  { id: 18, title: 'Boutique Agency', desc: 'Services that Firevy.Co provides from a single roof includes: Web Development, Mobile App Development, Cloud & DevOps, Product Development, Software Testing & QA, Digital Marketing, Software Maintenance & Support.', iconName: 'Briefcase', iconImage: '' },
+  { id: 19, title: 'Domain Expertise', desc: 'Firevy.Co comes up with attitude of learning though it has been providing its services from last 2 decades. With time we have evolved to latest technologies and languages like flutter, react-native, ML, react JS, Node JS, etc. Making it easy for you to find all under a single roof.', iconName: 'Globe', iconImage: '' },
+  { id: 20, title: 'Secured & Safe', desc: 'Firevy.Co is bound to keep all your data private by signing NDAs We understand sensitivity of project information, and insured to work on high-security/high-safety systems. In this way we will implement essential steps to protect proprietary and personal data.', iconName: 'ShieldCheck', iconImage: '' },
+  { id: 21, title: 'Easy Handover', desc: "Honest enough to say 'Sorry, not good fit for you'. Need to switch your preference? please don't hesitate at all. Firevy.Co provides the complete KT (Knowledge Transfer) to next party keep you updated of everything with an easy exit process.", iconName: 'CheckCircle2', iconImage: '' },
+  { id: 22, title: 'Enterprise Apps', desc: 'Firevy.Co is not only focused on on-demand services apps development. But, also have an expert eye on providing enterprise apps and solution like ERP development, CRM development, CRMS, SaaS product development, and Sharepoint/Ninetex solutions too.', iconName: 'Target', iconImage: '' },
+  { id: 23, title: 'Problem Solving', desc: 'Firevy.Co believes in client satisfaction, hence enables you to work or communicate with techie who would not only provide problem solving approaches, but will also help to make a road map and fulfill your requirement in best possible manner.', iconName: 'Sparkles', iconImage: '' },
   { id: 24, title: 'Strategy Development', desc: "As we follow agile methodology you'll find precise and accurate development strategies, but it is not limited to development strategies, we also focus on after development and client retention strategy which has helped us alot to maintain 100% client retention in past.", iconName: 'CheckCircle2', iconImage: '' },
   { id: 25, title: 'Flexible Availability', desc: '40 hours/week, 8 hours/day. -Available on weekends as well (in case of urgent deliveries) would need to be informed before a day. -Would be working dedicatedly on your projects, reporting to you daily with updates and progress.', iconName: 'Users', iconImage: '' },
-  { id: 26, title: 'Cost Optimization', desc: "Choosing firevy.co might be beneficial for you has you can hire a team at a cost of single individual. firevy.co's hourly rate are having wide ranges depending upon what developers you choose. Making you comfortable to choose developers according to the complexity of your task.", iconName: 'FileText', iconImage: '' },
-  { id: 27, title: 'Focused On UI/UX', desc: 'User experience is quite important and firevy.co pressures it more. We offer clients to go with an initial milestone of designs only. Finalizing it first, and then proceeding it with the final development after complete satisfaction of your on the designs.', iconName: 'Sparkles', iconImage: '' },
+  { id: 26, title: 'Cost Optimization', desc: "Choosing Firevy.Co might be beneficial for you has you can hire a team at a cost of single individual. Firevy.Co's hourly rate are having wide ranges depending upon what developers you choose. Making you comfortable to choose developers according to the complexity of your task.", iconName: 'FileText', iconImage: '' },
+  { id: 27, title: 'Focused On UI/UX', desc: 'User experience is quite important and Firevy.Co pressures it more. We offer clients to go with an initial milestone of designs only. Finalizing it first, and then proceeding it with the final development after complete satisfaction of your on the designs.', iconName: 'Sparkles', iconImage: '' },
   { id: 28, title: 'Timely Delivery', desc: 'A proven track record of on-time delivery. We decide the deadline of the applications in the initial negotiation phases. Setting the timeframe by considering the time to be taken for debugging and training - Enabling you a get a complete road view of your project before you award.', iconName: 'Calendar', iconImage: '' },
   { id: 29, title: 'Digitization', desc: 'Expanding and working on providing modern tech solutions that can involved with help of Artificial intelligence, Machine learning, Virtual reality, and IoT as well - helping us to transform digitally and be a keen competition in the market.', iconName: 'Globe', iconImage: '' },
-  { id: 30, title: 'Cloud Computing', desc: 'World is switching to cloud! Everyone is getting rid of online servers and offline storage stuff. firevy.co comes up with an updated support in cloud technologies as well like AWS, Docker, Jenkins, Oracle, DevOps, and many more.', iconName: 'Target', iconImage: '' },
+  { id: 30, title: 'Cloud Computing', desc: 'World is switching to cloud! Everyone is getting rid of online servers and offline storage stuff. Firevy.Co comes up with an updated support in cloud technologies as well like AWS, Docker, Jenkins, Oracle, DevOps, and many more.', iconName: 'Target', iconImage: '' },
   { id: 31, title: 'Testing Prototypes', desc: 'We know and understand the importance of testing, hence the testing does not come at the end of the project, but we offer you multiple testing levels like unit testing, prototype testing, UI/UX testing, and deployment testing.', iconName: 'ShieldCheck', iconImage: '' },
-  { id: 32, title: 'English Proficiency', desc: 'No miscommunication or language barrier. firevy.co comes up with the best and energetic team completely trained and quoted with proficiency in English from Sales to support. Giving you a very homely feel via easy means of communication.', iconName: 'MessageSquare', iconImage: '' },
-  { id: 33, title: 'The BRD Policy', desc: "firevy.co comes up with a policy, where everything would be freezed and pre-written in a BRD (Business requirement document) Work starts only after client's approval on the BRD. Let's avoid the possible communication gaps and any possible future disputes.", iconName: 'FileText', iconImage: '' },
-  { id: 34, title: 'Initial Design Milestone', desc: 'Facing trust issues? Worried about your project budgets? Start with firevy.co at just a short milestone for the rough wireframes and mockups! Essure the quality and decide, wanna proceed with us or not. Release the milestone only if satisfied by the work. No need to pay big amounts in name of advance.', iconName: 'CheckCircle2', iconImage: '' },
-  { id: 35, title: 'On-Demand POCs', desc: 'Looking for someone who can provide you quickest solution for a on-demand service app (MVPs)? firevy.co is a perfect place to help you with such POCs at cost efficient rates + quickest delivery through white labeling.', iconName: 'Briefcase', iconImage: '' },
-  { id: 36, title: 'Always In Touch', desc: "Weather it's clients, partners, people, or prospects, firevy.co believes in staying touch with everyone and look forward for a better and strong relationship.", iconName: 'Heart', iconImage: '' },
-  { id: 37, title: 'Innovation', desc: 'Innovation is birth of new Invention . firevy.co comes up with innovative techniques making your projects/products more precise and up to date with adding modern touches.', iconName: 'Sparkles', iconImage: '' },
+  { id: 32, title: 'English Proficiency', desc: 'No miscommunication or language barrier. Firevy.Co comes up with the best and energetic team completely trained and quoted with proficiency in English from Sales to support. Giving you a very homely feel via easy means of communication.', iconName: 'MessageSquare', iconImage: '' },
+  { id: 33, title: 'The BRD Policy', desc: "Firevy.Co comes up with a policy, where everything would be freezed and pre-written in a BRD (Business requirement document) Work starts only after client's approval on the BRD. Let's avoid the possible communication gaps and any possible future disputes.", iconName: 'FileText', iconImage: '' },
+  { id: 34, title: 'Initial Design Milestone', desc: 'Facing trust issues? Worried about your project budgets? Start with Firevy.Co at just a short milestone for the rough wireframes and mockups! Essure the quality and decide, wanna proceed with us or not. Release the milestone only if satisfied by the work. No need to pay big amounts in name of advance.', iconName: 'CheckCircle2', iconImage: '' },
+  { id: 35, title: 'On-Demand POCs', desc: 'Looking for someone who can provide you quickest solution for a on-demand service app (MVPs)? Firevy.Co is a perfect place to help you with such POCs at cost efficient rates + quickest delivery through white labeling.', iconName: 'Briefcase', iconImage: '' },
+  { id: 36, title: 'Always In Touch', desc: "Weather it's clients, partners, people, or prospects, Firevy.Co believes in staying touch with everyone and look forward for a better and strong relationship.", iconName: 'Heart', iconImage: '' },
+  { id: 37, title: 'Innovation', desc: 'Innovation is birth of new Invention . Firevy.Co comes up with innovative techniques making your projects/products more precise and up to date with adding modern touches.', iconName: 'Sparkles', iconImage: '' },
   { id: 38, title: 'Support Help', desc: 'We do not believe in keeping relations with clients till development only. We believe in maintaining long term and positive relations with clients by providing them the support and maintenance module as well.', iconName: 'ShieldCheck', iconImage: '' },
-  { id: 39, title: 'Flexibility', desc: 'firevy.co also offers to work in different timezone , hence making you comfortable by offering our flexibility.', iconName: 'Globe', iconImage: '' },
+  { id: 39, title: 'Flexibility', desc: 'Firevy.Co also offers to work in different timezone , hence making you comfortable by offering our flexibility.', iconName: 'Globe', iconImage: '' },
   { id: 40, title: 'Support & Maintenance', desc: 'We commit (in writing) to provide software configuration, software orientation, software customization, software maintenance and software backup services', iconName: 'Briefcase', iconImage: '' },
   { id: 41, title: 'Application Ownership', desc: "We are a white-label service provider where we commit our clients to provide all Graphics, Source code, and related content as it's their property. They can utilize it even when they plan to scale or need some upgrades etc.", iconName: 'FileText', iconImage: '' },
   { id: 42, title: 'Clear Communication', desc: "Our team does not believe in siting in a room and keeps on coding endlessly. Every developer is confident enough in his/her speech, suggestions and solutions. They are not only limited to answer to your query, but also you'll find a problem solving approach.", iconName: 'MessageSquare', iconImage: '' },
   { id: 43, title: 'Enthusiasm & Passion', desc: "Good interpersonal relationship between business partners directly influences the success of both parties. So when a vendor shows genuine care about the client's success, it's a game-changer.", iconName: 'Users', iconImage: '' },
-  { id: 44, title: 'Training Acceptance', desc: "Always a yes from firevy.co side regarding any challenges that come as an hurdle in the development and other phases. Giving you a complete easy to work with environment where every detailed study would be done by firevy.co team. It's an honor to learn new things daily.", iconName: 'CheckCircle2', iconImage: '' },
-  { id: 45, title: 'Platform Selection', desc: 'firevy.co helps you to understand the importance of using a particular technology stack with its pros and cons. Letting you to leave all your worries to us and just provide you end results as per your expectations.', iconName: 'Target', iconImage: '' },
+  { id: 44, title: 'Training Acceptance', desc: "Always a yes from Firevy.Co side regarding any challenges that come as an hurdle in the development and other phases. Giving you a complete easy to work with environment where every detailed study would be done by Firevy.Co team. It's an honor to learn new things daily.", iconName: 'CheckCircle2', iconImage: '' },
+  { id: 45, title: 'Platform Selection', desc: 'Firevy.Co helps you to understand the importance of using a particular technology stack with its pros and cons. Letting you to leave all your worries to us and just provide you end results as per your expectations.', iconName: 'Target', iconImage: '' },
   { id: 46, title: 'Quality Assurance', desc: 'QA personnel often perform software testing as soon as developers produce executable code, rather than waiting for the application to be completely coded.', iconName: 'ShieldCheck', iconImage: '' },
-  { id: 47, title: 'Evolving Ideas', desc: "It's not always limited to scope or a BRD, No scope document can bound a limit for evolution of new phases in the app. firevy.co helps you to add +1 to your visions, keeping and developing things in a realistic manner.", iconName: 'Sparkles', iconImage: '' },
-  { id: 48, title: 'Thought Process', desc: "Your project is our Responsibility; we do it with integrity; and deliver it with honesty - thought process followed by firevy.co since it's existence in the market.", iconName: 'Award', iconImage: '' },
+  { id: 47, title: 'Evolving Ideas', desc: "It's not always limited to scope or a BRD, No scope document can bound a limit for evolution of new phases in the app. Firevy.Co helps you to add +1 to your visions, keeping and developing things in a realistic manner.", iconName: 'Sparkles', iconImage: '' },
+  { id: 48, title: 'Thought Process', desc: "Your project is our Responsibility; we do it with integrity; and deliver it with honesty - thought process followed by Firevy.Co since it's existence in the market.", iconName: 'Award', iconImage: '' },
   { id: 49, title: 'Flexible Models', desc: 'We offer clients 3 different models as per their comfort. They can hire developers hourly, dedicatedly, and fixed costs models', iconName: 'Users', iconImage: '' },
-  { id: 50, title: 'Result Oriented', desc: 'firevy.co works behind your vision, and makes your vision as its mission and thrive hard to get the results as expected by you.', iconName: 'Target', iconImage: '' },
+  { id: 50, title: 'Result Oriented', desc: 'Firevy.Co works behind your vision, and makes your vision as its mission and thrive hard to get the results as expected by you.', iconName: 'Target', iconImage: '' },
   { id: 51, title: 'Agility', desc: 'No need to worry of any miscommunication or communication gaps as your project is safe - divided in phases, allocated in sprints, and acknowledged to you via daily reports.', iconName: 'CheckCircle2', iconImage: '' }
 ];
 
@@ -281,7 +281,7 @@ export const WhyChooseUsForm = ({
       {/* PAGE INFORMATION */}
       <AdminPageInfoSection
         number={pageNumber}
-        title={subPageMeta?.title || 'Why Choose firevy.co'}
+        title={subPageMeta?.title || 'Why Choose Firevy.Co'}
         slug={subPageMeta?.slug || 'why-choose-us'}
         status={formData.status || 'published'}
         onChangeStatus={(st) => updateRootField('status', st)}
@@ -312,8 +312,8 @@ export const WhyChooseUsForm = ({
             <input
               type="text"
               className="form-control"
-              placeholder="e.g. Why Choose firevy.co"
-              value={hero.title || formData.title || 'Why Choose firevy.co'}
+              placeholder="e.g. Why Choose Firevy.Co"
+              value={hero.title || formData.title || 'Why Choose Firevy.Co'}
               onChange={(e) => {
                 updateSection('hero', 'title', e.target.value);
                 updateRootField('title', e.target.value);
@@ -330,7 +330,7 @@ export const WhyChooseUsForm = ({
               value={
                 hero.subtitle ||
                 formData.subtitle ||
-                'We understand the seriousness of your project, and here are the few reasons that why should you join the firevy.co club and get added to the list of 1500+ clients who have been trusting us since 2 decades.'
+                'We understand the seriousness of your project, and here are the few reasons that why should you join the Firevy.Co club and get added to the list of 1500+ clients who have been trusting us since 2 decades.'
               }
               onChange={(e) => {
                 updateSection('hero', 'subtitle', e.target.value);
@@ -389,7 +389,7 @@ export const WhyChooseUsForm = ({
 
       {/* 2. "WHY FIREVY.CO?" SECTION HEADER */}
       <AdminFormSection
-        title='2. "Why firevy.co?" Grid Header'
+        title='2. "Why Firevy.Co?" Grid Header'
         subtitle='Main section title and subtitle displayed directly above the 51 feature cards.'
         badge="Section Header"
       >
@@ -398,8 +398,8 @@ export const WhyChooseUsForm = ({
             <input
               type="text"
               className="form-control"
-              placeholder="e.g. Why firevy.co?"
-              value={content.sectionHeading || content.heading || 'Why firevy.co?'}
+              placeholder="e.g. Why Firevy.Co?"
+              value={content.sectionHeading || content.heading || 'Why Firevy.Co?'}
               onChange={(e) => {
                 updateContentField('sectionHeading', e.target.value);
                 updateContentField('heading', e.target.value);
@@ -702,8 +702,8 @@ export const WhyChooseUsForm = ({
             <textarea
               className="form-control"
               rows={2}
-              placeholder="Learn how firevy.co can help you build better relationships with your customers..."
-              value={cta.subtitle || 'Learn how firevy.co can help you build better relationships with your customers. Start a conversation today.'}
+              placeholder="Learn how Firevy.Co can help you build better relationships with your customers..."
+              value={cta.subtitle || 'Learn how Firevy.Co can help you build better relationships with your customers. Start a conversation today.'}
               onChange={(e) => {
                 updateSection('cta', 'subtitle', e.target.value);
                 updateContentField('ctaBanner', { ...cta, subtitle: e.target.value });

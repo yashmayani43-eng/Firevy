@@ -280,7 +280,7 @@ export const HireEmberDevelopersService = () => {
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
         title="Hire Ember.js Developer | Dedicated Ember.js Web Developers at $21/Hr"
-        description="Hire dedicated Ember.js developers from Firevy.co. We are among the leading providers of ember development services tailored for responsive web & mobile apps."
+        description="Hire dedicated Ember.js developers from Firevy.Co. We are among the leading providers of ember development services tailored for responsive web & mobile apps."
         canonical="/services/hire-ember-developers"
       />
 
@@ -1054,7 +1054,7 @@ export const HireEmberDevelopersService = () => {
                   responsibilityTab === 'sapphire' ? 'bg-[#005F96] text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                Firevy.co
+                Firevy.Co
               </button>
               <button
                 onClick={() => setResponsibilityTab('client')}

@@ -113,7 +113,7 @@ export const About = () => {
       location: 'Saudi Arabia',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
       headline: '...technical support was very responsive.',
-      text: 'firevy.co delivered the software in a timely manner. The team was responsive to requests and feedback and...',
+      text: 'Firevy.Co delivered the software in a timely manner. The team was responsive to requests and feedback and...',
       rating: '4.5',
       stars: 4.5,
       scores: { quality: '4.5', schedule: '4.5', cost: '4.5', refer: '5.0' }
@@ -124,7 +124,7 @@ export const About = () => {
       location: 'Australia',
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
       headline: 'I was impressed by their ability to communicate effectively.',
-      text: 'firevy.co delivered a user-friendly application that looked great. The client received positive feedback from...',
+      text: 'Firevy.Co delivered a user-friendly application that looked great. The client received positive feedback from...',
       rating: '5.0',
       stars: 5,
       scores: { quality: '5.0', schedule: '5.0', cost: '5.0', refer: '5.0' }
@@ -135,7 +135,7 @@ export const About = () => {
       location: 'Phuket, Thailand',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
       headline: 'Their mobile app skills, helpfulness, and overall problem-solving blew me...',
-      text: 'firevy.co created a platform that the client was happy with. They were easy to talk to, responsive, and attentive to the...',
+      text: 'Firevy.Co created a platform that the client was happy with. They were easy to talk to, responsive, and attentive to the...',
       rating: '5.0',
       stars: 5,
       scores: { quality: '5.0', schedule: '5.0', cost: '5.0', refer: '5.0' }
@@ -146,7 +146,7 @@ export const About = () => {
       location: 'Rockville, Maryland',
       avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80',
       headline: 'They were excellent at providing the right level of detail in implementation...',
-      text: 'firevy.co impressed the client with the quality of their deliverables. They provided consistent designs, achieved the...',
+      text: 'Firevy.Co impressed the client with the quality of their deliverables. They provided consistent designs, achieved the...',
       rating: '5.0',
       stars: 5,
       scores: { quality: '5.0', schedule: '5.0', cost: '5.0', refer: '5.0' }
@@ -193,7 +193,7 @@ export const About = () => {
     <div className="bg-white min-h-screen text-slate-900 font-sans">
       <SEO
         title={`About Us | We Shape Digital Solutions | ${BRAND.name}`}
-        description="firevy.co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions."
+        description="Firevy.Co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions."
         canonical="/about"
       />
 
@@ -206,7 +206,7 @@ export const About = () => {
                 We Shape Digital Solutions
               </h1>
               <p className="text-[16px] sm:text-[17px] text-slate-600 leading-relaxed font-[400] font-sans max-w-xl">
-                firevy.co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions.
+                Firevy.Co provides the solutions you need to innovate & accelerate business. We are a leading software development company with decade long expertise in creating innovative solutions.
               </p>
               <div className="pt-2">
                 <Link
@@ -265,7 +265,7 @@ export const About = () => {
         </div>
       </section>
 
-      {/* 2. "About firevy.co" */}
+      {/* 2. "About Firevy.Co" */}
       <section className="py-16 bg-white border-t border-slate-100 text-left font-sans">
         <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -273,18 +273,18 @@ export const About = () => {
               <div className="rounded-[14px] overflow-hidden border border-slate-200/90 shadow-sm bg-white">
                 <img
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
-                  alt="firevy.co Corporate Building"
+                  alt="Firevy.Co Corporate Building"
                   className="w-full h-[330px] sm:h-[350px] object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
             <div className="lg:col-span-7 space-y-4">
               <h2 className="text-[36px] sm:text-[42px] lg:text-[46px] font-[900] text-slate-900 tracking-tight leading-tight font-sans">
-                About firevy.co
+                About Firevy.Co
               </h2>
               <div className="space-y-3.5 text-[15px] sm:text-[15.5px] text-slate-600 leading-[1.8] font-[400] font-sans">
                 <p>
-                  firevy.co is an ISO27001:2013 certified Web & Mobile App Development Company established in 2002. We offer a wide range of IT services and domain specific solutions to Enterprises, ISVs, Digital Agencies and Startups. Our devoted and passionate team delivers best industry practices combined with technology expertise and business domain knowledge to drive digital transformation. Our team having diverse skills with more than 23+ years of technology experience engaging with customers at deeper level to provide high-end technology solutions and innovations.
+                  Firevy.Co is an ISO27001:2013 certified Web & Mobile App Development Company established in 2002. We offer a wide range of IT services and domain specific solutions to Enterprises, ISVs, Digital Agencies and Startups. Our devoted and passionate team delivers best industry practices combined with technology expertise and business domain knowledge to drive digital transformation. Our team having diverse skills with more than 23+ years of technology experience engaging with customers at deeper level to provide high-end technology solutions and innovations.
                 </p>
               </div>
               <div className="pt-2">
@@ -306,7 +306,7 @@ export const About = () => {
           <div className="text-center max-w-4xl mx-auto mb-14">
             <h2 className="text-[34px] sm:text-[40px] lg:text-[44px] font-[900] text-slate-900 tracking-tight leading-[1.2] font-sans">
               We Create, We Enhance, We Deliver<br />
-              More Than Expected – That's firevy.co
+              More Than Expected – That's Firevy.Co
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -371,7 +371,7 @@ export const About = () => {
               </h2>
               <div className="space-y-4 text-[15px] sm:text-[15.5px] text-slate-600 leading-[1.8] font-[400] font-sans">
                 <p>
-                  At firevy.co, we have nurtured a culture that inspires innovation and creativity. We believe that success of our company is directly relational to the success of each and every employee. We strive to create a young, fun-loving, open yet professional and hardworking environment.
+                  At Firevy.Co, we have nurtured a culture that inspires innovation and creativity. We believe that success of our company is directly relational to the success of each and every employee. We strive to create a young, fun-loving, open yet professional and hardworking environment.
                 </p>
                 <p>
                   We empower our team members to move forward professionally by taking ownership and learning from every project they work on. Coming to work and building amazing digital solutions should be fun.
@@ -409,7 +409,7 @@ export const About = () => {
               Our Leadership
             </h2>
             <p className="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed max-w-3xl mx-auto font-[400] font-sans">
-              The outlook, passion and experience of our leaders guides firevy.co.
+              The outlook, passion and experience of our leaders guides Firevy.Co.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -527,7 +527,7 @@ export const About = () => {
               Insights
             </h2>
             <p className="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed max-w-3xl mx-auto font-[400] font-sans">
-              Based on boundless enthusiasm and challenging spirit, firevy.co is committed to deliver excellence.
+              Based on boundless enthusiasm and challenging spirit, Firevy.Co is committed to deliver excellence.
             </p>
           </div>
 
@@ -618,7 +618,7 @@ export const About = () => {
           <div className="w-full h-[360px] sm:h-[450px] rounded-[20px] overflow-hidden shadow-lg border border-slate-200 bg-slate-900 relative">
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"
-              alt="firevy.co Whole Team"
+              alt="Firevy.Co Whole Team"
               className="w-full h-full object-cover opacity-95 hover:scale-105 transition-transform duration-700"
             />
           </div>

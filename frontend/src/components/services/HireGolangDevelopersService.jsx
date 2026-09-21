@@ -243,7 +243,7 @@ export const HireGolangDevelopersService = () => {
   // Golang FAQs
   const faqs = [
     {
-      q: '1. Why should I hire Golang developers from Firevy.co?',
+      q: '1. Why should I hire Golang developers from Firevy.Co?',
       a: 'Our Golang developers are top 1% vetted distributed systems engineers with extensive experience in Go microservices, Gin, Fiber, Echo, gRPC, Docker, Kubernetes, and high-throughput concurrent architecture.'
     },
     {
@@ -268,7 +268,7 @@ export const HireGolangDevelopersService = () => {
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
         title="Hire Dedicated Golang Developers | Expert Go Programmers at $21/Hr"
-        description="Hire dedicated Golang developers from Firevy.co. Expert Go programmers for high-concurrency microservices, cloud-native APIs, and distributed systems. Flexible models, 100% IP ownership, and instant onboarding."
+        description="Hire dedicated Golang developers from Firevy.Co. Expert Go programmers for high-concurrency microservices, cloud-native APIs, and distributed systems. Flexible models, 100% IP ownership, and instant onboarding."
         canonical="/services/hire-golang-developers"
       />
 
@@ -858,7 +858,7 @@ export const HireGolangDevelopersService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium">
-              Hire Golang Developers from Firevy.co Starts from,
+              Hire Golang Developers from Firevy.Co Starts from,
             </p>
           </div>
 

@@ -88,10 +88,10 @@ export const MobileAppPortingService = () => {
     <div className="min-h-screen bg-white text-slate-800 selection:bg-[#005F96] selection:text-white">
       {/* SEO Metadata */}
       <SEO
-        title="Best Mobile App Porting Company | Firevy.co"
+        title="Best Mobile App Porting Company | Firevy.Co"
         description="As a leading AI mobile app development and porting company with Good Review and High Rating, we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app that surpasses your expectations."
-        keywords="Mobile app porting, iOS to Android porting, Android to iOS porting, mobile app migration, app development company, Firevy.co"
-        url="https://firevy.co/services/mobile-app-porting"
+        keywords="Mobile app porting, iOS to Android porting, Android to iOS porting, mobile app migration, app development company, Firevy.Co"
+        url="https://Firevy.co/services/mobile-app-porting"
       />
 
       {/* ========================================================================= */}
@@ -180,7 +180,7 @@ export const MobileAppPortingService = () => {
       {/* ========================================================================= */}
       {/* 7. CUTTING EDGE TECHNOLOGIES FIREVY USE (Image 2)                         */}
       {/* ========================================================================= */}
-      <MobileAppCuttingEdgeTechnologiesSection companyName="Firevy.co" />
+      <MobileAppCuttingEdgeTechnologiesSection companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 8. DEDICATED MOBILE APP PORTING CAPABILITIES                              */}
@@ -229,7 +229,7 @@ export const MobileAppPortingService = () => {
       {/* ========================================================================= */}
       {/* 9. OUR PREMIUM SERVICES GRID                                              */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 10. MEET FIREVY'S EXCEPTIONAL TEAM OF SEASONED EXPERTS                    */}
@@ -249,12 +249,12 @@ export const MobileAppPortingService = () => {
       {/* ========================================================================= */}
       {/* 13. ABOUT US STATS (8-CARD GRID)                                          */}
       {/* ========================================================================= */}
-      <AboutUsStats companyName="Firevy.co" />
+      <AboutUsStats companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 14. SECTORS THRIVING THROUGH FIREVY BESPOKE MOBILE SERVICES               */}
       {/* ========================================================================= */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy.co’s Bespoke Mobile App Porting Services" />
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy.Co’s Bespoke Mobile App Porting Services" />
 
       {/* ========================================================================= */}
       {/* 15. SUCCESS STORIES PORTFOLIO & METRICS                                   */}
@@ -350,7 +350,7 @@ export const MobileAppPortingService = () => {
       <SapphireFaqSection
         title="Frequently Asked Questions"
         subtitle="We listen to queries and provide solutions that captivate users. Feel free to contact us in case of any question."
-        companyName="Firevy.co"
+        companyName="Firevy.Co"
       />
 
       {/* ========================================================================= */}

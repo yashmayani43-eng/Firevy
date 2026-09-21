@@ -107,7 +107,7 @@ export const Home = () => {
   return (
     <>
       <SEO
-        title="Firevy.co | Enterprise IT & AI Software Solutions"
+        title="Firevy.Co | Enterprise IT & AI Software Solutions"
         description="We design and develop scalable web, mobile, cloud, AI, and enterprise software solutions that transform ambitious ideas into measurable business outcomes."
       />
 

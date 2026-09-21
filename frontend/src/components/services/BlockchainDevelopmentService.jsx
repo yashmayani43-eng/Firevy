@@ -319,7 +319,7 @@ export const BlockchainDevelopmentService = () => {
     },
     {
       q: '4. Why is Firevy the best company for hiring a Blockchain developer?',
-      a: 'Firevy.co is a top-rated software development company with over 23 years of experience. We provide pre-vetted, expert Blockchain developers with flexible engagement models, strict NDA compliance, zero hidden costs, and seamless time-zone alignment.'
+      a: 'Firevy.Co is a top-rated software development company with over 23 years of experience. We provide pre-vetted, expert Blockchain developers with flexible engagement models, strict NDA compliance, zero hidden costs, and seamless time-zone alignment.'
     },
     {
       q: '5. From which niches can we take blockchain developers for hire?',
@@ -464,7 +464,7 @@ export const BlockchainDevelopmentService = () => {
                 Our Flexible Hiring Models: Find the Perfect Fit For Your Project
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                Hire Blockchain Developers from Firevy.co Starts from,
+                Hire Blockchain Developers from Firevy.Co Starts from,
               </p>
             </div>
 
@@ -520,11 +520,10 @@ export const BlockchainDevelopmentService = () => {
                 return (
                   <div
                     key={idx}
-                    className={`rounded-2xl p-8 flex flex-col justify-between transition-all relative ${
-                      card.isFeatured
+                    className={`rounded-2xl p-8 flex flex-col justify-between transition-all relative ${card.isFeatured
                         ? 'border-2 border-[#006095] bg-white shadow-xl scale-105 z-10'
                         : 'border border-slate-200 bg-white shadow-xs hover:shadow-md'
-                    }`}
+                      }`}
                   >
                     {card.isFeatured && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex items-center space-x-2">
@@ -753,7 +752,7 @@ export const BlockchainDevelopmentService = () => {
           <div className="space-y-8 max-w-6xl mx-auto">
             <div className="text-center space-y-3">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Leverage The Expertise of Firevy.co Dedicated Developers
+                Leverage The Expertise of Firevy.Co Dedicated Developers
               </h2>
             </div>
 
@@ -763,11 +762,10 @@ export const BlockchainDevelopmentService = () => {
                   <button
                     key={tab}
                     onClick={() => setLeverageTab(tab)}
-                    className={`px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                      leverageTab === tab
+                    className={`px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${leverageTab === tab
                         ? 'bg-[#006095] text-white shadow-xs'
                         : 'text-slate-700 hover:text-slate-900 font-semibold'
-                    }`}
+                      }`}
                   >
                     {tab}
                   </button>
@@ -846,12 +844,12 @@ export const BlockchainDevelopmentService = () => {
       {/* ============================================================
           SECTION 3K: ABOUT US STATS BANNER
           ============================================================ */}
-      <AboutUsStats companyName="Firevy.co" />
+      <AboutUsStats companyName="Firevy.Co" />
 
       {/* ============================================================
           SECTION 3L: SECTORS THRIVING SECTION
           ============================================================ */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy.co's Bespoke Dedicated Developers" />
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy.Co's Bespoke Dedicated Developers" />
 
       {/* =========================================================================
           SECTION 3M: EMPLOY THE ADVANCED PROFICIENCY OF FIREVY DEDICATED DEV TEAM
@@ -862,10 +860,10 @@ export const BlockchainDevelopmentService = () => {
             {/* Header */}
             <div className="text-center space-y-3 max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Employ the Advanced Proficiency of Firevy.co's Dedicated Development Team
+                Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                At Firevy.co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+                At Firevy.Co, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
               </p>
             </div>
 
@@ -922,22 +920,20 @@ export const BlockchainDevelopmentService = () => {
                 <button
                   type="button"
                   onClick={() => setResponsibilityTab('sapphire')}
-                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                    responsibilityTab === 'sapphire'
+                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${responsibilityTab === 'sapphire'
                       ? 'bg-[#006095] text-white shadow-xs'
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
-                  }`}
+                    }`}
                 >
-                  Firevy.co
+                  Firevy.Co
                 </button>
                 <button
                   type="button"
                   onClick={() => setResponsibilityTab('client')}
-                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                    responsibilityTab === 'client'
+                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${responsibilityTab === 'client'
                       ? 'bg-[#006095] text-white shadow-xs'
                       : 'text-slate-700 hover:text-slate-900 font-semibold'
-                  }`}
+                    }`}
                 >
                   Client
                 </button>
@@ -948,21 +944,21 @@ export const BlockchainDevelopmentService = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
               {(responsibilityTab === 'sapphire'
                 ? [
-                    { title: 'Create a dedicated team', IconComp: Users },
-                    { title: 'Gather required access', IconComp: Lock },
-                    { title: 'Plan project resources', IconComp: Sliders },
-                    { title: 'Create a standard delivery practice', IconComp: Clock },
-                    { title: 'Regular communication between stakeholders', IconComp: MessageCircle },
-                    { title: 'Research on competitors', IconComp: Flag }
-                  ]
+                  { title: 'Create a dedicated team', IconComp: Users },
+                  { title: 'Gather required access', IconComp: Lock },
+                  { title: 'Plan project resources', IconComp: Sliders },
+                  { title: 'Create a standard delivery practice', IconComp: Clock },
+                  { title: 'Regular communication between stakeholders', IconComp: MessageCircle },
+                  { title: 'Research on competitors', IconComp: Flag }
+                ]
                 : [
-                    { title: 'Define project scope & vision', IconComp: Milestone },
-                    { title: 'Provide domain context & access', IconComp: Database },
-                    { title: 'Review sprint deliverables', IconComp: CheckCircle2 },
-                    { title: 'Provide timely feedback & approvals', IconComp: RefreshCw },
-                    { title: 'Align business priorities with roadmap', IconComp: LineChart },
-                    { title: 'Co-evaluate key performance indicators', IconComp: PieChart }
-                  ]
+                  { title: 'Define project scope & vision', IconComp: Milestone },
+                  { title: 'Provide domain context & access', IconComp: Database },
+                  { title: 'Review sprint deliverables', IconComp: CheckCircle2 },
+                  { title: 'Provide timely feedback & approvals', IconComp: RefreshCw },
+                  { title: 'Align business priorities with roadmap', IconComp: LineChart },
+                  { title: 'Co-evaluate key performance indicators', IconComp: PieChart }
+                ]
               ).map((item, idx) => {
                 const CardIcon = item.IconComp;
                 return (
@@ -1258,7 +1254,7 @@ export const BlockchainDevelopmentService = () => {
       {/* What Sets Us Apart As Blockchain Development Company */}
       <WhatSetsUsApartSection
         title="What Sets Us Apart As Blockchain Development Company?"
-        subtitle="Being unique is our quality! Firevy.co believes in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
+        subtitle="Being unique is our quality! Firevy.Co believes in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
       />
 
       {/* Have Blockchain Development Challenge To Address ? CTA Banner */}

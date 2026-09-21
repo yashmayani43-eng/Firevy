@@ -268,7 +268,7 @@ export const EnneagramTestAppService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Enneagram Test App Development Company | Custom Personality Apps | Firevy.co"
+        title="Enneagram Test App Development Company | Custom Personality Apps | Firevy.Co"
         description="We have expertise in developing Enneagram Test Apps that enable businesses, coaches, and enterprises to deliver deep personality insights and self-growth experiences to users across the globe."
         canonical="/services/enneagram-test-app"
       />

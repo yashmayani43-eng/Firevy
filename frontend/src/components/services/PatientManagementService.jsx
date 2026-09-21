@@ -268,7 +268,7 @@ export const PatientManagementService = () => {
       {/* Dynamic SEO Meta */}
       <SEO
         title="Patient Management System Development Company | Custom Healthcare Software"
-        description="Firevy.co is a premier Patient Management System Development Company. We build HIPAA-compliant hospital information systems, EHR/EMR platforms, clinic scheduling software, and telemedicine portals."
+        description="Firevy.Co is a premier Patient Management System Development Company. We build HIPAA-compliant hospital information systems, EHR/EMR platforms, clinic scheduling software, and telemedicine portals."
         keywords="Patient Management System, Hospital Information System, EHR EMR software, clinic management system, healthcare software development, dental practice software, telemedicine portal"
       />
 
@@ -309,7 +309,7 @@ export const PatientManagementService = () => {
 
               {/* Subtitle / Paragraph */}
               <p className="text-[14px] sm:text-[15.5px] text-[#475569] font-normal leading-[1.75] max-w-2xl">
-                Transform healthcare delivery with intelligent Patient Management Systems. Firevy.co engineers HIPAA-compliant, cloud-native patient management software that unifies patient registration, digital scheduling, EHR/EMR integration, automated billing, and clinical workflows for hospitals, clinics, and health networks.
+                Transform healthcare delivery with intelligent Patient Management Systems. Firevy.Co engineers HIPAA-compliant, cloud-native patient management software that unifies patient registration, digital scheduling, EHR/EMR integration, automated billing, and clinical workflows for hospitals, clinics, and health networks.
               </p>
 
               {/* Key Highlights Pill Grid */}
@@ -465,19 +465,19 @@ export const PatientManagementService = () => {
       {/* ========================================================================= */}
       {/* 6. CUTTING-EDGE TECH SECTION                                              */}
       {/* ========================================================================= */}
-      <PatientManagementCuttingEdgeTechSection companyName="Firevy.co" />
+      <PatientManagementCuttingEdgeTechSection companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 7. OUR PREMIUM SERVICES (MATCHING REFERENCE SCREENSHOT)                   */}
       {/* ========================================================================= */}
-      <PremiumServicesGrid companyName="Firevy.co" />
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* ========================================================================= */}
       {/* 8. SUCCESS STORIES (MATCHING REFERENCE SCREENSHOT)                        */}
       {/* ========================================================================= */}
       <SuccessStoriesSection
         cards={patientSuccessCards}
-        subtitle="Know Firevy.co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
+        subtitle="Know Firevy.Co journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
       />
 
       {/* ========================================================================= */}
