@@ -174,6 +174,16 @@ export function App() {
                 <Route path="/ai-consulting-services" element={<ServiceDetails />} />
                 <Route path="/services/ai-consulting" element={<ServiceDetails />} />
                 <Route path="/ai-consulting" element={<ServiceDetails />} />
+                <Route path="/services/cloud-foundry-software-development" element={<ServiceDetails />} />
+                <Route path="/cloud-foundry-software-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-devops" element={<ServiceDetails />} />
+                <Route path="/cloud-devops" element={<ServiceDetails />} />
+                <Route path="/services/google-cloud-development" element={<ServiceDetails />} />
+                <Route path="/google-cloud-development" element={<ServiceDetails />} />
+                <Route path="/services/aws-cloud-services" element={<ServiceDetails />} />
+                <Route path="/aws-cloud-services" element={<ServiceDetails />} />
+                <Route path="/services/devops-development-services" element={<ServiceDetails />} />
+                <Route path="/devops-development-services" element={<ServiceDetails />} />
                 <Route path="/services/ui-ux-design" element={<ServiceDetails />} />
                 <Route path="/ui-ux-design" element={<ServiceDetails />} />
                 <Route path="/services/ui-ux-design-services" element={<ServiceDetails />} />
@@ -227,6 +237,56 @@ export function App() {
                 <Route path="/artist-collaboration-platform-development" element={<ServiceDetails />} />
                 <Route path="/services/artist-collaboration-platform" element={<ServiceDetails />} />
                 <Route path="/artist-collaboration-platform" element={<ServiceDetails />} />
+                <Route path="/services/prototype-development-services" element={<ServiceDetails />} />
+                <Route path="/prototype-development-services" element={<ServiceDetails />} />
+                <Route path="/services/prototype-development-service" element={<ServiceDetails />} />
+                <Route path="/prototype-development-service" element={<ServiceDetails />} />
+                <Route path="/services/prototype-development" element={<ServiceDetails />} />
+                <Route path="/prototype-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-development" element={<ServiceDetails />} />
+                <Route path="/cloud-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-application-development" element={<ServiceDetails />} />
+                <Route path="/cloud-application-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-app-development" element={<ServiceDetails />} />
+                <Route path="/cloud-app-development" element={<ServiceDetails />} />
+                <Route path="/services/cloud-development-services" element={<ServiceDetails />} />
+                <Route path="/cloud-development-services" element={<ServiceDetails />} />
+                <Route path="/services/cloud-computing-service" element={<ServiceDetails />} />
+                <Route path="/cloud-computing-service" element={<ServiceDetails />} />
+                <Route path="/services/cloud-computing-services" element={<ServiceDetails />} />
+                <Route path="/cloud-computing-services" element={<ServiceDetails />} />
+                <Route path="/services/cloud-computing" element={<ServiceDetails />} />
+                <Route path="/cloud-computing" element={<ServiceDetails />} />
+                <Route path="/services/devops-development-services" element={<ServiceDetails />} />
+                <Route path="/devops-development-services" element={<ServiceDetails />} />
+                <Route path="/services/devops-development-service" element={<ServiceDetails />} />
+                <Route path="/devops-development-service" element={<ServiceDetails />} />
+                <Route path="/services/devops-development" element={<ServiceDetails />} />
+                <Route path="/devops-development" element={<ServiceDetails />} />
+                <Route path="/services/aws-cloud-services" element={<ServiceDetails />} />
+                <Route path="/aws-cloud-services" element={<ServiceDetails />} />
+                <Route path="/services/aws-cloud-service" element={<ServiceDetails />} />
+                <Route path="/aws-cloud-service" element={<ServiceDetails />} />
+                <Route path="/services/aws-cloud" element={<ServiceDetails />} />
+                <Route path="/aws-cloud" element={<ServiceDetails />} />
+                <Route path="/services/google-cloud-development" element={<ServiceDetails />} />
+                <Route path="/google-cloud-development" element={<ServiceDetails />} />
+                <Route path="/services/google-cloud-development-service" element={<ServiceDetails />} />
+                <Route path="/google-cloud-development-service" element={<ServiceDetails />} />
+                <Route path="/services/google-cloud-development-services" element={<ServiceDetails />} />
+                <Route path="/google-cloud-development-services" element={<ServiceDetails />} />
+                <Route path="/services/google-cloud-services" element={<ServiceDetails />} />
+                <Route path="/google-cloud-services" element={<ServiceDetails />} />
+                <Route path="/services/google-cloud" element={<ServiceDetails />} />
+                <Route path="/google-cloud" element={<ServiceDetails />} />
+                <Route path="/services/cloud-devops" element={<ServiceDetails />} />
+                <Route path="/cloud-devops" element={<ServiceDetails />} />
+                <Route path="/services/cloud-and-devops" element={<ServiceDetails />} />
+                <Route path="/cloud-and-devops" element={<ServiceDetails />} />
+                <Route path="/services/cloud-devops-services" element={<ServiceDetails />} />
+                <Route path="/cloud-devops-services" element={<ServiceDetails />} />
+                <Route path="/services/cloud-devops-service" element={<ServiceDetails />} />
+                <Route path="/cloud-devops-service" element={<ServiceDetails />} />
                 <Route path="/services/tech-consulting-services" element={<ServiceDetails />} />
                 <Route path="/services/hire-bootstrap-developers" element={<ServiceDetails />} />
                 <Route path="/services/hire-bootstrap-developer" element={<ServiceDetails />} />
@@ -281,6 +341,22 @@ export function App() {
                 <Route path="/ember-js-development" element={<ServiceDetails />} />
                 <Route path="/emberjs" element={<ServiceDetails />} />
                 <Route path="/ember" element={<ServiceDetails />} />
+                <Route path="/services/hire-openai-developer" element={<ServiceDetails />} />
+                <Route path="/services/hire-openai-developers" element={<ServiceDetails />} />
+                <Route path="/services/hire-open-ai-developer" element={<ServiceDetails />} />
+                <Route path="/services/hire-open-ai-developers" element={<ServiceDetails />} />
+                <Route path="/hire-openai-developer" element={<ServiceDetails />} />
+                <Route path="/hire-openai-developers" element={<ServiceDetails />} />
+                <Route path="/hire-open-ai-developer" element={<ServiceDetails />} />
+                <Route path="/hire-open-ai-developers" element={<ServiceDetails />} />
+                <Route path="/openai-development" element={<ServiceDetails />} />
+                <Route path="/services/hire-llm-engineers" element={<ServiceDetails />} />
+                <Route path="/services/hire-llm-engineers-for-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/hire-llm-developers" element={<ServiceDetails />} />
+                <Route path="/hire-llm-engineers" element={<ServiceDetails />} />
+                <Route path="/hire-llm-engineers-for-ai-development" element={<ServiceDetails />} />
+                <Route path="/hire-llm-developers" element={<ServiceDetails />} />
+                <Route path="/services/hire-[#006095]" element={<ServiceDetails />} />
                 <Route path="/services/hire-alexa-skills-developers" element={<ServiceDetails />} />
                 <Route path="/services/hire-alexa-skills-developer" element={<ServiceDetails />} />
                 <Route path="/services/hire-alexa-developer" element={<ServiceDetails />} />
@@ -453,6 +529,10 @@ export function App() {
                 <Route path="/services/hire-ai-application-developer" element={<ServiceDetails />} />
                 <Route path="/hire-ai-application-developers" element={<ServiceDetails />} />
                 <Route path="/hire-ai-application-developer" element={<ServiceDetails />} />
+                <Route path="/services/hire-ai-agent-developer" element={<ServiceDetails />} />
+                <Route path="/services/hire-ai-agent-developers" element={<ServiceDetails />} />
+                <Route path="/hire-ai-agent-developer" element={<ServiceDetails />} />
+                <Route path="/hire-ai-agent-developers" element={<ServiceDetails />} />
                 <Route path="/services/hire-iphone-app-developers" element={<ServiceDetails />} />
                 <Route path="/services/hire-iphone-app-developer" element={<ServiceDetails />} />
                 <Route path="/hire-iphone-app-developers" element={<ServiceDetails />} />

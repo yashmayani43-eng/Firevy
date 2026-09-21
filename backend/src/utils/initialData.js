@@ -85,6 +85,69 @@ export const initialServices = [
     isActive: true
   },
   {
+    title: "Prototype Development Services",
+    slug: "prototype-development-services",
+    shortDescription: "Interactive, clickable, and rapid prototype development to validate concepts before full-scale manufacturing.",
+    description: "Transform innovative concepts into testable, market-ready prototypes using High-Velocity Agile development, clickable wireframes, and enterprise architecture.",
+    icon: "Layers",
+    image: "/images/prototype_hero_illustration.jpg",
+    technologies: ["Figma", "React", "Node.js", "Wireframing", "Clickable Mockups", "Agile Sprints"],
+    features: ["Prototype App Development", "Interactive Prototyping", "Rapid Agile Prototyping", "Extreme & Incremental Prototyping"],
+    benefits: ["Substantially reduced financial risk", "Clear stakeholder communication", "High-velocity market entry"],
+    process: [
+      { step: 1, title: "Requirement Gathering", description: "Clear documentation and stakeholder alignment." },
+      { step: 2, title: "Wireframes & Mockups", description: "Interactive and visual product UI flows." },
+      { step: 3, title: "Prototype Demo", description: "Clickable testable prototype demonstration." },
+      { step: 4, title: "Refinement & Confirmation", description: "Iterate with user feedback and freeze production scope." }
+    ],
+    faq: [
+      { question: "Can Sapphire develop clickable prototypes for mobile and web apps?", answer: "Yes, we create interactive prototypes for iOS, Android, and web platforms to demonstrate functionality and user journeys." }
+    ],
+    isActive: true
+  },
+  {
+    title: "Cloud Development",
+    slug: "cloud-development",
+    shortDescription: "Scalable, secure, and resilient cloud application development and multi-cloud migration.",
+    description: "Enterprise cloud application development, cloud-native architecture, microservices, AWS, Azure, Google Cloud, and 24/7 cloud infrastructure management.",
+    icon: "Cloud",
+    image: "/images/cloud_hero_illustration.jpg",
+    technologies: ["AWS", "Microsoft Azure", "Google Cloud", "Kubernetes", "Docker", "Microservices", "Terraform", "CI/CD"],
+    features: ["Cloud App Development", "Cloud-Native Development", "Cloud Consulting Services", "Cloud Migration & Integration", "24/7 Cloud Monitoring"],
+    benefits: ["99.99% infrastructure availability", "Substantial cloud operational cost reduction", "Rapid disaster recovery"],
+    process: [
+      { step: 1, title: "Cloud Architecture Audit", description: "Assess existing systems, security compliance, and workload suitability." },
+      { step: 2, title: "Cloud-Native Strategy", description: "Architect containerized microservices and serverless workflows." },
+      { step: 3, title: "Workload Migration", description: "Zero-downtime migration and database synchronization." },
+      { step: 4, title: "Continuous Monitoring & SLAs", description: "24/7 observability, automated scaling, and cost governance." }
+    ],
+    faq: [
+      { question: "Why choose Sapphire Solutions as your cloud application development partner?", answer: "Sapphire Software Solutions offers 23+ years' experience with 1,500+ projects across 30+ countries, of expertise in building scalable, secure, and high-performance cloud applications using AWS, Azure, and Google Cloud." }
+    ],
+    isActive: true
+  },
+  {
+    title: "Cloud Computing Service",
+    slug: "cloud-computing-service",
+    shortDescription: "Enterprise cloud computing services, multi-cloud infrastructure, DevOps CI/CD, and 24/7 cloud monitoring.",
+    description: "Architect, modernize, and manage enterprise cloud infrastructure across AWS, Microsoft Azure, and Google Cloud with guaranteed 99.9% uptime and proactive FinOps cost optimization.",
+    icon: "Cloud",
+    image: "/images/cloud_solutions_illustration.jpg",
+    technologies: ["AWS", "Microsoft Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform", "Ansible", "CI/CD"],
+    features: ["Cloud Infrastructure Management", "Cloud Migration & Modernization", "Cloud-Native App Development", "DevOps & CI/CD Automation", "Cloud Security & Governance", "Cloud Cost Optimization (FinOps)"],
+    benefits: ["99.9% guaranteed uptime", "Up to 40% reduction in cloud operational expenditure", "Zero-downtime microservices deployments"],
+    process: [
+      { step: 1, title: "Cloud Assessment & Audit", description: "In-depth review of infrastructure workload, security gaps, and FinOps benchmarks." },
+      { step: 2, title: "Architecture Blueprint", description: "Designing multi-cloud, high-availability, containerized infrastructure." },
+      { step: 3, title: "Deployment & Migration", description: "Automated provisioning with Terraform, CI/CD pipelines, and data sync." },
+      { step: 4, title: "Continuous Monitoring & Governance", description: "24/7 SRE monitoring, automated incident response, and SLA guarantees." }
+    ],
+    faq: [
+      { question: "Why partner with Firevy for cloud computing services?", answer: "We provide end-to-end multi-cloud advisory, certified AWS/Azure/GCP principal architects, and 24/7 infrastructure observability." }
+    ],
+    isActive: true
+  },
+  {
     title: "AI & Machine Learning",
     slug: "ai-machine-learning",
     shortDescription: "Intelligent AI integrations, custom LLM solutions, and predictive analytics engines.",
@@ -207,6 +270,90 @@ export const initialServices = [
     ],
     faq: [
       { question: "How quickly can dedicated developers join our team?", answer: "Our pre-vetted senior engineers can start within 48 to 72 hours." }
+    ],
+    isActive: true
+  },
+  {
+    title: "DevOps Development Services",
+    slug: "devops-development-services",
+    shortDescription: "Automated CI/CD pipelines, Kubernetes container orchestration, and Infrastructure as Code.",
+    description: "Accelerate your release cycles and enhance infrastructure reliability with enterprise DevOps automation, cloud governance, and site reliability engineering.",
+    icon: "Cloud",
+    image: "https://images.unsplash.com/photo-1618401471353-b98aedd04e11?auto=format&fit=crop&w=1200&q=80",
+    technologies: ["Docker", "Kubernetes", "Terraform", "Jenkins", "Ansible", "Prometheus", "GitHub Actions", "AWS"],
+    features: ["Automated Multi-Branch CI/CD Pipelines", "Zero-Downtime Rolling & Blue-Green Deployments", "Declarative Infrastructure as Code (IaC)", "24/7 Observability & Site Reliability Engineering"],
+    benefits: ["10x faster release deployment velocity", "99.99% system availability and auto-healing", "Reduced cloud infrastructure idle waste"],
+    process: [
+      { step: 1, title: "DevOps Assessment", description: "Audit current infrastructure, deployment bottlenecks, and security gaps." },
+      { step: 2, title: "IaC & Architecture", description: "Provision repeatable cloud infrastructure with Terraform and Kubernetes." },
+      { step: 3, title: "CI/CD Pipeline Automation", description: "Build automated test, lint, and deployment pipelines with GitHub Actions/Jenkins." },
+      { step: 4, title: "SRE & Monitoring", description: "Set up real-time observability with Prometheus, Grafana, and automated alerts." }
+    ],
+    faq: [
+      { question: "What CI/CD platforms do you support?", answer: "We support GitHub Actions, GitLab CI, Jenkins, AWS CodePipeline, and ArgoCD for GitOps." }
+    ],
+    isActive: true
+  },
+  {
+    title: "AWS Cloud Services",
+    slug: "aws-cloud-services",
+    shortDescription: "Amazon Web Services consulting, cloud migration, serverless Lambda, and Well-Architected governance.",
+    description: "Architecting secure, hyper-scalable cloud solutions on Amazon Web Services. Engineered with multi-AZ high availability, serverless Lambda computing, Amazon Aurora/DynamoDB, and 24/7 managed FinOps monitoring.",
+    icon: "Cloud",
+    image: "/images/aws_cloud_hero_architecture.jpg",
+    technologies: ["AWS EC2", "AWS Lambda", "Amazon S3", "Amazon RDS", "Amazon DynamoDB", "Amazon EKS", "CloudFront", "Terraform"],
+    features: ["End-to-End AWS Migration & Modernization", "Serverless & Event-Driven Architectures", "Multi-AZ High Availability & Auto-Scaling", "AWS Well-Architected Framework & FinOps"],
+    benefits: ["Up to 60% cloud infrastructure cost optimization", "99.99% multi-region uptime and fault tolerance", "Rapid time-to-market with serverless acceleration"],
+    process: [
+      { step: 1, title: "AWS Cloud Assessment", description: "Audit current infrastructure, workload dependencies, and TCO cost savings." },
+      { step: 2, title: "Well-Architected Blueprint", description: "Design VPC network topologies, security groups, and multi-AZ failovers." },
+      { step: 3, title: "Migration & Automation", description: "Execute phased migration using AWS DMS/MGN with automated CI/CD pipelines." },
+      { step: 4, title: "24/7 Monitoring & FinOps", description: "Continuous CloudWatch observability, cost rightsizing, and SRE management." }
+    ],
+    faq: [
+      { question: "Can you help migrate our legacy database to Amazon RDS or Aurora?", answer: "Yes, we use AWS Database Migration Service (DMS) for zero-downtime database migrations to RDS PostgreSQL, MySQL, or Aurora." }
+    ],
+    isActive: true
+  },
+  {
+    title: "Google Cloud Development",
+    slug: "google-cloud-development",
+    shortDescription: "Google Cloud Platform (GCP) development, GKE Kubernetes containerization, BigQuery, and Vertex AI.",
+    description: "Architecting secure, hyper-scalable cloud solutions on Google Cloud Platform. Engineered with GKE Kubernetes container orchestration, serverless Cloud Run, BigQuery petabyte analytics, and 24/7 managed GCP FinOps monitoring.",
+    icon: "Cloud",
+    image: "/images/google_cloud_hero_architecture.jpg",
+    technologies: ["Google Kubernetes Engine (GKE)", "BigQuery", "Cloud Run", "Vertex AI", "Cloud Spanner", "Cloud SQL", "Pub/Sub", "Terraform"],
+    features: ["End-to-End GCP Cloud Migration & Re-platforming", "GKE Microservices Orchestration with Autopilot", "Serverless Containers with Cloud Run", "Enterprise BigQuery Analytics & Vertex AI"],
+    benefits: ["Sub-second global analytics with serverless BigQuery", "99.999% multi-region database uptime with Cloud Spanner", "Up to 50% cloud infrastructure cost optimization with FinOps"],
+    process: [
+      { step: 1, title: "GCP Assessment & Architecture", description: "Audit current infrastructure, workload dependencies, and cost-benefit analysis." },
+      { step: 2, title: "GKE & Cloud Run Engineering", description: "Containerize microservices, build declarative Terraform manifests, and configure VPC networks." },
+      { step: 3, title: "Data Migration & Analytics", description: "Streamline data ingestion to BigQuery and configure automated Cloud Build CI/CD pipelines." },
+      { step: 4, title: "24/7 SRE & Cloud Armor Security", description: "Enforce Google Cloud Armor DDoS protection, IAM least privilege, and continuous SRE monitoring." }
+    ],
+    faq: [
+      { question: "What are Google Cloud Development Services, and why are they essential?", answer: "Google Cloud Development Services encompass cloud architecture design, application migration, container orchestration (GKE), serverless compute (Cloud Run), and data analytics (BigQuery) on Google Cloud Platform." }
+    ],
+    isActive: true
+  },
+  {
+    title: "Cloud & DevOps Services",
+    slug: "cloud-devops",
+    shortDescription: "Multi-cloud infrastructure, CI/CD pipeline automation, Kubernetes, and 24/7 site reliability engineering.",
+    description: "Architecting secure, hyper-scalable multi-cloud platforms and automated continuous delivery pipelines across AWS, Azure, and Google Cloud. Engineered with Infrastructure as Code (Terraform), Kubernetes containerization, and 24/7 SRE monitoring.",
+    icon: "Cloud",
+    image: "/images/cloud_devops_hero.jpg",
+    technologies: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform", "Jenkins", "GitHub Actions", "Prometheus", "ArgoCD"],
+    features: ["Enterprise Multi-Cloud Infrastructure & Migration", "Automated Multi-Branch CI/CD Release Pipelines", "Declarative Infrastructure as Code (Terraform/IaC)", "24/7 SRE Observability & Cloud FinOps Governance"],
+    benefits: ["Up to 10x faster software release deployment velocity", "99.99% multi-region cloud uptime and automated self-healing", "Up to 50% cloud infrastructure cost optimization"],
+    process: [
+      { step: 1, title: "Cloud & DevOps Audit", description: "Assess current delivery pipelines, architecture bottlenecks, and security gaps." },
+      { step: 2, title: "IaC & Multi-Cloud Architecture", description: "Design repeatable cloud environments with Terraform, Docker, and Kubernetes." },
+      { step: 3, title: "CI/CD & GitOps Automation", description: "Build declarative pipelines with automated linting, testing, and zero-downtime deployment." },
+      { step: 4, title: "24/7 SRE & Cloud FinOps", description: "Continuous observability with Prometheus/Grafana, proactive incident response, and cost governance." }
+    ],
+    faq: [
+      { question: "What are Cloud & DevOps Services, and why are they essential?", answer: "Cloud & DevOps Services unite modern cloud computing architecture with automated DevOps release engineering to accelerate software delivery and eliminate downtime." }
     ],
     isActive: true
   },

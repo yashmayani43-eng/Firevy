@@ -438,19 +438,22 @@ export const DigitalTransformationCaseStudies = ({ data }) => {
 
   const total = caseStudies.length;
 
-  const goPrev = useCallback(() => {
+  const handleNext = useCallback(() => {
+    setCurrentIndex((prev) => (prev === total - 1 ? 0 : prev + 1));
+  }, [total]);
+
+  const handlePrev = useCallback(() => {
     setCurrentIndex((prev) => (prev === 0 ? total - 1 : prev - 1));
   }, [total]);
 
-  const goNext = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 1) % total);
-  }, [total]);
+  const goNext = handleNext;
+  const goPrev = handlePrev;
 
   // 2.5-second auto-scroll interval
   useEffect(() => {
-    const timer = setInterval(goNext, 2500);
+    const timer = setInterval(handleNext, 2500);
     return () => clearInterval(timer);
-  }, [goNext]);
+  }, [handleNext]);
 
   return (
     <section className="py-16 bg-white border-b border-slate-200 text-slate-900 relative font-sans w-full overflow-hidden">
