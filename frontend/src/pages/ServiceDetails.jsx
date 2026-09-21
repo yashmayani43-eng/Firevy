@@ -71,6 +71,7 @@ import HireGolangDevelopersService from '../components/services/HireGolangDevelo
 import HireExpressJsDevelopersService from '../components/services/HireExpressJsDevelopersService';
 import HireNextJsDevelopersService from '../components/services/HireNextJsDevelopersService';
 import HireDataScientistDevelopersService from '../components/services/HireDataScientistDevelopersService';
+import HireMachineLearningEngineerService from '../components/services/HireMachineLearningEngineerService';
 import SharePointDevelopmentService from '../components/services/SharePointDevelopmentService';
 import PowerAppsDevelopmentService from '../components/services/PowerAppsDevelopmentService';
 import KotlinAppDevelopmentService from '../components/services/KotlinAppDevelopmentService';
@@ -124,6 +125,9 @@ import HireSolidityDevelopersService from '../components/services/HireSolidityDe
 import HireFastApiDevelopersService from '../components/services/HireFastApiDevelopersService';
 import HireApiDevelopersService from '../components/services/HireApiDevelopersService';
 import HireMeanStackDevelopersService from '../components/services/HireMeanStackDevelopersService';
+import HireMernStackDevelopersService from '../components/services/HireMernStackDevelopersService';
+import HireSpringBootDevelopersService from '../components/services/HireSpringBootDevelopersService';
+import HireDjangoDevelopersService from '../components/services/HireDjangoDevelopersService';
 
 export const ServiceDetails = () => {
   const { slug } = useParams();
@@ -177,9 +181,9 @@ export const ServiceDetails = () => {
     currentSlug === 'services/hire-backend-developers' ||
     currentSlug === 'services/hire-backend-developer';
   const isHirePython = currentSlug.includes('python') || currentSlug.includes('hire-python');
-  const isHireJava = currentSlug.includes('hire-java') || currentSlug === 'java-developers' || currentSlug === 'services/hire-java-developers';
+  const isHireJava = currentSlug.includes('hire-java') || currentSlug.includes('hire_java') || currentSlug.includes('java_developers') || currentSlug === 'java-developers' || currentSlug === 'services/hire-java-developers' || currentSlug === 'services/hire_java_developers';
   const isHireSpringBoot = currentSlug.includes('spring-boot') || currentSlug.includes('springboot') || currentSlug.includes('spring');
-  const isHireDjango = currentSlug.includes('django') || currentSlug.includes('hire-django');
+  const isHireDjango = currentSlug.includes('django') || currentSlug.includes('hire-django') || currentSlug.includes('hire_django');
   const isHireNet = currentSlug.includes('hire-net') || currentSlug.includes('hire-dotnet') || currentSlug === 'net-developers' || currentSlug === 'dotnet-developers';
   const isHireNodeJs = currentSlug.includes('hire-node') || currentSlug.includes('node-js-developers') || currentSlug.includes('nodejs-developers');
   const isHirePhp = currentSlug.includes('hire-php') || currentSlug === 'php-developers' || currentSlug === 'services/hire-php-developers';
@@ -474,6 +478,8 @@ export const ServiceDetails = () => {
   const isJava = currentSlug === 'java' ||
     currentSlug.includes('java-development') ||
     currentSlug.includes('hire-java') ||
+    currentSlug.includes('hire_java') ||
+    currentSlug.includes('java_developers') ||
     currentSlug.includes('java-software') ||
     currentSlug.includes('java-web');
 
@@ -489,7 +495,12 @@ export const ServiceDetails = () => {
     currentSlug.includes('genai') ||
     currentSlug.includes('gen-ai');
 
-  const isArtificialIntelligence = !isHireAiApp && !isGenerativeAi && (
+  const isMachineLearningEngineer = currentSlug.includes('machine-learning') ||
+    currentSlug.includes('ml-engineer') ||
+    currentSlug.includes('hire-machine-learning') ||
+    currentSlug.includes('hire-ml');
+
+  const isArtificialIntelligence = !isHireAiApp && !isGenerativeAi && !isMachineLearningEngineer && (
     currentSlug.includes('artificial-intelligence') ||
     currentSlug.includes('ai-ml') ||
     currentSlug.includes('ai-development') ||
@@ -815,15 +826,20 @@ export const ServiceDetails = () => {
   const isFastApi = currentSlug.includes('fastapi') || currentSlug.includes('fast-api') || currentSlug.includes('hire-fastapi');
   const isApi = (currentSlug.includes('hire-api') || currentSlug.includes('api-developer') || currentSlug.includes('api-developers')) && !currentSlug.includes('fastapi') && !currentSlug.includes('fast-api');
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
+  const isMernStack = currentSlug.includes('mern-stack') || currentSlug.includes('hire-mern-stack') || currentSlug === 'services/hire-mern-stack-developers' || currentSlug === 'hire-mern-stack-developers' || currentSlug === 'services/hire-mern-stack-developer' || currentSlug === 'hire-mern-stack-developer' || currentSlug === 'mern-stack-development' || currentSlug === 'services/mern-stack-development';
 
   useEffect(() => {
-    if (!isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
+    if (!isMernStack && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
       fetchServiceDetails();
     } else {
       setLoading(false);
     }
     window.scrollTo(0, 0);
   }, [currentSlug]);
+
+  if (isMernStack) {
+    return <HireMernStackDevelopersService />;
+  }
 
   if (isMeanStack) {
     return <HireMeanStackDevelopersService />;
@@ -851,6 +867,10 @@ export const ServiceDetails = () => {
 
   if (isLlmEngineers) {
     return <HireLlmEngineersService />;
+  }
+
+  if (isMachineLearningEngineer) {
+    return <HireMachineLearningEngineerService />;
   }
 
   if (isBarberApp) {
@@ -926,15 +946,15 @@ export const ServiceDetails = () => {
   }
 
   if (isHireJava) {
-    return <HireDedicatedTechDevelopersService techKey="hire-java-developers" />;
+    return <JavaDevelopmentService />;
   }
 
   if (isHireSpringBoot) {
-    return <HireDedicatedTechDevelopersService techKey="hire-spring-boot-developers" />;
+    return <HireSpringBootDevelopersService />;
   }
 
   if (isHireDjango) {
-    return <HireDedicatedTechDevelopersService techKey="hire-django-developers" />;
+    return <HireDjangoDevelopersService />;
   }
 
   if (isHireNet) {

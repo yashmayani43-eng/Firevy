@@ -35,12 +35,12 @@ export const FooterSectionEditor = ({ data, onChange }) => {
   };
 
   const offices = Array.isArray(data?.offices) ? data.offices : [
-    { id: 'in', country: 'India(HQ)', flag: '🇮🇳', address: 'C/102-103, Ganesh Meridian, Opp. Kargil Petrol Pump, S.G. Highway, Ahmedabad - 380060, Gujarat, INDIA' },
+    { id: 'in', country: 'India(HQ)', flag: '🇮🇳', address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004' },
     { id: 'us', country: 'USA', flag: '🇺🇸', address: '5004 NW 116th Ave Coral Springs, Florida, FL 33076' },
     { id: 'ca', country: 'Canada', flag: '🇨🇦', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' },
     { id: 'au', country: 'Australia', flag: '🇦🇺', address: 'U 2B 305 Harborne Street, Glendalough 6016 WA' },
     { id: 'uk', country: 'UK', flag: '🇬🇧', address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom' },
-    { id: 'ae', country: 'UAE', flag: '🇦🇪', address: 'A-21, Building 21, Ghoroob, Mirdif Dubai, United Arab Emirates' }
+    { id: 'ae', country: 'UAE', flag: '🇦🇪', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' }
   ];
 
   const socialLinks = data?.socialLinks || {

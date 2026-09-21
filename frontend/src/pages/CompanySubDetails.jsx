@@ -597,37 +597,37 @@ export const CompanySubDetails = () => {
     const leadersList = (content.leadership?.leaders && content.leadership.leaders.length > 0)
       ? content.leadership.leaders
       : (dynamicTeam && dynamicTeam.length > 0 ? dynamicTeam : [
-          {
-            name: 'Mr. Kumaril Patel',
-            designation: 'CEO & Co-Founder',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
-            linkedin: 'https://linkedin.com'
-          },
-          {
-            name: 'Mr. Rajendra Patel',
-            designation: 'CTO & Co-Founder',
-            image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
-            linkedin: 'https://linkedin.com'
-          }
-        ]);
+        {
+          name: 'Mr. Kumaril Patel',
+          designation: 'CEO & Co-Founder',
+          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+          linkedin: 'https://linkedin.com'
+        },
+        {
+          name: 'Mr. Rajendra Patel',
+          designation: 'CTO & Co-Founder',
+          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
+          linkedin: 'https://linkedin.com'
+        }
+      ]);
 
     // 7. Products
     const productsList = (content.products?.items && content.products.items.length > 0)
       ? content.products.items
       : [
-          {
-            name: 'Vidyalaya',
-            tagline: 'Digitizing Schools',
-            description: 'Efficient & Innovative School ERP known for its unmatched service since 22+ years. We digitalized 1600+ Schools globally.',
-            link: '/products'
-          },
-          {
-            name: 'OccuCare',
-            tagline: 'a healthier, more productive workforce',
-            description: 'OccuCare empower organizations to protect, maintain and promote the well-being of workers.',
-            link: '/products'
-          }
-        ];
+        {
+          name: 'Vidyalaya',
+          tagline: 'Digitizing Schools',
+          description: 'Efficient & Innovative School ERP known for its unmatched service since 22+ years. We digitalized 1600+ Schools globally.',
+          link: '/products'
+        },
+        {
+          name: 'OccuCare',
+          tagline: 'a healthier, more productive workforce',
+          description: 'OccuCare empower organizations to protect, maintain and promote the well-being of workers.',
+          link: '/products'
+        }
+      ];
 
     // 8. Trusted Brands
     const trustedBrands = content.trustedBrands || {
@@ -639,12 +639,12 @@ export const CompanySubDetails = () => {
     const insightsList = (content.insights?.items && content.insights.items.length > 0)
       ? content.insights.items
       : [
-          { image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80', caption: 'Corporate Headquarters' },
-          { image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80', caption: 'Occucon Event' },
-          { image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80', caption: 'Exhibition Booth' },
-          { image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80', caption: 'Our Team Banquet' },
-          { image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80', caption: 'Tech Showcase' }
-        ];
+        { image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80', caption: 'Corporate Headquarters' },
+        { image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80', caption: 'Occucon Event' },
+        { image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80', caption: 'Exhibition Booth' },
+        { image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80', caption: 'Our Team Banquet' },
+        { image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80', caption: 'Tech Showcase' }
+      ];
 
     // 10. CSR
     const csr = content.csr || {
@@ -1225,11 +1225,11 @@ export const CompanySubDetails = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
               {/* Left Core Pillars with Alternating Blue / Slate Colors */}
               <div className="lg:col-span-5 space-y-1.5 select-none">
-                <div className="text-[44px] sm:text-[54px] lg:text-[58px] font-[900] italic leading-[1.15] tracking-tight">
+                <div className="text-[35px] font-[700] italic leading-[42px] tracking-tight">
                   {tenets.map((word, idx) => (
                     <div
                       key={idx}
-                      className={idx % 2 === 0 ? "text-[#006B8F]" : "text-[#1E293B]"}
+                      className={idx % 2 === 0 ? "text-[#006085]" : "text-[#1E293B]"}
                     >
                       {word}
                     </div>
@@ -4450,31 +4450,31 @@ export const CompanySubDetails = () => {
     const secondaryFeaturedBlogs = (blogSectionContent.secondaryFeatured && blogSectionContent.secondaryFeatured.length > 0)
       ? blogSectionContent.secondaryFeatured
       : [
-          {
-            title: "Trending Tech Startup Ideas for Entrepreneurs Looking to Scale Fast",
-            category: "IT Companies",
-            date: "November 6, 2025 · 5 min read",
-            bg: "bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900"
-          },
-          {
-            title: "Why Investing in Legacy Modernization Services is Critical for Business Success?",
-            category: "Mobile App Development",
-            date: "November 4, 2025 · 6 min read",
-            bg: "bg-gradient-to-r from-sky-700 via-cyan-800 to-slate-900"
-          },
-          {
-            title: "Why Software Design Principles Matter for Successful IT Solutions?",
-            category: "Software Development",
-            date: "October 30, 2025 · 6 min read",
-            bg: "bg-gradient-to-r from-blue-900 via-slate-900 to-indigo-950"
-          },
-          {
-            title: "How to Scale Your IT Business with White Label Web Development Solutions?",
-            category: "Web Development",
-            date: "October 31, 2025 · 5 min read",
-            bg: "bg-gradient-to-r from-cyan-900 via-teal-900 to-slate-900"
-          }
-        ];
+        {
+          title: "Trending Tech Startup Ideas for Entrepreneurs Looking to Scale Fast",
+          category: "IT Companies",
+          date: "November 6, 2025 · 5 min read",
+          bg: "bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900"
+        },
+        {
+          title: "Why Investing in Legacy Modernization Services is Critical for Business Success?",
+          category: "Mobile App Development",
+          date: "November 4, 2025 · 6 min read",
+          bg: "bg-gradient-to-r from-sky-700 via-cyan-800 to-slate-900"
+        },
+        {
+          title: "Why Software Design Principles Matter for Successful IT Solutions?",
+          category: "Software Development",
+          date: "October 30, 2025 · 6 min read",
+          bg: "bg-gradient-to-r from-blue-900 via-slate-900 to-indigo-950"
+        },
+        {
+          title: "How to Scale Your IT Business with White Label Web Development Solutions?",
+          category: "Web Development",
+          date: "October 31, 2025 · 5 min read",
+          bg: "bg-gradient-to-r from-cyan-900 via-teal-900 to-slate-900"
+        }
+      ];
 
     // 3. Fallback Initial Blog Posts
     const defaultAllBlogPosts = [
@@ -4603,24 +4603,24 @@ export const CompanySubDetails = () => {
     // 4. Live Blog Posts from Database or Fallback
     const allBlogPosts = (dynamicBlogs && dynamicBlogs.length > 0)
       ? dynamicBlogs.map((b) => ({
-          id: b._id || b.id || b.slug,
-          title: b.title,
-          slug: b.slug,
-          author: b.author || 'Kumaril Patel',
-          category: b.category,
-          date: b.publishDate || b.date || 'August 31, 2026',
-          readTime: b.readTime || '5 min read',
-          excerpt: b.shortDescription || b.excerpt || '',
-          content: b.content || '',
-          brandText: b.brandText || 'firevy.co',
-          badge: b.badge || 'INSIGHT',
-          tag: b.tag || (b.tags?.[0] ? `</> ${b.tags[0]}` : '</> TECH'),
-          subtext: b.subtext || 'Next-Gen Engineering Insights',
-          buttonText: b.buttonText || 'Read the full blog',
-          featuredImage: b.featuredImage || '',
-          bg: b.gradientBg || b.bg || 'bg-gradient-to-br from-sky-600 via-blue-700 to-indigo-900',
-          tags: b.tags || []
-        }))
+        id: b._id || b.id || b.slug,
+        title: b.title,
+        slug: b.slug,
+        author: b.author || 'Kumaril Patel',
+        category: b.category,
+        date: b.publishDate || b.date || 'August 31, 2026',
+        readTime: b.readTime || '5 min read',
+        excerpt: b.shortDescription || b.excerpt || '',
+        content: b.content || '',
+        brandText: b.brandText || 'firevy.co',
+        badge: b.badge || 'INSIGHT',
+        tag: b.tag || (b.tags?.[0] ? `</> ${b.tags[0]}` : '</> TECH'),
+        subtext: b.subtext || 'Next-Gen Engineering Insights',
+        buttonText: b.buttonText || 'Read the full blog',
+        featuredImage: b.featuredImage || '',
+        bg: b.gradientBg || b.bg || 'bg-gradient-to-br from-sky-600 via-blue-700 to-indigo-900',
+        tags: b.tags || []
+      }))
       : defaultAllBlogPosts;
 
     // 5. Sidebar Category Icons Map
@@ -4652,10 +4652,10 @@ export const CompanySubDetails = () => {
 
     const topCategories = (blogSectionContent.sidebar?.categories && blogSectionContent.sidebar.categories.length > 0)
       ? blogSectionContent.sidebar.categories.map((cat) => ({
-          name: cat.name,
-          count: cat.count !== undefined ? cat.count : (allBlogPosts.filter((b) => b.category === cat.name).length || 0),
-          icon: categoryIconMap[cat.name] || Sparkles
-        }))
+        name: cat.name,
+        count: cat.count !== undefined ? cat.count : (allBlogPosts.filter((b) => b.category === cat.name).length || 0),
+        icon: categoryIconMap[cat.name] || Sparkles
+      }))
       : defaultTopCategories;
 
     const sidebarSettings = blogSectionContent.sidebar || {};
@@ -4946,11 +4946,10 @@ export const CompanySubDetails = () => {
                           setBlogPage(pageNum);
                           window.scrollTo({ top: 600, behavior: 'smooth' });
                         }}
-                        className={`w-9 h-9 rounded-[6px] text-[14px] font-[700] transition-colors ${
-                          blogPage === pageNum
+                        className={`w-9 h-9 rounded-[6px] text-[14px] font-[700] transition-colors ${blogPage === pageNum
                             ? 'bg-[#0099CC] text-white'
                             : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                        }`}
+                          }`}
                       >
                         {pageNum}
                       </button>
@@ -5001,8 +5000,8 @@ export const CompanySubDetails = () => {
                               message: contactForm.message,
                               source: 'Blog Sidebar'
                             })
-                          }).catch(() => {});
-                        } catch {}
+                          }).catch(() => { });
+                        } catch { }
                         setContactSubmitted(true);
                       }}
                       className="space-y-4"
@@ -5099,8 +5098,8 @@ export const CompanySubDetails = () => {
                             setBlogPage(1);
                           }}
                           className={`flex items-center justify-between p-3.5 rounded-[12px] border transition-all cursor-pointer ${isSelected
-                              ? 'bg-[#0099CC]/10 border-[#0099CC] text-[#0099CC]'
-                              : 'bg-slate-50/70 border-slate-100 hover:bg-slate-100 text-slate-800'
+                            ? 'bg-[#0099CC]/10 border-[#0099CC] text-[#0099CC]'
+                            : 'bg-slate-50/70 border-slate-100 hover:bg-slate-100 text-slate-800'
                             }`}
                         >
                           <div className="flex items-center space-x-3">

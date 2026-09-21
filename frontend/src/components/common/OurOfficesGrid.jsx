@@ -3,7 +3,7 @@ import React from 'react';
 const offices = [
   {
     country: 'India(HQ)',
-    address: 'C/102-103, Ganesh Meridian, Opp. Kargil Petrol Pump, S.G. Highway, Ahmedabad - 380060, Gujarat, INDIA',
+    address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004',
     flagUrl: 'https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg',
   },
   {
@@ -28,7 +28,7 @@ const offices = [
   },
   {
     country: 'UAE',
-    address: 'A-21, Building 21, Ghoroob Mirdif, Dubai, United Arab Emirates',
+    address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai',
     flagUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg',
   }
 ];

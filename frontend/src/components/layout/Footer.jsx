@@ -126,10 +126,10 @@ export const Footer = () => {
 
   return (
     <footer className="bg-white text-slate-900 pt-8 pb-0 relative overflow-hidden font-sans border-t border-slate-200/80 w-full">
-      
+
       {/* TOP SECTION: 6-COLUMN LINKS & AWARDS (WHITE BACKGROUND) */}
       <div className="w-full px-3 sm:px-6 lg:px-8 xl:px-10 mx-auto space-y-6">
-        
+
         {/* 1. TOP 6-COLUMN FOOTER LINKS IN CLEAN WHITE BOX - FULL WIDTH */}
         <div className="w-full bg-white rounded-[24px] border border-slate-200/90 shadow-sm p-6 sm:p-8 xl:p-10">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 text-left">
@@ -202,237 +202,237 @@ export const Footer = () => {
       <div className="w-full bg-[#edf5f9] mt-8 pt-8 pb-4 border-t border-slate-200/80">
         <div className="w-full px-3 sm:px-6 lg:px-8 xl:px-10 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-4 items-start text-left">
-          
-          {/* LEFT GROUP (Col 5 / 12) */}
-          <div className="lg:col-span-5 space-y-5">
-            
-            {/* firevy.co Brand Logo */}
-            <Link to="/" className="inline-block">
-              <img
-                src="/firevy_logo_dark.png"
-                alt="firevy.co"
-                className="h-10 sm:h-12 w-auto max-w-[220px] object-contain"
-              />
-            </Link>
 
-            {/* Two Contact Cards Side-by-Side */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* Card 1: Contact For Sales */}
-              <div className="bg-white rounded-[16px] p-5 border border-slate-200/90 shadow-sm space-y-3 min-h-[145px] flex flex-col justify-between">
-                <div className="text-[16px] font-[800] text-slate-900 font-sans">
-                  {footerConfig?.salesContact?.title || 'Contact For Sales'}
-                </div>
-                <div className="space-y-2 text-[12.5px] text-slate-700 font-sans">
-                  {(footerConfig?.salesContact?.email || 'contact@firevy.co') && (
-                    <a
-                      href={`mailto:${footerConfig?.salesContact?.email || 'contact@firevy.co'}`}
-                      className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                    >
-                      <Mail className="w-4 h-4 text-[#0080B0] shrink-0" />
-                      <span className="truncate font-[500]">
-                        {footerConfig?.salesContact?.email || 'contact@firevy.co'}
-                      </span>
-                    </a>
-                  )}
-                  {(footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662') && (
-                    <a
-                      href={`tel:${(footerConfig?.salesContact?.phoneIndia || '+91-942-970-9662').replace(/[^0-9+]/g, '')}`}
-                      className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                    >
-                      <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                      <span className="font-[600]">
-                        {footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662'}
-                      </span>
-                    </a>
-                  )}
-                  {(footerConfig?.salesContact?.phoneUS || 'US:+1-754-258-7670') && (
-                    <a
-                      href={`tel:${(footerConfig?.salesContact?.phoneUS || '+1-754-258-7670').replace(/[^0-9+]/g, '')}`}
-                      className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                    >
-                      <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                      <span className="font-[600]">
-                        {footerConfig?.salesContact?.phoneUS || 'US:+1-754-258-7670'}
-                      </span>
-                    </a>
-                  )}
-                </div>
-              </div>
+            {/* LEFT GROUP (Col 5 / 12) */}
+            <div className="lg:col-span-5 space-y-5">
 
-              {/* Card 2: Contact for Career (Jobs) */}
-              <div className="bg-white rounded-[16px] p-5 border border-slate-200/90 shadow-sm space-y-3 min-h-[145px] flex flex-col justify-between">
-                <div className="text-[16px] font-[800] text-slate-900 font-sans">
-                  {footerConfig?.careerContact?.title || 'Contact for Career (Jobs)'}
-                </div>
-                <div className="space-y-2 text-[12.5px] text-slate-700 font-sans">
-                  {(footerConfig?.careerContact?.email || 'careers@firevy.co') && (
-                    <a
-                      href={`mailto:${footerConfig?.careerContact?.email || 'careers@firevy.co'}`}
-                      className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                    >
-                      <Mail className="w-4 h-4 text-[#0080B0] shrink-0" />
-                      <span className="truncate font-[500]">
-                        {footerConfig?.careerContact?.email || 'careers@firevy.co'}
-                      </span>
-                    </a>
-                  )}
-                  {(footerConfig?.careerContact?.phone || '+91-909-997-6034') && (
-                    <a
-                      href={`tel:${(footerConfig?.careerContact?.phone || '+91-909-997-6034').replace(/[^0-9+]/g, '')}`}
-                      className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                    >
-                      <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                      <span className="font-[600]">
-                        {footerConfig?.careerContact?.phone || '+91-909-997-6034'}
-                      </span>
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
+              {/* firevy.co Brand Logo */}
+              <Link to="/" className="inline-block">
+                <img
+                  src="/firevy_logo_dark.png"
+                  alt="firevy.co"
+                  className="h-10 sm:h-12 w-auto max-w-[220px] object-contain"
+                />
+              </Link>
 
-            {/* Three Rating Badges (Google, Clutch, GoodFirms) with Laurel Wreaths */}
-            <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
-              {/* Google */}
-              <div className="bg-white rounded-[16px] px-2 py-2 sm:py-2.5 border border-slate-200/90 shadow-sm flex items-center justify-between space-x-1 sm:space-x-1.5 hover:shadow-md transition-shadow">
-                <img src="/images/left-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
-                <div className="flex flex-col items-center justify-center text-center min-w-0 flex-1 px-0.5">
-                  <img src="/images/google.webp" alt="Google" className="h-5 sm:h-6 w-auto object-contain mb-0.5" />
-                  <span className="text-[9px] sm:text-[10px] font-[900] text-black font-sans tracking-tight leading-none whitespace-nowrap">
-                    {footerConfig?.ratings?.googleReviews || '900+ REVIEWS'}
-                  </span>
-                </div>
-                <img src="/images/right-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
-              </div>
-
-              {/* Clutch */}
-              <div className="bg-white rounded-[16px] px-2 py-2 sm:py-2.5 border border-slate-200/90 shadow-sm flex items-center justify-between space-x-1 sm:space-x-1.5 hover:shadow-md transition-shadow">
-                <img src="/images/left-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
-                <div className="flex flex-col items-center justify-center text-center min-w-0 flex-1 px-0.5">
-                  <img src="/images/clutch.webp" alt="Clutch" className="h-5 sm:h-6 w-auto object-contain mb-0.5" />
-                  <span className="text-[9px] sm:text-[10px] font-[900] text-black font-sans tracking-tight leading-none whitespace-nowrap">
-                    {footerConfig?.ratings?.clutchReviews || '320+ REVIEWS'}
-                  </span>
-                </div>
-                <img src="/images/right-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
-              </div>
-
-              {/* GoodFirms */}
-              <div className="bg-white rounded-[16px] px-2 py-2 sm:py-2.5 border border-slate-200/90 shadow-sm flex items-center justify-between space-x-1 sm:space-x-1.5 hover:shadow-md transition-shadow">
-                <img src="/images/left-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
-                <div className="flex flex-col items-center justify-center text-center min-w-0 flex-1 px-0.5">
-                  <img src="/images/goodfirms.webp" alt="GoodFirms" className="h-5 sm:h-6 w-auto object-contain mb-0.5" />
-                  <span className="text-[9px] sm:text-[10px] font-[900] text-black font-sans tracking-tight leading-none whitespace-nowrap">
-                    {footerConfig?.ratings?.goodFirmsReviews || '200+ REVIEWS'}
-                  </span>
-                </div>
-                <img src="/images/right-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
-              </div>
-            </div>
-
-            {/* Compliance Badges & Circular Social Icons */}
-            <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
-              <div className="flex items-center space-x-2 text-[9px] font-[700]">
-                <span className="px-2 py-0.5 bg-[#FFF176] text-slate-900 border border-amber-300 font-mono text-[8.5px] rounded-[3px]">W3C XHTML 1.0</span>
-                <span className="px-2 py-0.5 bg-[#81C784] text-slate-900 border border-green-400 text-[8.5px] rounded-[3px]">DMCA PROTECTED</span>
-                <span className="px-2 py-0.5 bg-[#90CAF9] text-slate-900 border border-blue-300 text-[8.5px] rounded-[3px]">COPYSCAPE</span>
-                <span className="px-2 py-0.5 bg-[#FFF59D] text-slate-900 border border-amber-300 font-mono text-[8.5px] rounded-[3px]">W3C CSS</span>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                {[
-                  { name: 'FB', href: footerConfig?.socialLinks?.facebook || 'https://facebook.com', path: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z' },
-                  { name: 'X', href: footerConfig?.socialLinks?.twitter || 'https://twitter.com', path: 'M4 4l6.5 8.5L4 20h2l5.5-6.5L16 20h4l-7-9 6-7h-2l-5 6L8 4z' },
-                  { name: 'IN', href: footerConfig?.socialLinks?.linkedin || 'https://linkedin.com', path: 'M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z' },
-                  { name: 'IG', href: footerConfig?.socialLinks?.instagram || 'https://instagram.com', path: 'M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4zm-4 11a3 3 0 110-6 3 3 0 010 6z' },
-                  { name: 'YT', href: footerConfig?.socialLinks?.youtube || 'https://youtube.com', path: 'M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z' }
-                ].map((item, i) => (
-                  <a
-                    key={i}
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-8 h-8 rounded-full bg-[#0080B0] hover:bg-[#006B8F] text-white flex items-center justify-center transition-colors shadow-xs"
-                  >
-                    <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" fill="none">
-                      <path d={item.path} />
-                    </svg>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-          </div>
-
-          {/* RIGHT GROUP: 6 GLOBAL OFFICES GRID — TALL SPACIOUS CARDS (Col 7 / 12) */}
-          <div className="lg:col-span-7">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {(footerConfig?.offices && footerConfig.offices.length > 0 ? footerConfig.offices : [
-                { id: '1', country: 'India(HQ)', flag: '/images/india_office.svg', address: 'C/102-103, Ganesh Meridian, Opp. Kargil Petrol Pump, S.G. Highway, Ahmedabad - 380060, Gujarat, INDIA' },
-                { id: '2', country: 'USA', flag: '/images/usa_office.svg', address: '5004 NW 116th Ave Coral Springs, Florida, FL 33076' },
-                { id: '3', country: 'Canada', flag: '/images/canada_office.svg', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' },
-                { id: '4', country: 'Australia', flag: '/images/aus_office.svg', address: 'U 2B 305 Harborne Street, Glendalough 6016 WA' },
-                { id: '5', country: 'UK', flag: '/images/uk_office.svg', address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom' },
-                { id: '6', country: 'UAE', flag: '/images/uae_office.svg', address: 'A-21, Building 21, Ghoroob, Mirdif Dubai, United Arab Emirates' }
-              ]).map((office, idx) => {
-                const countryLower = (office.country || '').toLowerCase();
-                
-                const getFlag = () => {
-                  if (office.flag && (office.flag.startsWith('/') || office.flag.startsWith('http') || office.flag.includes('.svg') || office.flag.includes('.png'))) {
-                    return office.flag;
-                  }
-                  if (countryLower.includes('india') || idx === 0) return '/images/india_office.svg';
-                  if (countryLower.includes('usa') || countryLower.includes('states') || idx === 1) return '/images/usa_office.svg';
-                  if (countryLower.includes('canada') || idx === 2) return '/images/canada_office.svg';
-                  if (countryLower.includes('aus') || idx === 3) return '/images/aus_office.svg';
-                  if (countryLower.includes('uk') || countryLower.includes('kingdom') || idx === 4) return '/images/uk_office.svg';
-                  if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 5) return '/images/uae_office.svg';
-                  return '/images/india_office.svg';
-                };
-
-                const getSketch = () => {
-                  if (countryLower.includes('india') || idx === 0) return '/images/india_iamge.png';
-                  if (countryLower.includes('usa') || countryLower.includes('states') || idx === 1) return '/images/usaimage.png';
-                  if (countryLower.includes('canada') || idx === 2) return '/images/canadaimage.png';
-                  if (countryLower.includes('aus') || idx === 3) return '/images/ausimage.png';
-                  if (countryLower.includes('uk') || countryLower.includes('kingdom') || idx === 4) return '/images/ukimage.png';
-                  if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 5) return '/images/uae_image.png';
-                  return '/images/india_iamge.png';
-                };
-
-                return (
-                  <div
-                    key={office.id || idx}
-                    className="bg-white rounded-[18px] p-5 border border-slate-200/90 shadow-sm flex flex-col justify-between h-[180px] sm:h-[190px] relative overflow-hidden group hover:border-[#006B8F]/40 transition-colors"
-                  >
-                    <div>
-                      <div className="font-[800] text-slate-900 text-[15px] sm:text-[16px] mb-2 font-sans flex items-center space-x-2.5">
-                        <img
-                          src={getFlag()}
-                          alt={office.country}
-                          className="w-6 h-4.5 object-contain shrink-0 rounded-xs shadow-2xs"
-                        />
-                        <span>{office.country}</span>
-                      </div>
-                      <p className="text-slate-600 leading-relaxed text-[12.5px] font-[400] font-sans pr-14 line-clamp-4">
-                        {office.address}
-                      </p>
-                    </div>
-                    <div className="absolute right-2.5 bottom-1.5 pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
-                      <img
-                        src={getSketch()}
-                        alt=""
-                        className="h-20 sm:h-22 w-auto object-contain max-w-[85px] sm:max-w-[100px]"
-                      />
-                    </div>
+              {/* Two Contact Cards Side-by-Side */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* Card 1: Contact For Sales */}
+                <div className="bg-white rounded-[16px] p-5 border border-slate-200/90 shadow-sm space-y-3 min-h-[145px] flex flex-col justify-between">
+                  <div className="text-[16px] font-[800] text-slate-900 font-sans">
+                    {footerConfig?.salesContact?.title || 'Contact For Sales'}
                   </div>
-                );
-              })}
-            </div>
-          </div>
+                  <div className="space-y-2 text-[12.5px] text-slate-700 font-sans">
+                    {(footerConfig?.salesContact?.email || 'contact@firevy.co') && (
+                      <a
+                        href={`mailto:${footerConfig?.salesContact?.email || 'contact@firevy.co'}`}
+                        className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                      >
+                        <Mail className="w-4 h-4 text-[#0080B0] shrink-0" />
+                        <span className="truncate font-[500]">
+                          {footerConfig?.salesContact?.email || 'contact@firevy.co'}
+                        </span>
+                      </a>
+                    )}
+                    {(footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662') && (
+                      <a
+                        href={`tel:${(footerConfig?.salesContact?.phoneIndia || '+91-942-970-9662').replace(/[^0-9+]/g, '')}`}
+                        className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                      >
+                        <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                        <span className="font-[600]">
+                          {footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662'}
+                        </span>
+                      </a>
+                    )}
+                    {(footerConfig?.salesContact?.phoneUS || 'US:+1-754-258-7670') && (
+                      <a
+                        href={`tel:${(footerConfig?.salesContact?.phoneUS || '+1-754-258-7670').replace(/[^0-9+]/g, '')}`}
+                        className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                      >
+                        <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                        <span className="font-[600]">
+                          {footerConfig?.salesContact?.phoneUS || 'US:+1-754-258-7670'}
+                        </span>
+                      </a>
+                    )}
+                  </div>
+                </div>
 
+                {/* Card 2: Contact for Career (Jobs) */}
+                <div className="bg-white rounded-[16px] p-5 border border-slate-200/90 shadow-sm space-y-3 min-h-[145px] flex flex-col justify-between">
+                  <div className="text-[16px] font-[800] text-slate-900 font-sans">
+                    {footerConfig?.careerContact?.title || 'Contact for Career (Jobs)'}
+                  </div>
+                  <div className="space-y-2 text-[12.5px] text-slate-700 font-sans">
+                    {(footerConfig?.careerContact?.email || 'careers@firevy.co') && (
+                      <a
+                        href={`mailto:${footerConfig?.careerContact?.email || 'careers@firevy.co'}`}
+                        className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                      >
+                        <Mail className="w-4 h-4 text-[#0080B0] shrink-0" />
+                        <span className="truncate font-[500]">
+                          {footerConfig?.careerContact?.email || 'careers@firevy.co'}
+                        </span>
+                      </a>
+                    )}
+                    {(footerConfig?.careerContact?.phone || '+91 7069370623') && (
+                      <a
+                        href={`tel:${(footerConfig?.careerContact?.phone || '+91 7069370623').replace(/[^0-9+]/g, '')}`}
+                        className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                      >
+                        <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                        <span className="font-[600]">
+                          {footerConfig?.careerContact?.phone || '+91 7069370623'}
+                        </span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* Three Rating Badges (Google, Clutch, GoodFirms) with Laurel Wreaths */}
+              <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
+                {/* Google */}
+                <div className="bg-white rounded-[16px] px-2 py-2 sm:py-2.5 border border-slate-200/90 shadow-sm flex items-center justify-between space-x-1 sm:space-x-1.5 hover:shadow-md transition-shadow">
+                  <img src="/images/left-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
+                  <div className="flex flex-col items-center justify-center text-center min-w-0 flex-1 px-0.5">
+                    <img src="/images/google.webp" alt="Google" className="h-5 sm:h-6 w-auto object-contain mb-0.5" />
+                    <span className="text-[9px] sm:text-[10px] font-[900] text-black font-sans tracking-tight leading-none whitespace-nowrap">
+                      {footerConfig?.ratings?.googleReviews || '900+ REVIEWS'}
+                    </span>
+                  </div>
+                  <img src="/images/right-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
+                </div>
+
+                {/* Clutch */}
+                <div className="bg-white rounded-[16px] px-2 py-2 sm:py-2.5 border border-slate-200/90 shadow-sm flex items-center justify-between space-x-1 sm:space-x-1.5 hover:shadow-md transition-shadow">
+                  <img src="/images/left-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
+                  <div className="flex flex-col items-center justify-center text-center min-w-0 flex-1 px-0.5">
+                    <img src="/images/clutch.webp" alt="Clutch" className="h-5 sm:h-6 w-auto object-contain mb-0.5" />
+                    <span className="text-[9px] sm:text-[10px] font-[900] text-black font-sans tracking-tight leading-none whitespace-nowrap">
+                      {footerConfig?.ratings?.clutchReviews || '320+ REVIEWS'}
+                    </span>
+                  </div>
+                  <img src="/images/right-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
+                </div>
+
+                {/* GoodFirms */}
+                <div className="bg-white rounded-[16px] px-2 py-2 sm:py-2.5 border border-slate-200/90 shadow-sm flex items-center justify-between space-x-1 sm:space-x-1.5 hover:shadow-md transition-shadow">
+                  <img src="/images/left-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
+                  <div className="flex flex-col items-center justify-center text-center min-w-0 flex-1 px-0.5">
+                    <img src="/images/goodfirms.webp" alt="GoodFirms" className="h-5 sm:h-6 w-auto object-contain mb-0.5" />
+                    <span className="text-[9px] sm:text-[10px] font-[900] text-black font-sans tracking-tight leading-none whitespace-nowrap">
+                      {footerConfig?.ratings?.goodFirmsReviews || '200+ REVIEWS'}
+                    </span>
+                  </div>
+                  <img src="/images/right-leaf.svg" alt="" className="h-9 sm:h-11 w-auto shrink-0 select-none opacity-85" />
+                </div>
+              </div>
+
+              {/* Compliance Badges & Circular Social Icons */}
+              <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
+                <div className="flex items-center space-x-2 text-[9px] font-[700]">
+                  <span className="px-2 py-0.5 bg-[#FFF176] text-slate-900 border border-amber-300 font-mono text-[8.5px] rounded-[3px]">W3C XHTML 1.0</span>
+                  <span className="px-2 py-0.5 bg-[#81C784] text-slate-900 border border-green-400 text-[8.5px] rounded-[3px]">DMCA PROTECTED</span>
+                  <span className="px-2 py-0.5 bg-[#90CAF9] text-slate-900 border border-blue-300 text-[8.5px] rounded-[3px]">COPYSCAPE</span>
+                  <span className="px-2 py-0.5 bg-[#FFF59D] text-slate-900 border border-amber-300 font-mono text-[8.5px] rounded-[3px]">W3C CSS</span>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  {[
+                    { name: 'FB', href: footerConfig?.socialLinks?.facebook || 'https://facebook.com', path: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z' },
+                    { name: 'X', href: footerConfig?.socialLinks?.twitter || 'https://twitter.com', path: 'M4 4l6.5 8.5L4 20h2l5.5-6.5L16 20h4l-7-9 6-7h-2l-5 6L8 4z' },
+                    { name: 'IN', href: footerConfig?.socialLinks?.linkedin || 'https://linkedin.com', path: 'M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z' },
+                    { name: 'IG', href: footerConfig?.socialLinks?.instagram || 'https://instagram.com', path: 'M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4zm-4 11a3 3 0 110-6 3 3 0 010 6z' },
+                    { name: 'YT', href: footerConfig?.socialLinks?.youtube || 'https://youtube.com', path: 'M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z' }
+                  ].map((item, i) => (
+                    <a
+                      key={i}
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-8 h-8 rounded-full bg-[#0080B0] hover:bg-[#006B8F] text-white flex items-center justify-center transition-colors shadow-xs"
+                    >
+                      <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" fill="none">
+                        <path d={item.path} />
+                      </svg>
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+
+            {/* RIGHT GROUP: 6 GLOBAL OFFICES GRID — TALL SPACIOUS CARDS (Col 7 / 12) */}
+            <div className="lg:col-span-7">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {(footerConfig?.offices && footerConfig.offices.length > 0 ? footerConfig.offices : [
+                  { id: '1', country: 'India(HQ)', flag: '/images/india_office.svg', address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004' },
+                  { id: '2', country: 'USA', flag: '/images/usa_office.svg', address: '5004 NW 116th Ave Coral Springs, Florida, FL 33076' },
+                  { id: '3', country: 'Canada', flag: '/images/canada_office.svg', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' },
+                  { id: '4', country: 'Australia', flag: '/images/aus_office.svg', address: 'U 2B 305 Harborne Street, Glendalough 6016 WA' },
+                  { id: '5', country: 'UK', flag: '/images/uk_office.svg', address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom' },
+                  { id: '6', country: 'UAE', flag: '/images/uae_office.svg', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' }
+                ]).map((office, idx) => {
+                  const countryLower = (office.country || '').toLowerCase();
+
+                  const getFlag = () => {
+                    if (office.flag && (office.flag.startsWith('/') || office.flag.startsWith('http') || office.flag.includes('.svg') || office.flag.includes('.png'))) {
+                      return office.flag;
+                    }
+                    if (countryLower.includes('india') || idx === 0) return '/images/india_office.svg';
+                    if (countryLower.includes('usa') || countryLower.includes('states') || idx === 1) return '/images/usa_office.svg';
+                    if (countryLower.includes('canada') || idx === 2) return '/images/canada_office.svg';
+                    if (countryLower.includes('aus') || idx === 3) return '/images/aus_office.svg';
+                    if (countryLower.includes('uk') || countryLower.includes('kingdom') || idx === 4) return '/images/uk_office.svg';
+                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 5) return '/images/uae_office.svg';
+                    return '/images/india_office.svg';
+                  };
+
+                  const getSketch = () => {
+                    if (countryLower.includes('india') || idx === 0) return '/images/india_iamge.png';
+                    if (countryLower.includes('usa') || countryLower.includes('states') || idx === 1) return '/images/usaimage.png';
+                    if (countryLower.includes('canada') || idx === 2) return '/images/canadaimage.png';
+                    if (countryLower.includes('aus') || idx === 3) return '/images/ausimage.png';
+                    if (countryLower.includes('uk') || countryLower.includes('kingdom') || idx === 4) return '/images/ukimage.png';
+                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 5) return '/images/uae_image.png';
+                    return '/images/india_iamge.png';
+                  };
+
+                  return (
+                    <div
+                      key={office.id || idx}
+                      className="bg-white rounded-[18px] p-5 border border-slate-200/90 shadow-sm flex flex-col justify-between h-[180px] sm:h-[190px] relative overflow-hidden group hover:border-[#006B8F]/40 transition-colors"
+                    >
+                      <div>
+                        <div className="font-[800] text-slate-900 text-[15px] sm:text-[16px] mb-2 font-sans flex items-center space-x-2.5">
+                          <img
+                            src={getFlag()}
+                            alt={office.country}
+                            className="w-6 h-4.5 object-contain shrink-0 rounded-xs shadow-2xs"
+                          />
+                          <span>{office.country}</span>
+                        </div>
+                        <p className="text-slate-600 leading-relaxed text-[12.5px] font-[400] font-sans pr-14 line-clamp-4">
+                          {office.address}
+                        </p>
+                      </div>
+                      <div className="absolute right-2.5 bottom-1.5 pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
+                        <img
+                          src={getSketch()}
+                          alt=""
+                          className="h-20 sm:h-22 w-auto object-contain max-w-[85px] sm:max-w-[100px]"
+                        />
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
       </div>
 
       {/* 4. SOLID BLUE COPYRIGHT BAR ACROSS FULL WIDTH */}
