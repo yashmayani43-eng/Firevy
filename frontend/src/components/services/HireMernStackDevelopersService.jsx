@@ -34,57 +34,57 @@ import {
   Coins, Zap
 } from 'lucide-react';
 
-export const PowerAppsDevelopmentService = () => {
+export const HireMernStackDevelopersService = () => {
   const [responsibilityTab, setResponsibilityTab] = useState('sapphire');
 
-  const powerAppsFaqs = [
+  const mernStackFaqs = [
     {
       id: 1,
-      question: "1. Why Microsoft PowerApps Development?",
-      answer: "Microsoft PowerApps enables low-code/no-code rapid application development, seamless integration with Microsoft 365, Dataverse, SharePoint, and external REST APIs, reducing development timelines by up to 70% while maintaining enterprise governance."
+      question: "1. Why MERN Stack Development?",
+      answer: "MERN Stack (MongoDB, Express.js, React.js, Node.js) enables seamless full-stack JavaScript development, high component reusability with React, asynchronous non-blocking performance with Node.js, and rapid, cost-effective enterprise application delivery."
     },
     {
       id: 2,
-      question: "2. Is PowerApps Application Architecture Scalable?",
-      answer: "Yes, PowerApps scales seamlessly using Microsoft Dataverse as a robust cloud database engine, automated role-based security, Azure Functions extensions, and Power Automate background processing pipelines."
+      question: "2. Is MERN Stack Construction Scalable?",
+      answer: "Yes, MERN Stack architecture relies on Node.js event-driven backend microservices and MongoDB distributed document store, allowing effortless horizontal scaling across cloud environments."
     },
     {
       id: 3,
-      question: "3. Is PowerApps Development an economically viable option?",
-      answer: "Building custom enterprise apps with PowerApps reduces custom software development overhead, eliminates legacy software license bloat, and provides high ROI through fast time-to-market and low-code maintainability."
+      question: "3. Is MERN Stack Development an economically viable option?",
+      answer: "Using JavaScript/TypeScript across both client and server reduces development overhead, streamlines code maintenance, and speeds up time-to-market compared to multi-language stacks."
     },
     {
       id: 4,
-      question: "4. Why should I hire PowerApps developers from Sapphire Solutions / Firevy.co?",
-      answer: "Our PowerApps experts have 23+ years of combined experience across Microsoft Power Platform, SharePoint, Azure, and Dataverse. We offer pre-vetted senior engineers, 320+ 5-star Clutch reviews, zero onboarding delay, and strict NDA compliance."
+      question: "4. Why should I hire MERN Stack developers from Sapphire Solutions?",
+      answer: "Our MERN stack developers have 23+ years of combined experience, 320+ 5-star Clutch reviews, strict NDA compliance, zero onboarding delay, and 24/7 SLA technical support."
     },
     {
       id: 5,
-      question: "5. What are the key benefits of using PowerApps for custom business applications?",
-      answer: "Key benefits include rapid Canvas and Model-driven app creation, responsive mobile and desktop layouts, automated approval workflows with Power Automate, embedded Power BI analytics, and native Microsoft 365 security."
+      question: "5. What are the benefits of using the MERN Stack for web application development?",
+      answer: "Key benefits include single-page application responsiveness with React's Virtual DOM, flexible JSON schema with MongoDB, high-throughput REST/GraphQL APIs with Express, and lightning-fast server performance with Node.js."
     },
     {
       id: 6,
-      question: "6. Do your PowerApps developers offer full lifecycle support and migration?",
-      answer: "Yes! We handle legacy InfoPath/Excel/Lotus Notes migration, requirements gathering, custom UI/UX design, Dataverse schema setup, Power Automate flows, QA testing, and 24/7 post-deployment SLA support."
+      question: "6. Do your MERN Stack developers offer full project lifecycle support?",
+      answer: "Yes, we handle everything from initial discovery, UI/UX wireframing, architecture design, and sprint development to automated QA testing, cloud deployment, and post-launch maintenance."
     },
     {
       id: 7,
-      question: "7. Can I hire remote PowerApps developers from Sapphire Solutions for my business?",
-      answer: "Yes! We provide flexible engagement models—hourly ($21/hr), part-time (80 hrs/mo), or dedicated monthly retainers aligned directly with your preferred working hours and timezone."
+      question: "7. Can I hire remote MERN Stack developers from Sapphire Solutions for my business?",
+      answer: "辦理 Yes! We offer flexible engagement models—hourly ($21/hr), part-time, or dedicated monthly retainers aligned directly with your timezone."
     },
     {
       id: 8,
-      question: "8. What kind of enterprise apps can be built using Microsoft PowerApps?",
-      answer: "You can build employee onboarding portals, field inspection mobile apps, inventory & supply chain management tools, approval workflows, CRM portals, financial reporting tools, and custom SharePoint extensions."
+      question: "8. What kind of web applications can be built using the MERN Stack?",
+      answer: "You can build enterprise SaaS portals, eCommerce stores, real-time messaging apps, healthcare portals, ERP & CRM systems, streaming platforms, and custom REST/GraphQL API backends."
     }
   ];
 
   return (
     <>
       <SEO
-        title="Hire PowerApps Developers | Power Platform & PowerApps Experts Firevy.co"
-        description="Hire dedicated Microsoft PowerApps developers from Firevy.co starting at $21/hr. Expert Canvas Apps, Model-Driven Apps, Power Automate, Dataverse, and SharePoint specialists."
+        title="Hire MERN Stack Developers | Top Dedicated MERN Developers Firevy.co"
+        description="Hire dedicated MERN Stack developers from Firevy.co starting at $21/hr. Expert MongoDB, Express.js, React.js, and Node.js engineers for enterprise full-stack web applications."
       />
 
       {/* 1. HERO SECTION */}
@@ -94,10 +94,10 @@ export const PowerAppsDevelopmentService = () => {
             {/* Left Column: Text + Stats + Teal CTA Box */}
             <div className="lg:col-span-7 text-left">
               <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Hire PowerApps Developers
+                Hire MERN Stack Developers
               </h1>
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed mt-4 max-w-2xl font-sans">
-                PowerApps development has amassed a large amount of popularity due to its ability to serve as a flexible blend of low-code Power Platform technologies for web and mobile application development. You can Hire dedicated PowerApps developers to develop productive applications.
+                MERN Stack development has amassed a large amount of popularity due to its ability to serve as a flexible blend of cutting-edge technologies for web application development. You can Hire dedicated MERN Stack developers to develop productive applications.
               </p>
 
               {/* 4 Stat Counters Grid */}
@@ -172,19 +172,19 @@ export const PowerAppsDevelopmentService = () => {
                   <div className="py-5 space-y-3 font-mono text-[11px] text-slate-400">
                     <div className="flex space-x-2">
                       <span className="text-purple-600 font-bold">import</span>
-                      <span className="text-slate-800 font-semibold">{`{ PowerApps }`}</span>
+                      <span className="text-slate-800 font-semibold">{`{ Express }`}</span>
                       <span className="text-purple-600 font-bold">from</span>
-                      <span className="text-emerald-600">'@microsoft/powerplatform'</span>;
+                      <span className="text-emerald-600">'express'</span>;
                     </div>
                     <div className="flex space-x-2">
                       <span className="text-purple-600 font-bold">import</span>
-                      <span className="text-slate-800 font-semibold">Dataverse, Flow</span>
+                      <span className="text-slate-800 font-semibold">React</span>
                       <span className="text-purple-600 font-bold">from</span>
-                      <span className="text-cyan-600">'@ms365/core'</span>;
+                      <span className="text-cyan-600">'react'</span>;
                     </div>
                     <div className="flex space-x-2">
                       <span className="text-purple-600 font-bold">const</span>
-                      <span className="text-blue-600 font-bold">app</span> = <span className="text-slate-800">PowerApps()</span>;
+                      <span className="text-blue-600 font-bold">app</span> = <span className="text-slate-800">Express()</span>;
                     </div>
                     <div className="h-2 bg-slate-100 rounded w-3/4 my-2" />
                     <div className="h-2 bg-slate-100 rounded w-1/2" />
@@ -194,32 +194,32 @@ export const PowerAppsDevelopmentService = () => {
                   <div className="w-20 h-4 bg-slate-200 rounded-b-md mx-auto -mb-5" />
                 </div>
 
-                <div className="absolute -top-3 -right-3 z-20 bg-white border border-violet-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
-                  <div className="w-9 h-9 rounded-xl bg-[#742774] text-white flex items-center justify-center font-black text-sm shadow-md font-sans">
-                    ⚡
+                <div className="absolute -top-3 -right-3 z-20 bg-white border border-cyan-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
+                  <div className="w-9 h-9 rounded-xl bg-[#00D8FF] text-slate-900 flex items-center justify-center font-black text-sm shadow-md font-sans">
+                    ⚛️
                   </div>
-                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">Canvas App</span>
+                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">React.js</span>
                 </div>
 
                 <div className="absolute top-1/3 -left-5 z-20 bg-[#111827] text-white p-2.5 sm:p-3 rounded-2xl shadow-xl flex items-center space-x-2 border border-slate-800">
-                  <div className="w-8 h-8 rounded-lg bg-purple-600 text-white flex items-center justify-center font-black text-xs font-mono">
-                    PA
+                  <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-black text-xs font-mono">
+                    EX
                   </div>
-                  <span className="text-xs font-bold text-white pr-1 font-sans">Power Automate</span>
+                  <span className="text-xs font-bold text-white pr-1 font-sans">Express</span>
                 </div>
 
                 <div className="absolute -bottom-3 left-4 z-20 bg-white border border-emerald-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
-                  <div className="w-9 h-9 rounded-xl bg-[#0078D4] text-white flex items-center justify-center font-black text-sm shadow-md font-sans">
-                    📊
+                  <div className="w-9 h-9 rounded-xl bg-[#47A248] text-white flex items-center justify-center font-black text-sm shadow-md font-sans">
+                    🍃
                   </div>
-                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">Dataverse</span>
+                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">MongoDB</span>
                 </div>
 
                 <div className="absolute -bottom-3 -right-3 z-20 bg-white border border-emerald-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
-                  <div className="w-9 h-9 rounded-xl bg-[#038387] text-white flex items-center justify-center font-black text-xs font-mono shadow-md">
-                    SP
+                  <div className="w-9 h-9 rounded-xl bg-[#339933] text-white flex items-center justify-center font-black text-xs font-mono shadow-md">
+                    JS
                   </div>
-                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">SharePoint</span>
+                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">Node.js</span>
                 </div>
               </div>
             </div>
@@ -230,7 +230,7 @@ export const PowerAppsDevelopmentService = () => {
       {/* 2. CLIENT LOGOS MARQUEE BAR */}
       <TrustMarquee />
 
-      {/* 3. SECTION 1: Best PowerApps Developers Available With Us */}
+      {/* 3. SECTION 1: Best Mern Stack Developers Available With Us */}
       <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -246,25 +246,12 @@ export const PowerAppsDevelopmentService = () => {
                       <div className="h-2 bg-slate-300 rounded w-3/5" />
                     </div>
 
-                    <div className="absolute right-6 top-6 w-28 h-44 bg-slate-900 rounded-xl p-1.5 shadow-2xl border border-cyan-400/40 z-10 flex flex-col justify-between">
-                      <div className="bg-sky-500 rounded-lg h-full p-2 flex flex-col items-center justify-center text-white">
-                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center mb-1">
-                          ⚙️
-                        </div>
-                        <span className="text-[9px] font-black tracking-wider uppercase">App Ready</span>
-                      </div>
-                    </div>
-
-                    <div className="absolute top-2 left-28 bg-[#742774] text-white text-[9px] font-bold px-2 py-0.5 rounded-full shadow">
-                      PowerApps
-                    </div>
-
                     <div className="absolute top-10 right-2 bg-blue-600 text-white text-[9px] font-black px-1.5 py-0.5 rounded shadow">
-                      MS365
+                      JS
                     </div>
 
-                    <div className="absolute bottom-3 left-32 bg-[#0078D4] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow">
-                      Dataverse
+                    <div className="absolute bottom-3 left-32 bg-[#00D8FF] text-slate-900 text-[10px] font-black px-2 py-0.5 rounded-md shadow">
+                      React
                     </div>
                   </div>
                   <div className="w-28 h-3 bg-slate-700 rounded-b-md mx-auto mt-1" />
@@ -275,10 +262,10 @@ export const PowerAppsDevelopmentService = () => {
             {/* Right Column: Title + Paragraph */}
             <div className="lg:col-span-6 text-left space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Best PowerApps Developers Available With Us
+                Best Mern Stack Developers Available With Us
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans font-normal">
-                All of the Power Platform components (Canvas Apps, Model-Driven Apps, Dataverse, Power Automate, Power BI, SharePoint) are expertly handled by our full-stack PowerApps developers. Hire PowerApps developers to create enterprise applications that are ready for the future. We provide a range of hiring models so you can select the most appropriate ones for your project.
+                All of the MERN components (MongoDB, ExpressJS, ReactJS, NodeJS) are expertly handled by our full-stack MERN developers. Hire mern stack developers to create mobile and web applications that are ready for the future. We provide a range of hiring models so you can select the most appropriate ones for your project.
               </p>
             </div>
           </div>
@@ -293,7 +280,7 @@ export const PowerAppsDevelopmentService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-normal mt-2.5 font-sans">
-              Hire PowerApps Developers from Firevy.co Starts from,
+              Hire Mern Stack Developers from Firevy.co Starts from,
             </p>
           </div>
 
@@ -452,7 +439,7 @@ export const PowerAppsDevelopmentService = () => {
               Hire Dedicated Developers To Empower Your Business with our Development Proficiency
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-normal mt-2.5 font-sans">
-              Hire PowerApps Developers to meet your business perks by leveraging our technical elegance.
+              Hire Mern Stack Developers to meet your business perks by leveraging our technical elegance.
             </p>
           </div>
 
@@ -509,20 +496,20 @@ export const PowerAppsDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 6. SECTION 4: Brief About Our PowerApps Developer */}
+      {/* 6. SECTION 4: Brief About Our Mern Stack Developer */}
       <section className="py-16 bg-[#F8FAFC] border-b border-slate-200/80 text-slate-900 font-sans">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Text */}
             <div className="lg:col-span-7 text-left space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Brief About Our PowerApps Developer
+                Brief About Our Mern Stack Developer
               </h2>
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
-                Our PowerApps developers have rich expertise in database administration using Microsoft Dataverse, SharePoint, SQL Server, and Azure. Our pool of talented developers has knowledge of Canvas Apps, Model-Driven Apps, Power Automate, and Power BI dashboards.
+                Our Mern stack developers have rich expertise in database administration using MongoDB and more. Our pool of talented developers has knowledge of Reactjs and Node js programming languages.
               </p>
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
-                Our PowerApps developers have wide expertise in Power FX, JavaScript, HTML5, and CSS custom components. Our PowerApps developers have expertise in UI, UX design and development, and Power Platform architecture. You can hire our front-end and low-code developers who have rich expertise in a variety of Microsoft 365 solutions.
+                Our Mern stack developers have wide expertise in languages such as HTML5, XHTML, and CSS coding. Our Mern stack developers have expertise in UI, UX design and development, and MVC Design Patterns. You can hire our front-end developers who have rich expertise in a variety of JS frameworks.
               </p>
             </div>
 
@@ -531,7 +518,7 @@ export const PowerAppsDevelopmentService = () => {
               <div className="relative w-full max-w-[440px] aspect-[4/3] flex items-center justify-center p-4">
                 <div className="w-full bg-slate-900 rounded-2xl p-4 shadow-2xl border border-slate-800 relative text-white flex flex-col justify-between min-h-[220px]">
                   <div className="flex justify-between items-center pb-2 border-b border-slate-800">
-                    <span className="text-xs font-mono text-cyan-400">POWERAPPS STUDIO</span>
+                    <span className="text-xs font-mono text-cyan-400">MERN IDE</span>
                     <div className="flex space-x-1">
                       <div className="w-2.5 h-2.5 rounded-full bg-rose-500" />
                       <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
@@ -540,18 +527,18 @@ export const PowerAppsDevelopmentService = () => {
                   </div>
 
                   <div className="py-4 space-y-2 font-mono text-[11px] text-slate-300">
-                    <div><span className="text-purple-400">const</span> <span className="text-yellow-300">developer</span> = <span className="text-cyan-300">new</span> <span className="text-blue-400">PowerAppsDeveloper()</span>;</div>
-                    <div><span className="text-purple-400">await</span> developer.<span className="text-emerald-400 font-bold">buildEnterpriseApps()</span>;</div>
+                    <div><span className="text-purple-400">const</span> <span className="text-yellow-300">developer</span> = <span className="text-cyan-300">new</span> <span className="text-blue-400">MernDeveloper()</span>;</div>
+                    <div><span className="text-purple-400">await</span> developer.<span className="text-emerald-400 font-bold">buildScalableApps()</span>;</div>
                   </div>
 
                   <div className="absolute -bottom-4 -right-4 bg-white p-2 rounded-2xl shadow-xl border border-slate-200 text-slate-900 flex items-center space-x-2">
-                    <div className="w-8 h-8 rounded-xl bg-[#742774] text-white flex items-center justify-center font-black text-xs font-sans">PA</div>
-                    <span className="text-xs font-bold font-sans">PowerApps Expert</span>
+                    <div className="w-8 h-8 rounded-xl bg-[#00D8FF] text-slate-900 flex items-center justify-center font-black text-xs font-sans">⚛️</div>
+                    <span className="text-xs font-bold font-sans">React Expert</span>
                   </div>
 
                   <div className="absolute -top-4 -left-4 bg-[#111827] p-2 rounded-2xl shadow-xl border border-slate-700 text-white flex items-center space-x-2">
-                    <div className="w-8 h-8 rounded-xl bg-purple-600 text-white flex items-center justify-center font-black text-xs font-mono">FLOW</div>
-                    <span className="text-xs font-bold font-sans">Power Automate</span>
+                    <div className="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black text-xs font-mono">EX</div>
+                    <span className="text-xs font-bold font-sans">Express Backend</span>
                   </div>
                 </div>
               </div>
@@ -568,7 +555,7 @@ export const PowerAppsDevelopmentService = () => {
             <div className="text-left max-w-sm shrink-0">
               <h3 className="text-xl sm:text-2xl lg:text-[28px] font-[900] text-white leading-tight font-sans tracking-tight">
                 World Wide Top Rated<br />
-                PowerApps Development<br />
+                Mern Stack Development<br />
                 Company on Clutch
               </h3>
             </div>
@@ -667,24 +654,24 @@ export const PowerAppsDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 8. SECTION 6: What Exactly Is A PowerApps Developer? */}
+      {/* 8. SECTION 6: What Exactly Is A Mern Stack Developer? */}
       <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
         <Container>
           <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight text-center mb-10 font-sans">
-            What Exactly Is A PowerApps Developer?
+            What Exactly Is A Mern Stack Developer?
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-5xl mx-auto">
             <div className="lg:col-span-5 bg-[#EBF5FB] p-8 rounded-3xl border border-cyan-200/80 shadow-sm text-left relative">
               <Quote className="w-10 h-10 text-[#006085] opacity-30 mb-2" />
               <h3 className="text-xl sm:text-2xl font-[900] text-[#006085] leading-snug font-sans">
-                Hire PowerApps Developers At A Reasonable Rate
+                Hire Mern Stack Developers At A Reasonable Rate
               </h3>
             </div>
 
             <div className="lg:col-span-7 text-left space-y-5">
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans font-normal">
-                Our remote PowerApps developers have designed and launched a wide array of websites, applications, and portals, with a scope of defects and mistakes that is either minimal or nonexistent in most cases. As a trusted PowerApps development company you can get our PowerApps Consulting to build PowerApps apps. In addition, the team has the necessary skill set and expertise to develop applications with a high degree of precision and skill. We provide you with the opportunity to engage PowerApps web developers for PowerApps Migration & Porting to work on an hourly, part-time, or full-time basis, depending on what best meets your needs.
+                Our remote MERN stack developers have designed and launched a wide array of websites, applications, and portals, with a scope of defects and mistakes that is either minimal or nonexistent in most cases. As a trusted Mern Stack development company you can get our MERN Stack Consulting to build Mern Stack apps. In addition, the team has the necessary skill set and expertise to develop applications with a high degree of precision and skill. We provide you with the opportunity to engage MERN Stack web developers for MERN Stack Migration & Porting to work on an hourly, part-time, or full-time basis, depending on what best meets your needs.
               </p>
               <div>
                 <Link
@@ -715,7 +702,7 @@ export const PowerAppsDevelopmentService = () => {
       {/* 13. SECTION 11: About Us Stats */}
       <AboutUsStats />
 
-      {/* 14. SECTION 12: Sectors Thriving Section */}
+      {/* 14. SECTION 12: Sectors Thriving Through Sapphire's Bespoke Dedicated Developers */}
       <SectorsThrivingSection />
 
       {/* 15. SECTION 13: Employ the Advanced Proficiency of Sapphire's Dedicated Development Team */}
@@ -762,50 +749,53 @@ export const PowerAppsDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 16. SECTION 14: How We Divide Your Project Responsibilities ? */}
-      <section className="py-16 md:py-20 bg-white text-slate-900 font-sans border-b border-slate-100">
-        <Container>
-          <div className="space-y-10 max-w-6xl mx-auto">
-            <div className="text-center space-y-3">
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                How We Divide Your Project Responsibilities ?
-              </h2>
-            </div>
+      {/* 16. SECTION 14: Client Engagement & Responsibility Matrix */}
+      <section className="py-16 sm:py-20 bg-white text-slate-900 font-sans border-b border-slate-200/80">
+        <Container className="max-w-7xl">
+          <div className="text-center max-w-4xl mx-auto mb-12 space-y-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
+              Client Engagement & Responsibility Matrix
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-slate-600 font-normal leading-relaxed">
+              Transparent workflows and clear deliverables ensuring successful project execution.
+            </p>
+          </div>
 
-            {/* Sapphire / Client Segmented Control Switch */}
-            <div className="flex justify-center">
-              <div className="bg-[#DDECF5] p-1.5 rounded-full inline-flex items-center space-x-1 border border-cyan-100/60 shadow-xs">
+          <div className="max-w-5xl mx-auto">
+            {/* Tabs Selector */}
+            <div className="flex justify-center mb-8">
+              <div className="bg-[#EBF5FB] p-1.5 rounded-2xl border border-cyan-200 inline-flex space-x-2">
                 <button
                   onClick={() => setResponsibilityTab('sapphire')}
-                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                  className={`px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all cursor-pointer ${
                     responsibilityTab === 'sapphire'
-                      ? 'bg-[#006095] text-white shadow-xs'
-                      : 'text-slate-700 hover:text-slate-900 font-semibold'
+                      ? 'bg-[#006095] text-white shadow-md'
+                      : 'text-slate-700 hover:text-[#006095]'
                   }`}
                 >
-                  Sapphire
+                  Sapphire Responsibilities
                 </button>
                 <button
                   onClick={() => setResponsibilityTab('client')}
-                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                  className={`px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all cursor-pointer ${
                     responsibilityTab === 'client'
-                      ? 'bg-[#006095] text-white shadow-xs'
-                      : 'text-slate-700 hover:text-slate-900 font-semibold'
+                      ? 'bg-[#006095] text-white shadow-md'
+                      : 'text-slate-700 hover:text-[#006095]'
                   }`}
                 >
-                  Client
+                  Client Responsibilities
                 </button>
               </div>
             </div>
 
-            {/* 6 Responsive Grid Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+            {/* Matrix Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {(responsibilityTab === 'sapphire'
                 ? [
-                    { title: 'Create a dedicated team', IconComp: Users },
-                    { title: 'Gather required access', IconComp: Lock },
-                    { title: 'Plan project resources', IconComp: Sliders },
-                    { title: 'Create a standard delivery practice', IconComp: Clock },
+                    { title: 'Project Manager / Delivery Head Supervision', IconComp: ShieldCheck },
+                    { title: 'Daily code commits & transparent Git repo access', IconComp: Code },
+                    { title: 'Sprint planning & bi-weekly demo showcases', IconComp: CheckSquare },
+                    { title: 'Automated QA testing & code quality scans', IconComp: Wrench },
                     { title: 'Regular communication between stakeholders', IconComp: MessageSquare },
                     { title: 'Research on competitors', IconComp: Flag }
                   ]
@@ -841,58 +831,58 @@ export const PowerAppsDevelopmentService = () => {
       {/* 17. SECTION 15: Technology Stack That Sapphire Dedicated Developers Use Proficiently */}
       <TechStackProficientGrid title="Technology Stack That Sapphire Dedicated Developers Use Proficiently" />
 
-      {/* 18. SECTION 16: The Expertise Of Our Talented PowerApps Developer */}
+      {/* 18. SECTION 16: The Expertise Of Our Talented Mern Stack Developer */}
       <section className="py-16 md:py-20 bg-[#F0F7FC] text-slate-900 font-sans border-b border-slate-100">
         <Container className="max-w-7xl">
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-              The Expertise Of Our Talented PowerApps Developer
+              The Expertise Of Our Talented Mern Stack Developer
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
             {[
               {
-                title: 'Custom Canvas & Model-Driven Apps',
+                title: 'Mern Stack Ecommerce Store Development',
                 bg: 'bg-[#F3E8FF]',
                 iconColor: 'text-[#9333EA]',
                 IconComp: ShoppingBag,
-                desc: 'To fulfill the ever-increasing needs of clients, online companies require a scalable, high-performing, and adaptable enterprise app that can be easily constructed using PowerApps. Our devoted PowerApps Development specialists provide superior app development services to clients in all industry verticals. Hiring a PowerApps application development expert from us will assist you in developing ROI-boosting solutions.'
+                desc: 'To fulfill the ever-increasing needs of clients, online companies require a scalable, high-performing, and adaptable eCommerce shop that can be easily constructed using the MERN stack. Our devoted MERN Stack eCommerce Development specialists provide superior eCommerce app development services to clients in all industry verticals. Hiring a MERN Stack application development expert from us will assist you in developing ROI-boosting eCommerce solutions.'
               },
               {
-                title: 'Power Automate RPA & Workflows',
+                title: 'Mern Stack ERP Development',
                 bg: 'bg-[#DCFCE7]',
                 iconColor: 'text-[#16A34A]',
                 IconComp: Server,
-                desc: 'Our PowerApps Development experts have hands-on expertise in designing automated approval flows and desktop RPA that are scalable, resilient, and user-friendly across all devices. Hiring full-stack PowerApps developers from our top Power Platform development firm in India may assist you in tracking possible leads, driving business success, improving customer management, and making smart business choices.'
+                desc: 'Our MERN Stack ERP Development experts have hands-on expertise in designing ERP systems that are scalable, resilient, and user-friendly across all devices. Hiring full-stack MERN developers from our top MERN stack development firm in India for ERP development may assist you in tracking possible leads, driving business success, improving customer management, and making smart business choices.'
               },
               {
-                title: 'API & Dataverse Integration',
+                title: 'API & Web App Development',
                 bg: 'bg-[#FFEDD5]',
                 iconColor: 'text-[#EA580C]',
                 IconComp: Code,
-                desc: 'If you choose PowerApps over custom code, you get dynamic front-end and back-end for online and mobile apps with Dataverse connections. Leverage the knowledge of our PowerApps Web Development experts to create powerful and bespoke apps and APIs for many business domains and industries.'
+                desc: 'If you choose MERN over other technological stacks (Ruby on Rails, LAMP, etc.), you may get dynamic front-end and back-end for online and mobile apps. Leverage the knowledge of our MERN Stack Web Development experts to create powerful and bespoke web apps and APIs for many business domains and industries.'
               },
               {
-                title: 'Enterprise CMS & SharePoint Portals',
+                title: 'Enterprise CMS Development',
                 bg: 'bg-[#FEF9C3]',
                 iconColor: 'text-[#CA8A04]',
                 IconComp: Layout,
-                desc: 'A firm wants a user-friendly SharePoint gateway to optimize its quality management process and enhance operational efficiency. Employ our PowerApps CMS Development experts to create feature-rich, scalable, and user-friendly portals for enterprises of all sizes.'
+                desc: 'A firm wants a user-friendly CMS gateway to optimize its quality management process and enhance operational efficiency. Employ our MERN Stack CMS Development experts to create feature-rich, scalable, and user-friendly CMS for enterprises of all sizes.'
               },
               {
                 title: 'Testing And QA',
                 bg: 'bg-[#FCE7F3]',
                 iconColor: 'text-[#DB2777]',
                 IconComp: CheckSquare,
-                desc: 'Recruit PowerApps Migration & Porting experts from our talent pool. Our specialists execute thorough alpha and beta testing, guaranteeing that your application functions flawlessly and contains specific test cases. As an ISO-certified service provider, we guarantee that your dynamic applications and websites are of the highest quality.'
+                desc: 'Recruit MERN Stack Migration & Porting experts from our talent pool. Our specialists execute thorough alpha and beta testing, guaranteeing that your application functions flawlessly and contains specific test cases. As an ISO-certified service provider, we guarantee that your dynamic applications and websites are of the highest quality.'
               },
               {
                 title: 'Maintenance & Support Services',
                 bg: 'bg-[#CFFAFE]',
                 iconColor: 'text-[#0891B2]',
                 IconComp: Wrench,
-                desc: 'Get comprehensive maintenance and support PowerApps development services from our team of Power Platform specialists. Our nimble specialists offer round-the-clock PowerApps development services to solve your PowerApps development issues with agility, allowing you to remain stress-free and concentrate on essential business tasks.'
+                desc: 'Get comprehensive maintenance and support MERN stack development services from our team of MERN specialists. Our nimble specialists offer round-the-clock Mern Stack development services to solve your MERN stack development issues with agility, allowing you to remain stress-free and concentrate on the essential business tasks that drive your company\'s bottom line.'
               }
             ].map((card, idx) => {
               const CardIcon = card.IconComp;
@@ -948,7 +938,7 @@ export const PowerAppsDevelopmentService = () => {
               {[
                 {
                   title: 'Cost Efficiency',
-                  desc: 'One of the most significant advantages of hiring dedicated developers is access to a global talent pool. We provide access to global talent, lowering labour costs without sacrificing quality.',
+                  desc: 'One of the most significant advantages of hiring dedicated developers is the access to a global talent pool. We provide access to global talent, frequently from low-cost locations, lowering labour costs without sacrificing quality.',
                   IconComp: Coins
                 },
                 {
@@ -958,17 +948,17 @@ export const PowerAppsDevelopmentService = () => {
                 },
                 {
                   title: 'Scalability and Flexibility',
-                  desc: 'Dedicated developers allow team size and composition changes without full-time employment. They can swiftly adapt to project needs and market circumstances, assuring timely delivery.',
+                  desc: 'Dedicated developers allow team size and composition changes without full-time employment. They can swiftly adapt to project needs and market circumstances, assuring timely delivery and resource optimisation.',
                   IconComp: Sliders
                 },
                 {
                   title: 'Focused and Committed Effort',
-                  desc: 'Dedicated developers are more productive and committed since they only work on their tasks. This dedication generally improves code quality, turnaround times, and development cohesion.',
+                  desc: 'Dedicated developers are more productive and committed since they only work on their tasks. This dedication generally improves code quality, turnaround times, and development process cohesion.',
                   IconComp: ShieldCheck
                 },
                 {
                   title: 'Reduced Time to Market',
-                  desc: 'Dedicated developers can speed up project development by using their experience and attention. Businesses can optimize operations, eliminate bottlenecks, and finish projects quickly.',
+                  desc: 'Dedicated developers can speed up project development by using their experience and attention. Businesses can optimize operations, eliminate bottlenecks, and finish projects quickly by hiring dedicated developers.',
                   IconComp: Zap
                 },
                 {
@@ -1000,10 +990,10 @@ export const PowerAppsDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 21. Hire PowerApps Developer In 4 Easy Steps */}
+      {/* 21. Hire Mern Stack Developer In 4 Easy Steps */}
       <HireDeveloper4Steps
-        title="Hire PowerApps Developer In 4 Easy Steps"
-        subtitle="PowerApps offers a number of advantages over traditional development platforms. Some of them are:"
+        title="Hire Mern Stack Developer In 4 Easy Steps"
+        subtitle="Mern stack offers a number of advantages over another platform. Some of them are:"
       />
 
       {/* 22. Video Testimonials / Our Story, Their Words */}
@@ -1034,7 +1024,7 @@ export const PowerAppsDevelopmentService = () => {
       <SapphireFaqSection
         title="Frequently Asked Questions"
         subtitle="We listen to query and provide solutions that captivate users. Feel free to contact us in case of any query which is not mention below."
-        customFaqs={powerAppsFaqs}
+        customFaqs={mernStackFaqs}
       />
 
       {/* 30. Social Media */}
@@ -1043,27 +1033,27 @@ export const PowerAppsDevelopmentService = () => {
       {/* 31. Our Recent Blogs */}
       <RecentBlogsSection />
 
-      {/* 32. What Sets Us Apart As PowerApps Development Company? */}
+      {/* 32. What Sets Us Apart As Mern Stack Development Company? */}
       <WhatSetsUsApartSection
-        title="What Sets Us Apart As PowerApps Development Company?"
-        description="Being unique is our quality! Sapphire Solutions / Firevy.co believes in the things that give us an edge over our competitors. We are a renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
+        title="What Sets Us Apart As Mern Stack Development Company?"
+        description="Being unique is our quality! Sapphire Solutions believe in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
       />
 
-      {/* 33. Have PowerApps Development Challenge To Address ? */}
+      {/* 33. Have Mern Stack Development Challenge To Address ? */}
       <ConversionCalloutBanner
         data={{
-          title: "Have PowerApps Development Challenge To Address ?",
-          description: "Get access to top PowerApps developers to transform your ideas into a robust application.",
+          title: "Have Mern Stack Development Challenge To Address ?",
+          description: "Get access to top Mern Stack developers to transform your ideas into a robust application.",
           buttonText: "Hire Now",
           buttonLink: "/contact"
         }}
         hideSideImages={true}
       />
 
-      {/* 34. Subscribe newsletter */}
+      {/* 34. Subscribe us and Get the latest updates and news */}
       <SubscribeNewsletterSection />
     </>
   );
 };
 
-export default PowerAppsDevelopmentService;
+export default HireMernStackDevelopersService;

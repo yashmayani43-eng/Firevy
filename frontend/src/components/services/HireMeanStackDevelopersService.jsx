@@ -9,12 +9,29 @@ import { IndustryFocusedInsightsSection } from './IndustryFocusedInsightsSection
 import { AboutUsStats } from './AboutUsStats';
 import SectorsThrivingSection from './SectorsThrivingSection';
 import TechStackProficientGrid from '../common/TechStackProficientGrid';
+import TrustMarquee from '../home/TrustMarquee';
+import ClutchTopRatedBanner from '../common/ClutchTopRatedBanner';
+import HireDeveloper4Steps from '../common/HireDeveloper4Steps';
+import VideoTestimonialsStory from '../home/VideoTestimonialsStory';
+import EngagementModelsSection from '../home/EngagementModelsSection';
+import SuccessMatrixGrid from '../home/SuccessMatrixGrid';
+import InnovativeSolutionVideo from '../home/InnovativeSolutionVideo';
+import ProcessWeFollow from '../common/ProcessWeFollow';
+import ClientReviewsDarkSection from '../home/ClientReviewsDarkSection';
+import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
+import SapphireFaqSection from '../common/SapphireFaqSection';
+import SocialMediaSection from '../common/SocialMediaSection';
+import RecentBlogsSection from '../home/RecentBlogsSection';
+import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
+import ConversionCalloutBanner from '../home/ConversionCalloutBanner';
+import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
 import {
   Clock, Check, Quote, Trophy, Award, Star, ArrowRight, PieChart,
   LineChart, Globe, Headphones, Handshake, UserCheck, ShieldCheck,
   Lightbulb, Users, Lock, Sliders, MessageSquare, Flag, RotateCcw,
   ShoppingBag, Server, Code, Layout, CheckSquare, Wrench, Target,
-  Key, CheckCircle2, RefreshCw, TrendingUp, BarChart2, DollarSign
+  Key, CheckCircle2, RefreshCw, TrendingUp, BarChart2, DollarSign,
+  Coins, Zap
 } from 'lucide-react';
 
 export const HireMeanStackDevelopersService = () => {
@@ -168,39 +185,7 @@ export const HireMeanStackDevelopersService = () => {
       </section>
 
       {/* 2. CLIENT LOGOS MARQUEE BAR */}
-      <section className="py-6 bg-white border-b border-slate-200/80 overflow-hidden font-sans">
-        <Container>
-          <div className="flex flex-wrap items-center justify-between gap-6 opacity-80 filter grayscale hover:grayscale-0 transition-all duration-300">
-            <div className="flex items-center space-x-1 font-black text-xl text-red-600 font-sans tracking-tight">
-              <span className="border-2 border-red-600 px-1 py-0.5 rounded text-xs mr-1">TDSG</span>
-            </div>
-            <div className="flex items-center space-x-1 font-black text-lg text-amber-800 font-sans">
-              <span className="text-amber-600 text-xs mr-1">▲</span> ASTRAL PIPES
-            </div>
-            <div className="flex items-center space-x-1 font-black text-lg text-orange-600 font-sans">
-              <span className="text-amber-500 font-bold">CLP</span> INDIA
-            </div>
-            <div className="flex items-center space-x-1 font-black text-2xl bg-gradient-to-r from-sky-600 via-purple-600 to-rose-600 bg-clip-text text-transparent font-sans">
-              adani
-            </div>
-            <div className="flex items-center space-x-1 font-black text-lg text-red-600 uppercase font-sans">
-              TOYOTA
-            </div>
-            <div className="flex items-center space-x-1 font-black text-lg text-sky-800 font-sans">
-              Almarai
-            </div>
-            <div className="flex items-center space-x-1 font-black text-sm text-slate-800 font-sans">
-              ORIENT CEMENT
-            </div>
-            <div className="flex items-center space-x-1 font-black text-base text-blue-700 font-sans uppercase tracking-tight">
-              AMERICAN EXPRESS
-            </div>
-            <div className="flex items-center space-x-1 font-black text-lg text-teal-700 font-sans">
-              Alembic
-            </div>
-          </div>
-        </Container>
-      </section>
+      <TrustMarquee />
 
       {/* 3. SECTION 1: Best Mean Stack Developers Available With Us */}
       <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
@@ -899,6 +884,182 @@ export const HireMeanStackDevelopersService = () => {
           </div>
         </Container>
       </section>
+
+      {/* 19. Proud To Have Picked These Up Along The Way (Image 1) */}
+      <ClutchTopRatedBanner title="Proud To Have Picked These Up Along The Way" />
+
+      {/* 20. Benefits of Hiring Dedicated Developers (Images 1 & 2) */}
+      <section className="py-16 md:py-24 bg-white text-slate-900 font-sans border-b border-slate-100">
+        <Container>
+          <div className="space-y-12 max-w-6xl mx-auto">
+            <div className="text-center space-y-3 max-w-4xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
+                Benefits of Hiring Dedicated Developers
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 font-medium">
+                Hiring dedicated developers can help you save time and money so that you can focus more on core business activities. Benefits include:
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: 'Cost Efficiency',
+                  desc: 'One of the most significant advantages of hiring dedicated developers is the access to a global talent pool. We provide access to global talent, frequently from low-cost locations, lowering labour costs without sacrificing quality.',
+                  IconComp: Coins
+                },
+                {
+                  title: 'Access to Specialized Skills',
+                  desc: 'Dedicated developers are experts in their fields. You can swiftly overcome talent shortages by employing dedicated developers, ensuring projects are completed on time and without errors.',
+                  IconComp: Award
+                },
+                {
+                  title: 'Scalability and Flexibility',
+                  desc: 'Dedicated developers allow team size and composition changes without full-time employment. They can swiftly adapt to project needs and market circumstances, assuring timely delivery and resource optimisation.',
+                  IconComp: Sliders
+                },
+                {
+                  title: 'Focused and Committed Effort',
+                  desc: 'Dedicated developers are more productive and committed since they only work on their tasks. This dedication generally improves code quality, turnaround times, and development process cohesion.',
+                  IconComp: ShieldCheck
+                },
+                {
+                  title: 'Reduced Time to Market',
+                  desc: 'Dedicated developers can speed up project development by using their experience and attention. Businesses can optimize operations, eliminate bottlenecks, and finish projects quickly by hiring dedicated developers.',
+                  IconComp: Zap
+                },
+                {
+                  title: 'Enhanced Innovation and Creativity',
+                  desc: 'Dedicated developers offer new ideas and insights to projects. Dedicated developers can also encourage a collaborative atmosphere where in-house and external talent merge their expertise.',
+                  IconComp: Lightbulb
+                }
+              ].map((card, idx) => {
+                const CardIcon = card.IconComp;
+                return (
+                  <div
+                    key={idx}
+                    className="bg-white rounded-2xl p-7 shadow-xs hover:shadow-md border border-slate-100/90 transition-all flex flex-col justify-start space-y-4 text-left"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#006095] flex items-center justify-center">
+                      <CardIcon className="w-6 h-6 stroke-[1.8]" />
+                    </div>
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                      {card.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                      {card.desc}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* 21. Hire Mean Stack Developer In 4 Easy Steps (Image 3) */}
+      <HireDeveloper4Steps
+        title="Hire Mean Stack Developer In 4 Easy Steps"
+        subtitle="Mean stack offers a number of advantages over another platform. Some of them are:"
+      />
+
+      {/* 22. Video Testimonials / Our Story, Their Words (Image 4 Top) */}
+      <VideoTestimonialsStory />
+
+      {/* 23. Business Friendly Hiring Models (Image 4 Bottom) */}
+      <EngagementModelsSection
+        title="Business Friendly Hiring Models : Building Greater Futures Through Innovation"
+        subtitle="We offer three different types of hiring models that are designed to suit your diverse needs and budget. Take a look at our hiring models:"
+      />
+
+      {/* 24. Success Matrix (Image 1) */}
+      <SuccessMatrixGrid />
+
+      {/* 25. Unveiling Our Innovative Solution (Image 2) */}
+      <InnovativeSolutionVideo />
+
+      {/* 26. Process We Follow (Image 3) */}
+      <ProcessWeFollow />
+
+      {/* 27. What Our Clients Say (Image 4) */}
+      <ClientReviewsDarkSection />
+
+      {/* 28. Digital Transformation Through Innovation and Collective Knowledge (Image 5) */}
+      <DigitalTransformationCaseStudies />
+
+      {/* 29. Frequently Asked Questions (Image 1) */}
+      <SapphireFaqSection
+        title="Frequently Asked Questions"
+        subtitle="We listen to query and provide solutions that captivate users. Feel free to contact us in case of any query which is not mention below."
+        customFaqs={[
+          {
+            id: 1,
+            question: "1. Why mean Stack Development?",
+            answer: "MEAN Stack (MongoDB, Express.js, Angular, Node.js) enables single-language full-stack JavaScript development, high performance with non-blocking I/O, rapid prototyping, and cost-effective scalable enterprise web applications."
+          },
+          {
+            id: 2,
+            question: "2. Is Mean Stack Construction Scalable?",
+            answer: "Yes, MEAN Stack architecture relies on Node.js asynchronous event-driven model and MongoDB distributed document database, allowing effortless horizontal scaling across cloud instances."
+          },
+          {
+            id: 3,
+            question: "3. Is Mean Stack Development an economically viable option?",
+            answer: "Using JavaScript across frontend and backend significantly reduces development overhead, streamlines code reusability, and speeds up time-to-market compared to multi-language stacks."
+          },
+          {
+            id: 4,
+            question: "4. Why should I hire MEAN Stack developers from Sapphire Solutions?",
+            answer: "Our MEAN stack developers have 23+ years of combined experience, 320+ 5-star Clutch reviews, strict NDA compliance, zero onboarding delay, and 24/7 SLA technical support."
+          },
+          {
+            id: 5,
+            question: "5. What are the benefits of using the MEAN Stack for web application development?",
+            answer: "Key benefits include single-page application responsiveness with Angular, flexible JSON schema with MongoDB, high-throughput RESTful APIs with Express, and lightning-fast server performance with Node.js."
+          },
+          {
+            id: 6,
+            question: "6. Do your MEAN Stack developers offer full project lifecycle support?",
+            answer: "Yes, we handle everything from discovery, UI/UX wireframing, architecture design, and sprint development to automated QA testing, cloud deployment, and post-launch maintenance."
+          },
+          {
+            id: 7,
+            question: "7. Can I hire remote MEAN Stack developers from Sapphire Solutions for my business?",
+            answer: "Absolutely. We offer flexible engagement models—hourly ($21/hr), part-time, or dedicated monthly retainers aligned with your timezone."
+          },
+          {
+            id: 8,
+            question: "8. What kind of web applications can be built using the MEAN Stack?",
+            answer: "You can build enterprise SaaS portals, eCommerce stores, real-time messaging apps, healthcare portals, ERP & CRM systems, streaming platforms, and custom REST/GraphQL API backends."
+          }
+        ]}
+      />
+
+      {/* 30. Social Media (Image 2 Top) */}
+      <SocialMediaSection />
+
+      {/* 31. Our Recent Blogs (Image 2 Bottom) */}
+      <RecentBlogsSection />
+
+      {/* 32. What Sets Us Apart As Mean Stack Development Company? (Image 3) */}
+      <WhatSetsUsApartSection
+        title="What Sets Us Apart As Mean Stack Development Company?"
+        description="Being unique is our quality! Sapphire Solutions believe in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
+      />
+
+      {/* 33. Have Mean Stack Development Challenge To Address ? (Image 4 Top) */}
+      <ConversionCalloutBanner
+        data={{
+          title: "Have Mean Stack Development Challenge To Address ?",
+          description: "Get access to top Mean Stack developers to transform your ideas into a robust application.",
+          buttonText: "Hire Now",
+          buttonLink: "/contact"
+        }}
+        hideSideImages={true}
+      />
+
+      {/* 34. Subscribe us and Get the latest updates and news (Image 4 Bottom) */}
+      <SubscribeNewsletterSection />
     </>
   );
 };

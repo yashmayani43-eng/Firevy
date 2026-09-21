@@ -641,11 +641,10 @@ export const Header = () => {
       </AnimatePresence>
 
       {/* Main Header Bar */}
-      <div className={`relative transition-all duration-300 h-[76px] flex items-center ${
-        isScrolled
+      <div className={`relative transition-all duration-300 h-[76px] flex items-center ${isScrolled
           ? 'bg-white border-b border-slate-200 text-slate-900 shadow-md'
           : 'bg-[#011422]/95 backdrop-blur-md border-b border-[#072439] text-white shadow-md'
-      }`}>
+        }`}>
         <div className="w-full px-6 lg:px-10 flex items-center justify-between h-full">
           {/* Brand Logo */}
           <Link to="/" className="flex items-center group shrink-0 mr-6">
@@ -672,11 +671,10 @@ export const Header = () => {
                   >
                     <Link
                       to={link.path}
-                      className={`text-sm xl:text-[15px] font-semibold transition-colors flex items-center space-x-1 ${
-                        isDarkHeader
+                      className={`text-sm xl:text-[15px] font-semibold transition-colors flex items-center space-x-1 ${isDarkHeader
                           ? (isActive ? 'text-cyan-300 font-bold' : 'text-white/90 hover:text-cyan-300')
                           : (isActive ? 'text-[#005F96] font-bold' : 'text-[#2D3748] hover:text-[#005F96]')
-                      }`}
+                        }`}
                     >
                       <span>{link.name}</span>
                       {hasMenu && (
@@ -724,7 +722,7 @@ export const Header = () => {
               isScrolled
                 ? 'text-slate-800 bg-slate-100 border-slate-300'
                 : 'text-white bg-white/10 border-white/20'
-            }`}
+              }`}
             aria-label="Toggle Navigation Menu"
           >
             <Menu className="w-6 h-6" />

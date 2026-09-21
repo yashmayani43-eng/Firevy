@@ -1,26 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, ArrowUp } from 'lucide-react';
+import React from 'react';
+import { Phone, MessageSquare } from 'lucide-react';
 import BRAND from '../../constants/brand';
 
 export const FloatingElements = () => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 400) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   const phoneUS = BRAND?.contact?.phoneUS || '+1-754-258-7670';
   const phoneRaw = phoneUS.replace(/[^0-9]/g, '');
 
@@ -45,17 +27,6 @@ export const FloatingElements = () => {
           <MessageSquare className="w-5 h-5 group-hover:scale-110 transition-transform" />
         </a>
       </div>
-
-      {/* Bottom-Right Back to Top Smooth Scroll Button */}
-      {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          title="Back to Top"
-          className="fixed right-5 bottom-6 z-40 w-11 h-11 rounded-full bg-slate-900/90 hover:bg-[#006095] text-white shadow-2xl border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110"
-        >
-          <ArrowUp className="w-5 h-5" />
-        </button>
-      )}
     </>
   );
 };

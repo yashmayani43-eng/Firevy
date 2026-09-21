@@ -1,856 +1,1068 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Container from '../common/Container';
 import SEO from '../common/SEO';
-import BRAND from '../../constants/brand';
+import Container from '../common/Container';
 import PremiumServicesGrid from '../common/PremiumServicesGrid';
-import TechnologyStackGrid from '../common/TechnologyStackGrid';
-import BrandLogoMarquee from '../common/BrandLogoMarquee';
-import FeaturedInLogosGrid from '../home/FeaturedInLogosGrid';
+import SapphireSeasonedExpertsSection from './SapphireSeasonedExpertsSection';
+import LeverageExpertiseGridSection from '../common/LeverageExpertiseGridSection';
+import { IndustryFocusedInsightsSection } from './IndustryFocusedInsightsSection';
+import { AboutUsStats } from './AboutUsStats';
+import SectorsThrivingSection from './SectorsThrivingSection';
+import TechStackProficientGrid from '../common/TechStackProficientGrid';
+import TrustMarquee from '../home/TrustMarquee';
+import ClutchTopRatedBanner from '../common/ClutchTopRatedBanner';
+import HireDeveloper4Steps from '../common/HireDeveloper4Steps';
 import VideoTestimonialsStory from '../home/VideoTestimonialsStory';
+import EngagementModelsSection from '../home/EngagementModelsSection';
+import SuccessMatrixGrid from '../home/SuccessMatrixGrid';
+import InnovativeSolutionVideo from '../home/InnovativeSolutionVideo';
+import ProcessWeFollow from '../common/ProcessWeFollow';
+import ClientReviewsDarkSection from '../home/ClientReviewsDarkSection';
+import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
 import SapphireFaqSection from '../common/SapphireFaqSection';
+import SocialMediaSection from '../common/SocialMediaSection';
+import RecentBlogsSection from '../home/RecentBlogsSection';
+import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
+import ConversionCalloutBanner from '../home/ConversionCalloutBanner';
+import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
 import {
-  Sparkles,
-  ArrowRight,
-  ChevronDown,
-  CheckCircle2,
-  Cpu,
-  Zap,
-  ShieldCheck,
-  Clock,
-  Headphones,
-  Users,
-  Layers,
-  Star,
-  ExternalLink,
-  Code2,
-  TrendingUp,
-  DollarSign,
-  Phone,
-  MessageCircle,
-  Globe,
-  Database,
-  Terminal,
-  Smartphone,
-  RefreshCw,
-  LayoutGrid,
-  FileCode2,
-  CheckCircle,
-  FolderLock,
-  Workflow,
-  Search,
-  Cloud,
-  FileText
+  Clock, Check, Quote, Trophy, Award, Star, ArrowRight, PieChart,
+  LineChart, Globe, Headphones, Handshake, UserCheck, ShieldCheck,
+  Lightbulb, Users, Lock, Sliders, MessageSquare, Flag, RotateCcw,
+  ShoppingBag, Server, Code, Layout, CheckSquare, Wrench, Target,
+  Key, CheckCircle2, RefreshCw, TrendingUp, BarChart2, DollarSign,
+  Coins, Zap
 } from 'lucide-react';
 
 export const SharePointDevelopmentService = () => {
-  const heroMetrics = [
-    { number: '80+', label: 'Web Developers' },
-    { number: '20+', label: 'Fortunes 500 Companies' },
-    { number: '600+', label: 'Project Completed in Web Technology' },
-    { number: '320+', label: '5-Star Clutch Reviews' }
-  ];
+  const [responsibilityTab, setResponsibilityTab] = useState('sapphire');
 
-  const sharepointServices = [
+  const sharePointFaqs = [
     {
       id: 1,
-      title: 'Custom SharePoint Intranet Portals',
-      icon: <Globe className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Design and engineer centralized, interactive digital workplace intranet portals that boost enterprise employee engagement and productivity.',
-      bullets: [
-        'Modern Communication Sites',
-        'Enterprise Hub Sites',
-        'Multi-Departmental Portals',
-        'Custom SPFx Web Parts'
-      ]
+      question: "1. Why Microsoft SharePoint Development?",
+      answer: "Microsoft SharePoint Online & Microsoft 365 provide enterprise-grade intranet portals, secure document management (DMS), seamless team collaboration, and automated business workflows that transform corporate communication and data governance."
     },
     {
       id: 2,
-      title: 'SharePoint Document & Content Management (DMS)',
-      icon: <FolderLock className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Architect secure, structured document management systems with automated metadata tagging, version control, and compliance governance.',
-      bullets: [
-        'Automated Metadata & Taxonomy',
-        'Granular Permission Control',
-        'Regulatory Compliance (HIPAA/GDPR)',
-        'Enterprise Search & Copilot Integration'
-      ]
+      question: "2. Is SharePoint Intranet & Cloud Architecture Scalable?",
+      answer: "Yes, SharePoint Online leverages Azure cloud infrastructure, Microsoft Graph APIs, Dataverse integration, and microservices SPFx web parts to seamlessly scale across thousands of concurrent corporate employees."
     },
     {
       id: 3,
-      title: 'SharePoint Framework (SPFx) Development',
-      icon: <Code2 className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Develop custom client-side web parts and extensions utilizing modern SPFx, React, TypeScript, and Microsoft Graph APIs.',
-      bullets: [
-        'Custom SPFx Client Web Parts',
-        'Application Customizers & Extensions',
-        'Microsoft Teams Integration',
-        'TypeScript & React SPFx'
-      ]
+      question: "3. Is SharePoint Development an economically viable option?",
+      answer: "Leveraging native Microsoft 365 licenses eliminates third-party document management subscription costs, reduces administrative operational overhead, and delivers rapid ROI through streamlined business automation."
     },
     {
       id: 4,
-      title: 'Power Platform & Workflow Automation',
-      icon: <Workflow className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Automate complex cross-departmental approval workflows, forms, and business logic using Power Automate, Power Apps, and Power BI.',
-      bullets: [
-        'Power Automate Robotic Flows',
-        'Custom Power Apps Form Portals',
-        'Power BI Embedded Analytics',
-        'Multi-Tier Approval Automation'
-      ]
+      question: "4. Why should I hire SharePoint developers from Sapphire Solutions / Firevy.co?",
+      answer: "Our SharePoint consultants bring 23+ years of combined experience across SharePoint Framework (SPFx), Power Platform, .NET Core, and Azure. With 320+ 5-star Clutch reviews, zero onboarding delay, and strict NDA compliance, we deliver robust solutions."
     },
     {
       id: 5,
-      title: 'SharePoint Migration & Microsoft 365 Upgrade',
-      icon: <RefreshCw className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Seamlessly migrate legacy SharePoint On-Premises (2013/2016/2019) or file shares to SharePoint Online & Microsoft 365 with zero data loss.',
-      bullets: [
-        'Pre-Migration Content Audit',
-        'ShareGate & SPMT Tools',
-        'Hybrid Architecture Setup',
-        'Zero-Downtime Cutover'
-      ]
+      question: "5. What are the key benefits of custom SharePoint Framework (SPFx) development?",
+      answer: "Key benefits include modern React/TypeScript client-side web parts, custom Microsoft Teams tabs, responsive mobile intranet sites, automated metadata taxonomy, and enterprise Microsoft Graph security."
     },
     {
       id: 6,
-      title: 'SharePoint API & Enterprise System Integration',
-      icon: <Database className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Integrate SharePoint seamlessly with ERPs (SAP, Oracle), CRMs (Salesforce, Dynamics 365), and custom line-of-business applications.',
-      bullets: [
-        'Microsoft Graph API Pipelines',
-        'Dynamics 365 & SAP Connectors',
-        'Azure AD Single Sign-On (SSO)',
-        'Custom REST Webhook Endpoints'
-      ]
+      question: "6. Do your SharePoint developers handle legacy migration (SharePoint 2013/2016/2019 to Online)?",
+      answer: "Yes, we specialize in migrating legacy SharePoint On-Premises environments, file shares, InfoPath forms, and Lotus Notes to SharePoint Online & Microsoft 365 with zero data loss or downtime."
     },
     {
       id: 7,
-      title: 'SharePoint Security & Compliance Governance',
-      icon: <ShieldCheck className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Enforce stringent data loss prevention (DLP), sensitivity labels, retention policies, and enterprise identity security across all sites.',
-      bullets: [
-        'Data Loss Prevention (DLP)',
-        'Sensitivity & Retention Labels',
-        'External Sharing Governance',
-        'Audit Logging & Threat Protection'
-      ]
+      question: "7. Can I hire remote SharePoint developers aligned with my timezone?",
+      answer: "Yes! We provide flexible engagement models—hourly ($21/hr), part-time (80 hrs/mo), or dedicated monthly retainers fully synchronized with your working hours."
     },
     {
       id: 8,
-      title: '24/7 SharePoint Maintenance & SLA Support',
-      icon: <Clock className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Continuous site health monitoring, user provisioning management, bug fixes, capacity scaling, and guaranteed SLA incident resolution.',
-      bullets: [
-        '24/7 SLA Uptime Guarantee',
-        'Proactive Farm & Cloud Health Checks',
-        'Dedicated On-Demand Engineers',
-        'Monthly Governance Reviews'
-      ]
-    }
-  ];
-
-  const keyBenefits = [
-    {
-      title: 'Centralized Digital Workplace',
-      desc: 'Connect globally distributed teams with unified company news, team collaboration workspaces, and streamlined departmental resources.',
-      icon: <Globe className="w-7 h-7 text-[#006B8F]" />
-    },
-    {
-      title: 'Bank-Grade Microsoft Security',
-      desc: 'Protected by Microsoft 365 enterprise zero-trust security, multi-factor authentication, Azure AD governance, and automated DLP policies.',
-      icon: <ShieldCheck className="w-7 h-7 text-[#006B8F]" />
-    },
-    {
-      title: 'No-Code / Low-Code Automation',
-      desc: 'Empower business users and automate tedious manual document approval workflows with native Power Automate & Power Apps integration.',
-      icon: <Workflow className="w-7 h-7 text-[#006B8F]" />
-    },
-    {
-      title: 'Seamless Microsoft Ecosystem Sync',
-      desc: 'Native interoperability with Microsoft Teams, OneDrive, Outlook, Azure, and Microsoft Copilot for AI-assisted productivity.',
-      icon: <Layers className="w-7 h-7 text-[#006B8F]" />
-    },
-    {
-      title: 'Intelligent Enterprise Search',
-      desc: 'AI-driven semantic search powered by Microsoft Graph surface relevant files, conversations, and experts instantaneously across millions of files.',
-      icon: <Search className="w-7 h-7 text-[#006B8F]" />
-    },
-    {
-      title: 'Scalable Cloud Architecture',
-      desc: 'Eliminate expensive on-premises server infrastructure overhead by scaling effortlessly with SharePoint Online and cloud storage tiers.',
-      icon: <Cloud className="w-7 h-7 text-[#006B8F]" />
-    }
-  ];
-
-  const whyChooseUs = [
-    {
-      title: 'Microsoft Certified SharePoint Architects',
-      desc: 'Access senior Microsoft-certified consultants and SPFx developers with 6+ years delivering complex enterprise migrations and custom portals.',
-      icon: <Users className="w-6 h-6 text-[#006B8F]" />
-    },
-    {
-      title: '100% Code & Solution Ownership',
-      desc: 'You receive complete source code ownership, SPFx packages, automation scripts, and comprehensive administrator handbooks.',
-      icon: <ShieldCheck className="w-6 h-6 text-[#006B8F]" />
-    },
-    {
-      title: 'Strict NDA & Data Security Protocols',
-      desc: 'We enforce strict confidentiality agreements, GDPR/HIPAA compliance, and least-privilege administrative access policies.',
-      icon: <CheckCircle2 className="w-6 h-6 text-[#006B8F]" />
-    },
-    {
-      title: 'Transparent Bi-Weekly Sprints',
-      desc: 'Collaborate directly with our engineering squad via Teams, Slack, and Azure DevOps with transparent demos and progress reporting.',
-      icon: <Clock className="w-6 h-6 text-[#006B8F]" />
-    },
-    {
-      title: 'Flexible Engagement Models',
-      desc: 'Choose between Dedicated Full-Time Teams, Time & Material hourly consulting, or Fixed Milestone deliverables tailored to your scope.',
-      icon: <DollarSign className="w-6 h-6 text-[#006B8F]" />
-    },
-    {
-      title: 'Proven Enterprise Track Record',
-      desc: 'Over 600+ web and enterprise portal projects delivered successfully with 95% client retention and 320+ 5-star reviews.',
-      icon: <TrendingUp className="w-6 h-6 text-[#006B8F]" />
-    }
-  ];
-
-  const workProcess = [
-    {
-      step: '01',
-      title: 'Discovery & Architecture Scoping',
-      desc: 'We assess your current content infrastructure, user roles, security governance, and workflow requirements to build an implementation plan.'
-    },
-    {
-      step: '02',
-      title: 'Information Architecture & UI/UX',
-      desc: 'Our designers map out site taxonomies, navigation hierarchies, permission models, and brand-aligned intranet wireframes.'
-    },
-    {
-      step: '03',
-      title: 'SPFx Engineering & Automation',
-      desc: 'Certified developers build custom SPFx components, Power Automate flows, and API integrations in structured 2-week sprints.'
-    },
-    {
-      step: '04',
-      title: 'Data Migration & User Testing',
-      desc: 'We execute automated content migration using ShareGate/SPMT, followed by extensive UAT testing and permission validation.'
-    },
-    {
-      step: '05',
-      title: 'Deployment & Staff Training',
-      desc: 'Zero-downtime production rollout, comprehensive user onboarding sessions, and detailed administrative handbook handoff.'
-    },
-    {
-      step: '06',
-      title: '24/7 SLA & Maintenance Support',
-      desc: 'Ongoing proactive health checks, Microsoft 365 roadmap updates, security audits, and continuous workflow enhancements.'
-    }
-  ];
-
-  const recentProjects = [
-    {
-      id: 1,
-      title: 'Global Manufacturing Digital Workplace Intranet',
-      category: 'Enterprise Intranet & SPFx',
-      image: '/images/ai_chatbot.png',
-      link: '/portfolio'
-    },
-    {
-      id: 2,
-      title: 'Healthcare HIPAA-Compliant Document Management System',
-      category: 'DMS & Automated Taxonomy',
-      image: '/images/traffic_mgt_ai.png',
-      link: '/portfolio'
-    },
-    {
-      id: 3,
-      title: 'FinTech Multi-Tier Loan Approval & Power Automate Flow',
-      category: 'Workflow Automation',
-      image: '/images/waymark_map_app.webp',
-      link: '/portfolio'
-    },
-    {
-      id: 4,
-      title: 'Legal Firm Document Retention & Case Archive Portal',
-      category: 'Compliance & Governance',
-      image: '/images/talenti_qube.png',
-      link: '/portfolio'
-    },
-    {
-      id: 5,
-      title: 'On-Premises SharePoint 2013 to SharePoint Online Migration',
-      category: 'Cloud Migration & Modernization',
-      image: '/images/beecar.png',
-      link: '/portfolio'
-    },
-    {
-      id: 6,
-      title: 'Corporate Employee Directory & Microsoft Teams Hub',
-      category: 'Custom SPFx Extensions',
-      image: '/images/ai_travel_app.png',
-      link: '/portfolio'
-    }
-  ];
-
-  const sharepointFaqList = [
-    {
-      id: 1,
-      question: '1. What are the key business benefits of SharePoint development?',
-      answer: 'SharePoint provides a unified digital workplace that combines centralized document management, enterprise-wide search, automated business workflows, secure internal communications, and seamless integration with Microsoft 365 and Microsoft Teams.'
-    },
-    {
-      id: 2,
-      question: '2. Can you migrate our on-premises SharePoint farm to SharePoint Online?',
-      answer: 'Yes! We specialize in end-to-end migrations from legacy SharePoint 2010, 2013, 2016, and 2019 to SharePoint Online / Microsoft 365. We utilize proven tools like ShareGate, SPMT, and custom migration scripts to guarantee zero data loss, preserved permissions, and updated modern site architectures.'
-    },
-    {
-      id: 3,
-      question: '3. What is SharePoint Framework (SPFx) and when is it needed?',
-      answer: 'SharePoint Framework (SPFx) is a modern page and web part extension model that uses client-side JavaScript frameworks (like React and TypeScript). It is used when out-of-the-box SharePoint web parts cannot satisfy your custom business logic, external API integrations, or brand-specific UI requirements.'
-    },
-    {
-      id: 4,
-      question: '4. How do you automate business processes in SharePoint?',
-      answer: 'We leverage Microsoft Power Platform—including Power Automate for complex multi-level approval workflows and background data synchronization, Power Apps for customized form user interfaces, and Power BI for interactive visual reporting embedded directly in SharePoint pages.'
-    },
-    {
-      id: 5,
-      question: '5. How secure is our data in SharePoint Online?',
-      answer: 'SharePoint Online adheres to global enterprise security standards (SOC 1/2/3, ISO 27001, HIPAA, GDPR). We configure advanced Data Loss Prevention (DLP) rules, Azure Information Protection, sensitivity labels, external sharing restrictions, and conditional access policies to safeguard your confidential files.'
-    },
-    {
-      id: 6,
-      question: '6. How much does custom SharePoint development cost?',
-      answer: 'Development cost depends on whether you require an out-of-the-box modern intranet configuration, custom SPFx component engineering, complex data migrations, or third-party ERP/CRM integrations. We offer transparent Fixed-Price milestone projects and flexible Dedicated Developer models.'
-    },
-    {
-      id: 7,
-      question: '7. What post-launch maintenance and support options do you offer?',
-      answer: 'We provide 24/7 SLA maintenance, ongoing site performance monitoring, user access management, Microsoft 365 roadmap feature updates, and on-demand workflow improvements to ensure uninterrupted business continuity.'
-    },
-    {
-      id: 8,
-      question: '8. Why choose Firevy / Sapphire Solutions for SharePoint development?',
-      answer: 'We bring 23+ years of enterprise IT leadership, 320+ 5-star Clutch reviews, 600+ web/portal projects, certified Microsoft SharePoint architects, 100% code ownership, strict NDA agreements, and guaranteed timezone alignment with USA, UK, and global enterprises.'
+      question: "8. What kind of applications can be built using SharePoint Online?",
+      answer: "You can build corporate intranet portals, document management systems (DMS), policy & compliance hubs, vendor portals, automated HR onboarding sites, and custom line-of-business web parts."
     }
   ];
 
   return (
-    <div className="bg-white text-slate-900 font-sans min-h-screen">
+    <>
       <SEO
-        title="Best Sharepoint Development Services | SharePoint Development Company"
-        description="Sapphire is a top-rated AI SharePoint development company. We develop and customize applications like content management, document management, intranet portals, and workflow automation."
-        canonical="/services/sharepoint"
+        title="Hire SharePoint Developers | Top Dedicated SharePoint Experts Firevy.co"
+        description="Hire dedicated Microsoft SharePoint developers from Firevy.co starting at $21/hr. Senior SPFx, SharePoint Online, Power Automate, and Microsoft 365 intranet engineers."
       />
 
-      {/* Floating Action Buttons */}
-      <div className="fixed right-0 top-1/4 z-40 flex flex-col items-end gap-1.5 pointer-events-auto">
-        <a
-          href="tel:+15551234567"
-          title="Call Us Directly"
-          className="w-10 h-10 rounded-l-[8px] bg-[#005F96] hover:bg-[#004A75] text-white flex items-center justify-center shadow-lg transition-transform hover:-translate-x-1"
-        >
-          <Phone className="w-5 h-5" />
-        </a>
-        <a
-          href="https://api.whatsapp.com/send?phone=919429709662"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Chat on WhatsApp"
-          className="w-10 h-10 rounded-l-[8px] bg-[#005F96] hover:bg-[#004A75] text-white flex items-center justify-center shadow-lg transition-transform hover:-translate-x-1"
-        >
-          <MessageCircle className="w-5 h-5" />
-        </a>
-      </div>
-
-      {/* Floating Brand Bubble */}
-      <div className="fixed right-4 bottom-5 z-40">
-        <Link
-          to="/contact"
-          title={`Contact ${BRAND.name === 'Firevy' ? 'Sapphire' : BRAND.name}`}
-          className="w-13 h-13 rounded-full bg-[#0086C6] hover:bg-[#0070A6] text-white flex items-center justify-center shadow-2xl transition-transform hover:scale-110"
-        >
-          <span className="font-[900] text-3xl font-serif select-none leading-none">S</span>
-        </Link>
-      </div>
-
-      {/* =========================================================================
-          1. HERO SECTION (1:1 Exact Match with Screenshot)
-          ========================================================================= */}
-      <section className="pt-6 pb-12 sm:pt-8 sm:pb-16 bg-[#F4F9FD] text-slate-900 relative font-sans border-b border-slate-100">
+      {/* 1. HERO SECTION */}
+      <section className="py-12 sm:py-16 bg-[#F8FAFC] border-b border-slate-200/80 text-slate-900 font-sans relative overflow-hidden">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Heading, Subtext, Metrics & 2 CTA Buttons */}
-            <div className="lg:col-span-7 space-y-6 text-left">
-              <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-[900] text-[#0B0F19] tracking-tight leading-[1.12] font-sans">
-                Best Sharepoint Development Services
+            {/* Left Column: Text + Stats + Teal CTA Box */}
+            <div className="lg:col-span-7 text-left">
+              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
+                Hire SharePoint Developers
               </h1>
-
-              <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal font-sans max-w-2xl">
-                As a Top-Rated AI SharePoint development company, we develop and customize various applications like content management, document management, enterprise search, and the internet. Using .Net and custom coding, we offer Affordable SharePoint automation services for small businesses solutions in a customized way as per business challenges
+              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed mt-4 max-w-2xl font-sans">
+                SharePoint development has amassed a large amount of popularity due to its ability to serve as a flexible blend of Microsoft 365, SPFx, and Power Platform technologies for web and intranet application development. You can Hire dedicated SharePoint developers to develop productive applications.
               </p>
 
-              {/* 4 Counter Metrics (80+, 20+, 600+, 320+) */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-1">
-                {heroMetrics.map((m, idx) => (
-                  <div key={idx} className="space-y-1">
-                    <div className="text-[26px] sm:text-[30px] font-[900] text-[#005F96] tracking-tight">
-                      {m.number}
-                    </div>
-                    <div className="text-[11.5px] sm:text-[12.5px] font-[600] text-[#475569] leading-snug">
-                      {m.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* 2 CTA Buttons (Discuss Your Project & Hire Sharepoint Developers) */}
-              <div className="flex flex-wrap items-center gap-3.5 pt-2">
-                <Link
-                  to="/contact"
-                  className="px-7 py-3.5 rounded-[8px] bg-[#005F96] hover:bg-[#004A75] text-white font-[700] text-[14.5px] transition-all shadow-md hover:shadow-lg inline-flex items-center space-x-2"
-                >
-                  <span>Discuss Your Project</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-
-                <Link
-                  to="/contact"
-                  className="px-7 py-3.5 rounded-[8px] bg-[#00456E] hover:bg-[#003454] text-white font-[700] text-[14.5px] transition-all shadow-md hover:shadow-lg inline-flex items-center space-x-2"
-                >
-                  <span>Hire Sharepoint Developers</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-
-            {/* Right Column: Laptop Mockup Displaying SharePoint Modern Intranet Portal */}
-            <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-md group">
-                {/* Mockup Frame */}
-                <div className="bg-slate-900 p-2.5 sm:p-3.5 rounded-[18px] shadow-[0_20px_50px_rgba(0,95,150,0.22)] border border-slate-700">
-                  <div className="bg-white rounded-[12px] overflow-hidden border border-slate-200">
-                    {/* Mock Browser Header */}
-                    <div className="bg-[#0078D4] px-3 py-2 text-white flex items-center justify-between">
-                      <div className="flex items-center space-x-2">
-                        <div className="w-2.5 h-2.5 rounded-full bg-white/40" />
-                        <span className="text-[11px] font-bold tracking-wide">SharePoint Intranet Portal</span>
-                      </div>
-                      <div className="text-[10px] text-blue-100 font-mono">Microsoft 365</div>
-                    </div>
-
-                    {/* Dashboard News / Intranet Grid */}
-                    <div className="p-3.5 space-y-3 text-left bg-slate-50">
-                      {/* Top Banner News */}
-                      <div className="bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs flex items-center space-x-3">
-                        <div className="w-12 h-12 rounded-lg bg-[#0078D4]/10 flex items-center justify-center shrink-0">
-                          <FileText className="w-6 h-6 text-[#0078D4]" />
-                        </div>
-                        <div className="min-w-0 flex-1">
-                          <span className="text-[9.5px] font-bold text-[#0078D4] uppercase tracking-wider">Company News</span>
-                          <h4 className="text-[11.5px] font-[800] text-slate-900 truncate leading-snug">
-                            Global Digital Transformation Roadmap 2026
-                          </h4>
-                          <p className="text-[10px] text-slate-500">Corporate Strategy • Updated Today</p>
-                        </div>
-                      </div>
-
-                      {/* 2 Side-by-Side Content Blocks */}
-                      <div className="grid grid-cols-2 gap-2">
-                        <div className="bg-white p-2.5 rounded-lg border border-slate-200 text-left space-y-1">
-                          <div className="text-[10px] font-bold text-slate-700 flex items-center space-x-1">
-                            <FolderLock className="w-3.5 h-3.5 text-[#0078D4]" />
-                            <span>Document Hub</span>
-                          </div>
-                          <p className="text-[9.5px] text-slate-500">2,450 Verified Files</p>
-                          <span className="inline-block text-[9px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">Synced</span>
-                        </div>
-
-                        <div className="bg-white p-2.5 rounded-lg border border-slate-200 text-left space-y-1">
-                          <div className="text-[10px] font-bold text-slate-700 flex items-center space-x-1">
-                            <Workflow className="w-3.5 h-3.5 text-[#0078D4]" />
-                            <span>Power Automate</span>
-                          </div>
-                          <p className="text-[9.5px] text-slate-500">14 Active Flows</p>
-                          <span className="inline-block text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded">Running</span>
-                        </div>
-                      </div>
-
-                      {/* Quick Department Launchpad */}
-                      <div className="bg-[#0078D4] text-white p-2.5 rounded-lg flex items-center justify-between">
-                        <div>
-                          <div className="text-[10px] text-blue-100">Enterprise Search</div>
-                          <div className="text-[12px] font-[800]">Microsoft Graph Copilot</div>
-                        </div>
-                        <Search className="w-4 h-4 text-blue-200" />
-                      </div>
-                    </div>
+              {/* 4 Stat Counters Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-8 pt-2">
+                <div>
+                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">200+</div>
+                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
+                    Dedicated<br />Developers
                   </div>
                 </div>
-
-                {/* Laptop Base Stand */}
-                <div className="w-full h-3 bg-slate-400 rounded-b-xl mx-auto opacity-70 shadow-md" />
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* =========================================================================
-          2. BRAND RECOGNITION MARQUEE BANNER
-          ========================================================================= */}
-      <BrandLogoMarquee />
-
-      {/* =========================================================================
-          3. WEB DEVELOPMENT MARKET STATS SECTION (Matching Screenshot Section 2)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Visual Market Stats Graphic */}
-            <div className="lg:col-span-6">
-              <div className="bg-[#F8FAFC] border border-slate-200 rounded-[20px] p-6 sm:p-8 shadow-md text-left space-y-5">
-                <div className="flex items-center justify-between border-b border-slate-200 pb-3">
-                  <span className="text-[13px] font-[800] text-slate-900">Global Web Development & Enterprise Collaboration Market</span>
-                  <span className="text-[11px] font-bold text-[#005F96] bg-blue-50 px-2 py-0.5 rounded">2020 - 2031</span>
-                </div>
-
-                {/* Growth Bars */}
-                <div className="space-y-3.5 pt-2">
-                  <div>
-                    <div className="flex justify-between text-[12px] font-bold text-slate-700 mb-1">
-                      <span>Enterprise SharePoint & Intranet Solutions</span>
-                      <span className="text-[#005F96]">+18.5% CAGR</span>
-                    </div>
-                    <div className="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
-                      <div className="bg-[#005F96] h-full w-[88%]" />
-                    </div>
-                  </div>
-
-                  <div>
-                    <div className="flex justify-between text-[12px] font-bold text-slate-700 mb-1">
-                      <span>Cloud Document Management & Governance</span>
-                      <span className="text-emerald-600">+24.2% Growth</span>
-                    </div>
-                    <div className="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
-                      <div className="bg-emerald-500 h-full w-[94%]" />
-                    </div>
-                  </div>
-
-                  <div>
-                    <div className="flex justify-between text-[12px] font-bold text-slate-700 mb-1">
-                      <span>Power Platform & Automated Robotic Flows</span>
-                      <span className="text-cyan-600">+31.0% Expansion</span>
-                    </div>
-                    <div className="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
-                      <div className="bg-cyan-500 h-full w-[78%]" />
-                    </div>
+                <div>
+                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">20+</div>
+                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
+                    Fortunes 500<br />Companies
                   </div>
                 </div>
-
-                <div className="bg-white p-3.5 rounded-xl border border-slate-200/80 flex items-center space-x-3 text-[12.5px] text-[#475569]">
-                  <CheckCircle className="w-5 h-5 text-emerald-600 shrink-0" />
-                  <span>Over 85% of Fortune 500 enterprises rely on SharePoint for internal collaboration and content security.</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column: Content */}
-            <div className="lg:col-span-6 space-y-5 text-left">
-              <h2 className="text-[28px] sm:text-[36px] font-[900] text-[#0B0F19] tracking-tight leading-tight font-sans">
-                Web Development Market Stats
-              </h2>
-
-              <p className="text-[14.5px] text-[#475569] leading-relaxed font-normal">
-                Modern enterprise web collaboration requires scalable, compliant, and centralized digital infrastructure. Our custom SharePoint development services bridge the gap between complex document taxonomies and frictionless employee experiences.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
-                <div className="flex items-center space-x-2.5 text-[13.5px] font-semibold text-slate-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#005F96] shrink-0" />
-                  <span>Custom SPFx & React Web Parts</span>
-                </div>
-                <div className="flex items-center space-x-2.5 text-[13.5px] font-semibold text-slate-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#005F96] shrink-0" />
-                  <span>Automated Power Platform Workflows</span>
-                </div>
-                <div className="flex items-center space-x-2.5 text-[13.5px] font-semibold text-slate-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#005F96] shrink-0" />
-                  <span>Zero-Loss Cloud Migration</span>
-                </div>
-                <div className="flex items-center space-x-2.5 text-[13.5px] font-semibold text-slate-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#005F96] shrink-0" />
-                  <span>Enterprise Security & DLP Governance</span>
-                </div>
-              </div>
-
-              <div className="pt-3">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center space-x-2 px-8 py-3.5 rounded-[8px] bg-[#005F96] hover:bg-[#004A75] text-white font-[700] text-[14.5px] transition-all shadow-md hover:shadow-lg"
-                >
-                  <span>Get Free SharePoint Consultation</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* =========================================================================
-          4. COMPREHENSIVE SHAREPOINT SERVICES (8 Cards Grid)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-slate-50 font-sans text-left border-b border-slate-200/80">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
-              Our SharePoint Development Services
-            </h2>
-            <p className="text-[14.5px] text-[#475569] leading-relaxed">
-              We engineer secure, modern, and high-performance SharePoint intranet portals, DMS solutions, and automated business workflows.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {sharepointServices.map((service) => (
-              <div
-                key={service.id}
-                className="bg-white rounded-[16px] p-6 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
-              >
-                <div className="space-y-3.5">
-                  <div className="w-12 h-12 rounded-xl bg-[#EAF4FA] flex items-center justify-center group-hover:scale-110 transition-transform">
-                    {service.icon}
+                <div>
+                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">2800+</div>
+                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
+                    Project<br />Completed
                   </div>
-                  <h3 className="text-[16.5px] font-[800] text-slate-900 group-hover:text-[#005F96] transition-colors leading-snug">
-                    {service.title}
-                  </h3>
-                  <p className="text-[13px] text-[#475569] leading-relaxed">
-                    {service.shortDesc}
-                  </p>
                 </div>
+                <div>
+                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">320+</div>
+                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
+                    5-Star Clutch<br />Reviews
+                  </div>
+                </div>
+              </div>
 
-                <div className="mt-5 pt-4 border-t border-slate-100 space-y-2">
-                  {service.bullets.map((bullet, bIdx) => (
-                    <div key={bIdx} className="flex items-center space-x-2 text-[12px] font-medium text-slate-700">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#005F96] shrink-0" />
-                      <span className="truncate">{bullet}</span>
+              {/* Teal CTA Container */}
+              <div className="mt-8">
+                <div className="text-xs font-[700] text-[#006E90] mb-2 font-sans">
+                  Get Top Talent Work for you At
+                </div>
+                <div className="p-2 bg-[#0080A0] rounded-2xl shadow-lg inline-flex items-center justify-between space-x-4 max-w-md w-full border border-cyan-700/20">
+                  <div className="flex items-center space-x-2.5 pl-3">
+                    <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-white">
+                      <Clock className="w-4 h-4 text-white" />
                     </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* =========================================================================
-          5. KEY BENEFITS OF SHAREPOINT (6 Cards Grid)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
-              Why Choose SharePoint for Enterprise Collaboration?
-            </h2>
-            <p className="text-[14.5px] text-[#475569] leading-relaxed">
-              SharePoint empowers organizations with centralized content, automated compliance, and seamless Microsoft 365 synergy.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {keyBenefits.map((benefit, idx) => (
-              <div
-                key={idx}
-                className="bg-[#F8FAFC] rounded-[16px] p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all space-y-3"
-              >
-                <div className="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center shadow-xs">
-                  {benefit.icon}
-                </div>
-                <h3 className="text-[17px] font-[800] text-slate-900">
-                  {benefit.title}
-                </h3>
-                <p className="text-[13px] text-[#475569] leading-relaxed">
-                  {benefit.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* =========================================================================
-          6. OUR AGILE WORK PROCESS (Step-by-Step)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-slate-900 text-white font-sans text-left">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-14 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-white tracking-tight">
-              Our SharePoint Implementation Lifecycle
-            </h2>
-            <p className="text-[14.5px] text-slate-300 leading-relaxed">
-              Structured agile deployment sprints with continuous integration, automated testing, and comprehensive admin training.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {workProcess.map((proc, idx) => (
-              <div
-                key={idx}
-                className="bg-slate-800/80 rounded-[16px] p-6 border border-slate-700/80 space-y-3 hover:border-sky-500/50 transition-colors"
-              >
-                <div className="text-[26px] font-[900] text-[#38BDF8]">
-                  {proc.step}
-                </div>
-                <h3 className="text-[18px] font-[800] text-white">
-                  {proc.title}
-                </h3>
-                <p className="text-[13px] text-slate-300 leading-relaxed">
-                  {proc.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* =========================================================================
-          7. WHY CHOOSE US (6 Cards Grid)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
-              Why Choose Firevy for SharePoint Development?
-            </h2>
-            <p className="text-[14.5px] text-[#475569] leading-relaxed">
-              A trusted global Microsoft partner with deep full-stack proficiency and certified SharePoint architects.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {whyChooseUs.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-[16px] p-6 border border-slate-200 shadow-xs hover:shadow-xl transition-all space-y-3 group"
-              >
-                <div className="w-12 h-12 rounded-xl bg-[#EAF4FA] flex items-center justify-center group-hover:scale-110 transition-transform">
-                  {item.icon}
-                </div>
-                <h3 className="text-[17px] font-[800] text-slate-900 group-hover:text-[#005F96] transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-[13px] text-[#475569] leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* =========================================================================
-          8. OUR RECENT PROJECTS
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-[#F8FAFC] font-sans text-left border-b border-slate-200/80">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
-              Our Recent SharePoint Projects
-            </h2>
-            <p className="text-[14.5px] text-[#475569] leading-relaxed">
-              Explore custom SharePoint intranet portals and DMS automation systems successfully delivered for our enterprise clients.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10">
-            {recentProjects.map((proj) => (
-              <div
-                key={proj.id}
-                className="bg-white rounded-[16px] overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col justify-between"
-              >
-                <div className="h-48 overflow-hidden bg-slate-100 relative">
-                  <img
-                    src={proj.image}
-                    alt={proj.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute top-3 left-3 bg-[#006B8F] text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                    {proj.category}
+                    <span className="text-white font-[900] text-lg sm:text-xl tracking-tight font-sans">
+                      $21/Hourly*
+                    </span>
                   </div>
-                </div>
-                <div className="p-5 flex-1 flex flex-col justify-between">
-                  <h4 className="text-[16px] font-[700] text-slate-900 group-hover:text-[#006B8F] transition-colors mb-4">
-                    {proj.title}
-                  </h4>
                   <Link
-                    to={proj.link}
-                    className="inline-flex items-center text-[13px] font-[700] text-[#006B8F] group-hover:translate-x-1 transition-transform"
+                    to="/contact"
+                    className="bg-white hover:bg-slate-50 text-[#0080A0] font-[900] text-sm px-6 py-2.5 rounded-xl transition-all shadow-sm shrink-0 cursor-pointer font-sans"
                   >
-                    <span>View Case Study</span>
-                    <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                    Hire Team
                   </Link>
                 </div>
               </div>
-            ))}
+            </div>
+
+            {/* Right Column: Custom Vector Illustration */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="relative w-full max-w-[460px] aspect-[4/3] flex items-center justify-center">
+                <svg className="absolute inset-0 w-full h-full text-slate-200/60 pointer-events-none" viewBox="0 0 400 300">
+                  <circle cx="80" cy="60" r="30" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
+                  <circle cx="340" cy="220" r="45" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
+                  <path d="M 50 150 Q 200 280 350 150" fill="none" stroke="#0080A0" strokeWidth="1.5" opacity="0.15" />
+                </svg>
+
+                <div className="w-full bg-white rounded-2xl border-2 border-slate-200/90 shadow-2xl overflow-hidden relative z-10 p-4 sm:p-5">
+                  <div className="flex items-center space-x-1.5 pb-3 border-b border-slate-100">
+                    <div className="w-3 h-3 rounded-full bg-rose-500" />
+                    <div className="w-3 h-3 rounded-full bg-amber-400" />
+                    <div className="w-3 h-3 rounded-full bg-emerald-500" />
+                    <div className="ml-4 h-4 bg-slate-100 rounded-md w-36" />
+                  </div>
+
+                  <div className="py-5 space-y-3 font-mono text-[11px] text-slate-400">
+                    <div className="flex space-x-2">
+                      <span className="text-purple-600 font-bold">import</span>
+                      <span className="text-slate-800 font-semibold">{`{ SPFx }`}</span>
+                      <span className="text-purple-600 font-bold">from</span>
+                      <span className="text-emerald-600">'@microsoft/sp-core-library'</span>;
+                    </div>
+                    <div className="flex space-x-2">
+                      <span className="text-purple-600 font-bold">import</span>
+                      <span className="text-slate-800 font-semibold">React, Graph</span>
+                      <span className="text-purple-600 font-bold">from</span>
+                      <span className="text-cyan-600">'@microsoft/sp-page-context'</span>;
+                    </div>
+                    <div className="flex space-x-2">
+                      <span className="text-purple-600 font-bold">const</span>
+                      <span className="text-blue-600 font-bold">app</span> = <span className="text-slate-800">SPFxWebPart()</span>;
+                    </div>
+                    <div className="h-2 bg-slate-100 rounded w-3/4 my-2" />
+                    <div className="h-2 bg-slate-100 rounded w-1/2" />
+                    <div className="h-2 bg-slate-100 rounded w-5/6" />
+                  </div>
+
+                  <div className="w-20 h-4 bg-slate-200 rounded-b-md mx-auto -mb-5" />
+                </div>
+
+                <div className="absolute -top-3 -right-3 z-20 bg-white border border-teal-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
+                  <div className="w-9 h-9 rounded-xl bg-[#038387] text-white flex items-center justify-center font-black text-sm shadow-md font-sans">
+                    S
+                  </div>
+                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">SharePoint</span>
+                </div>
+
+                <div className="absolute top-1/3 -left-5 z-20 bg-[#111827] text-white p-2.5 sm:p-3 rounded-2xl shadow-xl flex items-center space-x-2 border border-slate-800">
+                  <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-black text-xs font-mono">
+                    SPFX
+                  </div>
+                  <span className="text-xs font-bold text-white pr-1 font-sans">SPFx React</span>
+                </div>
+
+                <div className="absolute -bottom-3 left-4 z-20 bg-white border border-emerald-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
+                  <div className="w-9 h-9 rounded-xl bg-[#0078D4] text-white flex items-center justify-center font-black text-sm shadow-md font-sans">
+                    ☁️
+                  </div>
+                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">MS365 Cloud</span>
+                </div>
+
+                <div className="absolute -bottom-3 -right-3 z-20 bg-white border border-emerald-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
+                  <div className="w-9 h-9 rounded-xl bg-[#742774] text-white flex items-center justify-center font-black text-xs font-mono shadow-md">
+                    PA
+                  </div>
+                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">PowerApps</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* 2. CLIENT LOGOS MARQUEE BAR */}
+      <TrustMarquee />
+
+      {/* 3. SECTION 1: Best SharePoint Developers Available With Us */}
+      <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column: Vector Illustration */}
+            <div className="lg:col-span-6 flex justify-center">
+              <div className="relative w-full max-w-[480px] p-4 flex items-center justify-center">
+                <div className="w-full bg-slate-900 rounded-2xl p-3 shadow-2xl border border-slate-700 relative">
+                  <div className="bg-[#EBF5FB] rounded-xl p-4 min-h-[220px] flex flex-col justify-between relative overflow-hidden border border-cyan-200">
+                    <div className="space-y-2">
+                      <div className="h-2.5 bg-cyan-600/30 rounded w-2/3" />
+                      <div className="h-2 bg-slate-300 rounded w-1/2" />
+                      <div className="h-2 bg-slate-300 rounded w-4/5" />
+                      <div className="h-2 bg-slate-300 rounded w-3/5" />
+                    </div>
+
+                    <div className="absolute right-6 top-6 w-28 h-44 bg-slate-900 rounded-xl p-1.5 shadow-2xl border border-cyan-400/40 z-10 flex flex-col justify-between">
+                      <div className="bg-sky-500 rounded-lg h-full p-2 flex flex-col items-center justify-center text-white">
+                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center mb-1">
+                          ⚙️
+                        </div>
+                        <span className="text-[9px] font-black tracking-wider uppercase">App Ready</span>
+                      </div>
+                    </div>
+
+                    <div className="absolute top-2 left-28 bg-[#038387] text-white text-[9px] font-bold px-2 py-0.5 rounded-full shadow">
+                      SharePoint
+                    </div>
+
+                    <div className="absolute top-10 right-2 bg-blue-600 text-white text-[9px] font-black px-1.5 py-0.5 rounded shadow">
+                      MS365
+                    </div>
+
+                    <div className="absolute bottom-3 left-32 bg-[#0078D4] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow">
+                      SPFx
+                    </div>
+                  </div>
+                  <div className="w-28 h-3 bg-slate-700 rounded-b-md mx-auto mt-1" />
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Title + Paragraph */}
+            <div className="lg:col-span-6 text-left space-y-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
+                Best SharePoint Developers Available With Us
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans font-normal">
+                All of the SharePoint components (SPFx, Intranet Portals, Document Management, Power Automate, Microsoft Graph, SharePoint Online) are expertly handled by our full-stack SharePoint developers. Hire SharePoint developers to create enterprise applications that are ready for the future. We provide a range of hiring models so you can select the most appropriate ones for your project.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* 4. SECTION 2: Our Flexible Hiring Models */}
+      <section className="py-16 bg-[#F8FAFC] border-b border-slate-200/80 text-slate-900 font-sans">
+        <Container>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight font-sans">
+              Our Flexible Hiring Models: Find the Perfect Fit For Your Project
+            </h2>
+            <p className="text-sm sm:text-base text-slate-600 font-normal mt-2.5 font-sans">
+              Hire SharePoint Developers from Firevy.co Starts from,
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Card 1: Quarterly */}
+            <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between text-center relative">
+              <div>
+                <div className="w-12 h-12 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-[#006E90] mx-auto mb-4">
+                  <PieChart className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-[800] text-slate-900 font-sans mb-1">Quarterly</h3>
+                <span className="text-xs font-bold text-slate-500 block mb-2 font-sans">Starting From</span>
+                <div className="text-2xl sm:text-3xl font-[900] text-slate-900 mb-6 font-sans">
+                  $ 7500.00/ Month
+                </div>
+
+                <ul className="space-y-3 text-left text-xs sm:text-[13px] text-slate-700 font-sans mb-8">
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>Billing cycle : Monthly</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>Project Trackers : Daily Reports, Basecamp, Jira, Redmine etc.</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>4 hours a day, 5 days a week</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>Minimum: 2 months</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <Link
+                  to="/contact"
+                  className="w-full py-3 rounded-xl bg-[#006E90] hover:bg-[#005573] text-white font-[800] text-sm block transition-all shadow-md font-sans mb-3"
+                >
+                  Hire Now
+                </Link>
+                <div className="bg-sky-50/80 rounded-lg py-1.5 text-[11px] text-[#006E90] font-bold font-sans">
+                  We sign NDA for all our projects.
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2: Yearly */}
+            <div className="bg-white rounded-3xl p-8 border-4 border-[#006E90] shadow-2xl transition-all duration-300 flex flex-col justify-between text-center relative transform md:-translate-y-2">
+              <div>
+                <span className="text-[11px] font-extrabold text-[#006E90] uppercase tracking-wider block mb-1 font-sans">
+                  Save Up To 20%
+                </span>
+                <div className="w-12 h-12 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-[#006E90] mx-auto mb-3">
+                  <Award className="w-6 h-6" />
+                </div>
+                <div className="flex items-center justify-center space-x-2 mb-1">
+                  <h3 className="text-xl font-[800] text-slate-900 font-sans">Yearly</h3>
+                  <span className="bg-sky-100 text-[#006E90] text-[10px] font-black px-2 py-0.5 rounded-full uppercase font-sans">
+                    Best Deal
+                  </span>
+                </div>
+                <span className="text-xs font-bold text-slate-500 block mb-2 font-sans">Starting From</span>
+                <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] mb-6 font-sans">
+                  $25000.0
+                </div>
+
+                <ul className="space-y-3 text-left text-xs sm:text-[13px] text-slate-700 font-sans mb-8">
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>Billing cycle : Monthly</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>Project Trackers : Daily Reports, Basecamp, Jira, Redmine etc.</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>4 hours a day, 5 days a week</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>Minimum: 2 months</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <Link
+                  to="/contact"
+                  className="w-full py-3 rounded-xl bg-[#006E90] hover:bg-[#005573] text-white font-[800] text-sm block transition-all shadow-md font-sans mb-3"
+                >
+                  Hire Now
+                </Link>
+                <div className="bg-sky-50/80 rounded-lg py-1.5 text-[11px] text-[#006E90] font-bold font-sans">
+                  We sign NDA for all our projects.
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3: Part-time Developer */}
+            <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between text-center relative">
+              <div>
+                <div className="w-12 h-12 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-[#006E90] mx-auto mb-4">
+                  <Clock className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-[800] text-slate-900 font-sans mb-1">Part-time Developer</h3>
+                <span className="text-xs font-bold text-slate-500 block mb-2 font-sans">4 hours a day, 5 days a week</span>
+                <div className="text-2xl sm:text-3xl font-[900] text-slate-900 mb-6 font-sans">
+                  80 hours/month
+                </div>
+
+                <ul className="space-y-3 text-left text-xs sm:text-[13px] text-slate-700 font-sans mb-8">
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>Billing cycle : Monthly</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>Project Trackers : Daily Reports, Basecamp, Jira, Redmine etc.</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>4 hours a day, 5 days a week</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
+                    <span>Minimum: 2 months</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <Link
+                  to="/contact"
+                  className="w-full py-3 rounded-xl bg-[#006E90] hover:bg-[#005573] text-white font-[800] text-sm block transition-all shadow-md font-sans mb-3"
+                >
+                  Hire Now
+                </Link>
+                <div className="bg-sky-50/80 rounded-lg py-1.5 text-[11px] text-[#006E90] font-bold font-sans">
+                  We sign NDA for all our projects.
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* 5. SECTION 3: Developers Comparison Table */}
+      <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
+        <Container>
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight font-sans">
+              Hire Dedicated Developers To Empower Your Business with our Development Proficiency
+            </h2>
+            <p className="text-sm sm:text-base text-slate-600 font-normal mt-2.5 font-sans">
+              Hire SharePoint Developers to meet your business perks by leveraging our technical elegance.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto overflow-x-auto">
+            <table className="w-full text-left border-collapse rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+              <thead>
+                <tr className="bg-[#005F96] text-white font-sans text-sm sm:text-base font-bold">
+                  <th className="p-4 sm:p-5 border-r border-cyan-700/50 w-1/4">Range of Developers</th>
+                  <th className="p-4 sm:p-5 border-r border-cyan-700/50 w-1/4">Junior Developers</th>
+                  <th className="p-4 sm:p-5 border-r border-cyan-700/50 w-1/4">Mid-Level Developers</th>
+                  <th className="p-4 sm:p-5 w-1/4">Senior Developers</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 text-xs sm:text-sm font-sans text-slate-800">
+                <tr className="bg-white hover:bg-slate-50 transition-colors">
+                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Approx Cost</td>
+                  <td className="p-4 sm:p-5 font-bold text-slate-900 border-r border-slate-200">$17</td>
+                  <td className="p-4 sm:p-5 font-bold text-slate-900 border-r border-slate-200">$22</td>
+                  <td className="p-4 sm:p-5 font-bold text-slate-900">$29</td>
+                </tr>
+                <tr className="bg-slate-50/60 hover:bg-slate-100 transition-colors">
+                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Years of Experience</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">1-3 Years</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">3-5 Years</td>
+                  <td className="p-4 sm:p-5">5+ Years</td>
+                </tr>
+                <tr className="bg-white hover:bg-slate-50 transition-colors">
+                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Project Manager</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
+                  <td className="p-4 sm:p-5">Yes</td>
+                </tr>
+                <tr className="bg-slate-50/60 hover:bg-slate-100 transition-colors">
+                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Time Zone Flexibility</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
+                  <td className="p-4 sm:p-5">Yes</td>
+                </tr>
+                <tr className="bg-white hover:bg-slate-50 transition-colors">
+                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Quality Guarantee</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
+                  <td className="p-4 sm:p-5">Yes</td>
+                </tr>
+                <tr className="bg-slate-50/60 hover:bg-slate-100 transition-colors">
+                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Working Hours</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">40 hours/ Week</td>
+                  <td className="p-4 sm:p-5 border-r border-slate-200">40 hours/ Week</td>
+                  <td className="p-4 sm:p-5">40 hours/ Week</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </Container>
+      </section>
+
+      {/* 6. SECTION 4: Brief About Our SharePoint Developer */}
+      <section className="py-16 bg-[#F8FAFC] border-b border-slate-200/80 text-slate-900 font-sans">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column: Text */}
+            <div className="lg:col-span-7 text-left space-y-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
+                Brief About Our SharePoint Developer
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
+                Our SharePoint developers have rich expertise in intranet portal administration using SharePoint Online, SharePoint Server, Microsoft Graph, and SQL Server. Our pool of talented developers has knowledge of SPFx, React, TypeScript, C#, and .NET Core programming languages.
+              </p>
+              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
+                Our SharePoint developers have wide expertise in languages such as HTML5, XHTML, and CSS coding. Our SharePoint developers have expertise in UI, UX design and development, and Microsoft 365 Architecture. You can hire our front-end developers who have rich expertise in a variety of Microsoft frameworks.
+              </p>
+            </div>
+
+            {/* Right Column: Character Vector Illustration */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="relative w-full max-w-[440px] aspect-[4/3] flex items-center justify-center p-4">
+                <div className="w-full bg-slate-900 rounded-2xl p-4 shadow-2xl border border-slate-800 relative text-white flex flex-col justify-between min-h-[220px]">
+                  <div className="flex justify-between items-center pb-2 border-b border-slate-800">
+                    <span className="text-xs font-mono text-cyan-400">SHAREPOINT STUDIO</span>
+                    <div className="flex space-x-1">
+                      <div className="w-2.5 h-2.5 rounded-full bg-rose-500" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
+                    </div>
+                  </div>
+
+                  <div className="py-4 space-y-2 font-mono text-[11px] text-slate-300">
+                    <div><span className="text-purple-400">const</span> <span className="text-yellow-300">developer</span> = <span className="text-cyan-300">new</span> <span className="text-blue-400">SharePointDeveloper()</span>;</div>
+                    <div><span className="text-purple-400">await</span> developer.<span className="text-emerald-400 font-bold">buildIntranetPortals()</span>;</div>
+                  </div>
+
+                  <div className="absolute -bottom-4 -right-4 bg-white p-2 rounded-2xl shadow-xl border border-slate-200 text-slate-900 flex items-center space-x-2">
+                    <div className="w-8 h-8 rounded-xl bg-[#038387] text-white flex items-center justify-center font-black text-xs font-sans">SP</div>
+                    <span className="text-xs font-bold font-sans">SharePoint Expert</span>
+                  </div>
+
+                  <div className="absolute -top-4 -left-4 bg-[#111827] p-2 rounded-2xl shadow-xl border border-slate-700 text-white flex items-center space-x-2">
+                    <div className="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black text-xs font-mono">SPFX</div>
+                    <span className="text-xs font-bold font-sans">SPFx Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* 7. SECTION 5: Clutch Top Rated Banner */}
+      <section className="py-8 bg-[#005C8A] text-white font-sans overflow-hidden border-b border-cyan-950 select-none">
+        <Container>
+          <div className="flex flex-wrap lg:flex-nowrap items-center justify-between gap-6 sm:gap-8">
+            {/* Left Title */}
+            <div className="text-left max-w-sm shrink-0">
+              <h3 className="text-xl sm:text-2xl lg:text-[28px] font-[900] text-white leading-tight font-sans tracking-tight">
+                World Wide Top Rated<br />
+                SharePoint Development<br />
+                Company on Clutch
+              </h3>
+            </div>
+
+            {/* Gold Trophy with Laurel Wreath SVG */}
+            <div className="shrink-0 flex items-center justify-center">
+              <svg className="w-16 h-16 sm:w-20 sm:h-20 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+                <path d="M 30 75 Q 18 50 32 25 Q 26 40 32 60 Z" fill="#FFC107" />
+                <path d="M 24 65 Q 12 45 26 22 Q 20 35 26 52 Z" fill="#FFB300" opacity="0.8" />
+                <path d="M 20 50 Q 10 32 22 15 Q 16 26 21 40 Z" fill="#FFC107" />
+                <path d="M 70 75 Q 82 50 68 25 Q 74 40 68 60 Z" fill="#FFC107" />
+                <path d="M 76 65 Q 88 45 74 22 Q 80 35 74 52 Z" fill="#FFB300" opacity="0.8" />
+                <path d="M 80 50 Q 90 32 78 15 Q 84 26 79 40 Z" fill="#FFC107" />
+                <path d="M 36 28 L 64 28 C 64 45 58 55 50 56 C 42 55 36 45 36 28 Z" fill="#FFD54F" stroke="#FFA000" strokeWidth="2" />
+                <path d="M 46 56 L 54 56 L 54 68 L 46 68 Z" fill="#FFC107" />
+                <rect x="40" y="68" width="20" height="7" rx="2" fill="#FFA000" />
+                <path d="M 36 34 C 28 34 28 44 36 44" fill="none" stroke="#FFD54F" strokeWidth="2.5" />
+                <path d="M 64 34 C 72 34 72 44 64 44" fill="none" stroke="#FFD54F" strokeWidth="2.5" />
+                <polygon points="50,33 53,40 60,40 55,44 57,51 50,47 43,51 45,44 40,40 47,40" fill="#FFF8E1" />
+              </svg>
+            </div>
+
+            {/* Badges Row */}
+            <div className="flex items-center space-x-2 sm:space-x-3 overflow-x-auto scrollbar-none py-2">
+              <div className="w-20 h-28 bg-[#182330] rounded-b-xl border border-slate-400/40 p-1.5 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                <span className="text-[7px] font-bold text-slate-300 uppercase tracking-widest mt-0.5">TOP</span>
+                <span className="text-[6.5px] font-black text-slate-200 uppercase leading-none">MOBILE APP</span>
+                <span className="text-sm font-black text-white tracking-tight font-serif my-0.5">Clutch</span>
+                <div className="w-full bg-slate-700/60 rounded py-0.5 text-[6.5px] font-extrabold text-slate-200 uppercase">
+                  DEVELOPERS<br />2022
+                </div>
+              </div>
+
+              <div className="w-20 h-28 bg-[#1B263B] rounded-b-xl border border-amber-500/40 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                <span className="text-xs font-black text-white tracking-tight font-serif mt-0.5">Clutch</span>
+                <span className="text-[6.5px] font-bold text-slate-300 uppercase">TOP COMPANY</span>
+                <div className="w-full bg-[#B89762] text-slate-950 font-black text-[7px] py-1 rounded-sm uppercase tracking-tighter">
+                  DEVELOPMENT<br />2022
+                </div>
+                <span className="text-[6.5px] font-bold text-slate-400 uppercase mb-0.5">INDIA</span>
+              </div>
+
+              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                  MOST REVIEWED
+                </div>
+                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                  ★
+                </div>
+                <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                  MOBILE APP<br />DEVELOPMENT<br />COMPANIES
+                </span>
+                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+              </div>
+
+              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                  MOST REVIEWED
+                </div>
+                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                  ★
+                </div>
+                <span className="text-[6px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                  MICROSOFT<br />SHAREPOINT<br />CONSULTING
+                </span>
+                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+              </div>
+
+              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                  MOST REVIEWED
+                </div>
+                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                  ★
+                </div>
+                <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                  SOFTWARE<br />DEVELOPERS<br />COMPANIES
+                </span>
+                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+              </div>
+
+              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                  MOST REVIEWED
+                </div>
+                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                  ★
+                </div>
+                <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                  WEB<br />DEVELOPERS<br />COMPANIES
+                </span>
+                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* 8. SECTION 6: What Exactly Is A SharePoint Developer? */}
+      <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
+        <Container>
+          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight text-center mb-10 font-sans">
+            What Exactly Is A SharePoint Developer?
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-5xl mx-auto">
+            <div className="lg:col-span-5 bg-[#EBF5FB] p-8 rounded-3xl border border-cyan-200/80 shadow-sm text-left relative">
+              <Quote className="w-10 h-10 text-[#006085] opacity-30 mb-2" />
+              <h3 className="text-xl sm:text-2xl font-[900] text-[#006085] leading-snug font-sans">
+                Hire SharePoint Developers At A Reasonable Rate
+              </h3>
+            </div>
+
+            <div className="lg:col-span-7 text-left space-y-5">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans font-normal">
+                Our remote SharePoint developers have designed and launched a wide array of websites, applications, and portals, with a scope of defects and mistakes that is either minimal or nonexistent in most cases. As a trusted SharePoint development company you can get our SharePoint Consulting to build SharePoint apps. In addition, the team has the necessary skill set and expertise to develop applications with a high degree of precision and skill. We provide you with the opportunity to engage SharePoint web developers for SharePoint Migration & Porting to work on an hourly, part-time, or full-time basis, depending on what best meets your needs.
+              </p>
+              <div>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center px-6 py-3 rounded-xl bg-[#006085] hover:bg-[#004D6B] text-white font-[800] text-sm transition-all shadow-md font-sans"
+                >
+                  <span>Let's Discuss Your Project</span>
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* 9. SECTION 7: Our Premium Services */}
+      <PremiumServicesGrid />
+
+      {/* 10. SECTION 8: Meet Sapphire's Exceptional Team of Seasoned Experts */}
+      <SapphireSeasonedExpertsSection />
+
+      {/* 11. SECTION 9: Leverage The Expertise of Sapphire Dedicated Developers */}
+      <LeverageExpertiseGridSection />
+
+      {/* 12. SECTION 10: Industry-Focused Insights To Elevate Your Business */}
+      <IndustryFocusedInsightsSection />
+
+      {/* 13. SECTION 11: About Us Stats */}
+      <AboutUsStats />
+
+      {/* 14. SECTION 12: Sectors Thriving Section */}
+      <SectorsThrivingSection />
+
+      {/* 15. SECTION 13: Employ the Advanced Proficiency of Sapphire's Dedicated Development Team */}
+      <section className="py-16 sm:py-20 bg-[#F8FAFC] text-slate-900 font-sans border-b border-slate-200">
+        <Container className="max-w-7xl">
+          <div className="text-center max-w-4xl mx-auto mb-12 space-y-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
+              Employ the Advanced Proficiency of Sapphire’s Dedicated Development Team
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-slate-600 font-normal leading-relaxed">
+              At Sapphire, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-6xl mx-auto">
+            {[
+              { title: 'On-Time Progress Monitoring', IconComp: LineChart },
+              { title: 'Time-Zone Compatibility', IconComp: Globe },
+              { title: 'Cost-Effective Development', IconComp: DollarSign },
+              { title: 'World Class Expertise', IconComp: Users },
+              { title: 'Least Turnaround Time', IconComp: RotateCcw },
+              { title: 'Best Management Standards', IconComp: ShieldCheck },
+              { title: '500+ Seasons Experts', IconComp: Lightbulb },
+              { title: '24x7 Support Team', IconComp: Headphones },
+              { title: 'Efficient Project Management', IconComp: Handshake },
+              { title: 'Dedicated Delivery Management', IconComp: UserCheck }
+            ].map((item, idx) => {
+              const CardIcon = item.IconComp;
+              return (
+                <div
+                  key={idx}
+                  className="bg-white rounded-2xl p-6 text-center shadow-xs hover:shadow-md border border-slate-200/80 transition-all flex flex-col justify-center items-center space-y-3 h-44"
+                >
+                  <div className="w-12 h-12 rounded-full bg-cyan-50 border border-cyan-100/80 text-[#006095] flex items-center justify-center">
+                    <CardIcon className="w-6 h-6 stroke-[2]" />
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                    {item.title}
+                  </h4>
+                </div>
+              );
+            })}
+          </div>
+        </Container>
+      </section>
+
+      {/* 16. SECTION 14: How We Divide Your Project Responsibilities ? */}
+      <section className="py-16 md:py-20 bg-white text-slate-900 font-sans border-b border-slate-100">
+        <Container>
+          <div className="space-y-10 max-w-6xl mx-auto">
+            <div className="text-center space-y-3">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
+                How We Divide Your Project Responsibilities ?
+              </h2>
+            </div>
+
+            {/* Sapphire / Client Segmented Control Switch */}
+            <div className="flex justify-center">
+              <div className="bg-[#DDECF5] p-1.5 rounded-full inline-flex items-center space-x-1 border border-cyan-100/60 shadow-xs">
+                <button
+                  onClick={() => setResponsibilityTab('sapphire')}
+                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                    responsibilityTab === 'sapphire'
+                      ? 'bg-[#006095] text-white shadow-xs'
+                      : 'text-slate-700 hover:text-slate-900 font-semibold'
+                  }`}
+                >
+                  Sapphire
+                </button>
+                <button
+                  onClick={() => setResponsibilityTab('client')}
+                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                    responsibilityTab === 'client'
+                      ? 'bg-[#006095] text-white shadow-xs'
+                      : 'text-slate-700 hover:text-slate-900 font-semibold'
+                  }`}
+                >
+                  Client
+                </button>
+              </div>
+            </div>
+
+            {/* 6 Responsive Grid Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+              {(responsibilityTab === 'sapphire'
+                ? [
+                    { title: 'Create a dedicated team', IconComp: Users },
+                    { title: 'Gather required access', IconComp: Lock },
+                    { title: 'Plan project resources', IconComp: Sliders },
+                    { title: 'Create a standard delivery practice', IconComp: Clock },
+                    { title: 'Regular communication between stakeholders', IconComp: MessageSquare },
+                    { title: 'Research on competitors', IconComp: Flag }
+                  ]
+                : [
+                    { title: 'Define project scope & vision', IconComp: Target },
+                    { title: 'Provide domain context & access', IconComp: Key },
+                    { title: 'Review sprint deliverables', IconComp: CheckCircle2 },
+                    { title: 'Provide timely feedback & approvals', IconComp: RefreshCw },
+                    { title: 'Align business priorities with roadmap', IconComp: TrendingUp },
+                    { title: 'Co-evaluate key performance indicators', IconComp: BarChart2 }
+                  ]
+              ).map((item, idx) => {
+                const CardIcon = item.IconComp;
+                return (
+                  <div
+                    key={idx}
+                    className="bg-[#EBF4FA] rounded-2xl p-8 text-center border border-cyan-100/70 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center space-y-4 min-h-[160px]"
+                  >
+                    <div className="w-12 h-12 text-[#006095] flex items-center justify-center">
+                      <CardIcon className="w-10 h-10 stroke-[1.5]" />
+                    </div>
+                    <h4 className="text-sm md:text-base font-bold text-slate-900 leading-snug">
+                      {item.title}
+                    </h4>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* 17. SECTION 15: Technology Stack That Sapphire Dedicated Developers Use Proficiently */}
+      <TechStackProficientGrid title="Technology Stack That Sapphire Dedicated Developers Use Proficiently" />
+
+      {/* 18. SECTION 16: The Expertise Of Our Talented SharePoint Developer */}
+      <section className="py-16 md:py-20 bg-[#F0F7FC] text-slate-900 font-sans border-b border-slate-100">
+        <Container className="max-w-7xl">
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
+              The Expertise Of Our Talented SharePoint Developer
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+            {[
+              {
+                title: 'Intranet Portal Development',
+                bg: 'bg-[#F3E8FF]',
+                iconColor: 'text-[#9333EA]',
+                IconComp: ShoppingBag,
+                desc: 'To fulfill the ever-increasing needs of clients, corporate organizations require a scalable, high-performing, and adaptable intranet portal that can be easily constructed using SharePoint. Our devoted SharePoint Development specialists provide superior intranet app development services to clients in all industry verticals. Hiring a SharePoint application development expert from us will assist you in developing ROI-boosting enterprise solutions.'
+              },
+              {
+                title: 'Document & Content Management (DMS)',
+                bg: 'bg-[#DCFCE7]',
+                iconColor: 'text-[#16A34A]',
+                IconComp: Server,
+                desc: 'Our SharePoint Development experts have hands-on expertise in designing document management systems that are scalable, resilient, and user-friendly across all devices. Hiring full-stack SharePoint developers from our top SharePoint development firm in India for DMS development may assist you in tracking possible leads, driving business success, improving document security, and making smart business choices.'
+              },
+              {
+                title: 'SPFx Web Part Development',
+                bg: 'bg-[#FFEDD5]',
+                iconColor: 'text-[#EA580C]',
+                IconComp: Code,
+                desc: 'If you choose SharePoint Framework (SPFx) over legacy web parts, you get dynamic client-side React and TypeScript components. Leverage the knowledge of our SharePoint Web Development experts to create powerful and bespoke web parts and APIs for many business domains and industries.'
+              },
+              {
+                title: 'Enterprise Power Automate Automation',
+                bg: 'bg-[#FEF9C3]',
+                iconColor: 'text-[#CA8A04]',
+                IconComp: Layout,
+                desc: 'A firm wants a user-friendly SharePoint gateway to optimize its quality management process and enhance operational efficiency. Employ our SharePoint CMS Development experts to create feature-rich, scalable, and user-friendly portals for enterprises of all sizes.'
+              },
+              {
+                title: 'Testing And QA',
+                bg: 'bg-[#FCE7F3]',
+                iconColor: 'text-[#DB2777]',
+                IconComp: CheckSquare,
+                desc: 'Recruit SharePoint Migration & Porting experts from our talent pool. Our specialists execute thorough alpha and beta testing, guaranteeing that your application functions flawlessly and contains specific test cases. As an ISO-certified service provider, we guarantee that your dynamic applications and websites are of the highest quality.'
+              },
+              {
+                title: 'Maintenance & Support Services',
+                bg: 'bg-[#CFFAFE]',
+                iconColor: 'text-[#0891B2]',
+                IconComp: Wrench,
+                desc: 'Get comprehensive maintenance and support SharePoint development services from our team of SharePoint specialists. Our nimble specialists offer round-the-clock SharePoint development services to solve your SharePoint development issues with agility, allowing you to remain stress-free and concentrate on essential business tasks.'
+              }
+            ].map((card, idx) => {
+              const CardIcon = card.IconComp;
+              return (
+                <div
+                  key={idx}
+                  className="bg-white rounded-2xl p-7 shadow-xs hover:shadow-md border border-slate-200/80 transition-all flex flex-col justify-between text-left"
+                >
+                  <div>
+                    <div className={`w-12 h-12 rounded-xl ${card.bg} ${card.iconColor} flex items-center justify-center mb-5`}>
+                      <CardIcon className="w-6 h-6 stroke-[2]" />
+                    </div>
+                    <h3 className="text-lg sm:text-[19px] font-[800] text-slate-900 mb-3 leading-snug">
+                      {card.title}
+                    </h3>
+                    <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed font-normal">
+                      {card.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           <div className="text-center">
             <Link
-              to="/portfolio"
-              className="inline-flex items-center space-x-2 px-8 py-3.5 rounded-[8px] bg-[#005F96] hover:bg-[#004A75] text-white font-[700] text-[15px] transition-all shadow-md hover:shadow-lg"
+              to="/contact"
+              className="inline-block bg-[#006095] hover:bg-[#004B77] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-lg shadow-md transition-all hover:scale-105 cursor-pointer"
             >
-              <span>View All Projects</span>
-              <ArrowRight className="w-4 h-4" />
+              Get A Free Quote For Your Project
             </Link>
           </div>
         </Container>
       </section>
 
-      {/* =========================================================================
-          9. VIDEO TESTIMONIALS STORY
-          ========================================================================= */}
-      <VideoTestimonialsStory />
+      {/* 19. Proud To Have Picked These Up Along The Way */}
+      <ClutchTopRatedBanner title="Proud To Have Picked These Up Along The Way" />
 
-      {/* =========================================================================
-          10. TECHNOLOGY STACK GRID
-          ========================================================================= */}
-      <TechnologyStackGrid />
-
-      {/* =========================================================================
-          11. FREQUENTLY ASKED QUESTIONS (Signature 2-Column Sapphire Section)
-          ========================================================================= */}
-      <SapphireFaqSection faqList={sharepointFaqList} />
-
-      {/* =========================================================================
-          12. WE HAVE BEEN FEATURED IN (18 Brand Logos Grid)
-          ========================================================================= */}
-      <FeaturedInLogosGrid />
-
-      {/* =========================================================================
-          13. HIRE NOW CTA BANNER
-          ========================================================================= */}
-      <section className="py-14 sm:py-18 bg-[#005F96] text-white text-center font-sans">
+      {/* 20. Benefits of Hiring Dedicated Developers */}
+      <section className="py-16 md:py-24 bg-white text-slate-900 font-sans border-b border-slate-100">
         <Container>
-          <div className="max-w-3xl mx-auto space-y-5">
-            <h2 className="text-[26px] sm:text-[34px] font-[900] tracking-tight text-white leading-tight">
-              Get access to top {BRAND.name === 'Firevy' ? 'Sapphire' : BRAND.name} SharePoint Development Company to transform your ideas into a robust application.
-            </h2>
-            <div className="pt-2">
-              <Link
-                to="/contact"
-                className="inline-flex items-center space-x-2 px-9 py-4 rounded-[8px] bg-white hover:bg-slate-100 text-[#005F96] font-[800] text-[15px] transition-all shadow-xl hover:scale-105"
-              >
-                <span>Hire SharePoint Developers</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+          <div className="space-y-12 max-w-6xl mx-auto">
+            <div className="text-center space-y-3 max-w-4xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
+                Benefits of Hiring Dedicated Developers
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 font-medium">
+                Hiring dedicated developers can help you save time and money so that you can focus more on core business activities. Benefits include:
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: 'Cost Efficiency',
+                  desc: 'One of the most significant advantages of hiring dedicated developers is access to a global talent pool. We provide access to global talent, lowering labour costs without sacrificing quality.',
+                  IconComp: Coins
+                },
+                {
+                  title: 'Access to Specialized Skills',
+                  desc: 'Dedicated developers are experts in their fields. You can swiftly overcome talent shortages by employing dedicated developers, ensuring projects are completed on time and without errors.',
+                  IconComp: Award
+                },
+                {
+                  title: 'Scalability and Flexibility',
+                  desc: 'Dedicated developers allow team size and composition changes without full-time employment. They can swiftly adapt to project needs and market circumstances, assuring timely delivery.',
+                  IconComp: Sliders
+                },
+                {
+                  title: 'Focused and Committed Effort',
+                  desc: 'Dedicated developers are more productive and committed since they only work on their tasks. This dedication generally improves code quality, turnaround times, and development cohesion.',
+                  IconComp: ShieldCheck
+                },
+                {
+                  title: 'Reduced Time to Market',
+                  desc: 'Dedicated developers can speed up project development by using their experience and attention. Businesses can optimize operations, eliminate bottlenecks, and finish projects quickly.',
+                  IconComp: Zap
+                },
+                {
+                  title: 'Enhanced Innovation and Creativity',
+                  desc: 'Dedicated developers offer new ideas and insights to projects. Dedicated developers can also encourage a collaborative atmosphere where in-house and external talent merge their expertise.',
+                  IconComp: Lightbulb
+                }
+              ].map((card, idx) => {
+                const CardIcon = card.IconComp;
+                return (
+                  <div
+                    key={idx}
+                    className="bg-white rounded-2xl p-7 shadow-xs hover:shadow-md border border-slate-100/90 transition-all flex flex-col justify-start space-y-4 text-left"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#006095] flex items-center justify-center">
+                      <CardIcon className="w-6 h-6 stroke-[1.8]" />
+                    </div>
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                      {card.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                      {card.desc}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </Container>
       </section>
-    </div>
+
+      {/* 21. Hire SharePoint Developer In 4 Easy Steps */}
+      <HireDeveloper4Steps
+        title="Hire SharePoint Developer In 4 Easy Steps"
+        subtitle="SharePoint offers a number of advantages over traditional intranet platforms. Some of them are:"
+      />
+
+      {/* 22. Video Testimonials / Our Story, Their Words */}
+      <VideoTestimonialsStory />
+
+      {/* 23. Business Friendly Hiring Models */}
+      <EngagementModelsSection
+        title="Business Friendly Hiring Models : Building Greater Futures Through Innovation"
+        subtitle="We offer three different types of hiring models that are designed to suit your diverse needs and budget. Take a look at our hiring models:"
+      />
+
+      {/* 24. Success Matrix */}
+      <SuccessMatrixGrid />
+
+      {/* 25. Unveiling Our Innovative Solution */}
+      <InnovativeSolutionVideo />
+
+      {/* 26. Process We Follow */}
+      <ProcessWeFollow />
+
+      {/* 27. What Our Clients Say */}
+      <ClientReviewsDarkSection />
+
+      {/* 28. Digital Transformation Through Innovation and Collective Knowledge */}
+      <DigitalTransformationCaseStudies />
+
+      {/* 29. Frequently Asked Questions */}
+      <SapphireFaqSection
+        title="Frequently Asked Questions"
+        subtitle="We listen to query and provide solutions that captivate users. Feel free to contact us in case of any query which is not mention below."
+        customFaqs={sharePointFaqs}
+      />
+
+      {/* 30. Social Media */}
+      <SocialMediaSection />
+
+      {/* 31. Our Recent Blogs */}
+      <RecentBlogsSection />
+
+      {/* 32. What Sets Us Apart As SharePoint Development Company? */}
+      <WhatSetsUsApartSection
+        title="What Sets Us Apart As SharePoint Development Company?"
+        description="Being unique is our quality! Sapphire Solutions / Firevy.co believes in the things that give us an edge over our competitors. We are a renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
+      />
+
+      {/* 33. Have SharePoint Development Challenge To Address ? */}
+      <ConversionCalloutBanner
+        data={{
+          title: "Have SharePoint Development Challenge To Address ?",
+          description: "Get access to top SharePoint developers to transform your ideas into a robust application.",
+          buttonText: "Hire Now",
+          buttonLink: "/contact"
+        }}
+        hideSideImages={true}
+      />
+
+      {/* 34. Subscribe newsletter */}
+      <SubscribeNewsletterSection />
+    </>
   );
 };
 

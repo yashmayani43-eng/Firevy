@@ -165,7 +165,7 @@ export const Terms = () => {
                 </div>
                 <div className="flex items-start space-x-2 text-slate-800">
                   <MapPin className="w-4 h-4 text-[#006085] shrink-0 mt-0.5" />
-                  <span>Address: C/102-103, Ganesh Meridian, Opp. Kargil Petrol Pump, S.G. Highway, Ahmedabad - 380060, Gujarat, INDIA</span>
+                  <span>Address: 2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004</span>
                 </div>
               </div>
             </div>

@@ -1051,7 +1051,7 @@ export const initialHomePageData = {
           id: 'office_in',
           country: 'India(HQ)',
           flag: '🇮🇳',
-          address: 'C/102-103, Ganesh Meridian, Opp. Kargil Petrol Pump, S.G. Highway, Ahmedabad - 380060, Gujarat, INDIA'
+          address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004'
         },
         {
           id: 'office_us',
@@ -1081,7 +1081,7 @@ export const initialHomePageData = {
           id: 'office_ae',
           country: 'UAE',
           flag: '🇦🇪',
-          address: 'A-21, Building 21, Ghoroob, Mirdif Dubai, United Arab Emirates'
+          address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai'
         }
       ],
       socialLinks: {
