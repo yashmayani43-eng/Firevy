@@ -471,9 +471,15 @@ const featuredBrands = [
   { id: 18, name: 'The Telegraph', component: TelegraphLogo }
 ];
 
-export const FeaturedInBrandsSection = () => {
+export const FeaturedInBrandsSection = ({ title, data, className = '' }) => {
+  const displayTitle = (title && title !== 'Featured In Leading Global Publications')
+    ? title
+    : (data?.title && data.title !== 'Featured In Leading Global Publications' && data.title !== 'Featured In'
+      ? data.title
+      : 'We Have Been Featured In');
+
   return (
-    <section className="py-7 sm:py-9 bg-[#FAFCFE] font-sans text-left">
+    <section className={`py-7 sm:py-9 bg-[#FAFCFE] font-sans text-left ${className}`}>
       <Container className="max-w-7xl">
         {/* Centered Heading */}
         <div className="text-center max-w-4xl mx-auto mb-9 sm:mb-11">
@@ -481,7 +487,7 @@ export const FeaturedInBrandsSection = () => {
             className="font-[800] text-[#0B0F19] tracking-tight leading-tight"
             style={{ fontSize: '32px' }}
           >
-            We Have Been Featured In
+            {displayTitle}
           </h2>
         </div>
 

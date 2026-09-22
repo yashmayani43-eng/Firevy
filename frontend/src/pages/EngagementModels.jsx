@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import SEO from '../components/common/SEO';
 import Container from '../components/common/Container';
 import { Link } from 'react-router-dom';

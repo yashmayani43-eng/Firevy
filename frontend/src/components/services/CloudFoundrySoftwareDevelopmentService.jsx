@@ -563,6 +563,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
               </p>
             </div>
           </div>
+        </Container>
 
         {/* Full-Width Edge-to-Edge Cards Carousel Track */}
         <div className="relative overflow-hidden w-full select-none py-1">
