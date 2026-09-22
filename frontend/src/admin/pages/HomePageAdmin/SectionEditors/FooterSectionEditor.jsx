@@ -18,14 +18,15 @@ export const FooterSectionEditor = ({ data, onChange }) => {
   const sales = data?.salesContact || {
     title: 'Contact For Sales',
     email: 'contact@firevy.co',
-    phoneIndia: 'IN: +91 7069370629',
+    phoneIndia: '+91 7069370629',
     phoneUS: ''
   };
 
   const career = data?.careerContact || {
     title: 'Contact for Career (Jobs)',
     email: 'careers@firevy.co',
-    phone: '+91-909-997-6034'
+    phone1: '+91 7069370623',
+    phone2: '+91 7069370627'
   };
 
   const ratings = data?.ratings || {
@@ -209,13 +210,24 @@ export const FooterSectionEditor = ({ data, onChange }) => {
             />
           </AdminFormField>
 
-          <AdminFormField label="Career Helpline Phone Number" helperText="e.g. +91-909-997-6034">
+          <AdminFormField label="Career Phone Number 1" helperText="e.g. +91 7069370623">
             <input
               type="text"
               className="form-control"
-              value={career.phone || ''}
-              onChange={(e) => handleCareerChange('phone', e.target.value)}
-              placeholder="+91-909-997-6034"
+              value={career.phone1 || career.phone || ''}
+              onChange={(e) => handleCareerChange('phone1', e.target.value)}
+              placeholder="+91 7069370623"
+              style={{ width: '100%', padding: '8px 12px', borderRadius: '6px', border: '1px solid #CBD5E1', fontSize: '13px', color: '#0F172A', backgroundColor: '#FFFFFF' }}
+            />
+          </AdminFormField>
+
+          <AdminFormField label="Career Phone Number 2" helperText="e.g. +91 7069370627">
+            <input
+              type="text"
+              className="form-control"
+              value={career.phone2 || ''}
+              onChange={(e) => handleCareerChange('phone2', e.target.value)}
+              placeholder="+91 7069370627"
               style={{ width: '100%', padding: '8px 12px', borderRadius: '6px', border: '1px solid #CBD5E1', fontSize: '13px', color: '#0F172A', backgroundColor: '#FFFFFF' }}
             />
           </AdminFormField>

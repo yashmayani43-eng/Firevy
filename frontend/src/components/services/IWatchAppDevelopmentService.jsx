@@ -215,11 +215,14 @@ export const IWatchAppDevelopmentService = () => {
     {
       title: 'Fixed Price',
       desc: "If you represent a company with a project that needs dedicated attention, ask about dedicated teams. It's a pay-as-you-go monthly rolling contract.",
-      badgeBg: 'bg-[#f3e8ff]',
-      badgeColor: 'text-[#7c3aed]',
       icon: (
-        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#8b5cf6] mx-auto transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M17 12 C16 7, 24 6, 31 12" />
+          <path d="M17 14 H31" strokeWidth="2" />
+          <path d="M18 16 H30" />
+          <path d="M18 16 C11 21, 9 34, 15 40 C18 43, 30 43, 33 40 C39 34, 37 21, 30 16 Z" />
+          <line x1="24" y1="22" x2="24" y2="35" strokeWidth="1.8" />
+          <path d="M27 25 C27 23, 21 23, 21 28 C21 33, 27 32, 27 35 C27 38, 21 38, 21 35" strokeWidth="1.8" />
         </svg>
       ),
       points: [
@@ -232,12 +235,18 @@ export const IWatchAppDevelopmentService = () => {
     {
       title: 'Time Material',
       desc: "If you are represent a company with undefined projects and need ongoing work, ask about hourly. It's a pay-as-you-go hour-wise rolling contract.",
-      badgeBg: 'bg-[#dcfce7]',
-      badgeColor: 'text-[#16a34a]',
       icon: (
-        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="10" />
-          <polyline points="12 6 12 12 16 14" />
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#22c55e] mx-auto transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M20 5 H28" strokeWidth="2" />
+          <line x1="24" y1="5" x2="24" y2="9" strokeWidth="1.8" />
+          <circle cx="27" cy="27" r="14" />
+          <circle cx="27" cy="27" r="1" fill="currentColor" />
+          <line x1="27" y1="27" x2="21" y2="21" strokeWidth="1.8" />
+          <line x1="27" y1="27" x2="32" y2="22" strokeWidth="1.8" />
+          <line x1="5" y1="18" x2="10" y2="18" strokeWidth="1.6" />
+          <line x1="3" y1="24" x2="9" y2="24" strokeWidth="1.6" />
+          <line x1="5" y1="30" x2="10" y2="30" strokeWidth="1.6" />
+          <circle cx="8" cy="35" r="0.8" fill="currentColor" />
         </svg>
       ),
       points: [
@@ -250,14 +259,23 @@ export const IWatchAppDevelopmentService = () => {
     {
       title: 'Dedicated Team',
       desc: "If you represent a company with a project that needs dedicated attention, ask about dedicated teams. It's a pay-as-you-go monthly rolling contract.",
-      badgeBg: 'bg-[#ffedd5]',
-      badgeColor: 'text-[#ea580c]',
       icon: (
-        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-          <circle cx="9" cy="7" r="4" />
-          <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#f97316] mx-auto transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          {/* Front Person */}
+          <circle cx="17" cy="15" r="5.5" />
+          <path d="M15 23 C15 25, 19 25, 19 23" />
+          <path d="M9 32 C9 24, 25 24, 25 32" />
+          <line x1="9" y1="32" x2="25" y2="32" />
+          <line x1="9" y1="32" x2="9" y2="35" />
+          <line x1="13" y1="32" x2="13" y2="35" />
+
+          {/* Middle Person */}
+          <circle cx="27" cy="17" r="4.8" />
+          <path d="M22 32 C22 27, 35 27, 35 32" />
+
+          {/* Back Person */}
+          <circle cx="35" cy="19" r="4" />
+          <path d="M31 32 C31 29, 41 29, 41 32" />
         </svg>
       ),
       points: [
@@ -270,12 +288,38 @@ export const IWatchAppDevelopmentService = () => {
     {
       title: 'Buckets Approach',
       desc: 'A lot of businesses typically select our bucket approach which allow them for payment convenience once the project is finished and things are in place.',
-      badgeBg: 'bg-[#e0f2fe]',
-      badgeColor: 'text-[#0284c7]',
       icon: (
-        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="3" />
-          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#0284c7] mx-auto transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          {/* Curved Arrow */}
+          <path d="M13 22 C15 12, 27 7, 35 7" />
+          <polyline points="31 9 35 7 34 3" strokeWidth="1.8" />
+
+          {/* Main Big Gear */}
+          <circle cx="18" cy="30" r="7" />
+          <circle cx="18" cy="30" r="2.5" />
+          <line x1="18" y1="21" x2="18" y2="23" />
+          <line x1="18" y1="37" x2="18" y2="39" />
+          <line x1="9" y1="30" x2="11" y2="30" />
+          <line x1="25" y1="30" x2="27" y2="30" />
+          <line x1="11.6" y1="23.6" x2="13" y2="25" />
+          <line x1="23" y1="35" x2="24.4" y2="36.4" />
+          <line x1="11.6" y1="36.4" x2="13" y2="35" />
+          <line x1="23" y1="25" x2="24.4" y2="23.6" />
+
+          {/* Medium Gear */}
+          <circle cx="32" cy="18" r="4.5" />
+          <circle cx="32" cy="18" r="1.8" />
+          <line x1="32" y1="12" x2="32" y2="13.5" />
+          <line x1="32" y1="22.5" x2="32" y2="24" />
+          <line x1="26" y1="18" x2="27.5" y2="18" />
+          <line x1="36.5" y1="18" x2="38" y2="18" />
+
+          {/* Small Gear */}
+          <circle cx="37" cy="10" r="2.8" />
+          <line x1="37" y1="6" x2="37" y2="7.2" />
+          <line x1="37" y1="12.8" x2="37" y2="14" />
+          <line x1="33" y1="10" x2="34.2" y2="10" />
+          <line x1="39.8" y1="10" x2="41" y2="10" />
         </svg>
       ),
       points: [
@@ -387,8 +431,9 @@ export const IWatchAppDevelopmentService = () => {
       <SapphireLightHeroBanner
         title="Best iWatch App Development company in USA"
         subtitle="We have an incredible team of applications for Apple Watch strategists, designers, developers, and programmers constantly working on fascinating new applications for wearable technology."
-        ctaText="Discuss Your Project"
+        ctaText="Discuss Your Project →"
         ctaLink="#quote-form"
+        heroImage="/images/iwatch_hero_illustration.png"
         serviceCategory="iwatch"
       />
 
@@ -840,8 +885,8 @@ export const IWatchAppDevelopmentService = () => {
                 className="bg-white rounded-[18px] p-7 border border-slate-100 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between text-center space-y-6 group cursor-default"
               >
                 <div className="space-y-4">
-                  {/* Circle Badge Icon */}
-                  <div className={`w-14 h-14 rounded-full ${item.badgeBg} ${item.badgeColor} flex items-center justify-center shrink-0 mx-auto transition-transform duration-300 group-hover:scale-110 shadow-sm`}>
+                  {/* Icon */}
+                  <div className="w-14 h-14 flex items-center justify-center shrink-0 mx-auto transition-transform duration-300 group-hover:scale-110">
                     {item.icon}
                   </div>
 

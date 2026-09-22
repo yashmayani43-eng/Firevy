@@ -36,9 +36,9 @@ export const HeroEditor = ({ data, onChange }) => {
       titleLine2: 'Our Technology',
       subTag: '(Limitless Possibilities)',
       bullets: [
-        'Recognized as #1 Web Development Company in India and USA.',
-        'Trusted by 20+ Fortune 500 Companies and a Clutch Leader.',
-        "We've been Redefining Excellence for over Two Decades."
+        'Recognized as **#1 Web Development** Company in India and USA.',
+        'Trusted by **20+ Fortune 500 Companies and a Clutch Leader**.',
+        "We've been Redefining Excellence for over **Two Decades**."
       ],
       primaryCtaText: "Let's Talk",
       primaryCtaLink: '/contact',
@@ -46,6 +46,50 @@ export const HeroEditor = ({ data, onChange }) => {
       secondaryCtaLink: '/contact',
       rightBoxTitle: 'Redefined Learning Experiences',
       rightBoxSub: 'With Intelligent AI Innovation',
+      bgType: 'video',
+      backgroundVideoUrl: '/Best Software Development Company in USA - Sapphire Software Sol.mp4',
+      backgroundImageUrl: '',
+      isActive: true,
+      autoRotate: true
+    },
+    {
+      tag: 'Enterprise Engineering',
+      titleLine1: 'Scalable Systems,',
+      titleLine2: 'Global Performance',
+      subTag: '(Engineered for Growth)',
+      bullets: [
+        'Top 1% Senior **React, Node & Cloud Architects**.',
+        '**ISO 9001:2015 & Enterprise SOC2** Ready Infrastructure.',
+        '**Sub-50ms API Latency** with **99.99% Guaranteed Uptime**.'
+      ],
+      primaryCtaText: "Let's Talk",
+      primaryCtaLink: '/contact',
+      secondaryCtaText: 'Get in Touch',
+      secondaryCtaLink: '/contact',
+      rightBoxTitle: 'Cloud & AI Microservices',
+      rightBoxSub: 'Driven by Next-Gen Innovation',
+      bgType: 'video',
+      backgroundVideoUrl: '/Best Software Development Company in USA - Sapphire Software Sol.mp4',
+      backgroundImageUrl: '',
+      isActive: true,
+      autoRotate: true
+    },
+    {
+      tag: 'Custom App Solutions',
+      titleLine1: 'Transforming Ideas,',
+      titleLine2: 'Empowering Brands',
+      subTag: '(Native & Cross-Platform)',
+      bullets: [
+        '**500+ High-Impact** Digital Products Delivered Worldwide.',
+        '**Seamless Multi-Device** Web & Mobile UX Engineering.',
+        '**Agile 2-Week Sprint Delivery** with Full Transparency.'
+      ],
+      primaryCtaText: "Let's Talk",
+      primaryCtaLink: '/contact',
+      secondaryCtaText: 'Get in Touch',
+      secondaryCtaLink: '/contact',
+      rightBoxTitle: 'Immersive Product Design',
+      rightBoxSub: 'Crafted for Modern Enterprise',
       bgType: 'video',
       backgroundVideoUrl: '/Best Software Development Company in USA - Sapphire Software Sol.mp4',
       backgroundImageUrl: '',

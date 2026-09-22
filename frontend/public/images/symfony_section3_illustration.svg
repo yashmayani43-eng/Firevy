@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284c7" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Decorative Leaf / Glow Shapes -->
+  <path d="M50 380 Q20 280 80 220 Q140 280 120 380 Z" fill="#bae6fd" opacity="0.6"/>
+  <path d="M90 400 Q40 320 120 270 Q160 340 140 400 Z" fill="#0284c7" opacity="0.3"/>
+
+  <!-- Large Browser Window Mockup Container -->
+  <g transform="translate(100, 40)" filter="url(#shadow3)">
+    <!-- Browser Container Background -->
+    <rect x="0" y="0" width="380" height="340" fill="#ffffff" rx="16" stroke="#0284c7" stroke-width="4"/>
+    
+    <!-- Top Header Bar -->
+    <path d="M0 0h380v36H0z" fill="#f1f5f9"/>
+    <circle cx="20" cy="18" r="5" fill="#ef4444"/>
+    <circle cx="34" cy="18" r="5" fill="#f59e0b"/>
+    <circle cx="48" cy="18" r="5" fill="#10b981"/>
+
+    <!-- Inside Content Window -->
+    <!-- Left Feature Card: Symfony sf Logo Badge -->
+    <rect x="35" y="70" width="140" height="130" fill="#f8fafc" rx="12" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="105" cy="135" r="36" fill="#0284c7"/>
+    <text x="105" y="147" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="32" fill="#ffffff" text-anchor="middle">sf</text>
+
+    <!-- Right Feature Card: Code Symbol Button -->
+    <rect x="205" y="70" width="140" height="130" fill="#0284c7" rx="12"/>
+    <text x="275" y="148" font-family="monospace" font-weight="bold" font-size="42" fill="#ffffff" text-anchor="middle">&lt;/&gt;</text>
+
+    <!-- Bottom Placeholder Lines -->
+    <rect x="35" y="230" width="310" height="16" fill="#e2e8f0" rx="8"/>
+    <rect x="35" y="260" width="220" height="16" fill="#f1f5f9" rx="8"/>
+  </g>
+
+  <!-- Developer Sitting in Foreground on Floor with Laptop -->
+  <g transform="translate(230, 270)">
+    <!-- Shadow beneath sitting developer -->
+    <ellipse cx="70" cy="135" rx="90" ry="14" fill="#0284c7" opacity="0.2"/>
+
+    <!-- Cross-legged Pants (Black) -->
+    <path d="M10 100 Q70 145 130 100 Q70 115 10 100 Z" fill="#0f172a"/>
+    <path d="M0 110 C20 135, 120 135, 140 110 C110 145, 30 145, 0 110 Z" fill="#1e293b"/>
+
+    <!-- Yellow Shirt -->
+    <path d="M35 45 C35 30, 105 30, 105 45 L95 105 H45 Z" fill="#eab308"/>
+
+    <!-- Head & Hair -->
+    <circle cx="70" cy="15" r="18" fill="#fca5a5"/>
+    <path d="M52 10 C52 -5, 88 -5, 88 10" fill="#475569"/>
+
+    <!-- Laptop resting on lap -->
+    <polygon points="35,80 105,80 120,95 20,95" fill="#94a3b8"/>
+    <rect x="40" y="45" width="60" height="36" fill="#334155" rx="3" transform="skewX(-10)"/>
+    <rect x="45" y="50" width="50" height="26" fill="#38bdf8" opacity="0.8" transform="skewX(-10)"/>
+  </g>
+</svg>

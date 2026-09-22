@@ -8,12 +8,8 @@ import BRAND from '../../constants/brand';
 
 export const BACKEND_SERVICES_CONFIG = {
   // Back End Development Services
-  'symfony-development': { title: 'Symfony Development', category: 'Back End Development' },
   'django-development': { title: 'Django Development', category: 'Back End Development' },
-  'laravel-development': { title: 'Laravel Development', category: 'Back End Development' },
-  'lamp-development': { title: 'Lamp Development', category: 'Back End Development' },
   'python-development-services': { title: 'Python Development Services', category: 'Back End Development' },
-  'golang-development-services': { title: 'Golang Development Services', category: 'Back End Development' },
   'big-commerce-development': { title: 'Big Commerce Development', category: 'Back End Development' },
   'mongodb-development-services': { title: 'MongoDB Development Services', category: 'Back End Development' },
   'phalcon-development-services': { title: 'Phalcon Development Services', category: 'Back End Development' },
@@ -62,8 +58,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'kentico-development-services': { title: 'Kentico Development Services', category: 'Microsoft Development' },
   'dotnetnuke-development': { title: 'Dotnetnuke Development', category: 'Microsoft Development' },
   'power-bi-consulting': { title: 'Power BI Consulting', category: 'Microsoft Development' },
-  'windows-11-app-development': { title: 'Windows 11 App Development', category: 'Microsoft Development' },
-  'windows-app-development': { title: 'Windows App Development', category: 'Microsoft Development' },
 
   // Blockchain Development Services
   'nft-marketplace-development': { title: 'NFT Marketplace Development', category: 'Blockchain Development' },
@@ -84,14 +78,7 @@ export const BACKEND_SERVICES_CONFIG = {
   'digital-transformation-service': { title: 'Digital Transformation Services', category: 'Software Development Service' },
   'application-services': { title: 'Application Services', category: 'Software Development Service' },
   'application-service': { title: 'Application Services', category: 'Software Development Service' },
-  'startup-consulting-services': { title: 'Startup Consulting Services', category: 'Software Development Service' },
-  'startup-consulting-service': { title: 'Startup Consulting Services', category: 'Software Development Service' },
-  'startup-consulting': { title: 'Startup Consulting Services', category: 'Software Development Service' },
-  'app-development-consulting': { title: 'App Development Consulting', category: 'Software Development Service' },
   'crm-development': { title: 'Crm Development', category: 'Software Development Service' },
-  'prototype-development-services': { title: 'Prototype Development Services', category: 'Software Development Service' },
-  'prototype-development-service': { title: 'Prototype Development Services', category: 'Software Development Service' },
-  'prototype-development': { title: 'Prototype Development Services', category: 'Software Development Service' },
   'offshore-software-development': { title: 'Offshore Software Development', category: 'Software Development Service' },
   'invoice-generation-software': { title: 'Invoice Generation Software', category: 'Software Development Service' },
   'software-modernization-services': { title: 'Software Modernization Services', category: 'Software Development Service' },
@@ -100,9 +87,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'product-engineering-services': { title: 'Product Engineering Services', category: 'Software Development Service' },
   'it-outsourcing': { title: 'IT Outsourcing', category: 'Software Development Service' },
   'business-application-development': { title: 'Business Application Development', category: 'Software Development Service' },
-  'it-consulting-services': { title: 'It Consulting Services', category: 'Software Development Service' },
-  'it-consulting-service': { title: 'It Consulting Services', category: 'Software Development Service' },
-  'it-consulting': { title: 'It Consulting Services', category: 'Software Development Service' },
   'vb6-migration-services': { title: 'VB6 Migration Services', category: 'Software Development Service' },
   'enterprise-mobility-services': { title: 'Enterprise Mobility Services', category: 'Software Development Service' },
   'full-stack-development': { title: 'Full Stack Development', category: 'Software Development Service' },
@@ -116,11 +100,7 @@ export const BACKEND_SERVICES_CONFIG = {
   'xr-development': { title: 'Extended Reality Development', category: 'AR/VR Development' },
   'metaverse-development-company': { title: 'Metaverse Development Company', category: 'AR/VR Development' },
   'metaverse-development': { title: 'Metaverse Development Company', category: 'AR/VR Development' },
-  'digital-twin-solutions': { title: 'Digital Twin Solutions', category: 'AR/VR Development' },
-  'digital-twin-solutions-company': { title: 'Digital Twin Solutions', category: 'AR/VR Development' },
-  'digital-twin': { title: 'Digital Twin Solutions', category: 'AR/VR Development' },
 
-  // Hire Back End Developers (Services below Hire Spring Boot Developers)
   'hire-net-developers': { title: 'Hire .NET Developers', category: 'Hire Back End Developers' },
   'hire-net-developer': { title: 'Hire .NET Developers', category: 'Hire Back End Developers' },
   'hire-dotnet-developers': { title: 'Hire .NET Developers', category: 'Hire Back End Developers' },
@@ -153,8 +133,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'laravel-development' ||
     clean === 'lamp-development' ||
     clean === 'lamp' ||
-    clean === 'python-development-services' ||
-    clean === 'golang-development-services' ||
     clean === 'big-commerce-development' ||
     clean === 'bigcommerce-development' ||
     clean === 'mongodb-development-services' ||
@@ -207,8 +185,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'kentico-development-services' ||
     clean === 'dotnetnuke-development' ||
     clean === 'power-bi-consulting' ||
-    clean === 'windows-11-app-development' ||
-    clean === 'windows-app-development' ||
     clean === 'nft-marketplace-development' ||
     clean === 'smart-contracts-development' ||
     clean === 'bitcoin-wallet-development' ||
@@ -223,11 +199,7 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'software-development' ||
     clean === 'digital-transformation-services' ||
     clean === 'application-services' ||
-    clean === 'startup-consulting-services' ||
-    clean === 'startup-consulting' ||
-    clean === 'app-development-consulting' ||
     clean === 'crm-development' ||
-    clean === 'prototype-development-services' ||
     clean === 'offshore-software-development' ||
     clean === 'invoice-generation-software' ||
     clean === 'software-modernization-services' ||
@@ -235,8 +207,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'product-engineering-services' ||
     clean === 'it-outsourcing' ||
     clean === 'business-application-development' ||
-    clean === 'it-consulting-services' ||
-    clean === 'it-consulting' ||
     clean === 'vb6-migration-services' ||
     clean === 'enterprise-mobility-services' ||
     clean === 'full-stack-development' ||
@@ -247,10 +217,7 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'extended-reality' ||
     clean === 'xr-development' ||
     clean === 'metaverse-development-company' ||
-    clean === 'metaverse-development' ||
-    clean === 'digital-twin-solutions' ||
-    clean === 'digital-twin-solutions-company' ||
-    clean === 'digital-twin'
+    clean === 'metaverse-development'
   );
 };
 
