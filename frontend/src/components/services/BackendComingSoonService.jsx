@@ -8,12 +8,8 @@ import BRAND from '../../constants/brand';
 
 export const BACKEND_SERVICES_CONFIG = {
   // Back End Development Services
-  'symfony-development': { title: 'Symfony Development', category: 'Back End Development' },
   'django-development': { title: 'Django Development', category: 'Back End Development' },
-  'laravel-development': { title: 'Laravel Development', category: 'Back End Development' },
-  'lamp-development': { title: 'Lamp Development', category: 'Back End Development' },
   'python-development-services': { title: 'Python Development Services', category: 'Back End Development' },
-  'golang-development-services': { title: 'Golang Development Services', category: 'Back End Development' },
   'big-commerce-development': { title: 'Big Commerce Development', category: 'Back End Development' },
   'mongodb-development-services': { title: 'MongoDB Development Services', category: 'Back End Development' },
   'phalcon-development-services': { title: 'Phalcon Development Services', category: 'Back End Development' },
@@ -155,8 +151,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'laravel-development' ||
     clean === 'lamp-development' ||
     clean === 'lamp' ||
-    clean === 'python-development-services' ||
-    clean === 'golang-development-services' ||
     clean === 'big-commerce-development' ||
     clean === 'bigcommerce-development' ||
     clean === 'mongodb-development-services' ||

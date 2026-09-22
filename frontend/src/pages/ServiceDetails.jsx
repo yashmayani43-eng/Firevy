@@ -139,6 +139,12 @@ import HireMeanStackDevelopersService from '../components/services/HireMeanStack
 import HireMernStackDevelopersService from '../components/services/HireMernStackDevelopersService';
 import HireSpringBootDevelopersService from '../components/services/HireSpringBootDevelopersService';
 import HireDjangoDevelopersService from '../components/services/HireDjangoDevelopersService';
+import { SymfonyDevelopmentService } from '../components/services/SymfonyDevelopmentService';
+import LaravelDevelopmentService from '../components/services/LaravelDevelopmentService';
+import LampDevelopmentService from '../components/services/LampDevelopmentService';
+import PythonDevelopmentService from '../components/services/PythonDevelopmentService';
+import GolangDevelopmentService from '../components/services/GolangDevelopmentService';
+import BigCommerceDevelopmentService from '../components/services/BigCommerceDevelopmentService';
 import BackendComingSoonService, { isBackendServiceSlug } from '../components/services/BackendComingSoonService';
 
 export const ServiceDetails = () => {
@@ -176,8 +182,8 @@ export const ServiceDetails = () => {
   const isHirePrestashop = currentSlug.includes('prestashop') || currentSlug.includes('presta-shop');
   const isHireWordpress = currentSlug.includes('hire-wordpress') || currentSlug.includes('wordpress-developers') || currentSlug.includes('hire-wp');
   const isHireKotlin = currentSlug.includes('hire-kotlin');
-  const isHireGolang = currentSlug.includes('golang') ||
-    currentSlug.includes('hire-golang') ||
+  const isHireGolang = currentSlug.includes('hire-golang') ||
+    currentSlug.includes('hire_golang') ||
     currentSlug.includes('go-developers') ||
     currentSlug.includes('go-developer') ||
     currentSlug === 'services/hire-golang-developers' ||
@@ -185,6 +191,19 @@ export const ServiceDetails = () => {
     currentSlug === 'hire-golang-developers' ||
     currentSlug === 'hire-golang-developer' ||
     currentSlug === 'golang-developers';
+  const isGolang = !isHireGolang && (
+    currentSlug === 'golang-development-services' ||
+    currentSlug === 'golang-development' ||
+    currentSlug === 'services/golang-development-services' ||
+    currentSlug === 'services/golang-development' ||
+    currentSlug.includes('golang-development')
+  );
+  const isBigCommerce = currentSlug === 'big-commerce-development' ||
+    currentSlug === 'bigcommerce-development' ||
+    currentSlug === 'services/big-commerce-development' ||
+    currentSlug === 'services/bigcommerce-development' ||
+    currentSlug.includes('big-commerce-development') ||
+    currentSlug.includes('bigcommerce-development');
   const isHireBackend = currentSlug.includes('hire-backend') ||
     currentSlug.includes('backend-developer') ||
     currentSlug.includes('backend-developers') ||
@@ -192,10 +211,18 @@ export const ServiceDetails = () => {
     currentSlug === 'services/backend' ||
     currentSlug === 'services/hire-backend-developers' ||
     currentSlug === 'services/hire-backend-developer';
-  const isHirePython = currentSlug.includes('python') || currentSlug.includes('hire-python');
+  const isHirePython = currentSlug.includes('hire-python') || currentSlug.includes('hire_python') || currentSlug.includes('hire-python-developers');
+  const isPython = !isHirePython && (
+    currentSlug === 'python-development-services' ||
+    currentSlug === 'python-development' ||
+    currentSlug === 'services/python-development-services' ||
+    currentSlug === 'services/python-development' ||
+    currentSlug.includes('python-development')
+  );
   const isHireJava = currentSlug.includes('hire-java') || currentSlug.includes('hire_java') || currentSlug.includes('java_developers') || currentSlug === 'java-developers' || currentSlug === 'services/hire-java-developers' || currentSlug === 'services/hire_java_developers';
   const isHireSpringBoot = currentSlug.includes('spring-boot') || currentSlug.includes('springboot') || currentSlug.includes('spring');
-  const isHireDjango = currentSlug.includes('django') || currentSlug.includes('hire-django') || currentSlug.includes('hire_django');
+  const isHireDjango = currentSlug.includes('hire-django') || currentSlug.includes('hire_django') || currentSlug.includes('hire-django-developers');
+  const isDjango = !isHireDjango && currentSlug.includes('django');
   const isHireNet = currentSlug.includes('hire-net') || currentSlug.includes('hire-dotnet') || currentSlug === 'net-developers' || currentSlug === 'dotnet-developers';
   const isHireNodeJs = currentSlug.includes('hire-node') || currentSlug.includes('node-js-developers') || currentSlug.includes('nodejs-developers');
   const isHirePhp = currentSlug.includes('hire-php') || currentSlug === 'php-developers' || currentSlug === 'services/hire-php-developers';
@@ -272,6 +299,9 @@ export const ServiceDetails = () => {
   const isIWatch = currentSlug.includes('iwatch') ||
     currentSlug.includes('apple-watch') ||
     currentSlug.includes('watchos');
+
+  const isSymfony = currentSlug.includes('symfony');
+  const isLamp = currentSlug.includes('lamp');
 
   const isIPad = currentSlug.includes('ipad');
 
@@ -671,8 +701,8 @@ export const ServiceDetails = () => {
     currentSlug.includes('embedded-software') ||
     currentSlug.includes('hire-embedded');
 
-  const isLaravel = currentSlug.includes('laravel') ||
-    currentSlug.includes('hire-laravel');
+  const isHireLaravel = currentSlug.includes('hire-laravel') || currentSlug.includes('hire_laravel') || currentSlug.includes('hire-laravel-developers');
+  const isLaravel = !isHireLaravel && currentSlug.includes('laravel');
 
   const isExpress = (currentSlug.includes('express') ||
     currentSlug.includes('expressjs') ||
@@ -933,13 +963,41 @@ export const ServiceDetails = () => {
       window.scrollTo(0, 0);
       return;
     }
-    if (!isMernStack && !isWindows11 && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
+    if (!isBigCommerce && !isGolang && !isLamp && !isLaravel && !isDjango && !isSymfony && !isMernStack && !isWindows11 && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
       fetchServiceDetails();
     } else {
       setLoading(false);
     }
     window.scrollTo(0, 0);
   }, [currentSlug, isBackendComingSoon]);
+
+  if (isSymfony) {
+    return <SymfonyDevelopmentService />;
+  }
+
+  if (isPython) {
+    return <PythonDevelopmentService />;
+  }
+
+  if (isGolang) {
+    return <GolangDevelopmentService />;
+  }
+
+  if (isBigCommerce) {
+    return <BigCommerceDevelopmentService />;
+  }
+
+  if (isDjango) {
+    return <DjangoDevelopmentService />;
+  }
+
+  if (isLaravel) {
+    return <LaravelDevelopmentService />;
+  }
+
+  if (isLamp) {
+    return <LampDevelopmentService />;
+  }
 
   if (isBackendComingSoon) {
     return <BackendComingSoonService slug={currentSlug} />;
@@ -1229,7 +1287,7 @@ export const ServiceDetails = () => {
     return <HireEmberDevelopersService />;
   }
 
-  if (isLaravel) {
+  if (isHireLaravel) {
     return <HireLaravelDevelopersService />;
   }
 
