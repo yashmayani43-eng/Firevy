@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" width="100%" height="100%">
+  <!-- Transparent Background (No background rectangle!) -->
+
+  <!-- Baseline Floor -->
+  <line x1="90" y1="380" x2="620" y2="380" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Left Potted Plant -->
+  <g id="left-plant">
+    <path d="M 125 350 L 145 350 L 141 380 L 129 380 Z" fill="#0F172A" />
+    <path d="M 135 350 Q 110 320 105 330 Q 120 345 135 350 Z" fill="#5294C6" />
+    <path d="M 135 350 Q 120 300 128 300 Q 138 320 135 350 Z" fill="#3B7AB2" />
+    <path d="M 135 350 Q 145 295 152 298 Q 148 320 135 350 Z" fill="#68A4D3" />
+    <path d="M 135 350 Q 160 315 162 328 Q 146 345 135 350 Z" fill="#4B88BD" />
+  </g>
+
+  <!-- Right Potted Plant -->
+  <g id="right-plant">
+    <path d="M 565 350 L 585 350 L 581 380 L 569 380 Z" fill="#0F172A" />
+    <path d="M 575 350 Q 550 320 545 330 Q 560 345 575 350 Z" fill="#5294C6" />
+    <path d="M 575 350 Q 560 300 568 300 Q 578 320 575 350 Z" fill="#3B7AB2" />
+    <path d="M 575 350 Q 585 295 592 298 Q 588 320 575 350 Z" fill="#68A4D3" />
+    <path d="M 575 350 Q 600 315 602 328 Q 586 345 575 350 Z" fill="#4B88BD" />
+  </g>
+
+  <!-- Floating Code Window & Brackets Badge Overlay (Top Right) -->
+  <g id="code-window-overlay">
+    <!-- Code Window Container -->
+    <rect x="500" y="65" width="85" height="120" rx="4" fill="#A8D3F5" opacity="0.95" />
+    <!-- Code lines -->
+    <g fill="#468CBF">
+      <rect x="510" y="75" width="45" height="4" rx="2" />
+      <rect x="510" y="85" width="60" height="4" rx="2" />
+      <rect x="515" y="95" width="35" height="3" rx="1.5" />
+      <rect x="515" y="103" width="50" height="3" rx="1.5" />
+      <rect x="520" y="111" width="40" height="3" rx="1.5" />
+      <rect x="515" y="119" width="45" height="3" rx="1.5" />
+      <rect x="510" y="129" width="30" height="4" rx="2" />
+      <rect x="510" y="139" width="55" height="4" rx="2" />
+      <rect x="515" y="149" width="40" height="3" rx="1.5" />
+      <rect x="510" y="159" width="25" height="4" rx="2" />
+      <rect x="510" y="169" width="50" height="4" rx="2" />
+    </g>
+
+    <!-- Floating Blue Brackets Badge Circle (<>) -->
+    <circle cx="572" cy="70" r="17" fill="#589EC9" />
+    <text x="572" y="75" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">&lt;&gt;</text>
+  </g>
+
+  <!-- Laptop Monitor Base & Screen Display -->
+  <g id="laptop-monitor">
+    <!-- Top Floating Window behind main screen -->
+    <rect x="300" y="95" width="260" height="230" rx="8" fill="#BBE2FA" opacity="0.9" />
+    <rect x="300" y="95" width="260" height="32" rx="8" fill="#B1D9F5" />
+    <circle cx="400" cy="111" r="3" fill="#FFFFFF" />
+    <circle cx="412" cy="111" r="3" fill="#FFFFFF" />
+    <circle cx="424" cy="111" r="3" fill="#FFFFFF" />
+
+    <!-- Main Laptop Screen Outer Frame -->
+    <rect x="180" y="135" width="350" height="240" rx="8" fill="#1C7CA8" />
+    <!-- Screen Display Area -->
+    <rect x="188" y="143" width="334" height="224" rx="4" fill="#E8F4FB" />
+
+    <!-- UI Components inside screen -->
+    <!-- Left Sidebar Cards -->
+    <g transform="translate(205, 205)">
+      <rect x="0" y="0" width="38" height="38" rx="6" fill="#69A8D6" />
+      <!-- Clock Icon inside box -->
+      <circle cx="19" cy="19" r="9" fill="none" stroke="#FFFFFF" stroke-width="2" />
+      <polyline points="19 13 19 19 23 19" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+
+      <rect x="0" y="48" width="38" height="38" rx="6" fill="#69A8D6" />
+      <!-- Pin Icon inside box -->
+      <path d="M 19 57 C 14 57 11 61 11 66 C 11 73 19 80 19 80 C 19 80 27 73 27 66 C 27 61 24 57 19 57 Z" fill="#FFFFFF" />
+      <circle cx="19" cy="65" r="3" fill="#69A8D6" />
+    </g>
+
+    <!-- Center Window UI Mockup inside Screen -->
+    <rect x="295" y="165" width="105" height="150" rx="6" fill="#E1EEF8" />
+    <rect x="307" y="180" width="55" height="15" rx="3" fill="#609ECB" />
+    <rect x="307" y="205" width="80" height="12" rx="3" fill="#FFFFFF" />
+    <rect x="307" y="225" width="80" height="12" rx="3" fill="#FFFFFF" />
+    <rect x="307" y="255" width="22" height="10" rx="4" fill="#609ECB" />
+    <rect x="337" y="255" width="22" height="10" rx="4" fill="#196291" />
+
+    <!-- Laptop Base Stand Bottom -->
+    <path d="M 170 375 L 540 375 L 530 380 L 180 380 Z" fill="#156488" />
+  </g>
+
+  <!-- Left Character (Male Developer with PYTHON File Badge) -->
+  <g id="male-developer">
+    <!-- Legs -->
+    <path d="M 188 285 L 184 380 L 199 380 L 198 310 L 210 380 L 225 380 L 208 285 Z" fill="#0F172A" />
+    <!-- Body / Torso -->
+    <path d="M 182 230 L 215 230 L 210 290 L 186 290 Z" fill="#6EA5D8" />
+    <!-- Arms Reaching Up -->
+    <path d="M 184 235 L 160 175 L 172 170 L 190 230 Z" fill="#6EA5D8" />
+    <path d="M 210 235 L 235 180 L 245 188 L 215 240 Z" fill="#6EA5D8" />
+    <!-- Hands & Face Skin -->
+    <circle cx="196" cy="210" r="12" fill="#E8B092" />
+    <!-- Hair -->
+    <path d="M 186 208 C 186 195 204 195 206 206 C 204 206 196 208 190 215 Z" fill="#0F172A" />
+
+    <!-- PYTHON File Badge -->
+    <g transform="translate(225, 105)">
+      <!-- Badge Body -->
+      <path d="M 0 0 L 32 0 L 42 10 L 42 55 L 0 55 Z" fill="#0084C7" />
+      <path d="M 32 0 L 32 10 L 42 10 Z" fill="#005B8C" />
+      <!-- Python Icon (Two Interlocking Snakes) -->
+      <path d="M 18 16 C 14 16 14 18 14 18 L 14 22 L 18 22 L 18 23 L 12 23 C 12 23 10 23 10 27 C 10 31 12 31 12 31 L 14 31 L 14 29 C 14 27 16 25 18 25 L 23 25 C 24 25 25 24 25 23 L 25 19 C 25 19 25 16 18 16 Z" fill="#FFFFFF" />
+      <path d="M 22 34 C 26 34 26 32 26 32 L 26 28 L 22 28 L 22 27 L 28 27 C 28 27 30 27 30 23 C 30 19 28 19 28 19 L 26 19 L 26 21 C 26 23 24 25 22 25 L 17 25 C 16 25 15 26 15 27 L 15 31 C 15 31 15 34 22 34 Z" fill="#FFFFFF" opacity="0.9" />
+      <circle cx="15" cy="18" r="1" fill="#0084C7" />
+      <circle cx="25" cy="32" r="1" fill="#0084C7" />
+      <!-- Text PYTHON -->
+      <text x="21" y="46" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="7" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">PYTHON</text>
+    </g>
+  </g>
+
+  <!-- Right Character (Female Developer with DJANGO File Badge) -->
+  <g id="female-developer">
+    <!-- Legs -->
+    <path d="M 480 280 L 485 380 L 498 380 L 495 300 L 522 380 L 536 380 L 502 280 Z" fill="#205A6F" />
+    <!-- Body / Torso (Yellow Shirt) -->
+    <path d="M 478 225 L 508 225 L 502 285 L 478 285 Z" fill="#F4BA38" />
+    <!-- Arms Reaching Up -->
+    <path d="M 480 230 L 452 155 L 464 150 L 488 225 Z" fill="#F4BA38" />
+    <path d="M 505 230 L 518 150 L 530 155 L 512 235 Z" fill="#F4BA38" />
+    <!-- Face Skin -->
+    <circle cx="495" cy="202" r="11" fill="#E8B092" />
+    <!-- Long Dark Hair -->
+    <path d="M 485 198 C 480 180 508 175 510 198 C 512 215 518 245 515 270 C 510 270 495 240 492 210 Z" fill="#0F172A" />
+
+    <!-- DJANGO File Badge -->
+    <g transform="translate(442, 90)">
+      <!-- Badge Body -->
+      <path d="M 0 0 L 32 0 L 42 10 L 42 55 L 0 55 Z" fill="#0084C7" />
+      <path d="M 32 0 L 32 10 L 42 10 Z" fill="#005B8C" />
+      <!-- Logo Text dj -->
+      <text x="21" y="27" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="20" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">dj</text>
+      <!-- Logo Text DJANGO -->
+      <text x="21" y="44" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="6.5" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">DJANGO</text>
+    </g>
+  </g>
+</svg>

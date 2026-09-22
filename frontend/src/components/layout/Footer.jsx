@@ -221,7 +221,7 @@ export const Footer = () => {
                   <div className="text-[16px] font-[800] text-slate-900 font-sans">
                     {footerConfig?.salesContact?.title || 'Contact For Sales'}
                   </div>
-                  <div className="space-y-2 text-[12.5px] text-slate-700 font-sans">
+                  <div className="space-y-2.5 text-[12.5px] text-slate-700 font-sans">
                     {(footerConfig?.salesContact?.email || 'contact@firevy.co') && (
                       <a
                         href={`mailto:${footerConfig?.salesContact?.email || 'contact@firevy.co'}`}
@@ -233,6 +233,7 @@ export const Footer = () => {
                         </span>
                       </a>
                     )}
+<<<<<<< HEAD
                     {(footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662') && (
                       <a
                         href={`tel:${(footerConfig?.salesContact?.phoneIndia || '+91-942-970-9662').replace(/[^0-9+]/g, '')}`}
@@ -256,6 +257,24 @@ export const Footer = () => {
                       </a>
                     )}
 
+=======
+                    {(() => {
+                      const phoneSales = (footerConfig?.salesContact?.phoneIndia && !footerConfig.salesContact.phoneIndia.includes('942-970-9662'))
+                        ? footerConfig.salesContact.phoneIndia.replace(/^IN:\s*/, '')
+                        : '+91 7069370629';
+                      return (
+                        <a
+                          href={`tel:${phoneSales.replace(/[^0-9+]/g, '')}`}
+                          className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                        >
+                          <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                          <span className="font-[600]">
+                            {phoneSales}
+                          </span>
+                        </a>
+                      );
+                    })()}
+>>>>>>> 979fa8c29cedbfb19c2154841c24c7bc0abe9e37
                   </div>
                 </div>
 
@@ -276,17 +295,24 @@ export const Footer = () => {
                         </span>
                       </a>
                     )}
-                    {(footerConfig?.careerContact?.phone || '+91 7069370623') && (
-                      <a
-                        href={`tel:${(footerConfig?.careerContact?.phone || '+91 7069370623').replace(/[^0-9+]/g, '')}`}
-                        className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                      >
-                        <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                        <span className="font-[600]">
-                          {footerConfig?.careerContact?.phone || '+91 7069370623'}
-                        </span>
-                      </a>
-                    )}
+                    <a
+                      href="tel:+917069370623"
+                      className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                    >
+                      <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                      <span className="font-[600]">
+                        {footerConfig?.careerContact?.phone1 || '+91 7069370623'}
+                      </span>
+                    </a>
+                    <a
+                      href="tel:+917069370627"
+                      className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                    >
+                      <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                      <span className="font-[600]">
+                        {footerConfig?.careerContact?.phone2 || '+91 7069370627'}
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -415,7 +441,16 @@ export const Footer = () => {
                           <span>{office.country}</span>
                         </div>
                         <p className="text-slate-600 leading-relaxed text-[12.5px] font-[400] font-sans pr-14 line-clamp-4">
-                          {office.address}
+                          {(() => {
+                            const raw = office.address || '';
+                            if (raw.includes('Ganesh Meridian') || ((countryLower.includes('india') || idx === 0) && !raw.includes('Surat'))) {
+                              return '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004';
+                            }
+                            if (raw.includes('Ghoroob') || raw.includes('Mirdif') || ((countryLower.includes('uae') || countryLower.includes('dubai') || idx === 5) && !raw.includes('Ahli Residence'))) {
+                              return '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai';
+                            }
+                            return raw;
+                          })()}
                         </p>
                       </div>
                       <div className="absolute right-2.5 bottom-1.5 pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">

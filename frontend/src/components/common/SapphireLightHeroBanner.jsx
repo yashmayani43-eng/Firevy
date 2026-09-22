@@ -44,6 +44,8 @@ export const SapphireLightHeroBanner = ({
   subtitle = "As a best educational app development company, we deliver affordable education app development services. We are an experienced educational app development agency with a team of professional mobile app developers.",
   ctaText = "Discuss Your Project",
   ctaLink = "#quote-form",
+  secondaryCtaText = null,
+  secondaryCtaLink = "#quote-form",
   serviceCategory = "education",
   stats = null,
   heroImage = null
@@ -57,7 +59,7 @@ export const SapphireLightHeroBanner = ({
       <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Text & CTA */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-5">
             <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-[800] text-slate-900 tracking-tight leading-[1.18] max-w-xl font-sans">
               {title}
             </h1>
@@ -66,22 +68,49 @@ export const SapphireLightHeroBanner = ({
               {subtitle}
             </p>
 
-            <div className="pt-2">
+            {stats && stats.length > 0 && (
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-1 pb-1">
+                {stats.map((st, idx) => (
+                  <div key={idx} className="text-left space-y-0.5">
+                    <div className="text-2xl sm:text-3xl font-[900] text-[#005F96] tracking-tight">{st.value}</div>
+                    <div className="text-[11px] sm:text-[12px] font-bold text-slate-700 leading-tight">{st.label}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            <div className="pt-2 flex flex-wrap items-center gap-3">
               <a
                 href={ctaLink}
-                className="inline-flex items-center justify-center px-7 py-3.5 rounded-[8px] bg-[#006B8F] hover:bg-[#005573] text-white font-[700] text-sm sm:text-base transition-all shadow-md hover:shadow-lg group font-sans"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-[8px] bg-[#006B8F] hover:bg-[#005573] text-white font-[700] text-sm sm:text-base transition-all shadow-md hover:shadow-lg group font-sans"
               >
                 <span>{ctaText}</span>
               </a>
+              {secondaryCtaText && (
+                <a
+                  href={secondaryCtaLink}
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-[8px] bg-[#005F96] hover:bg-[#004a75] text-white font-[700] text-sm sm:text-base transition-all shadow-md hover:shadow-lg group font-sans"
+                >
+                  <span>{secondaryCtaText}</span>
+                </a>
+              )}
             </div>
           </div>
 
           {/* Right Visual Graphic */}
           <div className="lg:col-span-6 flex justify-center relative py-4">
-            {heroImage || isHybrid ? (
+            {heroImage ? (
               <div className="relative w-full max-w-[560px] flex items-center justify-center">
                 <img
-                  src={heroImage || "/images/hybrid_hero_illustration.png"}
+                  src={heroImage}
+                  alt={title}
+                  className="w-full max-w-[520px] h-auto object-contain select-none pointer-events-none drop-shadow-sm"
+                />
+              </div>
+            ) : isHybrid ? (
+              <div className="relative w-full max-w-[560px] flex items-center justify-center">
+                <img
+                  src="/images/hybrid_hero_illustration.png"
                   alt={title}
                   className="w-full max-w-[520px] h-auto object-contain select-none pointer-events-none drop-shadow-sm"
                 />
@@ -537,29 +566,6 @@ export const SapphireLightHeroBanner = ({
         </div>
       </Container>
 
-      {/* Floating Action Icons on Right Edge (Phone Call & WhatsApp 1:1 Match) */}
-      <div className="fixed right-0 top-1/3 z-50 flex flex-col space-y-2 pointer-events-auto">
-        <a
-          href="tel:+919429709662"
-          aria-label="Call Us"
-          className="w-10 h-10 bg-[#006B8F] hover:bg-[#00526E] text-white flex items-center justify-center rounded-l-md shadow-lg transition-all"
-        >
-          <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-          </svg>
-        </a>
-        <a
-          href="https://wa.me/919429709662"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="WhatsApp Us"
-          className="w-10 h-10 bg-[#006B8F] hover:bg-[#00526E] text-white flex items-center justify-center rounded-l-md shadow-lg transition-all"
-        >
-          <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347zM12 2a10 10 0 0 0-8.484 15.317L2 22l4.816-1.263A10 10 0 1 0 12 2z" />
-          </svg>
-        </a>
-      </div>
     </section>
   );
 };

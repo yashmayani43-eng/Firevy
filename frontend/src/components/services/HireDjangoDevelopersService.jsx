@@ -23,6 +23,7 @@ import SapphireFaqSection from '../common/SapphireFaqSection';
 import SocialMediaSection from '../common/SocialMediaSection';
 import RecentBlogsSection from '../home/RecentBlogsSection';
 import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
+import SuccessStoriesSection from '../common/SuccessStoriesSection';
 import ConversionCalloutBanner from '../home/ConversionCalloutBanner';
 import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
 import {
@@ -31,7 +32,7 @@ import {
   Lightbulb, Users, Lock, Sliders, MessageSquare, Flag, RotateCcw,
   ShoppingBag, Server, Code, Layout, CheckSquare, Wrench, Target,
   Key, CheckCircle2, RefreshCw, TrendingUp, BarChart2, DollarSign,
-  Coins, Zap
+  Coins, Zap, Phone
 } from 'lucide-react';
 
 export const HireDjangoDevelopersService = () => {
@@ -44,64 +45,67 @@ export const HireDjangoDevelopersService = () => {
         description="Hire dedicated Django developers from Firevy.co starting at $21/hr. Expert Python Django, DRF, Celery, and Scalable REST API architects for enterprise web applications."
       />
 
-      {/* 1. HERO SECTION */}
-      <section className="py-12 sm:py-16 bg-[#F8FAFC] border-b border-slate-200/80 text-slate-900 font-sans relative overflow-hidden">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Text + Stats + Teal CTA Box */}
-            <div className="lg:col-span-7 text-left">
+      {/* 1. HERO SECTION (EXACT MATCH TO REFERENCE SCREENSHOT) */}
+      <section className="pt-10 pb-14 sm:pt-14 sm:pb-20 bg-[#F2F7FB] text-slate-900 font-sans relative overflow-hidden text-left border-b border-slate-200/60">
+        <Container className="max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            {/* Left Column: Title + Description + 4 Stats + Teal Pill CTA */}
+            <div className="lg:col-span-7 space-y-6">
               <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
                 Hire Django Developers
               </h1>
-              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed mt-4 max-w-2xl font-sans">
-                When you employ skilled Django developers from us, we will collaborate with you throughout all phases to create high-performance web platforms. You can Hire dedicated Django developers to develop productive applications.
+
+              <p className="text-sm sm:text-[15px] text-[#475569] font-normal leading-[1.7] max-w-xl font-sans">
+                Django is a free and open-source framework that gives developers the ability to build web applications that are not only safe but also highly scalable.
               </p>
 
-              {/* 4 Stat Counters Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-8 pt-2">
+              {/* 4 Stat Counters Grid (Matching Screenshot) */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-2 max-w-xl">
                 <div>
-                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">200+</div>
-                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
+                  <div className="text-2xl sm:text-[32px] font-[900] text-[#006E90] font-sans leading-none">200+</div>
+                  <div className="text-xs sm:text-[13px] font-[700] text-slate-800 leading-tight mt-2 font-sans">
                     Dedicated<br />Developers
                   </div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">20+</div>
-                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
+                  <div className="text-2xl sm:text-[32px] font-[900] text-[#006E90] font-sans leading-none">20+</div>
+                  <div className="text-xs sm:text-[13px] font-[700] text-slate-800 leading-tight mt-2 font-sans">
                     Fortunes 500<br />Companies
                   </div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">2800+</div>
-                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
-                    Project<br />Completed
+                  <div className="text-2xl sm:text-[32px] font-[900] text-[#006E90] font-sans leading-none">2800+</div>
+                  <div className="text-xs sm:text-[13px] font-[700] text-slate-800 leading-tight mt-2 font-sans">
+                    Project Completed
                   </div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">320+</div>
-                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
-                    5-Star Clutch<br />Reviews
+                  <div className="text-2xl sm:text-[32px] font-[900] text-[#006E90] font-sans leading-none">320+</div>
+                  <div className="text-xs sm:text-[13px] font-[700] text-slate-800 leading-tight mt-2 font-sans">
+                    5-Star Clutch Reviews
                   </div>
                 </div>
               </div>
 
-              {/* Teal CTA Container */}
-              <div className="mt-8">
-                <div className="text-xs font-[700] text-[#006E90] mb-2 font-sans">
+              {/* Teal CTA Pill Section */}
+              <div className="pt-4">
+                <div className="text-xs sm:text-[13px] font-[700] text-[#006E90] mb-2.5 font-sans">
                   Get Top Talent Work for you At
                 </div>
-                <div className="p-2 bg-[#0080A0] rounded-2xl shadow-lg inline-flex items-center justify-between space-x-4 max-w-md w-full border border-cyan-700/20">
-                  <div className="flex items-center space-x-2.5 pl-3">
-                    <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-white">
-                      <Clock className="w-4 h-4 text-white" />
+
+                <div className="p-1.5 pl-5 pr-1.5 bg-[#008BAA] rounded-full shadow-md inline-flex items-center justify-between space-x-4 max-w-md w-full border border-cyan-600/30">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white shrink-0">
+                      <Clock className="w-4 h-4 text-white stroke-[2.5]" />
                     </div>
                     <span className="text-white font-[900] text-lg sm:text-xl tracking-tight font-sans">
                       $21/Hourly*
                     </span>
                   </div>
+
                   <Link
                     to="/contact"
-                    className="bg-white hover:bg-slate-50 text-[#0080A0] font-[900] text-sm px-6 py-2.5 rounded-xl transition-all shadow-sm shrink-0 cursor-pointer font-sans"
+                    className="bg-white hover:bg-slate-50 text-[#008BAA] font-[900] text-sm px-6 sm:px-7 py-2.5 rounded-full transition-all shadow-sm shrink-0 cursor-pointer font-sans"
                   >
                     Hire Team
                   </Link>
@@ -109,79 +113,44 @@ export const HireDjangoDevelopersService = () => {
               </div>
             </div>
 
-            {/* Right Column: Custom Vector Illustration */}
-            <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[460px] aspect-[4/3] flex items-center justify-center">
-                <svg className="absolute inset-0 w-full h-full text-slate-200/60 pointer-events-none" viewBox="0 0 400 300">
-                  <circle cx="80" cy="60" r="30" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
-                  <circle cx="340" cy="220" r="45" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
-                  <path d="M 50 150 Q 200 280 350 150" fill="none" stroke="#0080A0" strokeWidth="1.5" opacity="0.15" />
-                </svg>
-
-                <div className="w-full bg-white rounded-2xl border-2 border-slate-200/90 shadow-2xl overflow-hidden relative z-10 p-4 sm:p-5">
-                  <div className="flex items-center space-x-1.5 pb-3 border-b border-slate-100">
-                    <div className="w-3 h-3 rounded-full bg-rose-500" />
-                    <div className="w-3 h-3 rounded-full bg-amber-400" />
-                    <div className="w-3 h-3 rounded-full bg-emerald-500" />
-                    <div className="ml-4 h-4 bg-slate-100 rounded-md w-36" />
-                  </div>
-
-                  <div className="py-5 space-y-3 font-mono text-[11px] text-slate-400">
-                    <div className="flex space-x-2">
-                      <span className="text-purple-600 font-bold">from</span>
-                      <span className="text-slate-800 font-semibold">django.db</span>
-                      <span className="text-purple-600 font-bold">import</span>
-                      <span className="text-emerald-600">models</span>;
-                    </div>
-                    <div className="flex space-x-2">
-                      <span className="text-purple-600 font-bold">from</span>
-                      <span className="text-slate-800 font-semibold">rest_framework</span>
-                      <span className="text-purple-600 font-bold">import</span>
-                      <span className="text-rose-600">viewsets</span>;
-                    </div>
-                    <div className="flex space-x-2">
-                      <span className="text-purple-600 font-bold">class</span>
-                      <span className="text-blue-600 font-bold">AppViewSet</span>(<span className="text-slate-800">viewsets.ModelViewSet</span>):
-                    </div>
-                    <div className="h-2 bg-slate-100 rounded w-3/4 my-2" />
-                    <div className="h-2 bg-slate-100 rounded w-1/2" />
-                    <div className="h-2 bg-slate-100 rounded w-5/6" />
-                  </div>
-
-                  <div className="w-20 h-4 bg-slate-200 rounded-b-md mx-auto -mb-5" />
-                </div>
-
-                <div className="absolute -top-3 -right-3 z-20 bg-white border border-emerald-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
-                  <div className="w-9 h-9 rounded-xl bg-[#092E20] text-white flex items-center justify-center font-black text-sm shadow-md font-sans">
-                    🎸
-                  </div>
-                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">Django REST</span>
-                </div>
-
-                <div className="absolute top-1/3 -left-5 z-20 bg-[#111827] text-[#3776AB] p-2.5 sm:p-3 rounded-2xl shadow-xl flex items-center space-x-2 border border-slate-800">
-                  <div className="w-8 h-8 rounded-lg bg-[#3776AB] text-white flex items-center justify-center font-black text-xs font-mono">
-                    PY
-                  </div>
-                  <span className="text-xs font-bold text-white pr-1 font-sans">Python 3.12</span>
-                </div>
-
-                <div className="absolute -bottom-3 left-4 z-20 bg-white border border-emerald-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
-                  <div className="w-9 h-9 rounded-xl bg-[#009688] text-white flex items-center justify-center font-black text-sm shadow-md font-sans">
-                    🌱
-                  </div>
-                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">Celery & Redis</span>
-                </div>
-
-                <div className="absolute -bottom-3 -right-3 z-20 bg-white border border-cyan-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
-                  <div className="w-9 h-9 rounded-xl bg-[#336791] text-white flex items-center justify-center font-black text-xs font-mono shadow-md">
-                    SQL
-                  </div>
-                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">PostgreSQL</span>
-                </div>
+            {/* Right Column: Image illustration (Matching Reference Screenshot) */}
+            <div className="lg:col-span-5 flex items-center justify-center relative">
+              <div className="relative w-full max-w-[540px] mx-auto flex items-center justify-center">
+                <img
+                  src="/images/hire_django_hero_vector.svg"
+                  alt="Hire Django Developers Illustration"
+                  className="w-full h-auto object-contain bg-transparent transition-transform duration-500 hover:scale-102 cursor-pointer"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/hire_django_hero_illustration.png';
+                  }}
+                />
               </div>
             </div>
           </div>
         </Container>
+
+        {/* Floating Right Side Contact Buttons (Fixed to Right Edge, Matching Screenshot) */}
+        <div className="hidden md:flex flex-col space-y-1.5 absolute right-0 top-1/2 -translate-y-1/2 z-30">
+          <a
+            href="tel:+1234567890"
+            aria-label="Call Us"
+            className="w-10 h-10 bg-[#005F96] hover:bg-[#004B77] text-white flex items-center justify-center rounded-l-md shadow-md transition-all cursor-pointer"
+          >
+            <Phone className="w-5 h-5 text-white" />
+          </a>
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp Us"
+            className="w-10 h-10 bg-[#005F96] hover:bg-[#004B77] text-white flex items-center justify-center rounded-l-md shadow-md transition-all cursor-pointer"
+          >
+            <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current text-white">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+          </a>
+        </div>
       </section>
 
       {/* 2. CLIENT LOGOS MARQUEE BAR */}
@@ -191,51 +160,28 @@ export const HireDjangoDevelopersService = () => {
       <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Vector Illustration */}
+            {/* Left Column: Image Illustration (Transparent background, developer team holding Python & Django badges) */}
             <div className="lg:col-span-6 flex justify-center">
-              <div className="relative w-full max-w-[480px] p-4 flex items-center justify-center">
-                <div className="w-full bg-slate-900 rounded-2xl p-3 shadow-2xl border border-slate-700 relative">
-                  <div className="bg-[#EBF5FB] rounded-xl p-4 min-h-[220px] flex flex-col justify-between relative overflow-hidden border border-cyan-200">
-                    <div className="space-y-2">
-                      <div className="h-2.5 bg-cyan-600/30 rounded w-2/3" />
-                      <div className="h-2 bg-slate-300 rounded w-1/2" />
-                      <div className="h-2 bg-slate-300 rounded w-4/5" />
-                      <div className="h-2 bg-slate-300 rounded w-3/5" />
-                    </div>
-
-                    <div className="absolute right-6 top-6 w-28 h-44 bg-slate-900 rounded-xl p-1.5 shadow-2xl border border-cyan-400/40 z-10 flex flex-col justify-between">
-                      <div className="bg-emerald-600 rounded-lg h-full p-2 flex flex-col items-center justify-center text-white">
-                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center mb-1">
-                          🎸
-                        </div>
-                        <span className="text-[9px] font-black tracking-wider uppercase">Django Ready</span>
-                      </div>
-                    </div>
-
-                    <div className="absolute top-2 left-28 bg-[#092E20] text-white text-[9px] font-bold px-2 py-0.5 rounded-full shadow">
-                      Django REST
-                    </div>
-
-                    <div className="absolute top-10 right-2 bg-blue-600 text-white text-[9px] font-black px-1.5 py-0.5 rounded shadow">
-                      Python 3
-                    </div>
-
-                    <div className="absolute bottom-3 left-32 bg-[#336791] text-white text-[10px] font-black px-2 py-0.5 rounded-md shadow">
-                      PostgreSQL
-                    </div>
-                  </div>
-                  <div className="w-28 h-3 bg-slate-700 rounded-b-md mx-auto mt-1" />
-                </div>
+              <div className="relative w-full max-w-[500px] flex items-center justify-center p-2 bg-transparent">
+                <img
+                  src="/images/django_developers_python_team_illustration.svg"
+                  alt="Best Django Developers Available With Us Illustration"
+                  className="w-full h-auto object-contain bg-transparent transition-transform duration-300 hover:scale-102 cursor-pointer"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/django_developers_python_team_illustration.png';
+                  }}
+                />
               </div>
             </div>
 
             {/* Right Column: Title + Paragraph */}
             <div className="lg:col-span-6 text-left space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Best Django Developers Available With Us
+                Hire Remote Django Developers From Us
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans font-normal">
-                All of the Django components (Django REST Framework, Celery, PostgreSQL, Redis, Docker) are expertly handled by our full-stack Django developers. Hire Django developers to create mobile and web applications that are ready for the future. We provide a range of hiring models so you can select the most appropriate ones for your project.
+                Hire Django Developer to fulfill your company's needs for a robust web application, regardless of whether you run a sole proprietorship, a small company, or an established corporation. If you are considering basing your next web application on this Python-based framework, you should consider working with us at Python Django Development Company. You may Hire Django Programmers that will work on your project, and you can use technologies like Time Doctor to oversee the development process while maintaining complete transparency. Please contact us if you are looking to hire Python Django developers.
               </p>
             </div>
           </div>
@@ -483,34 +429,18 @@ export const HireDjangoDevelopersService = () => {
               </p>
             </div>
 
-            {/* Right Column: Character Vector Illustration */}
+            {/* Right Column: Character Vector Illustration (No card background, transparent) */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[440px] aspect-[4/3] flex items-center justify-center p-4">
-                <div className="w-full bg-slate-900 rounded-2xl p-4 shadow-2xl border border-slate-800 relative text-white flex flex-col justify-between min-h-[220px]">
-                  <div className="flex justify-between items-center pb-2 border-b border-slate-800">
-                    <span className="text-xs font-mono text-cyan-400">DJANGO IDE</span>
-                    <div className="flex space-x-1">
-                      <div className="w-2.5 h-2.5 rounded-full bg-rose-500" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-                    </div>
-                  </div>
-
-                  <div className="py-4 space-y-2 font-mono text-[11px] text-slate-300">
-                    <div><span className="text-purple-400">const</span> <span className="text-yellow-300">developer</span> = <span className="text-cyan-300">new</span> <span className="text-blue-400">DjangoDeveloper()</span>;</div>
-                    <div><span className="text-purple-400">await</span> developer.<span className="text-emerald-400 font-bold">buildScalableApps()</span>;</div>
-                  </div>
-
-                  <div className="absolute -bottom-4 -right-4 bg-white p-2 rounded-2xl shadow-xl border border-slate-200 text-slate-900 flex items-center space-x-2">
-                    <div className="w-8 h-8 rounded-xl bg-[#092E20] text-white flex items-center justify-center font-black text-xs font-sans">🎸</div>
-                    <span className="text-xs font-bold font-sans">DRF Expert</span>
-                  </div>
-
-                  <div className="absolute -top-4 -left-4 bg-[#111827] p-2 rounded-2xl shadow-xl border border-slate-700 text-white flex items-center space-x-2">
-                    <div className="w-8 h-8 rounded-xl bg-[#3776AB] text-white flex items-center justify-center font-black text-xs font-mono">PY</div>
-                    <span className="text-xs font-bold font-sans">Python Backend</span>
-                  </div>
-                </div>
+              <div className="relative w-full max-w-[500px] flex items-center justify-center p-2 bg-transparent">
+                <img
+                  src="/images/django_developers_python_team_illustration.png"
+                  alt="Brief About Our Django Developer Illustration"
+                  className="w-full h-auto object-contain bg-transparent transition-transform duration-300 hover:scale-102 cursor-pointer"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/django_developers_python_team_illustration.svg';
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -794,6 +724,29 @@ export const HireDjangoDevelopersService = () => {
           </div>
         </Container>
       </section>
+
+      {/* SUCCESS STORIES SECTION (PLACED BELOW HOW WE DIVIDE YOUR PROJECT RESPONSIBILITIES) */}
+      <SuccessStoriesSection
+        cards={[
+          {
+            id: 1,
+            title: 'Enterprise Django REST Microservices & Scalable Cloud Platform',
+            image: '/images/success_stories/redetect.svg',
+            badge: 'Case Study'
+          },
+          {
+            id: 2,
+            title: 'Real-Time Celery & Redis Task Queue Automation Engine',
+            image: '/images/success_stories/file_sharing_application.svg'
+          },
+          {
+            id: 3,
+            title: 'High-Performance Django SaaS Portal & PostgreSQL Architecture',
+            image: '/images/success_stories/data_analytics.svg'
+          }
+        ]}
+        subtitle="Explore how Firevy.Co's dedicated Django developers have enabled global enterprises to transform software velocity and achieve resilient backend web operations."
+      />
 
       {/* 17. SECTION 15: Technology Stack That Sapphire Dedicated Developers Use Proficiently */}
       <TechStackProficientGrid title="Technology Stack That Sapphire Dedicated Developers Use Proficiently" />
