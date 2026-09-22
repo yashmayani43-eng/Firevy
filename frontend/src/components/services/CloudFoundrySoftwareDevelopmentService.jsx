@@ -562,6 +562,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
                 As a premier Cloud Foundry engineering firm, Firevy.Co leverages enterprise-grade PaaS orchestration, lifecycle tooling, and cloud-native frameworks.
               </p>
             </div>
+          </div>
 
         {/* Full-Width Edge-to-Edge Cards Carousel Track */}
         <div className="relative overflow-hidden w-full select-none py-1">
@@ -620,6 +621,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
             →
           </button>
         </div>
+        </Container>
       </section>
 
       {/* ========================================================================= */}

@@ -327,7 +327,7 @@ export const CSR = () => {
               </p>
               <div className="space-y-1">
                 <div className="flex items-center space-x-2">
-                  <h4 className="text-[20px] font-[800] text-slate-900 font-sans">Kumaril Patel</h4>
+                  <h4 className="text-[20px] font-[800] text-slate-900 font-sans">Mr. Tushil Mayani</h4>
                   <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-6 h-6 rounded-full bg-[#0077B5] text-white flex items-center justify-center text-[11px] font-[900]">in</a>
                 </div>
                 <p className="text-[14px] font-[700] text-slate-600 font-sans uppercase tracking-wider">CEO</p>
@@ -336,9 +336,10 @@ export const CSR = () => {
             {/* CEO Image Cutout */}
             <div className="mt-8 lg:mt-0 shrink-0 w-64 h-64 sm:w-72 sm:h-72 relative">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
-                alt="Kumaril Patel - CEO"
+                src="/images/Tushil_mayani.JPG"
+                alt="Mr. Tushil Mayani - CEO"
                 className="w-full h-full object-cover rounded-[20px] shadow-md border-2 border-white"
+                style={{ objectPosition: '50% 85%' }}
               />
             </div>
           </div>
