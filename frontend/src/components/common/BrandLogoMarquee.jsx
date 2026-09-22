@@ -1,18 +1,13 @@
 import React from 'react';
 
 const brandLogos = [
+  { name: 'SEASWORTH JEWELS', src: '/images/seasworth_jewels.png' },
   { name: 'Almarai', src: '/images/almarai_corporate_logo.png' },
-  { name: 'Orient Cement', src: '/images/orient_logo.svg' },
-  { name: 'American Express', src: '/images/logo_american_express.svg' },
+  { name: 'ORIENT CEMENT', src: '/images/orient_logo.svg' },
+  { name: 'AMERICAN EXPRESS', src: '/images/logo_american_express.svg' },
+  { name: 'TATVAM OVERSEAS', src: '/images/tatvam_overseas.jpg' },
   { name: 'Alembic', src: '/images/alembic_logo.svg' },
-  { name: 'Honda', src: '/images/honda_logo.png' },
-  { name: 'LafargeHolcim', src: '/images/logo_lafargeHolcim.svg' },
-  { name: "L'Oréal", src: '/images/logo_loreal.png' },
-  { name: 'TDSG', src: '/images/logo_tdsg.png' },
-  { name: 'Astral Pipes', src: '/images/logo_astral.png' },
-  { name: 'CLP India', src: '/images/logo_clp_india.svg' },
-  { name: 'Adani', src: '/images/logo_adani.svg' },
-  { name: 'Toyota', src: '/images/toyota_logo.webp' }
+  { name: 'DH', src: '/images/dh_logo.jpg' }
 ];
 
 export const BrandLogoMarquee = () => {
@@ -21,7 +16,7 @@ export const BrandLogoMarquee = () => {
       <div className="flex w-max animate-marquee hover:[animation-play-state:paused] items-center">
         {/* Track 1 */}
         <div className="flex items-center space-x-12 sm:space-x-16 pr-12 sm:pr-16 shrink-0">
-          {brandLogos.map((item, idx) => (
+          {[...brandLogos, ...brandLogos].map((item, idx) => (
             <div key={`logo-1-${idx}`} className="flex items-center justify-center shrink-0 h-10 sm:h-12 w-28 sm:w-36">
               <img
                 src={item.src}
@@ -39,7 +34,7 @@ export const BrandLogoMarquee = () => {
 
         {/* Track 2 (Duplicate for Seamless Infinite Marquee Loop) */}
         <div className="flex items-center space-x-12 sm:space-x-16 pr-12 sm:pr-16 shrink-0" aria-hidden="true">
-          {brandLogos.map((item, idx) => (
+          {[...brandLogos, ...brandLogos].map((item, idx) => (
             <div key={`logo-2-${idx}`} className="flex items-center justify-center shrink-0 h-10 sm:h-12 w-28 sm:w-36">
               <img
                 src={item.src}
