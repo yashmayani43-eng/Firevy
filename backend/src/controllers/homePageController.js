@@ -71,6 +71,11 @@ const formatHomeResponse = (sectionsOrder, sections) => {
     ...initialHomePageData.sections,
     ...(sections && typeof sections === 'object' ? sections : {})
   };
+
+  if (secs.featuredInLogosGrid && (secs.featuredInLogosGrid.title === 'Featured In Leading Global Publications' || secs.featuredInLogosGrid.title === 'Featured In')) {
+    secs.featuredInLogosGrid.title = 'We Have Been Featured In';
+  }
+
   const list = buildSectionsList(baseOrder, secs);
 
   return {

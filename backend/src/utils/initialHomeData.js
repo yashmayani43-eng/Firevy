@@ -43,18 +43,19 @@ export const initialHomePageData = {
           titleLine2: 'Our Technology',
           subTag: '(Limitless Possibilities)',
           bullets: [
-            'Recognized as #1 Web Development Company in India and USA.',
-            'Trusted by 20+ Fortune 500 Companies and a Clutch Leader.',
-            "We've been Redefining Excellence for over Two Decades."
+            'Named by **Clutch** as the **Top AI (Artificial Intelligence)** Company in India and USA.',
+            'Trusted by **20+ Fortune 500 Companies and a Clutch Leader.**',
+            "We've been Redefining Excellence for over **Two Decades.**"
           ],
-          rightBoxTitle: 'Redefined Learning Experiences',
-          rightBoxSub: 'With Intelligent AI Innovation',
+          rightBoxTitle: 'Personalized Fitness Journeys',
+          rightBoxSub: 'Powered by Intelligent AI',
           primaryCtaText: "Let's Talk",
           primaryCtaLink: '/contact',
           secondaryCtaText: 'Get in Touch',
           secondaryCtaLink: '/contact',
           backgroundVideoUrl: '/Best Software Development Company in USA - Sapphire Software Sol.mp4',
-          isActive: true
+          isActive: true,
+          autoRotate: false
         },
         {
           _id: 'hero_slide_2',
@@ -63,9 +64,9 @@ export const initialHomePageData = {
           titleLine2: 'Global Performance',
           subTag: '(Engineered for Growth)',
           bullets: [
-            'Top 1% Senior React, Node & Cloud Architects.',
-            'ISO 9001:2015 & Enterprise SOC2 Ready Infrastructure.',
-            'Sub-50ms API Latency with 99.99% Guaranteed Uptime.'
+            'Top 1% Senior **React, Node & Cloud Architects**.',
+            '**ISO 9001:2015 & Enterprise SOC2** Ready Infrastructure.',
+            '**Sub-50ms API Latency** with **99.99% Guaranteed Uptime**.'
           ],
           rightBoxTitle: 'Cloud & AI Microservices',
           rightBoxSub: 'Driven by Next-Gen Innovation',
@@ -83,9 +84,9 @@ export const initialHomePageData = {
           titleLine2: 'Empowering Brands',
           subTag: '(Native & Cross-Platform)',
           bullets: [
-            '500+ High-Impact Digital Products Delivered Worldwide.',
-            'Seamless Multi-Device Web & Mobile UX Engineering.',
-            'Agile 2-Week Sprint Delivery with Full Transparency.'
+            '**500+ High-Impact** Digital Products Delivered Worldwide.',
+            '**Seamless Multi-Device** Web & Mobile UX Engineering.',
+            '**Agile 2-Week Sprint Delivery** with Full Transparency.'
           ],
           rightBoxTitle: 'Immersive Product Design',
           rightBoxSub: 'Crafted for Modern Enterprise',
