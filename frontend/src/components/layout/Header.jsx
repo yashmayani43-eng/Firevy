@@ -71,43 +71,28 @@ export const Header = () => {
   // COMPLETE MULTI-LEVEL DRILL-DOWN NAVIGATION TREE (ALL MEGAMENU OPTIONS)
   // =========================================================================
 
-  // 1. Company Menu Tree
+  // 1. Company Menu Tree (Direct flat list of all 20 company items)
   const companyTree = [
-    {
-      name: 'About Us',
-      subItems: [
-        { name: 'About Firevy.Co', path: '/company/about-firevy' },
-        { name: 'CEO Message', path: '/company/ceo-message' },
-        { name: 'Our Team', path: '/company/our-team' },
-        { name: 'Events & Activities', path: '/company/events-activities' },
-        { name: 'Brochure', path: '/company/brochure' },
-        { name: 'Why Choose Us', path: '/company/why-choose-us' },
-        { name: 'Great Place To Work', path: '/company/great-place-to-work' },
-        { name: 'Women Empowerment', path: '/company/women-empowerment' },
-        { name: 'Awards & Recognition', path: '/company/awards-recognition' },
-        { name: 'Insightful Videos', path: '/company/insightful-videos' },
-        { name: 'Blog', path: '/company/blog' },
-        { name: 'Careers (Jobs)', path: '/careers' },
-        { name: 'CSR', path: '/company/csr' },
-        { name: 'Podcast', path: '/company/podcast' }
-      ]
-    },
-    {
-      name: 'Models',
-      subItems: [
-        { name: 'Delivery Models', path: '/company/delivery-models' },
-        { name: 'Engagement Models', path: '/company/engagement-models' },
-        { name: 'Development Methodology', path: '/company/development-methodology' }
-      ]
-    },
-    {
-      name: 'Testimonials',
-      subItems: [
-        { name: 'Client Testimonials', path: '/company/client-testimonials' },
-        { name: 'Video Testimonial', path: '/company/video-testimonial' },
-        { name: 'Clutch Testimonial', path: '/company/clutch-testimonial' }
-      ]
-    }
+    { name: 'About Firevy.Co', path: '/company/about-firevy' },
+    { name: 'CEO Message', path: '/company/ceo-message' },
+    { name: 'Our Team', path: '/company/our-team' },
+    { name: 'Events & Activities', path: '/company/events-activities' },
+    { name: 'Brochure', path: '/company/brochure' },
+    { name: 'Why Choose Us', path: '/company/why-choose-us' },
+    { name: 'Great Place To Work', path: '/company/great-place-to-work' },
+    { name: 'Women Empowerment', path: '/company/women-empowerment' },
+    { name: 'Awards & Recognition', path: '/company/awards-recognition' },
+    { name: 'Insightful Videos', path: '/company/insightful-videos' },
+    { name: 'Blog', path: '/company/blog' },
+    { name: 'Careers (Jobs)', path: '/careers' },
+    { name: 'CSR', path: '/company/csr' },
+    { name: 'Podcast', path: '/company/podcast' },
+    { name: 'Delivery Models', path: '/company/delivery-models' },
+    { name: 'Engagement Models', path: '/company/engagement-models' },
+    { name: 'Development Methodology', path: '/company/development-methodology' },
+    { name: 'Client Testimonials', path: '/company/client-testimonials' },
+    { name: 'Video Testimonial', path: '/company/video-testimonial' },
+    { name: 'Clutch Testimonial', path: '/company/clutch-testimonial' }
   ];
 
   // 2. Product / Solutions Menu Tree
@@ -524,8 +509,8 @@ export const Header = () => {
     { name: 'Company', subTree: companyTree },
     { name: 'Product', subTree: productTree },
     { name: 'Services', subTree: servicesMenuTree },
-    { name: 'Hire Developers', subTree: hireDevelopersTree },
     { name: 'Technology', subTree: technologyTree },
+    { name: 'Hire Developers', subTree: hireDevelopersTree },
     { name: 'Our Work', subTree: ourWorkTree },
     { name: "Let's Talk AI", path: '/contact' },
     { name: 'Contact Us', path: '/contact' }
@@ -642,8 +627,8 @@ export const Header = () => {
 
       {/* Main Header Bar */}
       <div className={`relative transition-all duration-300 h-[76px] flex items-center ${isScrolled
-          ? 'bg-white border-b border-slate-200 text-slate-900 shadow-md'
-          : 'bg-[#011422]/95 backdrop-blur-md border-b border-[#072439] text-white shadow-md'
+        ? 'bg-white border-b border-slate-200 text-slate-900 shadow-md'
+        : 'bg-[#011422]/95 backdrop-blur-md border-b border-[#072439] text-white shadow-md'
         }`}>
         <div className="w-full px-6 lg:px-10 flex items-center justify-between h-full">
           {/* Brand Logo */}
@@ -672,8 +657,8 @@ export const Header = () => {
                     <Link
                       to={link.path}
                       className={`text-sm xl:text-[15px] font-semibold transition-colors flex items-center space-x-1 ${isDarkHeader
-                          ? (isActive ? 'text-cyan-300 font-bold' : 'text-white/90 hover:text-cyan-300')
-                          : (isActive ? 'text-[#005F96] font-bold' : 'text-[#2D3748] hover:text-[#005F96]')
+                        ? (isActive ? 'text-cyan-300 font-bold' : 'text-white/90 hover:text-cyan-300')
+                        : (isActive ? 'text-[#005F96] font-bold' : 'text-[#2D3748] hover:text-[#005F96]')
                         }`}
                     >
                       <span>{link.name}</span>
@@ -718,8 +703,7 @@ export const Header = () => {
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setMobileMenuOpen(true)}
-            className={`lg:hidden p-2.5 rounded-lg border focus:outline-none transition-colors ${
-              isScrolled
+            className={`lg:hidden p-2.5 rounded-lg border focus:outline-none transition-colors ${isScrolled
                 ? 'text-slate-800 bg-slate-100 border-slate-300'
                 : 'text-white bg-white/10 border-white/20'
               }`}
@@ -760,37 +744,38 @@ export const Header = () => {
               className="lg:hidden fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-[90]"
             />
 
-            {/* Left Slide-In Solid Blue Side Drawer */}
+            {/* Left Slide-In Light Side Drawer */}
             <motion.div
               initial={{ x: '-100%' }}
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
               transition={{ type: 'spring', damping: 26, stiffness: 240 }}
-              className="lg:hidden fixed top-0 left-0 bottom-0 w-[85vw] max-w-[340px] sm:max-w-[360px] bg-[#005F96] text-white z-[91] shadow-2xl flex flex-col justify-between overflow-y-auto font-sans"
+              className="lg:hidden fixed top-0 left-0 bottom-0 w-[85vw] max-w-[340px] sm:max-w-[360px] bg-white text-slate-900 z-[91] shadow-2xl flex flex-col justify-between overflow-y-auto font-sans border-r border-slate-200"
             >
-              {/* Header Bar: Shows '< Back' if in sub-level, or 'X Close' if on root level */}
-              <div className="flex items-center justify-between px-5 py-4 border-b border-white/20 shrink-0">
+              {/* Header Bar: Shows '< Back' if in sub-level (left), and 'X Close' always on the right side */}
+              <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200 bg-slate-50 shrink-0">
                 {currentLevel ? (
                   <button
                     onClick={popView}
-                    className="flex items-center space-x-2 text-white font-bold text-base hover:opacity-80 transition-opacity"
+                    className="flex items-center space-x-2 text-slate-900 font-bold text-base hover:text-[#006B8F] transition-colors"
                   >
-                    <ChevronLeft className="w-5 h-5 text-white stroke-[2.5]" />
+                    <ChevronLeft className="w-5 h-5 text-[#006B8F] stroke-[2.5]" />
                     <span>Back</span>
                   </button>
                 ) : (
-                  <button
-                    onClick={closeDrawer}
-                    className="flex items-center space-x-2 text-white font-bold text-base hover:opacity-80 transition-opacity"
-                  >
-                    <X className="w-5 h-5 text-white stroke-[2.5]" />
-                    <span>Close</span>
-                  </button>
+                  <div />
                 )}
+                <button
+                  onClick={closeDrawer}
+                  className="p-1 text-slate-900 hover:text-[#006B8F] transition-colors ml-auto"
+                  aria-label="Close menu"
+                >
+                  <X className="w-6 h-6 text-[#006B8F] stroke-[2.5]" />
+                </button>
               </div>
 
               {/* Dynamic Drill-Down View Container */}
-              <div className="flex-1 overflow-y-auto text-left">
+              <div className="flex-1 overflow-y-auto text-left bg-white">
                 {!currentLevel ? (
                   /* ================= Level 1: Root Main Menu ================= */
                   <div>
@@ -802,10 +787,10 @@ export const Header = () => {
                           <button
                             key={item.name}
                             onClick={() => pushView(item.name, item.subTree)}
-                            className="w-full border-b border-white/20 px-5 py-3.5 flex items-center justify-between text-sm sm:text-[15px] font-bold text-white hover:bg-white/10 transition-colors"
+                            className="w-full border-b border-slate-100 px-5 py-3.5 flex items-center justify-between text-sm sm:text-[15px] font-bold text-slate-800 hover:bg-slate-50 hover:text-[#006B8F] transition-colors"
                           >
                             <span>{item.name}</span>
-                            <ChevronRight className="w-4 h-4 text-white" />
+                            <ChevronRight className="w-4 h-4 text-slate-400" />
                           </button>
                         );
                       }
@@ -815,7 +800,7 @@ export const Header = () => {
                           key={item.name}
                           to={item.path || '/contact'}
                           onClick={closeDrawer}
-                          className="block border-b border-white/20 px-5 py-3.5 text-sm sm:text-[15px] font-bold text-white hover:bg-white/10 transition-colors"
+                          className="block border-b border-slate-100 px-5 py-3.5 text-sm sm:text-[15px] font-bold text-slate-800 hover:bg-slate-50 hover:text-[#006B8F] transition-colors"
                         >
                           {item.name}
                         </Link>
@@ -834,10 +819,10 @@ export const Header = () => {
                           <button
                             key={item.name || idx}
                             onClick={() => pushView(item.name, item.subItems)}
-                            className="w-full border-b border-white/20 px-5 py-3.5 flex items-center justify-between text-sm sm:text-[15px] font-bold text-white hover:bg-white/10 transition-colors"
+                            className="w-full border-b border-slate-100 px-5 py-3.5 flex items-center justify-between text-sm sm:text-[15px] font-bold text-slate-800 hover:bg-slate-50 hover:text-[#006B8F] transition-colors"
                           >
                             <span>{item.name}</span>
-                            <ChevronRight className="w-4 h-4 text-white" />
+                            <ChevronRight className="w-4 h-4 text-slate-400" />
                           </button>
                         );
                       }
@@ -850,7 +835,7 @@ export const Header = () => {
                           key={item.name || idx}
                           to={linkPath}
                           onClick={closeDrawer}
-                          className="block border-b border-white/20 px-5 py-3.5 text-sm sm:text-[15px] font-bold text-white hover:bg-white/10 transition-colors"
+                          className="block border-b border-slate-100 px-5 py-3.5 text-sm sm:text-[15px] font-bold text-slate-800 hover:bg-slate-50 hover:text-[#006B8F] transition-colors"
                         >
                           {item.name}
                         </Link>
@@ -860,18 +845,18 @@ export const Header = () => {
                 )}
               </div>
 
-              {/* Bottom Sales Contact Strip matching reference screenshot 1:1 */}
-              <div className="p-5 border-t border-white/20 bg-[#004A75] space-y-3 text-left shrink-0">
+              {/* Bottom Sales Contact Strip */}
+              <div className="p-5 border-t border-slate-200 bg-slate-50 space-y-3 text-left shrink-0">
                 <a
                   href="tel:+919429709662"
-                  className="flex items-center space-x-2.5 text-xs sm:text-[13px] font-bold text-white hover:text-cyan-200 transition-colors"
+                  className="flex items-center space-x-2.5 text-xs sm:text-[13px] font-bold text-slate-800 hover:text-[#006B8F] transition-colors"
                 >
                   <span className="text-base">🇮🇳</span>
                   <span>For Sales: +91-942-970-9662</span>
                 </a>
                 <a
                   href="tel:+17542587670"
-                  className="flex items-center space-x-2.5 text-xs sm:text-[13px] font-bold text-white hover:text-cyan-200 transition-colors"
+                  className="flex items-center space-x-2.5 text-xs sm:text-[13px] font-bold text-slate-800 hover:text-[#006B8F] transition-colors"
                 >
                   <span className="text-base">🇺🇸</span>
                   <span>For Sales: +1-754-258-7670</span>

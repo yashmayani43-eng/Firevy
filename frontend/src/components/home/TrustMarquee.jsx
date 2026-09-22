@@ -3,22 +3,11 @@ import { getMediaUrl } from '../../utils/mediaUrl';
 import { homePageService } from '../../services/homePageService';
 
 const defaultBrandLogos = [
-  { name: 'Adani', image: '/images/logo_adani.svg' },
-  { name: 'TOYOTA', image: '/images/toyota_logo.webp' },
-  { name: 'Almarai', image: '/images/almarai_corporate_logo.png' },
-  { name: 'ORIENT CEMENT', image: '/images/orient_logo.svg' },
-  { name: 'AMERICAN EXPRESS', image: '/images/logo_american_express.svg' },
-  { name: 'TATVAM OVERSEAS', image: '/images/tatvam_overseas.jpg' },
-  { name: 'Alembic', image: '/images/alembic_logo.svg' },
-  { name: 'DH', image: '/images/dh_logo.jpg' },
-  { name: 'HONDA', image: '/images/honda_logo.png' },
-  { name: 'SEASWORTH JEWELS', image: '/images/seasworth_jewels.png' },
-  { name: 'LafargeHolcim', image: '/images/logo_lafargeHolcim.svg' },
-  { name: 'Cummins', image: '/images/ncummins.png' },
-  { name: "L'ORÉAL", image: '/images/logo_loreal.png' },
-  { name: 'TDSG', image: '/images/logo_tdsg.png' },
-  { name: 'ASTRAL PIPES', image: '/images/logo_astral.png' },
-  { name: 'CLP INDIA', image: '/images/logo_clp_india.svg' }
+  { name: 'LARSEN & TOUBRO', color: 'text-blue-900', symbol: '⚙️', image: '/images/logo_larsen_toubro.svg', isActive: true },
+  { name: 'LafargeHolcim', color: 'text-slate-800', symbol: '🏢', image: '/images/logo_lafargeHolcim.svg', isActive: true },
+  { name: 'SEASWORTH JEWELS', color: 'text-[#0D1A2D]', symbol: '💍', image: '/images/seasworth_jewels.png', isActive: true },
+  { name: 'TATVAM OVERSEAS', color: 'text-[#C6A87D]', symbol: '✨', image: '/images/tatvam_overseas.jpg', isActive: true },
+  { name: 'DH', color: 'text-[#8B0014]', symbol: '💎', image: '/images/dh_logo.jpg', isActive: true }
 ];
 
 export const TrustMarquee = ({ data }) => {

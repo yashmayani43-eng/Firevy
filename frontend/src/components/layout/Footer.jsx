@@ -221,7 +221,7 @@ export const Footer = () => {
                   <div className="text-[16px] font-[800] text-slate-900 font-sans">
                     {footerConfig?.salesContact?.title || 'Contact For Sales'}
                   </div>
-                  <div className="space-y-2 text-[12.5px] text-slate-700 font-sans">
+                  <div className="space-y-2.5 text-[12.5px] text-slate-700 font-sans">
                     {(footerConfig?.salesContact?.email || 'contact@firevy.co') && (
                       <a
                         href={`mailto:${footerConfig?.salesContact?.email || 'contact@firevy.co'}`}
@@ -233,6 +233,7 @@ export const Footer = () => {
                         </span>
                       </a>
                     )}
+<<<<<<< HEAD
                     {(footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662') && (
                       <a
                         href={`tel:${(footerConfig?.salesContact?.phoneIndia || '+91-942-970-9662').replace(/[^0-9+]/g, '')}`}
@@ -255,6 +256,25 @@ export const Footer = () => {
                         </span>
                       </a>
                     )}
+
+=======
+                    {(() => {
+                      const phoneSales = (footerConfig?.salesContact?.phoneIndia && !footerConfig.salesContact.phoneIndia.includes('942-970-9662'))
+                        ? footerConfig.salesContact.phoneIndia.replace(/^IN:\s*/, '')
+                        : '+91 7069370629';
+                      return (
+                        <a
+                          href={`tel:${phoneSales.replace(/[^0-9+]/g, '')}`}
+                          className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                        >
+                          <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                          <span className="font-[600]">
+                            {phoneSales}
+                          </span>
+                        </a>
+                      );
+                    })()}
+>>>>>>> 979fa8c29cedbfb19c2154841c24c7bc0abe9e37
                   </div>
                 </div>
 
@@ -275,17 +295,24 @@ export const Footer = () => {
                         </span>
                       </a>
                     )}
-                    {(footerConfig?.careerContact?.phone || '+91 7069370623') && (
-                      <a
-                        href={`tel:${(footerConfig?.careerContact?.phone || '+91 7069370623').replace(/[^0-9+]/g, '')}`}
-                        className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                      >
-                        <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                        <span className="font-[600]">
-                          {footerConfig?.careerContact?.phone || '+91 7069370623'}
-                        </span>
-                      </a>
-                    )}
+                    <a
+                      href="tel:+917069370623"
+                      className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                    >
+                      <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                      <span className="font-[600]">
+                        {footerConfig?.careerContact?.phone1 || '+91 7069370623'}
+                      </span>
+                    </a>
+                    <a
+                      href="tel:+917069370627"
+                      className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                    >
+                      <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                      <span className="font-[600]">
+                        {footerConfig?.careerContact?.phone2 || '+91 7069370627'}
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -368,11 +395,11 @@ export const Footer = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {(footerConfig?.offices && footerConfig.offices.length > 0 ? footerConfig.offices : [
                   { id: '1', country: 'India(HQ)', flag: '/images/india_office.svg', address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004' },
-                  { id: '2', country: 'USA', flag: '/images/usa_office.svg', address: '5004 NW 116th Ave Coral Springs, Florida, FL 33076' },
-                  { id: '3', country: 'Canada', flag: '/images/canada_office.svg', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' },
+                  { id: '2', country: 'Germany', flag: '/images/germany_office.svg', address: 'walter meckauer str 11, 90478 nurenberg' },
+                  { id: '3', country: 'UAE', flag: '/images/uae_office.svg', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' },
                   { id: '4', country: 'Australia', flag: '/images/aus_office.svg', address: 'U 2B 305 Harborne Street, Glendalough 6016 WA' },
                   { id: '5', country: 'UK', flag: '/images/uk_office.svg', address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom' },
-                  { id: '6', country: 'UAE', flag: '/images/uae_office.svg', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' }
+                  { id: '6', country: 'Canada', flag: '/images/canada_office.svg', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' }
                 ]).map((office, idx) => {
                   const countryLower = (office.country || '').toLowerCase();
 
@@ -381,21 +408,21 @@ export const Footer = () => {
                       return office.flag;
                     }
                     if (countryLower.includes('india') || idx === 0) return '/images/india_office.svg';
-                    if (countryLower.includes('usa') || countryLower.includes('states') || idx === 1) return '/images/usa_office.svg';
-                    if (countryLower.includes('canada') || idx === 2) return '/images/canada_office.svg';
+                    if (countryLower.includes('germany') || countryLower.includes('germeny') || idx === 1) return '/images/germany_office.svg';
+                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 2) return '/images/uae_office.svg';
                     if (countryLower.includes('aus') || idx === 3) return '/images/aus_office.svg';
                     if (countryLower.includes('uk') || countryLower.includes('kingdom') || idx === 4) return '/images/uk_office.svg';
-                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 5) return '/images/uae_office.svg';
+                    if (countryLower.includes('canada') || idx === 5) return '/images/canada_office.svg';
                     return '/images/india_office.svg';
                   };
 
                   const getSketch = () => {
                     if (countryLower.includes('india') || idx === 0) return '/images/india_iamge.png';
-                    if (countryLower.includes('usa') || countryLower.includes('states') || idx === 1) return '/images/usaimage.png';
-                    if (countryLower.includes('canada') || idx === 2) return '/images/canadaimage.png';
+                    if (countryLower.includes('germany') || countryLower.includes('germeny') || idx === 1) return '/images/ukimage.png';
+                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 2) return '/images/uae_image.png';
                     if (countryLower.includes('aus') || idx === 3) return '/images/ausimage.png';
                     if (countryLower.includes('uk') || countryLower.includes('kingdom') || idx === 4) return '/images/ukimage.png';
-                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 5) return '/images/uae_image.png';
+                    if (countryLower.includes('canada') || idx === 5) return '/images/canadaimage.png';
                     return '/images/india_iamge.png';
                   };
 
@@ -414,7 +441,16 @@ export const Footer = () => {
                           <span>{office.country}</span>
                         </div>
                         <p className="text-slate-600 leading-relaxed text-[12.5px] font-[400] font-sans pr-14 line-clamp-4">
-                          {office.address}
+                          {(() => {
+                            const raw = office.address || '';
+                            if (raw.includes('Ganesh Meridian') || ((countryLower.includes('india') || idx === 0) && !raw.includes('Surat'))) {
+                              return '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004';
+                            }
+                            if (raw.includes('Ghoroob') || raw.includes('Mirdif') || ((countryLower.includes('uae') || countryLower.includes('dubai') || idx === 5) && !raw.includes('Ahli Residence'))) {
+                              return '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai';
+                            }
+                            return raw;
+                          })()}
                         </p>
                       </div>
                       <div className="absolute right-2.5 bottom-1.5 pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
@@ -436,11 +472,11 @@ export const Footer = () => {
 
       {/* 4. SOLID BLUE COPYRIGHT BAR ACROSS FULL WIDTH */}
       <div className="bg-[#006B8F] text-white py-3.5 px-4 sm:px-8 xl:px-10 mt-0 w-full">
-        <div className="w-full flex flex-col sm:flex-row items-center justify-between text-[13px] font-sans">
+        <div className="w-full flex flex-col-reverse sm:flex-row items-center justify-between text-[13px] font-sans">
           <div>
             {footerConfig?.copyrightText || `© ${currentYear} Firevy.Co. All rights reserved.`}
           </div>
-          <div className="flex items-center space-x-4 mt-2 sm:mt-0 text-blue-100">
+          <div className="flex items-center space-x-4 mb-2 sm:mb-0 text-blue-100">
             <Link to={footerConfig?.privacyPolicyLink || "/privacy-policy"} className="hover:text-white transition-colors">
               {footerConfig?.privacyPolicyText || "Privacy Policy"}
             </Link>

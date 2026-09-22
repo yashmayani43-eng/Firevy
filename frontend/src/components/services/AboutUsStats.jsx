@@ -6,19 +6,19 @@ export const AboutUsStats = ({ companyName = "Sapphire" }) => {
     {
       number: '23+',
       label: 'Years of Experience',
-      image: '/images/first.webp',
+      image: '/images/1.webp',
       alt: 'Years of Experience'
     },
     {
       number: '320+',
       label: '5-Star Clutch Reviews',
-      image: '/images/first.webp',
+      image: '/images/2.webp',
       alt: '5-Star Clutch Reviews'
     },
     {
       number: '20+',
       label: 'Fortunes 500 Companies',
-      image: '/images/third.webp',
+      image: '/images/3.webp',
       alt: 'Fortunes 500 Companies'
     },
     {
@@ -30,25 +30,25 @@ export const AboutUsStats = ({ companyName = "Sapphire" }) => {
     {
       number: '95%',
       label: 'Client Retention',
-      image: '/images/sixth.webp',
+      image: '/images/6.webp',
       alt: 'Client Retention Handshake'
     },
     {
       number: '18+',
       label: 'Industry Served',
-      image: '/images/fourth.webp',
+      image: '/images/4.webp',
       alt: 'Industry Facilities Served'
     },
     {
       number: '2800+',
       label: 'Satisfied Clients',
-      image: '/images/fifth.webp',
+      image: '/images/5.webp',
       alt: 'Satisfied Corporate Clients'
     },
     {
       number: '1500+',
       label: 'Completed Projects',
-      image: '/images/clienttestimonial3.webp',
+      image: '/images/7.webp',
       alt: 'Completed Projects Software Development'
     }
   ];

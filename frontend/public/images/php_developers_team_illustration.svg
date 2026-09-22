@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Card shadow -->
+    <filter id="card-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0284C7" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- 1. BASELINE DESK -->
+  <line x1="90" y1="470" x2="780" y2="470" stroke="#CBD5E1" stroke-width="1.5" />
+
+  <!-- 2. FLOATING TECH WINDOW BADGES & CODE PANELS -->
+  
+  <!-- Far Left Small Blue Box -->
+  <g transform="translate(100, 255)" filter="url(#card-shadow)">
+    <rect x="0" y="0" width="56" height="42" rx="4" fill="#A5F3FC" opacity="0.8" />
+    <circle cx="8" cy="7" r="1.5" fill="#0284C7" opacity="0.6" />
+    <circle cx="14" cy="7" r="1.5" fill="#0284C7" opacity="0.6" />
+    <circle cx="20" cy="7" r="1.5" fill="#0284C7" opacity="0.6" />
+  </g>
+
+  <!-- CSS Window Card (White with Cyan border) -->
+  <g transform="translate(160, 180)" filter="url(#card-shadow)">
+    <rect x="0" y="0" width="65" height="45" rx="5" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="1.5" />
+    <circle cx="8" cy="7" r="1.5" fill="#7DD3FC" />
+    <circle cx="14" cy="7" r="1.5" fill="#7DD3FC" />
+    <circle cx="20" cy="7" r="1.5" fill="#7DD3FC" />
+    <text x="32.5" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#38BDF8" letter-spacing="1">CSS</text>
+  </g>
+
+  <!-- HTML Window Card (Solid Blue) -->
+  <g transform="translate(268, 152)" filter="url(#card-shadow)">
+    <rect x="0" y="0" width="58" height="42" rx="5" fill="#38BDF8" />
+    <circle cx="8" cy="7" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="14" cy="7" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="20" cy="7" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    <text x="29" y="29" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="13" fill="#FFFFFF">HTML</text>
+  </g>
+
+  <!-- Large Central Translucent Code Window -->
+  <g transform="translate(328, 200)">
+    <rect x="0" y="0" width="168" height="98" rx="6" fill="#BAE6FD" opacity="0.6" stroke="#7DD3FC" stroke-width="1" />
+    <!-- Code Lines -->
+    <line x1="12" y1="15" x2="60" y2="15" stroke="#0284C7" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+    <line x1="12" y1="24" x2="120" y2="24" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+    <line x1="20" y1="32" x2="140" y2="32" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+    <line x1="20" y1="40" x2="90" y2="40" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+    <line x1="20" y1="48" x2="130" y2="48" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+    <line x1="12" y1="56" x2="80" y2="56" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+    <line x1="12" y1="64" x2="145" y2="64" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+    <line x1="20" y1="72" x2="110" y2="72" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+    
+    <!-- Vertical Connecting Line down to Laptop -->
+    <path d="M 23 98 L 23 182" stroke="#7DD3FC" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="23" cy="182" r="3" fill="#0284C7" />
+
+    <!-- Horizontal Connecting Line to Monitor -->
+    <path d="M 168 75 L 173 75 L 173 130" stroke="#7DD3FC" stroke-width="1.5" fill="none" stroke-dasharray="3 3" />
+  </g>
+
+  <!-- PHP Window Card (Solid Blue) -->
+  <g transform="translate(512, 162)" filter="url(#card-shadow)">
+    <rect x="0" y="0" width="54" height="38" rx="5" fill="#38BDF8" />
+    <circle cx="8" cy="7" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="14" cy="7" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="20" cy="7" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    <text x="27" y="27" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="13" fill="#FFFFFF">PHP</text>
+  </g>
+
+  <!-- Top Right Code Window Card -->
+  <g transform="translate(618, 152)" filter="url(#card-shadow)">
+    <rect x="0" y="0" width="86" height="50" rx="4" fill="#BAE6FD" opacity="0.65" />
+    <line x1="10" y1="12" x2="45" y2="12" stroke="#0284C7" stroke-width="1.5" opacity="0.4" />
+    <line x1="10" y1="20" x2="70" y2="20" stroke="#0284C7" stroke-width="1.5" opacity="0.4" />
+    <line x1="10" y1="28" x2="55" y2="28" stroke="#0284C7" stroke-width="1.5" opacity="0.4" />
+  </g>
+
+  <!-- </> Code Window Card (White with Cyan border) -->
+  <g transform="translate(698, 212)" filter="url(#card-shadow)">
+    <rect x="0" y="0" width="62" height="46" rx="5" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="1.5" />
+    <circle cx="8" cy="7" r="1.5" fill="#7DD3FC" />
+    <circle cx="14" cy="7" r="1.5" fill="#7DD3FC" />
+    <circle cx="20" cy="7" r="1.5" fill="#7DD3FC" />
+    <text x="31" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="17" fill="#38BDF8">&lt;/&gt;</text>
+  </g>
+
+
+  <!-- 3. LEFT DEVELOPER (FEMALE) -->
+  <g id="female-developer">
+    <!-- Backrest of chair -->
+    <path d="M 136 376 C 136 340, 162 340, 172 376 L 180 470 L 136 470 Z" fill="#E0F2FE" />
+    
+    <!-- Female Body Outer Jacket / Cardigan (Light blue checkered/striped) -->
+    <path d="M 160 355 C 175 350, 245 350, 275 375 L 275 470 L 160 470 Z" fill="#38BDF8" />
+    <!-- Fine lines texture on cardigan -->
+    <path d="M 180 365 L 180 470 M 200 360 L 200 470 M 220 360 L 220 470 M 240 365 L 240 470 M 260 375 L 260 470" stroke="#FFFFFF" stroke-width="1" opacity="0.5" stroke-dasharray="2 2" />
+    
+    <!-- Inner Shirt (Dark Blue) -->
+    <path d="M 212 345 L 248 345 L 248 470 L 212 470 Z" fill="#0284C7" />
+    <!-- Neck Collar -->
+    <path d="M 212 335 L 248 335 L 248 355 L 212 355 Z" fill="#0284C7" />
+
+    <!-- Head & Face -->
+    <ellipse cx="230" cy="305" rx="24" ry="26" fill="#FDBA74" />
+    <!-- Ear -->
+    <circle cx="208" cy="310" r="5" fill="#FDBA74" />
+    <!-- Eye & Eyebrow & Nose & Smile -->
+    <circle cx="238" cy="302" r="2" fill="#1E293B" />
+    <path d="M 233 296 C 236 294, 241 294, 243 296" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" fill="none" />
+    <path d="M 245 306 Q 248 309, 244 313" stroke="#EA580C" stroke-width="1.5" fill="none" />
+    <path d="M 235 318 Q 242 324, 248 317" stroke="#1E293B" stroke-width="1.5" fill="none" />
+
+    <!-- Hair (Dark Blue/Black Ponytail & Hairband) -->
+    <path d="M 210 280 C 235 270, 260 285, 255 315 C 248 300, 235 288, 210 290 Z" fill="#0F172A" />
+    <path d="M 205 312 C 185 300, 168 315, 172 340 C 182 345, 195 330, 208 322 Z" fill="#0F172A" />
+    <!-- Hairband/Scrunchie -->
+    <circle cx="204" cy="318" r="6" fill="#38BDF8" />
+
+    <!-- Arms & Hands typing on Laptop -->
+    <path d="M 235 385 Q 260 415, 285 410" stroke="#FDBA74" stroke-width="11" stroke-linecap="round" fill="none" />
+    <path d="M 220 380 Q 255 425, 275 420" stroke="#FDBA74" stroke-width="11" stroke-linecap="round" fill="none" />
+
+    <!-- Laptop (Teal/Dark Blue with Apple-like White Dot) -->
+    <g id="female-laptop">
+      <!-- Laptop Screen -->
+      <polygon points="280,380 405,380 400,442 275,442" fill="#0369A1" />
+      <polygon points="284,384 401,384 396,438 279,438" fill="#0284C7" />
+      <!-- Logo dot on back cover -->
+      <circle cx="340" cy="410" r="5" fill="#FFFFFF" />
+      <!-- Base keyboard -->
+      <polygon points="275,442 400,442 418,454 250,454" fill="#0F172A" />
+    </g>
+  </g>
+
+
+  <!-- 4. CENTER DESKTOP MONITOR -->
+  <g id="desktop-monitor">
+    <!-- Screen Outer Frame -->
+    <rect x="426" y="322" width="158" height="106" rx="4" fill="#0284C7" />
+    <!-- Display Panel (Blue) -->
+    <rect x="430" y="326" width="150" height="98" rx="2" fill="#38BDF8" />
+    <!-- Monitor Stand Base & Neck -->
+    <path d="M 485 428 L 500 428 L 500 460 L 485 460 Z" fill="#0284C7" />
+    <ellipse cx="492" cy="460" rx="32" ry="8" fill="#64748B" />
+  </g>
+
+
+  <!-- 5. RIGHT DEVELOPER (MALE) -->
+  <g id="male-developer">
+    <!-- Chair Backrest (Light Blue) -->
+    <path d="M 698 335 C 758 335, 782 360, 778 420 C 775 450, 768 470, 742 470 Z" fill="#DBEAFE" />
+
+    <!-- Body (Yellow T-shirt with Orange Trim) -->
+    <path d="M 620 395 C 640 340, 720 340, 748 395 L 748 470 L 620 470 Z" fill="#FACC15" />
+    <!-- Orange Neckline Trim -->
+    <path d="M 670 348 C 685 365, 705 365, 715 348" stroke="#FB923C" stroke-width="4" stroke-linecap="round" fill="none" />
+
+    <!-- Head & Face -->
+    <ellipse cx="682" cy="305" rx="26" ry="28" fill="#FDBA74" />
+    <!-- Ear -->
+    <circle cx="706" cy="310" r="5.5" fill="#FDBA74" />
+    <!-- Eye, eyebrow, nose, smile -->
+    <circle cx="664" cy="302" r="2.2" fill="#1E293B" />
+    <path d="M 658 295 C 662 293, 668 293, 672 295" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" fill="none" />
+    <path d="M 656 306 Q 652 310, 658 314" stroke="#EA580C" stroke-width="1.5" fill="none" />
+    <path d="M 662 320 Q 670 324, 676 318" stroke="#1E293B" stroke-width="1.5" fill="none" />
+
+    <!-- Hair (Dark Blue Wavy/Messy Hair) -->
+    <path d="M 655 288 C 650 262, 705 262, 712 285 C 720 300, 710 315, 704 315 C 702 300, 692 288, 655 288 Z" fill="#0F172A" />
+
+    <!-- Arms resting on desk & operating mouse -->
+    <path d="M 650 380 Q 580 435, 545 440" stroke="#FDBA74" stroke-width="14" stroke-linecap="round" fill="none" />
+    <path d="M 665 385 Q 610 445, 565 448" stroke="#FDBA74" stroke-width="12" stroke-linecap="round" fill="none" />
+
+    <!-- Mouse & Mat -->
+    <rect x="530" y="445" width="88" height="6" rx="2" fill="#0284C7" />
+    <ellipse cx="550" cy="442" rx="18" ry="10" fill="#0F172A" />
+  </g>
+</svg>

@@ -562,6 +562,7 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
                 As a premier Cloud Foundry engineering firm, Firevy.Co leverages enterprise-grade PaaS orchestration, lifecycle tooling, and cloud-native frameworks.
               </p>
             </div>
+<<<<<<< HEAD
           </div>
 
         {/* Full-Width Edge-to-Edge Cards Carousel Track */}
@@ -592,23 +593,30 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
                 </p>
               </div>
             ))}
+=======
+>>>>>>> 880b00602dbf8089825c1eb8d2a8d2d338987100
           </div>
-        </div>
 
-        {/* Bottom Center Navigation Arrows Matching Reference First Image */}
-        <div className="flex items-center justify-center space-x-6 mt-8 sm:mt-10">
-          <button
-            onClick={() => {
-              if (techScrollRef.current) {
-                techScrollRef.current.scrollBy({ left: -390, behavior: 'smooth' });
-              }
-            }}
-            aria-label="Previous technologies"
-            className="w-10 h-10 flex items-center justify-center text-slate-800 hover:text-black hover:scale-110 active:scale-95 transition-all cursor-pointer select-none text-2xl font-bold"
-          >
-            ←
-          </button>
+<<<<<<< HEAD
+=======
+          {/* Full-Width Edge-to-Edge Cards Carousel Track */}
+          <div className="relative overflow-hidden w-full select-none py-1">
+            <div
+              ref={techScrollRef}
+              className="flex gap-5 sm:gap-6 overflow-x-auto scrollbar-none px-4 sm:px-8 lg:px-12 scroll-smooth py-2"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {cuttingEdgeTechnologies.map((tech) => (
+                <div
+                  key={tech.id}
+                  className="w-[300px] sm:w-[340px] lg:w-[370px] shrink-0 rounded-[14px] bg-[#E1F3FD] p-6 sm:p-7 min-h-[220px] flex flex-col justify-start text-left select-none transition-all duration-300 hover:shadow-md hover:bg-[#D7EFFC] border border-[#CCE8FA] group cursor-pointer"
+                >
+                  {/* Top Icon */}
+                  <div className="mb-4 transition-transform duration-300 group-hover:scale-105">
+                    {tech.icon}
+                  </div>
 
+<<<<<<< HEAD
           <button
             onClick={() => {
               if (techScrollRef.current) {
@@ -621,6 +629,49 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
             →
           </button>
         </div>
+=======
+                  {/* Tech Title */}
+                  <h3 className="font-[800] text-[18px] sm:text-[19px] text-[#0B0F19] mb-2 leading-snug tracking-tight">
+                    {tech.title}
+                  </h3>
+
+                  {/* Tech Description */}
+                  <p className="font-normal text-[#334155] text-[13px] sm:text-[13.5px] leading-[1.65]">
+                    {tech.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Bottom Center Navigation Arrows Matching Reference First Image */}
+          <div className="flex items-center justify-center space-x-6 mt-8 sm:mt-10">
+            <button
+              onClick={() => {
+                if (techScrollRef.current) {
+                  techScrollRef.current.scrollBy({ left: -390, behavior: 'smooth' });
+                }
+              }}
+              aria-label="Previous technologies"
+              className="w-10 h-10 flex items-center justify-center text-slate-800 hover:text-black hover:scale-110 active:scale-95 transition-all cursor-pointer select-none text-2xl font-bold"
+            >
+              ←
+            </button>
+
+            <button
+              onClick={() => {
+                if (techScrollRef.current) {
+                  techScrollRef.current.scrollBy({ left: 390, behavior: 'smooth' });
+                }
+              }}
+              aria-label="Next technologies"
+              className="w-10 h-10 flex items-center justify-center text-slate-800 hover:text-black hover:scale-110 active:scale-95 transition-all cursor-pointer select-none text-2xl font-bold"
+            >
+              →
+            </button>
+>>>>>>> 979fa8c29cedbfb19c2154841c24c7bc0abe9e37
+          </div>
+>>>>>>> 880b00602dbf8089825c1eb8d2a8d2d338987100
         </Container>
       </section>
 

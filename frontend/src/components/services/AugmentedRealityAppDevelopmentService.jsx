@@ -282,47 +282,36 @@ export const AugmentedRealityAppDevelopmentService = () => {
       {/* ========================================================================= */}
       {/* 1. HERO SECTION (1:1 Reference Match)                                     */}
       {/* ========================================================================= */}
-      <section className="relative pt-6 pb-12 sm:pt-10 sm:pb-16 lg:pt-14 lg:pb-20 bg-white overflow-hidden">
+      <section className="relative pt-10 pb-14 sm:pt-14 sm:pb-16 lg:pt-16 lg:pb-20 bg-[#EFF6FC] overflow-hidden">
         <Container>
-          {/* Breadcrumbs */}
-          <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-500 mb-6">
-            <Link to="/" className="hover:text-[#005F96] transition-colors">Home</Link>
-            <span>/</span>
-            <Link to="/services" className="hover:text-[#005F96] transition-colors">Services</Link>
-            <span>/</span>
-            <span className="text-slate-400">AR/VR Development</span>
-            <span>/</span>
-            <span className="text-[#005F96] font-semibold">Augmented Reality App Development</span>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[#0B0F19] tracking-tight leading-[1.18] font-sans">
+              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#111827] tracking-tight leading-[1.2] font-sans">
                 Augmented Reality App<br className="hidden sm:inline" /> Development Services in USA
               </h1>
 
-              <p className="text-sm sm:text-base lg:text-[15.5px] text-slate-600 leading-relaxed max-w-2xl font-normal">
+              <p className="text-[15px] sm:text-[15.5px] text-[#4B5563] leading-[1.65] max-w-2xl font-normal">
                 By combining AR with more sophisticated forms of AR Development and ML algorithms, we can develop augmented reality applications. Our team of developers specializing in augmented reality can assist you in giving effect to your most audacious ideas.
               </p>
 
               {/* 4 Stats matching Image 1 100% (unboxed, bold blue text + label) */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-2">
                 <div>
-                  <div className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#005F96] tracking-tight">80+</div>
-                  <div className="text-xs sm:text-[13px] font-medium text-slate-800 mt-1 leading-snug">Mobile App<br />Developers</div>
+                  <div className="text-3xl lg:text-[36px] font-extrabold text-[#005F96] tracking-tight">80+</div>
+                  <div className="text-xs sm:text-[13px] font-semibold text-[#1F2430] mt-1.5 leading-[1.3]">Mobile App<br />Developers</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#005F96] tracking-tight">20+</div>
-                  <div className="text-xs sm:text-[13px] font-medium text-slate-800 mt-1 leading-snug">Fortunes 500<br />Companies</div>
+                  <div className="text-3xl lg:text-[36px] font-extrabold text-[#005F96] tracking-tight">20+</div>
+                  <div className="text-xs sm:text-[13px] font-semibold text-[#1F2430] mt-1.5 leading-[1.3]">Fortunes 500<br />Companies</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#005F96] tracking-tight">800+</div>
-                  <div className="text-xs sm:text-[13px] font-medium text-slate-800 mt-1 leading-snug">Project Completed in<br />Mobile Technology</div>
+                  <div className="text-3xl lg:text-[36px] font-extrabold text-[#005F96] tracking-tight">800+</div>
+                  <div className="text-xs sm:text-[13px] font-semibold text-[#1F2430] mt-1.5 leading-[1.3]">Project Completed in<br />Mobile Technology</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#005F96] tracking-tight">320+</div>
-                  <div className="text-xs sm:text-[13px] font-medium text-slate-800 mt-1 leading-snug">5-Star Clutch<br />Reviews</div>
+                  <div className="text-3xl lg:text-[36px] font-extrabold text-[#005F96] tracking-tight">320+</div>
+                  <div className="text-xs sm:text-[13px] font-semibold text-[#1F2430] mt-1.5 leading-[1.3]">5-Star Clutch Reviews</div>
                 </div>
               </div>
 
@@ -330,7 +319,7 @@ export const AugmentedRealityAppDevelopmentService = () => {
               <div className="pt-2">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center px-7 py-3.5 rounded-lg bg-[#005F96] hover:bg-[#004b78] text-white text-sm sm:text-base font-semibold transition-all duration-200 shadow-sm space-x-2"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-[#005F96] hover:bg-[#004d7c] text-white text-[15px] font-semibold transition-all duration-200 shadow-none space-x-2"
                 >
                   <span>Discuss Your Project</span>
                   <ArrowRight className="w-4 h-4" />
@@ -339,12 +328,12 @@ export const AugmentedRealityAppDevelopmentService = () => {
             </div>
 
             {/* Right Hero Illustration matching Image 1 1:1 */}
-            <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[480px]">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end items-center">
+              <div className="relative w-full max-w-[540px]">
                 <img
                   src="/images/augmented_reality_hero.svg"
                   alt="Augmented Reality App Development Services in USA"
-                  className="w-full h-auto"
+                  className="w-full h-auto object-contain"
                   loading="eager"
                 />
               </div>

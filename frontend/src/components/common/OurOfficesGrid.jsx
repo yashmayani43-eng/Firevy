@@ -7,14 +7,14 @@ const offices = [
     flagUrl: 'https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg',
   },
   {
-    country: 'USA',
-    address: '5004 NW 116th Ave,Coral Springs,Florida, FL 33076',
-    flagUrl: 'https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg',
+    country: 'Germany',
+    address: 'walter meckauer str 11, 90478 nurenberg',
+    flagUrl: '/images/germany_office.svg',
   },
   {
-    country: 'Canada',
-    address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8',
-    flagUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg',
+    country: 'UAE',
+    address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai',
+    flagUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg',
   },
   {
     country: 'Australia',
@@ -27,9 +27,9 @@ const offices = [
     flagUrl: 'https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg',
   },
   {
-    country: 'UAE',
-    address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai',
-    flagUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg',
+    country: 'Canada',
+    address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8',
+    flagUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg',
   }
 ];
 
@@ -76,13 +76,21 @@ const UAEMap = () => (
   </svg>
 );
 
+const GermanyMap = () => (
+  <svg viewBox="0 0 200 200" className="w-24 h-24 sm:w-28 sm:h-28 opacity-40">
+    <path d="M40 30 L70 25 L100 20 L130 25 L150 40 L160 70 L150 100 L140 130 L120 160 L90 170 L60 160 L45 130 L35 90 Z"
+      fill="#D4B59E" />
+  </svg>
+);
+
 const countryMapComponents = {
   'India(HQ)': IndiaMap,
   'USA': USAMap,
   'Canada': CanadaMap,
   'Australia': AustraliaMap,
   'UK': UKMap,
-  'UAE': UAEMap
+  'UAE': UAEMap,
+  'Germany': GermanyMap
 };
 
 const OurOfficesGrid = () => {

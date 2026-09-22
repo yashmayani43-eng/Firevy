@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Container from '../common/Container';
 import { ArrowUpRight } from 'lucide-react';
 
-export const LeverageExpertiseGridSection = ({ brandName = 'Sapphire' }) => {
+export const LeverageExpertiseGridSection = ({ brandName = 'Sapphire', title }) => {
   const [activeTab, setActiveTab] = useState('In Demand');
 
   const tabs = ['In Demand', 'Mobile', 'Web', 'AI'];
@@ -175,7 +175,7 @@ export const LeverageExpertiseGridSection = ({ brandName = 'Sapphire' }) => {
         {/* Section Heading */}
         <div className="text-center max-w-4xl mx-auto mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight">
-            Leverage The Expertise of {brandName} Dedicated Developers
+            {title || `Employ the Advanced Proficiency of ${brandName}’s Dedicated Development Team`}
           </h2>
         </div>
 

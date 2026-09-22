@@ -65,6 +65,7 @@ const UberTransportationIcon = Car;
 const UberFemaleSafetyIcon = ShieldCheck;
 const UberCloudKitchenIcon = Utensils;
 const UberChildSafetyIcon = Baby;
+const UberCaregiversIcon = HeartHandshake;
 const FixedPriceIcon = () => <img src="/images/ic_fixed_price.svg" alt="Fixed Price" className="w-12 h-12 object-contain mx-auto" />;
 const TimeMaterialIcon = () => <img src="/images/ic_time_material.svg" alt="Time Material" className="w-12 h-12 object-contain mx-auto" />;
 const DedicatedTeamIcon = () => <img src="/images/ic_full_time.svg" alt="Dedicated Team" className="w-12 h-12 object-contain mx-auto" />;

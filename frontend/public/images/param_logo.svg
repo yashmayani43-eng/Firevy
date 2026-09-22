@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <g transform="translate(15, 10)">
+    <!-- Top Face -->
+    <polygon points="30,5 55,20 30,35 5,20" fill="#E53935" />
+    <!-- Left Face -->
+    <polygon points="5,20 30,35 30,65 5,50" fill="#C62828" />
+    <!-- Right Face -->
+    <polygon points="30,35 55,20 55,50 30,65" fill="#B71C1C" />
+    <!-- Inner cut/accent -->
+    <polygon points="30,22 42,29 30,36 18,29" fill="#FF5252" />
+  </g>
+  <text x="85" y="48" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#B71C1C" letter-spacing="3">PARAM</text>
+</svg>

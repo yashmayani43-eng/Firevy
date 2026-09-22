@@ -71,6 +71,37 @@ const formatHomeResponse = (sectionsOrder, sections) => {
     ...initialHomePageData.sections,
     ...(sections && typeof sections === 'object' ? sections : {})
   };
+
+  if (secs.featuredInLogosGrid && (secs.featuredInLogosGrid.title === 'Featured In Leading Global Publications' || secs.featuredInLogosGrid.title === 'Featured In')) {
+    secs.featuredInLogosGrid.title = 'We Have Been Featured In';
+  }
+
+  if (secs.footerSection) {
+    if (!secs.footerSection.salesContact) secs.footerSection.salesContact = {};
+    secs.footerSection.salesContact.phoneIndia = '+91 7069370629';
+    secs.footerSection.salesContact.phoneUS = '';
+    secs.footerSection.salesContact.email = 'contact@firevy.co';
+
+    if (!secs.footerSection.careerContact) secs.footerSection.careerContact = {};
+    secs.footerSection.careerContact.phone = '+91 7069370623';
+    secs.footerSection.careerContact.phone1 = '+91 7069370623';
+    secs.footerSection.careerContact.phone2 = '+91 7069370627';
+    secs.footerSection.careerContact.email = 'careers@firevy.co';
+
+    if (Array.isArray(secs.footerSection.offices)) {
+      secs.footerSection.offices = secs.footerSection.offices.map((office, idx) => {
+        const cLower = (office.country || '').toLowerCase();
+        let addr = office.address;
+        if (cLower.includes('india') || idx === 0 || (addr && addr.includes('Ganesh Meridian'))) {
+          addr = '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004';
+        } else if (cLower.includes('uae') || cLower.includes('dubai') || idx === 5 || (addr && (addr.includes('Ghoroob') || addr.includes('Mirdif')))) {
+          addr = '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai';
+        }
+        return { ...office, address: addr };
+      });
+    }
+  }
+
   const list = buildSectionsList(baseOrder, secs);
 
   return {
