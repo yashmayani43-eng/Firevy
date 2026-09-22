@@ -74,6 +74,7 @@ import HireDataScientistDevelopersService from '../components/services/HireDataS
 import HireMachineLearningEngineerService from '../components/services/HireMachineLearningEngineerService';
 import SharePointDevelopmentService from '../components/services/SharePointDevelopmentService';
 import PowerAppsDevelopmentService from '../components/services/PowerAppsDevelopmentService';
+import PowerAutomateDevelopmentService from '../components/services/PowerAutomateDevelopmentService';
 import KotlinAppDevelopmentService from '../components/services/KotlinAppDevelopmentService';
 import HybridAppDevelopmentService from '../components/services/HybridAppDevelopmentService';
 import NativeAppDevelopmentService from '../components/services/NativeAppDevelopmentService';
@@ -148,6 +149,7 @@ export const ServiceDetails = () => {
   const pathSlug = pathSegments.length > 1 ? pathSegments[pathSegments.length - 1] : pathSegments[0] || '';
   const rawSlug = slug || pathSlug || '';
   const currentSlug = decodeURIComponent(rawSlug).toLowerCase();
+  const normalizedSlug = currentSlug.replace(/_/g, '-').replace(/\s+/g, '-');
 
   const [service, setService] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -332,10 +334,14 @@ export const ServiceDetails = () => {
     currentSlug === 'services/windows-11-app-development';
 
   const isWindowsApp = !isWindows11 && (
-    currentSlug === 'windows-app-development' ||
-    currentSlug === 'windows-app' ||
-    currentSlug === 'windows-application-development' ||
-    currentSlug === 'services/windows-app-development'
+    normalizedSlug === 'windows-app-development' ||
+    normalizedSlug === 'windows-app' ||
+    normalizedSlug === 'windows-application-development' ||
+    normalizedSlug.includes('windows-app') ||
+    currentSlug.includes('windows_app') ||
+    currentSlug.includes('windows app') ||
+    normalizedSlug === 'services/windows-app-development' ||
+    currentSlug === 'services/windows_app_development'
   );
 
   const isB2BMobileApp = currentSlug === 'b2b-mobile-app-development' ||
@@ -410,15 +416,17 @@ export const ServiceDetails = () => {
     currentSlug === 'services/patient-management-system' ||
     currentSlug.includes('patient-management');
 
-  const isDigitalTwin = currentSlug === 'digital-twin-solutions-company' ||
-    currentSlug === 'digital-twin-solutions' ||
-    currentSlug === 'digital-twin' ||
-    currentSlug === 'digital-twin-services' ||
-    currentSlug === 'digital-twin-company' ||
-    currentSlug === 'digital-twin-development' ||
-    currentSlug === 'services/digital-twin-solutions-company' ||
-    currentSlug === 'services/digital-twin-solutions' ||
-    currentSlug.includes('digital-twin');
+  const isDigitalTwin = normalizedSlug === 'digital-twin-solutions-company' ||
+    normalizedSlug === 'digital-twin-solutions' ||
+    normalizedSlug === 'digital-twin' ||
+    normalizedSlug === 'digital-twin-services' ||
+    normalizedSlug === 'digital-twin-company' ||
+    normalizedSlug === 'digital-twin-development' ||
+    normalizedSlug === 'services/digital-twin-solutions-company' ||
+    normalizedSlug === 'services/digital-twin-solutions' ||
+    normalizedSlug.includes('digital-twin') ||
+    currentSlug.includes('digital_twin') ||
+    currentSlug.includes('digital twin');
 
   const isArtistCollaboration = currentSlug === 'artist-collaboration-platform-development' ||
     currentSlug === 'artist-collaboration-platform' ||
@@ -427,13 +435,15 @@ export const ServiceDetails = () => {
     currentSlug === 'services/artist-collaboration-platform' ||
     currentSlug.includes('artist-collaboration');
 
-  const isPrototypeDevelopment = currentSlug === 'prototype-development-services' ||
-    currentSlug === 'prototype-development-service' ||
-    currentSlug === 'prototype-development' ||
-    currentSlug.includes('prototype-development') ||
-    currentSlug === 'services/prototype-development-services' ||
-    currentSlug === 'services/prototype-development-service' ||
-    currentSlug === 'services/prototype-development';
+  const isPrototypeDevelopment = normalizedSlug === 'prototype-development-services' ||
+    normalizedSlug === 'prototype-development-service' ||
+    normalizedSlug === 'prototype-development' ||
+    normalizedSlug.includes('prototype-development') ||
+    currentSlug.includes('prototype_development') ||
+    currentSlug.includes('prototype development') ||
+    normalizedSlug === 'services/prototype-development-services' ||
+    normalizedSlug === 'services/prototype-development-service' ||
+    normalizedSlug === 'services/prototype-development';
 
   const isCloudDevelopment = currentSlug === 'cloud-development' ||
     currentSlug === 'cloud-application-development' ||
@@ -696,15 +706,23 @@ export const ServiceDetails = () => {
     currentSlug.includes('hire-power-automate') ||
     currentSlug.includes('hire-powerautomate');
 
-  const isItConsulting = currentSlug === 'it-consulting-services' ||
-    currentSlug.includes('it-consulting') ||
+  const isItConsulting = normalizedSlug === 'it-consulting-services' ||
+    normalizedSlug === 'it-consulting-service' ||
+    normalizedSlug === 'it-consulting' ||
+    normalizedSlug.includes('it-consulting') ||
+    currentSlug.includes('it_consulting') ||
+    currentSlug.includes('it consulting') ||
     currentSlug === 'tech-consulting-services' ||
-    currentSlug === 'services/it-consulting-services';
+    normalizedSlug === 'services/it-consulting-services' ||
+    currentSlug === 'services/it_consulting_services';
 
-  const isAppConsulting = currentSlug === 'app-development-consulting' ||
-    currentSlug === 'app-development-consulting-services' ||
-    currentSlug.includes('app-development-consulting') ||
-    currentSlug === 'services/app-development-consulting';
+  const isAppConsulting = normalizedSlug === 'app-development-consulting' ||
+    normalizedSlug === 'app-development-consulting-services' ||
+    normalizedSlug.includes('app-development-consulting') ||
+    currentSlug.includes('app_development_consulting') ||
+    currentSlug.includes('app development consulting') ||
+    normalizedSlug === 'services/app-development-consulting' ||
+    currentSlug === 'services/app_development_consulting';
 
   const isCovid = (slug || currentSlug) && (
     (slug && slug.toLowerCase().includes('covid')) ||
@@ -741,10 +759,14 @@ export const ServiceDetails = () => {
     currentSlug === 'services/on-demand-app-development'
   );
 
-  const isStartupConsulting = currentSlug === 'startup-consulting-services' ||
-    currentSlug === 'startup-consulting' ||
-    currentSlug.includes('startup-consulting') ||
-    currentSlug === 'services/startup-consulting-services';
+  const isStartupConsulting = normalizedSlug === 'startup-consulting-services' ||
+    normalizedSlug === 'startup-consulting-service' ||
+    normalizedSlug === 'startup-consulting' ||
+    normalizedSlug.includes('startup-consulting') ||
+    currentSlug.includes('startup_consulting') ||
+    currentSlug.includes('startup consulting') ||
+    normalizedSlug === 'services/startup-consulting-services' ||
+    currentSlug === 'services/startup_consulting_services';
 
   const isEpicorErpConsulting = currentSlug === 'epicor-erp-consulting-services' ||
     currentSlug === 'epicor-erp-consulting' ||
@@ -925,7 +947,7 @@ export const ServiceDetails = () => {
   const isApi = (currentSlug.includes('hire-api') || currentSlug.includes('api-developer') || currentSlug.includes('api-developers')) && !currentSlug.includes('fastapi') && !currentSlug.includes('fast-api');
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
   const isMernStack = currentSlug.includes('mern-stack') || currentSlug.includes('hire-mern-stack') || currentSlug === 'services/hire-mern-stack-developers' || currentSlug === 'hire-mern-stack-developers' || currentSlug === 'services/hire-mern-stack-developer' || currentSlug === 'hire-mern-stack-developer' || currentSlug === 'mern-stack-development' || currentSlug === 'services/mern-stack-development';
-  const isBackendComingSoon = isBackendServiceSlug(currentSlug);
+  const isBackendComingSoon = !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
 
   useEffect(() => {
     if (isBackendComingSoon) {
@@ -933,13 +955,37 @@ export const ServiceDetails = () => {
       window.scrollTo(0, 0);
       return;
     }
-    if (!isMernStack && !isWindows11 && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
+    if (!isMernStack && !isWindows11 && !isWindowsApp && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
       fetchServiceDetails();
     } else {
       setLoading(false);
     }
     window.scrollTo(0, 0);
   }, [currentSlug, isBackendComingSoon]);
+
+  if (isItConsulting) {
+    return <ItConsultingServices />;
+  }
+
+  if (isAppConsulting) {
+    return <AppDevelopmentConsultingService />;
+  }
+
+  if (isStartupConsulting) {
+    return <StartupConsultingServices />;
+  }
+
+  if (isDigitalTwin) {
+    return <DigitalTwinSolutionsService />;
+  }
+
+  if (isPrototypeDevelopment) {
+    return <PrototypeDevelopmentService />;
+  }
+
+  if (isWindowsApp) {
+    return <WindowsAppDevelopmentService />;
+  }
 
   if (isBackendComingSoon) {
     return <BackendComingSoonService slug={currentSlug} />;
@@ -1181,10 +1227,6 @@ export const ServiceDetails = () => {
     return <Windows11AppDevelopmentService />;
   }
 
-  if (isWindowsApp) {
-    return <WindowsAppDevelopmentService />;
-  }
-
   if (isB2BMobileApp) {
     return <B2BMobileAppDevelopmentService />;
   }
@@ -1247,18 +1289,6 @@ export const ServiceDetails = () => {
 
   if (isNet) {
     return <DotNetDevelopmentService />;
-  }
-
-  if (isItConsulting) {
-    return <ItConsultingServices />;
-  }
-
-  if (isAppConsulting) {
-    return <AppDevelopmentConsultingService />;
-  }
-
-  if (isStartupConsulting) {
-    return <StartupConsultingServices />;
   }
 
   if (isEpicorErpConsulting) {

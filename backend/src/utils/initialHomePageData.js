@@ -1031,13 +1031,15 @@ export const initialHomePageData = {
       salesContact: {
         title: 'Contact For Sales',
         email: 'contact@firevy.co',
-        phoneIndia: 'IN: +91 7069370629',
+        phoneIndia: '+91 7069370629',
         phoneUS: ''
       },
       careerContact: {
         title: 'Contact for Career (Jobs)',
         email: 'careers@firevy.co',
-        phone: '+91-909-997-6034'
+        phone: '+91 7069370623',
+        phone1: '+91 7069370623',
+        phone2: '+91 7069370627'
       },
       ratings: {
         googleScore: '5.0',
@@ -1052,7 +1054,7 @@ export const initialHomePageData = {
           id: 'office_in',
           country: 'India(HQ)',
           flag: '🇮🇳',
-          address: 'C/102-103, Ganesh Meridian, Opp. Kargil Petrol Pump, S.G. Highway, Ahmedabad - 380060, Gujarat, INDIA'
+          address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004'
         },
         {
           id: 'office_us',
@@ -1082,7 +1084,7 @@ export const initialHomePageData = {
           id: 'office_ae',
           country: 'UAE',
           flag: '🇦🇪',
-          address: 'A-21, Building 21, Ghoroob, Mirdif Dubai, United Arab Emirates'
+          address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai'
         }
       ],
       socialLinks: {
