@@ -622,7 +622,6 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
             →
           </button>
         </div>
-        </Container>
       </section>
 
       {/* ========================================================================= */}
