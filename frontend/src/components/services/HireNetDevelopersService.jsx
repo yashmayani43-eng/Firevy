@@ -35,14 +35,14 @@ import {
   Coins, Zap, Phone
 } from 'lucide-react';
 
-export const HireDjangoDevelopersService = () => {
+export const HireNetDevelopersService = () => {
   const [responsibilityTab, setResponsibilityTab] = useState('sapphire');
 
   return (
     <>
       <SEO
-        title="Hire Django Developers | Top Dedicated Django Programmers Firevy.co"
-        description="Hire dedicated Django developers from Firevy.co starting at $21/hr. Expert Python Django, DRF, Celery, and Scalable REST API architects for enterprise web applications."
+        title="Hire .NET Developers | Top Dedicated ASP.NET Core Programmers Firevy.co"
+        description="Hire dedicated .NET developers from Firevy.co starting at $21/hr. Expert C#, ASP.NET Core, Azure Cloud, Microservices, and SQL Server architects for enterprise web applications."
       />
 
       {/* 1. HERO SECTION (EXACT MATCH TO REFERENCE SCREENSHOT) */}
@@ -52,14 +52,14 @@ export const HireDjangoDevelopersService = () => {
             {/* Left Column: Title + Description + 4 Stats + Teal Pill CTA */}
             <div className="lg:col-span-7 space-y-6">
               <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Hire Django Developers
+                Hire .NET Developers
               </h1>
 
               <p className="text-sm sm:text-[15px] text-[#475569] font-normal leading-[1.7] max-w-xl font-sans">
-                Django is a free and open-source framework that gives developers the ability to build web applications that are not only safe but also highly scalable.
+                .NET is a powerful, open-source cross-platform framework that gives developers the ability to build enterprise web applications that are high-performing, resilient, and safe.
               </p>
 
-              {/* 4 Stat Counters Grid (Matching Screenshot) */}
+              {/* 4 Stat Counters Grid (Matching Reference Screenshot) */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-2 max-w-xl">
                 <div>
                   <div className="text-2xl sm:text-[32px] font-[900] text-[#006E90] font-sans leading-none">200+</div>
@@ -113,24 +113,20 @@ export const HireDjangoDevelopersService = () => {
               </div>
             </div>
 
-            {/* Right Column: Image illustration (Matching Reference Screenshot) */}
+            {/* Right Column: Image illustration (Transparent background SVG) */}
             <div className="lg:col-span-5 flex items-center justify-center relative">
               <div className="relative w-full max-w-[540px] mx-auto flex items-center justify-center">
                 <img
-                  src="/images/hire_django_hero_vector.svg"
-                  alt="Hire Django Developers Illustration"
+                  src="/images/hire_net_hero_vector.svg"
+                  alt="Hire .NET Developers Illustration"
                   className="w-full h-auto object-contain bg-transparent transition-transform duration-500 hover:scale-102 cursor-pointer"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = '/images/hire_django_hero_illustration.png';
-                  }}
                 />
               </div>
             </div>
           </div>
         </Container>
 
-        {/* Floating Right Side Contact Buttons (Fixed to Right Edge, Matching Screenshot) */}
+        {/* Floating Right Side Contact Buttons */}
         <div className="hidden md:flex flex-col space-y-1.5 absolute right-0 top-1/2 -translate-y-1/2 z-30">
           <a
             href="tel:+1234567890"
@@ -156,21 +152,17 @@ export const HireDjangoDevelopersService = () => {
       {/* 2. CLIENT LOGOS MARQUEE BAR */}
       <TrustMarquee />
 
-      {/* 3. SECTION 1: Best Django Developers Available With Us */}
+      {/* 3. SECTION 1: Hire .NET Developers For Your Next Project */}
       <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Image Illustration (Transparent background, developer team holding Python & Django badges) */}
+            {/* Left Column: Image Illustration (Transparent background) */}
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative w-full max-w-[500px] flex items-center justify-center p-2 bg-transparent">
                 <img
-                  src="/images/django_developers_python_team_illustration.svg"
-                  alt="Best Django Developers Available With Us Illustration"
+                  src="/images/net_developers_team_illustration.png"
+                  alt="Hire .NET Developers For Your Next Project Illustration"
                   className="w-full h-auto object-contain bg-transparent transition-transform duration-300 hover:scale-102 cursor-pointer"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = '/images/django_developers_python_team_illustration.png';
-                  }}
                 />
               </div>
             </div>
@@ -178,10 +170,10 @@ export const HireDjangoDevelopersService = () => {
             {/* Right Column: Title + Paragraph */}
             <div className="lg:col-span-6 text-left space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Hire Remote Django Developers From Us
+                Hire .NET Developers For Your Next Project
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans font-normal">
-                Hire Django Developer to fulfill your company's needs for a robust web application, regardless of whether you run a sole proprietorship, a small company, or an established corporation. If you are considering basing your next web application on this Python-based framework, you should consider working with us at Python Django Development Company. You may Hire Django Programmers that will work on your project, and you can use technologies like Time Doctor to oversee the development process while maintaining complete transparency. Please contact us if you are looking to hire Python Django developers.
+                Hire ASP.NET Core AI Developers so you may collaborate with knowledgeable .NET programmers who can create clever software applications. Select the finest in the industry by hand.For your cutting-edge apps, you need Dot Net programmers with experience in C#, F#, Visual Basic, and the newest technologies.
               </p>
             </div>
           </div>
@@ -196,7 +188,7 @@ export const HireDjangoDevelopersService = () => {
               Our Flexible Hiring Models: Find the Perfect Fit For Your Project
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-normal mt-2.5 font-sans">
-              Hire Django Developers from Firevy.co Starts from,
+              Hire .NET Developers from Firevy.co Starts from,
             </p>
           </div>
 
@@ -355,7 +347,7 @@ export const HireDjangoDevelopersService = () => {
               Hire Dedicated Developers To Empower Your Business with our Development Proficiency
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-normal mt-2.5 font-sans">
-              Hire Django Developers to meet your business perks by leveraging our technical elegance.
+              Hire .NET Developers to meet your business perks by leveraging our technical elegance.
             </p>
           </div>
 
@@ -412,34 +404,30 @@ export const HireDjangoDevelopersService = () => {
         </Container>
       </section>
 
-      {/* 6. SECTION 4: Brief About Our Django Developer */}
+      {/* 6. SECTION 4: Brief About Our .NET Developer */}
       <section className="py-16 bg-[#F8FAFC] border-b border-slate-200/80 text-slate-900 font-sans">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Text */}
             <div className="lg:col-span-7 text-left space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Brief About Our Django Developer
+                Brief About Our .NET Developer
               </h2>
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
-                Our Django developers have rich expertise in database administration using PostgreSQL and SQLite. Our pool of talented developers has deep knowledge of Python 3, Django REST Framework, and asynchronous task queues with Celery & Redis.
+                Our .NET developers have rich expertise in database administration using SQL Server, PostgreSQL, and Entity Framework Core. Our pool of talented developers has deep knowledge of C#, ASP.NET Core MVC, Web API, and asynchronous messaging queues with Azure Service Bus & MassTransit.
               </p>
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
-                Our Django developers have wide expertise in technologies such as Docker, GraphQL, Swagger/OpenAPI, and AWS deployment. You can hire our backend developers who have rich expertise in a variety of Python web frameworks.
+                Our .NET developers have wide expertise in technologies such as Docker, Kubernetes, GraphQL, Swagger/OpenAPI, and Azure/AWS cloud deployment. You can hire our backend developers who have rich expertise in a variety of Microsoft .NET web frameworks.
               </p>
             </div>
 
-            {/* Right Column: Character Vector Illustration (No card background, transparent) */}
+            {/* Right Column: Character Vector Illustration (Transparent background) */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-[500px] flex items-center justify-center p-2 bg-transparent">
                 <img
-                  src="/images/django_developers_python_team_illustration.png"
-                  alt="Brief About Our Django Developer Illustration"
+                  src="/images/net_developers_responsive_illustration.png"
+                  alt="Brief About Our .NET Developer Illustration"
                   className="w-full h-auto object-contain bg-transparent transition-transform duration-300 hover:scale-102 cursor-pointer"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = '/images/django_developers_python_team_illustration.svg';
-                  }}
                 />
               </div>
             </div>
@@ -455,7 +443,7 @@ export const HireDjangoDevelopersService = () => {
             <div className="text-left max-w-sm shrink-0">
               <h3 className="text-xl sm:text-2xl lg:text-[28px] font-[900] text-white leading-tight font-sans tracking-tight">
                 World Wide Top Rated<br />
-                Django Development<br />
+                .NET Development<br />
                 Company on Clutch
               </h3>
             </div>
@@ -478,100 +466,178 @@ export const HireDjangoDevelopersService = () => {
               </svg>
             </div>
 
-            {/* Badges Row */}
-            <div className="flex items-center space-x-2 sm:space-x-3 overflow-x-auto scrollbar-none py-2">
-              <div className="w-20 h-28 bg-[#182330] rounded-b-xl border border-slate-400/40 p-1.5 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <span className="text-[7px] font-bold text-slate-300 uppercase tracking-widest mt-0.5">TOP</span>
-                <span className="text-[6.5px] font-black text-slate-200 uppercase leading-none">MOBILE APP</span>
-                <span className="text-sm font-black text-white tracking-tight font-serif my-0.5">Clutch</span>
-                <div className="w-full bg-slate-700/60 rounded py-0.5 text-[6.5px] font-extrabold text-slate-200 uppercase">
-                  DEVELOPERS<br />2022
-                </div>
-              </div>
+            {/* Badges Marquee Track */}
+            <div className="overflow-hidden relative flex-1 min-w-0">
+              <div className="flex w-max items-center space-x-3.5 py-2 animate-marquee hover:[animation-play-state:paused]">
+                {/* Track 1 Badges */}
+                <div className="flex items-center space-x-3.5 shrink-0">
+                  <div className="w-20 h-28 bg-[#182330] rounded-b-xl border border-slate-400/40 p-1.5 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <span className="text-[7px] font-bold text-slate-300 uppercase tracking-widest mt-0.5">TOP</span>
+                    <span className="text-[6.5px] font-black text-slate-200 uppercase leading-none">MOBILE APP</span>
+                    <span className="text-sm font-black text-white tracking-tight font-serif my-0.5">Clutch</span>
+                    <div className="w-full bg-slate-700/60 rounded py-0.5 text-[6.5px] font-extrabold text-slate-200 uppercase">
+                      DEVELOPERS<br />2022
+                    </div>
+                  </div>
 
-              <div className="w-20 h-28 bg-[#1B263B] rounded-b-xl border border-amber-500/40 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <span className="text-xs font-black text-white tracking-tight font-serif mt-0.5">Clutch</span>
-                <span className="text-[6.5px] font-bold text-slate-300 uppercase">TOP COMPANY</span>
-                <div className="w-full bg-[#B89762] text-slate-950 font-black text-[7px] py-1 rounded-sm uppercase tracking-tighter">
-                  DEVELOPMENT<br />2022
-                </div>
-                <span className="text-[6.5px] font-bold text-slate-400 uppercase mb-0.5">INDIA</span>
-              </div>
+                  <div className="w-20 h-28 bg-[#1B263B] rounded-b-xl border border-amber-500/40 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <span className="text-xs font-black text-white tracking-tight font-serif mt-0.5">Clutch</span>
+                    <span className="text-[6.5px] font-bold text-slate-300 uppercase">TOP COMPANY</span>
+                    <div className="w-full bg-[#B89762] text-slate-950 font-black text-[7px] py-1 rounded-sm uppercase tracking-tighter">
+                      DEVELOPMENT<br />2022
+                    </div>
+                    <span className="text-[6.5px] font-bold text-slate-400 uppercase mb-0.5">INDIA</span>
+                  </div>
 
-              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
-                  MOST REVIEWED
-                </div>
-                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
-                  ★
-                </div>
-                <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
-                  MOBILE APP<br />DEVELOPMENT<br />COMPANIES
-                </span>
-                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
-              </div>
+                  <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                      MOST REVIEWED
+                    </div>
+                    <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                      ★
+                    </div>
+                    <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                      MOBILE APP<br />DEVELOPMENT<br />COMPANIES
+                    </span>
+                    <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+                  </div>
 
-              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
-                  MOST REVIEWED
-                </div>
-                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
-                  ★
-                </div>
-                <span className="text-[6px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
-                  MICROSOFT<br />SHAREPOINT<br />CONSULTING
-                </span>
-                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
-              </div>
+                  <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                      MOST REVIEWED
+                    </div>
+                    <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                      ★
+                    </div>
+                    <span className="text-[6px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                      MICROSOFT<br />SHAREPOINT<br />CONSULTING
+                    </span>
+                    <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+                  </div>
 
-              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
-                  MOST REVIEWED
-                </div>
-                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
-                  ★
-                </div>
-                <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
-                  SOFTWARE<br />DEVELOPERS<br />COMPANIES
-                </span>
-                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
-              </div>
+                  <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                      MOST REVIEWED
+                    </div>
+                    <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                      ★
+                    </div>
+                    <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                      SOFTWARE<br />DEVELOPERS<br />COMPANIES
+                    </span>
+                    <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+                  </div>
 
-              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
-                  MOST REVIEWED
+                  <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                      MOST REVIEWED
+                    </div>
+                    <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                      ★
+                    </div>
+                    <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                      WEB<br />DEVELOPERS<br />COMPANIES
+                    </span>
+                    <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+                  </div>
                 </div>
-                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
-                  ★
+
+                {/* Track 2 Badges for Continuous Seamless Loop */}
+                <div className="flex items-center space-x-3.5 shrink-0" aria-hidden="true">
+                  <div className="w-20 h-28 bg-[#182330] rounded-b-xl border border-slate-400/40 p-1.5 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <span className="text-[7px] font-bold text-slate-300 uppercase tracking-widest mt-0.5">TOP</span>
+                    <span className="text-[6.5px] font-black text-slate-200 uppercase leading-none">MOBILE APP</span>
+                    <span className="text-sm font-black text-white tracking-tight font-serif my-0.5">Clutch</span>
+                    <div className="w-full bg-slate-700/60 rounded py-0.5 text-[6.5px] font-extrabold text-slate-200 uppercase">
+                      DEVELOPERS<br />2022
+                    </div>
+                  </div>
+
+                  <div className="w-20 h-28 bg-[#1B263B] rounded-b-xl border border-amber-500/40 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <span className="text-xs font-black text-white tracking-tight font-serif mt-0.5">Clutch</span>
+                    <span className="text-[6.5px] font-bold text-slate-300 uppercase">TOP COMPANY</span>
+                    <div className="w-full bg-[#B89762] text-slate-950 font-black text-[7px] py-1 rounded-sm uppercase tracking-tighter">
+                      DEVELOPMENT<br />2022
+                    </div>
+                    <span className="text-[6.5px] font-bold text-slate-400 uppercase mb-0.5">INDIA</span>
+                  </div>
+
+                  <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                      MOST REVIEWED
+                    </div>
+                    <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                      ★
+                    </div>
+                    <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                      MOBILE APP<br />DEVELOPMENT<br />COMPANIES
+                    </span>
+                    <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+                  </div>
+
+                  <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                      MOST REVIEWED
+                    </div>
+                    <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                      ★
+                    </div>
+                    <span className="text-[6px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                      MICROSOFT<br />SHAREPOINT<br />CONSULTING
+                    </span>
+                    <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+                  </div>
+
+                  <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                      MOST REVIEWED
+                    </div>
+                    <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                      ★
+                    </div>
+                    <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                      SOFTWARE<br />DEVELOPERS<br />COMPANIES
+                    </span>
+                    <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+                  </div>
+
+                  <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
+                    <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
+                      MOST REVIEWED
+                    </div>
+                    <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
+                      ★
+                    </div>
+                    <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
+                      WEB<br />DEVELOPERS<br />COMPANIES
+                    </span>
+                    <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
+                  </div>
                 </div>
-                <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
-                  WEB<br />DEVELOPERS<br />COMPANIES
-                </span>
-                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
               </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 8. SECTION 6: What Exactly Is A Django Developer? */}
+      {/* 8. SECTION 6: What Exactly Is A .NET Developer? */}
       <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
         <Container>
           <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight text-center mb-10 font-sans">
-            What Exactly Is A Django Developer?
+            What Exactly Is A .NET Developer?
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-5xl mx-auto">
             <div className="lg:col-span-5 bg-[#EBF5FB] p-8 rounded-3xl border border-cyan-200/80 shadow-sm text-left relative">
               <Quote className="w-10 h-10 text-[#006085] opacity-30 mb-2" />
               <h3 className="text-xl sm:text-2xl font-[900] text-[#006085] leading-snug font-sans">
-                Hire Django Developers At A Reasonable Rate
+                Hire .NET Developers At A Reasonable Rate
               </h3>
             </div>
 
             <div className="lg:col-span-7 text-left space-y-5">
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans font-normal">
-                Our remote Django developers have designed and launched a wide array of websites, applications, and portals, with a scope of defects and mistakes that is either minimal or nonexistent in most cases. As a trusted Django development company you can get our Django Consulting to build Django apps. In addition, the team has the necessary skill set and expertise to develop applications with a high degree of precision and skill. We provide you with the opportunity to engage Django web developers for Django Migration & Porting to work on an hourly, part-time, or full-time basis, depending on what best meets your needs.
+                Our remote .NET developers have designed and launched a wide array of enterprise applications, SaaS platforms, and cloud portals with minimal defect rates. As a trusted .NET development company, you can get our .NET Consulting to build scalable C# applications. In addition, the team has the necessary skill set and expertise to develop applications with high precision and performance. We provide you with the opportunity to engage .NET developers for ASP.NET Migration & Porting to work on an hourly, part-time, or full-time basis, depending on your needs.
               </p>
               <div>
                 <Link
@@ -730,79 +796,79 @@ export const HireDjangoDevelopersService = () => {
         cards={[
           {
             id: 1,
-            title: 'Enterprise Django REST Microservices & Scalable Cloud Platform',
+            title: 'Enterprise ASP.NET Core Microservices & Cloud Platform',
             image: '/images/success_stories/redetect.svg',
             badge: 'Case Study'
           },
           {
             id: 2,
-            title: 'Real-Time Celery & Redis Task Queue Automation Engine',
+            title: 'High-Performance Azure Cloud & C# Automated Workflow Engine',
             image: '/images/success_stories/file_sharing_application.svg'
           },
           {
             id: 3,
-            title: 'High-Performance Django SaaS Portal & PostgreSQL Architecture',
+            title: 'Scalable .NET SaaS Portal & Microsoft SQL Server Architecture',
             image: '/images/success_stories/data_analytics.svg'
           }
         ]}
-        subtitle="Explore how Firevy.Co's dedicated Django developers have enabled global enterprises to transform software velocity and achieve resilient backend web operations."
+        subtitle="Explore how Firevy.Co's dedicated .NET developers have enabled global enterprises to transform software velocity and achieve resilient backend web operations."
       />
 
       {/* 17. SECTION 15: Technology Stack That Sapphire Dedicated Developers Use Proficiently */}
       <TechStackProficientGrid title="Technology Stack That Sapphire Dedicated Developers Use Proficiently" />
 
-      {/* 18. SECTION 16: The Expertise Of Our Talented Django Developer */}
+      {/* 18. SECTION 16: The Expertise Of Our Talented .NET Developer */}
       <section className="py-16 md:py-20 bg-[#F0F7FC] text-slate-900 font-sans border-b border-slate-100">
         <Container className="max-w-7xl">
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-              The Expertise Of Our Talented Django Developer
+              The Expertise Of Our Talented .NET Developer
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
             {[
               {
-                title: 'Django Ecommerce Store Development',
+                title: '.NET Enterprise Portal Development',
                 bg: 'bg-[#F3E8FF]',
                 iconColor: 'text-[#9333EA]',
                 IconComp: ShoppingBag,
-                desc: 'To fulfill the ever-increasing needs of clients, online companies require a scalable, high-performing, and adaptable eCommerce shop that can be easily constructed using Django. Our devoted Django eCommerce Development specialists provide superior eCommerce app development services to clients in all industry verticals. Hiring a Django application development expert from us will assist you in developing ROI-boosting eCommerce solutions.'
+                desc: 'To fulfill the ever-increasing needs of enterprise clients, online businesses require a scalable, high-performing, and adaptable web portal easily constructed using ASP.NET Core. Our devoted .NET development specialists provide superior application services across all industry verticals. Hiring a .NET expert from us will assist you in developing ROI-boosting web applications.'
               },
               {
-                title: 'Django ERP Development',
+                title: '.NET ERP & Cloud Software',
                 bg: 'bg-[#DCFCE7]',
                 iconColor: 'text-[#16A34A]',
                 IconComp: Server,
-                desc: 'Our Django ERP Development experts have hands-on expertise in designing ERP systems that are scalable, resilient, and user-friendly across all devices. Hiring full-stack Django developers from our top Django development firm in India for ERP development may assist you in tracking possible leads, driving business success, improving customer management, and making smart business choices.'
+                desc: 'Our .NET ERP Development experts have hands-on expertise in designing ERP systems that are scalable, resilient, and user-friendly across all devices. Hiring full-stack .NET developers from our top development firm in India may assist you in tracking leads, driving business success, and making smart business choices.'
               },
               {
-                title: 'API & RESTful DRF Development',
+                title: 'API & RESTful Web API Development',
                 bg: 'bg-[#FFEDD5]',
                 iconColor: 'text-[#EA580C]',
                 IconComp: Code,
-                desc: 'If you choose Django over other technological stacks, you may get dynamic front-end and back-end for online and mobile apps. Leverage the knowledge of our Django Web Development experts to create powerful and bespoke web apps and REST APIs for many business domains and industries.'
+                desc: 'Leverage Microsoft\'s ASP.NET Core Web API stack for dynamic front-end and back-end integration across web and mobile apps. Utilize the knowledge of our .NET specialists to create powerful and bespoke RESTful microservices for enterprise business domains.'
               },
               {
-                title: 'Enterprise CMS Development',
+                title: 'Enterprise CMS & Microservices',
                 bg: 'bg-[#FEF9C3]',
                 iconColor: 'text-[#CA8A04]',
                 IconComp: Layout,
-                desc: 'A firm wants a user-friendly CMS gateway to optimize its quality management process and enhance operational efficiency. Employ our Django CMS Development experts to create feature-rich, scalable, and user-friendly CMS for enterprises of all sizes.'
+                desc: 'A firm wants a user-friendly CMS and microservice ecosystem to optimize operations and enhance quality management. Employ our .NET specialists to create feature-rich, scalable, and secure applications for enterprises of all sizes.'
               },
               {
                 title: 'Testing And QA',
                 bg: 'bg-[#FCE7F3]',
                 iconColor: 'text-[#DB2777]',
                 IconComp: CheckSquare,
-                desc: 'Recruit Django Migration & Porting experts from our talent pool. Our specialists execute thorough alpha and beta testing, guaranteeing that your application functions flawlessly and contains specific test cases. As an ISO-certified service provider, we guarantee that your dynamic applications and websites are of the highest quality.'
+                desc: 'Recruit .NET Migration & Porting experts from our talent pool. Our specialists execute thorough automated unit tests, integration testing, and stress testing, guaranteeing that your application functions flawlessly. As an ISO-certified provider, we guarantee top-tier application quality.'
               },
               {
                 title: 'Maintenance & Support Services',
                 bg: 'bg-[#CFFAFE]',
                 iconColor: 'text-[#0891B2]',
                 IconComp: Wrench,
-                desc: 'Get comprehensive maintenance and support Django development services from our team of Django specialists. Our nimble specialists offer round-the-clock Django development services to solve your Django development issues with agility, allowing you to remain stress-free and concentrate on the essential business tasks that drive your company\'s bottom line.'
+                desc: 'Get comprehensive maintenance and support .NET development services from our team of specialists. Our nimble specialists offer round-the-clock support to solve your technical issues with agility, allowing you to remain stress-free and concentrate on core business growth.'
               }
             ].map((card, idx) => {
               const CardIcon = card.IconComp;
@@ -858,7 +924,7 @@ export const HireDjangoDevelopersService = () => {
               {[
                 {
                   title: 'Cost Efficiency',
-                  desc: 'One of the most significant advantages of hiring dedicated developers is the access to a global talent pool. We provide access to global talent, frequently from low-cost locations, lowering labour costs without sacrificing quality.',
+                  desc: 'One of the most significant advantages of hiring dedicated developers is the access to a global talent pool. We provide access to global talent, lowering labor costs without sacrificing quality.',
                   IconComp: Coins
                 },
                 {
@@ -868,7 +934,7 @@ export const HireDjangoDevelopersService = () => {
                 },
                 {
                   title: 'Scalability and Flexibility',
-                  desc: 'Dedicated developers allow team size and composition changes without full-time employment. They can swiftly adapt to project needs and market circumstances, assuring timely delivery and resource optimisation.',
+                  desc: 'Dedicated developers allow team size and composition changes without full-time employment. They can swiftly adapt to project needs and market circumstances, assuring timely delivery.',
                   IconComp: Sliders
                 },
                 {
@@ -878,7 +944,7 @@ export const HireDjangoDevelopersService = () => {
                 },
                 {
                   title: 'Reduced Time to Market',
-                  desc: 'Dedicated developers can speed up project development by using their experience and attention. Businesses can optimize operations, eliminate bottlenecks, and finish projects quickly by hiring dedicated developers.',
+                  desc: 'Dedicated developers can speed up project development by using their experience and attention. Businesses can optimize operations, eliminate bottlenecks, and finish projects quickly.',
                   IconComp: Zap
                 },
                 {
@@ -910,10 +976,10 @@ export const HireDjangoDevelopersService = () => {
         </Container>
       </section>
 
-      {/* 21. Hire Django Developer In 4 Easy Steps */}
+      {/* 21. Hire .NET Developer In 4 Easy Steps */}
       <HireDeveloper4Steps
-        title="Hire Django Developer In 4 Easy Steps"
-        subtitle="Django offers a number of advantages over another platform. Some of them are:"
+        title="Hire .NET Developer In 4 Easy Steps"
+        subtitle=".NET offers a number of advantages over another platform. Some of them are:"
       />
 
       {/* 22. Video Testimonials / Our Story, Their Words */}
@@ -947,43 +1013,43 @@ export const HireDjangoDevelopersService = () => {
         customFaqs={[
           {
             id: 1,
-            question: "1. Why choose Django for web development?",
-            answer: "Django offers a batteries-included Python framework with built-in admin panel, Object-Relational Mapping (ORM), enterprise security features, rapid prototyping, and seamless integration with Django REST Framework."
+            question: "1. Why choose .NET for web & enterprise development?",
+            answer: "Microsoft .NET offers high-performance cross-platform capabilities, asynchronous processing, built-in enterprise security, Entity Framework ORM, and seamless integration with Azure Cloud."
           },
           {
             id: 2,
-            question: "2. Is Django Application Architecture Scalable?",
-            answer: "Yes, Django architecture relies on stateless WSGI/ASGI application servers, PostgreSQL databases, and Celery asynchronous queues, allowing effortless horizontal scaling across cloud environments."
+            question: "2. Is .NET Application Architecture Scalable?",
+            answer: "Yes, .NET Core relies on lightweight microservices, SQL Server / PostgreSQL databases, and Azure Service Bus asynchronous queues, allowing effortless horizontal scaling."
           },
           {
             id: 3,
-            question: "3. Is Django Development an economically viable option?",
-            answer: "Using Python across AI/ML and web backend reduces development overhead, streamlines code reusability, and speeds up time-to-market compared to multi-language stacks."
+            question: "3. Is .NET Development an economically viable option?",
+            answer: "Using C# across web, cloud, desktop, and microservices reduces development overhead, streamlines code reusability, and speeds up time-to-market."
           },
           {
             id: 4,
-            question: "4. Why should I hire Django developers from Firevy.co?",
-            answer: "Our Django developers have 23+ years of combined experience, 320+ 5-star Clutch reviews, strict NDA compliance, zero onboarding delay, and 24/7 SLA technical support."
+            question: "4. Why should I hire .NET developers from Firevy.co?",
+            answer: "Our .NET developers have 20+ years of combined experience, 320+ 5-star Clutch reviews, strict NDA compliance, zero onboarding delay, and 24/7 SLA technical support."
           },
           {
             id: 5,
-            question: "5. What are the benefits of using Django for web application development?",
-            answer: "Key benefits include robust built-in security against SQL injection and CSRF, rapid DRF API creation, flexible database ORM, and high developer productivity."
+            question: "5. What are the benefits of using ASP.NET Core for web development?",
+            answer: "Key benefits include rapid ASP.NET Core Web API creation, cross-platform deployment, Kestrel web server performance, and robust security features."
           },
           {
             id: 6,
-            question: "6. Do your Django developers offer full project lifecycle support?",
-            answer: "Yes, we handle everything from discovery, DB schema design, and DRF REST API development to automated QA testing, cloud deployment, and post-launch maintenance."
+            question: "6. Do your .NET developers offer full project lifecycle support?",
+            answer: "Yes, we handle everything from discovery, DB schema design, and Web API development to automated QA testing, Azure deployment, and post-launch maintenance."
           },
           {
             id: 7,
-            question: "7. Can I hire remote Django developers from Firevy.co for my business?",
+            question: "7. Can I hire remote .NET developers from Firevy.co for my business?",
             answer: "Absolutely. We offer flexible engagement models—hourly ($21/hr), part-time, or dedicated monthly retainers aligned with your timezone."
           },
           {
             id: 8,
-            question: "8. What kind of web applications can be built using Django?",
-            answer: "You can build enterprise SaaS portals, eCommerce stores, healthcare systems, AI/ML web integrations, ERP systems, and custom REST API backends."
+            question: "8. What kind of applications can be built using .NET?",
+            answer: "You can build enterprise SaaS portals, cloud microservices, healthcare applications, ERP systems, financial platforms, and custom REST API backends."
           }
         ]}
       />
@@ -994,17 +1060,17 @@ export const HireDjangoDevelopersService = () => {
       {/* 31. Our Recent Blogs */}
       <RecentBlogsSection />
 
-      {/* 32. What Sets Us Apart As Django Development Company? */}
+      {/* 32. What Sets Us Apart As .NET Development Company? */}
       <WhatSetsUsApartSection
-        title="What Sets Us Apart As Django Development Company?"
-        description="Being unique is our quality! Firevy.co believes in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
+        title="What Sets Us Apart As .NET Development Company?"
+        description="Being unique is our quality! Firevy.co believes in the things that give us an edge over our competitors. We are a renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
       />
 
-      {/* 33. Have Django Development Challenge To Address ? */}
+      {/* 33. Have .NET Development Challenge To Address ? */}
       <ConversionCalloutBanner
         data={{
-          title: "Have Django Development Challenge To Address ?",
-          description: "Get access to top Django developers to transform your ideas into a robust application.",
+          title: "Have .NET Development Challenge To Address ?",
+          description: "Get access to top .NET developers to transform your ideas into a robust application.",
           buttonText: "Hire Now",
           buttonLink: "/contact"
         }}
@@ -1017,4 +1083,4 @@ export const HireDjangoDevelopersService = () => {
   );
 };
 
-export default HireDjangoDevelopersService;
+export default HireNetDevelopersService;

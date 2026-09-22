@@ -139,6 +139,9 @@ import HireMeanStackDevelopersService from '../components/services/HireMeanStack
 import HireMernStackDevelopersService from '../components/services/HireMernStackDevelopersService';
 import HireSpringBootDevelopersService from '../components/services/HireSpringBootDevelopersService';
 import HireDjangoDevelopersService from '../components/services/HireDjangoDevelopersService';
+import HireNetDevelopersService from '../components/services/HireNetDevelopersService';
+import HireNodeJsDevelopersService from '../components/services/HireNodeJsDevelopersService';
+import HirePhpDevelopersService from '../components/services/HirePhpDevelopersService';
 import BackendComingSoonService, { isBackendServiceSlug } from '../components/services/BackendComingSoonService';
 
 export const ServiceDetails = () => {
@@ -928,7 +931,7 @@ export const ServiceDetails = () => {
   const isBackendComingSoon = isBackendServiceSlug(currentSlug);
 
   useEffect(() => {
-    if (isBackendComingSoon) {
+    if (isBackendComingSoon || isHireNodeJs || isHireNet || isHireDjango || isHirePhp) {
       setLoading(false);
       window.scrollTo(0, 0);
       return;
@@ -940,6 +943,22 @@ export const ServiceDetails = () => {
     }
     window.scrollTo(0, 0);
   }, [currentSlug, isBackendComingSoon]);
+
+  if (isHireDjango) {
+    return <HireDjangoDevelopersService />;
+  }
+
+  if (isHireNet) {
+    return <HireNetDevelopersService />;
+  }
+
+  if (isHireNodeJs) {
+    return <HireNodeJsDevelopersService />;
+  }
+
+  if (isHirePhp) {
+    return <HirePhpDevelopersService />;
+  }
 
   if (isBackendComingSoon) {
     return <BackendComingSoonService slug={currentSlug} />;
@@ -1066,11 +1085,11 @@ export const ServiceDetails = () => {
   }
 
   if (isHireNet) {
-    return <HireDedicatedTechDevelopersService techKey="hire-net-developers" />;
+    return <HireNetDevelopersService />;
   }
 
   if (isHireNodeJs) {
-    return <HireDedicatedTechDevelopersService techKey="hire-node-js-developers" />;
+    return <HireNodeJsDevelopersService />;
   }
 
   if (isHirePhp) {

@@ -121,8 +121,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'digital-twin': { title: 'Digital Twin Solutions', category: 'AR/VR Development' },
 
   // Hire Back End Developers (Services below Hire Spring Boot Developers)
-  'hire-django-developers': { title: 'Hire Django Developers', category: 'Hire Back End Developers' },
-  'hire-django-developer': { title: 'Hire Django Developers', category: 'Hire Back End Developers' },
   'hire-net-developers': { title: 'Hire .NET Developers', category: 'Hire Back End Developers' },
   'hire-net-developer': { title: 'Hire .NET Developers', category: 'Hire Back End Developers' },
   'hire-dotnet-developers': { title: 'Hire .NET Developers', category: 'Hire Back End Developers' },

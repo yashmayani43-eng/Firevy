@@ -10,39 +10,56 @@ export const ClutchTopRatedBanner = ({ title = "World Wide Top Rated IT Company 
 
   const badges = [
     {
-      src: '/images/awards/most_review_softwarecompany_manifest.svg',
-      alt: 'Most Reviewed Dedicated Software Development Companies'
-    },
-    {
       src: '/images/awards/top_mobile_clutchn.svg',
-      alt: 'Top Dedicated Software Company Clutch 2022'
+      alt: 'Top Mobile App Developers Clutch 2022'
+    },
+    {
+      src: '/images/awards/top_clutch.co_development_company_india_2022_award.png',
+      alt: 'Clutch Top Company India 2021'
+    },
+    {
+      src: '/images/awards/most_mobile_review_manifest.svg',
+      alt: 'Most Reviewed Mobile App Development Companies'
+    },
+    {
+      src: '/images/awards/most_sharepoint_review_manifest.svg',
+      alt: 'Most Reviewed Microsoft Sharepoint Consulting Companies'
     },
     {
       src: '/images/awards/most_review_softwarecompany_manifest.svg',
-      alt: 'Most Reviewed Software Development Companies'
+      alt: 'Most Reviewed Software Developers Companies'
     },
     {
       src: '/images/awards/most_web_review_manifest.svg',
-      alt: 'Most Reviewed Software Developers'
-    },
-    {
-      src: '/images/awards/top_mobile_app_goodfirm.svg',
-      alt: 'Top Dedicated Software Development Company GoodFirms'
-    },
-    {
-      src: '/images/awards/most_review_softwarecompany_manifest.svg',
-      alt: 'Most Reviewed Software Development Company'
+      alt: 'Most Reviewed Web Developers Companies'
     }
   ];
+
+  const formattedTitle = () => {
+    if (typeof title !== 'string') return title;
+    const match = title.match(/^(World Wide Top Rated)\s+(.*?)\s+(Company on Clutch)$/i);
+    if (match) {
+      return (
+        <>
+          {match[1]}
+          <br />
+          {match[2]}
+          <br />
+          {match[3]}
+        </>
+      );
+    }
+    return title;
+  };
 
   return (
     <section className="py-4 sm:py-5 bg-[#005D89] text-white border-y border-[#004d73] overflow-hidden text-left font-sans select-none">
       <Container className="max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-8">
-          {/* Left Column: Title matching Image 1 */}
+          {/* Left Column: Title matching Image 2 */}
           <div className="shrink-0 text-center lg:text-left">
-            <h2 className="text-xl sm:text-2xl lg:text-[26px] font-[900] text-white tracking-tight leading-tight font-sans whitespace-normal lg:whitespace-nowrap">
-              {title}
+            <h2 className="text-xl sm:text-2xl lg:text-[25px] font-[800] text-white tracking-tight leading-[1.2] max-w-xs sm:max-w-sm">
+              {formattedTitle()}
             </h2>
           </div>
 
