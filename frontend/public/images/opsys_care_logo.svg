@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <g transform="translate(10, 15)">
+    <!-- OPSYS text -->
+    <text x="0" y="42" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="38" fill="#0066B2" letter-spacing="1">OPSYS</text>
+    
+    <!-- Stylized Green Figure dot -->
+    <circle cx="106" cy="10" r="5" fill="#4CAF50" />
+    <path d="M 98 20 C 102 14, 110 14, 114 20 C 110 24, 102 24, 98 20 Z" fill="#FF9800" />
+    
+    <!-- care text in cursive font -->
+    <text x="160" y="42" font-family="'Brush Script MT', 'Segoe Print', cursive, sans-serif" font-weight="bold" font-style="italic" font-size="40" fill="#2E7D32">care</text>
+  </g>
+</svg>

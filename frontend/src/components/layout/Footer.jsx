@@ -255,6 +255,7 @@ export const Footer = () => {
                         </span>
                       </a>
                     )}
+
                   </div>
                 </div>
 
@@ -368,11 +369,11 @@ export const Footer = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {(footerConfig?.offices && footerConfig.offices.length > 0 ? footerConfig.offices : [
                   { id: '1', country: 'India(HQ)', flag: '/images/india_office.svg', address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004' },
-                  { id: '2', country: 'USA', flag: '/images/usa_office.svg', address: '5004 NW 116th Ave Coral Springs, Florida, FL 33076' },
-                  { id: '3', country: 'Canada', flag: '/images/canada_office.svg', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' },
+                  { id: '2', country: 'Germany', flag: '/images/germany_office.svg', address: 'walter meckauer str 11, 90478 nurenberg' },
+                  { id: '3', country: 'UAE', flag: '/images/uae_office.svg', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' },
                   { id: '4', country: 'Australia', flag: '/images/aus_office.svg', address: 'U 2B 305 Harborne Street, Glendalough 6016 WA' },
                   { id: '5', country: 'UK', flag: '/images/uk_office.svg', address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom' },
-                  { id: '6', country: 'UAE', flag: '/images/uae_office.svg', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' }
+                  { id: '6', country: 'Canada', flag: '/images/canada_office.svg', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' }
                 ]).map((office, idx) => {
                   const countryLower = (office.country || '').toLowerCase();
 
@@ -381,21 +382,21 @@ export const Footer = () => {
                       return office.flag;
                     }
                     if (countryLower.includes('india') || idx === 0) return '/images/india_office.svg';
-                    if (countryLower.includes('usa') || countryLower.includes('states') || idx === 1) return '/images/usa_office.svg';
-                    if (countryLower.includes('canada') || idx === 2) return '/images/canada_office.svg';
+                    if (countryLower.includes('germany') || countryLower.includes('germeny') || idx === 1) return '/images/germany_office.svg';
+                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 2) return '/images/uae_office.svg';
                     if (countryLower.includes('aus') || idx === 3) return '/images/aus_office.svg';
                     if (countryLower.includes('uk') || countryLower.includes('kingdom') || idx === 4) return '/images/uk_office.svg';
-                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 5) return '/images/uae_office.svg';
+                    if (countryLower.includes('canada') || idx === 5) return '/images/canada_office.svg';
                     return '/images/india_office.svg';
                   };
 
                   const getSketch = () => {
                     if (countryLower.includes('india') || idx === 0) return '/images/india_iamge.png';
-                    if (countryLower.includes('usa') || countryLower.includes('states') || idx === 1) return '/images/usaimage.png';
-                    if (countryLower.includes('canada') || idx === 2) return '/images/canadaimage.png';
+                    if (countryLower.includes('germany') || countryLower.includes('germeny') || idx === 1) return '/images/ukimage.png';
+                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 2) return '/images/uae_image.png';
                     if (countryLower.includes('aus') || idx === 3) return '/images/ausimage.png';
                     if (countryLower.includes('uk') || countryLower.includes('kingdom') || idx === 4) return '/images/ukimage.png';
-                    if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 5) return '/images/uae_image.png';
+                    if (countryLower.includes('canada') || idx === 5) return '/images/canadaimage.png';
                     return '/images/india_iamge.png';
                   };
 
@@ -436,11 +437,11 @@ export const Footer = () => {
 
       {/* 4. SOLID BLUE COPYRIGHT BAR ACROSS FULL WIDTH */}
       <div className="bg-[#006B8F] text-white py-3.5 px-4 sm:px-8 xl:px-10 mt-0 w-full">
-        <div className="w-full flex flex-col sm:flex-row items-center justify-between text-[13px] font-sans">
+        <div className="w-full flex flex-col-reverse sm:flex-row items-center justify-between text-[13px] font-sans">
           <div>
             {footerConfig?.copyrightText || `© ${currentYear} Firevy.Co. All rights reserved.`}
           </div>
-          <div className="flex items-center space-x-4 mt-2 sm:mt-0 text-blue-100">
+          <div className="flex items-center space-x-4 mb-2 sm:mb-0 text-blue-100">
             <Link to={footerConfig?.privacyPolicyLink || "/privacy-policy"} className="hover:text-white transition-colors">
               {footerConfig?.privacyPolicyText || "Privacy Policy"}
             </Link>

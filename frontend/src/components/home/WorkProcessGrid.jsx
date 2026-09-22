@@ -189,7 +189,7 @@ export const WorkProcessGrid = ({ data }) => {
           ))}
         </div>
 
-        {/* Middle Process Connector Track (1:1 Reference Match to Image 1) */}
+        {/* Middle Process Connector Track (1:1 Copy Reference Match) */}
         <div className="hidden lg:block w-full my-2 select-none pointer-events-none">
           <svg
             viewBox="0 0 1200 130"
@@ -216,7 +216,7 @@ export const WorkProcessGrid = ({ data }) => {
               <polyline points="1055,24 1059,28 1063,24" />
             </g>
 
-            {/* Main Rounded Pathway Container Box matching Image 1 */}
+            {/* Main Rounded Pathway Container Box */}
             <rect
               x="50"
               y="32"
@@ -228,18 +228,20 @@ export const WorkProcessGrid = ({ data }) => {
               strokeWidth="1.2"
             />
 
-            {/* Top Lane Connections (01 -> 02 -> 03 -> 04) */}
-            <g stroke="#CBD5E1" strokeWidth="1.5" strokeLinecap="round">
-              <line x1="152" y1="48" x2="436" y2="48" />
-              <line x1="458" y1="48" x2="742" y2="48" />
-              <line x1="764" y1="48" x2="1048" y2="48" />
-            </g>
+            {/* Continuous Internal Track Line with End Curves */}
+            <path
+              d="M 141 48 L 1059 48 C 1090 48 1090 82 1059 82 L 141 82 C 110 82 110 48 141 48 Z"
+              stroke="#CBD5E1"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              fill="none"
+            />
 
             {/* Top Lane Grey Right Arrows */}
             <g fill="#94A3B8">
-              <polygon points="300,44 308,48 300,52" />
-              <polygon points="606,44 614,48 606,52" />
-              <polygon points="912,44 920,48 912,52" />
+              <polygon points="294,44 302,48 294,52" />
+              <polygon points="600,44 608,48 600,52" />
+              <polygon points="906,44 914,48 906,52" />
             </g>
 
             {/* Top Row Nodes (Hollow circles with colored outlines) */}
@@ -252,18 +254,11 @@ export const WorkProcessGrid = ({ data }) => {
             {/* Node 04: Yellow */}
             <circle cx="1059" cy="48" r="8" fill="#FFFFFF" stroke="#F59E0B" strokeWidth="2.5" />
 
-            {/* Bottom Lane Connections (08 <- 07 <- 06 <- 05) */}
-            <g stroke="#CBD5E1" strokeWidth="1.5" strokeLinecap="round">
-              <line x1="152" y1="82" x2="436" y2="82" />
-              <line x1="458" y1="82" x2="742" y2="82" />
-              <line x1="764" y1="82" x2="1048" y2="82" />
-            </g>
-
             {/* Bottom Lane Grey Left Arrows */}
             <g fill="#94A3B8">
-              <polygon points="908,82 916,78 916,86" />
-              <polygon points="602,82 610,78 610,86" />
-              <polygon points="296,82 304,78 304,86" />
+              <polygon points="906,82 914,78 914,86" />
+              <polygon points="600,82 608,78 608,86" />
+              <polygon points="294,82 302,78 302,86" />
             </g>
 
             {/* Bottom Row Nodes (Hollow circles with colored outlines) */}
@@ -276,23 +271,23 @@ export const WorkProcessGrid = ({ data }) => {
             {/* Node 05: Pink */}
             <circle cx="1059" cy="82" r="8" fill="#FFFFFF" stroke="#EC4899" strokeWidth="2.5" />
 
-            {/* Bottom Row: 4 Vertical Downward Arrows (from Bottom Nodes to Cards 08-05) */}
+            {/* Bottom Row: 4 Vertical Upward Arrows (from Cards 08-05 UP into Bottom Nodes) */}
             <g stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none">
-              {/* Below Node 08 */}
-              <line x1="141" y1="98" x2="141" y2="126" />
-              <polyline points="137,122 141,126 145,122" />
+              {/* Above Card 08 */}
+              <line x1="141" y1="126" x2="141" y2="98" />
+              <polyline points="137,102 141,98 145,102" />
 
-              {/* Below Node 07 */}
-              <line x1="447" y1="98" x2="447" y2="126" />
-              <polyline points="443,122 447,126 451,122" />
+              {/* Above Card 07 */}
+              <line x1="447" y1="126" x2="447" y2="98" />
+              <polyline points="443,102 447,98 451,102" />
 
-              {/* Below Node 06 */}
-              <line x1="753" y1="98" x2="753" y2="126" />
-              <polyline points="749,122 753,126 757,122" />
+              {/* Above Card 06 */}
+              <line x1="753" y1="126" x2="753" y2="98" />
+              <polyline points="749,102 753,98 757,102" />
 
-              {/* Below Node 05 */}
-              <line x1="1059" y1="98" x2="1059" y2="126" />
-              <polyline points="1055,122 1059,126 1063,122" />
+              {/* Above Card 05 */}
+              <line x1="1059" y1="126" x2="1059" y2="98" />
+              <polyline points="1055,102 1059,98 1063,102" />
             </g>
           </svg>
         </div>

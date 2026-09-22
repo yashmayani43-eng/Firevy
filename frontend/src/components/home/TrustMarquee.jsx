@@ -3,12 +3,10 @@ import { getMediaUrl } from '../../utils/mediaUrl';
 import { homePageService } from '../../services/homePageService';
 
 const defaultBrandLogos = [
+  { name: 'LARSEN & TOUBRO', color: 'text-blue-900', symbol: '⚙️', image: '/images/logo_larsen_toubro.svg', isActive: true },
+  { name: 'LafargeHolcim', color: 'text-slate-800', symbol: '🏢', image: '/images/logo_lafargeHolcim.svg', isActive: true },
   { name: 'SEASWORTH JEWELS', color: 'text-[#0D1A2D]', symbol: '💍', image: '/images/seasworth_jewels.png', isActive: true },
-  { name: 'Almarai', color: 'text-blue-700', symbol: '🌾', image: '/images/almarai_corporate_logo.png', isActive: true },
-  { name: 'ORIENT CEMENT', color: 'text-slate-800', symbol: '🏗️', image: '/images/orient_logo.svg', isActive: true },
-  { name: 'AMERICAN EXPRESS', color: 'text-blue-600', symbol: '💳', image: '/images/logo_american_express.svg', isActive: true },
   { name: 'TATVAM OVERSEAS', color: 'text-[#C6A87D]', symbol: '✨', image: '/images/tatvam_overseas.jpg', isActive: true },
-  { name: 'Alembic', color: 'text-cyan-700', symbol: '🧪', image: '/images/alembic_logo.svg', isActive: true },
   { name: 'DH', color: 'text-[#8B0014]', symbol: '💎', image: '/images/dh_logo.jpg', isActive: true }
 ];
 

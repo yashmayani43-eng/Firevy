@@ -594,32 +594,8 @@ export const CloudFoundrySoftwareDevelopmentService = () => {
           </div>
         </div>
 
-        {/* Bottom Center Navigation Arrows Matching Reference First Image */}
-        <div className="flex items-center justify-center space-x-6 mt-8 sm:mt-10">
-          <button
-            onClick={() => {
-              if (techScrollRef.current) {
-                techScrollRef.current.scrollBy({ left: -390, behavior: 'smooth' });
-              }
-            }}
-            aria-label="Previous technologies"
-            className="w-10 h-10 flex items-center justify-center text-slate-800 hover:text-black hover:scale-110 active:scale-95 transition-all cursor-pointer select-none text-2xl font-bold"
-          >
-            ←
-          </button>
-
-          <button
-            onClick={() => {
-              if (techScrollRef.current) {
-                techScrollRef.current.scrollBy({ left: 390, behavior: 'smooth' });
-              }
-            }}
-            aria-label="Next technologies"
-            className="w-10 h-10 flex items-center justify-center text-slate-800 hover:text-black hover:scale-110 active:scale-95 transition-all cursor-pointer select-none text-2xl font-bold"
-          >
-            →
-          </button>
-        </div>
+          </div>
+        </Container>
       </section>
 
       {/* ========================================================================= */}

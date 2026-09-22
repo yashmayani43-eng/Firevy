@@ -4,39 +4,35 @@ import { getMediaUrl } from '../../utils/mediaUrl';
 
 const defaultBrandLogos = [
   // Row 1
-  { name: 'AMERICAN EXPRESS', image: '/images/logo_american_express.svg' },
   { name: 'LARSEN & TOUBRO', image: '/images/logo_larsen_toubro.svg' },
   { name: 'LafargeHolcim', image: '/images/logo_lafargeHolcim.svg' },
   { name: 'CLP INDIA', image: '/images/logo_clp_india.svg' },
   { name: 'adani', image: '/images/logo_adani.svg' },
   { name: 'GFL', image: '/images/logo_gfl.svg' },
+  { name: 'TOYOTA', image: '/images/toyota_logo.webp' },
 
   // Row 2
-  { name: 'TOYOTA', image: '/images/toyota_logo.webp' },
   { name: 'ACC LIMITED', image: '/images/logo_acc.svg' },
   { name: 'Ambuja Cement', image: '/images/logo_ambuja.svg' },
   { name: 'MORRIS GARAGES', image: '/images/logo_mg_motors.svg' },
   { name: 'JSW Energy', image: '/images/logo_jswenergy.svg' },
   { name: 'vedanta', image: '/images/logo_vedanta.svg' },
+  { name: 'HONDA', image: '/images/honda_logo.png' },
 
   // Row 3
-  { name: 'HONDA', image: '/images/honda_logo.png' },
   { name: "Dr.Reddy's", image: '/images/logo_drreddy.png' },
   { name: 'Chevron Oronite', image: '/images/logo_chevron_oronite.svg' },
-  { name: 'ORIENT CEMENT', image: '/images/orient_logo.svg' },
-  { name: 'Almarai', image: '/images/almarai_corporate_logo.png' },
   { name: 'Cummins', image: '/images/ncummins.png' },
-
-  // Row 4
   { name: 'TATVAM OVERSEAS', image: '/images/tatvam_overseas.jpg' },
   { name: 'DH', image: '/images/dh_logo.jpg' },
   { name: 'SEASWORTH JEWELS', image: '/images/seasworth_jewels.png' },
+
+  // Row 4
   { name: 'TDSG', image: '/images/logo_tdsg.png' },
   { name: "L'ORÉAL", image: '/images/logo_loreal.png' },
   { name: 'ASTRAL PIPES', image: '/images/logo_astral.png' },
   { name: 'TITAN COMPANY', image: '/images/logo_titan.webp' },
-  { name: 'BANK NOTE PAPER MILL', image: '/images/logo_bnpl_india.svg' },
-  { name: 'Alembic', image: '/images/alembic_logo.svg' }
+  { name: 'BANK NOTE PAPER MILL', image: '/images/logo_bnpl_india.svg' }
 ];
 
 export const BrandLogoGrid = ({ data }) => {
