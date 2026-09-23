@@ -95,9 +95,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'software-product-discovery': { title: 'Software Product Discovery', category: 'Software Development Service' },
 
   // AR/VR Development Services (after Virtual Reality App Development)
-  'extended-reality-development': { title: 'Extended Reality Development', category: 'AR/VR Development' },
-  'extended-reality': { title: 'Extended Reality Development', category: 'AR/VR Development' },
-  'xr-development': { title: 'Extended Reality Development', category: 'AR/VR Development' },
   'metaverse-development-company': { title: 'Metaverse Development Company', category: 'AR/VR Development' },
   'metaverse-development': { title: 'Metaverse Development Company', category: 'AR/VR Development' },
 
