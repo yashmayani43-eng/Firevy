@@ -396,9 +396,9 @@ export const HireSolidityDevelopersService = () => {
             <div className="lg:col-span-6 relative flex items-center justify-center">
               <div className="relative w-full max-w-[500px]">
                 <img
-                  src="/images/c_sharp_developer_illustration.png"
+                  src="/images/c_sharp_developer_illustration.svg"
                   alt="Hire Top-Rated Solidity Developers From Us"
-                  className="w-full h-auto max-w-[480px] object-contain mx-auto drop-shadow-sm"
+                  className="w-full h-auto max-w-[520px] object-contain mx-auto drop-shadow-sm"
                 />
               </div>
             </div>
@@ -644,9 +644,9 @@ export const HireSolidityDevelopersService = () => {
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-[460px]">
                 <img
-                  src="/images/c_sharp_expertise_illustration.png"
+                  src="/images/c_sharp_developer_illustration.svg"
                   alt="Hire Solidity Developers Global Onboarding"
-                  className="w-full h-auto object-contain mix-blend-multiply"
+                  className="w-full h-auto max-w-[460px] object-contain mx-auto drop-shadow-sm"
                 />
               </div>
             </div>

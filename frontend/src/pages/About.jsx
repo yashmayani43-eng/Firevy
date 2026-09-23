@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/common/SEO';
 import Container from '../components/common/Container';
 import AboutKeyMetrics from '../components/home/AboutKeyMetrics';
+import WhyFirevyGrid from '../components/common/WhyFirevyGrid';
+import AwardsAndRecognitionGrid from '../components/common/AwardsAndRecognitionGrid';
 import WorkTogetherNewsletterSection from '../components/home/WorkTogetherNewsletterSection';
 import ClientReviewsDarkSection from '../components/home/ClientReviewsDarkSection';
 import BRAND from '../constants/brand';
@@ -336,7 +338,18 @@ export const About = () => {
       </section>
 
       {/* 4. "Glance through our creations and presence" */}
-      <AboutKeyMetrics />
+      <AboutKeyMetrics
+        data={{
+          title: "Glance through our creations and presence",
+          description: "We are a team of qualified software development professionals adept at expanding your current system's capabilities via innovative technology solutions."
+        }}
+      />
+
+      {/* 4.5. "Why Firevy.Co?" Card Grid */}
+      <WhyFirevyGrid />
+
+      {/* 4.6. "Awards & Recognition" Grid */}
+      <AwardsAndRecognitionGrid />
 
       {/* 5. "Our Core Values" */}
       <section className="py-20 bg-[#F8FAFC] border-b border-slate-200 text-slate-900 font-sans">
@@ -494,7 +507,7 @@ export const About = () => {
         <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
           <div className="w-full h-[360px] sm:h-[450px] rounded-[20px] overflow-hidden shadow-lg border border-slate-200 bg-slate-900 relative">
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"
+              src="/images/team.jpeg"
               alt="Firevy.Co Whole Team"
               className="w-full h-full object-cover opacity-95 hover:scale-105 transition-transform duration-700"
             />

@@ -65,9 +65,12 @@ const Careers = lazy(() => import('./pages/Careers'));
 const Contact = lazy(() => import('./pages/Contact'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const Terms = lazy(() => import('./pages/Terms'));
+const WhyChooseUs = lazy(() => import('./pages/WhyChooseUs'));
+const AwardsAndRecognition = lazy(() => import('./pages/AwardsAndRecognition'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const BarberAppDevelopmentService = lazy(() => import('./components/services/BarberAppDevelopmentService').then(m => ({ default: m.BarberAppDevelopmentService })));
 const OnDemandAppDevelopmentService = lazy(() => import('./components/services/OnDemandAppDevelopmentService').then(m => ({ default: m.OnDemandAppDevelopmentService })));
+const ArtificialIntelligenceDevelopmentService = lazy(() => import('./components/services/ArtificialIntelligenceDevelopmentService').then(m => ({ default: m.ArtificialIntelligenceDevelopmentService })));
 
 // Public Layout Wrapper Component
 const PublicLayoutWrapper = () => (
@@ -98,6 +101,23 @@ export function App() {
               <Route element={<PublicLayoutWrapper />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/company/about" element={<About />} />
+                <Route path="/company/about-firevy" element={<About />} />
+                <Route path="/company/our-team" element={<CompanySubDetails />} />
+                <Route path="/our-team" element={<CompanySubDetails />} />
+                <Route path="/company/events-activities" element={<CompanySubDetails />} />
+                <Route path="/events-activities" element={<CompanySubDetails />} />
+                <Route path="/company/why-choose-us" element={<WhyChooseUs />} />
+                <Route path="/why-choose-us" element={<WhyChooseUs />} />
+                <Route path="/company/awards-recognition" element={<AwardsAndRecognition />} />
+                <Route path="/company/awards-and-recognition" element={<AwardsAndRecognition />} />
+                <Route path="/awards-recognition" element={<AwardsAndRecognition />} />
+                <Route path="/awards-and-recognition" element={<AwardsAndRecognition />} />
+                <Route path="/company/contact" element={<Contact />} />
+                <Route path="/company/contact-us" element={<Contact />} />
+                <Route path="/contact-us" element={<Contact />} />
+                <Route path="/company/portfolio" element={<Portfolio />} />
+                <Route path="/company/careers" element={<Careers />} />
                 <Route path="/company/podcast" element={<Podcast />} />
                 <Route path="/podcasts" element={<Podcast />} />
                 <Route path="/company/delivery-models" element={<DeliveryModels />} />
@@ -136,11 +156,16 @@ export function App() {
                 <Route path="/awards-recognition" element={<CompanySubDetails />} />
                 <Route path="/insightful-videos" element={<CompanySubDetails />} />
                 <Route path="/blog" element={<CompanySubDetails />} />
+                <Route path="/services" element={<Services />} />
                 <Route path="/services/barber-app-development" element={<BarberAppDevelopmentService />} />
                 <Route path="/barber-app-development" element={<BarberAppDevelopmentService />} />
                 <Route path="/services/on-demand-app-development" element={<OnDemandAppDevelopmentService />} />
                 <Route path="/on-demand-app-development" element={<OnDemandAppDevelopmentService />} />
-                <Route path="/services" element={<Services />} />
+                <Route path="/services/artificial-intelligence-development" element={<ArtificialIntelligenceDevelopmentService />} />
+                <Route path="/services/artificial%20intelligence%20development" element={<ArtificialIntelligenceDevelopmentService />} />
+                <Route path="/services/artificial intelligence development" element={<ArtificialIntelligenceDevelopmentService />} />
+                <Route path="/artificial-intelligence-development" element={<ArtificialIntelligenceDevelopmentService />} />
+                <Route path="/artificial intelligence development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/services/:slug" element={<ServiceDetails />} />
                 <Route path="/services/ride-sharing-app-development" element={<ServiceDetails />} />
                 <Route path="/ride-sharing-app-development" element={<ServiceDetails />} />
@@ -219,9 +244,23 @@ export function App() {
                 <Route path="/services/back-end-development" element={<ServiceDetails />} />
                 <Route path="/back-end-development" element={<ServiceDetails />} />
 
-                {/* AI & ML Development Services - Coming Soon */}
+                {/* AI & ML Development Services */}
                 <Route path="/services/artificial-intelligence-development" element={<ServiceDetails />} />
                 <Route path="/artificial-intelligence-development" element={<ServiceDetails />} />
+                <Route path="/services/generative-ai-development" element={<ServiceDetails />} />
+                <Route path="/generative-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/ai-copilot-development" element={<ServiceDetails />} />
+                <Route path="/ai-copilot-development" element={<ServiceDetails />} />
+                <Route path="/services/ethical-ai-development" element={<ServiceDetails />} />
+                <Route path="/ethical-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/ai-prompt-engineering" element={<ServiceDetails />} />
+                <Route path="/ai-prompt-engineering" element={<ServiceDetails />} />
+                <Route path="/services/adaptive-ai-development" element={<ServiceDetails />} />
+                <Route path="/adaptive-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/ai-in-business-intelligence" element={<ServiceDetails />} />
+                <Route path="/ai-in-business-intelligence" element={<ServiceDetails />} />
+                <Route path="/services/ai-in-marketing" element={<ServiceDetails />} />
+                <Route path="/ai-in-marketing" element={<ServiceDetails />} />
                 <Route path="/services/machine-learning-development" element={<ServiceDetails />} />
                 <Route path="/machine-learning-development" element={<ServiceDetails />} />
                 <Route path="/services/chatbot-development" element={<ServiceDetails />} />
@@ -274,6 +313,8 @@ export function App() {
                 <Route path="/startup-consulting-services" element={<ServiceDetails />} />
                 <Route path="/services/epicor-erp-consulting-services" element={<ServiceDetails />} />
                 <Route path="/epicor-erp-consulting-services" element={<ServiceDetails />} />
+                <Route path="/services/product-development" element={<ServiceDetails />} />
+                <Route path="/product-development" element={<ServiceDetails />} />
                 <Route path="/services/devops-consulting-service" element={<ServiceDetails />} />
                 <Route path="/devops-consulting-service" element={<ServiceDetails />} />
                 <Route path="/services/devops-consulting-services" element={<ServiceDetails />} />
@@ -373,10 +414,28 @@ export function App() {
                 <Route path="/services/nintex-development" element={<ServiceDetails />} />
                 <Route path="/nintex-development" element={<ServiceDetails />} />
                 <Route path="/services/nintex" element={<ServiceDetails />} />
+                <Route path="/services/extended-reality-development" element={<ServiceDetails />} />
+                <Route path="/extended-reality-development" element={<ServiceDetails />} />
+                <Route path="/services/extended-reality-development-services" element={<ServiceDetails />} />
+                <Route path="/extended-reality-development-services" element={<ServiceDetails />} />
+                <Route path="/services/extended-reality" element={<ServiceDetails />} />
+                <Route path="/extended-reality" element={<ServiceDetails />} />
                 <Route path="/services/mobile-app-porting" element={<ServiceDetails />} />
                 <Route path="/mobile-app-porting" element={<ServiceDetails />} />
                 <Route path="/services/mobile-app-porting-services" element={<ServiceDetails />} />
                 <Route path="/mobile-app-porting-services" element={<ServiceDetails />} />
+                <Route path="/services/software-development-service" element={<ServiceDetails />} />
+                <Route path="/software-development-service" element={<ServiceDetails />} />
+                <Route path="/services/software-development-services" element={<ServiceDetails />} />
+                <Route path="/software-development-services" element={<ServiceDetails />} />
+                <Route path="/services/software-development" element={<ServiceDetails />} />
+                <Route path="/software-development" element={<ServiceDetails />} />
+                <Route path="/services/digital-transformation-services" element={<ServiceDetails />} />
+                <Route path="/digital-transformation-services" element={<ServiceDetails />} />
+                <Route path="/services/digital-transformation-service" element={<ServiceDetails />} />
+                <Route path="/digital-transformation-service" element={<ServiceDetails />} />
+                <Route path="/services/digital-transformation" element={<ServiceDetails />} />
+                <Route path="/digital-transformation" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing" element={<ServiceDetails />} />
