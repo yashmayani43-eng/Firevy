@@ -1565,9 +1565,9 @@ export const initialCareerPageData = {
     },
     {
       id: "p_2",
-      name: "Umang Barot",
-      role: "Technical Support Lead",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      name: "Rutvik",
+      role: "Technical Lead",
+      avatar: "/images/Rutvik.JPG",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       order: 1,
       isActive: true
