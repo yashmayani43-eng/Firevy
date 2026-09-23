@@ -26,36 +26,42 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
   const managementHeading = dynamicSection?.content?.managementHeading || 'Management Team';
 
   // 2.1 CEO Message
+  const rawCeo = dynamicSection?.content?.ceo;
+  const isLegacyCeo = rawCeo?.name?.includes('Kumaril') || rawCeo?.name?.includes('Bharat') || rawCeo?.image?.includes('unsplash');
   const ceo = {
     image:
-      dynamicSection?.content?.ceo?.image ||
-      '/images/Tushil_mayani.JPG',
-    name: dynamicSection?.content?.ceo?.name || 'Mr. Tushil Mayani',
-    role: dynamicSection?.content?.ceo?.role || 'CEO & Co-Founder',
-    linkedin: dynamicSection?.content?.ceo?.linkedin || 'https://linkedin.com',
-    messageHeading: dynamicSection?.content?.ceo?.messageHeading || 'CEO Message',
+      (!isLegacyCeo && rawCeo?.image && !rawCeo.image.includes('unsplash'))
+        ? rawCeo.image
+        : '/images/Tushil_mayani.JPG',
+    name: (!isLegacyCeo && rawCeo?.name) ? rawCeo.name : 'Mr. Tushil Mayani',
+    role: (!isLegacyCeo && rawCeo?.role) ? rawCeo.role : 'CEO & Co-Founder',
+    linkedin: rawCeo?.linkedin || 'https://linkedin.com',
+    messageHeading: rawCeo?.messageHeading || 'CEO Message',
     paragraph1:
-      dynamicSection?.content?.ceo?.paragraph1 ||
+      (!isLegacyCeo && rawCeo?.paragraph1) ||
       "Welcome to Firevy.Co— a hub where ingenuity meets ambition. As the CEO, I firmly believe that leadership is not just about steering the ship but about inspiring every hand on deck to innovate, dream, and achieve. Our success stems from a shared commitment to excellence, where each solution is crafted with purpose and passion. At Firevy.Co, we don't merely adapt to change; we define it. By blending cutting-edge technology with human ingenuity, we create software solutions that empower businesses and individuals alike. This is not just a company; it's a vision brought to life by a team that dares to dream bigger every day.",
     paragraph2:
-      dynamicSection?.content?.ceo?.paragraph2 ||
+      (!isLegacyCeo && rawCeo?.paragraph2) ||
       'Never stop believing in the power of technology that can change the world. One Revolutionary idea... One brilliant Invention can enlighten billions of the Human lives. Nothing is Impossible when you Dream it & believe it you can Do it. Together, let us embrace the challenges and opportunities. Thank you for trusting us to be your partner in progress. Together, we are not just building software —we are creating a legacy of innovation and impact.'
   };
 
   // 2.2 CTO Message
+  const rawCto = dynamicSection?.content?.cto;
+  const isLegacyCto = rawCto?.name?.includes('Rajendra') || rawCto?.image?.includes('unsplash');
   const cto = {
     image:
-      dynamicSection?.content?.cto?.image ||
-      '/images/Yash_Mayani.JPG',
-    name: dynamicSection?.content?.cto?.name || 'Mr. Yash Mayani',
-    role: dynamicSection?.content?.cto?.role || 'CTO & Co-Founder',
-    linkedin: dynamicSection?.content?.cto?.linkedin || 'https://linkedin.com',
-    messageHeading: dynamicSection?.content?.cto?.messageHeading || 'CTO Message',
+      (!isLegacyCto && rawCto?.image && !rawCto.image.includes('unsplash'))
+        ? rawCto.image
+        : '/images/Yash_Mayani.JPG',
+    name: (!isLegacyCto && rawCto?.name) ? rawCto.name : 'Mr. Yash Mayani',
+    role: (!isLegacyCto && rawCto?.role) ? rawCto.role : 'CTO & Co-Founder',
+    linkedin: rawCto?.linkedin || 'https://linkedin.com',
+    messageHeading: rawCto?.messageHeading || 'CTO Message',
     paragraph1:
-      dynamicSection?.content?.cto?.paragraph1 ||
+      (!isLegacyCto && rawCto?.paragraph1) ||
       "At Firevy.Co, technology is not just a means to an end—it's the essence of our identity and the foundation of our future. As the CTO, my mission is to push the boundaries of innovation, ensuring that every line of code we write and every solution we deliver drives meaningful impact. Our approach is simple yet profound: embrace challenges as opportunities and ideas as catalysts for change. By staying at the forefront of technological advancements and fostering a culture of continuous learning, we empower businesses to thrive in a dynamic digital landscape. Crafting success stories from startups to Fortune 500 stalwarts.",
     paragraph2:
-      dynamicSection?.content?.cto?.paragraph2 ||
+      (!isLegacyCto && rawCto?.paragraph2) ||
       'Our dedication to user-centric design and cutting-edge solutions has garnered prestigious accolades. Innovation is a journey, and at Firevy.Co, we walk that path with purpose and passion, transforming visions into reality and possibilities into achievements. Thank you for trusting us as your technology partner. Together, we are building a smarter, more connected happy world.'
   };
 
@@ -85,9 +91,14 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
     { name: 'Rutvik Vastarpara', role: 'MERN Lead', image: '/images/Rutvik.JPG', objectPosition: 'center center' },
     { name: 'Hiren Rajani', role: 'Sr. BDR - Service', image: '/images/Hiren.JPG', objectPosition: 'center center' }
   ];
+  const rawLeadership = dynamicSection?.content?.leadershipTeam;
+  const isLegacyLeadership = Array.isArray(rawLeadership) && (
+    rawLeadership.some(m => m.name === 'Ankit Gokani' || m.name?.includes('Dubey') || m.image?.includes('unsplash')) ||
+    rawLeadership.length > 10
+  );
   const leadershipTeam =
-    Array.isArray(dynamicSection?.content?.leadershipTeam) && dynamicSection.content.leadershipTeam.length > 0
-      ? dynamicSection.content.leadershipTeam
+    (!isLegacyLeadership && Array.isArray(rawLeadership) && rawLeadership.length > 0)
+      ? rawLeadership
       : defaultLeadershipTeam;
 
   // 4. Teamwork Mosaic

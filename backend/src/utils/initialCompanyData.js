@@ -4,31 +4,31 @@
 
 export const initialTeamMembers = [
   {
-    name: 'Mr. Kumaril Patel',
+    name: 'Mr. Tushil Mayani',
     designation: 'CEO & Co-Founder',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+    image: '/images/Tushil_mayani.JPG',
     department: 'Executive Leadership',
     bio: 'Pioneering strategic tech consulting and enterprise software engineering for over 23+ years.',
     socialLinks: {
       linkedin: 'https://linkedin.com',
       twitter: 'https://twitter.com',
       github: 'https://github.com',
-      email: 'kumaril@firevy.co'
+      email: 'tushil@firevy.co'
     },
     order: 1,
     isActive: true
   },
   {
-    name: 'Mr. Rajendra Patel',
+    name: 'Mr. Yash Mayani',
     designation: 'CTO & Co-Founder',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
+    image: '/images/Yash_Mayani.JPG',
     department: 'Technology & Architecture',
     bio: 'Leading high-concurrency cloud architecture, AI engineering squads, and enterprise security frameworks.',
     socialLinks: {
       linkedin: 'https://linkedin.com',
       twitter: 'https://twitter.com',
       github: 'https://github.com',
-      email: 'rajendra@firevy.co'
+      email: 'yash@firevy.co'
     },
     order: 2,
     isActive: true
@@ -599,10 +599,7 @@ export const initialCompanySections = {
         buttonText: 'Explore Careers (Jobs)',
         buttonLink: '/careers',
         images: [
-          'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80',
-          'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80',
-          'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80',
-          'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80'
+          '/images/our_culture.JPG'
         ]
       },
       leadership: {
@@ -610,15 +607,15 @@ export const initialCompanySections = {
         subheading: 'The outlook, passion and experience of our leaders guides firevy.co.',
         leaders: [
           {
-            name: 'Mr. Kumaril Patel',
+            name: 'Mr. Tushil Mayani',
             designation: 'CEO & Co-Founder',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+            image: '/images/Tushil_mayani.JPG',
             linkedin: 'https://linkedin.com'
           },
           {
-            name: 'Mr. Rajendra Patel',
+            name: 'Mr. Yash Mayani',
             designation: 'CTO & Co-Founder',
-            image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
+            image: '/images/Yash_Mayani.JPG',
             linkedin: 'https://linkedin.com'
           }
         ]
@@ -757,11 +754,12 @@ export const initialCompanySections = {
     title: 'CEO Message & Vision',
     badge: 'LEADERSHIP INSIGHT',
     subtitle: 'A Message From Our Chief Executive Officer on Engineering Trust, Quality, and Client Partnership.',
-    heroImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80',
+    heroImage: '/images/Tushil_mayani.JPG',
     heroVideo: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     content: {
-      ceoName: 'Mr. Kumaril Patel',
+      ceoName: 'Mr. Tushil Mayani',
       ceoDesignation: 'Founder & Chief Executive Officer',
+      ceoImage: '/images/Tushil_mayani.JPG',
       headline: 'Pioneering The Future Of Software Engineering With Integrity',
       messageParagraphs: [
         'Welcome to firevy.co. When we founded this company in 2002, our philosophy was clear: software engineering is not merely about writing lines of code; it is about building dependable digital solutions that transform businesses and empower human lives.',
@@ -1337,16 +1335,46 @@ export const initialCompanySections = {
     title: 'Our Team',
     badge: 'ENGINEERING TALENT',
     subtitle: 'Meet the team of innovative, driven and passionate individuals. We cultivate the diverse talents of our team and leverage their extraordinary perspectives and innovative ideas to make firevy.co the industry leader.',
-    heroImage: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80',
+    heroImage: '/images/our-team-hero.svg',
     heroVideo: '',
     ctaText: 'Connect Now',
     ctaLink: '/contact',
-    contentSections: [
-      {
-        title: 'Management Team',
-        content: 'The outlook, passion and experience of our leaders guides firevy.co.'
+    content: {
+      managementHeading: 'Management Team',
+      ceo: {
+        name: 'Mr. Tushil Mayani',
+        role: 'CEO & Co-Founder',
+        image: '/images/Tushil_mayani.JPG',
+        linkedin: 'https://linkedin.com',
+        messageHeading: 'CEO Message',
+        paragraph1: "Welcome to Firevy.Co— a hub where ingenuity meets ambition. As the CEO, I firmly believe that leadership is not just about steering the ship but about inspiring every hand on deck to innovate, dream, and achieve. Our success stems from a shared commitment to excellence, where each solution is crafted with purpose and passion. At Firevy.Co, we don't merely adapt to change; we define it. By blending cutting-edge technology with human ingenuity, we create software solutions that empower businesses and individuals alike. This is not just a company; it's a vision brought to life by a team that dares to dream bigger every day.",
+        paragraph2: "Never stop believing in the power of technology that can change the world. One Revolutionary idea... One brilliant Invention can enlighten billions of the Human lives. Nothing is Impossible when you Dream it & believe it you can Do it. Together, let us embrace the challenges and opportunities. Thank you for trusting us to be your partner in progress. Together, we are not just building software —we are creating a legacy of innovation and impact."
+      },
+      cto: {
+        name: 'Mr. Yash Mayani',
+        role: 'CTO & Co-Founder',
+        image: '/images/Yash_Mayani.JPG',
+        linkedin: 'https://linkedin.com',
+        messageHeading: 'CTO Message',
+        paragraph1: "At Firevy.Co, technology is not just a means to an end—it's the essence of our identity and the foundation of our future. As the CTO, my mission is to push the boundaries of innovation, ensuring that every line of code we write and every solution we deliver drives meaningful impact. Our approach is simple yet profound: embrace challenges as opportunities and ideas as catalysts for change. By staying at the forefront of technological advancements and fostering a culture of continuous learning, we empower businesses to thrive in a dynamic digital landscape. Crafting success stories from startups to Fortune 500 stalwarts.",
+        paragraph2: "Our dedication to user-centric design and cutting-edge solutions has garnered prestigious accolades. Innovation is a journey, and at Firevy.Co, we walk that path with purpose and passion, transforming visions into reality and possibilities into achievements. Thank you for trusting us as your technology partner. Together, we are building a smarter, more connected happy world."
+      },
+      leadershipHeading: 'Leadership Team',
+      leadershipTeam: [
+        { name: 'Sahaj Maniya', role: 'HR Lead', image: '/images/Sahaj_Maniya.JPG', objectPosition: '50% 85%' },
+        { name: 'Purvi Pipaliya', role: 'QA Lead', image: '/images/Purvi.JPG', objectPosition: 'center center' },
+        { name: 'Rutvik Vastarpara', role: 'MERN Lead', image: '/images/Rutvik.JPG', objectPosition: 'center center' },
+        { name: 'Hiren Rajani', role: 'Sr. BDR - Service', image: '/images/Hiren.JPG', objectPosition: 'center center' }
+      ],
+      firevianSay: {
+        heading: 'What Our Firevian Says',
+        name: 'Sahaj Maniya',
+        role: 'Project Manager',
+        avatar: '/images/Sahaj_Maniya.JPG',
+        objectPosition: '50% 85%',
+        quote: "I am proud to be working for a company like Firevy.Co that values honesty and a fair attitude to all which has also contributed to a very valuable and delightful experience. The work culture and the integrity of the company's management are remarkable. In Firevy.Co, we get all the freedom to think out-of-the-box and take complete ownership of the work we do. Being a client-focused company, Firevy.Co makes us understand the clients' requirements easily so that the work can be coordinated effectively. There are always opportunities to learn and no limitations to scale new heights in this organization."
       }
-    ],
+    },
     seo: {
       metaTitle: 'Our Team | Innovative & Passionate Minds | firevy.co',
       metaDescription: 'Meet the team of innovative, driven and passionate individuals at firevy.co. We cultivate diverse talents to make firevy.co the industry leader.',
