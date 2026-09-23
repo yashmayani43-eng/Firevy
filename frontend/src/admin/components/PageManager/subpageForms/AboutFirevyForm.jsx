@@ -233,7 +233,7 @@ export const AboutFirevyForm = ({
 
   // 13. Panoramic Team Banner State
   const teamBanner = formData.teamBanner || formData.content?.teamBanner || {
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80'
+    image: '/images/team.jpeg'
   };
 
   // 14. CTA Banner State

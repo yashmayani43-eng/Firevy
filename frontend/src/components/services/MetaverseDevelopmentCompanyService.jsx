@@ -20,19 +20,19 @@ import SapphireFaqSection from '../common/SapphireFaqSection';
 import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
 import ItConsultingRecentBlogsSection from './ItConsultingRecentBlogsSection';
 import HealthcareChallengeCtaBanner from '../common/HealthcareChallengeCtaBanner';
-import DigitalTwinComprehensiveServices from './DigitalTwinComprehensiveServices';
+import MetaverseComprehensiveServices from './MetaverseComprehensiveServices';
 import {
   ArrowRight,
   Quote
 } from 'lucide-react';
 
-export const DigitalTwinSolutionsService = () => {
+export const MetaverseDevelopmentCompanyService = () => {
 
-  // Benefits of Digital Twin Solutions Cards (Balanced 6 cards matching 3x2 grid)
-  const digitalTwinBenefits = [
+  // Benefits of Metaverse Development Cards (Balanced 6 cards matching 3x2 grid)
+  const metaverseBenefits = [
     {
-      title: 'Real-Time Operational Visibility',
-      desc: 'Sub-second bidirectional telemetry ingestion between physical machines, SCADA networks, and 3D virtual representations for complete operational transparency.',
+      title: 'Persistent Virtual Real Estate & Spaces',
+      desc: 'Build perpetual 3D digital environments that remain active 24/7, providing global users with an interactive spatial venue for branded gatherings, showcases, and commerce.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="6" y="8" width="36" height="32" rx="4" />
@@ -42,18 +42,18 @@ export const DigitalTwinSolutionsService = () => {
       )
     },
     {
-      title: 'Predictive Maintenance & Zero Downtime',
-      desc: 'Continuous machine learning anomaly detection identifies thermal hotspots, micro-vibrations, and mechanical fatigue well before catastrophic equipment failure occurs.',
+      title: 'Web3 & Digital Asset Monetization',
+      desc: 'Harness tokenomics, smart contracts, and NFT digital goods to create direct-to-avatar commerce streams, digital land leases, and verifiable secondary trading marketplaces.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 24l8 8 16-16" />
           <circle cx="24" cy="24" r="18" />
+          <path d="M24 12v24M18 17h10a4 4 0 0 1 0 8H18h12a4 4 0 0 1 0 8H18" />
         </svg>
       )
     },
     {
-      title: 'Risk-Free What-If Simulations',
-      desc: 'Test load spikes, production reconfiguration, stress limits, and emergency protocols in a calibrated physics sandbox without disrupting active factory operations.',
+      title: 'Next-Gen 3D User Engagement',
+      desc: 'Replace flat 2D browsing with deeply tactile spatial interactions. Real-time 3D physics, spatial audio, and gamified mechanics skyrocket user retention and brand immersion.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="24" cy="24" r="18" />
@@ -63,22 +63,8 @@ export const DigitalTwinSolutionsService = () => {
       )
     },
     {
-      title: 'Asset Lifecycle Cost Reduction',
-      desc: 'Extend machinery operational lifespan by 25-40% through precision usage monitoring, dynamic maintenance scheduling, and optimized power consumption.',
-      icon: (
-        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <line x1="8" y1="40" x2="40" y2="40" />
-          <line x1="8" y1="40" x2="8" y2="8" />
-          <path d="M14 34l8-10 8 6 10-14" />
-          <circle cx="22" cy="24" r="2.5" />
-          <circle cx="30" cy="30" r="2.5" />
-          <circle cx="40" cy="16" r="2.5" />
-        </svg>
-      )
-    },
-    {
-      title: 'Cross-System IT & OT Interoperability',
-      desc: 'Unify disparate protocols—including OPC-UA, MQTT, REST APIs, and Modbus—into an authoritative central virtual replica accessible to cross-functional teams.',
+      title: 'Borderless Multi-User Collaboration',
+      desc: 'Enable distributed global teams, stakeholders, and customers to meet in shared spatial boardrooms with low-latency voice, avatar gestures, and synchronized 3D assets.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="16" cy="16" r="6" />
@@ -89,62 +75,74 @@ export const DigitalTwinSolutionsService = () => {
       )
     },
     {
-      title: 'Automated Regulatory Compliance',
-      desc: 'Maintain immutable timestamped logs of machine performance, emissions telemetry, and safety metrics to satisfy stringent ISO, OSHA, and environmental standards.',
+      title: 'Decentralized Digital Identity & Avatars',
+      desc: 'Equip users with customizable, cross-platform 3D avatars with rigged facial animation and decentralized self-sovereign identity protocols across multiple virtual worlds.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M24 4l18 6v14c0 11-8 20-18 24-10-4-18-13-18-24V10L24 4z" />
-          <path d="M16 24l6 6 12-12" />
+          <circle cx="24" cy="16" r="8" />
+          <path d="M10 40c0-7 6-12 14-12s14 5 14 12" />
+          <path d="M24 4v4M18 6l2 3M30 6l-2 3" />
+        </svg>
+      )
+    },
+    {
+      title: 'Frictionless Cross-Platform Interoperability',
+      desc: 'Deploy spatial ecosystems that run seamlessly across WebXR web browsers, Meta Quest, Apple Vision Pro, iOS, Android, and high-performance desktop clients without lock-in.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="6" y="8" width="24" height="18" rx="2" />
+          <rect x="20" y="18" width="22" height="22" rx="3" />
+          <circle cx="31" cy="35" r="1.5" />
         </svg>
       )
     }
   ];
 
-  // Digital Twin FAQs
-  const digitalTwinFaqs = [
+  // Metaverse FAQs
+  const metaverseFaqs = [
     {
-      question: '1. What are Digital Twin Solutions and how do they benefit enterprise operations?',
-      answer: 'A Digital Twin is a dynamic, virtual representation of a physical machine, product, or entire facility powered by real-time IoT sensor telemetry, physics modeling, and machine learning. Enterprises benefit through real-time operational visibility, predictive failure detection, optimized maintenance cycles, and risk-free simulation.'
+      question: '1. What are Metaverse Development Services and how can they benefit my enterprise?',
+      answer: 'Metaverse Development Services encompass building persistent, multi-user 3D virtual spaces, spatial computing platforms, Web3 decentralized applications, and custom digital twins. Businesses benefit through hyper-engaging virtual commerce, borderless workforce collaboration, immersive brand activations, and new tokenized monetization avenues.'
     },
     {
-      question: '2. Why should our company choose Firevy for Digital Twin development?',
-      answer: 'Firevy brings deep cross-disciplinary expertise spanning industrial IoT engineering, PLC/SCADA telematics, CAD/BIM 3D modeling, and AI-driven predictive analytics. We deliver secure, scalable digital twin pipelines compliant with ISO industrial standards.'
+      question: '2. Why should I choose Firevy as our Metaverse Development Company?',
+      answer: 'Firevy brings deep spatial engineering capabilities, combining certified Unreal Engine 5 and Unity developers, WebGL experts, 3D character artists, and Web3 smart contract auditors. We build high-concurrency, cross-platform metaverse applications tailored for enterprise security, scalability, and performance.'
     },
     {
-      question: '3. What industrial protocols and IoT data sources can you integrate with?',
-      answer: 'We natively integrate with OPC-UA, MQTT, Modbus, BACnet, Siemens S7, REST APIs, and industrial historians. Data feeds can be hosted on AWS IoT TwinMaker, Azure Digital Twins, Google Cloud IoT, or private on-premise clusters.'
+      question: '3. Can users access your Metaverse platforms without downloading heavy software?',
+      answer: 'Yes! We specialize in WebXR and browser-based 3D applications (using Three.js, Babylon.js, and WebAssembly) allowing users to enter virtual environments directly via URLs on standard web browsers, smartphones, tablets, and VR headsets with zero download friction.'
     },
     {
-      question: '4. How does a Digital Twin prevent unplanned machine downtime?',
-      answer: 'Our predictive AI algorithms constantly benchmark live telemetry against calibrated physical thresholds. By recognizing vibration anomalies, temperature creep, and pressure fluctuations weeks ahead of time, teams perform scheduled repairs before failures happen.'
+      question: '4. Do your Metaverse solutions support VR and AR headsets like Apple Vision Pro and Meta Quest?',
+      answer: 'Absolutely. We architect unified cross-platform pipelines that deploy to Apple Vision Pro, Meta Quest 3/Pro, HTC Vive, Pico, desktop Windows/macOS, and mobile devices with synchronized multiplayer state management.'
     },
     {
-      question: '5. What industries gain the highest ROI from Digital Twin implementations?',
-      answer: 'Heavy manufacturing, automotive assembly, aerospace, energy grids, smart commercial buildings (BIM), healthcare facilities, and supply chain logistics achieve the highest operational ROI and rapid payback periods.'
+      question: '5. How do you integrate Web3, NFTs, and payment gateways into the Metaverse?',
+      answer: 'We develop robust smart contracts (ERC-20, ERC-721, ERC-1155), integrate decentralized wallets (MetaMask, WalletConnect, Coinbase Wallet), and establish fiat-to-crypto checkout gateways to facilitate seamless digital asset buying, selling, and leasing.'
     },
     {
-      question: '6. Can our CAD blueprints and 3D schematics be directly converted into a digital twin?',
-      answer: 'Yes! We ingest complex CAD formats (SolidWorks, AutoCAD, CATIA, STEP, Revit BIM) and optimize them into lightweight, real-time 3D models running at 60+ FPS inside interactive web browsers, desktop dashboards, and VR headsets.'
+      question: '6. What industries can benefit most from custom Metaverse development?',
+      answer: 'Industries including retail & fashion (virtual try-ons and digital twins), real estate & architecture (3D virtual walkthroughs), corporate enterprises (remote spatial offices and boardrooms), gaming & entertainment (virtual concerts and multiplayer arenas), and healthcare (collaborative clinical simulations) achieve immense ROI.'
     },
     {
-      question: '7. How do you guarantee cybersecurity and data protection for industrial digital twins?',
-      answer: 'We implement end-to-end TLS 1.3 encryption, mutual certificate authentication (mTLS), role-based access control (RBAC), and zero-trust perimeter network isolation to guarantee proprietary OT systems remain secure.'
+      question: '7. How do you ensure high performance with thousands of concurrent users in a virtual world?',
+      answer: 'We implement scalable spatial server architectures with distributed spatial partitioning, level-of-detail (LOD) asset streaming, low-latency WebRTC audio/video feeds, and authoritative headless servers hosted on AWS and Google Cloud.'
     },
     {
-      question: '8. How long does an enterprise Digital Twin development engagement typically take?',
-      answer: 'A focused single-asset or pilot machine twin is commonly deployed within 4 to 8 weeks, while comprehensive facility-wide cyber-physical ecosystems spanning thousands of telemetry nodes typically take 3 to 6 months.'
+      question: '8. How long does it take to develop a custom Metaverse application?',
+      answer: 'A minimum viable product (MVP) or custom virtual showroom typically requires 4 to 8 weeks, while full-scale persistent decentralized virtual worlds with comprehensive tokenomics and custom avatar ecosystems span 3 to 6 months.'
     },
     {
-      question: '9. Do you provide continuous calibration and algorithmic refinement post-launch?',
-      answer: 'Yes, we provide ongoing sensor calibration, model retuning, machine learning drift prevention, cloud infrastructure scaling, and 24/7 telemetry SLA support.'
+      question: '9. Do you offer ongoing maintenance and world-building updates post-launch?',
+      answer: 'Yes, we provide end-to-end post-launch support including multi-user concurrency tuning, seasonal world and asset additions, security audits, server SLA monitoring, and device firmware compatibility updates.'
     }
   ];
 
   return (
     <div className="bg-white min-h-screen font-sans text-slate-800">
       <SEO
-        title="Enterprise Digital Twin Solutions & Development Services | Firevy"
-        description="Firevy delivers enterprise Digital Twin development services in USA, integrating real-time IoT telematics, cyber-physical synchronization, predictive maintenance, and 3D simulation twins."
+        title="Top Metaverse Development Company in USA | Firevy"
+        description="Firevy is a premier Metaverse Development Company providing enterprise 3D virtual worlds, Web3 spatial computing, 3D avatar platforms, and WebXR solutions in USA."
       />
 
       {/* ========================================================================= */}
@@ -156,11 +154,11 @@ export const DigitalTwinSolutionsService = () => {
             {/* Left Content */}
             <div className="lg:col-span-6 space-y-6 text-left">
               <h1 className="text-3xl sm:text-4xl lg:text-[46px] font-[800] text-[#0B0F19] leading-[1.18] tracking-tight">
-                Digital Twin Solutions & Development in USA
+                Metaverse Development Company in USA
               </h1>
 
               <p className="text-base sm:text-[17px] text-slate-600 leading-relaxed font-normal">
-                Bridge the physical and virtual worlds. Leverage our enterprise Digital Twin solutions—integrating real-time IoT telematics, physics-based 3D modeling, and predictive AI—to eliminate downtime, optimize asset lifecycles, and simulate complex operational workflows.
+                Step into the next digital frontier with our end-to-end Metaverse development services. Firevy engineers hyper-immersive 3D virtual worlds, Web3 spatial ecosystems, interactive avatar platforms, and decentralized applications (dApps) that redefine customer engagement, virtual commerce, and enterprise collaboration.
               </p>
 
               <div className="pt-2">
@@ -178,8 +176,8 @@ export const DigitalTwinSolutionsService = () => {
             <div className="lg:col-span-6 flex justify-center items-center">
               <div className="relative w-full max-w-[540px] rounded-2xl overflow-hidden shadow-xl border border-slate-100 bg-white group hover:shadow-2xl transition-all duration-500">
                 <img
-                  src="/images/digital_twin_hero_3d.jpg"
-                  alt="Digital Twin Solutions & Development in USA"
+                  src="/images/metaverse_hero_illustration.jpg"
+                  alt="Metaverse Development Company in USA"
                   className="w-full h-auto object-cover object-center group-hover:scale-102 transition-transform duration-500"
                 />
               </div>
@@ -194,7 +192,7 @@ export const DigitalTwinSolutionsService = () => {
       <BrandLogoMarquee />
 
       {/* ========================================================================= */}
-      {/* 3. ENTERPRISE DIGITAL TWIN DEVELOPMENT & CONSULTING */}
+      {/* 3. ENTERPRISE METAVERSE DEVELOPMENT & CONSULTING */}
       {/* ========================================================================= */}
       <section className="py-16 lg:py-24 bg-white border-t border-slate-100">
         <Container>
@@ -203,8 +201,8 @@ export const DigitalTwinSolutionsService = () => {
             <div className="lg:col-span-6 flex justify-center items-center order-2 lg:order-1">
               <div className="relative w-full max-w-[540px] rounded-2xl overflow-hidden shadow-xl border border-slate-100 bg-white group hover:shadow-2xl transition-all duration-500">
                 <img
-                  src="/images/digital_twin_enterprise_3d.jpg"
-                  alt="Enterprise Digital Twin Development and Consulting Services"
+                  src="/images/metaverse_enterprise_illustration.jpg"
+                  alt="Enterprise Metaverse Development and Consulting Services"
                   className="w-full h-auto object-cover object-center group-hover:scale-102 transition-transform duration-500"
                 />
               </div>
@@ -213,15 +211,15 @@ export const DigitalTwinSolutionsService = () => {
             {/* Right Text */}
             <div className="lg:col-span-6 space-y-6 text-left order-1 lg:order-2">
               <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] leading-[1.2] tracking-tight">
-                Enterprise Digital Twin Development And Consulting Services
+                Enterprise Metaverse Development And Consulting Services
               </h2>
 
               <p className="text-sm sm:text-[15.5px] text-slate-600 leading-relaxed font-normal">
-                Our mission is to harness cyber-physical systems engineering, IoT telematics integration, and physics-driven 3D simulations to help industrial enterprises achieve zero unplanned downtime, superior operational efficiency, and deep predictive intelligence. From robotic manufacturing lines and smart buildings to aerospace powertrains and utility distribution networks, we build digital twins built for real-world impact.
+                Our mission is to harness spatial computing, decentralized Web3 protocols, and photorealistic 3D virtual environments to assist forward-thinking enterprises in dominating the next era of digital interaction. From virtual corporate headquarters and expo halls to gamified token economies and digital twin cities, we deliver robust metaverse architectures designed for enterprise scale.
               </p>
 
               <p className="text-sm sm:text-[15.5px] text-slate-600 leading-relaxed font-normal">
-                We provide full-lifecycle custom Digital Twin engineering, sensor network integration, CAD geometry conversion, and predictive ML modeling. From AWS IoT TwinMaker and Azure Digital Twins to customized on-premise spatial dashboards, leverage Firevy's engineering prowess to modernize your enterprise operations.
+                We provide full-lifecycle custom Metaverse software engineering, smart contract architecture, 3D asset optimization, and cross-platform deployment. From Apple Vision Pro and Meta Quest to browser-based WebXR, harness the expertise of Firevy's metaverse engineers to create boundless virtual opportunities.
               </p>
             </div>
           </div>
@@ -234,13 +232,13 @@ export const DigitalTwinSolutionsService = () => {
       <ClutchTopRatedBanner />
 
       {/* ========================================================================= */}
-      {/* 5. QUICK AND AFFORDABLE DIGITAL TWIN SERVICES */}
+      {/* 5. QUICK AND AFFORDABLE METAVERSE SERVICES */}
       {/* ========================================================================= */}
       <section className="py-16 lg:py-24 bg-white">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[800] text-[#0B0F19] tracking-tight leading-snug">
-              Quick And Affordable Digital Twin Solutions
+              Quick And Affordable Metaverse Development Services
             </h2>
           </div>
 
@@ -252,7 +250,7 @@ export const DigitalTwinSolutionsService = () => {
                   <Quote className="w-12 h-12 fill-current opacity-90" />
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-[800] text-[#005D95] leading-snug tracking-tight">
-                  Real-Time Physical & Virtual Asset Synchronization Guarantee
+                  Immersive, Scalable And Decentralized Virtual Worlds
                 </h3>
               </div>
             </div>
@@ -260,11 +258,11 @@ export const DigitalTwinSolutionsService = () => {
             {/* Right Content */}
             <div className="lg:col-span-7 space-y-5 text-left">
               <p className="text-slate-600 text-sm sm:text-[15.5px] leading-relaxed font-normal">
-                Deploying high-impact digital twins in today's connected enterprise demands rigorous mathematical precision, low-latency telemetry ingestion, and seamless integration across enterprise IT and OT systems. Off-the-shelf software often fails to replicate complex proprietary machinery or unique facility workflows.
+                The Metaverse represents the fusion of virtual worlds, spatial computing, decentralized finance, and social interaction. By unifying multi-user real-time 3D rendering with blockchain-backed asset verification, businesses can establish enduring digital communities and recurring revenue streams.
               </p>
 
               <p className="text-slate-600 text-sm sm:text-[15.5px] leading-relaxed font-normal">
-                Our engineers provide personalized <Link to="/services/software-development" className="text-[#005D95] font-bold underline hover:text-[#003b60]">software development service</Link> solutions engineered for your exact SCADA networks, CAD schematics, and enterprise ERP systems. With deep expertise across industrial IoT, machine learning, and 3D simulation engines, we deliver solutions that minimize operational risk and unlock predictive intelligence.
+                Our developers deliver customized <Link to="/services/software-development" className="text-[#005D95] font-bold underline hover:text-[#003b60]">software development service</Link> solutions engineered for high frame-rates, minimal latency, and frictionless onboarding. With deep expertise across Unity 3D, Unreal Engine 5, WebXR, Solidity, and spatial networking, we build metaverse platforms that stand the test of scale. Hire dedicated Metaverse developers to propel your business into the future.
               </p>
             </div>
           </div>
@@ -292,7 +290,7 @@ export const DigitalTwinSolutionsService = () => {
 
           {/* 3 Case Study Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            {/* Card 1: Industrial Smart Factory Cyber-Physical Twin */}
+            {/* Card 1: Virtual Real Estate & Digital Twin Mall */}
             <div className="text-center group">
               <div className="relative rounded-[20px] overflow-hidden bg-white shadow-sm border border-slate-200/80 p-2 group-hover:shadow-md transition-all">
                 <div className="absolute top-4 right-4 z-10 bg-[#005F96] text-white text-[11px] font-[700] px-3 py-1 rounded-md shadow-2xs">
@@ -300,40 +298,40 @@ export const DigitalTwinSolutionsService = () => {
                 </div>
                 <img
                   src="/images/digital_twin_hero.jpg"
-                  alt="Industrial Smart Factory Cyber-Physical Twin"
+                  alt="Enterprise Virtual Real Estate and Digital Twin Mall"
                   className="w-full h-[220px] object-cover rounded-[14px]"
                 />
               </div>
               <h3 className="text-[16px] font-[800] text-slate-900 mt-4 font-sans text-left">
-                Industrial Smart Factory Cyber-Physical Twin
+                Enterprise Virtual Real Estate & Digital Twin Mall
               </h3>
             </div>
 
-            {/* Card 2: Automotive Powertrain & Robotics Simulation Platform */}
+            {/* Card 2: Next-Gen Web3 Metaverse Concert & Arena */}
             <div className="text-center group">
               <div className="rounded-[20px] overflow-hidden bg-white shadow-sm border border-slate-200/80 p-2 group-hover:shadow-md transition-all">
                 <img
                   src="/images/digital_twin_pipeline.jpg"
-                  alt="Automotive Powertrain and Robotics Simulation Platform"
+                  alt="Next-Gen Web3 Metaverse Concert and Arena"
                   className="w-full h-[220px] object-cover rounded-[14px]"
                 />
               </div>
               <h3 className="text-[16px] font-[800] text-slate-900 mt-4 font-sans text-left">
-                Automotive Powertrain & Robotics Simulation Platform
+                Next-Gen Web3 Metaverse Concert & Arena
               </h3>
             </div>
 
-            {/* Card 3: Smart City & Utility Grid Telematics Twin */}
+            {/* Card 3: 3D Avatar & Virtual Fashion Platform */}
             <div className="text-center group">
               <div className="rounded-[20px] overflow-hidden bg-white shadow-sm border border-slate-200/80 p-2 group-hover:shadow-md transition-all">
                 <img
                   src="/images/virtual_reality_about.svg"
-                  alt="Smart City and Utility Grid Telematics Twin"
+                  alt="3D Avatar and Virtual Fashion Platform"
                   className="w-full h-[220px] object-cover rounded-[14px]"
                 />
               </div>
               <h3 className="text-[16px] font-[800] text-slate-900 mt-4 font-sans text-left">
-                Smart City & Utility Grid Telematics Twin
+                3D Avatar & Virtual Fashion E-Commerce Platform
               </h3>
             </div>
           </div>
@@ -402,23 +400,23 @@ export const DigitalTwinSolutionsService = () => {
       <TrustRecognitionBanner />
 
       {/* ========================================================================= */}
-      {/* 11. BENEFITS OF DIGITAL TWIN SOLUTIONS */}
+      {/* 11. BENEFITS OF METAVERSE DEVELOPMENT */}
       {/* ========================================================================= */}
       <section className="py-16 lg:py-24 bg-white border-t border-slate-100">
         <Container>
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#0B0F19] tracking-tight leading-tight mb-3 font-sans">
-              Benefits of Our Digital Twin Solutions
+              Benefits Of Metaverse Development
             </h2>
             <p className="text-sm sm:text-[15.5px] text-slate-600 font-normal leading-relaxed font-sans max-w-3xl mx-auto">
-              Years of cyber-physical engineering, IoT telematics integration, and 3D simulation have made our committed digital twin specialists exceptionally skilled partners.
+              Metaverse solutions deliver transformative opportunities including persistent virtual real estate, Web3 asset monetization, limitless customer engagement, and borderless global collaboration. Explore key advantages below.
             </p>
           </div>
 
           {/* 6 Benefits Cards Grid (Balanced 3x2) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {digitalTwinBenefits.map((item, index) => (
+            {metaverseBenefits.map((item, index) => (
               <div
                 key={index}
                 className="bg-white rounded-2xl p-7 sm:p-8 shadow-[0_4px_25px_rgba(0,0,0,0.04)] border border-slate-100 hover:border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col text-left group"
@@ -439,9 +437,9 @@ export const DigitalTwinSolutionsService = () => {
       </section>
 
       {/* ========================================================================= */}
-      {/* OUR COMPREHENSIVE DIGITAL TWIN SOLUTIONS (EDGE-TO-EDGE CAROUSEL) */}
+      {/* OUR COMPREHENSIVE METAVERSE DEVELOPMENT SERVICES (EDGE-TO-EDGE CAROUSEL) */}
       {/* ========================================================================= */}
-      <DigitalTwinComprehensiveServices />
+      <MetaverseComprehensiveServices />
 
       {/* ========================================================================= */}
       {/* 12. HIRING MODELS */}
@@ -494,15 +492,15 @@ export const DigitalTwinSolutionsService = () => {
       <SapphireFaqSection
         title="Frequently Asked Questions"
         subtitle="We Listen To Query And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mention Below"
-        faqs={digitalTwinFaqs}
+        faqs={metaverseFaqs}
       />
 
       {/* ========================================================================= */}
-      {/* 24. WHAT SETS US APART IN DIGITAL TWIN SOLUTIONS? */}
+      {/* 24. WHAT SETS US APART IN METAVERSE DEVELOPMENT SERVICES? */}
       {/* ========================================================================= */}
       <WhatSetsUsApartSection
-        title="What Sets Us Apart In Digital Twin Solutions?"
-        subtitle="Being unique is our quality! Firevy combines deep IoT telematics with predictive physics engines and 3D simulation to engineer world-class Digital Twin platforms for global industrial enterprises."
+        title="What Sets Us Apart In Metaverse Development Services?"
+        subtitle="Being unique is our quality! Firevy combines deep 3D spatial engineering with Web3 decentralization and photorealistic graphics to build world-class Metaverse platforms for global enterprises."
       />
 
       {/* ========================================================================= */}
@@ -511,12 +509,12 @@ export const DigitalTwinSolutionsService = () => {
       <ItConsultingRecentBlogsSection />
 
       {/* ========================================================================= */}
-      {/* 26. HAVE DIGITAL TWIN CHALLENGE TO ADDRESS ? */}
+      {/* 26. HAVE METAVERSE DEVELOPMENT CHALLENGE TO ADDRESS ? */}
       {/* ========================================================================= */}
       <HealthcareChallengeCtaBanner
-        title="Have Digital Twin Challenge To Address ?"
-        subtitle="Get access to top Digital Twin, Industrial IoT, and 3D simulation developers to transform your ideas into operational intelligence."
-        buttonText="Hire Digital Twin Developers Now"
+        title="Have Metaverse Development Challenge To Address ?"
+        subtitle="Get access to top Metaverse, Web3, and 3D spatial developers to transform your ideas into an immersive digital reality."
+        buttonText="Hire Metaverse Developers Now"
       />
 
       {/* ========================================================================= */}
@@ -527,4 +525,4 @@ export const DigitalTwinSolutionsService = () => {
   );
 };
 
-export default DigitalTwinSolutionsService;
+export default MetaverseDevelopmentCompanyService;

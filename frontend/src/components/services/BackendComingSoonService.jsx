@@ -48,11 +48,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'progressive-web-app': { title: 'Progressive Web App', category: 'Front End Development' },
 
   // Microsoft Development Services
-  'microsoft-development': { title: 'Microsoft Development', category: 'Microsoft Development' },
-  'asp-net-core-development': { title: 'ASP.NET Core Development', category: 'Microsoft Development' },
-  'net-application-development': { title: '.NET Application Development', category: 'Microsoft Development' },
-  'asp-net-development': { title: 'ASP.NET Development', category: 'Microsoft Development' },
-  'asp-net-migration-service': { title: 'ASP.NET Migration Service', category: 'Microsoft Development' },
   'microsoft-dynamics-365-consulting': { title: 'Microsoft Dynamics 365 Consulting', category: 'Microsoft Development' },
   'kentico-development-services': { title: 'Kentico Development Services', category: 'Microsoft Development' },
   'dotnetnuke-development': { title: 'Dotnetnuke Development', category: 'Microsoft Development' },
@@ -94,9 +89,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'software-product-discovery': { title: 'Software Product Discovery', category: 'Software Development Service' },
 
   // AR/VR Development Services (after Virtual Reality App Development)
-  'extended-reality-development': { title: 'Extended Reality Development', category: 'AR/VR Development' },
-  'extended-reality': { title: 'Extended Reality Development', category: 'AR/VR Development' },
-  'xr-development': { title: 'Extended Reality Development', category: 'AR/VR Development' },
   'metaverse-development-company': { title: 'Metaverse Development Company', category: 'AR/VR Development' },
   'metaverse-development': { title: 'Metaverse Development Company', category: 'AR/VR Development' },
 
@@ -173,11 +165,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'web-portal-development' ||
     clean === 'web3-development' ||
     clean === 'progressive-web-app' ||
-    clean === 'microsoft-development' ||
-    clean === 'asp-net-core-development' ||
-    clean === 'net-application-development' ||
-    clean === 'asp-net-development' ||
-    clean === 'asp-net-migration-service' ||
     clean === 'microsoft-dynamics-365-consulting' ||
     clean === 'kentico-development-services' ||
     clean === 'dotnetnuke-development' ||
@@ -190,11 +177,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'bullion-exchange-app-development' ||
     clean === 'digital-wayfinding-solutions' ||
     clean === 'ethereum-app-development' ||
-    clean === 'product-development' ||
-    clean === 'software-development-service' ||
-    clean === 'software-development-services' ||
-    clean === 'software-development' ||
-    clean === 'digital-transformation-services' ||
     clean === 'application-services' ||
     clean === 'crm-development' ||
     clean === 'offshore-software-development' ||
@@ -212,9 +194,7 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'software-product-discovery' ||
     clean === 'extended-reality-development' ||
     clean === 'extended-reality' ||
-    clean === 'xr-development' ||
-    clean === 'metaverse-development-company' ||
-    clean === 'metaverse-development'
+    clean === 'xr-development'
   );
 };
 

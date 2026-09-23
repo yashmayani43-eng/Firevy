@@ -1,12 +1,14 @@
 import React from 'react';
 
 const brandLogos = [
-  { name: 'LARSEN & TOUBRO', src: '/images/logo_larsen_toubro.svg' },
-  { name: 'LafargeHolcim', src: '/images/logo_lafargeHolcim.svg' },
-  { name: 'adani', src: '/images/logo_adani.svg' },
+  { name: 'OPSYS care', src: '/images/opsys_care_logo.svg' },
   { name: 'SEASWORTH JEWELS', src: '/images/seasworth_jewels.png' },
   { name: 'TATVAM OVERSEAS', src: '/images/tatvam_overseas.jpg' },
-  { name: 'DH', src: '/images/dh_logo.jpg' }
+  { name: 'DH', src: '/images/dh_logo.jpg' },
+  { name: 'PARAM', src: '/images/param_logo.svg' },
+  { name: 'adani', src: '/images/logo_adani.svg' },
+  { name: 'LARSEN & TOUBRO', src: '/images/logo_larsen_toubro.svg' },
+  { name: 'LafargeHolcim', src: '/images/logo_lafargeHolcim.svg' }
 ];
 
 export const BrandLogoMarquee = () => {

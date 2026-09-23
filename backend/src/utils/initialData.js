@@ -1556,56 +1556,29 @@ export const initialCareerPageData = {
   peopleTestimonials: [
     {
       id: "p_1",
-      name: "Ankit Morasiya",
-      role: "Business Analyst",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+      name: "Sahaj Maniya",
+      role: "HR Lead",
+      avatar: "/images/Sahaj_Maniya.JPG",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       order: 0,
       isActive: true
     },
     {
       id: "p_2",
-      name: "Umang Barot",
-      role: "Technical Support Lead",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      name: "Rutvik",
+      role: "Technical Lead",
+      avatar: "/images/Rutvik.JPG",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       order: 1,
       isActive: true
     },
     {
       id: "p_3",
-      name: "Galav Shukla",
-      role: "Business Development Executive",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80",
+      name: "Hiren Rajani",
+      role: "Sr. BDR - Service",
+      avatar: "/images/Hiren.JPG",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       order: 2,
-      isActive: true
-    },
-    {
-      id: "p_4",
-      name: "Parthiv Trivedi",
-      role: "Business Development Manager",
-      avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      order: 3,
-      isActive: true
-    },
-    {
-      id: "p_5",
-      name: "Daxesh Prajapati",
-      role: "Team Lead",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      order: 4,
-      isActive: true
-    },
-    {
-      id: "p_6",
-      name: "Mehul Gajjar",
-      role: "Team Lead",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      order: 5,
       isActive: true
     }
   ],

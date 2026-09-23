@@ -233,28 +233,38 @@ export const Footer = () => {
                         </span>
                       </a>
                     )}
-                    {(footerConfig?.salesContact?.phoneIndia || 'IN: +91 7069370629') && (
-                      <a
-                        href={`tel:${(footerConfig?.salesContact?.phoneIndia || '+91 7069370629').replace(/[^0-9+]/g, '')}`}
-                        className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                      >
-                        <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                        <span className="font-[600]">
-                          {footerConfig?.salesContact?.phoneIndia || 'IN: +91 7069370629'}
-                        </span>
-                      </a>
-                    )}
-                    {footerConfig?.salesContact?.phoneUS && (
-                      <a
-                        href={`tel:${footerConfig.salesContact.phoneUS.replace(/[^0-9+]/g, '')}`}
-                        className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                      >
-                        <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                        <span className="font-[600]">
-                          {footerConfig.salesContact.phoneUS}
-                        </span>
-                      </a>
-                    )}
+                    {(() => {
+                      const rawPhoneIndia = footerConfig?.salesContact?.phoneIndia;
+                      const phoneIndia = (rawPhoneIndia && !rawPhoneIndia.includes('942-970-9662'))
+                        ? rawPhoneIndia
+                        : 'IN: +91 7069370629';
+                      const rawPhoneUS = footerConfig?.salesContact?.phoneUS;
+                      const phoneUS = rawPhoneUS || 'US: +1-754-258-7670';
+                      return (
+                        <>
+                          <a
+                            href={`tel:${phoneIndia.replace(/[^0-9+]/g, '')}`}
+                            className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                          >
+                            <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                            <span className="font-[600]">
+                              {phoneIndia}
+                            </span>
+                          </a>
+                          {phoneUS && (
+                            <a
+                              href={`tel:${phoneUS.replace(/[^0-9+]/g, '')}`}
+                              className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                            >
+                              <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                              <span className="font-[600]">
+                                {phoneUS}
+                              </span>
+                            </a>
+                          )}
+                        </>
+                      );
+                    })()}
                   </div>
                 </div>
 
@@ -373,26 +383,42 @@ export const Footer = () => {
             {/* RIGHT GROUP: 6 GLOBAL OFFICES GRID — TALL SPACIOUS CARDS (Col 7 / 12) */}
             <div className="lg:col-span-7">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {(footerConfig?.offices && footerConfig.offices.length > 0 ? footerConfig.offices : [
-                  { id: '1', country: 'India(HQ)', flag: '/images/india_office.svg', address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004' },
-                  { id: '2', country: 'Germany', flag: '/images/germany_office.svg', address: 'walter meckauer str 11, 90478 nurenberg' },
-                  { id: '3', country: 'UAE', flag: '/images/uae_office.svg', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' },
-                  { id: '4', country: 'Australia', flag: '/images/aus_office.svg', address: 'U 2B 305 Harborne Street, Glendalough 6016 WA' },
-                  { id: '5', country: 'UK', flag: '/images/uk_office.svg', address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom' },
-                  { id: '6', country: 'Canada', flag: '/images/canada_office.svg', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' }
-                ]).map((office, idx) => {
+                {(() => {
+                  const rawList = (footerConfig?.offices && footerConfig.offices.length > 0 ? footerConfig.offices : [
+                    { id: '1', country: 'India(HQ)', flag: '/images/india_office.svg', address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004' },
+                    { id: '2', country: 'Germany', flag: '/images/germany_office.svg', address: 'walter meckauer str 11, 90478 nurenberg' },
+                    { id: '3', country: 'UAE', flag: '/images/uae_office.svg', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' },
+                    { id: '4', country: 'Australia', flag: '/images/aus_office.svg', address: 'U 2B 305 Harborne Street, Glendalough 6016 WA' },
+                    { id: '5', country: 'UK', flag: '/images/uk_office.svg', address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom' },
+                    { id: '6', country: 'Canada', flag: '/images/canada_office.svg', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' }
+                  ]);
+
+                  return rawList.map((office, idx) => {
+                    const countryLower = (office.country || '').toLowerCase();
+                    // Always guarantee Germany for position 1 or legacy USA entry
+                    if (idx === 1 || office.id === 'office_us' || countryLower === 'usa' || countryLower.includes('united states')) {
+                      return {
+                        id: office.id === 'office_us' ? 'office_de' : office.id || '2',
+                        country: 'Germany',
+                        flag: '/images/germany_office.svg',
+                        address: 'walter meckauer str 11, 90478 nurenberg'
+                      };
+                    }
+                    return office;
+                  });
+                })().map((office, idx) => {
                   const countryLower = (office.country || '').toLowerCase();
 
                   const getFlag = () => {
-                    if (office.flag && (office.flag.startsWith('/') || office.flag.startsWith('http') || office.flag.includes('.svg') || office.flag.includes('.png'))) {
-                      return office.flag;
-                    }
-                    if (countryLower.includes('india') || idx === 0) return '/images/india_office.svg';
                     if (countryLower.includes('germany') || countryLower.includes('germeny') || idx === 1) return '/images/germany_office.svg';
+                    if (countryLower.includes('india') || idx === 0) return '/images/india_office.svg';
                     if (countryLower.includes('uae') || countryLower.includes('emirates') || countryLower.includes('dubai') || idx === 2) return '/images/uae_office.svg';
                     if (countryLower.includes('aus') || idx === 3) return '/images/aus_office.svg';
                     if (countryLower.includes('uk') || countryLower.includes('kingdom') || idx === 4) return '/images/uk_office.svg';
                     if (countryLower.includes('canada') || idx === 5) return '/images/canada_office.svg';
+                    if (office.flag && (office.flag.startsWith('/') || office.flag.startsWith('http') || office.flag.includes('.svg') || office.flag.includes('.png'))) {
+                      return office.flag;
+                    }
                     return '/images/india_office.svg';
                   };
 
@@ -423,10 +449,13 @@ export const Footer = () => {
                         <p className="text-slate-600 leading-relaxed text-[12.5px] font-[400] font-sans pr-14 line-clamp-4">
                           {(() => {
                             const raw = office.address || '';
+                            if (countryLower.includes('germany') || countryLower.includes('germeny') || idx === 1) {
+                              return 'walter meckauer str 11, 90478 nurenberg';
+                            }
                             if (raw.includes('Ganesh Meridian') || ((countryLower.includes('india') || idx === 0) && !raw.includes('Surat'))) {
                               return '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004';
                             }
-                            if (raw.includes('Ghoroob') || raw.includes('Mirdif') || ((countryLower.includes('uae') || countryLower.includes('dubai') || idx === 5) && !raw.includes('Ahli Residence'))) {
+                            if (raw.includes('Ghoroob') || raw.includes('Mirdif') || ((countryLower.includes('uae') || countryLower.includes('dubai') || idx === 2) && !raw.includes('Ahli Residence'))) {
                               return '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai';
                             }
                             return raw;
