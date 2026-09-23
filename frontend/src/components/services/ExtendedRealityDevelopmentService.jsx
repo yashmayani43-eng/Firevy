@@ -12,7 +12,6 @@ import TrustRecognitionBanner from '../home/TrustRecognitionBanner';
 import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
 
-import AboutUsStats from './AboutUsStats';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import SuccessMatrix from '../common/SuccessMatrix';
 import InnovativeVideoSlider from '../common/InnovativeVideoSlider';
@@ -485,11 +484,6 @@ export const ExtendedRealityDevelopmentService = () => {
       {/* WE HAVE BEEN FEATURED IN */}
       {/* ========================================================================= */}
       <FeaturedInBrandsSection />
-
-      {/* ========================================================================= */}
-      {/* 21. ABOUT US STATS */}
-      {/* ========================================================================= */}
-      <AboutUsStats companyName="Firevy" />
 
       {/* ========================================================================= */}
       {/* 19. DIGITAL TRANSFORMATION THROUGH INNOVATION (CASE STUDIES) */}
