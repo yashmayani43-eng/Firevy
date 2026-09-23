@@ -13,7 +13,6 @@ import TechStackProficientGrid from '../common/TechStackProficientGrid';
 import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
 import TransformativeImpactSection from './TransformativeImpactSection';
-import AboutUsStats from './AboutUsStats';
 import SapphireSeasonedExpertsSection from './SapphireSeasonedExpertsSection';
 import IndustryFocusedInsightsSection from './IndustryFocusedInsightsSection';
 import CustomItServicesSection from './CustomItServicesSection';
@@ -725,12 +724,6 @@ export const ProductDevelopmentService = () => {
       {/* 8. INDUSTRY-FOCUSED INSIGHTS TO ELEVATE YOUR BUSINESS */}
       {/* ========================================================================= */}
       <IndustryFocusedInsightsSection subtitle="Trending Industries that Use Digital Product Development" />
-
-      {/* ========================================================================= */}
-      {/* 9. ABOUT US STATS */}
-      {/* ========================================================================= */}
-      <AboutUsStats companyName="Firevy" />
-
       {/* ========================================================================= */}
       {/* 10. IMPACT OF CUSTOM PRODUCT DEVELOPMENT FOR BUSINESS SUCCESS */}
       {/* ========================================================================= */}
