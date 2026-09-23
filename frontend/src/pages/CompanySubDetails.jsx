@@ -585,26 +585,33 @@ export const CompanySubDetails = () => {
       ],
       buttonText: 'Explore Careers (Jobs)',
       buttonLink: '/careers',
-      image: dynamicSection?.gallery?.[0] || '/images/our_culture.JPG'
+      image: (dynamicSection?.gallery?.[0] && !dynamicSection.gallery[0].includes('unsplash')) ? dynamicSection.gallery[0] : '/images/our_culture.JPG'
     };
 
     // 6. Leadership
-    const leadersList = (content.leadership?.leaders && content.leadership.leaders.length > 0)
-      ? content.leadership.leaders
-      : (dynamicTeam && dynamicTeam.length > 0 ? dynamicTeam : [
-        {
-          name: 'Mr. Tushil Mayani',
-          designation: 'CEO & Co-Founder',
-          image: '/images/Tushil_mayani.JPG',
-          linkedin: 'https://linkedin.com'
-        },
-        {
-          name: 'Mr. Yash Mayani',
-          designation: 'CTO & Co-Founder',
-          image: '/images/Yash_Mayani.JPG',
-          linkedin: 'https://linkedin.com'
-        }
-      ]);
+    const defaultLeaders = [
+      {
+        name: 'Mr. Tushil Mayani',
+        designation: 'CEO & Co-Founder',
+        image: '/images/Tushil_mayani.JPG',
+        linkedin: 'https://linkedin.com'
+      },
+      {
+        name: 'Mr. Yash Mayani',
+        designation: 'CTO & Co-Founder',
+        image: '/images/Yash_Mayani.JPG',
+        linkedin: 'https://linkedin.com'
+      }
+    ];
+
+    const rawLeaders = content.leadership?.leaders;
+    const isLegacyLeaders = Array.isArray(rawLeaders) && rawLeaders.some(l =>
+      l.name?.includes('Kumaril') || l.name?.includes('Rajendra') || l.name?.includes('Bharat') || l.image?.includes('unsplash')
+    );
+
+    const leadersList = (!isLegacyLeaders && rawLeaders && rawLeaders.length > 0)
+      ? rawLeaders
+      : (dynamicTeam && dynamicTeam.length > 0 && !dynamicTeam.some(l => l.name?.includes('Kumaril') || l.name?.includes('Rajendra')) ? dynamicTeam : defaultLeaders);
 
     // 7. Products
     const productsList = (content.products?.items && content.products.items.length > 0)
@@ -991,9 +998,12 @@ export const CompanySubDetails = () => {
     const heroSubtitle = dynamicSection?.subtitle || dynamicSection?.content?.heroSubtitle || dynamicSection?.hero?.subtitle || "In this message, our CEO shares insights on our mission, vision, and commitment to innovation. We are excited to continue growing with you, and we hope you find inspiration in the path we're forging together.";
     const heroButtonText = dynamicSection?.ctaText || dynamicSection?.hero?.ctaText || dynamicSection?.content?.heroButtonText || "Work With Us";
     const heroButtonLink = dynamicSection?.ctaLink || dynamicSection?.hero?.ctaLink || dynamicSection?.content?.heroButtonLink || "/contact";
-    const ceoPhoto = dynamicSection?.heroImage || dynamicSection?.hero?.heroImage || dynamicSection?.content?.ceoImage || "/images/Tushil_mayani.JPG";
-    const ceoName = dynamicSection?.content?.ceoName || "Tushil Mayani";
-    const ceoRole = dynamicSection?.content?.ceoDesignation || "- CEO";
+    const isLegacyCeo = dynamicSection?.content?.ceoName?.includes('Kumaril') || dynamicSection?.content?.ceoName?.includes('Bharat');
+    const ceoPhoto = (isLegacyCeo || !dynamicSection?.content?.ceoImage || dynamicSection?.content?.ceoImage?.includes('unsplash') || dynamicSection?.heroImage?.includes('unsplash'))
+      ? "/images/Tushil_mayani.JPG"
+      : (dynamicSection?.heroImage || dynamicSection?.hero?.heroImage || dynamicSection?.content?.ceoImage || "/images/Tushil_mayani.JPG");
+    const ceoName = isLegacyCeo ? "Mr. Tushil Mayani" : (dynamicSection?.content?.ceoName || "Mr. Tushil Mayani");
+    const ceoRole = dynamicSection?.content?.ceoDesignation || "CEO & Co-Founder";
 
     // Tenets
     const defaultTenets = ["Integrity", "Excellence", "Innovation", "Leadership"];
@@ -1217,7 +1227,13 @@ export const CompanySubDetails = () => {
         "Never stop believing in the power of technology that can change the world. One Revolutionary idea... One brilliant Invention can enlighten billions of the Human lives. Nothing is Impossible when you Dream it & believe it you can Do it. Together, let us embrace the challenges and opportunities. Thank you for trusting us to be your partner in progress. Together, we are not just building software —we are creating a legacy of innovation and impact."
       ]
     };
-    const ceo = dynamicSection?.content?.ceo || defaultCeo;
+    const rawCeo = dynamicSection?.content?.ceo;
+    const isLegacyCeo = rawCeo?.name?.includes('Kumaril') || rawCeo?.name?.includes('Bharat') || rawCeo?.image?.includes('unsplash');
+    const ceo = (!isLegacyCeo && rawCeo?.name) ? {
+      ...defaultCeo,
+      ...rawCeo,
+      image: (rawCeo.image && !rawCeo.image.includes('unsplash')) ? rawCeo.image : '/images/Tushil_mayani.JPG'
+    } : defaultCeo;
 
     const defaultCto = {
       name: 'Mr. Yash Mayani',
@@ -1230,7 +1246,13 @@ export const CompanySubDetails = () => {
         "Our dedication to user-centric design and cutting-edge solutions has garnered prestigious accolades. Innovation is a journey, and at Firevy.Co, we walk that path with purpose and passion, transforming visions into reality and possibilities into achievements. Thank you for trusting us as your technology partner. Together, we are building a smarter, more connected happy world."
       ]
     };
-    const cto = dynamicSection?.content?.cto || defaultCto;
+    const rawCto = dynamicSection?.content?.cto;
+    const isLegacyCto = rawCto?.name?.includes('Rajendra') || rawCto?.image?.includes('unsplash');
+    const cto = (!isLegacyCto && rawCto?.name) ? {
+      ...defaultCto,
+      ...rawCto,
+      image: (rawCto.image && !rawCto.image.includes('unsplash')) ? rawCto.image : '/images/Yash_Mayani.JPG'
+    } : defaultCto;
 
     const defaultBusinessHeads = [
       {
@@ -1248,7 +1270,7 @@ export const CompanySubDetails = () => {
       ? dynamicSection.content.businessHeads
       : defaultBusinessHeads;
 
-    // 3. Leadership Team (15 Team Leads)
+    // 3. Leadership Team
     const leadershipHeading = dynamicSection?.content?.leadershipHeading || "Leadership Team";
     const defaultLeadershipTeam = [
       { name: 'Sahaj Maniya', role: 'HR Lead', image: '/images/Sahaj_Maniya.JPG', objectPosition: '50% 85%' },
@@ -1256,8 +1278,13 @@ export const CompanySubDetails = () => {
       { name: 'Rutvik Vastarpara', role: 'MERN Lead', image: '/images/Rutvik.JPG', objectPosition: 'center center' },
       { name: 'Hiren Rajani', role: 'Sr. BDR - Service', image: '/images/Hiren.JPG', objectPosition: 'center center' }
     ];
-    const leadershipTeam = (Array.isArray(dynamicSection?.content?.leadershipTeam) && dynamicSection.content.leadershipTeam.length > 0)
-      ? dynamicSection.content.leadershipTeam
+    const rawLeadership = dynamicSection?.content?.leadershipTeam;
+    const isLegacyLeadership = Array.isArray(rawLeadership) && (
+      rawLeadership.some(m => m.name === 'Ankit Gokani' || m.name?.includes('Dubey') || m.image?.includes('unsplash')) ||
+      rawLeadership.length > 10
+    );
+    const leadershipTeam = (!isLegacyLeadership && Array.isArray(rawLeadership) && rawLeadership.length > 0)
+      ? rawLeadership
       : defaultLeadershipTeam;
 
     // 4. Teamwork Mosaic Wall

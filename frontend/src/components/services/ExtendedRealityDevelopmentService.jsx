@@ -20,40 +20,20 @@ import SapphireFaqSection from '../common/SapphireFaqSection';
 import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
 import ItConsultingRecentBlogsSection from './ItConsultingRecentBlogsSection';
 import HealthcareChallengeCtaBanner from '../common/HealthcareChallengeCtaBanner';
-import DigitalTwinComprehensiveServices from './DigitalTwinComprehensiveServices';
+import ExtendedRealityComprehensiveServices from './ExtendedRealityComprehensiveServices';
 import {
   ArrowRight,
   Quote
 } from 'lucide-react';
 
-export const DigitalTwinSolutionsService = () => {
+export const ExtendedRealityDevelopmentService = () => {
 
-  // Benefits of Digital Twin Solutions Cards (Balanced 6 cards matching 3x2 grid)
-  const digitalTwinBenefits = [
+
+  // Benefits of Extended Reality Development Cards (Balanced 6 cards matching 3x2 grid)
+  const xrBenefits = [
     {
-      title: 'Real-Time Operational Visibility',
-      desc: 'Sub-second bidirectional telemetry ingestion between physical machines, SCADA networks, and 3D virtual representations for complete operational transparency.',
-      icon: (
-        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="6" y="8" width="36" height="32" rx="4" />
-          <path d="M6 20h36M20 20v20M6 32h14" />
-          <circle cx="28" cy="14" r="2" />
-        </svg>
-      )
-    },
-    {
-      title: 'Predictive Maintenance & Zero Downtime',
-      desc: 'Continuous machine learning anomaly detection identifies thermal hotspots, micro-vibrations, and mechanical fatigue well before catastrophic equipment failure occurs.',
-      icon: (
-        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 24l8 8 16-16" />
-          <circle cx="24" cy="24" r="18" />
-        </svg>
-      )
-    },
-    {
-      title: 'Risk-Free What-If Simulations',
-      desc: 'Test load spikes, production reconfiguration, stress limits, and emergency protocols in a calibrated physics sandbox without disrupting active factory operations.',
+      title: 'Unrivaled User Engagement',
+      desc: 'Immersive 3D environments hold user attention significantly longer than conventional 2D flat screens, establishing deep emotional connection and memorable brand recall.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="24" cy="24" r="18" />
@@ -63,8 +43,41 @@ export const DigitalTwinSolutionsService = () => {
       )
     },
     {
-      title: 'Asset Lifecycle Cost Reduction',
-      desc: 'Extend machinery operational lifespan by 25-40% through precision usage monitoring, dynamic maintenance scheduling, and optimized power consumption.',
+      title: 'Accelerated Training Retention',
+      desc: 'Experiential learning in VR/XR improves procedural recall and knowledge retention by up to 75% compared to traditional classrooms or PDF operational manuals.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M8 38V14a6 6 0 0 1 6-6h20a6 6 0 0 1 6 6v24" />
+          <path d="M4 38h40" />
+          <circle cx="24" cy="20" r="5" />
+          <path d="M18 32c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+        </svg>
+      )
+    },
+    {
+      title: 'Zero-Risk Virtual Prototyping',
+      desc: 'Simulate high-risk operations, aerospace manufacturing, and complex surgical procedures in photorealistic 3D space with zero physical risk and negligible material cost.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M24 4l18 6v14c0 11-8 20-18 24-10-4-18-13-18-24V10L24 4z" />
+          <path d="M16 24l6 6 12-12" />
+        </svg>
+      )
+    },
+    {
+      title: 'Cross-Platform Portability',
+      desc: 'Deploy future-ready spatial applications seamlessly across Meta Quest, Apple Vision Pro, mobile iOS/Android, and standard WebXR browsers through unified engine pipelines.',
+      icon: (
+        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="6" y="8" width="24" height="18" rx="2" />
+          <rect x="20" y="18" width="22" height="22" rx="3" />
+          <circle cx="31" cy="35" r="1.5" />
+        </svg>
+      )
+    },
+    {
+      title: 'Spatial Data Visualization',
+      desc: 'Inspect complex multi-layered architectural designs, industrial IoT telemetries, and anatomical models in full 360-degree interactive spatial dimensions.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <line x1="8" y1="40" x2="40" y2="40" />
@@ -77,8 +90,8 @@ export const DigitalTwinSolutionsService = () => {
       )
     },
     {
-      title: 'Cross-System IT & OT Interoperability',
-      desc: 'Unify disparate protocols—including OPC-UA, MQTT, REST APIs, and Modbus—into an authoritative central virtual replica accessible to cross-functional teams.',
+      title: 'Real-Time Remote Collaboration',
+      desc: 'Empower global distributed squads to collaborate in shared virtual spaces with spatial audio, real-time avatar interaction, and multi-user object manipulation.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="16" cy="16" r="6" />
@@ -87,64 +100,56 @@ export const DigitalTwinSolutionsService = () => {
           <path d="M24 24v6M21 27h6" />
         </svg>
       )
-    },
-    {
-      title: 'Automated Regulatory Compliance',
-      desc: 'Maintain immutable timestamped logs of machine performance, emissions telemetry, and safety metrics to satisfy stringent ISO, OSHA, and environmental standards.',
-      icon: (
-        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M24 4l18 6v14c0 11-8 20-18 24-10-4-18-13-18-24V10L24 4z" />
-          <path d="M16 24l6 6 12-12" />
-        </svg>
-      )
     }
   ];
 
-  // Digital Twin FAQs
-  const digitalTwinFaqs = [
+
+
+  // Extended Reality FAQs
+  const xrFaqs = [
     {
-      question: '1. What are Digital Twin Solutions and how do they benefit enterprise operations?',
-      answer: 'A Digital Twin is a dynamic, virtual representation of a physical machine, product, or entire facility powered by real-time IoT sensor telemetry, physics modeling, and machine learning. Enterprises benefit through real-time operational visibility, predictive failure detection, optimized maintenance cycles, and risk-free simulation.'
+      question: '1. What are Extended Reality (XR) Development Services and how can they benefit my business?',
+      answer: 'Extended Reality (XR) is the umbrella term encompassing Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR). XR Development Services empower businesses to build immersive simulations, interactive 3D product visualizers, and collaborative spatial tools that boost user engagement and streamline complex enterprise operations.'
     },
     {
-      question: '2. Why should our company choose Firevy for Digital Twin development?',
-      answer: 'Firevy brings deep cross-disciplinary expertise spanning industrial IoT engineering, PLC/SCADA telematics, CAD/BIM 3D modeling, and AI-driven predictive analytics. We deliver secure, scalable digital twin pipelines compliant with ISO industrial standards.'
+      question: '2. Why should I choose Firevy for Extended Reality Development Services?',
+      answer: 'Firevy provides end-to-end XR engineering expertise, combining certified Unity and Unreal Engine developers with seasoned 3D artists. We deliver high-frame-rate, optimized spatial computing solutions with zero motion sickness, cross-platform hardware compatibility, and rigorous security.'
     },
     {
-      question: '3. What industrial protocols and IoT data sources can you integrate with?',
-      answer: 'We natively integrate with OPC-UA, MQTT, Modbus, BACnet, Siemens S7, REST APIs, and industrial historians. Data feeds can be hosted on AWS IoT TwinMaker, Azure Digital Twins, Google Cloud IoT, or private on-premise clusters.'
+      question: '3. What hardware devices do your Extended Reality solutions support?',
+      answer: 'Our solutions support leading headsets including Apple Vision Pro, Meta Quest 3/Pro, HTC Vive, Valve Index, Microsoft HoloLens 2, as well as iOS/Android mobile devices and standard WebXR desktop browsers.'
     },
     {
-      question: '4. How does a Digital Twin prevent unplanned machine downtime?',
-      answer: 'Our predictive AI algorithms constantly benchmark live telemetry against calibrated physical thresholds. By recognizing vibration anomalies, temperature creep, and pressure fluctuations weeks ahead of time, teams perform scheduled repairs before failures happen.'
+      question: '4. What industries can benefit most from Extended Reality Development?',
+      answer: 'Industries such as healthcare and medical training, aerospace, automotive, manufacturing, retail and e-commerce, architecture, real estate, education, and defense experience the highest ROI through immersive XR simulations.'
     },
     {
-      question: '5. What industries gain the highest ROI from Digital Twin implementations?',
-      answer: 'Heavy manufacturing, automotive assembly, aerospace, energy grids, smart commercial buildings (BIM), healthcare facilities, and supply chain logistics achieve the highest operational ROI and rapid payback periods.'
+      question: '5. How does Extended Reality improve enterprise employee training?',
+      answer: 'XR allows employees to practice complex, high-risk procedures in a safe, repeatable virtual environment. Experiential training improves muscle memory and retention by up to 75% while dramatically slashing travel and equipment costs.'
     },
     {
-      question: '6. Can our CAD blueprints and 3D schematics be directly converted into a digital twin?',
-      answer: 'Yes! We ingest complex CAD formats (SolidWorks, AutoCAD, CATIA, STEP, Revit BIM) and optimize them into lightweight, real-time 3D models running at 60+ FPS inside interactive web browsers, desktop dashboards, and VR headsets.'
+      question: '6. Do you develop browser-based WebXR solutions without requiring app downloads?',
+      answer: 'Yes! We specialize in WebXR, Three.js, and Babylon.js applications that run directly inside modern web browsers on mobile phones, tablets, desktops, and headsets with zero app store download friction.'
     },
     {
-      question: '7. How do you guarantee cybersecurity and data protection for industrial digital twins?',
-      answer: 'We implement end-to-end TLS 1.3 encryption, mutual certificate authentication (mTLS), role-based access control (RBAC), and zero-trust perimeter network isolation to guarantee proprietary OT systems remain secure.'
+      question: '7. What is the typical cost of an Extended Reality development project?',
+      answer: 'The investment depends on project scope, 3D asset fidelity, target hardware, and interactivity complexity. We provide flexible engagement models—including fixed-price milestones and dedicated developer squads—to match your business budget.'
     },
     {
-      question: '8. How long does an enterprise Digital Twin development engagement typically take?',
-      answer: 'A focused single-asset or pilot machine twin is commonly deployed within 4 to 8 weeks, while comprehensive facility-wide cyber-physical ecosystems spanning thousands of telemetry nodes typically take 3 to 6 months.'
+      question: '8. How long does it take to build a custom Extended Reality application?',
+      answer: 'A rapid prototype or MVP can be deployed in 4 to 6 weeks, while comprehensive enterprise-grade simulations typically take 2 to 4 months following our agile sprint methodology.'
     },
     {
-      question: '9. Do you provide continuous calibration and algorithmic refinement post-launch?',
-      answer: 'Yes, we provide ongoing sensor calibration, model retuning, machine learning drift prevention, cloud infrastructure scaling, and 24/7 telemetry SLA support.'
+      question: '9. Do you provide ongoing maintenance, asset updates, and headset support?',
+      answer: 'Yes, we provide post-launch support, performance optimization, device firmware adaptation, 3D asset updates, and multi-user server maintenance to keep your spatial apps running smoothly.'
     }
   ];
 
   return (
     <div className="bg-white min-h-screen font-sans text-slate-800">
       <SEO
-        title="Enterprise Digital Twin Solutions & Development Services | Firevy"
-        description="Firevy delivers enterprise Digital Twin development services in USA, integrating real-time IoT telematics, cyber-physical synchronization, predictive maintenance, and 3D simulation twins."
+        title="Professional Extended Reality (XR) Development Services in USA | Firevy"
+        description="Firevy provides premier Extended Reality (XR) development services in USA, covering AR, VR, MR, spatial computing, 3D simulation, and WebXR solutions."
       />
 
       {/* ========================================================================= */}
@@ -156,11 +161,11 @@ export const DigitalTwinSolutionsService = () => {
             {/* Left Content */}
             <div className="lg:col-span-6 space-y-6 text-left">
               <h1 className="text-3xl sm:text-4xl lg:text-[46px] font-[800] text-[#0B0F19] leading-[1.18] tracking-tight">
-                Digital Twin Solutions & Development in USA
+                Extended Reality Development Services in USA
               </h1>
 
               <p className="text-base sm:text-[17px] text-slate-600 leading-relaxed font-normal">
-                Bridge the physical and virtual worlds. Leverage our enterprise Digital Twin solutions—integrating real-time IoT telematics, physics-based 3D modeling, and predictive AI—to eliminate downtime, optimize asset lifecycles, and simulate complex operational workflows.
+                Step beyond physical boundaries into immersive digital realms. Leverage our cutting-edge Extended Reality (XR) development services—spanning Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR)—to transform customer engagement, enterprise training, and spatial computing workflows.
               </p>
 
               <div className="pt-2">
@@ -178,8 +183,8 @@ export const DigitalTwinSolutionsService = () => {
             <div className="lg:col-span-6 flex justify-center items-center">
               <div className="relative w-full max-w-[540px] rounded-2xl overflow-hidden shadow-xl border border-slate-100 bg-white group hover:shadow-2xl transition-all duration-500">
                 <img
-                  src="/images/digital_twin_hero_3d.jpg"
-                  alt="Digital Twin Solutions & Development in USA"
+                  src="/images/vr_hero_illustration.jpg"
+                  alt="Extended Reality Development Services in USA"
                   className="w-full h-auto object-cover object-center group-hover:scale-102 transition-transform duration-500"
                 />
               </div>
@@ -194,7 +199,7 @@ export const DigitalTwinSolutionsService = () => {
       <BrandLogoMarquee />
 
       {/* ========================================================================= */}
-      {/* 3. ENTERPRISE DIGITAL TWIN DEVELOPMENT & CONSULTING */}
+      {/* 3. ENTERPRISE EXTENDED REALITY DEVELOPMENT & CONSULTING */}
       {/* ========================================================================= */}
       <section className="py-16 lg:py-24 bg-white border-t border-slate-100">
         <Container>
@@ -203,8 +208,8 @@ export const DigitalTwinSolutionsService = () => {
             <div className="lg:col-span-6 flex justify-center items-center order-2 lg:order-1">
               <div className="relative w-full max-w-[540px] rounded-2xl overflow-hidden shadow-xl border border-slate-100 bg-white group hover:shadow-2xl transition-all duration-500">
                 <img
-                  src="/images/digital_twin_enterprise_3d.jpg"
-                  alt="Enterprise Digital Twin Development and Consulting Services"
+                  src="/images/vr_best_company_illustration.jpg"
+                  alt="Enterprise Extended Reality Development and Consulting Services"
                   className="w-full h-auto object-cover object-center group-hover:scale-102 transition-transform duration-500"
                 />
               </div>
@@ -213,15 +218,15 @@ export const DigitalTwinSolutionsService = () => {
             {/* Right Text */}
             <div className="lg:col-span-6 space-y-6 text-left order-1 lg:order-2">
               <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] leading-[1.2] tracking-tight">
-                Enterprise Digital Twin Development And Consulting Services
+                Enterprise Extended Reality Development And Consulting Services
               </h2>
 
               <p className="text-sm sm:text-[15.5px] text-slate-600 leading-relaxed font-normal">
-                Our mission is to harness cyber-physical systems engineering, IoT telematics integration, and physics-driven 3D simulations to help industrial enterprises achieve zero unplanned downtime, superior operational efficiency, and deep predictive intelligence. From robotic manufacturing lines and smart buildings to aerospace powertrains and utility distribution networks, we build digital twins built for real-world impact.
+                Our mission is to harness spatial computing, photorealistic 3D modeling, and interactive simulations to assist global enterprises in achieving superior training, marketing, and design collaboration. From healthcare and defense to automotive, manufacturing, retail, and architecture, we deliver robust XR systems designed for real-world impact.
               </p>
 
               <p className="text-sm sm:text-[15.5px] text-slate-600 leading-relaxed font-normal">
-                We provide full-lifecycle custom Digital Twin engineering, sensor network integration, CAD geometry conversion, and predictive ML modeling. From AWS IoT TwinMaker and Azure Digital Twins to customized on-premise spatial dashboards, leverage Firevy's engineering prowess to modernize your enterprise operations.
+                We provide affordable Extended Reality application development and full-lifecycle custom XR software engineering, architectural design, and cross-platform deployment. From Apple Vision Pro and Meta Quest to WebXR and mobile AR, harness the power of Firevy's XR engineers to redefine your digital presence.
               </p>
             </div>
           </div>
@@ -234,13 +239,13 @@ export const DigitalTwinSolutionsService = () => {
       <ClutchTopRatedBanner />
 
       {/* ========================================================================= */}
-      {/* 5. QUICK AND AFFORDABLE DIGITAL TWIN SERVICES */}
+      {/* 5. QUICK AND AFFORDABLE EXTENDED REALITY SERVICES */}
       {/* ========================================================================= */}
       <section className="py-16 lg:py-24 bg-white">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[800] text-[#0B0F19] tracking-tight leading-snug">
-              Quick And Affordable Digital Twin Solutions
+              Quick And Affordable Extended Reality Development Services
             </h2>
           </div>
 
@@ -252,7 +257,7 @@ export const DigitalTwinSolutionsService = () => {
                   <Quote className="w-12 h-12 fill-current opacity-90" />
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-[800] text-[#005D95] leading-snug tracking-tight">
-                  Real-Time Physical & Virtual Asset Synchronization Guarantee
+                  Immersive, Scalable And Powerful Spatial Apps
                 </h3>
               </div>
             </div>
@@ -260,11 +265,11 @@ export const DigitalTwinSolutionsService = () => {
             {/* Right Content */}
             <div className="lg:col-span-7 space-y-5 text-left">
               <p className="text-slate-600 text-sm sm:text-[15.5px] leading-relaxed font-normal">
-                Deploying high-impact digital twins in today's connected enterprise demands rigorous mathematical precision, low-latency telemetry ingestion, and seamless integration across enterprise IT and OT systems. Off-the-shelf software often fails to replicate complex proprietary machinery or unique facility workflows.
+                Extended Reality is redefining how modern businesses engage with users and manage mission-critical operations. By unifying real and digital spaces with real-time rendering, spatial audio, and computer vision, XR bridges the divide between virtual concepts and real-world actions.
               </p>
 
               <p className="text-slate-600 text-sm sm:text-[15.5px] leading-relaxed font-normal">
-                Our engineers provide personalized <Link to="/services/software-development" className="text-[#005D95] font-bold underline hover:text-[#003b60]">software development service</Link> solutions engineered for your exact SCADA networks, CAD schematics, and enterprise ERP systems. With deep expertise across industrial IoT, machine learning, and 3D simulation engines, we deliver solutions that minimize operational risk and unlock predictive intelligence.
+                Our XR developers provide tailored <Link to="/services/software-development" className="text-[#005D95] font-bold underline hover:text-[#003b60]">software development service</Link> solutions to meet your target headsets, frame rate requirements, and budget. With extensive experience in Unity 3D, Unreal Engine 5, OpenXR, and spatial computing, we engineer high-performance applications that scale. Hire dedicated XR developers who empower your organization with innovative spatial experiences.
               </p>
             </div>
           </div>
@@ -292,7 +297,7 @@ export const DigitalTwinSolutionsService = () => {
 
           {/* 3 Case Study Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            {/* Card 1: Industrial Smart Factory Cyber-Physical Twin */}
+            {/* Card 1: Medical Surgical VR Simulation */}
             <div className="text-center group">
               <div className="relative rounded-[20px] overflow-hidden bg-white shadow-sm border border-slate-200/80 p-2 group-hover:shadow-md transition-all">
                 <div className="absolute top-4 right-4 z-10 bg-[#005F96] text-white text-[11px] font-[700] px-3 py-1 rounded-md shadow-2xs">
@@ -300,40 +305,40 @@ export const DigitalTwinSolutionsService = () => {
                 </div>
                 <img
                   src="/images/digital_twin_hero.jpg"
-                  alt="Industrial Smart Factory Cyber-Physical Twin"
+                  alt="Medical Surgical VR Simulation Application"
                   className="w-full h-[220px] object-cover rounded-[14px]"
                 />
               </div>
               <h3 className="text-[16px] font-[800] text-slate-900 mt-4 font-sans text-left">
-                Industrial Smart Factory Cyber-Physical Twin
+                Medical Surgical VR Simulation Platform
               </h3>
             </div>
 
-            {/* Card 2: Automotive Powertrain & Robotics Simulation Platform */}
+            {/* Card 2: Automotive 3D Spatial Showroom */}
             <div className="text-center group">
               <div className="rounded-[20px] overflow-hidden bg-white shadow-sm border border-slate-200/80 p-2 group-hover:shadow-md transition-all">
                 <img
                   src="/images/digital_twin_pipeline.jpg"
-                  alt="Automotive Powertrain and Robotics Simulation Platform"
+                  alt="Automotive 3D Spatial Showroom"
                   className="w-full h-[220px] object-cover rounded-[14px]"
                 />
               </div>
               <h3 className="text-[16px] font-[800] text-slate-900 mt-4 font-sans text-left">
-                Automotive Powertrain & Robotics Simulation Platform
+                Automotive 3D Spatial Showroom
               </h3>
             </div>
 
-            {/* Card 3: Smart City & Utility Grid Telematics Twin */}
+            {/* Card 3: Enterprise AR Remote Field Assistance */}
             <div className="text-center group">
               <div className="rounded-[20px] overflow-hidden bg-white shadow-sm border border-slate-200/80 p-2 group-hover:shadow-md transition-all">
                 <img
-                  src="/images/virtual_reality_about.svg"
-                  alt="Smart City and Utility Grid Telematics Twin"
+                  src="/images/augmented_reality_about.svg"
+                  alt="Enterprise AR Remote Field Assistance"
                   className="w-full h-[220px] object-cover rounded-[14px]"
                 />
               </div>
               <h3 className="text-[16px] font-[800] text-slate-900 mt-4 font-sans text-left">
-                Smart City & Utility Grid Telematics Twin
+                Enterprise AR Remote Field Assistance
               </h3>
             </div>
           </div>
@@ -396,29 +401,31 @@ export const DigitalTwinSolutionsService = () => {
         </Container>
       </section>
 
+
+
       {/* ========================================================================= */}
       {/* 10. AWARDS & TRUST RECOGNITION BANNER */}
       {/* ========================================================================= */}
       <TrustRecognitionBanner />
 
       {/* ========================================================================= */}
-      {/* 11. BENEFITS OF DIGITAL TWIN SOLUTIONS */}
+      {/* 11. BENEFITS OF EXTENDED REALITY DEVELOPMENT */}
       {/* ========================================================================= */}
       <section className="py-16 lg:py-24 bg-white border-t border-slate-100">
         <Container>
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#0B0F19] tracking-tight leading-tight mb-3 font-sans">
-              Benefits of Our Digital Twin Solutions
+              Benefits Of Extended Reality Development
             </h2>
             <p className="text-sm sm:text-[15.5px] text-slate-600 font-normal leading-relaxed font-sans max-w-3xl mx-auto">
-              Years of cyber-physical engineering, IoT telematics integration, and 3D simulation have made our committed digital twin specialists exceptionally skilled partners.
+              Extended Reality delivers revolutionary advantages including unparalleled user retention, interactive spatial analytics, risk-free training, and distinct brand differentiation. Explore key XR benefits.
             </p>
           </div>
 
           {/* 6 Benefits Cards Grid (Balanced 3x2) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {digitalTwinBenefits.map((item, index) => (
+            {xrBenefits.map((item, index) => (
               <div
                 key={index}
                 className="bg-white rounded-2xl p-7 sm:p-8 shadow-[0_4px_25px_rgba(0,0,0,0.04)] border border-slate-100 hover:border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col text-left group"
@@ -439,9 +446,9 @@ export const DigitalTwinSolutionsService = () => {
       </section>
 
       {/* ========================================================================= */}
-      {/* OUR COMPREHENSIVE DIGITAL TWIN SOLUTIONS (EDGE-TO-EDGE CAROUSEL) */}
+      {/* OUR COMPREHENSIVE EXTENDED REALITY DEVELOPMENT SERVICES (EDGE-TO-EDGE CAROUSEL) */}
       {/* ========================================================================= */}
-      <DigitalTwinComprehensiveServices />
+      <ExtendedRealityComprehensiveServices />
 
       {/* ========================================================================= */}
       {/* 12. HIRING MODELS */}
@@ -494,15 +501,15 @@ export const DigitalTwinSolutionsService = () => {
       <SapphireFaqSection
         title="Frequently Asked Questions"
         subtitle="We Listen To Query And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mention Below"
-        faqs={digitalTwinFaqs}
+        faqs={xrFaqs}
       />
 
       {/* ========================================================================= */}
-      {/* 24. WHAT SETS US APART IN DIGITAL TWIN SOLUTIONS? */}
+      {/* 24. WHAT SETS US APART IN EXTENDED REALITY DEVELOPMENT SERVICES? */}
       {/* ========================================================================= */}
       <WhatSetsUsApartSection
-        title="What Sets Us Apart In Digital Twin Solutions?"
-        subtitle="Being unique is our quality! Firevy combines deep IoT telematics with predictive physics engines and 3D simulation to engineer world-class Digital Twin platforms for global industrial enterprises."
+        title="What Sets Us Apart In Extended Reality Development Services?"
+        subtitle="Being unique is our quality! Firevy combines deep spatial computing engineering with photorealistic 3D design to build world-class XR, AR, and VR solutions for global enterprises."
       />
 
       {/* ========================================================================= */}
@@ -511,12 +518,12 @@ export const DigitalTwinSolutionsService = () => {
       <ItConsultingRecentBlogsSection />
 
       {/* ========================================================================= */}
-      {/* 26. HAVE DIGITAL TWIN CHALLENGE TO ADDRESS ? */}
+      {/* 26. HAVE EXTENDED REALITY DEVELOPMENT CHALLENGE TO ADDRESS ? */}
       {/* ========================================================================= */}
       <HealthcareChallengeCtaBanner
-        title="Have Digital Twin Challenge To Address ?"
-        subtitle="Get access to top Digital Twin, Industrial IoT, and 3D simulation developers to transform your ideas into operational intelligence."
-        buttonText="Hire Digital Twin Developers Now"
+        title="Have Extended Reality Development Challenge To Address ?"
+        subtitle="Get access to top XR, VR, and AR developers to transform your ideas into an immersive spatial application."
+        buttonText="Hire XR Developers Now"
       />
 
       {/* ========================================================================= */}
@@ -527,4 +534,4 @@ export const DigitalTwinSolutionsService = () => {
   );
 };
 
-export default DigitalTwinSolutionsService;
+export default ExtendedRealityDevelopmentService;

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import SEO from '../components/common/SEO';
 import Container from '../components/common/Container';
 import { Link } from 'react-router-dom';
@@ -12,10 +12,50 @@ import { ArrowRight, Quote, Star } from 'lucide-react';
 
 import companyPublicService from '../services/companyPublicService';
 
+export const testimonialsList = [
+  {
+    id: 1,
+    name: "David Randjelovic",
+    location: "Phuket, Thailand",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    text: "Firevy.Co created a platform our clients love. They were responsive, attentive, and provided a result-oriented approach with stellar execution."
+  },
+  {
+    id: 2,
+    name: "Smit Shah",
+    location: "Parkland, Florida",
+    avatar: "/images/smit_shah.webp",
+    text: "Firevy.Co impressed us with the quality of their deliverables. They achieved our goals in unique ways and prioritized critical architecture needs."
+  },
+  {
+    id: 3,
+    name: "Hesham Abdelfattah",
+    location: "London, United Kingdom",
+    avatar: "/images/hesham_abdelfattah.webp",
+    text: "The team's spirit is remarkable, and their engineers have been extremely cooperative at each step of the product development lifecycle."
+  },
+  {
+    id: 4,
+    name: "Derrick Surratt",
+    location: "Arkansas, USA",
+    avatar: "/images/derrick_surratt.webp",
+    text: "The team communicated effectively throughout the design and cloud delivery. They consistently delivered top-tier UX and reliable features."
+  },
+  {
+    id: 5,
+    name: "Hamidah Nalwoga",
+    location: "Massachusetts, USA",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    text: "They are able to listen to customer requests and attend to urgent matters promptly. A reliable engineering partner for our long-term growth."
+  }
+];
+
 export const Testimonials = () => {
   const isPreview = typeof window !== 'undefined' && window.location.search.includes('preview=true');
   const [dynamicSection, setDynamicSection] = useState(null);
   const [reviews, setReviews] = useState(testimonialsList);
+
+  const displayList = (reviews && reviews.length >= 5) ? reviews : testimonialsList;
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -161,7 +201,7 @@ export const Testimonials = () => {
 
           {/* Testimonial Cards Grid (3 cards top row, 2 cards bottom row) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-8">
-            {testimonialsList.slice(0, 3).map((item) => (
+            {displayList.slice(0, 3).map((item) => (
               <div
                 key={item.id}
                 className="bg-[#EBF7FC] rounded-[24px] p-8 text-center flex flex-col items-center justify-between border border-[#D5EEF8] shadow-sm hover:shadow-md transition-shadow relative"
@@ -192,7 +232,7 @@ export const Testimonials = () => {
 
           {/* Bottom Row (2 Centered Cards) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonialsList.slice(3, 5).map((item) => (
+            {displayList.slice(3, 5).map((item) => (
               <div
                 key={item.id}
                 className="bg-[#EBF7FC] rounded-[24px] p-8 text-center flex flex-col items-center justify-between border border-[#D5EEF8] shadow-sm hover:shadow-md transition-shadow relative"
