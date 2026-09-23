@@ -12,7 +12,6 @@ import BrandLogoMarquee from '../common/BrandLogoMarquee';
 import SapphireLightHeroBanner from '../common/SapphireLightHeroBanner';
 import HybridAppCuttingEdgeTechnologiesSection from './HybridAppCuttingEdgeTechnologiesSection';
 import ProudAwardsBanner from './ProudAwardsBanner';
-import HybridAppExpertiseServices from './HybridAppExpertiseServices';
 import InnovativeSolutionsVideoSection from './InnovativeSolutionsVideoSection';
 import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
@@ -20,14 +19,14 @@ import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
 import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
 
-export const BigCommerceDevelopmentService = () => {
+export const MongoDbDevelopmentService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    model: 'Dedicated BigCommerce Squad',
-    appType: 'Custom BigCommerce Web App Development',
+    model: 'Dedicated MongoDB Squad',
+    appType: 'Custom MongoDB Database Architecture',
     budget: '$15,000 - $40,000',
     message: ''
   });
@@ -42,11 +41,11 @@ export const BigCommerceDevelopmentService = () => {
     setFormSubmitted(true);
   };
 
-  // 6 Benefits of BigCommerce Development (Matching Image 2 Reference)
+  // 6 Benefits of MongoDB Development (Matching Reference Structure)
   const benefitsItems = [
     {
       title: 'Scale and Flex',
-      desc: 'The versatile and adaptable BigCommerce e-commerce platform can expand with your company. BigCommerce lets online shops grow without infrastructure or performance difficulties.',
+      desc: 'The versatile and adaptable MongoDB NoSQL database platform can expand with your company. MongoDB lets enterprise applications grow without infrastructure or performance difficulties.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="6" width="22" height="7" rx="2" />
@@ -65,7 +64,7 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       title: 'Management and Usability',
-      desc: "Businesses with no technical knowledge can establish sophisticated storefronts using its drag-and-drop editor and configurable layouts. BigCommerce's inventory, order, and customer support tools improve business administration.",
+      desc: 'Developers can design flexible JSON/BSON document schemas without complex relational migrations. MongoDB Atlas, compass, and automated scaling improve database administration.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="6" y="4" width="24" height="28" rx="3" />
@@ -77,8 +76,8 @@ export const BigCommerceDevelopmentService = () => {
       )
     },
     {
-      title: 'Practical Marketing and Conversion Tools',
-      desc: 'BigCommerce offers powerful SEO, configurable discounts, abandoned cart recovery, and email marketing connectors. Businesses may reach their target audience and boost online sales with these built-in marketing options.',
+      title: 'High Availability & Sharding',
+      desc: 'Native replica sets and automated failover guarantee 99.999% uptime, while horizontal sharding distributes large datasets across multi-cloud infrastructure effortlessly.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 14v8h4l10 6V8L10 14H6z" />
@@ -89,8 +88,8 @@ export const BigCommerceDevelopmentService = () => {
       )
     },
     {
-      title: 'E-Payment Solutions',
-      desc: 'BigCommerce interfaces with top payment gateways, enabling companies to provide many payment alternatives. Credit cards, digital wallets, and other payment options are safe and dependable with BigCommerce.',
+      title: 'Enterprise Security & Encryption',
+      desc: 'MongoDB provides end-to-end client-side field-level encryption (FLE), LDAP integration, role-based access control (RBAC), and SOC-2 / HIPAA compliance.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="5" y="4" width="20" height="28" rx="3" />
@@ -102,8 +101,8 @@ export const BigCommerceDevelopmentService = () => {
       )
     },
     {
-      title: 'Mobile-Friendly Design',
-      desc: 'For a smooth shopping experience across devices, BigCommerce provides adaptable and mobile-friendly design templates. Mobile buying is growing; thus, online retailers must have a mobile-friendly interface.',
+      title: 'Real-time Aggregation & Search',
+      desc: 'MongoDB Atlas Search and powerful aggregation pipelines allow sub-second full-text search, geospatial queries, and real-time analytics across millions of records.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="7" y="4" width="22" height="28" rx="3" />
@@ -114,8 +113,8 @@ export const BigCommerceDevelopmentService = () => {
       )
     },
     {
-      title: 'Powerful Analytics and Reports',
-      desc: "Businesses can measure important indicators, monitor performance, and obtain valuable insights into their online store using BigCommerce's analytics and reporting capabilities. It helps companies enhance their e-commerce strategy by analyzing sales patterns and marketing ROI.",
+      title: 'Powerful Analytics & Vector Search',
+      desc: 'Integrate Vector Search for GenAI apps, measure key metrics, monitor query performance, and gain real-time operational intelligence with MongoDB Atlas charts.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="5" width="28" height="26" rx="3" />
@@ -186,79 +185,12 @@ export const BigCommerceDevelopmentService = () => {
     }
   ];
 
-  // BigCommerce Expertise Cards
-  const pythonExpertiseCards = [
+  // 9 Cards Expertise for MongoDB Developers
+  const mongoDbDeveloperExpertise = [
     {
       id: 1,
-      title: 'Custom BigCommerce Web Application Engineering',
-      desc: 'We design and build custom enterprise BigCommerce eCommerce applications tailored to your business goals with clean MVT/MVC architecture, scalable database schemas, and modular codebases.'
-    },
-    {
-      id: 2,
-      title: 'FastAPI & Django RESTful API Endpoints',
-      desc: 'Our BigCommerce specialists engineer high-throughput API endpoints utilizing FastAPI and Django REST Framework, ensuring seamless data exchange between web and mobile apps.'
-    },
-    {
-      id: 3,
-      title: 'BigCommerce SaaS & Multi-Tenant Platforms',
-      desc: 'We engineer multi-tenant SaaS platforms with automated subscription billing, role-based access control (RBAC), tenant isolation, and cloud auto-scaling.'
-    },
-    {
-      id: 4,
-      title: 'AI & Data Engineering Pipeline Integration',
-      desc: 'Integrate artificial intelligence, machine learning models, and automated data processing pipelines into your core web applications.'
-    },
-    {
-      id: 5,
-      title: 'Legacy BigCommerce & Backend Migration',
-      desc: 'Safely upgrade outdated BigCommerce 2/3 codebases or legacy backend frameworks to modern BigCommerce 3.12+ with zero data loss and automated test suites.'
-    },
-    {
-      id: 6,
-      title: 'Security Auditing & Enterprise Compliance',
-      desc: 'Perform comprehensive security code audits, OWASP vulnerability patching, database encryption, and GDPR/SOC-2 compliance setup for enterprise BigCommerce platforms.'
-    },
-    {
-      id: 7,
-      title: 'Cloud DevOps & Serverless Architecture (AWS/GCP)',
-      desc: 'Streamline containerized deployment and continuous integration using Docker, Kubernetes, AWS Lambda, GCP Cloud Run, and GitHub Actions.'
-    }
-  ];
-
-  // Official BigCommerce FAQs
-  const bigcommerceFaqs = [
-    {
-      q: '1. What makes BigCommerce the ideal language for web and AI development?',
-      a: 'BigCommerce combines clean readable syntax, extensive framework support (Django, Flask, FastAPI), and unparalleled AI/ML library ecosystems (NumPy, PyTorch) for fast development and scalability.'
-    },
-    {
-      q: '2. Can BigCommerce support high-traffic enterprise applications?',
-      a: 'Absolutely. With async web frameworks (FastAPI, Tornado), Redis caching, Celery task queues, and microservices on AWS/GCP, BigCommerce easily scales to millions of users.'
-    },
-    {
-      q: '3. Do you handle legacy BigCommerce migration and code refactoring?',
-      a: 'Yes! We specialize in migrating legacy BigCommerce codebases, Flask apps, or custom scripts to modern Django / FastAPI with zero downtime.'
-    },
-    {
-      q: '4. How do you secure BigCommerce eCommerce applications?',
-      a: 'We implement OAuth2/JWT authentication, CSRF token validation, SQL injection prevention via ORM PDO bindings, password Bcrypt hashing, and strict HSTS header configurations.'
-    },
-    {
-      q: '5. Do you assist with cloud deployment and DevOps automation?',
-      a: 'Yes! We configure complete Docker containerization, AWS/GCP cloud setup, CI/CD pipeline automation, Kubernetes orchestration, and zero-downtime deployments.'
-    },
-    {
-      q: '6. Do you sign Non-Disclosure Agreements (NDAs)?',
-      a: 'Yes, we sign comprehensive NDAs prior to any technical discovery or project kickoff, ensuring complete confidentiality and 100% IP ownership.'
-    }
-  ];
-
-  // 9 Cards Expertise for Big Commerce Developers (Matching Reference Screenshot)
-  const bigCommerceDeveloperExpertise = [
-    {
-      id: 1,
-      title: 'BigCommerce Store Design & Setup',
-      desc: 'The first step of your BigCommerce business journey is to develop a store theme. To begin designing a store theme on BigCommerce, you must take various preparatory actions. They choose a relevant article, upload third-party store themes, install theme pages, and then tweak the store\'s theme.',
+      title: 'MongoDB Database Architecture & Design',
+      desc: 'We design flexible, high-performance document schemas tailored to your application needs with optimal indexing, sharding keys, and memory optimization.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -270,8 +202,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 2,
-      title: 'BigCommerce Store Integration',
-      desc: 'The first step of your BigCommerce business journey is to develop a store theme. To begin designing a store theme on BigCommerce, you must take various preparatory actions. They choose a relevant article, upload third-party store themes, install theme pages, and then tweak the store\'s theme.',
+      title: 'MongoDB Atlas Cloud Integration',
+      desc: 'Seamlessly set up, configure, and manage MongoDB Atlas multi-cloud deployments across AWS, Azure, and GCP with automated scaling and backup policies.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
@@ -284,8 +216,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 3,
-      title: 'BigCommerce Payment Gateway Integration',
-      desc: 'You may pick from over 65 online payment gateway connections when configuring your store to take payments. BigCommerce also integrates with the most popular digital and mobile wallets, including Apple Pay, Amazon Pay, and others. Your store\'s nation and currency will decide the accessible payment channels.',
+      title: 'Relational to NoSQL Database Migration',
+      desc: 'Migrate legacy SQL databases (MySQL, PostgreSQL, Oracle) to MongoDB with zero data loss, updated data models, and zero business downtime.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -297,23 +229,21 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 4,
-      title: 'BigCommerce Store Development',
-      desc: 'BigCommerce\'s flexible design gives mobile customization flexibility and a sophisticated eCommerce platform that connects with most eCommerce-related third-party applications and plugins.',
+      title: 'Full-Text & Vector Search Implementation',
+      desc: 'Implement MongoDB Atlas Search and Vector Search for intelligent query suggestions, AI-powered semantic search, and recommendation engines.',
       badgeBg: 'bg-[#FEF3C7]',
       iconColor: 'text-[#D97706]',
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="7" />
           <polyline points="12 9 12 12 13.5 13.5" />
-          <path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83" />
-          <path d="M7.49 6.65l.35-3.83A2 2 0 0 1 9.83 1h4.34a2 2 0 0 1 2 1.82l.35 3.83" />
         </svg>
       )
     },
     {
       id: 5,
-      title: 'BigCommerce Theme Customization',
-      desc: 'A well-designed BigCommerce theme may help you establish and market a strong brand image; that is the truth. Customizing a BigCommerce theme is a clever approach to being creative and original with your BigCommerce store.',
+      title: 'Performance Tuning & Query Optimization',
+      desc: 'Identify slow queries, audit database indexes, tune WiredTiger cache memory, and optimize pipeline performance for high-throughput applications.',
       badgeBg: 'bg-[#FCE7F3]',
       iconColor: 'text-[#DB2777]',
       icon: (
@@ -324,8 +254,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 6,
-      title: 'BigCommerce Secure Shopping Cart',
-      desc: 'BigCommerce Shopping Cart is a very effective tool for enhancing your online company. While searching for methods to increase firm profit, many merchants overlook the checkout procedure and fail to optimize it.',
+      title: 'MongoDB Microservices & REST API Backend',
+      desc: 'Build high-performance RESTful & GraphQL APIs with Node.js, Python, or Go backed by scalable MongoDB database clusters.',
       badgeBg: 'bg-[#E0F2FE]',
       iconColor: 'text-[#0284C7]',
       icon: (
@@ -338,8 +268,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 7,
-      title: 'BigCommerce Smart Search Integration',
-      desc: 'Scan your whole website in less than one second and offer relevant results across all pages: BigCommerce\'s facet search with Autocomplete, Suggestions, and Synonyms will simplify the route to items.',
+      title: 'Real-time Analytics & Aggregation Pipelines',
+      desc: 'Engineer complex aggregation pipelines, change streams, and real-time data processing for dashbaords and analytics engines.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -351,23 +281,21 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 8,
-      title: 'BigCommerce Migration',
-      desc: 'We provide a variety of methods to migrate your data, ranging from self-service catalog transfer applications to fully managed transfers via BigCommerce\'s Data Migration Services team.',
+      title: 'MongoDB Security & Compliance Audit',
+      desc: 'Implement field-level encryption, role-based security access, SSL/TLS certificates, and compliance audits for SOC-2 and HIPAA standards.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="17 1 21 5 17 9" />
           <path d="M3 11V9a4 4 0 0 1 4-4h14" />
-          <polyline points="7 23 3 19 7 15" />
-          <path d="M21 13v2a4 4 0 0 1-4 4H3" />
         </svg>
       )
     },
     {
       id: 9,
-      title: 'BigCommerce Support & Maintenance',
-      desc: 'The upkeep of a digital platform is just as necessary as the platform\'s initial construction, and maybe even more so. It is essential to do so consistently. Even after the completion of the project, we will continue to provide uninterrupted support and maintenance for your eCommerce platform.',
+      title: '24/7 MongoDB Support & DBA Maintenance',
+      desc: 'Get continuous 24/7 database monitoring, proactive index optimization, backup verification, and dedicated DBA support for your enterprise applications.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -379,31 +307,58 @@ export const BigCommerceDevelopmentService = () => {
     }
   ];
 
-  // Exact Stats for BigCommerce Development matching reference
-  const pythonStats = [
-    { value: '77+', label: 'Web Developers' },
-    { value: '19+', label: 'Fortunes 500 Companies' },
-    { value: '583+', label: 'Project Completed in Web Technology' },
-    { value: '311+', label: '5-Star Clutch Reviews' }
+  // FAQs for MongoDB Development
+  const mongoDbFaqs = [
+    {
+      q: '1. What makes MongoDB the ideal NoSQL database for modern web apps?',
+      a: 'MongoDB provides JSON-like document flexibility, horizontal scalability via sharding, built-in high availability, and powerful aggregation pipelines suitable for modern cloud applications.'
+    },
+    {
+      q: '2. Can MongoDB handle high-concurrency enterprise applications?',
+      a: 'Yes! With WiredTiger storage engine, multi-document ACID transactions, and sharded clusters across AWS/GCP, MongoDB scales to handle millions of reads and writes per second.'
+    },
+    {
+      q: '3. Do you handle migration from SQL databases to MongoDB?',
+      a: 'Yes, we specialize in migrating relational databases (MySQL, PostgreSQL, MS SQL) to MongoDB NoSQL document architecture with zero data loss.'
+    },
+    {
+      q: '4. How do you secure MongoDB database deployments?',
+      a: 'We configure TLS/SSL encryption in transit, Client-Side Field-Level Encryption (FLE), LDAP/Active Directory authentication, role-based security, and VPC peering.'
+    },
+    {
+      q: '5. Do you offer MongoDB Atlas cloud setup and maintenance?',
+      a: 'Yes, we handle complete MongoDB Atlas multi-cloud architecture setup, backup policies, index optimization, and 24/7 DBA support.'
+    },
+    {
+      q: '6. Do you sign Non-Disclosure Agreements (NDAs)?',
+      a: 'Yes, we sign comprehensive NDAs prior to any technical discovery or project kickoff, ensuring complete confidentiality and 100% IP ownership.'
+    }
+  ];
+
+  const mongoDbStats = [
+    { value: '85+', label: 'Database Engineers' },
+    { value: '24+', label: 'Fortunes 500 Companies' },
+    { value: '620+', label: 'Completed NoSQL Projects' },
+    { value: '325+', label: '5-Star Clutch Reviews' }
   ];
 
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="BigCommerce Development Services in USA | Custom BigCommerce Solutions | Firevy.Co"
-        description="Leading BigCommerce Development Company. We engineer fast, secure, and scalable enterprise web applications, APIs, and AI/ML platforms using BigCommerce, Django, and FastAPI."
-        canonical="/services/python-development-services"
+        title="MongoDB Development Services in USA | Custom NoSQL Solutions | Firevy.Co"
+        description="Leading MongoDB Development Company. We engineer scalable NoSQL database solutions, Atlas cloud infrastructure, vector search, and high-performance web applications."
+        canonical="/services/mongodb-development-services"
       />
 
       {/* 1. Sapphire Light Hero Banner */}
       <SapphireLightHeroBanner
-        title="BigCommerce App Development in USA"
-        subtitle="BigCommerce is a wonderful time saver due to its many time-saving advantages, such as its simple programming interface and its rapid application development."
+        title="MongoDB Development Services in USA"
+        subtitle="MongoDB is a high-performance NoSQL database offering flexible document schemas, instant scalability, and enterprise reliability for modern applications."
         ctaText="Discuss Your Project →"
         ctaLink="#quote-form"
         serviceCategory="hybrid"
-        stats={pythonStats}
-        heroImage="/images/bigcommerce_hero_illustration.png"
+        stats={mongoDbStats}
+        heroImage="/images/mongodb_hero_v3.png"
       />
 
       {/* 2. Brand Logo Marquee Right Below Hero Banner */}
@@ -417,9 +372,9 @@ export const BigCommerceDevelopmentService = () => {
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
-                  src="/images/bigcommerce_market_stats_chart.png"
-                  alt="Web Development Market Stats"
-                  className="w-full h-auto max-w-[460px] object-contain rounded-lg"
+                  src="/images/mongodb_sec3_3d.png"
+                  alt="Reliable And Scalable App Development With Mongodb"
+                  className="w-full h-auto max-w-[460px] object-contain drop-shadow-md hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -427,11 +382,11 @@ export const BigCommerceDevelopmentService = () => {
             {/* Right Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Web Development Market Stats
+                Reliable And Scalable App Development With Mongodb
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                The global web development market size was roughly USD 55500.0 million in 2021. As per our research, the market is expected to reach USD 89015.19 million by 2027, exhibiting a CAGR of 8.03% during the forecast period.
+                The global database management market size was roughly USD 65,000 million in 2021 and is projected to reach USD 125,000 million by 2028, exhibiting a CAGR of 10.5% during the forecast period due to rapid NoSQL adoption.
               </p>
 
               <div className="pt-2">
@@ -447,18 +402,18 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 4. SECTION: Affordable BigCommerce App Development Services */}
+      {/* 4. SECTION: Affordable MongoDB Services */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Affordable BigCommerce App Development Services
+                Brief About Mongodb Consulting And Support Services
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                Many small and medium-sized enterprises (SMEs) choose top-rated BigCommerce Development Services for a wide range of web development projects—from simple websites to complex enterprise applications. BigCommerce excels in building RESTful APIs, making it ideal for integrating with existing systems or creating new, efficient interfaces. As a reliable BigCommerce store development company, we offer a team of dedicated BigCommerce developers with over a decade of experience in delivering high-quality, scalable solutions.
+                Many modern enterprises choose top-rated MongoDB Development Services for high-throughput, flexible data storage—from real-time web applications to massive vector search engines. As a reliable MongoDB database consulting company, we offer dedicated engineers with extensive experience in delivering high-quality, scalable solutions.
               </p>
             </div>
 
@@ -466,17 +421,15 @@ export const BigCommerceDevelopmentService = () => {
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
-                  src="/images/bigcommerce_sec3_illustration.png"
-                  alt="Affordable BigCommerce App Development Services"
-                  className="w-full h-auto max-w-[460px] object-contain"
+                  src="/images/mongodb_sec4_3d.png"
+                  alt="Brief About Mongodb Consulting And Support Services"
+                  className="w-full h-auto max-w-[460px] object-contain drop-shadow-md hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
           </div>
         </Container>
       </section>
-
-
 
       {/* 7. SECTION: World Wide Top Rated IT Company on Clutch */}
       <section className="py-6 sm:py-8 bg-[#005F96] text-white border-y border-blue-900/30 overflow-hidden text-left font-sans select-none">
@@ -494,6 +447,36 @@ export const BigCommerceDevelopmentService = () => {
               <div className="flex w-max animate-marquee hover:[animation-play-state:paused] items-center">
                 {/* Track 1 Badges */}
                 <div className="flex items-center space-x-8 sm:space-x-10 pr-8 sm:pr-10 shrink-0">
+                  <img
+                    src="/images/awards/most_review_softwarecompany_manifest.svg"
+                    alt="Most Reviewed Software Development Company"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
+                  <img
+                    src="/images/awards/most_web_review_manifest.svg"
+                    alt="Most Reviewed Software Developers"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
+                  <img
+                    src="/images/awards/top_mobile_app_goodfirm.svg"
+                    alt="Top Dedicated Software Development Company GoodFirms"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
+                  <img
+                    src="/images/awards/most_review_softwarecompany_manifest.svg"
+                    alt="Most Reviewed Software Development Company"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
+                  <img
+                    src="/images/awards/top_mobile_clutchn.svg"
+                    alt="Top Clutch Dedicated Software Company"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
                   <div className="w-18 h-18 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center">
                     <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
                       <g fill="#F59E0B">
@@ -524,30 +507,42 @@ export const BigCommerceDevelopmentService = () => {
                   <img
                     src="/images/awards/most_web_review_manifest.svg"
                     alt="Most Reviewed Software Developers"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/top_mobile_app_goodfirm.svg"
-                    alt="Top Dedicated Software Development Company GoodFirms"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/most_review_softwarecompany_manifest.svg"
-                    alt="Most Reviewed Software Development Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/top_mobile_clutchn.svg"
-                    alt="Top Clutch Dedicated Software Company"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
                 </div>
 
-                {/* Track 2 Badges */}
+                {/* Track 2 Badges for Seamless Infinite Loop */}
                 <div className="flex items-center space-x-8 sm:space-x-10 pr-8 sm:pr-10 shrink-0" aria-hidden="true">
+                  <img
+                    src="/images/awards/most_review_softwarecompany_manifest.svg"
+                    alt="Most Reviewed Software Development Company"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
+                  <img
+                    src="/images/awards/most_web_review_manifest.svg"
+                    alt="Most Reviewed Software Developers"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
+                  <img
+                    src="/images/awards/top_mobile_app_goodfirm.svg"
+                    alt="Top Dedicated Software Development Company GoodFirms"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
+                  <img
+                    src="/images/awards/most_review_softwarecompany_manifest.svg"
+                    alt="Most Reviewed Software Development Company"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
+                  <img
+                    src="/images/awards/top_mobile_clutchn.svg"
+                    alt="Top Clutch Dedicated Software Company"
+                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
+                  />
+
                   <div className="w-18 h-18 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center">
                     <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
                       <g fill="#F59E0B">
@@ -578,24 +573,6 @@ export const BigCommerceDevelopmentService = () => {
                   <img
                     src="/images/awards/most_web_review_manifest.svg"
                     alt="Most Reviewed Software Developers"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/top_mobile_app_goodfirm.svg"
-                    alt="Top Dedicated Software Development Company GoodFirms"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/most_review_softwarecompany_manifest.svg"
-                    alt="Most Reviewed Software Development Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/top_mobile_clutchn.svg"
-                    alt="Top Clutch Dedicated Software Company"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
                 </div>
@@ -605,27 +582,17 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 8. SECTION: Get A 100% Customizable BigCommerce Development By Experts */}
+      {/* 8. SECTION: Get A 100% Customizable MongoDB Development By Experts */}
       <section className="py-12 sm:py-16 bg-white text-slate-900 font-sans text-left">
         <Container>
           <div className="text-center w-full max-w-5xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-[#0F172A] tracking-tight leading-tight">
-              Get A 100% Customizable BigCommerce Development By Experts
+              Get A 100% Customizable MongoDB Development By Experts
             </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-            {/* Left Quote Card */}
             <div className="lg:col-span-4 bg-[#F0F8FC] rounded-[12px] p-8 sm:p-9 flex flex-col justify-start relative shadow-xs border border-sky-100/80 min-h-[300px]">
-              <svg className="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M-20 60 Q 60 120, 140 40 T 300 80 T 450 30" fill="none" stroke="#005F96" strokeWidth="1" />
-                <path d="M-20 120 Q 80 180, 160 100 T 320 140 T 450 90" fill="none" stroke="#005F96" strokeWidth="1" />
-                <path d="M-20 180 Q 100 240, 180 160 T 340 200 T 450 150" fill="none" stroke="#005F96" strokeWidth="1" />
-                <path d="M-20 240 Q 120 300, 200 220 T 360 260 T 450 210" fill="none" stroke="#005F96" strokeWidth="1" />
-              </svg>
-
-              <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[12px] border-y-transparent border-l-[14px] border-l-[#F0F8FC] z-10" />
-
               <div className="text-[#005F96] mb-4 relative z-10">
                 <svg viewBox="0 0 44 34" className="w-10 h-8 fill-current">
                   <path d="M0 19.428C0 8.7 6.857 0 17.143 0v6.857c-5.714 0-8.571 4-8.571 9.143h8.571V34H0V19.428zm25.714 0C25.714 8.7 32.571 0 42.857 0v6.857c-5.714 0-8.571 4-8.571 9.143h8.571V34H25.714V19.428z" />
@@ -633,27 +600,26 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <h3 className="text-[24px] sm:text-[27px] lg:text-[29px] font-[900] text-[#005F96] tracking-tight leading-[1.3] relative z-10">
-                Scalable And Robust BigCommerce Applications
+                Scalable And Robust MongoDB Databases
               </h3>
             </div>
 
-            {/* Right Column: Paragraph Content */}
             <div className="lg:col-span-8 space-y-4 text-left flex flex-col justify-center">
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We are a leading BigCommerce eCommerce application development company backed by certified software architects and senior BigCommerce engineers. Our team engineers high-velocity BigCommerce eCommerce applications that maximize raw processing capabilities, database caching, and framework ecosystem advantages.
+                We are a leading MongoDB database consulting company backed by certified database architects and senior NoSQL engineers. Our team engineers high-velocity database architectures that maximize processing throughput, caching, and document flexibility.
               </p>
 
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We know that applications engineered for modern enterprises must deliver instant cold-starts, fluid touch gestures, reliable offline caching, and bank-grade data security. We ensure every BigCommerce deliverable matches your business goals without compromising code maintainability, scalability, or performance.
+                We know that applications engineered for modern enterprises must deliver instant query execution, fluid data scaling, zero-downtime migrations, and enterprise-grade security.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 9. SECTION: Cutting Edge Technologies Firevy Use For BigCommerce Development */}
+      {/* 9. SECTION: Cutting Edge Technologies */}
       <HybridAppCuttingEdgeTechnologiesSection
-        title={"Cutting Edge Technologies Firevy Use For\nBigCommerce Development"}
+        title={"Cutting Edge Technologies Firevy Use For\nMongoDB Development"}
       />
 
       {/* 10. SECTION: Our Premium Services */}
@@ -662,32 +628,29 @@ export const BigCommerceDevelopmentService = () => {
       {/* 17. SECTION: Success Stories */}
       <SuccessStoriesSection category="general" />
 
-      {/* SECTION: The Expertise Of Our Big Commerce Developers */}
+      {/* SECTION: The Expertise Of Our MongoDB Developers */}
       <section className="py-16 sm:py-20 bg-[#F4F8FA] text-slate-900 font-sans text-left border-y border-slate-100 overflow-hidden">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight mb-3 font-sans">
-              The Expertise Of Our Big Commerce Developers
+              The Expertise Of Our MongoDB Developers
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 max-w-6xl mx-auto">
-            {bigCommerceDeveloperExpertise.map((item) => (
+            {mongoDbDeveloperExpertise.map((item) => (
               <div
                 key={item.id}
                 className="group rounded-[14px] p-6 sm:p-7 text-left flex flex-col justify-start transition-all duration-300 ease-in-out cursor-pointer bg-white border-t-[3px] border-b-[3px] border-x border-t-transparent border-b-transparent border-x-slate-200/80 hover:bg-gradient-to-b hover:from-[#E6F6FF] hover:via-[#E1F3FD] hover:to-[#D5EEFA] hover:border-t-[#00A8E8] hover:border-b-[#005F96] hover:border-x-[#BAE6FD] hover:shadow-md hover:-translate-y-1"
               >
-                {/* Icon Badge */}
                 <div className={`w-11 h-11 rounded-[10px] ${item.badgeBg} ${item.iconColor} flex items-center justify-center mb-4 shrink-0 transition-transform duration-300 group-hover:scale-105`}>
                   {item.icon}
                 </div>
 
-                {/* Title */}
                 <h3 className="font-[800] text-[17px] sm:text-[18px] text-[#0B0F19] mb-2.5 leading-snug tracking-tight font-sans">
                   {item.title}
                 </h3>
 
-                {/* Description */}
                 <p className="text-[13px] sm:text-[13.5px] text-[#475569] leading-[1.68] font-normal font-sans">
                   {item.desc}
                 </p>
@@ -695,7 +658,6 @@ export const BigCommerceDevelopmentService = () => {
             ))}
           </div>
 
-          {/* Bottom Center Action Button */}
           <div className="mt-10 sm:mt-12 text-center">
             <a
               href="#quote-form"
@@ -710,7 +672,7 @@ export const BigCommerceDevelopmentService = () => {
       {/* 19. SECTION: Proud To Have Picked These Up Along The Way */}
       <ProudAwardsBanner />
 
-      {/* 20. SECTION: Benefits of BigCommerce Development (Matching Image 2 Reference) */}
+      {/* 20. SECTION: Benefits of MongoDB Development */}
       <section className="py-16 sm:py-20 bg-white text-slate-900 font-sans text-left border-b border-slate-100 overflow-hidden">
         <Container>
           <motion.div
@@ -721,10 +683,10 @@ export const BigCommerceDevelopmentService = () => {
             className="text-center max-w-4xl mx-auto mb-12 sm:mb-14"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              Benefits Of BigCommerce Development
+              Benefits Of MongoDB Development
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              In BigCommerce development, online shops are built and customized utilizing the top e-commerce platform. Six significant BigCommerce development benefits
+              In MongoDB development, modern web and cloud applications are built utilizing the top NoSQL database platform. Six significant MongoDB development benefits
             </p>
           </motion.div>
 
@@ -769,7 +731,6 @@ export const BigCommerceDevelopmentService = () => {
           </motion.div>
         </Container>
       </section>
-
 
       {/* 22. SECTION: Business Friendly Hiring Models */}
       <section className="py-16 sm:py-20 bg-[#f4f9fd] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
@@ -853,7 +814,7 @@ export const BigCommerceDevelopmentService = () => {
       {/* 24. SECTION: Process We Follow */}
       <ProcessWeFollow
         title="Process We Follow"
-        subtitle="Process-oriented execution from BigCommerce wireframes to backend architecture, QA testing, and AWS/GCP cloud deployment."
+        subtitle="Process-oriented execution from MongoDB schema design to cluster sharding, QA testing, and AWS/GCP cloud deployment."
       />
 
       {/* 25. SECTION: Our Story, Their Words */}
@@ -865,7 +826,7 @@ export const BigCommerceDevelopmentService = () => {
       {/* 27. SECTION: Success Matrix */}
       <SuccessMatrix />
 
-      {/* Technology Stack Section (Matching Reference Screenshot) */}
+      {/* Technology Stack Section */}
       <section className="py-16 sm:py-20 bg-[#F4F8FA] text-slate-900 font-sans text-left border-y border-slate-100 overflow-hidden">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-14">
@@ -873,7 +834,7 @@ export const BigCommerceDevelopmentService = () => {
               Technology Stack
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              We use the latest Big Commerce development technology and process to make sure we deliver the best. Have a look at our technology stack:
+              We use the latest MongoDB development technology and process to make sure we deliver the best. Have a look at our technology stack:
             </p>
           </div>
 
@@ -882,15 +843,12 @@ export const BigCommerceDevelopmentService = () => {
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Cube 1 (Top Center) */}
                   <polygon points="18,3 26,7 18,11 10,7" />
                   <polyline points="10,7 10,14 18,18 18,11" />
                   <polyline points="26,7 26,14 18,18" />
-                  {/* Cube 2 (Bottom Left) */}
                   <polygon points="10,16 18,20 10,24 2,20" />
                   <polyline points="2,20 2,27 10,31 10,24" />
                   <polyline points="18,20 18,27 10,31" />
-                  {/* Cube 3 (Bottom Right) */}
                   <polygon points="26,16 34,20 26,24 18,20" />
                   <polyline points="18,20 18,27 26,31 26,24" />
                   <polyline points="34,20 34,27 26,31" />
@@ -902,8 +860,8 @@ export const BigCommerceDevelopmentService = () => {
                 <div>- .NET</div>
                 <div>- Node</div>
                 <div>- Java</div>
-                <div>- Ruby on Rails</div>
-                <div>- PHP</div>
+                <div>- Python</div>
+                <div>- Express.js</div>
               </div>
             </div>
 
@@ -926,11 +884,11 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- Java</div>
-                <div>- Kotlin</div>
-                <div>- RxJava</div>
-                <div>- RxKotlin</div>
-                <div className="col-span-2">- Coroutines Kotlin</div>
+                <div>- React</div>
+                <div>- Next.js</div>
+                <div>- Vue.js</div>
+                <div>- Angular</div>
+                <div className="col-span-2">- TypeScript</div>
               </div>
             </div>
 
@@ -947,10 +905,10 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- SQLite</div>
-                <div>- Realm</div>
-                <div>- CoreData</div>
-                <div>- Firebase</div>
+                <div>- MongoDB Atlas</div>
+                <div>- Redis</div>
+                <div>- ElasticSearch</div>
+                <div>- PostgreSQL</div>
               </div>
             </div>
 
@@ -967,8 +925,10 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- CI/CD</div>
-                <div>- GitHub Actions</div>
+                <div>- Docker</div>
+                <div>- Kubernetes</div>
+                <div>- AWS</div>
+                <div>- GCP</div>
               </div>
             </div>
 
@@ -985,9 +945,9 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- Appium</div>
-                <div className="col-span-2">- BrowserStack</div>
-                <div className="col-span-2">- Katalon Test Studio</div>
+                <div>- Jest</div>
+                <div>- Mocha</div>
+                <div className="col-span-2">- Cypress</div>
               </div>
             </div>
 
@@ -1020,12 +980,12 @@ export const BigCommerceDevelopmentService = () => {
       <DigitalTransformationSlider />
 
       {/* 30. SECTION: Frequently Asked Questions */}
-      <SapphireFaqSection faqList={bigcommerceFaqs} />
+      <SapphireFaqSection faqList={mongoDbFaqs} />
 
-      {/* 31. SECTION: Our Recent Blogs (Firevy.co 1:1 Copy Match) */}
+      {/* 31. SECTION: Our Recent Blogs */}
       <IWatchRecentBlogsSection />
     </div>
   );
 };
 
-export default BigCommerceDevelopmentService;
+export default MongoDbDevelopmentService;

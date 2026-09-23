@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <!-- Background Tech Dotted Grid Lines -->
+  <g stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="3 3">
+    <line x1="140" y1="120" x2="140" y2="380" />
+    <line x1="220" y1="80" x2="220" y2="380" />
+    <line x1="420" y1="90" x2="420" y2="380" />
+    <line x1="490" y1="120" x2="490" y2="380" />
+    <line x1="100" y1="180" x2="520" y2="180" />
+    <line x1="100" y1="280" x2="520" y2="280" />
+  </g>
+
+  <!-- Small Dotted Nodes -->
+  <circle cx="140" cy="120" r="3" fill="#94A3B8" />
+  <circle cx="220" cy="80" r="3" fill="#94A3B8" />
+  <circle cx="490" cy="120" r="3" fill="#94A3B8" />
+  <circle cx="420" cy="90" r="3" fill="#94A3B8" />
+  <circle cx="490" cy="280" r="3" fill="#94A3B8" />
+
+  <!-- Floating UI Widget 1 (Top Left) -->
+  <g transform="translate(100, 205)">
+    <rect x="0" y="0" width="70" height="38" rx="4" fill="#38BDF8" />
+    <circle cx="14" cy="19" r="6" fill="#FFFFFF" />
+    <line x1="28" y1="14" x2="58" y2="14" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="28" y1="24" x2="48" y2="24" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Floating UI Widget 2 (Top Right Image Card) -->
+  <g transform="translate(325, 75)">
+    <rect x="0" y="0" width="65" height="52" rx="4" fill="#0284C7" />
+    <path d="M 12 38 L 26 22 L 38 34 L 46 26 L 54 38 Z" fill="#38BDF8" />
+    <circle cx="22" cy="16" r="4" fill="#FFFFFF" />
+    <path d="M 52 42 L 58 48 M 58 42 L 52 48" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Floating UI Widget 3 (Far Top Right) -->
+  <g transform="translate(415, 82)">
+    <rect x="0" y="0" width="75" height="42" rx="4" fill="#60A5FA" />
+    <circle cx="16" cy="16" r="5" fill="#FFFFFF" />
+    <line x1="28" y1="16" x2="62" y2="16" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="12" y1="28" x2="52" y2="28" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Floating UI Widget 4 (Middle Right) -->
+  <g transform="translate(425, 140)">
+    <rect x="0" y="0" width="75" height="42" rx="4" fill="#93C5FD" />
+    <circle cx="16" cy="16" r="5" fill="#FFFFFF" />
+    <line x1="28" y1="16" x2="62" y2="16" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="12" y1="28" x2="48" y2="28" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Floating UI Widget 5 (Bottom Right Code Badge </>) -->
+  <g transform="translate(425, 230)">
+    <rect x="0" y="0" width="52" height="52" rx="6" fill="#2563EB" />
+    <text x="26" y="32" font-family="sans-serif" font-weight="900" font-size="18" fill="#FFFFFF" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <!-- Giant Laptop Base & Keyboard Stand -->
+  <path d="M 140 375 L 460 375 L 475 388 L 125 388 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1.5" />
+  <rect x="250" y="377" width="60" height="4" rx="2" fill="#94A3B8" />
+
+  <!-- Giant Laptop Screen Display Box -->
+  <rect x="180" y="145" width="240" height="230" rx="8" fill="#FFFFFF" stroke="#0284C7" stroke-width="3.5" />
+  <rect x="185" y="150" width="230" height="220" fill="#F8FAFC" />
+
+  <!-- Code Lines on Left Half of Giant Screen -->
+  <g stroke="#93C5FD" stroke-width="3" stroke-linecap="round">
+    <line x1="200" y1="170" x2="270" y2="170" />
+    <line x1="200" y1="185" x2="290" y2="185" />
+    <line x1="210" y1="200" x2="280" y2="200" />
+    <line x1="210" y1="215" x2="265" y2="215" />
+    <line x1="220" y1="230" x2="295" y2="230" />
+    <line x1="220" y1="245" x2="275" y2="245" />
+    <line x1="200" y1="260" x2="285" y2="260" />
+    <line x1="200" y1="275" x2="260" y2="275" />
+    <line x1="210" y1="290" x2="290" y2="290" />
+    <line x1="200" y1="305" x2="270" y2="305" />
+  </g>
+
+  <!-- Phalcon Falcon Logo Art on Right Half of Giant Screen -->
+  <g transform="translate(325, 190)">
+    <!-- Falcon Wing Upper -->
+    <path d="M 20 15 C 35 0 55 10 65 30 C 50 35 35 30 20 15 Z" fill="#10B981" />
+    <!-- Falcon Wing Lower -->
+    <path d="M 22 20 C 35 28 45 42 52 55 C 38 52 28 42 22 20 Z" fill="#059669" />
+    <!-- Falcon Head Profile -->
+    <path d="M 45 35 C 55 30 65 35 70 45 C 60 48 55 42 45 35 Z" fill="#1E293B" />
+    <!-- Eye Accent -->
+    <circle cx="58" cy="38" r="2.5" fill="#FFFFFF" />
+    <!-- Beak -->
+    <path d="M 68 42 L 75 46 L 66 48 Z" fill="#10B981" />
+  </g>
+
+  <!-- Developer Sitting Cross-Legged on Floor in Front of Giant Laptop -->
+  <g transform="translate(240, 275)">
+    <!-- Legs (Crossed, Dark Navy) -->
+    <path d="M 10 90 C -15 90 -5 115 45 115 C 95 115 105 90 80 90 C 70 80 20 80 10 90 Z" fill="#1E3A8A" />
+    
+    <!-- Torso (Sky Blue Hoodie) -->
+    <path d="M 25 45 Q 45 38 65 45 L 68 92 L 22 92 Z" fill="#3B82F6" />
+
+    <!-- Head & Hair -->
+    <circle cx="45" cy="22" r="14" fill="#FCA5A5" />
+    <!-- Hair -->
+    <path d="M 33 16 Q 45 6 57 16 Q 58 26 45 28 Z" fill="#1E293B" />
+    <!-- Ears -->
+    <circle cx="31" cy="22" r="3" fill="#FCA5A5" />
+    <circle cx="59" cy="22" r="3" fill="#FCA5A5" />
+
+    <!-- Laptop on Developer's Lap -->
+    <rect x="25" y="70" width="40" height="24" rx="3" fill="#0284C7" stroke="#0284C7" stroke-width="1" />
+    <rect x="28" y="73" width="34" height="18" fill="#38BDF8" />
+  </g>
+
+  <!-- Base Ground Line Across Entire Illustration -->
+  <line x1="60" y1="402" x2="540" y2="402" stroke="#64748B" stroke-width="2" stroke-linecap="round" />
+</svg>

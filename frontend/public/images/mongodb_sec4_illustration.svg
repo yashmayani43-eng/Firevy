@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" fill="none">
+  <!-- Cloud Upload Icon Above Left Server -->
+  <g transform="translate(100, 30)">
+    <path d="M25 50 C10 50 0 38 0 25 C0 13 12 5 25 7 C32 0 48 0 55 8 C65 2 80 8 82 20 C92 22 98 32 95 43 C92 50 82 50 75 50 Z" fill="#0284C7"/>
+    <path d="M47 38 L47 22 M47 22 L40 28 M47 22 L54 28" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Server Tower Stack (Left) -->
+  <g transform="translate(90, 100)">
+    <rect x="0" y="0" width="90" height="200" rx="8" fill="#0284C7" stroke="#0369A1" stroke-width="2"/>
+    <!-- Slots -->
+    <rect x="10" y="15" width="70" height="24" rx="3" fill="#0369A1"/>
+    <circle cx="20" cy="27" r="3" fill="#10B981"/>
+    <line x1="30" y1="27" x2="70" y2="27" stroke="#38BDF8" stroke-width="2"/>
+
+    <rect x="10" y="48" width="70" height="24" rx="3" fill="#0369A1"/>
+    <circle cx="20" cy="60" r="3" fill="#10B981"/>
+    <line x1="30" y1="60" x2="70" y2="60" stroke="#38BDF8" stroke-width="2"/>
+
+    <rect x="10" y="81" width="70" height="24" rx="3" fill="#0369A1"/>
+    <circle cx="20" cy="93" r="3" fill="#10B981"/>
+    <line x1="30" y1="93" x2="70" y2="93" stroke="#38BDF8" stroke-width="2"/>
+
+    <rect x="10" y="114" width="70" height="24" rx="3" fill="#0369A1"/>
+    <circle cx="20" cy="126" r="3" fill="#10B981"/>
+    <line x1="30" y1="126" x2="70" y2="126" stroke="#38BDF8" stroke-width="2"/>
+
+    <rect x="10" y="147" width="70" height="24" rx="3" fill="#0369A1"/>
+    <circle cx="20" cy="159" r="3" fill="#10B981"/>
+    <line x1="30" y1="159" x2="70" y2="159" stroke="#38BDF8" stroke-width="2"/>
+  </g>
+
+  <!-- Right Server / Pedestal Block for Developer -->
+  <g transform="translate(240, 180)">
+    <rect x="0" y="0" width="90" height="120" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="10" y1="20" x2="80" y2="20" stroke="#CBD5E1" stroke-width="2"/>
+    <line x1="10" y1="40" x2="80" y2="40" stroke="#CBD5E1" stroke-width="2"/>
+    <line x1="10" y1="60" x2="80" y2="60" stroke="#CBD5E1" stroke-width="2"/>
+    <line x1="10" y1="80" x2="80" y2="80" stroke="#CBD5E1" stroke-width="2"/>
+  </g>
+
+  <!-- Developer Sitting on Pedestal Block -->
+  <g transform="translate(240, 80)">
+    <circle cx="45" cy="20" r="14" fill="#FFEDD5"/>
+    <path d="M33 10 Q45 2 57 10 Q59 22 45 25 Z" fill="#1E293B"/>
+
+    <!-- Hoodie -->
+    <path d="M28 40 L62 40 L58 80 L32 80 Z" fill="#0284C7"/>
+
+    <!-- Legs hanging over -->
+    <path d="M32 80 L32 110 L44 110 L44 80 Z" fill="#0F172A"/>
+    <path d="M46 80 L46 110 L58 110 L58 80 Z" fill="#0F172A"/>
+
+    <!-- Shoes -->
+    <rect x="28" y="108" width="18" height="8" rx="2" fill="#FFFFFF"/>
+    <rect x="44" y="108" width="18" height="8" rx="2" fill="#FFFFFF"/>
+
+    <!-- Laptop -->
+    <polygon points="15,65 65,65 70,78 10,78" fill="#94A3B8"/>
+    <rect x="20" y="42" width="38" height="24" rx="2" fill="#F8FAFC" stroke="#64748B" stroke-width="1"/>
+  </g>
+
+  <!-- Base Plants / Leaves Decorative Accent -->
+  <path d="M40 300 C30 260 60 240 70 300 Z" fill="#0284C7" opacity="0.8"/>
+  <path d="M60 300 C50 270 80 250 90 300 Z" fill="#38BDF8" opacity="0.9"/>
+  <path d="M340 300 C330 270 360 250 370 300 Z" fill="#0284C7" opacity="0.8"/>
+  <path d="M360 300 C350 260 380 240 390 300 Z" fill="#38BDF8" opacity="0.9"/>
+
+  <!-- Ground Line -->
+  <line x1="30" y1="300" x2="430" y2="300" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+</svg>

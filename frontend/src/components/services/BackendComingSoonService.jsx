@@ -12,7 +12,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'python-development-services': { title: 'Python Development Services', category: 'Back End Development' },
   'big-commerce-development': { title: 'Big Commerce Development', category: 'Back End Development' },
   'mongodb-development-services': { title: 'MongoDB Development Services', category: 'Back End Development' },
-  'phalcon-development-services': { title: 'Phalcon Development Services', category: 'Back End Development' },
   'azure-web-services': { title: 'Azure Web Services', category: 'Back End Development' },
   'mysql-development-company': { title: 'MySQL Development Company', category: 'Back End Development' },
   'backend-development': { title: 'Back End Development', category: 'Back End Development' },
@@ -136,10 +135,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'big-commerce-development' ||
     clean === 'bigcommerce-development' ||
     clean === 'mongodb-development-services' ||
-    clean === 'phalcon-development-services' ||
-    clean === 'azure-web-services' ||
-    clean === 'mysql-development-company' ||
-    clean === 'mysql-development' ||
     clean === 'backend-development' ||
     clean === 'back-end-development' ||
     clean === 'backend' ||

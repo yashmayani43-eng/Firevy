@@ -261,7 +261,7 @@ export const SapphireLightHeroBanner = ({
                 {/* 4. Smartphone Mockup showing Taxi Booking App UI (1:1 Reference Match) */}
                 <div className="absolute top-2 right-2 sm:right-4 z-20 w-[210px] sm:w-[235px] h-[370px] sm:h-[400px] rounded-[38px] bg-slate-900 border-[5px] border-slate-900 p-1.5 shadow-2xl overflow-hidden font-sans">
                   <div className="bg-white text-slate-900 w-full h-full rounded-[30px] flex flex-col justify-between overflow-hidden relative text-left">
-                    
+
                     {/* Top Phone Status & Header */}
                     <div className="px-3 pt-2 pb-1 space-y-1 bg-white border-b border-slate-100 z-10">
                       <div className="flex items-center justify-between text-[8px] font-bold text-slate-400 px-1">

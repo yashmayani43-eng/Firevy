@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 350" fill="none">
+  <!-- Soft Background Accents (Cloud & Brackets) -->
+  <path d="M 420 120 C 420 100 440 90 460 100 C 475 90 500 100 505 115 C 518 120 525 135 515 150 C 505 155 430 155 420 120 Z" fill="#E2E8F0" opacity="0.6" />
+  
+  <text x="210" y="210" font-family="sans-serif" font-weight="900" font-size="38" fill="#E2E8F0">&lt;/&gt;</text>
+  <text x="260" y="140" font-family="sans-serif" font-weight="900" font-size="38" fill="#E2E8F0">{ }</text>
+
+  <!-- Large Blue Code Window (Top Right Center) -->
+  <g transform="translate(260, 45)">
+    <rect x="0" y="0" width="160" height="110" rx="4" fill="#0284C7" />
+    <circle cx="10" cy="10" r="2.5" fill="#38BDF8" />
+    <circle cx="18" cy="10" r="2.5" fill="#38BDF8" />
+    <circle cx="26" cy="10" r="2.5" fill="#38BDF8" />
+    <line x1="0" y1="20" x2="160" y2="20" stroke="#0369A1" stroke-width="1.5" />
+
+    <!-- Code lines in code window -->
+    <line x1="12" y1="32" x2="60" y2="32" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="12" y1="44" x2="110" y2="44" stroke="#7DD3FC" stroke-width="2" stroke-linecap="round" />
+    <line x1="24" y1="56" x2="135" y2="56" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <line x1="24" y1="68" x2="90" y2="68" stroke="#7DD3FC" stroke-width="2" stroke-linecap="round" />
+    <line x1="12" y1="80" x2="100" y2="80" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <line x1="12" y1="92" x2="45" y2="92" stroke="#7DD3FC" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Floating Phalcon Logo Badge (Far Right) -->
+  <g transform="translate(425, 150)">
+    <rect x="0" y="0" width="70" height="50" rx="4" fill="#FFFFFF" stroke="#38BDF8" stroke-width="1.5" />
+    <!-- Phalcon Green Falcon Logo Art -->
+    <path d="M 22 15 C 32 8 45 14 52 28 C 42 32 30 28 22 15 Z" fill="#10B981" />
+    <path d="M 24 18 C 32 24 40 35 44 42 C 32 40 26 32 24 18 Z" fill="#059669" />
+    <path d="M 40 28 C 48 24 55 28 58 35 C 50 38 46 32 40 28 Z" fill="#1E293B" />
+    <circle cx="50" cy="30" r="1.8" fill="#FFFFFF" />
+  </g>
+
+  <!-- Desk Surface (Navy Blue) -->
+  <rect x="150" y="270" width="360" height="14" rx="2" fill="#0F172A" />
+
+  <!-- Male Developer (Left - Blue Shirt) -->
+  <g transform="translate(205, 175)">
+    <!-- Hair -->
+    <path d="M 22 18 C 15 10 38 2 48 18 C 50 28 35 30 22 18 Z" fill="#1E293B" />
+    <!-- Face -->
+    <circle cx="35" cy="28" r="12" fill="#FED7AA" />
+    <!-- Glasses -->
+    <circle cx="30" cy="27" r="4.5" fill="none" stroke="#1E293B" stroke-width="1.5" />
+    <circle cx="40" cy="27" r="4.5" fill="none" stroke="#1E293B" stroke-width="1.5" />
+    <line x1="34.5" y1="27" x2="35.5" y2="27" stroke="#1E293B" stroke-width="1.5" />
+
+    <!-- Body (Blue Shirt) -->
+    <path d="M 12 48 Q 35 40 58 48 L 70 95 L 0 95 Z" fill="#38BDF8" />
+    <!-- Arms typing -->
+    <path d="M 0 65 C -20 70 -35 85 -45 95 L -25 95 L -5 75 Z" fill="#38BDF8" />
+    <!-- Hands on computer -->
+    <circle cx="-45" cy="95" r="4" fill="#FED7AA" />
+
+    <!-- Computer Monitor on Left -->
+    <rect x="-65" y="70" width="55" height="32" rx="2" fill="#0F172A" />
+    <path d="M -40 102 L -35 112 L -45 112 Z" fill="#0F172A" />
+  </g>
+
+  <!-- Female Developer (Right - Yellow Shirt) -->
+  <g transform="translate(345, 185)">
+    <!-- Long Hair -->
+    <path d="M 15 12 C -5 25 -5 65 10 85 C 20 85 45 85 55 60 C 60 25 35 5 15 12 Z" fill="#1E293B" />
+    <!-- Face -->
+    <circle cx="30" cy="28" r="11" fill="#FED7AA" />
+    <!-- Bangs Hair -->
+    <path d="M 20 18 Q 30 24 40 18 C 35 12 25 12 20 18 Z" fill="#1E293B" />
+
+    <!-- Body (Yellow Shirt) -->
+    <path d="M 10 48 Q 30 40 50 48 L 60 85 L 0 85 Z" fill="#F59E0B" />
+    <!-- Arms typing on laptop -->
+    <path d="M 45 58 L 75 75 L 65 85 L 35 68 Z" fill="#F59E0B" />
+    <!-- Hand -->
+    <circle cx="75" cy="78" r="4" fill="#FED7AA" />
+
+    <!-- Laptop on Right -->
+    <polygon points="60,68 110,68 115 85 55 85" fill="#0F172A" />
+    <polygon points="65,70 105,70 108 83 62 83" fill="#38BDF8" />
+  </g>
+
+  <!-- Base Ground Line -->
+  <line x1="140" y1="310" x2="520" y2="310" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+</svg>

@@ -233,48 +233,28 @@ export const Footer = () => {
                         </span>
                       </a>
                     )}
-<<<<<<< HEAD
-                    {(footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662') && (
+                    {(footerConfig?.salesContact?.phoneIndia || 'IN: +91 7069370629') && (
                       <a
-                        href={`tel:${(footerConfig?.salesContact?.phoneIndia || '+91-942-970-9662').replace(/[^0-9+]/g, '')}`}
+                        href={`tel:${(footerConfig?.salesContact?.phoneIndia || '+91 7069370629').replace(/[^0-9+]/g, '')}`}
                         className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
                       >
                         <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
                         <span className="font-[600]">
-                          {footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662'}
+                          {footerConfig?.salesContact?.phoneIndia || 'IN: +91 7069370629'}
                         </span>
                       </a>
                     )}
-                    {(footerConfig?.salesContact?.phoneUS || 'US:+1-754-258-7670') && (
+                    {(footerConfig?.salesContact?.phoneUS || 'US: +1-754-258-7670') && (
                       <a
                         href={`tel:${(footerConfig?.salesContact?.phoneUS || '+1-754-258-7670').replace(/[^0-9+]/g, '')}`}
                         className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
                       >
                         <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
                         <span className="font-[600]">
-                          {footerConfig?.salesContact?.phoneUS || 'US:+1-754-258-7670'}
+                          {footerConfig?.salesContact?.phoneUS || 'US: +1-754-258-7670'}
                         </span>
                       </a>
                     )}
-
-=======
-                    {(() => {
-                      const phoneSales = (footerConfig?.salesContact?.phoneIndia && !footerConfig.salesContact.phoneIndia.includes('942-970-9662'))
-                        ? footerConfig.salesContact.phoneIndia.replace(/^IN:\s*/, '')
-                        : '+91 7069370629';
-                      return (
-                        <a
-                          href={`tel:${phoneSales.replace(/[^0-9+]/g, '')}`}
-                          className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                        >
-                          <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                          <span className="font-[600]">
-                            {phoneSales}
-                          </span>
-                        </a>
-                      );
-                    })()}
->>>>>>> 979fa8c29cedbfb19c2154841c24c7bc0abe9e37
                   </div>
                 </div>
 

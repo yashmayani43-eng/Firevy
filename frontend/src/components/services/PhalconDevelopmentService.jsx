@@ -20,14 +20,14 @@ import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
 import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
 
-export const BigCommerceDevelopmentService = () => {
+export const PhalconDevelopmentService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    model: 'Dedicated BigCommerce Squad',
-    appType: 'Custom BigCommerce Web App Development',
+    model: 'Dedicated Phalcon Squad',
+    appType: 'Custom Phalcon Web App Development',
     budget: '$15,000 - $40,000',
     message: ''
   });
@@ -42,89 +42,65 @@ export const BigCommerceDevelopmentService = () => {
     setFormSubmitted(true);
   };
 
-  // 6 Benefits of BigCommerce Development (Matching Image 2 Reference)
+  // 6 Benefits of Phalcon Development
   const benefitsItems = [
     {
-      title: 'Scale and Flex',
-      desc: 'The versatile and adaptable BigCommerce e-commerce platform can expand with your company. BigCommerce lets online shops grow without infrastructure or performance difficulties.',
+      title: 'Ultra-Fast C-Extension Speed',
+      desc: 'Phalcon is compiled directly as a C extension for PHP, delivering raw processing speeds up to 10x faster than traditional interpreted PHP frameworks.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="4" y="6" width="22" height="7" rx="2" />
-          <circle cx="8" cy="9.5" r="1" fill="currentColor" />
-          <circle cx="12" cy="9.5" r="1" fill="currentColor" />
-          <rect x="4" y="16" width="22" height="7" rx="2" />
-          <circle cx="8" cy="19.5" r="1" fill="currentColor" />
-          <circle cx="12" cy="19.5" r="1" fill="currentColor" />
-          <rect x="4" y="26" width="22" height="7" rx="2" />
-          <circle cx="8" cy="29.5" r="1" fill="currentColor" />
-          <circle cx="12" cy="29.5" r="1" fill="currentColor" />
-          <rect x="25" y="4" width="8" height="8" rx="1.5" fill="#E0F2FE" stroke="#0084D1" strokeWidth="1.5" />
-          <path d="M27 10L31 6M31 6H28M31 6V9" stroke="#0084D1" strokeWidth="1.5" strokeLinecap="round" />
+          <polygon points="13 2 3 14 12 14 11 26 21 14 12 14 13 2" />
         </svg>
       )
     },
     {
-      title: 'Management and Usability',
-      desc: "Businesses with no technical knowledge can establish sophisticated storefronts using its drag-and-drop editor and configurable layouts. BigCommerce's inventory, order, and customer support tools improve business administration.",
+      title: 'Minimal Memory Overhead',
+      desc: 'Operating directly in system RAM, Phalcon consumes drastically less CPU and memory overhead per request, maximizing your server capacity.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="6" y="4" width="24" height="28" rx="3" />
           <line x1="14" y1="28" x2="22" y2="28" />
           <path d="M16 12v6a2 2 0 0 0 4 0v-4" />
           <path d="M20 14v4a2 2 0 0 0 4 0v-2" />
-          <path d="M12 15v5a6 6 0 0 0 12 0v-2" />
         </svg>
       )
     },
     {
-      title: 'Practical Marketing and Conversion Tools',
-      desc: 'BigCommerce offers powerful SEO, configurable discounts, abandoned cart recovery, and email marketing connectors. Businesses may reach their target audience and boost online sales with these built-in marketing options.',
+      title: 'Robust Built-In Security',
+      desc: 'Includes built-in security features such as PHQL parameterized query ORM, cross-site scripting (XSS) prevention, and CSRF protection.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M6 14v8h4l10 6V8L10 14H6z" />
-          <path d="M24 12a5 5 0 0 1 0 12" />
-          <path d="M27 9a9 9 0 0 1 0 18" />
-          <path d="M10 22v7a2 2 0 0 0 2 2h2" />
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
         </svg>
       )
     },
     {
-      title: 'E-Payment Solutions',
-      desc: 'BigCommerce interfaces with top payment gateways, enabling companies to provide many payment alternatives. Credit cards, digital wallets, and other payment options are safe and dependable with BigCommerce.',
+      title: 'Flexible MVC & Microservices',
+      desc: 'Build full-featured MVC web applications or lightweight high-throughput RESTful microservices using Phalcon’s versatile architecture.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="5" y="4" width="20" height="28" rx="3" />
-          <circle cx="15" cy="28" r="1" fill="currentColor" />
           <rect x="16" y="10" width="15" height="11" rx="2" fill="#E0F2FE" stroke="#0084D1" strokeWidth="1.5" />
-          <line x1="16" y1="14" x2="31" y2="14" stroke="#0084D1" strokeWidth="1.5" />
-          <text x="21" y="19" fontSize="6" fill="#0084D1" fontWeight="bold">$</text>
         </svg>
       )
     },
     {
-      title: 'Mobile-Friendly Design',
-      desc: 'For a smooth shopping experience across devices, BigCommerce provides adaptable and mobile-friendly design templates. Mobile buying is growing; thus, online retailers must have a mobile-friendly interface.',
+      title: 'High Concurrency Support',
+      desc: 'Engineered for high-volume enterprise platforms capable of serving tens of thousands of concurrent API queries with zero performance degradation.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="7" y="4" width="22" height="28" rx="3" />
-          <line x1="15" y1="28" x2="21" y2="28" />
           <circle cx="18" cy="13" r="3.5" />
-          <path d="M12 21c0-3.3 2.7-6 6-6s6 2.7 6 6" />
         </svg>
       )
     },
     {
-      title: 'Powerful Analytics and Reports',
-      desc: "Businesses can measure important indicators, monitor performance, and obtain valuable insights into their online store using BigCommerce's analytics and reporting capabilities. It helps companies enhance their e-commerce strategy by analyzing sales patterns and marketing ROI.",
+      title: 'Advanced Query ORM (PHQL)',
+      desc: 'Includes Phalcon Query Language (PHQL), an advanced high-performance object-relational mapper for complex database operations.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="4" y="5" width="28" height="26" rx="3" />
-          <line x1="4" y1="12" x2="32" y2="12" />
-          <rect x="8" y="19" width="3" height="6" fill="currentColor" />
-          <rect x="14" y="16" width="3" height="9" fill="currentColor" />
-          <rect x="20" y="14" width="3" height="11" fill="currentColor" />
-          <circle cx="26" cy="20" r="3.5" strokeWidth="1.5" />
-          <path d="M26 16.5V20H29.5" strokeWidth="1.5" />
+          <ellipse cx="18" cy="8" rx="14" ry="4.5" />
+          <path d="M4 8v7c0 2.5 6.27 4.5 14 4.5s14-2 14-4.5V8" />
         </svg>
       )
     }
@@ -134,33 +110,33 @@ export const BigCommerceDevelopmentService = () => {
   const hiringModels = [
     {
       title: 'Fixed Price',
-      desc: "If you represent a company with a project that needs dedicated attention, ask about dedicated teams. It's a pay-as-you-go monthly rolling contract.",
+      desc: "Ideal for well-defined Phalcon projects with fixed scopes and specific deadlines. Enjoy complete transparency over costs.",
       icon: (
         <img src="/images/ic_fixed_price.svg" alt="Fixed Price" className="w-12 h-12 object-contain" />
       ),
       points: [
         'Optimal flexibility',
         'Agile team',
-        'Small projects',
+        'Small to medium projects',
         'Complete control over budget'
       ]
     },
     {
-      title: 'Time Material',
-      desc: "If you are represent a company with undefined projects and need ongoing work, ask about hourly. It's a pay-as-you-go hour-wise rolling contract.",
+      title: 'Time & Material',
+      desc: "For evolving Phalcon projects requiring continuous development and flexible resource allocation billed hourly.",
       icon: (
-        <img src="/images/ic_time_material.svg" alt="Time Material" className="w-12 h-12 object-contain" />
+        <img src="/images/ic_time_material.svg" alt="Time & Material" className="w-12 h-12 object-contain" />
       ),
       points: [
         'No hidden costs',
-        'Working based hours',
+        'Working based on hours',
         'Monthly billing',
         'Pay only for measurable work'
       ]
     },
     {
       title: 'Dedicated Team',
-      desc: "If you represent a company with a project that needs dedicated attention, ask about dedicated teams. It's a pay-as-you-go monthly rolling contract.",
+      desc: "Full-time dedicated Phalcon developers working directly as an extension of your internal engineering squad.",
       icon: (
         <img src="/images/ic_full_time.svg" alt="Dedicated Team" className="w-12 h-12 object-contain" />
       ),
@@ -173,92 +149,53 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       title: 'Buckets Approach',
-      desc: 'A lot of businesses typically select our bucket approach which allow them for payment convenience once the project is finished and things are in place.',
+      desc: 'Flexibility to purchase pre-paid development hours for ongoing Phalcon maintenance, updates, and optimization.',
       icon: (
         <img src="/images/bucketapproch.svg" alt="Buckets Approach" className="w-12 h-12 object-contain" />
       ),
       points: [
         'Direct Resource Monitoring',
         'Less Risk',
-        'Less budget',
+        'Optimized budget',
         'Pay only for measurable work'
       ]
     }
   ];
 
-  // BigCommerce Expertise Cards
-  const pythonExpertiseCards = [
+  // Official Phalcon FAQs
+  const phalconFaqs = [
     {
-      id: 1,
-      title: 'Custom BigCommerce Web Application Engineering',
-      desc: 'We design and build custom enterprise BigCommerce eCommerce applications tailored to your business goals with clean MVT/MVC architecture, scalable database schemas, and modular codebases.'
+      q: '1. What makes Phalcon faster than other PHP frameworks?',
+      a: 'Phalcon is written as a C-extension module that resides directly in memory when PHP boots up, eliminating file parsing overhead on every HTTP request.'
     },
     {
-      id: 2,
-      title: 'FastAPI & Django RESTful API Endpoints',
-      desc: 'Our BigCommerce specialists engineer high-throughput API endpoints utilizing FastAPI and Django REST Framework, ensuring seamless data exchange between web and mobile apps.'
+      q: '2. Do developers need C programming knowledge to build Phalcon apps?',
+      a: 'No! Developers write standard PHP code when building applications with Phalcon. The low-level C compilation operates invisibly under the hood.'
     },
     {
-      id: 3,
-      title: 'BigCommerce SaaS & Multi-Tenant Platforms',
-      desc: 'We engineer multi-tenant SaaS platforms with automated subscription billing, role-based access control (RBAC), tenant isolation, and cloud auto-scaling.'
+      q: '3. Can Phalcon handle enterprise-scale microservices?',
+      a: 'Yes! Phalcon’s minimal memory usage and high request-per-second capability make it perfect for scalable microservices and real-time APIs.'
     },
     {
-      id: 4,
-      title: 'AI & Data Engineering Pipeline Integration',
-      desc: 'Integrate artificial intelligence, machine learning models, and automated data processing pipelines into your core web applications.'
+      q: '4. How do you secure Phalcon web applications?',
+      a: 'We implement PHQL parameterized queries, CSRF token validation, strict XSS filters, OAuth2/JWT authentication, and secure password hashing.'
     },
     {
-      id: 5,
-      title: 'Legacy BigCommerce & Backend Migration',
-      desc: 'Safely upgrade outdated BigCommerce 2/3 codebases or legacy backend frameworks to modern BigCommerce 3.12+ with zero data loss and automated test suites.'
-    },
-    {
-      id: 6,
-      title: 'Security Auditing & Enterprise Compliance',
-      desc: 'Perform comprehensive security code audits, OWASP vulnerability patching, database encryption, and GDPR/SOC-2 compliance setup for enterprise BigCommerce platforms.'
-    },
-    {
-      id: 7,
-      title: 'Cloud DevOps & Serverless Architecture (AWS/GCP)',
-      desc: 'Streamline containerized deployment and continuous integration using Docker, Kubernetes, AWS Lambda, GCP Cloud Run, and GitHub Actions.'
-    }
-  ];
-
-  // Official BigCommerce FAQs
-  const bigcommerceFaqs = [
-    {
-      q: '1. What makes BigCommerce the ideal language for web and AI development?',
-      a: 'BigCommerce combines clean readable syntax, extensive framework support (Django, Flask, FastAPI), and unparalleled AI/ML library ecosystems (NumPy, PyTorch) for fast development and scalability.'
-    },
-    {
-      q: '2. Can BigCommerce support high-traffic enterprise applications?',
-      a: 'Absolutely. With async web frameworks (FastAPI, Tornado), Redis caching, Celery task queues, and microservices on AWS/GCP, BigCommerce easily scales to millions of users.'
-    },
-    {
-      q: '3. Do you handle legacy BigCommerce migration and code refactoring?',
-      a: 'Yes! We specialize in migrating legacy BigCommerce codebases, Flask apps, or custom scripts to modern Django / FastAPI with zero downtime.'
-    },
-    {
-      q: '4. How do you secure BigCommerce eCommerce applications?',
-      a: 'We implement OAuth2/JWT authentication, CSRF token validation, SQL injection prevention via ORM PDO bindings, password Bcrypt hashing, and strict HSTS header configurations.'
-    },
-    {
-      q: '5. Do you assist with cloud deployment and DevOps automation?',
-      a: 'Yes! We configure complete Docker containerization, AWS/GCP cloud setup, CI/CD pipeline automation, Kubernetes orchestration, and zero-downtime deployments.'
+      q: '5. Do you assist with Phalcon deployment and server tuning?',
+      a: 'Yes! We handle Nginx/Apache configuration, PHP extension tuning, Docker containerization, AWS/GCP cloud setup, and CI/CD pipelines.'
     },
     {
       q: '6. Do you sign Non-Disclosure Agreements (NDAs)?',
-      a: 'Yes, we sign comprehensive NDAs prior to any technical discovery or project kickoff, ensuring complete confidentiality and 100% IP ownership.'
+      a: 'Yes, we sign comprehensive NDAs prior to technical discovery, ensuring 100% intellectual property ownership and data confidentiality.'
     }
   ];
 
-  // 9 Cards Expertise for Big Commerce Developers (Matching Reference Screenshot)
-  const bigCommerceDeveloperExpertise = [
+  // 9 Cards Expertise for Phalcon Developers
+  const phalconDeveloperExpertise = [
     {
       id: 1,
-      title: 'BigCommerce Store Design & Setup',
-      desc: 'The first step of your BigCommerce business journey is to develop a store theme. To begin designing a store theme on BigCommerce, you must take various preparatory actions. They choose a relevant article, upload third-party store themes, install theme pages, and then tweak the store\'s theme.',
+      title: 'Custom Phalcon Web App Engineering',
+      desc: 'We engineer tailor-made high-performance enterprise web applications using Phalcon MVC, custom routing engines, and modular architectures.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -270,8 +207,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 2,
-      title: 'BigCommerce Store Integration',
-      desc: 'The first step of your BigCommerce business journey is to develop a store theme. To begin designing a store theme on BigCommerce, you must take various preparatory actions. They choose a relevant article, upload third-party store themes, install theme pages, and then tweak the store\'s theme.',
+      title: 'RESTful API & Microservices Development',
+      desc: 'Build ultra-low latency RESTful API endpoints and microservices using Phalcon Micro framework with JWT token authentication.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
@@ -284,8 +221,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 3,
-      title: 'BigCommerce Payment Gateway Integration',
-      desc: 'You may pick from over 65 online payment gateway connections when configuring your store to take payments. BigCommerce also integrates with the most popular digital and mobile wallets, including Apple Pay, Amazon Pay, and others. Your store\'s nation and currency will decide the accessible payment channels.',
+      title: 'Phalcon Database ORM & PHQL Optimization',
+      desc: 'Leverage Phalcon Query Language (PHQL) for high-speed database interactions, complex joins, indexing, and multi-tenant schema partitioning.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -297,23 +234,21 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 4,
-      title: 'BigCommerce Store Development',
-      desc: 'BigCommerce\'s flexible design gives mobile customization flexibility and a sophisticated eCommerce platform that connects with most eCommerce-related third-party applications and plugins.',
+      title: 'Legacy PHP to Phalcon Migration',
+      desc: 'Seamlessly upgrade monolithic legacy PHP codebases to Phalcon, boosting execution speed by up to 10x while reducing server infrastructure costs.',
       badgeBg: 'bg-[#FEF3C7]',
       iconColor: 'text-[#D97706]',
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="7" />
           <polyline points="12 9 12 12 13.5 13.5" />
-          <path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83" />
-          <path d="M7.49 6.65l.35-3.83A2 2 0 0 1 9.83 1h4.34a2 2 0 0 1 2 1.82l.35 3.83" />
         </svg>
       )
     },
     {
       id: 5,
-      title: 'BigCommerce Theme Customization',
-      desc: 'A well-designed BigCommerce theme may help you establish and market a strong brand image; that is the truth. Customizing a BigCommerce theme is a clever approach to being creative and original with your BigCommerce store.',
+      title: 'Phalcon Template Engine (Volt) Customization',
+      desc: 'Design beautiful, lightweight frontends using Phalcon Volt template engine with built-in view caching and compiled PHP speed.',
       badgeBg: 'bg-[#FCE7F3]',
       iconColor: 'text-[#DB2777]',
       icon: (
@@ -324,8 +259,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 6,
-      title: 'BigCommerce Secure Shopping Cart',
-      desc: 'BigCommerce Shopping Cart is a very effective tool for enhancing your online company. While searching for methods to increase firm profit, many merchants overlook the checkout procedure and fail to optimize it.',
+      title: 'Enterprise Security & OWASP Compliance',
+      desc: 'Implement enterprise-grade encryption, CSRF protection, SQL injection prevention, and security code audits for Phalcon deployments.',
       badgeBg: 'bg-[#E0F2FE]',
       iconColor: 'text-[#0284C7]',
       icon: (
@@ -338,8 +273,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 7,
-      title: 'BigCommerce Smart Search Integration',
-      desc: 'Scan your whole website in less than one second and offer relevant results across all pages: BigCommerce\'s facet search with Autocomplete, Suggestions, and Synonyms will simplify the route to items.',
+      title: 'Performance Benchmarking & Caching',
+      desc: 'Configure Redis, Memcached, OPcache, and Phalcon multi-level caching strategies to achieve sub-10ms response times.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -351,23 +286,21 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 8,
-      title: 'BigCommerce Migration',
-      desc: 'We provide a variety of methods to migrate your data, ranging from self-service catalog transfer applications to fully managed transfers via BigCommerce\'s Data Migration Services team.',
+      title: 'Third-Party Integration & Payment Gateways',
+      desc: 'Connect your Phalcon applications with Stripe, PayPal, AWS S3, Salesforce, Twilio, and enterprise ERP systems.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="17 1 21 5 17 9" />
           <path d="M3 11V9a4 4 0 0 1 4-4h14" />
-          <polyline points="7 23 3 19 7 15" />
-          <path d="M21 13v2a4 4 0 0 1-4 4H3" />
         </svg>
       )
     },
     {
       id: 9,
-      title: 'BigCommerce Support & Maintenance',
-      desc: 'The upkeep of a digital platform is just as necessary as the platform\'s initial construction, and maybe even more so. It is essential to do so consistently. Even after the completion of the project, we will continue to provide uninterrupted support and maintenance for your eCommerce platform.',
+      title: '24/7 Phalcon Support & Maintenance',
+      desc: 'Ongoing server health monitoring, security patches, framework updates, and round-the-clock technical assistance.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -379,47 +312,47 @@ export const BigCommerceDevelopmentService = () => {
     }
   ];
 
-  // Exact Stats for BigCommerce Development matching reference
-  const pythonStats = [
-    { value: '77+', label: 'Web Developers' },
-    { value: '19+', label: 'Fortunes 500 Companies' },
-    { value: '583+', label: 'Project Completed in Web Technology' },
-    { value: '311+', label: '5-Star Clutch Reviews' }
+  // Exact Stats for Phalcon Development
+  const phalconStats = [
+    { value: '65+', label: 'Phalcon Experts' },
+    { value: '15+', label: 'Enterprise Clients' },
+    { value: '450+', label: 'High-Speed Web Apps Built' },
+    { value: '290+', label: '5-Star Reviews' }
   ];
 
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="BigCommerce Development Services in USA | Custom BigCommerce Solutions | Firevy.Co"
-        description="Leading BigCommerce Development Company. We engineer fast, secure, and scalable enterprise web applications, APIs, and AI/ML platforms using BigCommerce, Django, and FastAPI."
-        canonical="/services/python-development-services"
+        title="Phalcon Framework Development Services | Firevy.Co"
+        description="Top-rated Phalcon Development Company. We engineer fast, secure, and low-overhead enterprise web applications using Phalcon C-extension PHP framework."
+        canonical="/services/phalcon-development-services"
       />
 
       {/* 1. Sapphire Light Hero Banner */}
       <SapphireLightHeroBanner
-        title="BigCommerce App Development in USA"
-        subtitle="BigCommerce is a wonderful time saver due to its many time-saving advantages, such as its simple programming interface and its rapid application development."
+        title="Phalcon Development Services"
+        subtitle="We are the web leader when it comes to Phalcon Development Services. We are ready to assist you with developing high-quality apps and enterprise app development using phalcon. We plan to fulfill your company's needs using phalcon php development services and extensive Phalcon web development knowledge."
         ctaText="Discuss Your Project →"
         ctaLink="#quote-form"
-        serviceCategory="hybrid"
-        stats={pythonStats}
-        heroImage="/images/bigcommerce_hero_illustration.png"
+        serviceCategory="backend"
+        stats={phalconStats}
+        heroImage="/images/phalcon_hero_proper.png"
       />
 
       {/* 2. Brand Logo Marquee Right Below Hero Banner */}
       <BrandLogoMarquee />
 
-      {/* 3. SECTION: Web Development Market Stats */}
+      {/* 3. SECTION: Enterprise App Development Using Phalcon */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Chart Image */}
+            {/* Left Column: Image */}
             <div className="lg:col-span-6 flex justify-center">
-              <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
+              <div className="relative w-full max-w-[520px] p-2 flex items-center justify-center">
                 <img
-                  src="/images/bigcommerce_market_stats_chart.png"
-                  alt="Web Development Market Stats"
-                  className="w-full h-auto max-w-[460px] object-contain rounded-lg"
+                  src="/images/phalcon_sec3_vector.png"
+                  alt="Enterprise App Development Using Phalcon"
+                  className="w-full h-auto max-w-[500px] object-contain drop-shadow-md hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -427,56 +360,49 @@ export const BigCommerceDevelopmentService = () => {
             {/* Right Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Web Development Market Stats
+                Enterprise App Development Using Phalcon
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                The global web development market size was roughly USD 55500.0 million in 2021. As per our research, the market is expected to reach USD 89015.19 million by 2027, exhibiting a CAGR of 8.03% during the forecast period.
+                To fulfill the requirements of our customers, our Phalcon Development Company keeps open lines of contact. Our phalcon backend development experts have been working hard to produce cutting-edge, feature-packed web applications. Our primary concern is to provide Custom Phalcon Web Development Solutions tailored to your company's needs. Our Phalcon Development Company in India is here to help you take your company to new heights. Hire Phalcon Developer who develop apps that are quick, safe, and expandable according to the demands and specifications of your company.
               </p>
-
-              <div className="pt-2">
-                <a
-                  href="#quote-form"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-[8px] bg-[#005F96] hover:bg-[#004a75] text-white font-[700] text-sm sm:text-base transition-all shadow-md hover:shadow-lg font-sans"
-                >
-                  <span>Connect With An Expert</span>
-                </a>
-              </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 4. SECTION: Affordable BigCommerce App Development Services */}
+      {/* 4. SECTION: Brief About Our Phalcon Development */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Affordable BigCommerce App Development Services
+                Brief About Our Phalcon Development
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                Many small and medium-sized enterprises (SMEs) choose top-rated BigCommerce Development Services for a wide range of web development projects—from simple websites to complex enterprise applications. BigCommerce excels in building RESTful APIs, making it ideal for integrating with existing systems or creating new, efficient interfaces. As a reliable BigCommerce store development company, we offer a team of dedicated BigCommerce developers with over a decade of experience in delivering high-quality, scalable solutions.
+                You can contact our Phalcon Development Company in UAE anytime with questions or concerns. Our company can develop effective web apps due to its broad knowledge. By providing unrivaled solutions, we strive to give exceptional client satisfaction.
+              </p>
+
+              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+                We are the industry leader in Phalcon web development. We guarantee that our customers thoroughly understand the process by providing them with easily understood reports.
               </p>
             </div>
 
             {/* Right Column: Image */}
             <div className="lg:col-span-6 flex justify-center">
-              <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
+              <div className="relative w-full max-w-[520px] p-2 flex items-center justify-center">
                 <img
-                  src="/images/bigcommerce_sec3_illustration.png"
-                  alt="Affordable BigCommerce App Development Services"
-                  className="w-full h-auto max-w-[460px] object-contain"
+                  src="/images/phalcon_sec4_vector.png"
+                  alt="Brief About Our Phalcon Development"
+                  className="w-full h-auto max-w-[500px] object-contain drop-shadow-md hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
           </div>
         </Container>
       </section>
-
-
 
       {/* 7. SECTION: World Wide Top Rated IT Company on Clutch */}
       <section className="py-6 sm:py-8 bg-[#005F96] text-white border-y border-blue-900/30 overflow-hidden text-left font-sans select-none">
@@ -499,18 +425,9 @@ export const BigCommerceDevelopmentService = () => {
                       <g fill="#F59E0B">
                         <path d="M 18 72 C 10 50 14 26 30 14 C 24 24 24 42 31 56 C 28 48 24 30 33 20 C 34 34 38 46 44 58" fill="none" stroke="#F59E0B" strokeWidth="2.5" />
                         <path d="M 82 72 C 90 50 86 26 70 14 C 76 24 76 42 69 56 C 72 48 76 30 67 20 C 66 34 62 46 56 58" fill="none" stroke="#F59E0B" strokeWidth="2.5" />
-                        <path d="M 18 64 Q 10 54 22 48 Q 26 58 18 64 Z" />
-                        <path d="M 22 48 Q 13 38 26 32 Q 30 42 22 48 Z" />
-                        <path d="M 28 32 Q 20 22 34 18 Q 36 28 28 32 Z" />
-                        <path d="M 82 64 Q 90 54 78 48 Q 74 58 82 64 Z" />
-                        <path d="M 78 48 Q 87 38 74 32 Q 70 42 78 48 Z" />
-                        <path d="M 72 32 Q 80 22 66 18 Q 64 28 72 32 Z" />
                       </g>
                       <path d="M 36 28 L 64 28 L 60 52 C 58 60 42 60 40 52 Z" fill="#FBBF24" stroke="#D97706" strokeWidth="1.5" />
-                      <path d="M 36 32 C 26 32 26 44 37 44" fill="none" stroke="#FBBF24" strokeWidth="2.5" strokeLinecap="round" />
-                      <path d="M 64 32 C 74 32 74 44 63 44" fill="none" stroke="#FBBF24" strokeWidth="2.5" strokeLinecap="round" />
                       <rect x="47" y="58" width="6" height="12" fill="#F59E0B" />
-                      <rect x="38" y="70" width="24" height="6" rx="1" fill="#D97706" />
                       <polygon points="50,22 53,27 58,28 54,32 55,37 50,34 45,37 46,32 42,28 47,27" fill="#FDE047" />
                     </svg>
                   </div>
@@ -520,25 +437,16 @@ export const BigCommerceDevelopmentService = () => {
                     alt="Most Reviewed Software Development Company"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
-
                   <img
                     src="/images/awards/most_web_review_manifest.svg"
                     alt="Most Reviewed Software Developers"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
-
                   <img
                     src="/images/awards/top_mobile_app_goodfirm.svg"
                     alt="Top Dedicated Software Development Company GoodFirms"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
-
-                  <img
-                    src="/images/awards/most_review_softwarecompany_manifest.svg"
-                    alt="Most Reviewed Software Development Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
                   <img
                     src="/images/awards/top_mobile_clutchn.svg"
                     alt="Top Clutch Dedicated Software Company"
@@ -553,49 +461,19 @@ export const BigCommerceDevelopmentService = () => {
                       <g fill="#F59E0B">
                         <path d="M 18 72 C 10 50 14 26 30 14 C 24 24 24 42 31 56 C 28 48 24 30 33 20 C 34 34 38 46 44 58" fill="none" stroke="#F59E0B" strokeWidth="2.5" />
                         <path d="M 82 72 C 90 50 86 26 70 14 C 76 24 76 42 69 56 C 72 48 76 30 67 20 C 66 34 62 46 56 58" fill="none" stroke="#F59E0B" strokeWidth="2.5" />
-                        <path d="M 18 64 Q 10 54 22 48 Q 26 58 18 64 Z" />
-                        <path d="M 22 48 Q 13 38 26 32 Q 30 42 22 48 Z" />
-                        <path d="M 28 32 Q 20 22 34 18 Q 36 28 28 32 Z" />
-                        <path d="M 82 64 Q 90 54 78 48 Q 74 58 82 64 Z" />
-                        <path d="M 78 48 Q 87 38 74 32 Q 70 42 78 48 Z" />
-                        <path d="M 72 32 Q 80 22 66 18 Q 64 28 72 32 Z" />
                       </g>
                       <path d="M 36 28 L 64 28 L 60 52 C 58 60 42 60 40 52 Z" fill="#FBBF24" stroke="#D97706" strokeWidth="1.5" />
-                      <path d="M 36 32 C 26 32 26 44 37 44" fill="none" stroke="#FBBF24" strokeWidth="2.5" strokeLinecap="round" />
-                      <path d="M 64 32 C 74 32 74 44 63 44" fill="none" stroke="#FBBF24" strokeWidth="2.5" strokeLinecap="round" />
-                      <rect x="47" y="58" width="6" height="12" fill="#F59E0B" />
-                      <rect x="38" y="70" width="24" height="6" rx="1" fill="#D97706" />
                       <polygon points="50,22 53,27 58,28 54,32 55,37 50,34 45,37 46,32 42,28 47,27" fill="#FDE047" />
                     </svg>
                   </div>
-
                   <img
                     src="/images/awards/most_review_softwarecompany_manifest.svg"
                     alt="Most Reviewed Software Development Company"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
-
-                  <img
-                    src="/images/awards/most_web_review_manifest.svg"
-                    alt="Most Reviewed Software Developers"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
                   <img
                     src="/images/awards/top_mobile_app_goodfirm.svg"
                     alt="Top Dedicated Software Development Company GoodFirms"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/most_review_softwarecompany_manifest.svg"
-                    alt="Most Reviewed Software Development Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/top_mobile_clutchn.svg"
-                    alt="Top Clutch Dedicated Software Company"
                     className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
                   />
                 </div>
@@ -605,12 +483,12 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 8. SECTION: Get A 100% Customizable BigCommerce Development By Experts */}
+      {/* 8. SECTION: Get A 100% Customizable Phalcon Development By Experts */}
       <section className="py-12 sm:py-16 bg-white text-slate-900 font-sans text-left">
         <Container>
           <div className="text-center w-full max-w-5xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-[#0F172A] tracking-tight leading-tight">
-              Get A 100% Customizable BigCommerce Development By Experts
+              Get A 100% Customizable Phalcon Development By Experts
             </h2>
           </div>
 
@@ -620,8 +498,6 @@ export const BigCommerceDevelopmentService = () => {
               <svg className="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-20 60 Q 60 120, 140 40 T 300 80 T 450 30" fill="none" stroke="#005F96" strokeWidth="1" />
                 <path d="M-20 120 Q 80 180, 160 100 T 320 140 T 450 90" fill="none" stroke="#005F96" strokeWidth="1" />
-                <path d="M-20 180 Q 100 240, 180 160 T 340 200 T 450 150" fill="none" stroke="#005F96" strokeWidth="1" />
-                <path d="M-20 240 Q 120 300, 200 220 T 360 260 T 450 210" fill="none" stroke="#005F96" strokeWidth="1" />
               </svg>
 
               <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[12px] border-y-transparent border-l-[14px] border-l-[#F0F8FC] z-10" />
@@ -633,27 +509,27 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <h3 className="text-[24px] sm:text-[27px] lg:text-[29px] font-[900] text-[#005F96] tracking-tight leading-[1.3] relative z-10">
-                Scalable And Robust BigCommerce Applications
+                Scalable And Robust Phalcon Applications
               </h3>
             </div>
 
             {/* Right Column: Paragraph Content */}
             <div className="lg:col-span-8 space-y-4 text-left flex flex-col justify-center">
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We are a leading BigCommerce eCommerce application development company backed by certified software architects and senior BigCommerce engineers. Our team engineers high-velocity BigCommerce eCommerce applications that maximize raw processing capabilities, database caching, and framework ecosystem advantages.
+                We are a premier Phalcon web application development company backed by certified software architects and senior PHP engineers. Our team builds high-velocity Phalcon applications that capitalize on C-extension speed, database caching, and minimal RAM footprint.
               </p>
 
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We know that applications engineered for modern enterprises must deliver instant cold-starts, fluid touch gestures, reliable offline caching, and bank-grade data security. We ensure every BigCommerce deliverable matches your business goals without compromising code maintainability, scalability, or performance.
+                We know that applications engineered for modern enterprises must deliver instant cold-starts, sub-10ms API responses, and bank-grade security. We ensure every Phalcon deliverable matches your business goals without compromising maintainability or scalability.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 9. SECTION: Cutting Edge Technologies Firevy Use For BigCommerce Development */}
+      {/* 9. SECTION: Cutting Edge Technologies Firevy Use For Phalcon Development */}
       <HybridAppCuttingEdgeTechnologiesSection
-        title={"Cutting Edge Technologies Firevy Use For\nBigCommerce Development"}
+        title={"Cutting Edge Technologies Firevy Use For\nPhalcon Development"}
       />
 
       {/* 10. SECTION: Our Premium Services */}
@@ -662,32 +538,29 @@ export const BigCommerceDevelopmentService = () => {
       {/* 17. SECTION: Success Stories */}
       <SuccessStoriesSection category="general" />
 
-      {/* SECTION: The Expertise Of Our Big Commerce Developers */}
+      {/* SECTION: The Expertise Of Our Phalcon Developers */}
       <section className="py-16 sm:py-20 bg-[#F4F8FA] text-slate-900 font-sans text-left border-y border-slate-100 overflow-hidden">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight mb-3 font-sans">
-              The Expertise Of Our Big Commerce Developers
+              The Expertise Of Our Phalcon Developers
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 max-w-6xl mx-auto">
-            {bigCommerceDeveloperExpertise.map((item) => (
+            {phalconDeveloperExpertise.map((item) => (
               <div
                 key={item.id}
                 className="group rounded-[14px] p-6 sm:p-7 text-left flex flex-col justify-start transition-all duration-300 ease-in-out cursor-pointer bg-white border-t-[3px] border-b-[3px] border-x border-t-transparent border-b-transparent border-x-slate-200/80 hover:bg-gradient-to-b hover:from-[#E6F6FF] hover:via-[#E1F3FD] hover:to-[#D5EEFA] hover:border-t-[#00A8E8] hover:border-b-[#005F96] hover:border-x-[#BAE6FD] hover:shadow-md hover:-translate-y-1"
               >
-                {/* Icon Badge */}
                 <div className={`w-11 h-11 rounded-[10px] ${item.badgeBg} ${item.iconColor} flex items-center justify-center mb-4 shrink-0 transition-transform duration-300 group-hover:scale-105`}>
                   {item.icon}
                 </div>
 
-                {/* Title */}
                 <h3 className="font-[800] text-[17px] sm:text-[18px] text-[#0B0F19] mb-2.5 leading-snug tracking-tight font-sans">
                   {item.title}
                 </h3>
 
-                {/* Description */}
                 <p className="text-[13px] sm:text-[13.5px] text-[#475569] leading-[1.68] font-normal font-sans">
                   {item.desc}
                 </p>
@@ -695,7 +568,6 @@ export const BigCommerceDevelopmentService = () => {
             ))}
           </div>
 
-          {/* Bottom Center Action Button */}
           <div className="mt-10 sm:mt-12 text-center">
             <a
               href="#quote-form"
@@ -710,7 +582,7 @@ export const BigCommerceDevelopmentService = () => {
       {/* 19. SECTION: Proud To Have Picked These Up Along The Way */}
       <ProudAwardsBanner />
 
-      {/* 20. SECTION: Benefits of BigCommerce Development (Matching Image 2 Reference) */}
+      {/* 20. SECTION: Benefits of Phalcon Development */}
       <section className="py-16 sm:py-20 bg-white text-slate-900 font-sans text-left border-b border-slate-100 overflow-hidden">
         <Container>
           <motion.div
@@ -721,10 +593,10 @@ export const BigCommerceDevelopmentService = () => {
             className="text-center max-w-4xl mx-auto mb-12 sm:mb-14"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              Benefits Of BigCommerce Development
+              Benefits Of Phalcon Development
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              In BigCommerce development, online shops are built and customized utilizing the top e-commerce platform. Six significant BigCommerce development benefits
+              In Phalcon development, enterprise applications are engineered utilizing the fastest C-extension PHP framework. Key benefits of choosing Phalcon development:
             </p>
           </motion.div>
 
@@ -770,7 +642,6 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-
       {/* 22. SECTION: Business Friendly Hiring Models */}
       <section className="py-16 sm:py-20 bg-[#f4f9fd] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
         <Container>
@@ -785,7 +656,7 @@ export const BigCommerceDevelopmentService = () => {
               Business Friendly Hiring Models : Building Greater Futures Through Innovation
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-4xl mx-auto font-normal">
-              We offer three different types of hiring models that are designed to suit your diverse needs and budget. Take a look at our hiring models:
+              We offer flexible hiring models tailored to your business needs and budget requirements. Take a look at our models:
             </p>
           </motion.div>
 
@@ -853,7 +724,7 @@ export const BigCommerceDevelopmentService = () => {
       {/* 24. SECTION: Process We Follow */}
       <ProcessWeFollow
         title="Process We Follow"
-        subtitle="Process-oriented execution from BigCommerce wireframes to backend architecture, QA testing, and AWS/GCP cloud deployment."
+        subtitle="Process-oriented execution from Phalcon MVC wireframes to backend architecture, QA benchmarking, and cloud deployment."
       />
 
       {/* 25. SECTION: Our Story, Their Words */}
@@ -873,7 +744,7 @@ export const BigCommerceDevelopmentService = () => {
               Technology Stack
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              We use the latest Big Commerce development technology and process to make sure we deliver the best. Have a look at our technology stack:
+              We use the latest Phalcon development technology and process to make sure we deliver the best. Have a look at our technology stack:
             </p>
           </div>
 
@@ -1020,12 +891,12 @@ export const BigCommerceDevelopmentService = () => {
       <DigitalTransformationSlider />
 
       {/* 30. SECTION: Frequently Asked Questions */}
-      <SapphireFaqSection faqList={bigcommerceFaqs} />
+      <SapphireFaqSection faqList={phalconFaqs} />
 
-      {/* 31. SECTION: Our Recent Blogs (Firevy.co 1:1 Copy Match) */}
+      {/* 31. SECTION: Our Recent Blogs */}
       <IWatchRecentBlogsSection />
     </div>
   );
 };
 
-export default BigCommerceDevelopmentService;
+export default PhalconDevelopmentService;

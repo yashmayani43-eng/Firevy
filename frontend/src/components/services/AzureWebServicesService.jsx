@@ -20,14 +20,14 @@ import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
 import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
 
-export const BigCommerceDevelopmentService = () => {
+export const AzureWebServicesService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    model: 'Dedicated BigCommerce Squad',
-    appType: 'Custom BigCommerce Web App Development',
+    model: 'Dedicated Azure Cloud Squad',
+    appType: 'Custom Azure Web Services & Cloud Solutions',
     budget: '$15,000 - $40,000',
     message: ''
   });
@@ -42,11 +42,11 @@ export const BigCommerceDevelopmentService = () => {
     setFormSubmitted(true);
   };
 
-  // 6 Benefits of BigCommerce Development (Matching Image 2 Reference)
+  // 6 Benefits of Azure Web Services
   const benefitsItems = [
     {
-      title: 'Scale and Flex',
-      desc: 'The versatile and adaptable BigCommerce e-commerce platform can expand with your company. BigCommerce lets online shops grow without infrastructure or performance difficulties.',
+      title: 'High Availability & Global Scale',
+      desc: 'Azure operates in over 60 global regions, providing high availability, multi-region redundancy, and auto-scaling to keep your applications accessible 24/7 without performance degradation.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="6" width="22" height="7" rx="2" />
@@ -64,8 +64,8 @@ export const BigCommerceDevelopmentService = () => {
       )
     },
     {
-      title: 'Management and Usability',
-      desc: "Businesses with no technical knowledge can establish sophisticated storefronts using its drag-and-drop editor and configurable layouts. BigCommerce's inventory, order, and customer support tools improve business administration.",
+      title: 'Seamless Microsoft Ecosystem Integration',
+      desc: 'Natively integrate with Microsoft 365, Active Directory (Entra ID), Visual Studio, Power BI, and Azure DevOps for streamlined management, SSO authentication, and developer productivity.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="6" y="4" width="24" height="28" rx="3" />
@@ -77,8 +77,8 @@ export const BigCommerceDevelopmentService = () => {
       )
     },
     {
-      title: 'Practical Marketing and Conversion Tools',
-      desc: 'BigCommerce offers powerful SEO, configurable discounts, abandoned cart recovery, and email marketing connectors. Businesses may reach their target audience and boost online sales with these built-in marketing options.',
+      title: 'Enterprise Security & Compliance',
+      desc: 'Azure adheres to strict compliance standards including HIPAA, GDPR, SOC-2, and ISO 27001. Advanced threat detection and encryption protect your cloud infrastructure.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 14v8h4l10 6V8L10 14H6z" />
@@ -89,8 +89,8 @@ export const BigCommerceDevelopmentService = () => {
       )
     },
     {
-      title: 'E-Payment Solutions',
-      desc: 'BigCommerce interfaces with top payment gateways, enabling companies to provide many payment alternatives. Credit cards, digital wallets, and other payment options are safe and dependable with BigCommerce.',
+      title: 'Hybrid Cloud Capability',
+      desc: 'Azure Arc and Azure Stack enable seamless hybrid cloud deployments, connecting on-premise datacenters with Azure public cloud resources for flexible infrastructure management.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="5" y="4" width="20" height="28" rx="3" />
@@ -102,8 +102,8 @@ export const BigCommerceDevelopmentService = () => {
       )
     },
     {
-      title: 'Mobile-Friendly Design',
-      desc: 'For a smooth shopping experience across devices, BigCommerce provides adaptable and mobile-friendly design templates. Mobile buying is growing; thus, online retailers must have a mobile-friendly interface.',
+      title: 'Serverless & Microservices Platform',
+      desc: 'Build event-driven microservices using Azure Functions, Azure App Services, and Azure Kubernetes Service (AKS) with automatic scaling and pay-per-execution pricing models.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="7" y="4" width="22" height="28" rx="3" />
@@ -114,8 +114,8 @@ export const BigCommerceDevelopmentService = () => {
       )
     },
     {
-      title: 'Powerful Analytics and Reports',
-      desc: "Businesses can measure important indicators, monitor performance, and obtain valuable insights into their online store using BigCommerce's analytics and reporting capabilities. It helps companies enhance their e-commerce strategy by analyzing sales patterns and marketing ROI.",
+      title: 'Advanced AI & Cognitive Analytics',
+      desc: 'Empower web applications with Azure OpenAI Service, Cognitive Search, Machine Learning Studio, and Azure Synapse Analytics for data-driven intelligent decision making.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="5" width="28" height="26" rx="3" />
@@ -186,79 +186,40 @@ export const BigCommerceDevelopmentService = () => {
     }
   ];
 
-  // BigCommerce Expertise Cards
-  const pythonExpertiseCards = [
+  // Official Azure Web Services FAQs
+  const azureFaqs = [
     {
-      id: 1,
-      title: 'Custom BigCommerce Web Application Engineering',
-      desc: 'We design and build custom enterprise BigCommerce eCommerce applications tailored to your business goals with clean MVT/MVC architecture, scalable database schemas, and modular codebases.'
+      q: '1. What makes Azure Web Services ideal for enterprise applications?',
+      a: 'Azure provides global scale across 60+ regions, enterprise security compliance (HIPAA, SOC-2, GDPR), native Microsoft integration, and comprehensive PaaS/SaaS services.'
     },
     {
-      id: 2,
-      title: 'FastAPI & Django RESTful API Endpoints',
-      desc: 'Our BigCommerce specialists engineer high-throughput API endpoints utilizing FastAPI and Django REST Framework, ensuring seamless data exchange between web and mobile apps.'
+      q: '2. Can Azure support high-traffic cloud-native web apps?',
+      a: 'Yes! With Azure App Service auto-scaling, Azure Front Door CDN, Azure Traffic Manager, and Azure Redis Caching, your web app handles millions of concurrent user requests.'
     },
     {
-      id: 3,
-      title: 'BigCommerce SaaS & Multi-Tenant Platforms',
-      desc: 'We engineer multi-tenant SaaS platforms with automated subscription billing, role-based access control (RBAC), tenant isolation, and cloud auto-scaling.'
+      q: '3. Do you handle cloud migration from AWS/on-premise to Azure?',
+      a: 'Absolutely. We specialize in seamless database and application migration to Azure Cloud using Azure Migrate and Database Migration Service with zero downtime.'
     },
     {
-      id: 4,
-      title: 'AI & Data Engineering Pipeline Integration',
-      desc: 'Integrate artificial intelligence, machine learning models, and automated data processing pipelines into your core web applications.'
+      q: '4. How do you secure web applications hosted on Azure?',
+      a: 'We implement Azure Web Application Firewall (WAF), Microsoft Entra ID (Azure AD) SSO, Key Vault secret management, DDOS protection, and continuous vulnerability monitoring.'
     },
     {
-      id: 5,
-      title: 'Legacy BigCommerce & Backend Migration',
-      desc: 'Safely upgrade outdated BigCommerce 2/3 codebases or legacy backend frameworks to modern BigCommerce 3.12+ with zero data loss and automated test suites.'
+      q: '5. Do you assist with Azure DevOps CI/CD pipeline setup?',
+      a: 'Yes! We build automated deployment pipelines using Azure DevOps and GitHub Actions combined with Terraform or Bicep Infrastructure as Code.'
     },
     {
-      id: 6,
-      title: 'Security Auditing & Enterprise Compliance',
-      desc: 'Perform comprehensive security code audits, OWASP vulnerability patching, database encryption, and GDPR/SOC-2 compliance setup for enterprise BigCommerce platforms.'
-    },
-    {
-      id: 7,
-      title: 'Cloud DevOps & Serverless Architecture (AWS/GCP)',
-      desc: 'Streamline containerized deployment and continuous integration using Docker, Kubernetes, AWS Lambda, GCP Cloud Run, and GitHub Actions.'
+      q: '6. What hiring models do you offer for Azure Cloud Developers?',
+      a: 'We provide Dedicated Azure Squads, Hourly Time & Material contracts, Fixed Price projects, and Resource Bucket plans to match your development requirements.'
     }
   ];
 
-  // Official BigCommerce FAQs
-  const bigcommerceFaqs = [
-    {
-      q: '1. What makes BigCommerce the ideal language for web and AI development?',
-      a: 'BigCommerce combines clean readable syntax, extensive framework support (Django, Flask, FastAPI), and unparalleled AI/ML library ecosystems (NumPy, PyTorch) for fast development and scalability.'
-    },
-    {
-      q: '2. Can BigCommerce support high-traffic enterprise applications?',
-      a: 'Absolutely. With async web frameworks (FastAPI, Tornado), Redis caching, Celery task queues, and microservices on AWS/GCP, BigCommerce easily scales to millions of users.'
-    },
-    {
-      q: '3. Do you handle legacy BigCommerce migration and code refactoring?',
-      a: 'Yes! We specialize in migrating legacy BigCommerce codebases, Flask apps, or custom scripts to modern Django / FastAPI with zero downtime.'
-    },
-    {
-      q: '4. How do you secure BigCommerce eCommerce applications?',
-      a: 'We implement OAuth2/JWT authentication, CSRF token validation, SQL injection prevention via ORM PDO bindings, password Bcrypt hashing, and strict HSTS header configurations.'
-    },
-    {
-      q: '5. Do you assist with cloud deployment and DevOps automation?',
-      a: 'Yes! We configure complete Docker containerization, AWS/GCP cloud setup, CI/CD pipeline automation, Kubernetes orchestration, and zero-downtime deployments.'
-    },
-    {
-      q: '6. Do you sign Non-Disclosure Agreements (NDAs)?',
-      a: 'Yes, we sign comprehensive NDAs prior to any technical discovery or project kickoff, ensuring complete confidentiality and 100% IP ownership.'
-    }
-  ];
-
-  // 9 Cards Expertise for Big Commerce Developers (Matching Reference Screenshot)
-  const bigCommerceDeveloperExpertise = [
+  // 9 Cards Expertise for Azure Web Services Developers
+  const azureDeveloperExpertise = [
     {
       id: 1,
-      title: 'BigCommerce Store Design & Setup',
-      desc: 'The first step of your BigCommerce business journey is to develop a store theme. To begin designing a store theme on BigCommerce, you must take various preparatory actions. They choose a relevant article, upload third-party store themes, install theme pages, and then tweak the store\'s theme.',
+      title: 'Azure App Service & Web App Engineering',
+      desc: 'We design and deploy scalable Azure Web Apps for enterprise web applications with high availability, automated TLS/SSL certificates, and custom domain routing.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -270,8 +231,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 2,
-      title: 'BigCommerce Store Integration',
-      desc: 'The first step of your BigCommerce business journey is to develop a store theme. To begin designing a store theme on BigCommerce, you must take various preparatory actions. They choose a relevant article, upload third-party store themes, install theme pages, and then tweak the store\'s theme.',
+      title: 'Azure Cloud Architecture & Integration',
+      desc: 'Connect your cloud infrastructure with Microsoft 365, Active Directory (Entra ID), Visual Studio, Power BI, and third-party SaaS APIs seamlessly.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
@@ -284,8 +245,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 3,
-      title: 'BigCommerce Payment Gateway Integration',
-      desc: 'You may pick from over 65 online payment gateway connections when configuring your store to take payments. BigCommerce also integrates with the most popular digital and mobile wallets, including Apple Pay, Amazon Pay, and others. Your store\'s nation and currency will decide the accessible payment channels.',
+      title: 'Azure Security & IAM Governance',
+      desc: 'Enforce enterprise-grade cloud security using Microsoft Entra ID (Azure AD), Azure Key Vault, Role-Based Access Control (RBAC), and Azure Sentinel.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -297,8 +258,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 4,
-      title: 'BigCommerce Store Development',
-      desc: 'BigCommerce\'s flexible design gives mobile customization flexibility and a sophisticated eCommerce platform that connects with most eCommerce-related third-party applications and plugins.',
+      title: 'Azure Serverless & Microservices',
+      desc: 'Build high-performance microservices architecture using Azure Functions, Azure Container Apps, and Azure Kubernetes Service (AKS) with automated scaling.',
       badgeBg: 'bg-[#FEF3C7]',
       iconColor: 'text-[#D97706]',
       icon: (
@@ -312,8 +273,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 5,
-      title: 'BigCommerce Theme Customization',
-      desc: 'A well-designed BigCommerce theme may help you establish and market a strong brand image; that is the truth. Customizing a BigCommerce theme is a clever approach to being creative and original with your BigCommerce store.',
+      title: 'Azure Database Architecture (SQL & Cosmos DB)',
+      desc: 'Architect resilient database solutions using Azure SQL Database, Azure Cosmos DB, and Azure Cache for Redis for sub-millisecond query performance.',
       badgeBg: 'bg-[#FCE7F3]',
       iconColor: 'text-[#DB2777]',
       icon: (
@@ -324,8 +285,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 6,
-      title: 'BigCommerce Secure Shopping Cart',
-      desc: 'BigCommerce Shopping Cart is a very effective tool for enhancing your online company. While searching for methods to increase firm profit, many merchants overlook the checkout procedure and fail to optimize it.',
+      title: 'Azure Cloud Migration & Modernization',
+      desc: 'Migrate on-premise infrastructure and legacy applications to Azure cloud with zero downtime, database migration services (DMS), and cloud-native refactoring.',
       badgeBg: 'bg-[#E0F2FE]',
       iconColor: 'text-[#0284C7]',
       icon: (
@@ -338,8 +299,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 7,
-      title: 'BigCommerce Smart Search Integration',
-      desc: 'Scan your whole website in less than one second and offer relevant results across all pages: BigCommerce\'s facet search with Autocomplete, Suggestions, and Synonyms will simplify the route to items.',
+      title: 'Azure DevOps Pipeline & IaC Automation',
+      desc: 'Automate infrastructure provisioning using Terraform, Bicep, and ARM templates paired with Azure DevOps CI/CD pipelines for zero-downtime releases.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -351,8 +312,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 8,
-      title: 'BigCommerce Migration',
-      desc: 'We provide a variety of methods to migrate your data, ranging from self-service catalog transfer applications to fully managed transfers via BigCommerce\'s Data Migration Services team.',
+      title: 'Azure AI & OpenAI Service Integration',
+      desc: 'Integrate enterprise AI features such as ChatGPT models, Azure Cognitive Services, vector search, and intelligent analytics directly into your web applications.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
@@ -366,8 +327,8 @@ export const BigCommerceDevelopmentService = () => {
     },
     {
       id: 9,
-      title: 'BigCommerce Support & Maintenance',
-      desc: 'The upkeep of a digital platform is just as necessary as the platform\'s initial construction, and maybe even more so. It is essential to do so consistently. Even after the completion of the project, we will continue to provide uninterrupted support and maintenance for your eCommerce platform.',
+      title: 'Azure Cloud Support & 24/7 Managed Services',
+      desc: 'Continuous cloud infrastructure monitoring, automated disaster recovery, patch management, and 24/7 technical support for your Microsoft Azure environments.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -379,31 +340,39 @@ export const BigCommerceDevelopmentService = () => {
     }
   ];
 
-  // Exact Stats for BigCommerce Development matching reference
-  const pythonStats = [
-    { value: '77+', label: 'Web Developers' },
+  // Exact Stats for Azure Web Services matching BigCommerce reference sequence
+  const azureStats = [
+    { value: '77+', label: 'Cloud Developers' },
     { value: '19+', label: 'Fortunes 500 Companies' },
-    { value: '583+', label: 'Project Completed in Web Technology' },
+    { value: '583+', label: 'Project Completed in Cloud Technology' },
     { value: '311+', label: '5-Star Clutch Reviews' }
   ];
 
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="BigCommerce Development Services in USA | Custom BigCommerce Solutions | Firevy.Co"
-        description="Leading BigCommerce Development Company. We engineer fast, secure, and scalable enterprise web applications, APIs, and AI/ML platforms using BigCommerce, Django, and FastAPI."
-        canonical="/services/python-development-services"
+        title="Azure Web Services in USA | Firevy.Co"
+        description="We provide a wide range of Azure cloud application development services, such as Assessment of Infrastructure, Azure Migration, and Azure Consulting."
+        keywords="azure web services in usa, azure cloud development, azure app service, azure devops, hire azure developers, azure cloud migration, Firevy.Co"
       />
 
       {/* 1. Sapphire Light Hero Banner */}
       <SapphireLightHeroBanner
-        title="BigCommerce App Development in USA"
-        subtitle="BigCommerce is a wonderful time saver due to its many time-saving advantages, such as its simple programming interface and its rapid application development."
+        title="Azure Web Services in USA"
+        subtitle="We provide a wide range of Azure cloud application development services, such as Assessment of Infrastructure, Azure Migration, and Azure Consulting. As the Best Azure web services company, we ensure top-notch solutions and support for all your cloud computing needs."
         ctaText="Discuss Your Project →"
         ctaLink="#quote-form"
         serviceCategory="hybrid"
-        stats={pythonStats}
-        heroImage="/images/bigcommerce_hero_illustration.png"
+        stats={azureStats}
+        heroComponent={
+          <div className="relative w-full max-w-[560px] flex items-center justify-center">
+            <img
+              src="/images/azure_hero_illustration.png"
+              alt="Azure Web Services in USA"
+              className="w-full max-w-[540px] h-auto object-contain select-none pointer-events-none drop-shadow-sm"
+            />
+          </div>
+        }
       />
 
       {/* 2. Brand Logo Marquee Right Below Hero Banner */}
@@ -447,18 +416,18 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 4. SECTION: Affordable BigCommerce App Development Services */}
+      {/* 4. SECTION: Affordable Azure Web Services App Development Services */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Affordable BigCommerce App Development Services
+                Affordable Azure Web Services App Development Services
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                Many small and medium-sized enterprises (SMEs) choose top-rated BigCommerce Development Services for a wide range of web development projects—from simple websites to complex enterprise applications. BigCommerce excels in building RESTful APIs, making it ideal for integrating with existing systems or creating new, efficient interfaces. As a reliable BigCommerce store development company, we offer a team of dedicated BigCommerce developers with over a decade of experience in delivering high-quality, scalable solutions.
+                Many small and medium-sized enterprises (SMEs) choose top-rated Azure Web Services for a wide range of cloud development projects—from simple cloud applications to complex enterprise microservices. Azure excels in building scalable RESTful APIs, making it ideal for integrating with existing systems or creating new, efficient interfaces. As a reliable Azure cloud development company, we offer a team of dedicated Azure developers with over a decade of experience in delivering high-quality, scalable solutions.
               </p>
             </div>
 
@@ -467,7 +436,7 @@ export const BigCommerceDevelopmentService = () => {
               <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
                   src="/images/bigcommerce_sec3_illustration.png"
-                  alt="Affordable BigCommerce App Development Services"
+                  alt="Affordable Azure Web Services App Development Services"
                   className="w-full h-auto max-w-[460px] object-contain"
                 />
               </div>
@@ -476,9 +445,7 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-
-
-      {/* 7. SECTION: World Wide Top Rated IT Company on Clutch */}
+      {/* 5. SECTION: World Wide Top Rated IT Company on Clutch */}
       <section className="py-6 sm:py-8 bg-[#005F96] text-white border-y border-blue-900/30 overflow-hidden text-left font-sans select-none">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
@@ -605,12 +572,12 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 8. SECTION: Get A 100% Customizable BigCommerce Development By Experts */}
+      {/* 6. SECTION: Get A 100% Customizable Azure Web Services Development By Experts */}
       <section className="py-12 sm:py-16 bg-white text-slate-900 font-sans text-left">
         <Container>
           <div className="text-center w-full max-w-5xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-[#0F172A] tracking-tight leading-tight">
-              Get A 100% Customizable BigCommerce Development By Experts
+              Get A 100% Customizable Azure Web Services Development By Experts
             </h2>
           </div>
 
@@ -633,46 +600,46 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <h3 className="text-[24px] sm:text-[27px] lg:text-[29px] font-[900] text-[#005F96] tracking-tight leading-[1.3] relative z-10">
-                Scalable And Robust BigCommerce Applications
+                Scalable And Robust Azure Web Services Applications
               </h3>
             </div>
 
             {/* Right Column: Paragraph Content */}
             <div className="lg:col-span-8 space-y-4 text-left flex flex-col justify-center">
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We are a leading BigCommerce eCommerce application development company backed by certified software architects and senior BigCommerce engineers. Our team engineers high-velocity BigCommerce eCommerce applications that maximize raw processing capabilities, database caching, and framework ecosystem advantages.
+                We are a leading Azure cloud application development company backed by certified Microsoft architects and senior cloud engineers. Our team engineers high-velocity Azure cloud applications that maximize cloud scalability, microservices orchestration, and Microsoft ecosystem advantages.
               </p>
 
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We know that applications engineered for modern enterprises must deliver instant cold-starts, fluid touch gestures, reliable offline caching, and bank-grade data security. We ensure every BigCommerce deliverable matches your business goals without compromising code maintainability, scalability, or performance.
+                We know that applications engineered for modern enterprises must deliver 99.99% availability, fluid user interactions, reliable automated backups, and bank-grade data security. We ensure every Azure deliverable matches your business goals without compromising code maintainability, scalability, or performance.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 9. SECTION: Cutting Edge Technologies Firevy Use For BigCommerce Development */}
+      {/* 7. SECTION: Cutting Edge Technologies Firevy Use For Azure Web Services */}
       <HybridAppCuttingEdgeTechnologiesSection
-        title={"Cutting Edge Technologies Firevy Use For\nBigCommerce Development"}
+        title={"Cutting Edge Technologies Firevy Use For\nAzure Web Services"}
       />
 
-      {/* 10. SECTION: Our Premium Services */}
+      {/* 8. SECTION: Our Premium Services */}
       <PremiumServicesGrid />
 
-      {/* 17. SECTION: Success Stories */}
+      {/* 9. SECTION: Success Stories */}
       <SuccessStoriesSection category="general" />
 
-      {/* SECTION: The Expertise Of Our Big Commerce Developers */}
+      {/* 10. SECTION: The Expertise Of Our Azure Web Services Developers */}
       <section className="py-16 sm:py-20 bg-[#F4F8FA] text-slate-900 font-sans text-left border-y border-slate-100 overflow-hidden">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight mb-3 font-sans">
-              The Expertise Of Our Big Commerce Developers
+              The Expertise Of Our Azure Web Services Developers
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 max-w-6xl mx-auto">
-            {bigCommerceDeveloperExpertise.map((item) => (
+            {azureDeveloperExpertise.map((item) => (
               <div
                 key={item.id}
                 className="group rounded-[14px] p-6 sm:p-7 text-left flex flex-col justify-start transition-all duration-300 ease-in-out cursor-pointer bg-white border-t-[3px] border-b-[3px] border-x border-t-transparent border-b-transparent border-x-slate-200/80 hover:bg-gradient-to-b hover:from-[#E6F6FF] hover:via-[#E1F3FD] hover:to-[#D5EEFA] hover:border-t-[#00A8E8] hover:border-b-[#005F96] hover:border-x-[#BAE6FD] hover:shadow-md hover:-translate-y-1"
@@ -707,10 +674,10 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 19. SECTION: Proud To Have Picked These Up Along The Way */}
+      {/* 11. SECTION: Proud To Have Picked These Up Along The Way */}
       <ProudAwardsBanner />
 
-      {/* 20. SECTION: Benefits of BigCommerce Development (Matching Image 2 Reference) */}
+      {/* 12. SECTION: Benefits of Azure Web Services */}
       <section className="py-16 sm:py-20 bg-white text-slate-900 font-sans text-left border-b border-slate-100 overflow-hidden">
         <Container>
           <motion.div
@@ -721,10 +688,10 @@ export const BigCommerceDevelopmentService = () => {
             className="text-center max-w-4xl mx-auto mb-12 sm:mb-14"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              Benefits Of BigCommerce Development
+              Benefits Of Azure Web Services Development
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              In BigCommerce development, online shops are built and customized utilizing the top e-commerce platform. Six significant BigCommerce development benefits
+              Build, deploy, and scale enterprise web applications using Microsoft Azure's global cloud platform. Six significant Azure Web Services development benefits:
             </p>
           </motion.div>
 
@@ -770,8 +737,7 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-
-      {/* 22. SECTION: Business Friendly Hiring Models */}
+      {/* 13. SECTION: Business Friendly Hiring Models */}
       <section className="py-16 sm:py-20 bg-[#f4f9fd] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
         <Container>
           <motion.div
@@ -847,25 +813,25 @@ export const BigCommerceDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 23. SECTION: Unveiling Our Innovative Solution */}
+      {/* 14. SECTION: Unveiling Our Innovative Solution */}
       <InnovativeSolutionsVideoSection />
 
-      {/* 24. SECTION: Process We Follow */}
+      {/* 15. SECTION: Process We Follow */}
       <ProcessWeFollow
         title="Process We Follow"
-        subtitle="Process-oriented execution from BigCommerce wireframes to backend architecture, QA testing, and AWS/GCP cloud deployment."
+        subtitle="Process-oriented execution from Azure Web Services architecture to cloud deployment, QA testing, and security compliance."
       />
 
-      {/* 25. SECTION: Our Story, Their Words */}
+      {/* 16. SECTION: Our Story, Their Words */}
       <OurStoryTheirWordsSection />
 
-      {/* 26. SECTION: Trusted Brands Grid */}
+      {/* 17. SECTION: Trusted Brands Grid */}
       <TrustedBrandsGrid />
 
-      {/* 27. SECTION: Success Matrix */}
+      {/* 18. SECTION: Success Matrix */}
       <SuccessMatrix />
 
-      {/* Technology Stack Section (Matching Reference Screenshot) */}
+      {/* 19. SECTION: Technology Stack */}
       <section className="py-16 sm:py-20 bg-[#F4F8FA] text-slate-900 font-sans text-left border-y border-slate-100 overflow-hidden">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-14">
@@ -873,7 +839,7 @@ export const BigCommerceDevelopmentService = () => {
               Technology Stack
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              We use the latest Big Commerce development technology and process to make sure we deliver the best. Have a look at our technology stack:
+              We use the latest Azure Web Services development technology and process to make sure we deliver the best. Have a look at our technology stack:
             </p>
           </div>
 
@@ -882,15 +848,12 @@ export const BigCommerceDevelopmentService = () => {
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Cube 1 (Top Center) */}
                   <polygon points="18,3 26,7 18,11 10,7" />
                   <polyline points="10,7 10,14 18,18 18,11" />
                   <polyline points="26,7 26,14 18,18" />
-                  {/* Cube 2 (Bottom Left) */}
                   <polygon points="10,16 18,20 10,24 2,20" />
                   <polyline points="2,20 2,27 10,31 10,24" />
                   <polyline points="18,20 18,27 10,31" />
-                  {/* Cube 3 (Bottom Right) */}
                   <polygon points="26,16 34,20 26,24 18,20" />
                   <polyline points="18,20 18,27 26,31 26,24" />
                   <polyline points="34,20 34,27 26,31" />
@@ -899,11 +862,11 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- .NET</div>
-                <div>- Node</div>
+                <div>- .NET Core</div>
+                <div>- Node.js</div>
                 <div>- Java</div>
-                <div>- Ruby on Rails</div>
-                <div>- PHP</div>
+                <div>- Python</div>
+                <div>- C#</div>
               </div>
             </div>
 
@@ -926,11 +889,11 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- Java</div>
-                <div>- Kotlin</div>
-                <div>- RxJava</div>
-                <div>- RxKotlin</div>
-                <div className="col-span-2">- Coroutines Kotlin</div>
+                <div>- React.js</div>
+                <div>- Angular</div>
+                <div>- Vue.js</div>
+                <div>- TypeScript</div>
+                <div className="col-span-2">- Blazor WebAssembly</div>
               </div>
             </div>
 
@@ -947,10 +910,10 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- SQLite</div>
-                <div>- Realm</div>
-                <div>- CoreData</div>
-                <div>- Firebase</div>
+                <div>- Azure SQL</div>
+                <div>- Cosmos DB</div>
+                <div>- PostgreSQL</div>
+                <div>- Redis Cache</div>
               </div>
             </div>
 
@@ -967,8 +930,10 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- CI/CD</div>
+                <div>- Azure Pipelines</div>
                 <div>- GitHub Actions</div>
+                <div>- Terraform</div>
+                <div>- Docker / AKS</div>
               </div>
             </div>
 
@@ -985,9 +950,9 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- Appium</div>
-                <div className="col-span-2">- BrowserStack</div>
-                <div className="col-span-2">- Katalon Test Studio</div>
+                <div>- Playwright</div>
+                <div className="col-span-2">- Azure Load Testing</div>
+                <div className="col-span-2">- Selenium Automation</div>
               </div>
             </div>
 
@@ -1003,29 +968,29 @@ export const BigCommerceDevelopmentService = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
+                <div>- Azure Boards</div>
                 <div>- Jira</div>
-                <div>- Microsoft Teams</div>
+                <div>- MS Teams</div>
                 <div>- Slack</div>
-                <div>- Trello</div>
               </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 28. SECTION: Featured In Brands Section */}
+      {/* 20. SECTION: Featured In Brands Section */}
       <FeaturedInBrandsSection />
 
-      {/* 29. SECTION: Digital Transformation Slider */}
+      {/* 21. SECTION: Digital Transformation Slider */}
       <DigitalTransformationSlider />
 
-      {/* 30. SECTION: Frequently Asked Questions */}
-      <SapphireFaqSection faqList={bigcommerceFaqs} />
+      {/* 22. SECTION: Frequently Asked Questions */}
+      <SapphireFaqSection faqList={azureFaqs} />
 
-      {/* 31. SECTION: Our Recent Blogs (Firevy.co 1:1 Copy Match) */}
+      {/* 23. SECTION: Our Recent Blogs */}
       <IWatchRecentBlogsSection />
     </div>
   );
 };
 
-export default BigCommerceDevelopmentService;
+export default AzureWebServicesService;

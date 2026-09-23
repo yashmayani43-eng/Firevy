@@ -641,19 +641,25 @@ export const DjangoDevelopmentService = () => {
                   hidden: { opacity: 0, y: 30, scale: 0.96 },
                   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } }
                 }}
-                whileHover={{ y: -6, transition: { type: 'spring', stiffness: 400, damping: 25 } }}
-                className="bg-white rounded-[16px] p-7 sm:p-8 border border-slate-100 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between text-left space-y-4 group cursor-default"
+                className="relative group rounded-[16px] p-7 sm:p-8 text-left transition-all duration-500 flex flex-col justify-between overflow-hidden cursor-pointer shadow-md hover:shadow-2xl hover:-translate-y-2 border border-slate-100 bg-white"
               >
-                <div className="space-y-4">
-                  <div className={`w-12 h-12 rounded-[12px] ${item.badgeBg} ${item.badgeColor} flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110`}>
+                {/* 1. Hover Fill Background Layer */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#EBF6FD] via-[#E1F3FD] to-[#D5EEFA] opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transition-all duration-500 ease-out z-0 rounded-[16px]" />
+
+                {/* 2. Animated Gradient Border Ring */}
+                <div className="absolute inset-0 rounded-[16px] p-[1.5px] bg-gradient-to-r from-[#005F96] via-[#00A8E8] to-[#635BFF] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-20 [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] [mask-composite:exclude]" />
+
+                {/* 3. Icon & Content */}
+                <div className="relative z-10 space-y-4">
+                  <div className={`w-12 h-12 rounded-[12px] ${item.badgeBg} ${item.badgeColor} flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-xs`}>
                     {item.icon}
                   </div>
 
-                  <h3 className="text-lg sm:text-[19px] font-[800] text-slate-950 font-sans leading-snug group-hover:text-[#0b5072] transition-colors">
+                  <h3 className="text-lg sm:text-[19px] font-[800] text-slate-950 font-sans leading-snug group-hover:text-[#005F96] transition-colors duration-300">
                     {item.title}
                   </h3>
 
-                  <p className="text-xs sm:text-[13.5px] text-slate-600 font-[400] leading-relaxed font-sans">
+                  <p className="text-xs sm:text-[13.5px] text-slate-600 font-[400] leading-relaxed font-sans transition-colors duration-300 group-hover:text-[#334155]">
                     {item.desc}
                   </p>
                 </div>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 400" fill="none">
+  <!-- Subtle Ground Shadow & Line -->
+  <ellipse cx="300" cy="340" rx="240" ry="14" fill="#0078D7" opacity="0.08"/>
+  <line x1="60" y1="340" x2="540" y2="340" stroke="#0078D7" stroke-width="2" stroke-opacity="0.2" stroke-linecap="round" stroke-dasharray="8 8"/>
+
+  <!-- Modern Curved Desk -->
+  <path d="M120 280 L440 280 Q450 280 445 295 L435 305 Q430 310 415 310 L145 310 Q130 310 125 295 L115 295 Q110 280 120 280 Z" fill="#FFFFFF" stroke="#0078D7" stroke-width="2.5"/>
+  <rect x="150" y="310" width="12" height="30" fill="#005F96"/>
+  <rect x="398" y="310" width="12" height="30" fill="#005F96"/>
+
+  <!-- Main Ultra-Wide Monitor Screen -->
+  <rect x="180" y="90" width="220" height="170" rx="10" fill="#0B1E36" stroke="#0078D7" stroke-width="3"/>
+  <rect x="180" y="90" width="220" height="24" rx="10" fill="#152B47"/>
+  <circle cx="196" cy="102" r="4" fill="#EF4444"/>
+  <circle cx="208" cy="102" r="4" fill="#F59E0B"/>
+  <circle cx="220" cy="102" r="4" fill="#10B981"/>
+  <text x="236" y="106" font-family="sans-serif" font-size="9" fill="#94A3B8" font-weight="600">mongodb-compass - v1.40.0</text>
+  <rect x="275" y="260" width="30" height="20" fill="#152B47"/>
+  <rect x="250" y="278" width="80" height="6" rx="3" fill="#0078D7"/>
+
+  <!-- MongoDB Logo inside Main Monitor Screen -->
+  <g transform="translate(276, 125) scale(1.3)">
+    <path d="M18 0 C12 12 7 21 9 30 C11 39 17 44 18 46 C19 44 25 39 27 30 C29 21 24 12 18 0 Z" fill="#47A248"/>
+    <path d="M18 5 L18 44" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <text x="238" y="200" font-family="sans-serif" font-size="12" fill="#FFFFFF" font-weight="800" letter-spacing="1">MongoDB Atlas</text>
+  <text x="215" y="218" font-family="sans-serif" font-size="9" fill="#38BDF8" font-weight="600">db.users.find(&#123; status: &quot;active&quot; &#125;)</text>
+
+  <!-- Second Monitor (Left angled display) -->
+  <g transform="translate(85, 120)">
+    <rect x="0" y="0" width="95" height="140" rx="8" fill="#0F172A" stroke="#0078D7" stroke-width="2"/>
+    <rect x="0" y="0" width="95" height="18" rx="8" fill="#1E293B"/>
+    <circle cx="10" cy="9" r="3" fill="#EF4444"/>
+    <circle cx="18" cy="9" r="3" fill="#F59E0B"/>
+    <!-- Code lines -->
+    <line x1="10" y1="30" x2="60" y2="30" stroke="#47A248" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="42" x2="80" y2="42" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="54" x2="70" y2="54" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="66" x2="85" y2="66" stroke="#47A248" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="78" x2="50" y2="78" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+    <!-- JSON document box -->
+    <rect x="10" y="90" width="75" height="40" rx="4" fill="#1E293B" stroke="#47A248" stroke-width="1"/>
+    <text x="16" y="105" font-family="monospace" font-size="8" fill="#47A248">&#123;&quot;_id&quot;: ObjectId()&#125;</text>
+    <text x="16" y="120" font-family="monospace" font-size="8" fill="#38BDF8">&quot;type&quot;: &quot;NoSQL&quot;</text>
+    <rect x="35" y="140" width="25" height="18" fill="#1E293B"/>
+    <rect x="25" y="156" width="45" height="5" rx="2" fill="#0078D7"/>
+  </g>
+
+  <!-- Database Server Tower (Right Side) -->
+  <g transform="translate(425, 120)">
+    <rect x="0" y="0" width="85" height="155" rx="8" fill="#0B1E36" stroke="#0078D7" stroke-width="2.5"/>
+    <rect x="8" y="12" width="69" height="28" rx="4" fill="#152B47" stroke="#0284C7" stroke-width="1"/>
+    <circle cx="20" cy="26" r="4" fill="#47A248"/>
+    <line x1="32" y1="26" x2="68" y2="26" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+
+    <rect x="8" y="47" width="69" height="28" rx="4" fill="#152B47" stroke="#0284C7" stroke-width="1"/>
+    <circle cx="20" cy="61" r="4" fill="#47A248"/>
+    <line x1="32" y1="61" x2="68" y2="61" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+
+    <rect x="8" y="82" width="69" height="28" rx="4" fill="#152B47" stroke="#0284C7" stroke-width="1"/>
+    <circle cx="20" cy="96" r="4" fill="#47A248"/>
+    <line x1="32" y1="96" x2="68" y2="96" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+
+    <rect x="8" y="117" width="69" height="28" rx="4" fill="#152B47" stroke="#0284C7" stroke-width="1"/>
+    <circle cx="20" cy="131" r="4" fill="#47A248"/>
+    <line x1="32" y1="131" x2="68" y2="131" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Developer Character Sitting at Desk -->
+  <g transform="translate(305, 190)">
+    <!-- Head & Hair -->
+    <circle cx="30" cy="18" r="13" fill="#FDBA74"/>
+    <path d="M18 12 Q30 0 42 12 Q44 24 30 26 Z" fill="#1E293B"/>
+
+    <!-- Shirt -->
+    <path d="M10 40 C10 32 20 30 30 30 C40 30 50 32 50 40 L45 88 L15 88 Z" fill="#0078D7"/>
+
+    <!-- Pants & Chair -->
+    <rect x="12" y="88" width="36" height="40" rx="4" fill="#0F172A"/>
+
+    <!-- Arm extended to keyboard -->
+    <path d="M40 45 L15 65 L-10 65" stroke="#0078D7" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="-10" cy="65" r="5" fill="#FDBA74"/>
+  </g>
+
+  <!-- Keyboard & Mouse on Desk -->
+  <rect x="220" y="284" width="70" height="12" rx="3" fill="#1E293B" stroke="#64748B" stroke-width="1"/>
+  <rect x="305" y="286" width="10" height="10" rx="3" fill="#1E293B" stroke="#64748B" stroke-width="1"/>
+
+  <!-- Floating Cloud Node Badges -->
+  <g transform="translate(50, 45)">
+    <rect x="0" y="0" width="55" height="45" rx="8" fill="#FFFFFF" stroke="#0078D7" stroke-width="1.8"/>
+    <path d="M15 28 C10 28 8 24 8 20 C8 15 14 12 18 13 C21 9 29 9 32 14 C37 12 44 16 43 21 C47 23 46 28 40 28 Z" fill="#E0F2FE" stroke="#0078D7" stroke-width="1.2"/>
+  </g>
+
+  <g transform="translate(485, 45)">
+    <rect x="0" y="0" width="55" height="45" rx="8" fill="#FFFFFF" stroke="#47A248" stroke-width="1.8"/>
+    <path d="M28 10 C24 18 20 24 22 30 C23 35 27 38 28 39 C29 38 33 35 34 30 C36 24 32 18 28 10 Z" fill="#47A248"/>
+  </g>
+</svg>

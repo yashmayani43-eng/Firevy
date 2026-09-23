@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" fill="none">
+  <!-- Soft Light Blue Backdrop Circle -->
+  <circle cx="250" cy="190" r="150" fill="#EBF6FC" opacity="0.7"/>
+
+  <!-- Code Window 1 (Top Left) -->
+  <g transform="translate(80, 65)">
+    <rect x="0" y="0" width="100" height="85" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+    <rect x="0" y="0" width="100" height="18" rx="6" fill="#0284C7"/>
+    <text x="40" y="13" font-family="sans-serif" font-size="10" fill="#FFFFFF" font-weight="bold">&lt;/&gt;</text>
+    <line x1="12" y1="30" x2="88" y2="30" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="42" x2="70" y2="42" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="54" x2="80" y2="54" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="66" x2="60" y2="66" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Code Window 2 (Top Right) -->
+  <g transform="translate(320, 75)">
+    <rect x="0" y="0" width="90" height="75" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+    <rect x="0" y="0" width="90" height="16" rx="6" fill="#0284C7"/>
+    <text x="35" y="12" font-family="sans-serif" font-size="9" fill="#FFFFFF" font-weight="bold">&lt;/&gt;</text>
+    <line x1="10" y1="28" x2="80" y2="28" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="40" x2="65" y2="40" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="52" x2="75" y2="52" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Left Database Cylinders Stack -->
+  <g transform="translate(75, 160)">
+    <!-- Cylinder 1 (Top) -->
+    <ellipse cx="40" cy="15" rx="40" ry="12" fill="#7DD3FC"/>
+    <path d="M0 15 v35 c0 6.6 17.9 12 40 12 s40 -5.4 40 -12 v-35" fill="#38BDF8" stroke="#0284C7" stroke-width="1.5"/>
+    <ellipse cx="40" cy="15" rx="40" ry="12" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+
+    <!-- Cylinder 2 (Middle) -->
+    <path d="M0 50 v35 c0 6.6 17.9 12 40 12 s40 -5.4 40 -12 v-35" fill="#0284C7" stroke="#0369A1" stroke-width="1.5"/>
+    <ellipse cx="40" cy="50" rx="40" ry="12" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+
+    <!-- Cylinder 3 (Bottom) -->
+    <path d="M0 85 v35 c0 6.6 17.9 12 40 12 s40 -5.4 40 -12 v-35" fill="#0369A1" stroke="#075985" stroke-width="1.5"/>
+    <ellipse cx="40" cy="85" rx="40" ry="12" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="65" cy="100" r="3" fill="#10B981"/>
+  </g>
+
+  <!-- Developer Sitting in Center -->
+  <g transform="translate(200, 165)">
+    <!-- Head -->
+    <circle cx="50" cy="20" r="16" fill="#FFEDD5"/>
+    <path d="M36 10 Q50 0 64 10 Q66 22 50 26 Z" fill="#1E293B"/>
+
+    <!-- Torso -->
+    <path d="M30 42 C30 35 40 34 50 34 C60 34 70 35 70 42 L66 85 L34 85 Z" fill="#0284C7"/>
+
+    <!-- Legs -->
+    <path d="M20 85 C20 105 45 110 50 110 C55 110 80 105 80 85 C80 115 15 115 20 85 Z" fill="#0F172A"/>
+
+    <!-- Laptop on lap -->
+    <polygon points="25,70 75,70 82,82 18,82" fill="#94A3B8"/>
+    <rect x="30" y="45" width="40" height="26" rx="3" fill="#E2E8F0" stroke="#64748B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Base Shadow Line -->
+  <ellipse cx="250" cy="305" rx="180" ry="10" fill="#CBD5E1" opacity="0.6"/>
+</svg>

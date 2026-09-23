@@ -149,6 +149,10 @@ import LampDevelopmentService from '../components/services/LampDevelopmentServic
 import PythonDevelopmentService from '../components/services/PythonDevelopmentService';
 import GolangDevelopmentService from '../components/services/GolangDevelopmentService';
 import BigCommerceDevelopmentService from '../components/services/BigCommerceDevelopmentService';
+import MongoDbDevelopmentService from '../components/services/MongoDbDevelopmentService';
+import PhalconDevelopmentService from '../components/services/PhalconDevelopmentService';
+import AzureWebServicesService from '../components/services/AzureWebServicesService';
+import MySqlDevelopmentService from '../components/services/MySqlDevelopmentService';
 import BackendComingSoonService, { isBackendServiceSlug } from '../components/services/BackendComingSoonService';
 
 export const ServiceDetails = () => {
@@ -209,6 +213,29 @@ export const ServiceDetails = () => {
     currentSlug === 'services/bigcommerce-development' ||
     currentSlug.includes('big-commerce-development') ||
     currentSlug.includes('bigcommerce-development');
+  const isMongoDb = currentSlug === 'mongodb-development-services' ||
+    currentSlug === 'mongodb-development' ||
+    currentSlug === 'services/mongodb-development-services' ||
+    currentSlug === 'services/mongodb-development' ||
+    currentSlug.includes('mongodb-development') ||
+    currentSlug.includes('mongodb');
+  const isPhalcon = currentSlug === 'phalcon-development-services' ||
+    currentSlug === 'phalcon-development' ||
+    currentSlug === 'services/phalcon-development-services' ||
+    currentSlug === 'services/phalcon-development' ||
+    currentSlug.includes('phalcon-development') ||
+    currentSlug.includes('phalcon');
+  const isAzureWebServices = currentSlug === 'azure-web-services' ||
+    currentSlug === 'azure-web-service' ||
+    currentSlug === 'services/azure-web-services' ||
+    currentSlug === 'services/azure-web-service' ||
+    currentSlug.includes('azure-web-services');
+  const isMySql = currentSlug === 'mysql-development-company' ||
+    currentSlug === 'mysql-development' ||
+    currentSlug === 'services/mysql-development-company' ||
+    currentSlug === 'services/mysql-development' ||
+    currentSlug.includes('mysql-development') ||
+    currentSlug.includes('mysql');
   const isHireBackend = currentSlug.includes('hire-backend') ||
     currentSlug.includes('backend-developer') ||
     currentSlug.includes('backend-developers') ||
@@ -980,7 +1007,7 @@ export const ServiceDetails = () => {
   const isApi = (currentSlug.includes('hire-api') || currentSlug.includes('api-developer') || currentSlug.includes('api-developers')) && !currentSlug.includes('fastapi') && !currentSlug.includes('fast-api');
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
   const isMernStack = currentSlug.includes('mern-stack') || currentSlug.includes('hire-mern-stack') || currentSlug === 'services/hire-mern-stack-developers' || currentSlug === 'hire-mern-stack-developers' || currentSlug === 'services/hire-mern-stack-developer' || currentSlug === 'hire-mern-stack-developer' || currentSlug === 'mern-stack-development' || currentSlug === 'services/mern-stack-development';
-  const isBackendComingSoon = !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
+  const isBackendComingSoon = !isPhalcon && !isMongoDb && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
 
   useEffect(() => {
     if (isBackendComingSoon || isHireNodeJs || isHireNet || isHireDjango || isHirePhp) {
@@ -988,7 +1015,7 @@ export const ServiceDetails = () => {
       window.scrollTo(0, 0);
       return;
     }
-    if (!isBigCommerce && !isGolang && !isLamp && !isLaravel && !isDjango && !isSymfony && !isMernStack && !isWindows11 && !isWindowsApp && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
+    if (!isMySql && !isAzureWebServices && !isPhalcon && !isMongoDb && !isBigCommerce && !isGolang && !isLamp && !isLaravel && !isDjango && !isSymfony && !isMernStack && !isWindows11 && !isWindowsApp && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
       fetchServiceDetails();
     } else {
       setLoading(false);
@@ -1026,6 +1053,22 @@ export const ServiceDetails = () => {
 
   if (isBigCommerce) {
     return <BigCommerceDevelopmentService />;
+  }
+
+  if (isMongoDb) {
+    return <MongoDbDevelopmentService />;
+  }
+
+  if (isPhalcon) {
+    return <PhalconDevelopmentService />;
+  }
+
+  if (isAzureWebServices) {
+    return <AzureWebServicesService />;
+  }
+
+  if (isMySql) {
+    return <MySqlDevelopmentService />;
   }
 
   if (isDjango) {
