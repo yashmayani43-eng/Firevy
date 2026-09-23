@@ -487,16 +487,19 @@ export const ExtendedRealityDevelopmentService = () => {
       <FeaturedInBrandsSection />
 
       {/* ========================================================================= */}
-      {/* 19. DIGITAL TRANSFORMATION THROUGH INNOVATION (CASE STUDIES) */}
-      {/* ========================================================================= */}
-      <DigitalTransformationSlider />
-
-
-
-      {/* ========================================================================= */}
       {/* 21. ABOUT US STATS */}
       {/* ========================================================================= */}
       <AboutUsStats companyName="Firevy" />
+
+      {/* ========================================================================= */}
+      {/* 19. DIGITAL TRANSFORMATION THROUGH INNOVATION (CASE STUDIES) */}
+      {/* ========================================================================= */}
+      <DigitalTransformationSlider
+        data={{
+          title: 'Digital Transformation Through Innovation and Collective Knowledge',
+          description: 'At Firevy, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.'
+        }}
+      />
 
       {/* ========================================================================= */}
       {/* 23. FREQUENTLY ASKED QUESTIONS */}
