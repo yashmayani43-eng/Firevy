@@ -112,8 +112,8 @@ const AnimatedCounter = ({ value }) => {
 };
 
 export const AboutKeyMetrics = ({ data }) => {
-  const title = data?.title || 'About Us';
-  const description = data?.description || 'Sapphire delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success';
+  const title = data?.title || 'Glance through our creations and presence';
+  const description = data?.description || 'Firevy.Co delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success.';
   
   const rawCards = (data?.cards && Array.isArray(data.cards) && data.cards.filter(c => c.isActive !== false).length > 0)
     ? data.cards.filter(c => c.isActive !== false)

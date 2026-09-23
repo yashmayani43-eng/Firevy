@@ -18,6 +18,9 @@ export const getCareerPageData = asyncHandler(async (req, res) => {
       console.warn('[Careers Seeder Warning]', err.message);
       return successResponse(res, 'Career page data fetched from fallback', initialCareerPageData);
     }
+  } else if (careerPage.peopleTestimonials && careerPage.peopleTestimonials.some(p => p.name === 'Purvi Pipaliya' || p.name === 'Ankit Morasiya' || p.name === 'Umang Barot' || p.name === 'Galav Shukla')) {
+    careerPage.peopleTestimonials = initialCareerPageData.peopleTestimonials;
+    await careerPage.save().catch(() => {});
   }
 
   // Filter active sections for public response

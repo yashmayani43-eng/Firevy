@@ -114,12 +114,12 @@ export const Careers = () => {
 
   const visionSlides = cmsData?.visionSection?.slides?.length ? cmsData.visionSection.slides : [
     {
-      title: "Health & Wellbeing",
-      quote: "We place the health and mental well-being of our associates at the core of our values. Through initiatives that promote a culture of fitness and wellness, such as yoga sessions and marathons, we encourage holistic growth and a balanced lifestyle. These programs foster a sense of community, resilience, and overall well-being, empowering our associates to lead healthier, more fulfilling lives."
+      title: "Learn to Grow",
+      quote: "We believe in fostering a culture of continuous learning and development, empowering our employees to stay ahead in a rapidly evolving landscape. By offering diverse opportunities to upskill and access a wealth of knowledge and expertise within Firevy.Co, we ensure our teams are equipped to deliver innovative solutions. Last year alone, our employees dedicated over number of hours to learning, collectively acquiring multiple new competencies that enable them to thrive and lead in their respective fields."
     },
     {
-      title: "Continuous Learning & Upskilling",
-      quote: "We invest heavily in the professional expansion of our team members. Through funded tech certifications, quarterly hackathons, hands-on workshops, and dedicated mentorship programs, we ensure our associates stay at the forefront of emerging AI and enterprise technologies."
+      title: "Health & Wellbeing",
+      quote: "We place the health and mental well-being of our associates at the core of our values. Through initiatives that promote a culture of fitness and wellness, such as yoga sessions and marathons, we encourage holistic growth and a balanced lifestyle. These programs foster a sense of community, resilience, and overall well-being, empowering our associates to lead healthier, more fulfilling lives."
     },
     {
       title: "Diversity & Inclusive Workplace",
@@ -127,11 +127,11 @@ export const Careers = () => {
     }
   ];
 
-  const peopleTestimonials = cmsData?.peopleTestimonials?.length ? cmsData.peopleTestimonials : [
+  const defaultPeople = [
     {
-      name: "Purvi Pipaliya",
-      role: "QA Lead",
-      avatar: "/images/Purvi.JPG"
+      name: "Sahaj Maniya",
+      role: "HR Lead",
+      avatar: "/images/Sahaj_Maniya.JPG"
     },
     {
       name: "Rutvik",
@@ -142,38 +142,13 @@ export const Careers = () => {
       name: "Hiren Rajani",
       role: "Sr. BDR - Service",
       avatar: "/images/Hiren.JPG"
-    },
-    {
-      name: "Yash Mayani",
-      role: "Director & Tech Lead",
-      avatar: "/images/Yash_Mayani.JPG"
-    },
-    {
-      name: "Sahaj Maniya",
-      role: "Full Stack Developer",
-      avatar: "/images/Sahaj_Maniya.JPG"
-    },
-    {
-      name: "Tushil Mayani",
-      role: "Senior Software Engineer",
-      avatar: "/images/Tushil_mayani.JPG"
-    },
-    {
-      name: "Selvi",
-      role: "UI/UX Lead Designer",
-      avatar: "/images/Selvi.JPG"
-    },
-    {
-      name: "Aarchi",
-      role: "Frontend Developer",
-      avatar: "/images/Aarchi.JPG"
-    },
-    {
-      name: "Kreni",
-      role: "HR Manager",
-      avatar: "/images/Kreni.jpg"
     }
   ];
+
+  const fetchedPeople = cmsData?.peopleTestimonials
+    ?.filter(p => !['Ankit Morasiya', 'Umang Barot', 'Galav Shukla'].includes(p.name))
+    ?.map(p => p.name === 'Purvi Pipaliya' ? { ...p, name: 'Sahaj Maniya', role: 'HR Lead', avatar: '/images/Sahaj_Maniya.JPG' } : p);
+  const peopleTestimonials = (fetchedPeople && fetchedPeople.length > 0) ? fetchedPeople : defaultPeople;
 
   const benefitsList = cmsData?.benefits?.length ? cmsData.benefits : [
     { title: 'Collaborative Culture', icon: 'Users' },
@@ -761,21 +736,40 @@ export const Careers = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
               {/* Left Vector Graphic: Yoga Meditation Woman */}
               <div className="md:col-span-5 flex justify-center">
-                <div className="w-full max-w-[280px] aspect-square flex items-center justify-center">
-                  <svg viewBox="0 0 300 300" className="w-full h-full drop-shadow-md">
-                    <rect x="30" y="90" width="40" height="30" rx="4" fill="#60A5FA" opacity="0.9" />
-                    <line x1="40" y1="100" x2="60" y2="100" stroke="#FFF" strokeWidth="2" />
-                    <line x1="40" y1="108" x2="55" y2="108" stroke="#FFF" strokeWidth="2" />
-                    <circle cx="90" cy="50" r="18" fill="#FBBF24" />
-                    <path d="M 82 50 Q 90 40 98 50" stroke="#B45309" strokeWidth="2" fill="none" />
-                    <rect x="230" y="80" width="35" height="45" rx="4" fill="#93C5FD" />
-                    <circle cx="150" cy="115" r="22" fill="#334155" />
-                    <circle cx="150" cy="120" r="16" fill="#FED7AA" />
-                    <path d="M 134 115 Q 150 90 166 115 Q 150 100 134 115 Z" fill="#1E293B" />
-                    <path d="M 125 150 L 175 150 L 185 200 L 115 200 Z" fill="#0284C7" />
-                    <path d="M 142 150 L 150 175 L 158 150 Z" fill="#FFFFFF" />
-                    <path d="M 100 210 Q 150 250 200 210 Q 150 215 100 210 Z" fill="#0369A1" />
-                    <ellipse cx="150" cy="220" rx="60" ry="15" fill="#0284C7" />
+                <div className="w-full max-w-[320px] aspect-[4/3] flex items-center justify-center">
+                  <svg viewBox="0 0 400 300" className="w-full h-full drop-shadow-sm" fill="none">
+                    {/* Soft background blue wave shape */}
+                    <path d="M 30 180 Q 80 120 160 140 T 320 100 Q 370 70 390 110 L 390 250 L 30 250 Z" fill="#E0F2FE" opacity="0.8" />
+                    
+                    {/* Bar Chart 1 to 5 */}
+                    <rect x="50" y="200" width="36" height="50" rx="4" fill="#93C5FD" />
+                    <rect x="110" y="170" width="36" height="80" rx="4" fill="#93C5FD" />
+                    <rect x="170" y="140" width="36" height="110" rx="4" fill="#60A5FA" />
+                    <rect x="230" y="105" width="36" height="145" rx="4" fill="#60A5FA" />
+                    <rect x="290" y="65" width="36" height="185" rx="4" fill="#3B82F6" />
+
+                    {/* Blue Growth Trend Line & Arrow */}
+                    <path d="M 50 170 L 120 150 L 190 120 L 260 75 L 340 45" stroke="#3B82F6" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+                    <polygon points="340,30 365,55 330,62" fill="#3B82F6" />
+
+                    {/* Left Man Holding Magnifying Glass */}
+                    <g transform="translate(45, 115)">
+                      <circle cx="20" cy="15" r="10" fill="#334155" />
+                      <rect x="12" y="25" width="16" height="35" rx="3" fill="#1E293B" />
+                      <path d="M 12 60 L 8 115 M 28 60 L 32 115" stroke="#1E293B" strokeWidth="6" strokeLinecap="round" />
+                      {/* Magnifying Glass */}
+                      <circle cx="50" cy="20" r="14" stroke="#64748B" strokeWidth="4" fill="none" />
+                      <line x1="38" y1="28" x2="25" y2="38" stroke="#64748B" strokeWidth="4" strokeLinecap="round" />
+                    </g>
+
+                    {/* Right Woman Holding Tablet */}
+                    <g transform="translate(260, 115)">
+                      <circle cx="20" cy="15" r="10" fill="#0F172A" />
+                      <rect x="12" y="25" width="16" height="35" rx="3" fill="#0F172A" />
+                      <path d="M 12 60 L 10 115 M 28 60 L 30 115" stroke="#0F172A" strokeWidth="6" strokeLinecap="round" />
+                      {/* Tablet / Clipboard */}
+                      <rect x="0" y="28" width="16" height="22" rx="2" fill="#334155" />
+                    </g>
                   </svg>
                 </div>
               </div>
@@ -850,16 +844,6 @@ export const Careers = () => {
                 <div key={idx} className="rounded-[20px] overflow-hidden shadow-lg border border-slate-200/90 bg-white group hover:shadow-2xl transition-all duration-300">
                   <div className="relative h-64 overflow-hidden">
                     <img src={item.avatar} alt={item.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                    <div className="absolute inset-0 bg-slate-900/30 flex items-center justify-center">
-                      <a
-                        href={item.videoUrl || 'https://www.youtube.com'}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="w-14 h-14 rounded-full bg-white/90 text-[#00668C] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform cursor-pointer"
-                      >
-                        <Play className="w-6 h-6 fill-[#00668C] ml-1" />
-                      </a>
-                    </div>
                   </div>
                   <div className="p-5 bg-slate-900 text-white space-y-1">
                     <h4 className="text-[18px] font-[800] font-sans">{item.name}</h4>
@@ -890,20 +874,22 @@ export const Careers = () => {
             )}
 
             {/* Dots */}
-            <div className="flex justify-center items-center space-x-2 mt-8">
-              {[0, 1].map((dot) => (
-                <button
-                  key={dot}
-                  type="button"
-                  onClick={() => setVideoSlideIdx(dot)}
-                  className={`transition-all cursor-pointer rounded-full ${
-                    videoSlideIdx === dot
-                      ? 'w-8 h-2.5 bg-[#00668C]'
-                      : 'w-2.5 h-2.5 bg-slate-300 hover:bg-slate-400'
-                  }`}
-                />
-              ))}
-            </div>
+            {peopleTestimonials.length > 3 && (
+              <div className="flex justify-center items-center space-x-2 mt-8">
+                {[0, 1].map((dot) => (
+                  <button
+                    key={dot}
+                    type="button"
+                    onClick={() => setVideoSlideIdx(dot)}
+                    className={`transition-all cursor-pointer rounded-full ${
+                      videoSlideIdx === dot
+                        ? 'w-8 h-2.5 bg-[#00668C]'
+                        : 'w-2.5 h-2.5 bg-slate-300 hover:bg-slate-400'
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </section>

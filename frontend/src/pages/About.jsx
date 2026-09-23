@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/common/SEO';
 import Container from '../components/common/Container';
 import AboutKeyMetrics from '../components/home/AboutKeyMetrics';
+import WhyFirevyGrid from '../components/common/WhyFirevyGrid';
+import AwardsAndRecognitionGrid from '../components/common/AwardsAndRecognitionGrid';
 import WorkTogetherNewsletterSection from '../components/home/WorkTogetherNewsletterSection';
 import ClientReviewsDarkSection from '../components/home/ClientReviewsDarkSection';
 import BRAND from '../constants/brand';
@@ -336,7 +338,18 @@ export const About = () => {
       </section>
 
       {/* 4. "Glance through our creations and presence" */}
-      <AboutKeyMetrics />
+      <AboutKeyMetrics
+        data={{
+          title: "Glance through our creations and presence",
+          description: "We are a team of qualified software development professionals adept at expanding your current system's capabilities via innovative technology solutions."
+        }}
+      />
+
+      {/* 4.5. "Why Firevy.Co?" Card Grid */}
+      <WhyFirevyGrid />
+
+      {/* 4.6. "Awards & Recognition" Grid */}
+      <AwardsAndRecognitionGrid />
 
       {/* 5. "Our Core Values" */}
       <section className="py-20 bg-[#F8FAFC] border-b border-slate-200 text-slate-900 font-sans">

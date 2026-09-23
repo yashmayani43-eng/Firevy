@@ -1556,9 +1556,9 @@ export const initialCareerPageData = {
   peopleTestimonials: [
     {
       id: "p_1",
-      name: "Purvi Pipaliya",
-      role: "QA Lead",
-      avatar: "/images/Purvi.JPG",
+      name: "Sahaj Maniya",
+      role: "HR Lead",
+      avatar: "/images/Sahaj_Maniya.JPG",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       order: 0,
       isActive: true
@@ -1579,60 +1579,6 @@ export const initialCareerPageData = {
       avatar: "/images/Hiren.JPG",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       order: 2,
-      isActive: true
-    },
-    {
-      id: "p_4",
-      name: "Yash Mayani",
-      role: "Director & Tech Lead",
-      avatar: "/images/Yash_Mayani.JPG",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      order: 3,
-      isActive: true
-    },
-    {
-      id: "p_5",
-      name: "Sahaj Maniya",
-      role: "Full Stack Developer",
-      avatar: "/images/Sahaj_Maniya.JPG",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      order: 4,
-      isActive: true
-    },
-    {
-      id: "p_6",
-      name: "Tushil Mayani",
-      role: "Senior Software Engineer",
-      avatar: "/images/Tushil_mayani.JPG",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      order: 5,
-      isActive: true
-    },
-    {
-      id: "p_7",
-      name: "Selvi",
-      role: "UI/UX Lead Designer",
-      avatar: "/images/Selvi.JPG",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      order: 6,
-      isActive: true
-    },
-    {
-      id: "p_8",
-      name: "Aarchi",
-      role: "Frontend Developer",
-      avatar: "/images/Aarchi.JPG",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      order: 7,
-      isActive: true
-    },
-    {
-      id: "p_9",
-      name: "Kreni",
-      role: "HR Manager",
-      avatar: "/images/Kreni.jpg",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      order: 8,
       isActive: true
     }
   ],

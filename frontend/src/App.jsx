@@ -65,6 +65,8 @@ const Careers = lazy(() => import('./pages/Careers'));
 const Contact = lazy(() => import('./pages/Contact'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const Terms = lazy(() => import('./pages/Terms'));
+const WhyChooseUs = lazy(() => import('./pages/WhyChooseUs'));
+const AwardsAndRecognition = lazy(() => import('./pages/AwardsAndRecognition'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const BarberAppDevelopmentService = lazy(() => import('./components/services/BarberAppDevelopmentService').then(m => ({ default: m.BarberAppDevelopmentService })));
 const OnDemandAppDevelopmentService = lazy(() => import('./components/services/OnDemandAppDevelopmentService').then(m => ({ default: m.OnDemandAppDevelopmentService })));
@@ -104,12 +106,12 @@ export function App() {
                 <Route path="/our-team" element={<CompanySubDetails />} />
                 <Route path="/company/events-activities" element={<CompanySubDetails />} />
                 <Route path="/events-activities" element={<CompanySubDetails />} />
-                <Route path="/company/why-choose-us" element={<CompanySubDetails />} />
-                <Route path="/why-choose-us" element={<CompanySubDetails />} />
-                <Route path="/company/awards-recognition" element={<CompanySubDetails />} />
-                <Route path="/company/awards-and-recognition" element={<CompanySubDetails />} />
-                <Route path="/awards-recognition" element={<CompanySubDetails />} />
-                <Route path="/awards-and-recognition" element={<CompanySubDetails />} />
+                <Route path="/company/why-choose-us" element={<WhyChooseUs />} />
+                <Route path="/why-choose-us" element={<WhyChooseUs />} />
+                <Route path="/company/awards-recognition" element={<AwardsAndRecognition />} />
+                <Route path="/company/awards-and-recognition" element={<AwardsAndRecognition />} />
+                <Route path="/awards-recognition" element={<AwardsAndRecognition />} />
+                <Route path="/awards-and-recognition" element={<AwardsAndRecognition />} />
                 <Route path="/company/contact" element={<Contact />} />
                 <Route path="/company/contact-us" element={<Contact />} />
                 <Route path="/contact-us" element={<Contact />} />
