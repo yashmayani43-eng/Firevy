@@ -507,7 +507,7 @@ export const About = () => {
         <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
           <div className="w-full h-[360px] sm:h-[450px] rounded-[20px] overflow-hidden shadow-lg border border-slate-200 bg-slate-900 relative">
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"
+              src="/images/team.jpeg"
               alt="Firevy.Co Whole Team"
               className="w-full h-full object-cover opacity-95 hover:scale-105 transition-transform duration-700"
             />

@@ -513,11 +513,12 @@ export const LanguageLearningAppService = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-10">
             {/* Card 1: Elearning App Development */}
             <div className="flex flex-col items-center group cursor-pointer">
-              <div className="w-full rounded-[20px] overflow-hidden shadow-md border border-slate-200/60 bg-white hover:shadow-xl transition-all duration-300">
+              <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden shadow-md border border-slate-200/60 bg-slate-100 hover:shadow-xl transition-all duration-300">
                 <img
-                  src="/images/edu_case_study_elearning.png"
+                  src="/images/edu_case_study_elearning.jpg"
                   alt="Elearning App Development"
-                  className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-center font-bold text-slate-900 text-base sm:text-lg mt-3.5 tracking-tight font-sans group-hover:text-[#006587] transition-colors">
@@ -527,11 +528,12 @@ export const LanguageLearningAppService = () => {
 
             {/* Card 2: Tutor Finder App Development */}
             <div className="flex flex-col items-center group cursor-pointer">
-              <div className="w-full rounded-[20px] overflow-hidden shadow-md border border-slate-200/60 bg-white hover:shadow-xl transition-all duration-300">
+              <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden shadow-md border border-slate-200/60 bg-slate-100 hover:shadow-xl transition-all duration-300">
                 <img
-                  src="/images/edu_case_study_tutor_finder.png"
+                  src="/images/edu_case_study_tutor_finder.jpg"
                   alt="Tutor Finder App Development"
-                  className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-center font-bold text-slate-900 text-base sm:text-lg mt-3.5 tracking-tight font-sans group-hover:text-[#006587] transition-colors">
@@ -541,11 +543,12 @@ export const LanguageLearningAppService = () => {
 
             {/* Card 3: Learning Management System */}
             <div className="flex flex-col items-center group cursor-pointer">
-              <div className="w-full rounded-[20px] overflow-hidden shadow-md border border-slate-200/60 bg-white hover:shadow-xl transition-all duration-300">
+              <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden shadow-md border border-slate-200/60 bg-slate-100 hover:shadow-xl transition-all duration-300">
                 <img
-                  src="/images/edu_case_study_lms.png"
+                  src="/images/edu_case_study_lms.jpg"
                   alt="Learning Management System"
-                  className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-center font-bold text-slate-900 text-base sm:text-lg mt-3.5 tracking-tight font-sans group-hover:text-[#006587] transition-colors">

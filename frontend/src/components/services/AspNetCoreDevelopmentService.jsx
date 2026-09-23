@@ -34,44 +34,45 @@ import {
   TrendingUp,
   Monitor,
   Server,
-  Layers
+  Layers,
+  Code
 } from 'lucide-react';
 
-export const JavaDevelopmentService = () => {
+export const AspNetCoreDevelopmentService = () => {
   const rangeServices = [
     {
-      title: 'Enterprise Java Application Development',
-      desc: 'We build high-performance, enterprise-grade applications using Spring Boot, Hibernate, and Microservices architecture that scale effortlessly for millions of users.',
-      icon: Server,
+      title: 'ASP.NET Core Web Application Development',
+      desc: 'We build lightweight, high-performing web applications using ASP.NET Core, MVC, and Razor Pages to meet the unique needs of businesses of all types and sizes.',
+      icon: Globe,
       iconBg: 'bg-purple-100 text-purple-600'
     },
     {
-      title: 'Custom Java Web Development',
-      desc: 'Our Java web developers design robust RESTful APIs, Spring MVC applications, and high-throughput web portals tailored to your specific business logic.',
-      icon: Globe,
+      title: 'ASP.NET Core Enterprise Solutions',
+      desc: 'Our enterprise solutions leverage C# and .NET 8/9 to create scalable, secure, and multi-tenant enterprise software with high data processing capabilities.',
+      icon: Server,
       iconBg: 'bg-emerald-100 text-emerald-600'
     },
     {
-      title: 'Java Microservices & Cloud Native',
-      desc: 'We decouple legacy monolithic applications into scalable, containerized Java microservices deployed seamlessly on AWS, Azure, and Kubernetes.',
+      title: 'ASP.NET Core API & Microservices',
+      desc: 'We architect RESTful Web APIs and microservices using gRPC and ASP.NET Core, enabling seamless integration between mobile apps, frontends, and cloud databases.',
       icon: Layers,
       iconBg: 'bg-orange-100 text-orange-600'
     },
     {
-      title: 'Java Ecommerce & CMS Development',
-      desc: 'We deliver secure, scalable eCommerce solutions and enterprise content management systems leveraging Java, Spring Security, and high-concurrency DBs.',
-      icon: Smartphone,
+      title: 'ASP.NET Core Migration & Upgrades',
+      desc: 'Migrate legacy ASP.NET Web Forms or .NET Framework 4.x applications to cross-platform ASP.NET Core with zero downtime and improved server throughput.',
+      icon: Cpu,
       iconBg: 'bg-amber-100 text-amber-600'
     },
     {
-      title: 'Java Migration & Version Upgrade',
-      desc: 'Upgrade legacy Java (Java 8/11) to the latest Java 21 LTS with virtual threads, zero downtime, optimized memory usage, and full backward compatibility.',
-      icon: Cpu,
+      title: 'Cloud Native & Azure Integration',
+      desc: 'Deploy ASP.NET Core applications into Microsoft Azure App Services, Docker containers, and Kubernetes clusters with automated CI/CD pipelines.',
+      icon: Cloud,
       iconBg: 'bg-pink-100 text-pink-600'
     },
     {
-      title: 'Java Security & Performance Audit',
-      desc: 'Our Java architects conduct comprehensive code reviews, JVM tuning, thread dump analysis, memory leak fixes, and OWASP security compliance.',
+      title: 'ASP.NET Core Security & Maintenance',
+      desc: 'Our certified .NET architects provide ongoing 24/7 SLA maintenance, OWASP security hardening, IdentityServer integration, and performance optimization.',
       icon: ShieldCheck,
       iconBg: 'bg-cyan-100 text-cyan-600'
     }
@@ -79,56 +80,56 @@ export const JavaDevelopmentService = () => {
 
   const benefits = [
     {
-      title: 'Write Once, Run Anywhere',
-      desc: 'Java’s cross-platform JVM architecture guarantees seamless execution across Windows, Linux, macOS, and multi-cloud server environments without code modifications.',
+      title: 'Cross-Platform High Performance',
+      desc: 'ASP.NET Core is built from the ground up to run seamlessly on Windows, Linux, and macOS, delivering top-tier benchmark speeds and minimal resource usage.',
       icon: Cloud
     },
     {
-      title: 'High Scalability & Multithreading',
-      desc: 'With Java 21 Virtual Threads (Project Loom) and Spring Boot, applications handle millions of concurrent requests with ultra-low latency and peak memory efficiency.',
+      title: 'Asynchronous Programming & Speed',
+      desc: 'With non-blocking async/await patterns and Kestrel web server, ASP.NET Core handles high-concurrency traffic with minimal latency.',
       icon: Clock
     },
     {
-      title: 'Enterprise Security Standards',
-      desc: 'Java offers robust byte-code verification, sandboxing, and Spring Security frameworks, protecting enterprise data against OWASP vulnerabilities and cyber threats.',
+      title: 'Built-in Security & Dependency Injection',
+      desc: 'Features built-in IoC container for dependency injection, CSRF protection, CORS support, OAuth2/OIDC authentication, and encrypted data storage.',
       icon: Sliders
     },
     {
-      title: 'Rich Ecosystem & Open Source',
-      desc: 'Gain access to thousands of mature open-source libraries, including Spring Framework, Hibernate ORM, Apache Kafka, JUnit, and Jackson for rapid deployment.',
+      title: 'Unified Web API & MVC Framework',
+      desc: 'Combines MVC web controllers and RESTful Web APIs into a unified programming model, reducing codebase complexity and accelerating development.',
       icon: FileText
     },
     {
-      title: 'Performance & JVM Optimization',
-      desc: 'Modern JVMs with Just-In-Time (JIT) compilers and ZGC/G1 garbage collectors deliver near-native execution speed for data-intensive enterprise workloads.',
+      title: 'Open Source & Vibrant Community',
+      desc: 'Backed by Microsoft and an active open-source community, offering continuous updates, NuGet package ecosystem, and enterprise longevity.',
       icon: TrendingUp
     },
     {
-      title: 'Long-Term Backward Compatibility',
-      desc: 'Java ensures long-term stability and backward compatibility, ensuring enterprise software investments remain active and maintainable for decades.',
+      title: 'Cloud-Ready & Azure Native',
+      desc: 'Designed for effortless cloud deployment with built-in support for Environment variables, Azure Key Vault, App Insights logging, and Docker containerization.',
       icon: Monitor
     }
   ];
 
   const caseStudies = [
     {
-      title: 'Enterprise Java ERP Portal',
+      title: 'ASP.NET Core Ecommerce Portal',
       tag: 'Case Study',
-      subtitle: 'Global Supply Chain & Inventory Management System',
+      subtitle: 'High-Scale Online Shopping & Inventory Management App',
       image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80',
       badgeBg: 'bg-cyan-500'
     },
     {
-      title: 'Spring Boot Microservices Platform',
-      tag: 'Fintech & Banking',
-      subtitle: 'High-Throughput Payment Processing Gateway',
+      title: 'Enterprise ERP & Microservices',
+      tag: 'Data Management',
+      subtitle: 'ASP.NET Core Web API & Azure SQL Dashboard',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
       badgeBg: 'bg-blue-500'
     },
     {
-      title: 'Cloud Native Java 21 Migration',
-      tag: 'Cloud Migration',
-      subtitle: 'AWS Kubernetes Containerization & Kafka Stream',
+      title: 'Legacy .NET Core Migration',
+      tag: '.NET Core',
+      subtitle: 'Cloud Migration & Azure DevOps Automation',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
       badgeBg: 'bg-purple-500'
     }
@@ -137,9 +138,9 @@ export const JavaDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Best Java Development Services in USA | Firevy"
-        description="We offer Java development services to help businesses drive innovation through modern enterprise applications and microservices. Certified Spring Boot and Java 21 developers."
-        canonical="/services/java-development"
+        title="ASP.NET Core Development Services in USA | Firevy"
+        description="We build lightweight and high performing Affordable Asp.NET Core development services to meet the needs of businesses of all type and size. Certified .NET Core developers."
+        canonical="/services/asp-net-core-development"
       />
 
       {/* =========================================================================
@@ -152,11 +153,11 @@ export const JavaDevelopmentService = () => {
             {/* Left Column: Title, Subtitle, Stats, CTAs */}
             <div className="lg:col-span-7 space-y-5 text-left">
               <h1 className="text-[32px] sm:text-[40px] lg:text-[46px] font-[800] text-[#0B0F19] leading-[1.18] tracking-tight">
-                Best Java Web<br className="hidden sm:inline" /> Development Services in USA
+                ASP.NET Core Development<br className="hidden sm:inline" /> Services in USA
               </h1>
 
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.7] font-normal max-w-[620px]">
-                We offer Java development services to help businesses drive innovation through the development of modern enterprise applications and modernizing legacy systems. Get in touch with us for developing Java based web and cloud applications.
+                We build lightweight and high performing Affordable Asp.NET Core development services to meet the needs of businesses of all type and size. ASP.NET Core application development company offer full-cycle top.Net Core Development services to deliver high-performance applications. Get your quote today!
               </p>
 
               {/* Primary CTA Button */}
@@ -174,10 +175,10 @@ export const JavaDevelopmentService = () => {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 max-w-[600px] border-t border-slate-100">
                 <div className="space-y-0.5">
                   <div className="text-[26px] sm:text-[28px] font-[800] text-[#005F96] leading-none">
-                    200+
+                    80+
                   </div>
                   <div className="text-[11.5px] sm:text-[12px] font-[600] text-[#1E293B] leading-tight">
-                    Java<br />Developers
+                    .NET Core<br />Developers
                   </div>
                 </div>
 
@@ -192,10 +193,10 @@ export const JavaDevelopmentService = () => {
 
                 <div className="space-y-0.5">
                   <div className="text-[26px] sm:text-[28px] font-[800] text-[#005F96] leading-none">
-                    2800+
+                    600+
                   </div>
                   <div className="text-[11.5px] sm:text-[12px] font-[600] text-[#1E293B] leading-tight">
-                    Projects Completed in<br />Java Tech
+                    Projects Completed in<br />.NET Core Tech
                   </div>
                 </div>
 
@@ -210,7 +211,7 @@ export const JavaDevelopmentService = () => {
               </div>
             </div>
 
-            {/* Right Column: Graphic / Laptop Illustration */}
+            {/* Right Column: Graphic / Laptop Illustration matching Sapphire Reference */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-[480px] aspect-[4/3] bg-gradient-to-br from-blue-50/80 via-sky-50/40 to-slate-50 rounded-2xl p-6 border border-slate-200/60 shadow-xl flex items-center justify-center overflow-hidden group">
                 
@@ -224,43 +225,41 @@ export const JavaDevelopmentService = () => {
                     <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
                     <div className="w-2.5 h-2.5 rounded-full bg-amber-500" />
                     <div className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-                    <span className="text-[10px] text-slate-400 font-mono pl-2">JavaApplication.java</span>
+                    <span className="text-[10px] text-slate-400 font-mono pl-2">AspNetCoreApp.csproj</span>
                   </div>
 
                   <div className="font-mono text-[11px] space-y-1.5 text-slate-300 leading-relaxed py-2 pl-1">
-                    <div className="text-purple-400">import org.springframework.boot.SpringApplication;</div>
-                    <div className="text-blue-400">package <span className="text-amber-300">com.firevy.services</span>;</div>
+                    <div className="text-purple-400">using Microsoft.AspNetCore.Builder;</div>
+                    <div className="text-blue-400">namespace <span className="text-amber-300">Firevy.AspNetCore</span></div>
                     <div>&#123;</div>
-                    <div className="pl-4 text-sky-300">@SpringBootApplication</div>
-                    <div className="pl-4 text-emerald-400">public class <span className="text-amber-200">JavaDevService</span></div>
-                    <div className="pl-4">&#123;</div>
-                    <div className="pl-8 text-slate-400">// Enterprise Microservice</div>
-                    <div className="pl-8 text-blue-300">public static void main(String[] args)</div>
-                    <div className="pl-8">&#123; <span className="text-purple-300">SpringApplication.run(args);</span> &#125;</div>
-                    <div className="pl-4">&#125;</div>
-                    <div>&#125;</div>
+                    <div className="pl-4 text-sky-300">var builder = WebApplication.CreateBuilder(args);</div>
+                    <div className="pl-4 text-emerald-400">builder.Services.AddControllers();</div>
+                    <div className="pl-4 text-blue-300">var app = builder.Build();</div>
+                    <div className="pl-4 text-purple-300">app.MapControllers();</div>
+                    <div className="pl-4 text-emerald-400">app.Run();</div>
+                    <div>&#123;</div>
                   </div>
                 </div>
 
                 {/* Floating Tech Badges */}
-                <div className="absolute top-4 left-4 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md animate-bounce [animation-duration:3s]">
-                  Spring Boot
+                <div className="absolute top-4 left-4 bg-pink-500 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md animate-bounce [animation-duration:3s]">
+                  .NET Core
                 </div>
 
-                <div className="absolute top-4 right-4 bg-amber-600 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
-                  Hibernate
+                <div className="absolute top-4 right-4 bg-amber-500 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
+                  C#
                 </div>
 
                 <div className="absolute bottom-6 left-4 bg-[#005F96] text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
-                  Java 21
+                  Azure
                 </div>
 
-                <div className="absolute bottom-6 right-4 bg-purple-600 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
-                  PostgreSQL
+                <div className="absolute bottom-6 right-4 bg-teal-600 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
+                  SQL Server
                 </div>
 
                 <div className="absolute top-1/2 -right-2 transform -translate-y-1/2 bg-blue-600 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
-                  Kafka
+                  Web API
                 </div>
 
                 <div className="absolute top-1/2 -left-2 transform -translate-y-1/2 text-[#005F96] font-mono font-bold text-lg bg-white px-2 py-0.5 rounded shadow">
@@ -279,7 +278,7 @@ export const JavaDevelopmentService = () => {
       <BrandLogoMarquee />
 
       {/* =========================================================================
-          3. QUALITY JAVA DEVELOPMENT SERVICES
+          3. ACQUIRE CUSTOM ASP.NET CORE WEB DEVELOPMENT SERVICES
           ========================================================================= */}
       <section className="py-16 sm:py-20 bg-white text-slate-900 text-left border-b border-slate-100">
         <Container>
@@ -293,8 +292,8 @@ export const JavaDevelopmentService = () => {
                 <div className="relative z-10 w-full h-full flex items-center justify-center p-4">
                   <svg className="w-full h-full" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="200" cy="200" r="150" fill="#E0F2FE" opacity="0.8" />
-                    <rect x="90" y="110" width="220" height="180" rx="12" fill="#FFFFFF" stroke="#005F96" strokeWidth="4" />
-                    <rect x="90" y="110" width="220" height="30" rx="12" fill="#005F96" />
+                    <rect x="90" y="110" width="220" height="180" rx="12" fill="#FFFFFF" stroke="#0284C7" strokeWidth="4" />
+                    <rect x="90" y="110" width="220" height="30" rx="12" fill="#0284C7" />
                     <circle cx="110" cy="125" r="4" fill="#FFFFFF" />
                     <circle cx="125" cy="125" r="4" fill="#FFFFFF" />
                     <circle cx="140" cy="125" r="4" fill="#FFFFFF" />
@@ -302,12 +301,12 @@ export const JavaDevelopmentService = () => {
                     <rect x="110" y="160" width="80" height="8" rx="4" fill="#38BDF8" />
                     <rect x="110" y="176" width="130" height="8" rx="4" fill="#E2E8F0" />
                     <rect x="110" y="192" width="100" height="8" rx="4" fill="#E2E8F0" />
-                    <rect x="110" y="208" width="150" height="8" rx="4" fill="#005F96" />
+                    <rect x="110" y="208" width="150" height="8" rx="4" fill="#0284C7" />
                     <rect x="110" y="224" width="70" height="8" rx="4" fill="#E2E8F0" />
                     <rect x="110" y="240" width="120" height="8" rx="4" fill="#38BDF8" />
 
-                    <rect x="65" y="210" width="75" height="90" rx="8" fill="#005F96" />
-                    <path d="M 65 225 L 140 225 L 120 210 L 65 210 Z" fill="#004875" />
+                    <rect x="65" y="210" width="75" height="90" rx="8" fill="#0284C7" />
+                    <path d="M 65 225 L 140 225 L 120 210 L 65 210 Z" fill="#0369A1" />
                     
                     <circle cx="310" cy="270" r="25" fill="#38BDF8" opacity="0.9" />
                     <circle cx="310" cy="270" r="10" fill="#FFFFFF" />
@@ -319,15 +318,15 @@ export const JavaDevelopmentService = () => {
             {/* Right Column: Heading & Paragraph */}
             <div className="lg:col-span-7 space-y-4">
               <h2 className="text-3xl sm:text-4xl font-[800] text-slate-900 tracking-tight leading-tight font-sans">
-                Quality Java<br />Development Services
+                Acquire Custom ASP.Net Core<br />Web Development Services
               </h2>
               
               <div className="space-y-3 text-sm sm:text-[15px] text-[#475569] leading-relaxed font-normal">
                 <p>
-                  Our team transforms the functions of manufacturing, supply chain, finance, customer relations, and human resources, among other areas, for clients in a variety of industries by enabling creative, high-performance business solutions. We offer continuing support, strategy, implementation, and consulting for the whole range of Custom Java application development services.
+                  Our team transforms the functions of manufacturing, supply chain, finance, customer relations, and human resources, among other areas, for clients in a variety of industries by enabling creative, high-performance business solutions. We offer continuing support, strategy, implementation, and consulting for the whole range of Custom ASP.NET Core application development services.
                 </p>
                 <p>
-                  With top Java technology solutions provider, knowledge, and Center of Excellence, our team is committed to providing solutions with the most cutting-edge Java product offerings for a variety of issues and complexity. Contact us now for a quick quote!
+                  With top ASP.NET Core technology solutions provider, knowledge, and Center of Excellence, our team is committed to providing solutions with the most cutting-edge .NET Core product offerings for a variety of issues and complexity. Contact us now for a quick quote!
                 </p>
               </div>
 
@@ -369,7 +368,7 @@ export const JavaDevelopmentService = () => {
                   </div>
                   
                   <h3 className="text-2xl sm:text-3xl font-[900] text-[#005F96] leading-tight tracking-tight">
-                    Affordable Java Application Development Company
+                    Affordable ASP.NET Core Application Development Company
                   </h3>
                 </div>
               </div>
@@ -378,15 +377,15 @@ export const JavaDevelopmentService = () => {
             {/* Right Column: Heading & Paragraphs */}
             <div className="lg:col-span-7 space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-tight">
-                Turn Your Ideas Into Solutions With Our Java Development Services
+                Turn Your Ideas Into Solutions With Our ASP.NET Core Development Services
               </h2>
 
               <div className="space-y-3 text-sm sm:text-[14.5px] text-[#475569] leading-relaxed font-normal">
                 <p>
-                  We have a dependable Java web development team that is well-versed in enterprise data management, infrastructure optimization, microservices and collaboration, business process automation, custom application creation, <strong className="text-slate-900 font-semibold">business intelligence</strong>, and systems integration. Our Java web development team uses cutting-edge tools, methodologies, and practices to develop applications that suit your business needs and standards.
+                  We have a dependable ASP.NET Core web development team that is well-versed in enterprise data management, infrastructure optimization, portals and collaboration, business process automation, custom application creation, <strong className="text-slate-900 font-semibold">business intelligence</strong>, and systems integration. Our ASP.NET Core web development team uses cutting-edge tools, methodologies, and practices to develop applications that suit your business needs and standards.
                 </p>
                 <p>
-                  Our Java web development team has extensive experience delivering software and products using Spring Boot, Hibernate, Apache Kafka, PostgreSQL, Docker, Kubernetes, Microservices, and RESTful APIs. Hire Java developers team of Java experts who have hands-on experience in Spring MVC, JPA, JUnit, Maven/Gradle, Jackson, and cloud-native Java architecture.
+                  Our ASP.NET Core web development team has extensive experience delivering software and products that use .NET Core, Azure IoT, Payment Gateway Solution, Microsoft Azure, Azure SQL, Content Management System, Microservices, and REST APIs. Hire .NET and ASP.NET Core developer team of Microsoft experts who have hands-on experience in ASP.NET Core, C#, Entity Framework Core, Web API 2, MVC, Blazor, and cloud-native .NET architecture.
                 </p>
               </div>
             </div>
@@ -480,13 +479,13 @@ export const JavaDevelopmentService = () => {
       </section>
 
       {/* =========================================================================
-          8. OUR RANGE OF JAVA DEVELOPMENT SERVICES INCLUDE
+          8. OUR RANGE OF ASP.NET CORE DEVELOPMENT SERVICES INCLUDE
           ========================================================================= */}
       <section className="py-16 sm:py-24 bg-slate-50/70 text-slate-900 text-left border-b border-slate-200/60">
         <Container>
           <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
             <h2 className="text-3xl sm:text-4xl font-[800] text-slate-900 tracking-tight">
-              Our Range Of Java Development Services Include
+              Our Range Of ASP.NET Core Development Services Include
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
               At Firevy.Co, we have excellence in delivering solutions for a wide variety of business types and sizes. Take a look at our most cutting-edge product offerings.
@@ -531,16 +530,16 @@ export const JavaDevelopmentService = () => {
       </section>
 
       {/* =========================================================================
-          9. BENEFITS OF JAVA DEVELOPMENT
+          9. BENEFITS OF ASP.NET CORE DEVELOPMENT
           ========================================================================= */}
       <section className="py-16 sm:py-24 bg-white text-slate-900 text-left border-b border-slate-100">
         <Container>
           <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
             <h2 className="text-3xl sm:text-4xl font-[800] text-slate-900 tracking-tight">
-              Benefits Of Java Development
+              Benefits Of ASP.NET Core Development
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-              Java Development provides many advantages to developers, both for enterprise backends and cloud microservices. The platform is also well-suited for high-throughput IT projects for companies. Here are some of its key advantages.
+              ASP.NET Core Development provides many advantages to developers, both as a PaaS and an IaaS. The platform is also well-suited for ordinary, mid-level IT projects for companies. Here are some of its key advantages.
             </p>
           </div>
 
@@ -601,7 +600,7 @@ export const JavaDevelopmentService = () => {
       {/* =========================================================================
           16. TECHNOLOGY STACK GRID
           ========================================================================= */}
-      <SapphireTechStackGrid domainName="Java" />
+      <SapphireTechStackGrid domainName="Microsoft" />
 
       {/* =========================================================================
           17. WE HAVE BEEN FEATURED IN
@@ -622,43 +621,33 @@ export const JavaDevelopmentService = () => {
         customFaqs={[
           {
             id: 1,
-            question: "1. Why choose Java for enterprise application development?",
-            answer: "Java offers unbeatable cross-platform portability ('Write Once, Run Anywhere'), enterprise-grade security, mature Spring Boot ecosystems, high-throughput multi-threading, and decades of proven backward compatibility for mission-critical systems."
+            question: "1. What is ASP.NET Core Development?",
+            answer: "ASP.NET Core is an open-source, cross-platform framework created by Microsoft for building cloud-based, internet-connected applications such as web apps, IoT apps, and mobile backends."
           },
           {
             id: 2,
-            question: "2. Is Java Application Architecture Scalable?",
-            answer: "Yes, Java enterprise architecture relies on Spring Boot microservices and cloud-native containerization (Docker, Kubernetes), allowing effortless horizontal scaling across cloud instances."
+            question: "2. What are the key features of ASP.NET Core?",
+            answer: "Key features include cross-platform execution (Windows, Linux, macOS), high performance, built-in dependency injection, unified MVC & Web API controllers, and seamless integration with cloud services like Azure."
           },
           {
             id: 3,
-            question: "3. Is Java Development an economically viable option?",
-            answer: "High developer availability, robust open-source ecosystem, and strong enterprise longevity significantly reduce long-term maintenance costs and operational overhead."
+            question: "3. Can you migrate my legacy .NET Framework app to ASP.NET Core?",
+            answer: "Yes, our certified Microsoft developers specialize in migrating legacy ASP.NET Web Forms and .NET Framework 4.x applications to modern ASP.NET Core (.NET 8/9) with full zero-downtime execution."
           },
           {
             id: 4,
-            question: "4. Why should I choose Firevy.co for Java Development Services?",
-            answer: "Our Java developers have 23+ years of combined experience, 320+ 5-star Clutch reviews, strict NDA compliance, zero onboarding delay, and 24/7 SLA technical support."
+            question: "4. Is ASP.NET Core suitable for microservices architecture?",
+            answer: "Absolutely. ASP.NET Core's lightweight memory footprint, fast startup time, and support for Docker containers and gRPC make it an ideal choice for microservices architectures."
           },
           {
             id: 5,
-            question: "5. What are the benefits of using Java for web application development?",
-            answer: "Key benefits include robust type-safety, high-concurrency Virtual Threads in Java 21, rich Spring ecosystem, scalable ORM with Hibernate, and enterprise-grade security."
+            question: "5. How much does it cost to hire ASP.NET Core developers from Firevy.co?",
+            answer: "We offer flexible engagement models including Dedicated Developers starting at $21/hour, monthly retainers, and fixed-scope project pricing tailored to your budget."
           },
           {
             id: 6,
-            question: "6. Do your Java developers offer full project lifecycle support?",
-            answer: "Yes, we handle everything from discovery, architecture design, and microservices implementation to automated QA testing, cloud deployment, and post-launch maintenance."
-          },
-          {
-            id: 7,
-            question: "7. Can I hire remote Java developers from Firevy.co for my business?",
-            answer: "Absolutely. We offer flexible engagement models—hourly ($21/hr), part-time, or dedicated monthly retainers aligned with your timezone."
-          },
-          {
-            id: 8,
-            question: "8. What kind of applications can be built using Java?",
-            answer: "You can build enterprise SaaS portals, financial platforms, high-throughput REST APIs, healthcare systems, ERP & CRM portals, and cloud-native microservices."
+            question: "6. Why choose Firevy.co for ASP.NET Core Development Services?",
+            answer: "Firevy.co brings 23+ years of IT engineering excellence, 320+ 5-star Clutch reviews, certified Microsoft Azure & .NET developers, strict NDA compliance, and 24/7 SLA technical support."
           }
         ]}
       />
@@ -669,20 +658,20 @@ export const JavaDevelopmentService = () => {
       <RecentBlogsSection />
 
       {/* =========================================================================
-          21. WHAT SETS US APART AS JAVA DEVELOPMENT SERVICES COMPANY?
+          21. WHAT SETS US APART AS ASP.NET CORE DEVELOPMENT SERVICES COMPANY?
           ========================================================================= */}
       <WhatSetsUsApartSection
-        title="What Sets Us Apart As Java Development Services Company?"
+        title="What Sets Us Apart As ASP.NET Core Development Services Company?"
         description="Being unique is our quality! Firevy.co believes in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
       />
 
       {/* =========================================================================
-          22. HAVE JAVA DEVELOPMENT CHALLENGE TO ADDRESS ?
+          22. HAVE ASP.NET CORE DEVELOPMENT CHALLENGE TO ADDRESS ?
           ========================================================================= */}
       <ConversionCalloutBanner
         data={{
-          title: "Have Java Development Challenge To Address ?",
-          description: "Get access to top java developers to transform your ideas into a robust application.",
+          title: "Have ASP.NET Core Development Challenge To Address ?",
+          description: "Get access to top ASP.NET Core developers to transform your ideas into a robust application.",
           buttonText: "Hire Now",
           buttonLink: "/contact"
         }}
@@ -698,4 +687,4 @@ export const JavaDevelopmentService = () => {
   );
 };
 
-export default JavaDevelopmentService;
+export default AspNetCoreDevelopmentService;

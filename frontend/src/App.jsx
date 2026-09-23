@@ -293,6 +293,8 @@ export function App() {
                 <Route path="/startup-consulting-services" element={<ServiceDetails />} />
                 <Route path="/services/epicor-erp-consulting-services" element={<ServiceDetails />} />
                 <Route path="/epicor-erp-consulting-services" element={<ServiceDetails />} />
+                <Route path="/services/product-development" element={<ServiceDetails />} />
+                <Route path="/product-development" element={<ServiceDetails />} />
                 <Route path="/services/devops-consulting-service" element={<ServiceDetails />} />
                 <Route path="/devops-consulting-service" element={<ServiceDetails />} />
                 <Route path="/services/devops-consulting-services" element={<ServiceDetails />} />
@@ -392,10 +394,28 @@ export function App() {
                 <Route path="/services/nintex-development" element={<ServiceDetails />} />
                 <Route path="/nintex-development" element={<ServiceDetails />} />
                 <Route path="/services/nintex" element={<ServiceDetails />} />
+                <Route path="/services/extended-reality-development" element={<ServiceDetails />} />
+                <Route path="/extended-reality-development" element={<ServiceDetails />} />
+                <Route path="/services/extended-reality-development-services" element={<ServiceDetails />} />
+                <Route path="/extended-reality-development-services" element={<ServiceDetails />} />
+                <Route path="/services/extended-reality" element={<ServiceDetails />} />
+                <Route path="/extended-reality" element={<ServiceDetails />} />
                 <Route path="/services/mobile-app-porting" element={<ServiceDetails />} />
                 <Route path="/mobile-app-porting" element={<ServiceDetails />} />
                 <Route path="/services/mobile-app-porting-services" element={<ServiceDetails />} />
                 <Route path="/mobile-app-porting-services" element={<ServiceDetails />} />
+                <Route path="/services/software-development-service" element={<ServiceDetails />} />
+                <Route path="/software-development-service" element={<ServiceDetails />} />
+                <Route path="/services/software-development-services" element={<ServiceDetails />} />
+                <Route path="/software-development-services" element={<ServiceDetails />} />
+                <Route path="/services/software-development" element={<ServiceDetails />} />
+                <Route path="/software-development" element={<ServiceDetails />} />
+                <Route path="/services/digital-transformation-services" element={<ServiceDetails />} />
+                <Route path="/digital-transformation-services" element={<ServiceDetails />} />
+                <Route path="/services/digital-transformation-service" element={<ServiceDetails />} />
+                <Route path="/digital-transformation-service" element={<ServiceDetails />} />
+                <Route path="/services/digital-transformation" element={<ServiceDetails />} />
+                <Route path="/digital-transformation" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing" element={<ServiceDetails />} />
