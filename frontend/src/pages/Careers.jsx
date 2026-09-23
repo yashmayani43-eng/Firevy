@@ -129,9 +129,9 @@ export const Careers = () => {
 
   const peopleTestimonials = cmsData?.peopleTestimonials?.length ? cmsData.peopleTestimonials : [
     {
-      name: "Ankit Morasiya",
-      role: "Business Analyst",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+      name: "Purvi Pipaliya",
+      role: "QA Lead",
+      avatar: "/images/Purvi.JPG"
     },
     {
       name: "Umang Barot",
@@ -139,9 +139,9 @@ export const Careers = () => {
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
     },
     {
-      name: "Galav Shukla",
-      role: "Business Development Executive",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80"
+      name: "Hiren Rajani",
+      role: "Sr. BDR - Service",
+      avatar: "/images/Hiren.JPG"
     },
     {
       name: "Parthiv Trivedi",
