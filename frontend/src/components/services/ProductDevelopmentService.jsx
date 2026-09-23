@@ -15,7 +15,6 @@ import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
 import TransformativeImpactSection from './TransformativeImpactSection';
 import SapphireSeasonedExpertsSection from './SapphireSeasonedExpertsSection';
 import IndustryFocusedInsightsSection from './IndustryFocusedInsightsSection';
-import CustomItServicesSection from './CustomItServicesSection';
 import SectorsThrivingSection from './SectorsThrivingSection';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import SuccessMatrix from '../common/SuccessMatrix';
@@ -730,16 +729,6 @@ export const ProductDevelopmentService = () => {
       <TransformativeImpactSection
         title="Impact Of Custom Product Development for Business Success"
       />
-
-      {/* ========================================================================= */}
-      {/* 11. FIREVY CUSTOM SOFTWARE DEVELOPMENT SERVICES */}
-      {/* ========================================================================= */}
-      <CustomItServicesSection
-        title="Firevy Custom Product Development Services"
-        subtitle="Firevy product engineers thrive at developing compelling, market-defining applications by utilizing our knowledge of the latest software development frameworks. Firevy provides full-service product development customized to meet your exact market requirements."
-      />
-
-
       {/* ========================================================================= */}
       {/* 14. TECHNOLOGY STACK THAT FIREVY SOFTWARE DEVELOPERS USE PROFICIENTLY */}
       {/* ========================================================================= */}
