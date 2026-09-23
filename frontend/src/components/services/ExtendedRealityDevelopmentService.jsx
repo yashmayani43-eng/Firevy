@@ -11,7 +11,7 @@ import TrustRecognitionBanner from '../home/TrustRecognitionBanner';
 
 import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
-import TransformativeImpactSection from './TransformativeImpactSection';
+
 import AboutUsStats from './AboutUsStats';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import SuccessMatrix from '../common/SuccessMatrix';
@@ -491,12 +491,7 @@ export const ExtendedRealityDevelopmentService = () => {
       {/* ========================================================================= */}
       <DigitalTransformationSlider />
 
-      {/* ========================================================================= */}
-      {/* 20. EXPLORE THE TRANSFORMATIVE IMPACT */}
-      {/* ========================================================================= */}
-      <TransformativeImpactSection
-        title="Explore The Transformative Impact Of Extended Reality On Your Business Success"
-      />
+
 
       {/* ========================================================================= */}
       {/* 21. ABOUT US STATS */}
