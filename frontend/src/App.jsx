@@ -98,6 +98,23 @@ export function App() {
               <Route element={<PublicLayoutWrapper />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/company/about" element={<About />} />
+                <Route path="/company/about-firevy" element={<About />} />
+                <Route path="/company/our-team" element={<CompanySubDetails />} />
+                <Route path="/our-team" element={<CompanySubDetails />} />
+                <Route path="/company/events-activities" element={<CompanySubDetails />} />
+                <Route path="/events-activities" element={<CompanySubDetails />} />
+                <Route path="/company/why-choose-us" element={<CompanySubDetails />} />
+                <Route path="/why-choose-us" element={<CompanySubDetails />} />
+                <Route path="/company/awards-recognition" element={<CompanySubDetails />} />
+                <Route path="/company/awards-and-recognition" element={<CompanySubDetails />} />
+                <Route path="/awards-recognition" element={<CompanySubDetails />} />
+                <Route path="/awards-and-recognition" element={<CompanySubDetails />} />
+                <Route path="/company/contact" element={<Contact />} />
+                <Route path="/company/contact-us" element={<Contact />} />
+                <Route path="/contact-us" element={<Contact />} />
+                <Route path="/company/portfolio" element={<Portfolio />} />
+                <Route path="/company/careers" element={<Careers />} />
                 <Route path="/company/podcast" element={<Podcast />} />
                 <Route path="/podcasts" element={<Podcast />} />
                 <Route path="/company/delivery-models" element={<DeliveryModels />} />

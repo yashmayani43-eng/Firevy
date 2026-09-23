@@ -134,9 +134,9 @@ export const Careers = () => {
       avatar: "/images/Purvi.JPG"
     },
     {
-      name: "Umang Barot",
-      role: "Technical Support Lead",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+      name: "Rutvik",
+      role: "Technical Lead",
+      avatar: "/images/Rutvik.JPG"
     },
     {
       name: "Hiren Rajani",
@@ -144,19 +144,34 @@ export const Careers = () => {
       avatar: "/images/Hiren.JPG"
     },
     {
-      name: "Parthiv Trivedi",
-      role: "Business Development Manager",
-      avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+      name: "Yash Mayani",
+      role: "Director & Tech Lead",
+      avatar: "/images/Yash_Mayani.JPG"
     },
     {
-      name: "Daxesh Prajapati",
-      role: "Team Lead",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+      name: "Sahaj Maniya",
+      role: "Full Stack Developer",
+      avatar: "/images/Sahaj_Maniya.JPG"
     },
     {
-      name: "Mehul Gajjar",
-      role: "Team Lead",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+      name: "Tushil Mayani",
+      role: "Senior Software Engineer",
+      avatar: "/images/Tushil_mayani.JPG"
+    },
+    {
+      name: "Selvi",
+      role: "UI/UX Lead Designer",
+      avatar: "/images/Selvi.JPG"
+    },
+    {
+      name: "Aarchi",
+      role: "Frontend Developer",
+      avatar: "/images/Aarchi.JPG"
+    },
+    {
+      name: "Kreni",
+      role: "HR Manager",
+      avatar: "/images/Kreni.jpg"
     }
   ];
 
