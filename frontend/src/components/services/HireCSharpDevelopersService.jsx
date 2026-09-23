@@ -501,9 +501,9 @@ export const HireCSharpDevelopersService = () => {
             <div className="lg:col-span-6 relative flex items-center justify-center">
               <div className="relative w-full max-w-[500px]">
                 <img
-                  src="/images/c_sharp_developer_illustration.png"
+                  src="/images/c_sharp_developer_illustration.svg"
                   alt="Hire Leading C Sharp Developers"
-                  className="w-full h-auto max-w-[480px] object-contain mx-auto drop-shadow-sm"
+                  className="w-full h-auto max-w-[520px] object-contain mx-auto drop-shadow-sm"
                 />
               </div>
             </div>
@@ -768,9 +768,9 @@ export const HireCSharpDevelopersService = () => {
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative w-full max-w-[520px]">
                 <img
-                  src="/images/c_sharp_expertise_illustration.png"
+                  src="/images/c_sharp_developer_illustration.svg"
                   alt="Expertise Of Our C Sharp Developers"
-                  className="w-full h-auto object-contain mix-blend-multiply"
+                  className="w-full h-auto max-w-[520px] object-contain mx-auto drop-shadow-sm"
                 />
               </div>
             </div>

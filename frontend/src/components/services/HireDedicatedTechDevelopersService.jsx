@@ -12,6 +12,7 @@ import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseS
 import ClientReviewsDarkSection from '../home/ClientReviewsDarkSection';
 import VideoTestimonialsStory from '../home/VideoTestimonialsStory';
 import IndustryFocusedInsightsSection from './IndustryFocusedInsightsSection';
+import SectorsThrivingSection from './SectorsThrivingSection';
 import AboutKeyMetrics from '../home/AboutKeyMetrics';
 import WorkProcessGrid from '../home/WorkProcessGrid';
 import EngagementModelsSection from '../home/EngagementModelsSection';
@@ -20,6 +21,8 @@ import SapphireFaqSection from '../common/SapphireFaqSection';
 import RecentBlogsSection from '../home/RecentBlogsSection';
 import PremiumServicesGrid from '../common/PremiumServicesGrid';
 import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
+import ClutchTopRatedBanner from '../common/ClutchTopRatedBanner';
+import HowWeDivideResponsibilitiesGrid from '../common/HowWeDivideResponsibilitiesGrid';
 import {
   Clock,
   ArrowRight,
@@ -264,10 +267,15 @@ export const techConfigurations = {
     metaTitle: 'Hire Dedicated Fintech Developers | Banking & Payment Software Engineers at $21/Hr',
     metaDesc: 'Hire certified Fintech developers for payment gateways, digital banking, crypto/blockchain wallets, and PCI-DSS compliant software. Starting at $21/hr.',
     canonical: '/services/hire-fintech-developers',
-    heroDesc: 'When you employ skilled Fintech developers from us, we will collaborate with you throughout all phases to create high-performance financial technology platforms.',
+    heroDesc: "Employ Sapphire's fintech developers for building next-gen digital finance solutions that balance security, speed, and user experience. Our skilled fintech software developers offer a wide variety of payment platform, digital wallet, lending, neo banking, AI-powered finance, and KYC/AML solutions. We build solid fintech technology for start-ups producing a groundbreaking idea or modern enterprises upgrading their existing infrastructure.",
     brandColor: '#059669',
     accentColor: '#D97706',
     logoText: 'FinTech',
+    isFintechCustomGraphic: true,
+    section2Title: 'Hire Fintech Developers For Custom Financial Applications',
+    section2Desc: 'When you hire fintech developers from Sapphire, you benefit from professionals with a clear understanding of the details of modern finance. Our engineers can build smart, data-driven applications with options for payment integration, fraud detection, biometric authentication, expense tracking, investment tools, and real-time analytics. We help you integrate payment gateways, bank APIs, open finance protocols, blockchain, and alternative AI-powered decision engine systems.',
+    briefTitle: 'Outsource Fintech Software Developers',
+    briefDesc: "We offer companies around the USA, UK, Canada, UAE, Australia, and India with outsourcing solutions, allowing you to increase your development capabilities without the expense of in-house hiring. When you engage fintech software developers from Sapphire, you're getting scalable teams, quicker development times, and complete transparency from ideation to deployment. Our fintech solution developers for startups focus on MVPs, scaling products, moving to the cloud, and secure integrations to be the right resource for quickly growing fintech disruptors.",
     badges: [
       { text: 'PCI-DSS', sub: 'Secure', color: '#059669' },
       { text: 'Stripe', sub: 'Payments', color: '#635BFF' },
@@ -276,6 +284,9 @@ export const techConfigurations = {
     ],
     briefP1: 'Fintech systems require zero-tolerance for errors, sub-millisecond transaction speeds, automated fraud detection, and stringent regulatory compliance.',
     briefP2: 'Our Fintech engineers build digital banking portals, multi-currency crypto wallets, lending engines, algorithmic trading systems, and payment gateways with end-to-end encryption.',
+    customSolutionsTitle: 'Custom Fintech Solutions Built for Enterprises',
+    customSolutionsQuote: 'Instant Access To Top Talent With Hard-To-Find Skills',
+    customSolutionsDesc: "We offer full development support for your fintech product from financial data modeling to blockchain-backed transaction systems. Our team does the architecture planning, API integration, mobile app development, backend engineering, AI automation, and additional support services. If you're looking to hire a dedicated fintech developer who is knowledgeable in finance, compliance, and modern technologies, we provide a balanced approach of technical expertise and domain experience.",
     faqs: [
       { q: '1. How do your Fintech developers ensure compliance and security?', a: 'Our developers implement PCI-DSS Level 1 standards, AES-256 data encryption at rest and in transit, multi-factor authentication, and automated KYC/AML checks.' },
       { q: '2. Have your developers integrated payment gateways before?', a: 'Yes. We have integrated Stripe, PayPal, Adyen, Plaid, Authorize.Net, and local banking APIs across the USA, UK, Europe, and Asia.' }
@@ -486,7 +497,7 @@ export const HireDedicatedTechDevelopersService = ({ techKey }) => {
       {/* ============================================================
           HERO SECTION (Matching Reference Design 100%)
           ============================================================ */}
-      <section className="pt-28 pb-16 bg-white text-slate-900 relative overflow-hidden font-sans border-b border-slate-100">
+      <section className={`pt-28 pb-16 text-slate-900 relative overflow-hidden font-sans border-b border-slate-100 ${config.isFintechCustomGraphic ? 'bg-[#EEF5FB]' : 'bg-white'}`}>
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
 
@@ -551,135 +562,145 @@ export const HireDedicatedTechDevelopersService = ({ techKey }) => {
               </div>
             </div>
 
-            {/* Right Column: High-Fidelity Custom Technology Monitor Vector Graphic */}
+            {/* Right Column: High-Fidelity Custom Technology Graphic */}
             <div className="lg:col-span-6 relative flex items-center justify-center p-2">
               <div className="relative w-full max-w-[540px] select-none">
-                <svg viewBox="0 0 600 480" className="w-full h-auto drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Background Delicate Cyan Gears & Dashed Rings */}
-                  <g opacity="0.35">
-                    <circle cx="410" cy="90" r="48" stroke="#38BDF8" strokeWidth="1.5" strokeDasharray="4 4" />
-                    <path d="M410 32v14M410 134v14M352 90h14M454 90h14" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" />
-                    <circle cx="110" cy="320" r="42" stroke="#38BDF8" strokeWidth="1.5" strokeDasharray="4 4" />
-                    <circle cx="525" cy="200" r="32" stroke="#38BDF8" strokeWidth="1.5" strokeDasharray="3 3" />
-                  </g>
-
-                  {/* Monitor Stand */}
-                  <path d="M300 340 L 300 375" stroke="#94A3B8" strokeWidth="14" strokeLinecap="round" />
-                  <path d="M250 375 L 350 375" stroke="#64748B" strokeWidth="7" strokeLinecap="round" />
-                  <ellipse cx="300" cy="377" rx="55" ry="6" fill="#94A3B8" />
-
-                  {/* Desktop Monitor Outer Bezel */}
-                  <rect x="155" y="105" width="345" height="235" rx="14" fill="#0F172A" />
-                  <rect x="160" y="110" width="335" height="220" rx="10" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="2" />
-                  <rect x="160" y="110" width="335" height="24" rx="10" fill="#006095" />
-                  <rect x="160" y="122" width="335" height="12" fill="#006095" />
-
-                  {/* Window Control Dots */}
-                  <circle cx="174" cy="122" r="3.5" fill="#FFFFFF" />
-                  <circle cx="186" cy="122" r="3.5" fill="#FEF08A" />
-                  <circle cx="198" cy="122" r="3.5" fill="#FFFFFF" />
-
-                  {/* Code Lines on Left Screen */}
-                  <g opacity="0.65">
-                    <rect x="175" y="146" width="90" height="4" rx="2" fill="#94A3B8" />
-                    <rect x="175" y="156" width="130" height="4" rx="2" fill="#CBD5E1" />
-                    <rect x="185" y="166" width="70" height="4" rx="2" fill="#94A3B8" />
-                    <rect x="175" y="176" width="110" height="4" rx="2" fill="#CBD5E1" />
-                    <rect x="175" y="196" width="120" height="4" rx="2" fill="#94A3B8" />
-                    <rect x="185" y="206" width="80" height="4" rx="2" fill="#CBD5E1" />
-                    <rect x="185" y="216" width="100" height="4" rx="2" fill="#94A3B8" />
-                    <rect x="175" y="226" width="60" height="4" rx="2" fill="#CBD5E1" />
-                    <rect x="175" y="246" width="140" height="4" rx="2" fill="#94A3B8" />
-                    <rect x="175" y="256" width="95" height="4" rx="2" fill="#CBD5E1" />
-                  </g>
-
-                  {/* Custom Tech Badge on Right Screen */}
-                  {config.isBackendCustomGraphic ? (
-                    <g transform="translate(340, 155)">
-                      <rect x="0" y="0" width="130" height="75" rx="8" fill="#FFFFFF" stroke="#0089a8" strokeWidth="2" />
-                      <rect x="0" y="0" width="130" height="16" rx="8" fill="#F1F5F9" />
-                      <circle cx="12" cy="8" r="2.5" fill="#EF4444" />
-                      <circle cx="20" cy="8" r="2.5" fill="#F59E0B" />
-                      <circle cx="28" cy="8" r="2.5" fill="#10B981" />
-                      <text x="35" y="48" fill="#0089a8" fontSize="24" fontWeight="900" textAnchor="middle" fontFamily="monospace">&lt; / &gt;</text>
-                      <g transform="translate(85, 38)">
-                        <circle cx="12" cy="12" r="10" stroke="#0089a8" strokeWidth="3" fill="none" />
-                        <circle cx="12" cy="12" r="4" fill="#0089a8" />
-                      </g>
+                {config.isFintechCustomGraphic ? (
+                  <div className="flex items-center justify-center w-full">
+                    <img
+                      src="/images/services/fintech_hero_illustration.png"
+                      alt="Hire Fintech Developers"
+                      className="w-full max-w-[540px] h-auto object-contain select-none drop-shadow-sm"
+                    />
+                  </div>
+                ) : (
+                  <svg viewBox="0 0 600 480" className="w-full h-auto drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Background Delicate Cyan Gears & Dashed Rings */}
+                    <g opacity="0.35">
+                      <circle cx="410" cy="90" r="48" stroke="#38BDF8" strokeWidth="1.5" strokeDasharray="4 4" />
+                      <path d="M410 32v14M410 134v14M352 90h14M454 90h14" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" />
+                      <circle cx="110" cy="320" r="42" stroke="#38BDF8" strokeWidth="1.5" strokeDasharray="4 4" />
+                      <circle cx="525" cy="200" r="32" stroke="#38BDF8" strokeWidth="1.5" strokeDasharray="3 3" />
                     </g>
-                  ) : config.isPythonCustomGraphic ? (
-                    <g transform="translate(355, 140)">
-                      {/* Python Dual Snake Logo inside Monitor */}
-                      <g transform="scale(1.1)">
-                        {/* Blue Top Snake */}
-                        <path d="M26 4 C14 4 6 12 6 22 L6 28 L24 28 L24 32 L3 32 C-3 32 -6 38 -6 48 C-6 58 1 64 12 64 L16 64 L16 54 C16 44 24 38 34 38 L48 38 C56 38 62 32 62 24 L62 14 C62 4 54 4 44 4 Z" fill="#387EB8" />
-                        <circle cx="16" cy="12" r="3" fill="#FFFFFF" />
-                        {/* Yellow Bottom Snake */}
-                        <path d="M38 68 C50 68 58 60 58 50 L58 44 L40 44 L40 40 L61 40 C67 40 70 34 70 24 C70 14 63 8 52 8 L48 8 L48 18 C48 28 40 34 30 34 L16 34 C8 34 2 40 2 48 L2 58 C2 68 10 68 20 68 Z" fill="#FFE052" />
-                        <circle cx="48" cy="60" r="3" fill="#000000" />
-                      </g>
-                    </g>
-                  ) : (
-                    <g transform="translate(345, 160)">
-                      <rect x="0" y="0" width="120" height="70" rx="12" fill="#F8FAFC" stroke="#006095" strokeWidth="2.5" />
-                      <circle cx="28" cy="35" r="16" fill="#006095" />
-                      <text x="28" y="41" fill="#FFFFFF" fontSize="14" fontWeight="900" textAnchor="middle">{config.techName[0]}</text>
-                      <text x="54" y="42" fill="#006095" fontSize="16" fontWeight="900" fontFamily="sans-serif">{config.logoText}</text>
-                    </g>
-                  )}
 
-                  {/* 4 Surrounding Tech Badges */}
-                  {config.isPythonCustomGraphic ? (
-                    <g>
-                      {/* Django Badge - Top Left */}
-                      <g transform="translate(75, 155)">
-                        <rect x="0" y="0" width="75" height="34" rx="8" fill="#BAE6FD" opacity="0.9" />
-                        <rect x="3" y="3" width="69" height="28" rx="6" fill="#092E20" />
-                        <text x="37" y="21" fill="#FFFFFF" fontSize="13" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">django</text>
-                      </g>
-                      {/* CherryPy Badge - Top Right */}
-                      <g transform="translate(470, 78)">
-                        <rect x="0" y="0" width="85" height="34" rx="8" fill="#BAE6FD" opacity="0.9" />
-                        <rect x="3" y="3" width="79" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" />
-                        <circle cx="16" cy="18" r="3.5" fill="#DC2626" />
-                        <circle cx="21" cy="20" r="3.5" fill="#DC2626" />
-                        <text x="50" y="21" fill="#0F172A" fontSize="11" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">CherryPy</text>
-                      </g>
-                      {/* Flask Badge - Bottom Left */}
-                      <g transform="translate(110, 290)">
-                        <rect x="0" y="0" width="75" height="34" rx="8" fill="#BAE6FD" opacity="0.9" />
-                        <rect x="3" y="3" width="69" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" />
-                        <text x="37" y="21" fill="#0F172A" fontSize="13" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">Flask</text>
-                      </g>
-                      {/* ZOPE Badge - Bottom Right */}
-                      <g transform="translate(470, 245)">
-                        <rect x="0" y="0" width="80" height="34" rx="8" fill="#BAE6FD" opacity="0.9" />
-                        <rect x="3" y="3" width="74" height="28" rx="6" fill="#BAE6FD" />
-                        <circle cx="16" cy="17" r="7" fill="#0284C7" />
-                        <text x="16" y="21" fill="#FFFFFF" fontSize="9" fontWeight="900" textAnchor="middle">Z</text>
-                        <text x="46" y="21" fill="#0369A1" fontSize="11" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">ZOPE</text>
-                      </g>
-                    </g>
-                  ) : (
-                    config.badges.map((b, idx) => {
-                      const coords = [
-                        { x: 488, y: 82 },
-                        { x: 85, y: 160 },
-                        { x: 118, y: 300 },
-                        { x: 485, y: 252 }
-                      ][idx] || { x: 488, y: 82 };
+                    {/* Monitor Stand */}
+                    <path d="M300 340 L 300 375" stroke="#94A3B8" strokeWidth="14" strokeLinecap="round" />
+                    <path d="M250 375 L 350 375" stroke="#64748B" strokeWidth="7" strokeLinecap="round" />
+                    <ellipse cx="300" cy="377" rx="55" ry="6" fill="#94A3B8" />
 
-                      return (
-                        <g key={idx} transform={`translate(${coords.x}, ${coords.y})`}>
-                          <rect x="0" y="0" width="52" height="52" rx="12" fill="#BAE6FD" opacity="0.85" />
-                          <rect x="6" y="6" width="40" height="40" rx="8" fill={b.color || "#0284C7"} />
-                          <text x="26" y="26" fill="#FFFFFF" fontSize="9" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">{b.text}</text>
-                          <text x="26" y="36" fill="#FFFFFF" fontSize="6" fontWeight="700" textAnchor="middle" fontFamily="sans-serif">{b.sub}</text>
+                    {/* Desktop Monitor Outer Bezel */}
+                    <rect x="155" y="105" width="345" height="235" rx="14" fill="#0F172A" />
+                    <rect x="160" y="110" width="335" height="220" rx="10" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="2" />
+                    <rect x="160" y="110" width="335" height="24" rx="10" fill="#006095" />
+                    <rect x="160" y="122" width="335" height="12" fill="#006095" />
+
+                    {/* Window Control Dots */}
+                    <circle cx="174" cy="122" r="3.5" fill="#FFFFFF" />
+                    <circle cx="186" cy="122" r="3.5" fill="#FEF08A" />
+                    <circle cx="198" cy="122" r="3.5" fill="#FFFFFF" />
+
+                    {/* Code Lines on Left Screen */}
+                    <g opacity="0.65">
+                      <rect x="175" y="146" width="90" height="4" rx="2" fill="#94A3B8" />
+                      <rect x="175" y="156" width="130" height="4" rx="2" fill="#CBD5E1" />
+                      <rect x="185" y="166" width="70" height="4" rx="2" fill="#94A3B8" />
+                      <rect x="175" y="176" width="110" height="4" rx="2" fill="#CBD5E1" />
+                      <rect x="175" y="196" width="120" height="4" rx="2" fill="#94A3B8" />
+                      <rect x="185" y="206" width="80" height="4" rx="2" fill="#CBD5E1" />
+                      <rect x="185" y="216" width="100" height="4" rx="2" fill="#94A3B8" />
+                      <rect x="175" y="226" width="60" height="4" rx="2" fill="#CBD5E1" />
+                      <rect x="175" y="246" width="140" height="4" rx="2" fill="#94A3B8" />
+                      <rect x="175" y="256" width="95" height="4" rx="2" fill="#CBD5E1" />
+                    </g>
+
+                    {/* Custom Tech Badge on Right Screen */}
+                    {config.isBackendCustomGraphic ? (
+                      <g transform="translate(340, 155)">
+                        <rect x="0" y="0" width="130" height="75" rx="8" fill="#FFFFFF" stroke="#0089a8" strokeWidth="2" />
+                        <rect x="0" y="0" width="130" height="16" rx="8" fill="#F1F5F9" />
+                        <circle cx="12" cy="8" r="2.5" fill="#EF4444" />
+                        <circle cx="20" cy="8" r="2.5" fill="#F59E0B" />
+                        <circle cx="28" cy="8" r="2.5" fill="#10B981" />
+                        <text x="35" y="48" fill="#0089a8" fontSize="24" fontWeight="900" textAnchor="middle" fontFamily="monospace">&lt; / &gt;</text>
+                        <g transform="translate(85, 38)">
+                          <circle cx="12" cy="12" r="10" stroke="#0089a8" strokeWidth="3" fill="none" />
+                          <circle cx="12" cy="12" r="4" fill="#0089a8" />
                         </g>
-                      );
-                    })
-                  )}
-                </svg>
+                      </g>
+                    ) : config.isPythonCustomGraphic ? (
+                      <g transform="translate(355, 140)">
+                        {/* Python Dual Snake Logo inside Monitor */}
+                        <g transform="scale(1.1)">
+                          {/* Blue Top Snake */}
+                          <path d="M26 4 C14 4 6 12 6 22 L6 28 L24 28 L24 32 L3 32 C-3 32 -6 38 -6 48 C-6 58 1 64 12 64 L16 64 L16 54 C16 44 24 38 34 38 L48 38 C56 38 62 32 62 24 L62 14 C62 4 54 4 44 4 Z" fill="#387EB8" />
+                          <circle cx="16" cy="12" r="3" fill="#FFFFFF" />
+                          {/* Yellow Bottom Snake */}
+                          <path d="M38 68 C50 68 58 60 58 50 L58 44 L40 44 L40 40 L61 40 C67 40 70 34 70 24 C70 14 63 8 52 8 L48 8 L48 18 C48 28 40 34 30 34 L16 34 C8 34 2 40 2 48 L2 58 C2 68 10 68 20 68 Z" fill="#FFE052" />
+                          <circle cx="48" cy="60" r="3" fill="#000000" />
+                        </g>
+                      </g>
+                    ) : (
+                      <g transform="translate(345, 160)">
+                        <rect x="0" y="0" width="120" height="70" rx="12" fill="#F8FAFC" stroke="#006095" strokeWidth="2.5" />
+                        <circle cx="28" cy="35" r="16" fill="#006095" />
+                        <text x="28" y="41" fill="#FFFFFF" fontSize="14" fontWeight="900" textAnchor="middle">{config.techName[0]}</text>
+                        <text x="54" y="42" fill="#006095" fontSize="16" fontWeight="900" fontFamily="sans-serif">{config.logoText}</text>
+                      </g>
+                    )}
+
+                    {/* 4 Surrounding Tech Badges */}
+                    {config.isPythonCustomGraphic ? (
+                      <g>
+                        {/* Django Badge - Top Left */}
+                        <g transform="translate(75, 155)">
+                          <rect x="0" y="0" width="75" height="34" rx="8" fill="#BAE6FD" opacity="0.9" />
+                          <rect x="3" y="3" width="69" height="28" rx="6" fill="#092E20" />
+                          <text x="37" y="21" fill="#FFFFFF" fontSize="13" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">django</text>
+                        </g>
+                        {/* CherryPy Badge - Top Right */}
+                        <g transform="translate(470, 78)">
+                          <rect x="0" y="0" width="85" height="34" rx="8" fill="#BAE6FD" opacity="0.9" />
+                          <rect x="3" y="3" width="79" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" />
+                          <circle cx="16" cy="18" r="3.5" fill="#DC2626" />
+                          <circle cx="21" cy="20" r="3.5" fill="#DC2626" />
+                          <text x="50" y="21" fill="#0F172A" fontSize="11" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">CherryPy</text>
+                        </g>
+                        {/* Flask Badge - Bottom Left */}
+                        <g transform="translate(110, 290)">
+                          <rect x="0" y="0" width="75" height="34" rx="8" fill="#BAE6FD" opacity="0.9" />
+                          <rect x="3" y="3" width="69" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" />
+                          <text x="37" y="21" fill="#0F172A" fontSize="13" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">Flask</text>
+                        </g>
+                        {/* ZOPE Badge - Bottom Right */}
+                        <g transform="translate(470, 245)">
+                          <rect x="0" y="0" width="80" height="34" rx="8" fill="#BAE6FD" opacity="0.9" />
+                          <rect x="3" y="3" width="74" height="28" rx="6" fill="#BAE6FD" />
+                          <circle cx="16" cy="17" r="7" fill="#0284C7" />
+                          <text x="16" y="21" fill="#FFFFFF" fontSize="9" fontWeight="900" textAnchor="middle">Z</text>
+                          <text x="46" y="21" fill="#0369A1" fontSize="11" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">ZOPE</text>
+                        </g>
+                      </g>
+                    ) : (
+                      config.badges.map((b, idx) => {
+                        const coords = [
+                          { x: 488, y: 82 },
+                          { x: 85, y: 160 },
+                          { x: 118, y: 300 },
+                          { x: 485, y: 252 }
+                        ][idx] || { x: 488, y: 82 };
+
+                        return (
+                          <g key={idx} transform={`translate(${coords.x}, ${coords.y})`}>
+                            <rect x="0" y="0" width="52" height="52" rx="12" fill="#BAE6FD" opacity="0.85" />
+                            <rect x="6" y="6" width="40" height="40" rx="8" fill={b.color || "#0284C7"} />
+                            <text x="26" y="26" fill="#FFFFFF" fontSize="9" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">{b.text}</text>
+                            <text x="26" y="36" fill="#FFFFFF" fontSize="6" fontWeight="700" textAnchor="middle" fontFamily="sans-serif">{b.sub}</text>
+                          </g>
+                        );
+                      })
+                    )}
+                  </svg>
+                )}
               </div>
             </div>
 
@@ -702,7 +723,15 @@ export const HireDedicatedTechDevelopersService = ({ techKey }) => {
             {/* Left Graphic */}
             <div className="lg:col-span-6 relative flex justify-center items-center">
               <div className="relative w-full max-w-[540px] select-none">
-                {config.isBackendCustomGraphic ? (
+                {config.isFintechCustomGraphic ? (
+                  <div className="flex items-center justify-center w-full">
+                    <img
+                      src="/images/services/fintech_section2_illustration.png"
+                      alt={config.section2Title || "Hire Fintech Developers"}
+                      className="w-full max-w-[520px] h-auto object-contain select-none"
+                    />
+                  </div>
+                ) : config.isBackendCustomGraphic ? (
                   <div className="flex items-center justify-center w-full">
                     <img
                       src="/images/services/backend_developer_remote.png"
@@ -953,38 +982,126 @@ export const HireDedicatedTechDevelopersService = ({ techKey }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             <div className="lg:col-span-6 space-y-6 text-left">
               <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Brief About Our {config.techName}<br className="hidden sm:inline" /> Development Services
+                {config.briefTitle || (
+                  <>
+                    Brief About Our {config.techName}<br className="hidden sm:inline" /> Development Services
+                  </>
+                )}
               </h2>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-                {config.briefP1}
-              </p>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-                {config.briefP2}
-              </p>
+              {config.briefDesc ? (
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                  {config.briefDesc}
+                </p>
+              ) : (
+                <>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                    {config.briefP1}
+                  </p>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                    {config.briefP2}
+                  </p>
+                </>
+              )}
             </div>
 
             {/* Right: Workstation Graphic */}
             <div className="lg:col-span-6 relative flex justify-center items-center">
               <div className="relative w-full max-w-[560px] select-none">
-                <svg viewBox="0 0 600 480" className="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="40" y1="440" x2="560" y2="440" stroke="#CBD5E1" strokeWidth="2.5" strokeLinecap="round" />
-                  <g transform="translate(60, 360)">
-                    <polygon points="12,40 38,40 32,76 18,76" fill="#1E3A8A" />
-                    <path d="M12 40 C 0 20, 5 0, 16 2 C 18 18, 16 35, 12 40 Z" fill="#38BDF8" />
-                    <path d="M25 40 C 20 15, 26 -5, 36 0 C 34 18, 30 35, 25 40 Z" fill="#0284C7" />
-                  </g>
-                  <g transform="translate(230, 365)">
-                    <rect x="0" y="0" width="200" height="10" rx="3" fill="#1E293B" />
-                    <rect x="15" y="10" width="6" height="65" fill="#334155" />
-                    <rect x="120" y="10" width="70" height="55" rx="3" fill="#334155" />
-                  </g>
-                  <g transform="translate(260, 275)">
-                    <rect x="0" y="0" width="140" height="90" rx="6" fill="#0F172A" />
-                    <rect x="3" y="3" width="134" height="84" rx="4" fill="#FFFFFF" />
-                    <rect x="3" y="3" width="134" height="12" fill="#005F96" />
-                    <text x="70" y="52" fill="#005F96" fontSize="16" fontWeight="900" textAnchor="middle">{config.techName}</text>
-                  </g>
-                </svg>
+                {config.isFintechCustomGraphic ? (
+                  <div className="flex items-center justify-center w-full">
+                    <img
+                      src="/images/services/fintech_brief_illustration.png"
+                      alt={config.briefTitle || "Outsource Fintech Software Developers"}
+                      className="w-full max-w-[540px] h-auto object-contain select-none"
+                    />
+                  </div>
+                ) : (
+                  <svg viewBox="0 0 600 480" className="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="40" y1="440" x2="560" y2="440" stroke="#CBD5E1" strokeWidth="2.5" strokeLinecap="round" />
+                    <g transform="translate(60, 360)">
+                      <polygon points="12,40 38,40 32,76 18,76" fill="#1E3A8A" />
+                      <path d="M12 40 C 0 20, 5 0, 16 2 C 18 18, 16 35, 12 40 Z" fill="#38BDF8" />
+                      <path d="M25 40 C 20 15, 26 -5, 36 0 C 34 18, 30 35, 25 40 Z" fill="#0284C7" />
+                    </g>
+                    <g transform="translate(230, 365)">
+                      <rect x="0" y="0" width="200" height="10" rx="3" fill="#1E293B" />
+                      <rect x="15" y="10" width="6" height="65" fill="#334155" />
+                      <rect x="120" y="10" width="70" height="55" rx="3" fill="#334155" />
+                    </g>
+                    <g transform="translate(260, 275)">
+                      <rect x="0" y="0" width="140" height="90" rx="6" fill="#0F172A" />
+                      <rect x="3" y="3" width="134" height="84" rx="4" fill="#FFFFFF" />
+                      <rect x="3" y="3" width="134" height="12" fill="#005F96" />
+                      <text x="70" y="52" fill="#005F96" fontSize="16" fontWeight="900" textAnchor="middle">{config.techName}</text>
+                    </g>
+                  </svg>
+                )}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ============================================================
+          WORLD WIDE TOP RATED CLUTCH AWARDS BANNER
+          ============================================================ */}
+      <ClutchTopRatedBanner title={`World Wide Top Rated ${config.techName} Development Company on Clutch`} />
+
+      {/* ============================================================
+          SECTION: Custom Solutions Built for Enterprises (Quote Card + Description)
+          ============================================================ */}
+      <section className="py-16 md:py-20 bg-white font-sans text-slate-900 border-b border-slate-100">
+        <Container>
+          {/* Centered Heading */}
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight text-center mb-10 sm:mb-14">
+            {config.customSolutionsTitle || `Custom ${config.techName} Solutions Built for Enterprises`}
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch max-w-6xl mx-auto">
+            {/* Left Quote Card Box */}
+            <div className="lg:col-span-5 bg-[#EAF6FA] rounded-2xl p-8 sm:p-10 flex flex-col justify-center relative overflow-hidden border border-cyan-100/70 shadow-sm min-h-[220px]">
+              {/* Pointer Triangle pointing to right on large screens */}
+              <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent border-l-[14px] border-l-[#EAF6FA] z-20"></div>
+
+              {/* Background Subtle Contour Topology Pattern */}
+              <svg className="absolute inset-0 w-full h-full text-cyan-200/35 pointer-events-none" viewBox="0 0 400 400" fill="none">
+                <path d="M 0 80 C 100 30, 200 130, 300 80 C 400 30, 500 130, 600 80" stroke="currentColor" strokeWidth="2" />
+                <path d="M 0 180 C 100 130, 200 230, 300 180 C 400 130, 500 230, 600 180" stroke="currentColor" strokeWidth="2" />
+                <path d="M 0 280 C 100 230, 200 330, 300 280 C 400 230, 500 330, 600 280" stroke="currentColor" strokeWidth="2" />
+                <circle cx="200" cy="200" r="150" stroke="currentColor" strokeWidth="1.2" />
+              </svg>
+
+              <div className="relative z-10 space-y-4">
+                {/* Large Quotation Mark Icon */}
+                <div className="text-[#006095]">
+                  <svg viewBox="0 0 48 48" className="w-12 h-12 fill-current">
+                    <path d="M12 28 C 12 18, 20 12, 28 10 L 26 14 C 21 16, 17 20, 17 25 L 23 25 L 23 38 L 12 38 Z M 28 28 C 28 18, 36 12, 44 10 L 42 14 C 37 16, 33 20, 33 25 L 39 25 L 39 38 L 28 38 Z" />
+                  </svg>
+                </div>
+
+                <h3 className="text-2xl sm:text-3xl font-[900] text-[#006095] leading-snug tracking-tight">
+                  {config.customSolutionsQuote || 'Instant Access To Top Talent With Hard-To-Find Skills'}
+                </h3>
+              </div>
+            </div>
+
+            {/* Right Text Column */}
+            <div className="lg:col-span-7 flex flex-col justify-between space-y-6 pt-1">
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                {config.customSolutionsDesc || `We offer full development support for your ${config.techName.toLowerCase()} product from domain modeling to scalable architectures. Our team does the architecture planning, API integration, mobile app development, backend engineering, AI automation, and additional support services. If you're looking to hire a dedicated ${config.techName.toLowerCase()} developer who is knowledgeable in industry standards and modern technologies, we provide a balanced approach of technical expertise and domain experience.`}
+              </p>
+
+              <div>
+                <a
+                  href="#quote-form"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('quote-form')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="inline-flex items-center justify-center bg-[#006095] hover:bg-[#004e7c] text-white font-[800] px-7 py-3.5 rounded-md text-sm sm:text-base transition-all shadow-md active:scale-[0.99] tracking-wide cursor-pointer"
+                >
+                  Let's Discuss Your Project
+                </a>
               </div>
             </div>
           </div>
@@ -1107,23 +1224,37 @@ export const HireDedicatedTechDevelopersService = ({ techKey }) => {
         </Container>
       </section>
 
-      {/* 4 Steps Hiring Process */}
-      <HireDeveloper4Steps
-        title={`Hire ${config.techName} Developers in 4 Easy Steps`}
-        subtitle={`Follow our streamlined onboarding process to bring senior ${config.techName} engineers onto your team within 48 hours.`}
-      />
+      {/* Premium Services Grid */}
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
       {/* Seasoned Experts Team */}
       <SeasonedExpertsTeamSection />
-
-      {/* Tech Stack Proficient Grid */}
-      <TechStackProficientGrid />
 
       {/* Leverage Expertise Grid */}
       <LeverageExpertiseGridSection
         activeTab={leverageTab}
         setActiveTab={setLeverageTab}
       />
+
+      {/* Industry Focused Insights */}
+      <IndustryFocusedInsightsSection />
+
+      {/* Sectors Thriving Section */}
+      <SectorsThrivingSection title="Sectors Thriving Through Firevy’s Bespoke Flutter App Development Services" />
+
+      {/* Employ the Advanced Proficiency */}
+      <LeverageExpertiseGridSection
+        brandName="Firevy.Co"
+        title="Employ the Advanced Proficiency of Firevy.Co's Dedicated Development Team"
+        activeTab={leverageTab}
+        setActiveTab={setLeverageTab}
+      />
+
+      {/* How We Divide Your Project Responsibilities */}
+      <HowWeDivideResponsibilitiesGrid brandName="Firevy.Co" />
+
+      {/* Tech Stack Proficient Grid */}
+      <TechStackProficientGrid />
 
       {/* Innovative Solution Video Section */}
       <InnovativeSolutionVideo />
@@ -1134,11 +1265,14 @@ export const HireDedicatedTechDevelopersService = ({ techKey }) => {
       {/* Client Reviews Dark Section */}
       <ClientReviewsDarkSection />
 
+      {/* 4 Steps Hiring Process */}
+      <HireDeveloper4Steps
+        title={`Hire ${config.techName} Developers in 4 Easy Steps`}
+        subtitle={`Follow our streamlined onboarding process to bring senior ${config.techName} engineers onto your team within 48 hours.`}
+      />
+
       {/* Video Testimonials Story */}
       <VideoTestimonialsStory />
-
-      {/* Industry Focused Insights */}
-      <IndustryFocusedInsightsSection />
 
       {/* Key Metrics / Numbers */}
       <AboutKeyMetrics />
@@ -1160,9 +1294,6 @@ export const HireDedicatedTechDevelopersService = ({ techKey }) => {
 
       {/* Recent Blogs */}
       <RecentBlogsSection />
-
-      {/* Premium Services Grid */}
-      <PremiumServicesGrid companyName="Sapphire" />
 
       {/* ============================================================
           SECTION: What Sets Us Apart As [Tech] Development? (Matching Image 1 Exact Design)

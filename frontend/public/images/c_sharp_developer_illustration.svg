@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" fill="none">
+  <!-- Floor Shadow under monitor and person -->
+  <ellipse cx="375" cy="452" rx="260" ry="12" fill="#0F172A" opacity="0.12" />
+
+  <!-- 1. PERSON ON TOP (Man in suit holding green {} sign) -->
+  <g id="man-on-top">
+    <!-- Legs inside/behind monitor frame -->
+    <rect x="474" y="195" width="10" height="30" rx="3" fill="#1D4ED8" />
+    <rect x="490" y="195" width="10" height="30" rx="3" fill="#1D4ED8" />
+
+    <!-- Torso & Suit -->
+    <path d="M 465 170 L 476 135 L 500 135 L 512 170 Z" fill="#2563EB" />
+    <path d="M 482 135 L 488 170 L 494 135 Z" fill="#FFFFFF" />
+    <path d="M 487 140 L 489 170 L 491 140 Z" fill="#EF4444" />
+    <!-- Suit Lapels -->
+    <path d="M 476 135 L 485 160 L 472 165 Z" fill="#1D4ED8" />
+    <path d="M 500 135 L 491 160 L 504 165 Z" fill="#1D4ED8" />
+
+    <!-- Head & Neck -->
+    <rect x="484" y="128" width="8" height="10" fill="#F5C7A1" />
+    <ellipse cx="488" cy="116" rx="10" ry="13" fill="#F5C7A1" />
+    <!-- Hair -->
+    <path d="M 478 114 C 478 102 485 100 495 102 C 499 104 500 110 498 116 C 495 110 490 108 484 110 Z" fill="#1E293B" />
+
+    <!-- Left Arm (resting on monitor frame) -->
+    <path d="M 506 142 Q 518 170 500 212" stroke="#2563EB" stroke-width="8" stroke-linecap="round" fill="none" />
+    <circle cx="498" cy="214" r="5" fill="#F5C7A1" />
+
+    <!-- Right Arm (raised holding green sign) -->
+    <path d="M 470 142 Q 448 115 440 85" stroke="#2563EB" stroke-width="8" stroke-linecap="round" fill="none" />
+    <circle cx="440" cy="82" r="5" fill="#F5C7A1" />
+
+    <!-- Green {} Code Sign (held in right hand) -->
+    <g transform="translate(390, 48) rotate(-10)">
+      <rect x="0" y="0" width="52" height="38" rx="6" fill="#10B981" />
+      <text x="26" y="26" fill="#FFFFFF" font-size="20" font-weight="bold" font-family="monospace" text-anchor="middle">{ }</text>
+    </g>
+  </g>
+
+  <!-- 2. MAIN BROWSER / MONITOR DISPLAY SCREEN -->
+  <g id="monitor-browser">
+    <!-- Outer Bezel Frame (Dark Blue) -->
+    <rect x="200" y="200" width="375" height="235" rx="8" fill="#21356E" />
+
+    <!-- Screen Bezel Bottom Control Dots -->
+    <circle cx="220" cy="422" r="3" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="230" cy="422" r="3" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="240" cy="422" r="3" fill="#FFFFFF" opacity="0.9" />
+
+    <!-- Display Canvas Screen (Navy Blue) -->
+    <rect x="212" y="212" width="351" height="196" rx="4" fill="#1B2A56" />
+
+    <!-- UI CARD 1: Left Vertical Article Card -->
+    <rect x="230" y="228" width="92" height="164" rx="4" fill="#60A5FA" />
+    <!-- Image Box inside Card 1 -->
+    <rect x="240" y="238" width="72" height="56" rx="3" fill="#93C5FD" />
+    <!-- Sun in Image -->
+    <circle cx="295" cy="252" r="4" fill="#FFFFFF" />
+    <!-- Mountain in Image -->
+    <path d="M 248 286 L 268 262 L 282 276 L 292 268 L 306 286 Z" fill="#FFFFFF" opacity="0.9" />
+    <!-- Text Lines inside Card 1 -->
+    <rect x="240" y="304" width="72" height="7" rx="2" fill="#93C5FD" />
+    <rect x="240" y="317" width="56" height="6" rx="2" fill="#93C5FD" />
+    <rect x="240" y="328" width="64" height="6" rx="2" fill="#93C5FD" />
+
+    <!-- UI CARD 2: Middle Top Video Card with Play Button -->
+    <rect x="334" y="228" width="96" height="76" rx="4" fill="#60A5FA" />
+    <!-- White Play Triangle -->
+    <polygon points="376,256 376,276 394,266" fill="#FFFFFF" />
+
+    <!-- UI CARD 3: Right Top Photo Card -->
+    <g transform="translate(442, 230) rotate(-4)">
+      <rect x="0" y="0" width="88" height="62" rx="4" fill="#60A5FA" />
+      <rect x="8" y="8" width="72" height="46" rx="2" fill="#93C5FD" opacity="0.4" />
+      <!-- Sun -->
+      <circle cx="68" cy="20" r="4" fill="#FFFFFF" />
+      <!-- Mountain -->
+      <path d="M 14 48 L 36 24 L 52 38 L 62 30 L 76 48 Z" fill="#FFFFFF" opacity="0.95" />
+    </g>
+
+    <!-- UI CARD 4: Middle Bottom Left Square Card -->
+    <rect x="334" y="316" width="38" height="38" rx="4" fill="#60A5FA" />
+
+    <!-- UI CARD 5: Middle Bottom Right Text Bars -->
+    <rect x="384" y="318" width="124" height="8" rx="3" fill="#60A5FA" />
+    <rect x="384" y="333" width="104" height="8" rx="3" fill="#60A5FA" />
+    <rect x="384" y="348" width="114" height="8" rx="3" fill="#60A5FA" />
+  </g>
+
+  <!-- 3. PERSON ON LEFT (Woman holding white "ex" badge) -->
+  <g id="woman-on-left">
+    <!-- Legs & Feet -->
+    <rect x="156" y="380" width="7" height="65" rx="3" fill="#F5C7A1" />
+    <rect x="167" y="380" width="7" height="65" rx="3" fill="#F5C7A1" />
+    <!-- Navy Blue Shoes -->
+    <ellipse cx="157" cy="445" rx="7" ry="4" fill="#1D3557" />
+    <ellipse cx="168" cy="445" rx="7" ry="4" fill="#1D3557" />
+
+    <!-- Navy Blue Skirt -->
+    <path d="M 150 335 L 178 335 L 182 382 L 146 382 Z" fill="#1D3557" />
+
+    <!-- Pink/Magenta Vest over White Shirt -->
+    <path d="M 152 292 L 176 292 L 179 336 L 149 336 Z" fill="#EC4899" />
+    <!-- White Collared Shirt V-Neck -->
+    <polygon points="160,292 168,292 164,306" fill="#FFFFFF" />
+
+    <!-- Head & Neck -->
+    <rect x="161" y="284" width="6" height="10" fill="#F5C7A1" />
+    <ellipse cx="164" cy="274" rx="9" ry="11" fill="#F5C7A1" />
+
+    <!-- Hair & Ponytail -->
+    <path d="M 156 270 C 156 260 164 258 171 262 C 174 266 172 276 168 280 C 160 278 156 274 156 270 Z" fill="#472723" />
+    <!-- Ponytail trailing left -->
+    <path d="M 157 268 C 148 270 144 282 146 292 C 149 295 152 288 155 276 Z" fill="#472723" />
+    <!-- Pink Hairband -->
+    <ellipse cx="156" cy="269" rx="3" ry="4" fill="#EC4899" />
+
+    <!-- Raised Arms holding the white "ex" card -->
+    <path d="M 154 300 L 176 265 L 186 268 L 160 306 Z" fill="#EC4899" />
+    <path d="M 172 300 L 192 265 L 202 268 L 178 306 Z" fill="#EC4899" />
+    <!-- Hands -->
+    <circle cx="186" cy="264" r="4" fill="#F5C7A1" />
+    <circle cx="202" cy="264" r="4" fill="#F5C7A1" />
+
+    <!-- White Card with Black Circle "ex" Logo -->
+    <g transform="translate(182, 222)">
+      <rect x="0" y="0" width="56" height="44" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+      <!-- Black Circle Logo inside card -->
+      <circle cx="28" cy="22" r="16" fill="#000000" />
+      <!-- White "ex" text in center -->
+      <text x="28" y="27" fill="#FFFFFF" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">ex</text>
+    </g>
+  </g>
+</svg>

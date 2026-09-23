@@ -4,32 +4,37 @@ import Container from './Container';
 export const TrustedBrandsGrid = () => {
   // 23 Exact Original Brand Logo Images matching reference screenshot 1:1
   const globalBrands = [
+    // Row 1
+    { name: 'AMERICAN EXPRESS', logo: '/images/logo_american_express.svg' },
     { name: 'LARSEN & TOUBRO', logo: '/images/logo_larsen_toubro.svg' },
     { name: 'LafargeHolcim', logo: '/images/logo_lafargeHolcim.svg' },
     { name: 'CLP INDIA', logo: '/images/logo_clp_india.svg' },
     { name: 'adani', logo: '/images/logo_adani.svg' },
     { name: 'GFL', logo: '/images/logo_gfl.svg' },
-    { name: 'TOYOTA', logo: '/images/toyota_logo.webp' },
 
+    // Row 2
+    { name: 'TOYOTA', logo: '/images/toyota_logo.webp' },
     { name: 'ACC LIMITED', logo: '/images/logo_acc.svg' },
     { name: 'Ambuja Cement', logo: '/images/logo_ambuja.svg' },
     { name: 'MORRIS GARAGES', logo: '/images/logo_mg_motors.svg' },
     { name: 'JSW Energy', logo: '/images/logo_jswenergy.svg' },
     { name: 'vedanta', logo: '/images/logo_vedanta.svg' },
+
+    // Row 3
     { name: 'HONDA', logo: '/images/honda_logo.png' },
-
-    { name: 'Dr.Reddy\'s', logo: '/images/logo_drreddy.png' },
+    { name: "Dr.Reddy's", logo: '/images/logo_drreddy.png' },
     { name: 'Chevron Oronite', logo: '/images/logo_chevron_oronite.svg' },
+    { name: 'ORIENT CEMENT', logo: '/images/orient_logo.svg' },
+    { name: 'Almarai', logo: '/images/almarai_corporate_logo.png' },
     { name: 'Cummins', logo: '/images/ncummins.png' },
-    { name: 'TATVAM OVERSEAS', logo: '/images/tatvam_overseas.jpg' },
-    { name: 'DH', logo: '/images/dh_logo.jpg' },
-    { name: 'SEASWORTH JEWELS', logo: '/images/seasworth_jewels.png' },
 
+    // Row 4
     { name: 'TDSG', logo: '/images/logo_tdsg.png' },
-    { name: 'L\'ORÉAL', logo: '/images/logo_loreal.png' },
+    { name: "L'ORÉAL", logo: '/images/logo_loreal.png' },
     { name: 'ASTRAL PIPES', logo: '/images/logo_astral.png' },
-    { name: 'TITAN', logo: '/images/logo_titan.webp' },
-    { name: 'BANK NOTE PAPER MILL', logo: '/images/logo_bnpl_india.svg' }
+    { name: 'TITAN COMPANY', logo: '/images/logo_titan.webp' },
+    { name: 'BANK NOTE PAPER MILL', logo: '/images/logo_bnpl_india.svg' },
+    { name: 'Alembic', logo: '/images/alembic_logo.svg' }
   ];
 
   return (

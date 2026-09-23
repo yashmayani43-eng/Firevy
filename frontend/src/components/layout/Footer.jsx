@@ -99,14 +99,14 @@ export const Footer = () => {
     aiServices: {
       title: 'AI Services',
       links: [
-        { name: 'AI Development Service', path: '/services/ai-machine-learning' },
-        { name: 'AI Copilot Development', path: '/services/ai-machine-learning' },
-        { name: 'Ethical AI Development', path: '/services/ai-machine-learning' },
-        { name: 'AI Prompt Engineering', path: '/services/ai-machine-learning' },
-        { name: 'Adaptive AI Development', path: '/services/ai-machine-learning' },
-        { name: 'Generative AI Development', path: '/services/ai-machine-learning' },
-        { name: 'AI in Business Intelligence Development', path: '/services/ai-machine-learning' },
-        { name: 'AI in Marketing', path: '/services/ai-machine-learning' }
+        { name: 'AI Development Service', path: '/services/artificial-intelligence-development' },
+        { name: 'AI Copilot Development', path: '/services/ai-copilot-development' },
+        { name: 'Ethical AI Development', path: '/services/ethical-ai-development' },
+        { name: 'AI Prompt Engineering', path: '/services/ai-prompt-engineering' },
+        { name: 'Adaptive AI Development', path: '/services/adaptive-ai-development' },
+        { name: 'Generative AI Development', path: '/services/generative-ai-development' },
+        { name: 'AI in Business Intelligence Development', path: '/services/ai-in-business-intelligence' },
+        { name: 'AI in Marketing', path: '/services/ai-in-marketing' }
       ]
     },
     solutions: {
@@ -233,48 +233,28 @@ export const Footer = () => {
                         </span>
                       </a>
                     )}
-<<<<<<< HEAD
-                    {(footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662') && (
+                    {(footerConfig?.salesContact?.phoneIndia || 'IN: +91 7069370629') && (
                       <a
-                        href={`tel:${(footerConfig?.salesContact?.phoneIndia || '+91-942-970-9662').replace(/[^0-9+]/g, '')}`}
+                        href={`tel:${(footerConfig?.salesContact?.phoneIndia || '+91 7069370629').replace(/[^0-9+]/g, '')}`}
                         className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
                       >
                         <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
                         <span className="font-[600]">
-                          {footerConfig?.salesContact?.phoneIndia || 'IN:+91-942-970-9662'}
+                          {footerConfig?.salesContact?.phoneIndia || 'IN: +91 7069370629'}
                         </span>
                       </a>
                     )}
-                    {(footerConfig?.salesContact?.phoneUS || 'US:+1-754-258-7670') && (
+                    {footerConfig?.salesContact?.phoneUS && (
                       <a
-                        href={`tel:${(footerConfig?.salesContact?.phoneUS || '+1-754-258-7670').replace(/[^0-9+]/g, '')}`}
+                        href={`tel:${footerConfig.salesContact.phoneUS.replace(/[^0-9+]/g, '')}`}
                         className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
                       >
                         <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
                         <span className="font-[600]">
-                          {footerConfig?.salesContact?.phoneUS || 'US:+1-754-258-7670'}
+                          {footerConfig.salesContact.phoneUS}
                         </span>
                       </a>
                     )}
-
-=======
-                    {(() => {
-                      const phoneSales = (footerConfig?.salesContact?.phoneIndia && !footerConfig.salesContact.phoneIndia.includes('942-970-9662'))
-                        ? footerConfig.salesContact.phoneIndia.replace(/^IN:\s*/, '')
-                        : '+91 7069370629';
-                      return (
-                        <a
-                          href={`tel:${phoneSales.replace(/[^0-9+]/g, '')}`}
-                          className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                        >
-                          <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                          <span className="font-[600]">
-                            {phoneSales}
-                          </span>
-                        </a>
-                      );
-                    })()}
->>>>>>> 979fa8c29cedbfb19c2154841c24c7bc0abe9e37
                   </div>
                 </div>
 

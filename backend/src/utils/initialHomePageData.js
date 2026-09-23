@@ -1025,13 +1025,8 @@ export const initialHomePageData = {
       salesContact: {
         title: 'Contact For Sales',
         email: 'contact@firevy.co',
-<<<<<<< HEAD
         phoneIndia: 'IN: +91 7069370629',
         phoneUS: 'US: +1-754-258-7670'
-=======
-        phoneIndia: '+91 7069370629',
-        phoneUS: ''
->>>>>>> 979fa8c29cedbfb19c2154841c24c7bc0abe9e37
       },
       careerContact: {
         title: 'Contact for Career (Jobs)',
@@ -1052,11 +1047,7 @@ export const initialHomePageData = {
         {
           id: 'office_in',
           country: 'India(HQ)',
-<<<<<<< HEAD
           flag: '/images/india_office.svg',
-=======
-          flag: '🇮🇳',
->>>>>>> 979fa8c29cedbfb19c2154841c24c7bc0abe9e37
           address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004'
         },
         {
@@ -1084,17 +1075,10 @@ export const initialHomePageData = {
           address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom'
         },
         {
-<<<<<<< HEAD
           id: 'office_ca',
           country: 'Canada',
           flag: '/images/canada_office.svg',
           address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8'
-=======
-          id: 'office_ae',
-          country: 'UAE',
-          flag: '🇦🇪',
-          address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai'
->>>>>>> 979fa8c29cedbfb19c2154841c24c7bc0abe9e37
         }
       ],
       socialLinks: {

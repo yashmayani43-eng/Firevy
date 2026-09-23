@@ -68,6 +68,7 @@ const Terms = lazy(() => import('./pages/Terms'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const BarberAppDevelopmentService = lazy(() => import('./components/services/BarberAppDevelopmentService').then(m => ({ default: m.BarberAppDevelopmentService })));
 const OnDemandAppDevelopmentService = lazy(() => import('./components/services/OnDemandAppDevelopmentService').then(m => ({ default: m.OnDemandAppDevelopmentService })));
+const ArtificialIntelligenceDevelopmentService = lazy(() => import('./components/services/ArtificialIntelligenceDevelopmentService').then(m => ({ default: m.ArtificialIntelligenceDevelopmentService })));
 
 // Public Layout Wrapper Component
 const PublicLayoutWrapper = () => (
@@ -136,11 +137,16 @@ export function App() {
                 <Route path="/awards-recognition" element={<CompanySubDetails />} />
                 <Route path="/insightful-videos" element={<CompanySubDetails />} />
                 <Route path="/blog" element={<CompanySubDetails />} />
+                <Route path="/services" element={<Services />} />
                 <Route path="/services/barber-app-development" element={<BarberAppDevelopmentService />} />
                 <Route path="/barber-app-development" element={<BarberAppDevelopmentService />} />
                 <Route path="/services/on-demand-app-development" element={<OnDemandAppDevelopmentService />} />
                 <Route path="/on-demand-app-development" element={<OnDemandAppDevelopmentService />} />
-                <Route path="/services" element={<Services />} />
+                <Route path="/services/artificial-intelligence-development" element={<ArtificialIntelligenceDevelopmentService />} />
+                <Route path="/services/artificial%20intelligence%20development" element={<ArtificialIntelligenceDevelopmentService />} />
+                <Route path="/services/artificial intelligence development" element={<ArtificialIntelligenceDevelopmentService />} />
+                <Route path="/artificial-intelligence-development" element={<ArtificialIntelligenceDevelopmentService />} />
+                <Route path="/artificial intelligence development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/services/:slug" element={<ServiceDetails />} />
                 <Route path="/services/ride-sharing-app-development" element={<ServiceDetails />} />
                 <Route path="/ride-sharing-app-development" element={<ServiceDetails />} />
@@ -219,9 +225,23 @@ export function App() {
                 <Route path="/services/back-end-development" element={<ServiceDetails />} />
                 <Route path="/back-end-development" element={<ServiceDetails />} />
 
-                {/* AI & ML Development Services - Coming Soon */}
+                {/* AI & ML Development Services */}
                 <Route path="/services/artificial-intelligence-development" element={<ServiceDetails />} />
                 <Route path="/artificial-intelligence-development" element={<ServiceDetails />} />
+                <Route path="/services/generative-ai-development" element={<ServiceDetails />} />
+                <Route path="/generative-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/ai-copilot-development" element={<ServiceDetails />} />
+                <Route path="/ai-copilot-development" element={<ServiceDetails />} />
+                <Route path="/services/ethical-ai-development" element={<ServiceDetails />} />
+                <Route path="/ethical-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/ai-prompt-engineering" element={<ServiceDetails />} />
+                <Route path="/ai-prompt-engineering" element={<ServiceDetails />} />
+                <Route path="/services/adaptive-ai-development" element={<ServiceDetails />} />
+                <Route path="/adaptive-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/ai-in-business-intelligence" element={<ServiceDetails />} />
+                <Route path="/ai-in-business-intelligence" element={<ServiceDetails />} />
+                <Route path="/services/ai-in-marketing" element={<ServiceDetails />} />
+                <Route path="/ai-in-marketing" element={<ServiceDetails />} />
                 <Route path="/services/machine-learning-development" element={<ServiceDetails />} />
                 <Route path="/machine-learning-development" element={<ServiceDetails />} />
                 <Route path="/services/chatbot-development" element={<ServiceDetails />} />

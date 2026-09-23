@@ -20,7 +20,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'backend': { title: 'Back End Development', category: 'Back End Development' },
 
   // AI & ML Development Services
-  'artificial-intelligence-development': { title: 'Artificial Intelligence Development', category: 'AI & ML Development' },
   'machine-learning-development': { title: 'Machine Learning Development', category: 'AI & ML Development' },
   'chatbot-development': { title: 'Chatbot Development', category: 'AI & ML Development' },
   'data-analytics-services': { title: 'Data Analytics Services', category: 'AI & ML Development' },
@@ -143,8 +142,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'backend-development' ||
     clean === 'back-end-development' ||
     clean === 'backend' ||
-    clean === 'artificial-intelligence-development' ||
-    clean === 'artificial-intelligence' ||
     clean === 'machine-learning-development' ||
     clean === 'machine-learning' ||
     clean === 'chatbot-development' ||

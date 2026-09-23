@@ -52,6 +52,12 @@ import JavaDevelopmentService from '../components/services/JavaDevelopmentServic
 import NodeJsDevelopmentService from '../components/services/NodeJsDevelopmentService';
 import GenerativeAiDevelopmentService from '../components/services/GenerativeAiDevelopmentService';
 import ArtificialIntelligenceDevelopmentService from '../components/services/ArtificialIntelligenceDevelopmentService';
+import AiCopilotDevelopmentService from '../components/services/AiCopilotDevelopmentService';
+import EthicalAiDevelopmentService from '../components/services/EthicalAiDevelopmentService';
+import AiPromptEngineeringService from '../components/services/AiPromptEngineeringService';
+import AdaptiveAiDevelopmentService from '../components/services/AdaptiveAiDevelopmentService';
+import AiInBusinessIntelligenceService from '../components/services/AiInBusinessIntelligenceService';
+import AiInMarketingService from '../components/services/AiInMarketingService';
 import BlockchainDevelopmentService from '../components/services/BlockchainDevelopmentService';
 import FullStackDevelopmentService from '../components/services/FullStackDevelopmentService';
 import VirtualRealityDevelopmentService from '../components/services/VirtualRealityDevelopmentService';
@@ -618,15 +624,25 @@ export const ServiceDetails = () => {
     currentSlug.includes('genai') ||
     currentSlug.includes('gen-ai');
 
+  const isAiCopilot = currentSlug.includes('copilot') || currentSlug.includes('ai-copilot');
+  const isEthicalAi = currentSlug.includes('ethical-ai') || currentSlug.includes('ethical') || currentSlug.includes('responsible-ai');
+  const isAiPrompt = currentSlug.includes('prompt') || currentSlug.includes('prompt-engineering');
+  const isAdaptiveAi = currentSlug.includes('adaptive-ai') || currentSlug.includes('adaptive');
+  const isAiBi = currentSlug.includes('business-intelligence') || currentSlug.includes('ai-in-business-intelligence') || currentSlug.includes('ai-bi');
+  const isAiMarketing = currentSlug.includes('ai-in-marketing') || currentSlug.includes('marketing-ai') || (currentSlug.includes('ai') && currentSlug.includes('marketing'));
+
   const isMachineLearningEngineer = currentSlug.includes('machine-learning') ||
     currentSlug.includes('ml-engineer') ||
     currentSlug.includes('hire-machine-learning') ||
     currentSlug.includes('hire-ml');
 
-  const isArtificialIntelligence = !isHireAiApp && !isGenerativeAi && !isMachineLearningEngineer && (
+  const isArtificialIntelligence = !isHireAiApp && !isGenerativeAi && !isMachineLearningEngineer && !isAiCopilot && !isEthicalAi && !isAiPrompt && !isAdaptiveAi && !isAiBi && !isAiMarketing && (
+    normalizedSlug.includes('artificial-intelligence') ||
     currentSlug.includes('artificial-intelligence') ||
+    currentSlug.includes('artificial intelligence') ||
     currentSlug.includes('ai-ml') ||
     currentSlug.includes('ai-development') ||
+    normalizedSlug.includes('ai-development') ||
     currentSlug === 'ai' ||
     currentSlug === 'ai-services' ||
     currentSlug.includes('hire-ai-developers')
@@ -980,7 +996,7 @@ export const ServiceDetails = () => {
   const isApi = (currentSlug.includes('hire-api') || currentSlug.includes('api-developer') || currentSlug.includes('api-developers')) && !currentSlug.includes('fastapi') && !currentSlug.includes('fast-api');
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
   const isMernStack = currentSlug.includes('mern-stack') || currentSlug.includes('hire-mern-stack') || currentSlug === 'services/hire-mern-stack-developers' || currentSlug === 'hire-mern-stack-developers' || currentSlug === 'services/hire-mern-stack-developer' || currentSlug === 'hire-mern-stack-developer' || currentSlug === 'mern-stack-development' || currentSlug === 'services/mern-stack-development';
-  const isBackendComingSoon = !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
+  const isBackendComingSoon = !isArtificialIntelligence && !isGenerativeAi && !isAiCopilot && !isEthicalAi && !isAiPrompt && !isAdaptiveAi && !isAiBi && !isAiMarketing && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
 
   useEffect(() => {
     if (isBackendComingSoon || isHireNodeJs || isHireNet || isHireDjango || isHirePhp) {
@@ -995,6 +1011,14 @@ export const ServiceDetails = () => {
     }
     window.scrollTo(0, 0);
   }, [currentSlug, isBackendComingSoon]);
+
+  if (isArtificialIntelligence) {
+    return <ArtificialIntelligenceDevelopmentService />;
+  }
+
+  if (isGenerativeAi) {
+    return <GenerativeAiDevelopmentService />;
+  }
 
   if (isHireDjango) {
     return <HireDjangoDevelopersService />;
@@ -1102,6 +1126,30 @@ export const ServiceDetails = () => {
 
   if (isMachineLearningEngineer) {
     return <HireMachineLearningEngineerService />;
+  }
+
+  if (isAiCopilot) {
+    return <AiCopilotDevelopmentService />;
+  }
+
+  if (isEthicalAi) {
+    return <EthicalAiDevelopmentService />;
+  }
+
+  if (isAiPrompt) {
+    return <AiPromptEngineeringService />;
+  }
+
+  if (isAdaptiveAi) {
+    return <AdaptiveAiDevelopmentService />;
+  }
+
+  if (isAiBi) {
+    return <AiInBusinessIntelligenceService />;
+  }
+
+  if (isAiMarketing) {
+    return <AiInMarketingService />;
   }
 
   if (isBarberApp) {
