@@ -44,6 +44,19 @@ const getOrCreateConfig = async () => {
         sections: initialHomePageData.sections,
         sectionsList: defaultSectionsList
       });
+    } else {
+      // Auto-migrate legacy DB entries: replace USA with Germany office if present
+      const currentOffices = config?.sections?.footerSection?.offices;
+      if (Array.isArray(currentOffices)) {
+        const hasUSA = currentOffices.some(o => (o.country || '').toLowerCase() === 'usa' || o.id === 'office_us');
+        const hasGermany = currentOffices.some(o => (o.country || '').toLowerCase().includes('german'));
+        if (hasUSA || !hasGermany) {
+          if (!config.sections.footerSection) config.sections.footerSection = {};
+          config.sections.footerSection.offices = initialHomePageData.sections.footerSection.offices;
+          config.markModified('sections');
+          await config.save();
+        }
+      }
     }
     return config;
   } catch (error) {
@@ -91,13 +104,36 @@ const formatHomeResponse = (sectionsOrder, sections) => {
     if (Array.isArray(secs.footerSection.offices)) {
       secs.footerSection.offices = secs.footerSection.offices.map((office, idx) => {
         const cLower = (office.country || '').toLowerCase();
+        if (office.id === 'office_us' || cLower === 'usa' || cLower.includes('united states') || (idx === 1 && !cLower.includes('germany'))) {
+          return {
+            id: 'office_de',
+            country: 'Germany',
+            flag: '/images/germany_office.svg',
+            address: 'walter meckauer str 11, 90478 nurenberg'
+          };
+        }
         let addr = office.address;
+        let flag = office.flag;
         if (cLower.includes('india') || idx === 0 || (addr && addr.includes('Ganesh Meridian'))) {
           addr = '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004';
-        } else if (cLower.includes('uae') || cLower.includes('dubai') || idx === 5 || (addr && (addr.includes('Ghoroob') || addr.includes('Mirdif')))) {
+          flag = '/images/india_office.svg';
+        } else if (cLower.includes('germany') || cLower.includes('germeny') || idx === 1) {
+          addr = 'walter meckauer str 11, 90478 nurenberg';
+          flag = '/images/germany_office.svg';
+        } else if (cLower.includes('uae') || cLower.includes('dubai') || (addr && (addr.includes('Ghoroob') || addr.includes('Mirdif')))) {
           addr = '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai';
+          flag = '/images/uae_office.svg';
+        } else if (cLower.includes('aus')) {
+          addr = 'U 2B 305 Harborne Street, Glendalough 6016 WA';
+          flag = '/images/aus_office.svg';
+        } else if (cLower.includes('uk') || cLower.includes('kingdom')) {
+          addr = '42 Audley Avenue, Gillingham, ME73AY United Kingdom';
+          flag = '/images/uk_office.svg';
+        } else if (cLower.includes('canada')) {
+          addr = '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8';
+          flag = '/images/canada_office.svg';
         }
-        return { ...office, address: addr };
+        return { ...office, address: addr, flag: flag || office.flag };
       });
     }
   }

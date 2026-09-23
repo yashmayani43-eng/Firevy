@@ -36,12 +36,12 @@ export const FooterSectionEditor = ({ data, onChange }) => {
   };
 
   const offices = Array.isArray(data?.offices) ? data.offices : [
-    { id: 'in', country: 'India(HQ)', flag: '🇮🇳', address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004' },
-    { id: 'us', country: 'USA', flag: '🇺🇸', address: '5004 NW 116th Ave Coral Springs, Florida, FL 33076' },
-    { id: 'ca', country: 'Canada', flag: '🇨🇦', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' },
-    { id: 'au', country: 'Australia', flag: '🇦🇺', address: 'U 2B 305 Harborne Street, Glendalough 6016 WA' },
-    { id: 'uk', country: 'UK', flag: '🇬🇧', address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom' },
-    { id: 'ae', country: 'UAE', flag: '🇦🇪', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' }
+    { id: 'office_in', country: 'India(HQ)', flag: '/images/india_office.svg', address: '2nd Floor , Opp. Vishal Nagar Society , Katargam, Surat - 395004' },
+    { id: 'office_de', country: 'Germany', flag: '/images/germany_office.svg', address: 'walter meckauer str 11, 90478 nurenberg' },
+    { id: 'office_ae', country: 'UAE', flag: '/images/uae_office.svg', address: '1st Floor 105, Ahli Residence Near by Al Shaab Colony HOR AL ANZ , Dubai' },
+    { id: 'office_au', country: 'Australia', flag: '/images/aus_office.svg', address: 'U 2B 305 Harborne Street, Glendalough 6016 WA' },
+    { id: 'office_uk', country: 'UK', flag: '/images/uk_office.svg', address: '42 Audley Avenue, Gillingham, ME73AY United Kingdom' },
+    { id: 'office_ca', country: 'Canada', flag: '/images/canada_office.svg', address: '111 Tarawood lane NE, unit#403 Calgary AB, T3J 0G8' }
   ];
 
   const socialLinks = data?.socialLinks || {
