@@ -49,11 +49,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'progressive-web-app': { title: 'Progressive Web App', category: 'Front End Development' },
 
   // Microsoft Development Services
-  'microsoft-development': { title: 'Microsoft Development', category: 'Microsoft Development' },
-  'asp-net-core-development': { title: 'ASP.NET Core Development', category: 'Microsoft Development' },
-  'net-application-development': { title: '.NET Application Development', category: 'Microsoft Development' },
-  'asp-net-development': { title: 'ASP.NET Development', category: 'Microsoft Development' },
-  'asp-net-migration-service': { title: 'ASP.NET Migration Service', category: 'Microsoft Development' },
   'microsoft-dynamics-365-consulting': { title: 'Microsoft Dynamics 365 Consulting', category: 'Microsoft Development' },
   'kentico-development-services': { title: 'Kentico Development Services', category: 'Microsoft Development' },
   'dotnetnuke-development': { title: 'Dotnetnuke Development', category: 'Microsoft Development' },
@@ -176,11 +171,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'web-portal-development' ||
     clean === 'web3-development' ||
     clean === 'progressive-web-app' ||
-    clean === 'microsoft-development' ||
-    clean === 'asp-net-core-development' ||
-    clean === 'net-application-development' ||
-    clean === 'asp-net-development' ||
-    clean === 'asp-net-migration-service' ||
     clean === 'microsoft-dynamics-365-consulting' ||
     clean === 'kentico-development-services' ||
     clean === 'dotnetnuke-development' ||

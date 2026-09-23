@@ -1025,13 +1025,8 @@ export const initialHomePageData = {
       salesContact: {
         title: 'Contact For Sales',
         email: 'contact@firevy.co',
-<<<<<<< HEAD
         phoneIndia: 'IN: +91 7069370629',
         phoneUS: 'US: +1-754-258-7670'
-=======
-        phoneIndia: '+91 7069370629',
-        phoneUS: ''
->>>>>>> 979fa8c29cedbfb19c2154841c24c7bc0abe9e37
       },
       careerContact: {
         title: 'Contact for Career (Jobs)',

@@ -460,6 +460,7 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
             <h2 className="text-[38px] sm:text-[46px] font-[900] text-slate-900 tracking-tight leading-tight font-sans">
               What Our Firevian Says
             </h2>
+          </div>
           <div className="bg-white rounded-[24px] p-8 sm:p-12 border border-slate-200/90 shadow-[0_8px_30px_rgba(0,0,0,0.04)] max-w-5xl mx-auto relative flex flex-col md:flex-row items-center md:items-start gap-8">
             <div className="flex flex-col items-center shrink-0 text-center">
               <div className="w-[120px] h-[120px] rounded-full overflow-hidden shadow-md bg-slate-200 border-4 border-white mb-3 ring-4 ring-cyan-100">
