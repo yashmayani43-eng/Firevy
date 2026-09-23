@@ -29,7 +29,7 @@ import {
 export const ExtendedRealityDevelopmentService = () => {
 
 
-  // Benefits of Extended Reality Development Cards (Matching Reference exact 7 cards structure)
+  // Benefits of Extended Reality Development Cards (Balanced 6 cards matching 3x2 grid)
   const xrBenefits = [
     {
       title: 'Unrivaled User Engagement',
@@ -66,7 +66,7 @@ export const ExtendedRealityDevelopmentService = () => {
     },
     {
       title: 'Cross-Platform Portability',
-      desc: 'Deploy spatial applications seamlessly across Meta Quest, Apple Vision Pro, mobile iOS/Android, and standard WebXR browsers through unified engine pipelines.',
+      desc: 'Deploy future-ready spatial applications seamlessly across Meta Quest, Apple Vision Pro, mobile iOS/Android, and standard WebXR browsers through unified engine pipelines.',
       icon: (
         <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="6" y="8" width="24" height="18" rx="2" />
@@ -98,16 +98,6 @@ export const ExtendedRealityDevelopmentService = () => {
           <circle cx="32" cy="16" r="6" />
           <path d="M8 36c0-4.4 3.6-8 8-8h16c4.4 0 8 3.6 8 8" />
           <path d="M24 24v6M21 27h6" />
-        </svg>
-      )
-    },
-    {
-      title: 'Future-Ready Innovation',
-      desc: 'Position your business at the forefront of the spatial computing era, outpacing competitors with intuitive digital-physical hybrid workflows.',
-      icon: (
-        <svg viewBox="0 0 48 48" className="w-11 h-11 text-[#0068A8]" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M24 6l3.5 7.5L36 15l-6 6 1.5 8.5L24 25.5 16.5 29.5 18 21l-6-6 8.5-1.5L24 6z" />
-          <path d="M24 34v8M16 42h16" />
         </svg>
       )
     }
@@ -459,7 +449,7 @@ export const ExtendedRealityDevelopmentService = () => {
             </p>
           </div>
 
-          {/* 7 Benefits Cards Grid */}
+          {/* 6 Benefits Cards Grid (Balanced 3x2) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {xrBenefits.map((item, index) => (
               <div
