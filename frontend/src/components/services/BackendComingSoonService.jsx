@@ -212,9 +212,7 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'software-product-discovery' ||
     clean === 'extended-reality-development' ||
     clean === 'extended-reality' ||
-    clean === 'xr-development' ||
-    clean === 'metaverse-development-company' ||
-    clean === 'metaverse-development'
+    clean === 'xr-development'
   );
 };
 

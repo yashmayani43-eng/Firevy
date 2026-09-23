@@ -99,6 +99,7 @@ import DigitalMarketingService from '../components/services/DigitalMarketingServ
 import TestingQaService from '../components/services/TestingQaService';
 import NintexDevelopmentService from '../components/services/NintexDevelopmentService';
 import ExtendedRealityDevelopmentService from '../components/services/ExtendedRealityDevelopmentService';
+import MetaverseDevelopmentCompanyService from '../components/services/MetaverseDevelopmentCompanyService';
 import MobileAppPortingService from '../components/services/MobileAppPortingService';
 import DataCleansingService from '../components/services/DataCleansingService';
 import DataAnnotationService from '../components/services/DataAnnotationService';
@@ -883,6 +884,13 @@ export const ServiceDetails = () => {
     currentSlug === 'services/extended-reality-development-services' ||
     currentSlug === 'services/extended-reality';
 
+  const isMetaverseCompany = currentSlug === 'metaverse-development-company' ||
+    currentSlug === 'metaverse-development-services' ||
+    currentSlug === 'metaverse-development' ||
+    currentSlug === 'services/metaverse-development-company' ||
+    currentSlug === 'services/metaverse-development-services' ||
+    currentSlug === 'services/metaverse-development';
+
   const unslugify = (str) => {
     if (!str) return 'Enterprise Tech Solution';
     return str
@@ -978,7 +986,7 @@ export const ServiceDetails = () => {
   };
 
   const isDataScientist = currentSlug.includes('data-scientist') || currentSlug.includes('data-science');
-  const isMetaverse = currentSlug.includes('metaverse') || currentSlug.includes('hire-metaverse');
+  const isMetaverse = (currentSlug.includes('metaverse') || currentSlug.includes('hire-metaverse')) && !isMetaverseCompany;
   const isDedicatedDevelopers = currentSlug.includes('hire-dedicated-developer') || currentSlug.includes('hire-dedicated-developers') || currentSlug === 'hire-dedicated' || currentSlug === 'services/hire-dedicated-developers';
   const isSoftwareDevelopers = currentSlug.includes('hire-software-developer') || currentSlug.includes('hire-software-developers') || currentSlug.includes('hire-software') || currentSlug === 'software-developers' || currentSlug === 'services/hire-software-developers';
   const isLlmEngineers = currentSlug.includes('llm') || currentSlug.includes('hire-llm') || currentSlug === 'services/hire-llm-engineers' || currentSlug === 'services/hire-llm-engineers-for-ai-development' || currentSlug === 'hire-llm-engineers-for-ai-development';
@@ -990,7 +998,7 @@ export const ServiceDetails = () => {
   const isApi = (currentSlug.includes('hire-api') || currentSlug.includes('api-developer') || currentSlug.includes('api-developers')) && !currentSlug.includes('fastapi') && !currentSlug.includes('fast-api');
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
   const isMernStack = currentSlug.includes('mern-stack') || currentSlug.includes('hire-mern-stack') || currentSlug === 'services/hire-mern-stack-developers' || currentSlug === 'hire-mern-stack-developers' || currentSlug === 'services/hire-mern-stack-developer' || currentSlug === 'hire-mern-stack-developer' || currentSlug === 'mern-stack-development' || currentSlug === 'services/mern-stack-development';
-  const isBackendComingSoon = !isExtendedReality && !isNintex && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
+  const isBackendComingSoon = !isMetaverseCompany && !isExtendedReality && !isNintex && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
 
   useEffect(() => {
     if (isBackendComingSoon || isHireNodeJs || isHireNet || isHireDjango || isHirePhp) {
@@ -998,7 +1006,7 @@ export const ServiceDetails = () => {
       window.scrollTo(0, 0);
       return;
     }
-    if (!isBigCommerce && !isGolang && !isLamp && !isLaravel && !isDjango && !isSymfony && !isMernStack && !isWindows11 && !isWindowsApp && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isExtendedReality && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
+    if (!isBigCommerce && !isGolang && !isLamp && !isLaravel && !isDjango && !isSymfony && !isMernStack && !isWindows11 && !isWindowsApp && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isExtendedReality && !isMetaverseCompany && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
       fetchServiceDetails();
     } else {
       setLoading(false);
@@ -1076,6 +1084,10 @@ export const ServiceDetails = () => {
 
   if (isExtendedReality) {
     return <ExtendedRealityDevelopmentService />;
+  }
+
+  if (isMetaverseCompany) {
+    return <MetaverseDevelopmentCompanyService />;
   }
 
   if (isBackendComingSoon) {
@@ -1420,6 +1432,10 @@ export const ServiceDetails = () => {
 
   if (isExtendedReality) {
     return <ExtendedRealityDevelopmentService />;
+  }
+
+  if (isMetaverseCompany) {
+    return <MetaverseDevelopmentCompanyService />;
   }
 
   if (isMobileAppPorting) {
