@@ -21,6 +21,7 @@ import SapphireFaqSection from '../common/SapphireFaqSection';
 import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
 import ItConsultingRecentBlogsSection from './ItConsultingRecentBlogsSection';
 import HealthcareChallengeCtaBanner from '../common/HealthcareChallengeCtaBanner';
+import ExtendedRealityComprehensiveServices from './ExtendedRealityComprehensiveServices';
 import {
   ArrowRight,
   Quote
@@ -472,63 +473,9 @@ export const ExtendedRealityDevelopmentService = () => {
       </section>
 
       {/* ========================================================================= */}
-      {/* OUR COMPREHENSIVE EXTENDED REALITY DEVELOPMENT SERVICES */}
+      {/* OUR COMPREHENSIVE EXTENDED REALITY DEVELOPMENT SERVICES (EDGE-TO-EDGE CAROUSEL) */}
       {/* ========================================================================= */}
-      <section className="py-16 lg:py-24 bg-white border-t border-slate-100">
-        <Container>
-          {/* Header */}
-          <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#0B0F19] tracking-tight leading-tight mb-3.5 font-sans">
-              Our Comprehensive Extended Reality Development Services
-            </h2>
-            <p className="text-sm sm:text-[15.5px] text-slate-600 font-normal leading-relaxed font-sans max-w-3xl mx-auto">
-              We provide a variety of Extended Reality Solutions that are focused on improving business impact and user engagement!
-            </p>
-          </div>
-
-          {/* 6 Comprehensive Services Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
-            {[
-              {
-                title: 'Enterprise Extended Reality Solutions',
-                desc: 'Deliver XR-enabled training modules, virtual showrooms, and industrial solutions for enterprises.'
-              },
-              {
-                title: 'Extended Reality Consulting & Integration',
-                desc: 'Leverage expertise on the implementation of Extended Reality Services for Digital goals, objectives, and infrastructure.'
-              },
-              {
-                title: 'XR Maintenance and Optimization Services',
-                desc: 'Maintain updated XR systems aligned to all devices and platforms.'
-              },
-              {
-                title: 'Augmented Reality (AR) App Development',
-                desc: 'Design AR applications that shape digital content over the physical world to increase customer engagement and interactive experience.'
-              },
-              {
-                title: 'Virtual Reality (VR) Solutions',
-                desc: 'Engage in impactful 3D simulations for training, gaming, and visualization experience in order to enhance communication and learning.'
-              },
-              {
-                title: 'Mixed Reality (MR) Application Development',
-                desc: 'Engage and design MR applications that combine virtual assets and the real-world environment for productive collaboration.'
-              }
-            ].map((card, idx) => (
-              <div
-                key={idx}
-                className="bg-[#E6F5FC] rounded-2xl p-7 sm:p-8 text-left transition-all duration-300 hover:shadow-md hover:-translate-y-1 flex flex-col justify-start border border-[#D0EEFA]"
-              >
-                <h3 className="text-[18px] sm:text-[20px] font-bold text-[#0B0F19] mb-3 leading-snug font-sans">
-                  {card.title}
-                </h3>
-                <p className="text-slate-600 text-sm leading-[1.65] font-normal font-sans">
-                  {card.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
+      <ExtendedRealityComprehensiveServices />
 
       {/* ========================================================================= */}
       {/* 12. HIRING MODELS */}
