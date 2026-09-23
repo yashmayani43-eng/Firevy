@@ -715,6 +715,13 @@ export const ProductDevelopmentService = () => {
       </section>
 
       {/* ========================================================================= */}
+      {/* SECTORS THRIVING FIREVY'S TOP PRODUCT DEVELOPMENT SERVICES */}
+      {/* ========================================================================= */}
+      <SectorsThrivingSection
+        title="Sectors Thriving Firevy’s Top Product Development Services"
+      />
+
+      {/* ========================================================================= */}
       {/* 8. INDUSTRY-FOCUSED INSIGHTS TO ELEVATE YOUR BUSINESS */}
       {/* ========================================================================= */}
       <IndustryFocusedInsightsSection subtitle="Trending Industries that Use Digital Product Development" />
@@ -737,13 +744,6 @@ export const ProductDevelopmentService = () => {
       <CustomItServicesSection
         title="Firevy Custom Product Development Services"
         subtitle="Firevy product engineers thrive at developing compelling, market-defining applications by utilizing our knowledge of the latest software development frameworks. Firevy provides full-service product development customized to meet your exact market requirements."
-      />
-
-      {/* ========================================================================= */}
-      {/* 12. SECTORS THRIVING FIREVY'S TOP PRODUCT DEVELOPMENT SERVICES */}
-      {/* ========================================================================= */}
-      <SectorsThrivingSection
-        title="Sectors Thriving Firevy’s Top Product Development Services"
       />
 
 
