@@ -252,21 +252,10 @@ export const OurTeamForm = ({
   const leadershipHeading = rawContent.leadershipHeading || 'Leadership Team';
 
   const defaultLeadershipTeam = [
-    { name: 'Ankit Gokani', role: 'HR Lead', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Ankit Morasiya', role: 'QA Lead', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Ashish Dubey', role: 'MERN Lead', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Galav Shukla', role: 'Sr. BDR - Service', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Hitarth Joshi', role: 'Module Lead - Mobile', image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Jaymin Prajapati', role: 'SEO Lead', image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Mayur Trivedi', role: 'PHP Lead', image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Mehul Gajjar', role: '.NET Lead', image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Mitesh Aroda', role: 'Vidyalaya Tech Support Lead', image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Prashant Patel', role: 'UI/UX Lead', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Sahil Detroja', role: 'Web Development Lead', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Satish Prajapati', role: '.NET Lead', image: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Shrenik Shah', role: 'Mobile Lead', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Umang Barot', role: 'Project Lead', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Vipul Patel', role: '.NET Lead', image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=500&q=80' }
+    { name: 'Sahaj Maniya', role: 'HR Lead', image: '/images/Sahaj_Maniya.JPG', objectPosition: '50% 85%' },
+    { name: 'Purvi Pipaliya', role: 'QA Lead', image: '/images/Purvi.JPG', objectPosition: 'center center' },
+    { name: 'Rutvik Vastarpara', role: 'MERN Lead', image: '/images/Rutvik.JPG', objectPosition: 'center center' },
+    { name: 'Hiren Rajani', role: 'Sr. BDR - Service', image: '/images/Hiren.JPG', objectPosition: 'center center' }
   ];
   const leadershipTeam = Array.isArray(rawContent.leadershipTeam) && rawContent.leadershipTeam.length > 0
     ? rawContent.leadershipTeam
@@ -303,9 +292,9 @@ export const OurTeamForm = ({
 
   // 5. Testimonial State
   const defaultFirevianSay = {
-    name: 'Vipul Patel',
-    role: 'Team Lead',
-    avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
+    name: 'Sahaj Maniya',
+    role: 'Project Manager',
+    avatar: '/images/Sahaj_Maniya.JPG',
     quote: "I am proud to be working for a company like Firevy.Co that values honesty and a fair attitude to all which has also contributed to a very valuable and delightful experience. The work culture and the integrity of the company's management are remarkable. In Firevy.Co, we get all the freedom to think out-of-the-box and take complete ownership of the work we do. Being a client-focused company, Firevy.Co makes us understand the clients' requirements easily so that the work can be coordinated effectively. There are always opportunities to learn and no limitations to scale new heights in this organization."
   };
   const firevianSay = { ...defaultFirevianSay, ...(rawContent.firevianSay || {}) };

@@ -104,6 +104,17 @@ export const Home = () => {
 
   const { sectionsOrder, sections } = pageConfig;
 
+  // Guarantee workProcessGrid ('Process We Follow') is included in rendering order
+  let effectiveSectionsOrder = Array.isArray(sectionsOrder) && sectionsOrder.length > 0 ? [...sectionsOrder] : [...initialSectionsOrder];
+  if (!effectiveSectionsOrder.includes('workProcessGrid')) {
+    const portfolioIdx = effectiveSectionsOrder.indexOf('portfolioShowcase');
+    if (portfolioIdx !== -1) {
+      effectiveSectionsOrder.splice(portfolioIdx + 1, 0, 'workProcessGrid');
+    } else {
+      effectiveSectionsOrder.push('workProcessGrid');
+    }
+  }
+
   return (
     <>
       <SEO
@@ -111,15 +122,15 @@ export const Home = () => {
         description="We design and develop scalable web, mobile, cloud, AI, and enterprise software solutions that transform ambitious ideas into measurable business outcomes."
       />
 
-      {/* Dynamically Render All 22 Sections in Configured Order */}
-      {sectionsOrder.map((sectionKey) => {
+      {/* Dynamically Render All Sections in Configured Order */}
+      {effectiveSectionsOrder.map((sectionKey) => {
         const Component = SECTION_COMPONENTS[sectionKey];
         if (!Component) return null;
 
         const sectionData = sections?.[sectionKey] || initialHomePageData.sections[sectionKey] || {};
         
-        // Skip rendering if section is disabled/hidden
-        if (sectionData.isVisible === false || sectionData.isEnabled === false) {
+        // Ensure workProcessGrid is always visible on Home
+        if (sectionKey !== 'workProcessGrid' && (sectionData.isVisible === false || sectionData.isEnabled === false)) {
           return null;
         }
 

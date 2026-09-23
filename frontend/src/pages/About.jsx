@@ -383,19 +383,8 @@ export const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="lg:col-span-6 grid grid-cols-2 gap-4">
-              <div className="rounded-[14px] overflow-hidden shadow-md border border-slate-200/90 h-[175px] bg-slate-100">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Team 1" className="w-full h-full object-cover" />
-              </div>
-              <div className="rounded-[14px] overflow-hidden shadow-md border border-slate-200/90 h-[175px] bg-slate-100">
-                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="Team 2" className="w-full h-full object-cover" />
-              </div>
-              <div className="rounded-[14px] overflow-hidden shadow-md border border-slate-200/90 h-[175px] bg-slate-100">
-                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Team 3" className="w-full h-full object-cover" />
-              </div>
-              <div className="rounded-[14px] overflow-hidden shadow-md border border-slate-200/90 h-[175px] bg-slate-100">
-                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" alt="Team 4" className="w-full h-full object-cover" />
-              </div>
+            <div className="lg:col-span-6 rounded-[20px] overflow-hidden shadow-lg border border-slate-200/90 h-[380px] sm:h-[420px] bg-slate-100">
+              <img src="/images/our_culture.JPG" alt="Our Culture at Firevy.Co" className="w-full h-full object-cover" style={{ objectPosition: '50% 85%' }} />
             </div>
           </div>
         </div>
@@ -415,83 +404,27 @@ export const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-[16px] border border-slate-200/90 shadow-sm p-6 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
               <div className="w-[160px] h-[180px] rounded-[12px] overflow-hidden shrink-0 bg-slate-200">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Leader 1" className="w-full h-full object-cover" />
+                <img src="/images/Tushil_mayani.JPG" alt="Mr. Tushil Mayani" className="w-full h-full object-cover" style={{ objectPosition: '50% 85%' }} />
               </div>
               <div className="space-y-2 text-left pt-2">
-                <h3 className="text-[20px] font-[800] text-slate-900 font-sans">Mr. Kumaril Patel</h3>
+                <h3 className="text-[20px] font-[800] text-slate-900 font-sans">Mr. Tushil Mayani</h3>
                 <p className="text-[14px] font-[600] text-slate-500 font-sans">CEO & Co-Founder</p>
-                <div className="pt-2"><a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-[#0077B5] hover:bg-[#005f93] text-white inline-flex items-center justify-center shadow-sm"><Linkedin className="w-4 h-4 fill-current" /></a></div>
               </div>
             </div>
             <div className="bg-white rounded-[16px] border border-slate-200/90 shadow-sm p-6 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
               <div className="w-[160px] h-[180px] rounded-[12px] overflow-hidden shrink-0 bg-slate-200">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Leader 2" className="w-full h-full object-cover" />
+                <img src="/images/Yash_Mayani.JPG" alt="Mr. Yash Mayani" className="w-full h-full object-cover" style={{ objectPosition: '50% 85%' }} />
               </div>
               <div className="space-y-2 text-left pt-2">
-                <h3 className="text-[20px] font-[800] text-slate-900 font-sans">Mr. Rajendra Patel</h3>
+                <h3 className="text-[20px] font-[800] text-slate-900 font-sans">Mr. Yash Mayani</h3>
                 <p className="text-[14px] font-[600] text-slate-500 font-sans">CTO & Co-Founder</p>
-                <div className="pt-2"><a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-[#0077B5] hover:bg-[#005f93] text-white inline-flex items-center justify-center shadow-sm"><Linkedin className="w-4 h-4 fill-current" /></a></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 8. "Our World Class Products" */}
-      <section className="py-20 bg-[#F0F7FA] border-b border-slate-200 text-slate-900 font-sans relative overflow-hidden">
-        <div className="max-w-[1360px] mx-auto px-4 sm:px-8 relative z-10">
-          <div className="text-center max-w-4xl mx-auto mb-14">
-            <h2 className="text-[36px] sm:text-[44px] font-[900] text-slate-900 tracking-tight leading-tight mb-2 font-sans">
-              Our World Class Products
-            </h2>
-            <p className="text-[15px] sm:text-[16px] text-slate-500 font-[400] font-sans">
-              Our proven excellence for product development
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-[16px] border border-slate-200/90 shadow-[0px_6px_25px_rgba(0,0,0,0.04)] p-8 sm:p-10 text-left space-y-4 hover:shadow-lg transition-all flex flex-col justify-between">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-2">
-                  <span className="text-[#FF6600] font-[900] text-3xl font-serif tracking-tight">VV</span>
-                  <div>
-                    <span className="text-[#FF6600] font-[900] text-2xl tracking-tight">Vidyalaya</span>
-                    <span className="text-[10px] text-slate-500 align-top">®</span>
-                    <div className="text-[11px] font-[700] text-amber-600 uppercase tracking-wider">Digitizing Schools</div>
-                  </div>
-                </div>
-                <p className="text-[14.5px] text-slate-600 leading-relaxed font-[400] font-sans">
-                  Efficient & Innovative School ERP known for its unmatched service since 22+ years. We digitalized 1600+ Schools globally.
-                </p>
-              </div>
-              <div className="pt-2">
-                <Link to="/products" className="inline-flex items-center text-[14.5px] font-[700] text-[#006B8F] hover:text-[#004A75] space-x-1.5 font-sans">
-                  <span>Explore More</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-            <div className="bg-white rounded-[16px] border border-slate-200/90 shadow-[0px_6px_25px_rgba(0,0,0,0.04)] p-8 sm:p-10 text-left space-y-4 hover:shadow-lg transition-all flex flex-col justify-between">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-2">
-                  <span className="text-[#008080] font-[900] text-3xl font-sans tracking-tight">Occu</span>
-                  <span className="text-[#006699] font-[900] text-3xl font-sans tracking-tight">Care</span>
-                  <span className="text-[10px] text-slate-500 align-top">™</span>
-                </div>
-                <div className="text-[11px] font-[600] text-slate-500">a healthier, more productive workforce</div>
-                <p className="text-[14.5px] text-slate-600 leading-relaxed font-[400] font-sans">
-                  OccuCare empower organizations to protect, maintain and promote the well-being of workers.
-                </p>
-              </div>
-              <div className="pt-2">
-                <Link to="/products" className="inline-flex items-center text-[14.5px] font-[700] text-[#006B8F] hover:text-[#004A75] space-x-1.5 font-sans">
-                  <span>Explore More</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* 9. "Trusted By The World’s Leading Brands" */}
       <section className="py-20 bg-white border-b border-slate-200 text-slate-900 font-sans">
@@ -519,63 +452,7 @@ export const About = () => {
       {/* 10. "What Our Clients Say" (Exact Slider Carousel Matching Image 1) */}
       <ClientReviewsDarkSection />
 
-      {/* 11. "Insights" */}
-      <section className="py-20 bg-white border-b border-slate-100 text-slate-900 font-sans">
-        <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
-          <div className="text-center max-w-4xl mx-auto mb-14">
-            <h2 className="text-[36px] sm:text-[44px] font-[900] text-slate-900 tracking-tight leading-tight mb-3 font-sans">
-              Insights
-            </h2>
-            <p className="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed max-w-3xl mx-auto font-[400] font-sans">
-              Based on boundless enthusiasm and challenging spirit, Firevy.Co is committed to deliver excellence.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="rounded-[16px] overflow-hidden shadow-md border border-slate-200 h-[280px] bg-slate-100 group relative">
-              <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
-                alt="Corporate Headquarters"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="rounded-[16px] overflow-hidden shadow-md border border-slate-200 h-[280px] bg-slate-100 group relative">
-              <img
-                src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
-                alt="Occucon Event"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute bottom-4 left-4 bg-slate-900/80 backdrop-blur-xs text-white px-3 py-1 rounded-[6px] text-xs font-[700]">
-                Occucon Event
-              </div>
-            </div>
-            <div className="rounded-[16px] overflow-hidden shadow-md border border-slate-200 h-[280px] bg-slate-100 group relative">
-              <img
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
-                alt="Exhibition Booth"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="md:col-span-2 rounded-[16px] overflow-hidden shadow-md border border-slate-200 h-[300px] bg-slate-100 group relative">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
-                alt="Our Team Banquet"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute bottom-4 left-4 bg-slate-900/80 backdrop-blur-xs text-white px-3 py-1 rounded-[6px] text-xs font-[700]">
-                Our Team
-              </div>
-            </div>
-            <div className="rounded-[16px] overflow-hidden shadow-md border border-slate-200 h-[300px] bg-slate-100 group relative">
-              <img
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
-                alt="Tech Showcase"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 12. "Corporate Social Responsibility" */}
       <section className="py-20 sm:py-24 bg-[#F8FAFC] border-b border-slate-200 text-left font-sans">
