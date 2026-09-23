@@ -385,6 +385,12 @@ export function App() {
                 <Route path="/mobile-app-porting" element={<ServiceDetails />} />
                 <Route path="/services/mobile-app-porting-services" element={<ServiceDetails />} />
                 <Route path="/mobile-app-porting-services" element={<ServiceDetails />} />
+                <Route path="/services/software-development-service" element={<ServiceDetails />} />
+                <Route path="/software-development-service" element={<ServiceDetails />} />
+                <Route path="/services/software-development-services" element={<ServiceDetails />} />
+                <Route path="/software-development-services" element={<ServiceDetails />} />
+                <Route path="/services/software-development" element={<ServiceDetails />} />
+                <Route path="/software-development" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing" element={<ServiceDetails />} />

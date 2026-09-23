@@ -101,6 +101,7 @@ import NintexDevelopmentService from '../components/services/NintexDevelopmentSe
 import ExtendedRealityDevelopmentService from '../components/services/ExtendedRealityDevelopmentService';
 import MetaverseDevelopmentCompanyService from '../components/services/MetaverseDevelopmentCompanyService';
 import MobileAppPortingService from '../components/services/MobileAppPortingService';
+import SoftwareDevelopmentService from '../components/services/SoftwareDevelopmentService';
 import DataCleansingService from '../components/services/DataCleansingService';
 import DataAnnotationService from '../components/services/DataAnnotationService';
 import PatientManagementService from '../components/services/PatientManagementService';
@@ -417,6 +418,11 @@ export const ServiceDetails = () => {
     currentSlug.includes('e-commerce') ||
     currentSlug.includes('clown-polska')
   );
+
+  const isSoftwareDevelopment = currentSlug === 'software-development-service' ||
+    currentSlug === 'software-development-services' ||
+    currentSlug === 'software-development' ||
+    currentSlug === 'services/software-development-service';
 
   const isMobileAppPorting = currentSlug === 'mobile-app-porting' ||
     currentSlug === 'mobile-app-porting-services' ||
@@ -1452,6 +1458,10 @@ export const ServiceDetails = () => {
 
   if (isProductDevelopment) {
     return <ProductDevelopmentService />;
+  }
+
+  if (isSoftwareDevelopment) {
+    return <SoftwareDevelopmentService />;
   }
 
   if (isMobileAppPorting) {
