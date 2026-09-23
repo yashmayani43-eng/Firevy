@@ -657,8 +657,11 @@ export const CompanySubDetails = () => {
     };
 
     // 11. Team Banner
-    const teamBanner = content.teamBanner || {
-      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80'
+    const rawTeamBannerImage = content.teamBanner?.image;
+    const teamBanner = {
+      image: (rawTeamBannerImage && !rawTeamBannerImage.includes('unsplash.com'))
+        ? rawTeamBannerImage
+        : '/images/team.jpeg'
     };
 
     const heroImage = dynamicSection?.heroImage || '/images/about-hero-laptop.svg';

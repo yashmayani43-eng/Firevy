@@ -678,7 +678,7 @@ export const initialCompanySections = {
         image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1000&q=80'
       },
       teamBanner: {
-        image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80'
+        image: '/images/team.jpeg'
       },
       cta: {
         title: "Let's Work Together on Your Next Digital Project",

@@ -238,16 +238,31 @@ export const Footer = () => {
                       const phoneIndia = (rawPhoneIndia && !rawPhoneIndia.includes('942-970-9662'))
                         ? rawPhoneIndia
                         : '+91 7069370629';
+                      const rawPhoneUS = footerConfig?.salesContact?.phoneUS;
+                      const phoneUS = rawPhoneUS || '+1-754-258-7670';
                       return (
-                        <a
-                          href={`tel:${phoneIndia.replace(/[^0-9+]/g, '')}`}
-                          className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
-                        >
-                          <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
-                          <span className="font-[600]">
-                            {phoneIndia}
-                          </span>
-                        </a>
+                        <>
+                          <a
+                            href={`tel:${phoneIndia.replace(/[^0-9+]/g, '')}`}
+                            className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                          >
+                            <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                            <span className="font-[600]">
+                              {phoneIndia}
+                            </span>
+                          </a>
+                          {phoneUS && (
+                            <a
+                              href={`tel:${phoneUS.replace(/[^0-9+]/g, '')}`}
+                              className="flex items-center space-x-2 hover:text-[#006B8F] transition-colors"
+                            >
+                              <Phone className="w-4 h-4 text-[#0080B0] shrink-0" />
+                              <span className="font-[600]">
+                                {phoneUS}
+                              </span>
+                            </a>
+                          )}
+                        </>
                       );
                     })()}
                   </div>
