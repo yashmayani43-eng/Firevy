@@ -373,6 +373,12 @@ export function App() {
                 <Route path="/services/nintex-development" element={<ServiceDetails />} />
                 <Route path="/nintex-development" element={<ServiceDetails />} />
                 <Route path="/services/nintex" element={<ServiceDetails />} />
+                <Route path="/services/extended-reality-development" element={<ServiceDetails />} />
+                <Route path="/extended-reality-development" element={<ServiceDetails />} />
+                <Route path="/services/extended-reality-development-services" element={<ServiceDetails />} />
+                <Route path="/extended-reality-development-services" element={<ServiceDetails />} />
+                <Route path="/services/extended-reality" element={<ServiceDetails />} />
+                <Route path="/extended-reality" element={<ServiceDetails />} />
                 <Route path="/services/mobile-app-porting" element={<ServiceDetails />} />
                 <Route path="/mobile-app-porting" element={<ServiceDetails />} />
                 <Route path="/services/mobile-app-porting-services" element={<ServiceDetails />} />
