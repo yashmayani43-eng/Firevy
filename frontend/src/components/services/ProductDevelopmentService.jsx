@@ -595,39 +595,7 @@ export const ProductDevelopmentService = () => {
       <SapphireSeasonedExpertsSection />
 
       {/* ========================================================================= */}
-      {/* 8. INDUSTRY-FOCUSED INSIGHTS TO ELEVATE YOUR BUSINESS */}
-      {/* ========================================================================= */}
-      <IndustryFocusedInsightsSection subtitle="Trending Industries that Use Digital Product Development" />
-
-      {/* ========================================================================= */}
-      {/* 9. ABOUT US STATS */}
-      {/* ========================================================================= */}
-      <AboutUsStats companyName="Firevy" />
-
-      {/* ========================================================================= */}
-      {/* 10. IMPACT OF CUSTOM PRODUCT DEVELOPMENT FOR BUSINESS SUCCESS */}
-      {/* ========================================================================= */}
-      <TransformativeImpactSection
-        title="Impact Of Custom Product Development for Business Success"
-      />
-
-      {/* ========================================================================= */}
-      {/* 11. FIREVY CUSTOM SOFTWARE DEVELOPMENT SERVICES */}
-      {/* ========================================================================= */}
-      <CustomItServicesSection
-        title="Firevy Custom Product Development Services"
-        subtitle="Firevy product engineers thrive at developing compelling, market-defining applications by utilizing our knowledge of the latest software development frameworks. Firevy provides full-service product development customized to meet your exact market requirements."
-      />
-
-      {/* ========================================================================= */}
-      {/* 12. SECTORS THRIVING FIREVY'S TOP PRODUCT DEVELOPMENT SERVICES */}
-      {/* ========================================================================= */}
-      <SectorsThrivingSection
-        title="Sectors Thriving Firevy’s Top Product Development Services"
-      />
-
-      {/* ========================================================================= */}
-      {/* 13. SUCCESS STORIES + 4 STAT BOXES */}
+      {/* SUCCESS STORIES + 4 STAT BOXES */}
       {/* ========================================================================= */}
       <section className="py-20 bg-[#DDF1FB] text-center font-sans border-t border-cyan-100">
         <Container>
@@ -745,6 +713,39 @@ export const ProductDevelopmentService = () => {
           </div>
         </Container>
       </section>
+
+      {/* ========================================================================= */}
+      {/* 8. INDUSTRY-FOCUSED INSIGHTS TO ELEVATE YOUR BUSINESS */}
+      {/* ========================================================================= */}
+      <IndustryFocusedInsightsSection subtitle="Trending Industries that Use Digital Product Development" />
+
+      {/* ========================================================================= */}
+      {/* 9. ABOUT US STATS */}
+      {/* ========================================================================= */}
+      <AboutUsStats companyName="Firevy" />
+
+      {/* ========================================================================= */}
+      {/* 10. IMPACT OF CUSTOM PRODUCT DEVELOPMENT FOR BUSINESS SUCCESS */}
+      {/* ========================================================================= */}
+      <TransformativeImpactSection
+        title="Impact Of Custom Product Development for Business Success"
+      />
+
+      {/* ========================================================================= */}
+      {/* 11. FIREVY CUSTOM SOFTWARE DEVELOPMENT SERVICES */}
+      {/* ========================================================================= */}
+      <CustomItServicesSection
+        title="Firevy Custom Product Development Services"
+        subtitle="Firevy product engineers thrive at developing compelling, market-defining applications by utilizing our knowledge of the latest software development frameworks. Firevy provides full-service product development customized to meet your exact market requirements."
+      />
+
+      {/* ========================================================================= */}
+      {/* 12. SECTORS THRIVING FIREVY'S TOP PRODUCT DEVELOPMENT SERVICES */}
+      {/* ========================================================================= */}
+      <SectorsThrivingSection
+        title="Sectors Thriving Firevy’s Top Product Development Services"
+      />
+
 
       {/* ========================================================================= */}
       {/* 14. TECHNOLOGY STACK THAT FIREVY SOFTWARE DEVELOPERS USE PROFICIENTLY */}
