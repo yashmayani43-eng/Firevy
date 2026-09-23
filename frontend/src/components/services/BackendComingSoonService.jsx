@@ -190,7 +190,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'bullion-exchange-app-development' ||
     clean === 'digital-wayfinding-solutions' ||
     clean === 'ethereum-app-development' ||
-    clean === 'product-development' ||
     clean === 'software-development-service' ||
     clean === 'software-development-services' ||
     clean === 'software-development' ||

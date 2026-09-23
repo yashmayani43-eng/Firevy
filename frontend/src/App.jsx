@@ -274,6 +274,8 @@ export function App() {
                 <Route path="/startup-consulting-services" element={<ServiceDetails />} />
                 <Route path="/services/epicor-erp-consulting-services" element={<ServiceDetails />} />
                 <Route path="/epicor-erp-consulting-services" element={<ServiceDetails />} />
+                <Route path="/services/product-development" element={<ServiceDetails />} />
+                <Route path="/product-development" element={<ServiceDetails />} />
                 <Route path="/services/devops-consulting-service" element={<ServiceDetails />} />
                 <Route path="/devops-consulting-service" element={<ServiceDetails />} />
                 <Route path="/services/devops-consulting-services" element={<ServiceDetails />} />
