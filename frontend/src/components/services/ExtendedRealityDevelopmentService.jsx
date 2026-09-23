@@ -8,7 +8,7 @@ import PremiumServicesGrid from '../common/PremiumServicesGrid';
 import AndroidHiringModels from './AndroidHiringModels';
 import ProcessWeFollow from '../common/ProcessWeFollow';
 import TrustRecognitionBanner from '../home/TrustRecognitionBanner';
-import TechStackProficientGrid from '../common/TechStackProficientGrid';
+
 import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
 import TransformativeImpactSection from './TransformativeImpactSection';
@@ -104,33 +104,7 @@ export const ExtendedRealityDevelopmentService = () => {
     }
   ];
 
-  // Extended Reality Tech Stack
-  const xrTechStack = [
-    {
-      category: '3D Game Engines',
-      pills: ['Unity 3D', 'Unreal Engine 5', 'Godot', 'Custom C++ Engines']
-    },
-    {
-      category: 'Spatial SDKs & Frameworks',
-      pills: ['Apple VisionOS', 'ARKit', 'Google ARCore', 'Meta XR Core SDK', 'OpenXR', 'Microsoft MRTK']
-    },
-    {
-      category: 'WebXR & 3D Web',
-      pills: ['Three.js', 'Babylon.js', 'WebGL', 'A-Frame', 'React Three Fiber']
-    },
-    {
-      category: '3D Modeling & Animation',
-      pills: ['Blender', 'Autodesk Maya', '3ds Max', 'Substance 3D Painter', 'ZBrush', 'Cinema 4D']
-    },
-    {
-      category: 'Languages & Shaders',
-      pills: ['C#', 'C++', 'Python', 'TypeScript', 'GLSL / HLSL', 'Swift (VisionOS)']
-    },
-    {
-      category: 'QA, Optimization & Testing',
-      pills: ['Meta Quest Developer Hub', 'RenderDoc', 'Unity Profiler', 'Unreal Insights', 'Postman']
-    }
-  ];
+
 
   // Extended Reality FAQs
   const xrFaqs = [
@@ -507,13 +481,7 @@ export const ExtendedRealityDevelopmentService = () => {
       {/* ========================================================================= */}
       <SuccessMatrix />
 
-      {/* ========================================================================= */}
-      {/* 18. TECHNOLOGY STACK */}
-      {/* ========================================================================= */}
-      <TechStackProficientGrid
-        title="Technology Stack That Firevy Extended Reality Developers Use Proficiently"
-        rows={xrTechStack}
-      />
+
 
       {/* ========================================================================= */}
       {/* 19. DIGITAL TRANSFORMATION THROUGH INNOVATION (CASE STUDIES) */}
