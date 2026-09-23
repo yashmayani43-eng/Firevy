@@ -102,6 +102,7 @@ import ExtendedRealityDevelopmentService from '../components/services/ExtendedRe
 import MetaverseDevelopmentCompanyService from '../components/services/MetaverseDevelopmentCompanyService';
 import MobileAppPortingService from '../components/services/MobileAppPortingService';
 import SoftwareDevelopmentService from '../components/services/SoftwareDevelopmentService';
+import DigitalTransformationService from '../components/services/DigitalTransformationService';
 import DataCleansingService from '../components/services/DataCleansingService';
 import DataAnnotationService from '../components/services/DataAnnotationService';
 import PatientManagementService from '../components/services/PatientManagementService';
@@ -418,6 +419,12 @@ export const ServiceDetails = () => {
     currentSlug.includes('e-commerce') ||
     currentSlug.includes('clown-polska')
   );
+
+  const isDigitalTransformation = currentSlug === 'digital-transformation-services' ||
+    currentSlug === 'digital-transformation-service' ||
+    currentSlug === 'digital-transformation' ||
+    currentSlug === 'services/digital-transformation-services' ||
+    currentSlug === 'services/digital-transformation';
 
   const isSoftwareDevelopment = currentSlug === 'software-development-service' ||
     currentSlug === 'software-development-services' ||
@@ -1012,7 +1019,7 @@ export const ServiceDetails = () => {
   const isApi = (currentSlug.includes('hire-api') || currentSlug.includes('api-developer') || currentSlug.includes('api-developers')) && !currentSlug.includes('fastapi') && !currentSlug.includes('fast-api');
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
   const isMernStack = currentSlug.includes('mern-stack') || currentSlug.includes('hire-mern-stack') || currentSlug === 'services/hire-mern-stack-developers' || currentSlug === 'hire-mern-stack-developers' || currentSlug === 'services/hire-mern-stack-developer' || currentSlug === 'hire-mern-stack-developer' || currentSlug === 'mern-stack-development' || currentSlug === 'services/mern-stack-development';
-  const isBackendComingSoon = !isSoftwareDevelopment && !isProductDevelopment && !isMetaverseCompany && !isExtendedReality && !isNintex && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
+  const isBackendComingSoon = !isDigitalTransformation && !isSoftwareDevelopment && !isProductDevelopment && !isMetaverseCompany && !isExtendedReality && !isNintex && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
 
   useEffect(() => {
     if (isBackendComingSoon || isHireNodeJs || isHireNet || isHireDjango || isHirePhp) {
@@ -1020,7 +1027,7 @@ export const ServiceDetails = () => {
       window.scrollTo(0, 0);
       return;
     }
-    if (!isSoftwareDevelopment && !isBigCommerce && !isGolang && !isLamp && !isLaravel && !isDjango && !isSymfony && !isMernStack && !isWindows11 && !isWindowsApp && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isExtendedReality && !isMetaverseCompany && !isProductDevelopment && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
+    if (!isDigitalTransformation && !isSoftwareDevelopment && !isBigCommerce && !isGolang && !isLamp && !isLaravel && !isDjango && !isSymfony && !isMernStack && !isWindows11 && !isWindowsApp && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isExtendedReality && !isMetaverseCompany && !isProductDevelopment && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
       fetchServiceDetails();
     } else {
       setLoading(false);
@@ -1102,6 +1109,10 @@ export const ServiceDetails = () => {
 
   if (isMetaverseCompany) {
     return <MetaverseDevelopmentCompanyService />;
+  }
+
+  if (isDigitalTransformation) {
+    return <DigitalTransformationService />;
   }
 
   if (isSoftwareDevelopment) {

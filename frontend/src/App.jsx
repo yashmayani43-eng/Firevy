@@ -391,6 +391,12 @@ export function App() {
                 <Route path="/software-development-services" element={<ServiceDetails />} />
                 <Route path="/services/software-development" element={<ServiceDetails />} />
                 <Route path="/software-development" element={<ServiceDetails />} />
+                <Route path="/services/digital-transformation-services" element={<ServiceDetails />} />
+                <Route path="/digital-transformation-services" element={<ServiceDetails />} />
+                <Route path="/services/digital-transformation-service" element={<ServiceDetails />} />
+                <Route path="/digital-transformation-service" element={<ServiceDetails />} />
+                <Route path="/services/digital-transformation" element={<ServiceDetails />} />
+                <Route path="/digital-transformation" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing" element={<ServiceDetails />} />
