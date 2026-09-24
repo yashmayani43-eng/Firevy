@@ -3,14 +3,25 @@ import { getMediaUrl } from '../../utils/mediaUrl';
 import { homePageService } from '../../services/homePageService';
 
 const defaultBrandLogos = [
+  { name: 'Almarai', color: 'text-blue-600', symbol: '🥛', image: '/images/almarai_corporate_logo.png', isActive: true },
+  { name: 'ORIENT CEMENT', color: 'text-emerald-600', symbol: '🏗️', image: '/images/orient_logo.svg', isActive: true },
+  { name: 'AMERICAN EXPRESS', color: 'text-blue-700', symbol: '💳', image: '/images/logo_american_express.svg', isActive: true },
+  { name: 'Alembic', color: 'text-blue-600', symbol: '🧪', image: '/images/alembic_logo.svg', isActive: true },
+  { name: 'HONDA', color: 'text-red-600', symbol: '🏎️', image: '/images/honda_logo.png', isActive: true },
+  { name: 'LafargeHolcim', color: 'text-slate-800', symbol: '🏢', image: '/images/logo_lafargeHolcim.svg', isActive: true },
+  { name: 'Cummins', color: 'text-red-600', symbol: '⚙️', image: '/images/ncummins.png', isActive: true },
+  { name: "L'ORÉAL", color: 'text-slate-900', symbol: '✨', image: '/images/logo_loreal.png', isActive: true },
   { name: 'OPSYS care', color: 'text-blue-600', symbol: '🏥', image: '/images/opsys_care_logo.svg', isActive: true },
   { name: 'SEASWORTH JEWELS', color: 'text-[#0D1A2D]', symbol: '💍', image: '/images/seasworth_jewels.png', isActive: true },
   { name: 'TATVAM OVERSEAS', color: 'text-[#C6A87D]', symbol: '✨', image: '/images/tatvam_overseas.jpg', isActive: true },
   { name: 'DH', color: 'text-[#8B0014]', symbol: '💎', image: '/images/dh_logo.jpg', isActive: true },
   { name: 'PARAM', color: 'text-red-700', symbol: '🔴', image: '/images/param_logo.svg', isActive: true },
+  { name: 'TDSG', color: 'text-red-600', symbol: '➕', image: '/images/logo_tdsg.png', isActive: true },
+  { name: 'ASTRAL PIPES', color: 'text-blue-600', symbol: '💧', image: '/images/logo_astral.png', isActive: true },
+  { name: 'CLP INDIA', color: 'text-yellow-600', symbol: '⚡', image: '/images/logo_clp_india.svg', isActive: true },
   { name: 'adani', color: 'text-blue-600', symbol: '🌱', image: '/images/logo_adani.svg', isActive: true },
   { name: 'LARSEN & TOUBRO', color: 'text-blue-900', symbol: '⚙️', image: '/images/logo_larsen_toubro.svg', isActive: true },
-  { name: 'LafargeHolcim', color: 'text-slate-800', symbol: '🏢', image: '/images/logo_lafargeHolcim.svg', isActive: true }
+  { name: 'TOYOTA', color: 'text-red-600', symbol: '🚗', image: '/images/toyota_logo.webp', isActive: true }
 ];
 
 export const TrustMarquee = ({ data }) => {

@@ -46,11 +46,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'web3-development': { title: 'Web3 Development', category: 'Front End Development' },
   'progressive-web-app': { title: 'Progressive Web App', category: 'Front End Development' },
 
-  // Microsoft Development Services
-  'microsoft-dynamics-365-consulting': { title: 'Microsoft Dynamics 365 Consulting', category: 'Microsoft Development' },
-  'kentico-development-services': { title: 'Kentico Development Services', category: 'Microsoft Development' },
-  'dotnetnuke-development': { title: 'Dotnetnuke Development', category: 'Microsoft Development' },
-  'power-bi-consulting': { title: 'Power BI Consulting', category: 'Microsoft Development' },
 
   // Blockchain Development Services
   'nft-marketplace-development': { title: 'NFT Marketplace Development', category: 'Blockchain Development' },
