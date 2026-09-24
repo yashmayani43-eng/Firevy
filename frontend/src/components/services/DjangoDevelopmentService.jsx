@@ -641,7 +641,7 @@ export const DjangoDevelopmentService = () => {
                   hidden: { opacity: 0, y: 30, scale: 0.96 },
                   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } }
                 }}
-                className="relative group rounded-[16px] p-7 sm:p-8 text-left transition-all duration-500 flex flex-col justify-between overflow-hidden cursor-pointer shadow-md hover:shadow-2xl hover:-translate-y-2 border border-slate-100 bg-white"
+                className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
               >
                 {/* 1. Hover Fill Background Layer */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#EBF6FD] via-[#E1F3FD] to-[#D5EEFA] opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transition-all duration-500 ease-out z-0 rounded-[16px]" />

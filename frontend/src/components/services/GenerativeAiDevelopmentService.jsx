@@ -305,7 +305,7 @@ export const GenerativeAiDevelopmentService = () => {
             {benefits.map((b) => (
               <div
                 key={b.id}
-                className="bg-[#F8FAFC] rounded-[16px] p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+                className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
               >
                 <div>
                   <div className="w-14 h-14 rounded-xl bg-[#EAF4FA] flex items-center justify-center mb-5">

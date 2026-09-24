@@ -808,7 +808,7 @@ export const HireOpenAiDevelopersService = () => {
                 return (
                   <div
                     key={idx}
-                    className="bg-white rounded-2xl p-7 border border-slate-100/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-4 text-left"
+                    className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
                   >
                     <div className="space-y-4">
                       <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${card.bgClass}`}>

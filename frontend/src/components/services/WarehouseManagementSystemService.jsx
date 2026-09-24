@@ -279,7 +279,7 @@ export const WarehouseManagementSystemService = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-10">
             {/* Card 1 */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-purple-100/70 text-purple-600 flex items-center justify-center mb-5">
                   <Boxes className="w-6 h-6" />
@@ -292,7 +292,7 @@ export const WarehouseManagementSystemService = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-emerald-100/70 text-emerald-600 flex items-center justify-center mb-5">
                   <Layers className="w-6 h-6" />
@@ -305,7 +305,7 @@ export const WarehouseManagementSystemService = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-orange-100/70 text-orange-600 flex items-center justify-center mb-5">
                   <Smartphone className="w-6 h-6" />
@@ -318,7 +318,7 @@ export const WarehouseManagementSystemService = () => {
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-amber-100/70 text-amber-600 flex items-center justify-center mb-5">
                   <Sliders className="w-6 h-6" />
@@ -331,7 +331,7 @@ export const WarehouseManagementSystemService = () => {
             </div>
 
             {/* Card 5 */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-pink-100/70 text-pink-600 flex items-center justify-center mb-5">
                   <Database className="w-6 h-6" />
@@ -344,7 +344,7 @@ export const WarehouseManagementSystemService = () => {
             </div>
 
             {/* Card 6 */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-cyan-100/70 text-cyan-600 flex items-center justify-center mb-5">
                   <Cpu className="w-6 h-6" />

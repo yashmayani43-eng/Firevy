@@ -25,8 +25,10 @@ const techStackData = [
 ];
 
 export const MobileAppProficientTechStackSection = ({
-  title = 'Technology Stack That Sapphire Mobile Developers Use Proficiently'
+  title = 'Technology Stack That Sapphire Mobile Developers Use Proficiently',
+  data = techStackData
 }) => {
+  const currentData = data || techStackData;
   return (
     <section className="py-10 sm:py-14 bg-white font-sans text-left">
       <Container className="max-w-6xl">
@@ -42,7 +44,7 @@ export const MobileAppProficientTechStackSection = ({
 
         {/* Tech Stack Rows Container */}
         <div className="space-y-3 sm:space-y-3.5 max-w-5xl mx-auto mb-8 sm:mb-9">
-          {techStackData.map((row, idx) => (
+          {currentData.map((row, idx) => (
             <div
               key={idx}
               className="flex flex-col sm:flex-row items-stretch rounded-[8px] sm:rounded-[10px] overflow-hidden shadow-2xs border border-slate-200/60 transition-all hover:shadow-xs"

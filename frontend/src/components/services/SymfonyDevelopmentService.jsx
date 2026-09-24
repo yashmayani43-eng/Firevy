@@ -645,7 +645,7 @@ export const SymfonyDevelopmentService = () => {
                   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } }
                 }}
                 whileHover={{ y: -6, transition: { type: 'spring', stiffness: 400, damping: 25 } }}
-                className="bg-white rounded-[16px] p-7 sm:p-8 border border-slate-100 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between text-left space-y-4 group cursor-default"
+                className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
               >
                 <div className="space-y-4">
                   <div className={`w-12 h-12 rounded-[12px] ${item.badgeBg} ${item.badgeColor} flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110`}>

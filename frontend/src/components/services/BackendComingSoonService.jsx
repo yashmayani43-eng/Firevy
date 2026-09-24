@@ -69,13 +69,7 @@ export const BACKEND_SERVICES_CONFIG = {
   'software-development': { title: 'Software Development Service', category: 'Software Development Service' },
   'digital-transformation-services': { title: 'Digital Transformation Services', category: 'Software Development Service' },
   'digital-transformation-service': { title: 'Digital Transformation Services', category: 'Software Development Service' },
-  'application-services': { title: 'Application Services', category: 'Software Development Service' },
-  'application-service': { title: 'Application Services', category: 'Software Development Service' },
-  'crm-development': { title: 'Crm Development', category: 'Software Development Service' },
   'offshore-software-development': { title: 'Offshore Software Development', category: 'Software Development Service' },
-  'invoice-generation-software': { title: 'Invoice Generation Software', category: 'Software Development Service' },
-  'software-modernization-services': { title: 'Software Modernization Services', category: 'Software Development Service' },
-  'software-modernization-service': { title: 'Software Modernization Services', category: 'Software Development Service' },
   'web-application-development': { title: 'Web Application Development', category: 'Software Development Service' },
   'product-engineering-services': { title: 'Product Engineering Services', category: 'Software Development Service' },
   'it-outsourcing': { title: 'IT Outsourcing', category: 'Software Development Service' },
@@ -172,11 +166,7 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'bullion-exchange-app-development' ||
     clean === 'digital-wayfinding-solutions' ||
     clean === 'ethereum-app-development' ||
-    clean === 'application-services' ||
-    clean === 'crm-development' ||
     clean === 'offshore-software-development' ||
-    clean === 'invoice-generation-software' ||
-    clean === 'software-modernization-services' ||
     clean === 'web-application-development' ||
     clean === 'product-engineering-services' ||
     clean === 'it-outsourcing' ||

@@ -889,7 +889,7 @@ export const HireMernStackDevelopersService = () => {
               return (
                 <div
                   key={idx}
-                  className="bg-white rounded-2xl p-7 shadow-xs hover:shadow-md border border-slate-200/80 transition-all flex flex-col justify-between text-left"
+                  className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
                 >
                   <div>
                     <div className={`w-12 h-12 rounded-xl ${card.bg} ${card.iconColor} flex items-center justify-center mb-5`}>

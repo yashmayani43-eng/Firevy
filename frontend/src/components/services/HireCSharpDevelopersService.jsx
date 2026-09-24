@@ -2374,7 +2374,7 @@ export const HireCSharpDevelopersService = () => {
             ].map((role, idx) => (
               <div
                 key={idx}
-                className="bg-white p-7 rounded-[22px] border-y-4 border-y-transparent shadow-xs hover:bg-gradient-to-b hover:from-[#E3F5FF] hover:to-[#CBEFFF] hover:border-t-[#005F96] hover:border-b-[#38BDF8] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group text-left relative overflow-hidden"
+                className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
               >
                 <div className="space-y-4">
                   {/* Lavender Icon Badge */}

@@ -1108,7 +1108,7 @@ export const BlockchainDevelopmentService = () => {
                 return (
                   <div
                     key={idx}
-                    className="bg-white rounded-2xl p-7 border border-slate-100/90 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between space-y-4 text-left"
+                    className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
                   >
                     <div className="space-y-3">
                       <div className={`w-12 h-12 rounded-xl ${card.bgColor} ${card.iconColor} flex items-center justify-center`}>

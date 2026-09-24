@@ -284,7 +284,7 @@ export const VisitorManagementSystemService = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-10">
             {/* Card 1: Planned Visitors */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-purple-100/70 text-purple-600 flex items-center justify-center mb-5">
                   <UserCheck className="w-6 h-6" />
@@ -297,7 +297,7 @@ export const VisitorManagementSystemService = () => {
             </div>
 
             {/* Card 2: Ad-Hoc Visitors */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-emerald-100/70 text-emerald-600 flex items-center justify-center mb-5">
                   <Users className="w-6 h-6" />
@@ -310,7 +310,7 @@ export const VisitorManagementSystemService = () => {
             </div>
 
             {/* Card 3: Visitor Screening */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-orange-100/70 text-orange-600 flex items-center justify-center mb-5">
                   <ShieldCheck className="w-6 h-6" />
@@ -323,7 +323,7 @@ export const VisitorManagementSystemService = () => {
             </div>
 
             {/* Card 4: QR Code Scanning */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-amber-100/70 text-amber-600 flex items-center justify-center mb-5">
                   <QrCode className="w-6 h-6" />
@@ -336,7 +336,7 @@ export const VisitorManagementSystemService = () => {
             </div>
 
             {/* Card 5: Badge Printing */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-pink-100/70 text-pink-600 flex items-center justify-center mb-5">
                   <Printer className="w-6 h-6" />
@@ -349,7 +349,7 @@ export const VisitorManagementSystemService = () => {
             </div>
 
             {/* Card 6: Digital Document Signing */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="expertise-hover-card p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-cyan-100/70 text-cyan-600 flex items-center justify-center mb-5">
                   <FileCheck className="w-6 h-6" />

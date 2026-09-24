@@ -557,7 +557,7 @@ export const MicroservicesConsultingServices = () => {
             {microservicesExpertiseCards.map((card, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[16px] p-7 text-slate-900 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between text-left border border-slate-100"
+                className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
               >
                 <div>
                   <div className={`w-12 h-12 rounded-xl ${card.bg} flex items-center justify-center mb-5 shadow-xs`}>

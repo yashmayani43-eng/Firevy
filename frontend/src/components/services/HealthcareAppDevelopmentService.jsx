@@ -790,7 +790,7 @@ export const HealthcareAppDevelopmentService = () => {
               return (
                 <div
                   key={idx}
-                  className="p-7 sm:p-8 rounded-2xl bg-white border border-slate-100 shadow-[0_4px_25px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_35px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-start group"
+                  className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
                 >
                   {/* Pastel Rounded Icon Box */}
                   <div className={`w-12 h-12 rounded-xl ${item.bgColor} flex items-center justify-center mb-5 shrink-0 group-hover:scale-105 transition-transform duration-300`}>

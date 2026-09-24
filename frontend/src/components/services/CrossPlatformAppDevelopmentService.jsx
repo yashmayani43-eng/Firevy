@@ -534,7 +534,7 @@ export const CrossPlatformAppDevelopmentService = () => {
                   hidden: { opacity: 0, y: 30, scale: 0.96 },
                   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } }
                 }}
-                className="relative bg-white rounded-[16px] p-7 sm:p-8 border border-slate-200/80 hover:border-[#93c5fd]/70 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-left space-y-4 group cursor-default overflow-hidden"
+                className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
               >
                 {/* Animated Top Border Accent Line */}
                 <span className="absolute top-0 left-0 w-full h-[3.5px] bg-[#0284c7] scale-x-0 group-hover:scale-x-100 transition-transform duration-400 ease-out origin-left z-20" />

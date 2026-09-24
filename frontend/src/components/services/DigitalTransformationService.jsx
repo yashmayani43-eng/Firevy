@@ -551,14 +551,14 @@ export const DigitalTransformationService = () => {
       <IndustryFocusedInsightsSection subtitle="Trending Industries that Leverage Enterprise Digital Transformation" />
 
       {/* ========================================================================= */}
-      {/* 12. TRANSFORMATIVE IMPACT / BENEFITS (8 PASTEL CARDS)                     */}
-      {/* ========================================================================= */}
-      <TransformativeImpactSection title="Explore The Transformative Impact Of Digital Transformation On Your Business Success" />
-
-      {/* ========================================================================= */}
-      {/* 13. ABOUT US STATS (100% On-Time, 20+ Yrs, 450+ Devs, 98% CSAT)          */}
+      {/* 12. ABOUT US STATS (100% On-Time, 20+ Yrs, 450+ Devs, 98% CSAT)          */}
       {/* ========================================================================= */}
       <AboutUsStats companyName="Firevy.co" />
+
+      {/* ========================================================================= */}
+      {/* 13. TRANSFORMATIVE IMPACT / BENEFITS (8 PASTEL CARDS)                     */}
+      {/* ========================================================================= */}
+      <TransformativeImpactSection title="Explore The Transformative Impact Of Digital Transformation On Your Business Success" />
 
       {/* ========================================================================= */}
       {/* 14. SECTORS THRIVING ON DIGITAL TRANSFORMATION SOLUTIONS                  */}

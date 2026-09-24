@@ -436,6 +436,32 @@ export function App() {
                 <Route path="/digital-transformation-service" element={<ServiceDetails />} />
                 <Route path="/services/digital-transformation" element={<ServiceDetails />} />
                 <Route path="/digital-transformation" element={<ServiceDetails />} />
+                <Route path="/services/application-services" element={<ServiceDetails />} />
+                <Route path="/application-services" element={<ServiceDetails />} />
+                <Route path="/services/application-service" element={<ServiceDetails />} />
+                <Route path="/application-service" element={<ServiceDetails />} />
+                <Route path="/services/offshore-software-development" element={<ServiceDetails />} />
+                <Route path="/offshore-software-development" element={<ServiceDetails />} />
+                <Route path="/services/offshore-software-development-services" element={<ServiceDetails />} />
+                <Route path="/offshore-software-development-services" element={<ServiceDetails />} />
+                <Route path="/services/offshore-software-development-company" element={<ServiceDetails />} />
+                <Route path="/offshore-software-development-company" element={<ServiceDetails />} />
+                <Route path="/services/invoice-generation-software" element={<ServiceDetails />} />
+                <Route path="/invoice-generation-software" element={<ServiceDetails />} />
+                <Route path="/services/invoice-generation-software-development" element={<ServiceDetails />} />
+                <Route path="/invoice-generation-software-development" element={<ServiceDetails />} />
+                <Route path="/services/software-modernization-services" element={<ServiceDetails />} />
+                <Route path="/software-modernization-services" element={<ServiceDetails />} />
+                <Route path="/services/software-modernization-service" element={<ServiceDetails />} />
+                <Route path="/software-modernization-service" element={<ServiceDetails />} />
+                <Route path="/services/software-modernization-services-company" element={<ServiceDetails />} />
+                <Route path="/software-modernization-services-company" element={<ServiceDetails />} />
+                <Route path="/services/crm-development" element={<ServiceDetails />} />
+                <Route path="/crm-development" element={<ServiceDetails />} />
+                <Route path="/services/crm-development-services" element={<ServiceDetails />} />
+                <Route path="/crm-development-services" element={<ServiceDetails />} />
+                <Route path="/services/crm-development-service" element={<ServiceDetails />} />
+                <Route path="/crm-development-service" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing" element={<ServiceDetails />} />

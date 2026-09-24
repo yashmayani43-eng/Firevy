@@ -573,7 +573,7 @@ export const NintexDevelopmentService = () => {
                   <div className={`w-12 h-12 rounded-[10px] ${item.iconBg} flex items-center justify-center mb-5 shrink-0 transition-transform duration-300`}>
                     {item.icon}
                   </div>
-                  <h3 className="text-[18px] sm:text-[19px] font-bold text-[#0B0F19] mb-3 leading-snug font-sans">
+                  <h3 className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group">
                     {item.title}
                   </h3>
                   <p className="text-slate-600 text-sm leading-[1.65] font-normal font-sans flex-1">

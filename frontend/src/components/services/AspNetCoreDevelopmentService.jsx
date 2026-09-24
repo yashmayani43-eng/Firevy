@@ -498,7 +498,7 @@ export const AspNetCoreDevelopmentService = () => {
               return (
                 <div
                   key={idx}
-                  className="p-7 bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all space-y-4 flex flex-col justify-between"
+                  className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
                 >
                   <div className="space-y-3">
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${service.iconBg}`}>

@@ -264,11 +264,11 @@ export const AppDevelopmentConsultingService = () => {
               </div>
             </div>
 
-            {/* Right Hero Meeting Vector Illustration (Exact 1:1 Image_1.svg from reference) */}
+            {/* Right Hero Meeting Vector Illustration (Exact 1:1 match from reference) */}
             <div className="lg:col-span-6 flex justify-center items-center">
               <div className="w-full max-w-[580px] flex justify-center">
                 <img
-                  src="/images/sapphire_mobile_app_development_company_in_usa/Image_1.svg"
+                  src="/images/app_development_consulting/images/app_development_banner.svg"
                   alt="App Development Consulting Services Team"
                   className="w-full h-auto object-contain max-h-[360px]"
                 />
@@ -281,39 +281,35 @@ export const AppDevelopmentConsultingService = () => {
       {/* ========================================================================= */}
       {/* BRAND LOGO MARQUEE (BELOW HERO) */}
       {/* ========================================================================= */}
-      <div className="bg-white py-6 border-b border-slate-200/80">
-        <Container>
-          <BrandLogoMarquee />
-        </Container>
-      </div>
+      <BrandLogoMarquee />
 
       {/* ========================================================================= */}
       {/* 2. LEADING MOBILE APP DEVELOPMENT CONSULTING COMPANY (EXACT 1:1 REFERENCE) */}
       {/* ========================================================================= */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-14 sm:py-16 lg:py-20 bg-white">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Graphic: Mobile wireframe with developers */}
             <div className="lg:col-span-6 flex justify-center items-center">
               <div className="w-full max-w-[560px] flex justify-center">
                 <img
-                  src="/images/leading_mobile_app_consulting.jpg"
-                  alt="Leading Mobile App Development Consulting Team"
+                  src="/images/app_development_consulting/images/app_development_section_1.svg"
+                  alt="Leading Mobile App Development Consulting Company"
                   className="w-full h-auto object-contain"
                 />
               </div>
             </div>
 
             {/* Right Copy matching reference Image 1 */}
-            <div className="lg:col-span-6 space-y-6 text-left">
-              <h2 className="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-extrabold text-slate-900 tracking-tight leading-[1.2]">
+            <div className="lg:col-span-6 space-y-5 text-left">
+              <h2 className="text-3xl sm:text-4xl lg:text-[40px] xl:text-[42px] font-extrabold text-[#0B0F19] tracking-tight leading-[1.2] font-sans">
                 Leading Mobile App <br />
                 Development Consulting <br />
                 Company
               </h2>
 
-              <p className="text-slate-600 text-[14.5px] sm:text-[15.5px] leading-[1.75] font-normal">
-                Our App strategy and consulting firm use their knowledge of the latest industry trends and technology to provide recommendations for app solutions that are likely to result in the most favorable outcomes for <strong className="text-[#005F96] font-semibold">best android app development company</strong> in the context of competitive growth. All industry practices are included in the finished items that we create. To provide Enterprise App Development Consulting Services with a primary emphasis on conversion and success, we go the additional mile while analyzing your target market, company competitors, user personas, and a great deal more should you choose to use our consulting services.
+              <p className="text-[#475569] text-[14.5px] sm:text-[15.5px] leading-[1.75] font-normal">
+                Our App strategy and consulting firm use their knowledge of the latest industry trends and technology to provide recommendations for app solutions that are likely to result in the most favorable outcomes for <Link to="/services/android-app-development" className="text-[#005F96] hover:underline font-semibold">best android app development company</Link> in the context of competitive growth. All industry practices are included in the finished items that we create. To provide Enterprise App Development Consulting Services with a primary emphasis on conversion and success, we go the additional mile while analyzing your target market, company competitors, user personas, and a great deal more should you choose to use our consulting services.
               </p>
             </div>
           </div>
@@ -323,21 +319,21 @@ export const AppDevelopmentConsultingService = () => {
       {/* ========================================================================= */}
       {/* 3. BRIEF ABOUT BEST APP CONSULTANTS FOR STARTUPS (IMAGE 1) */}
       {/* ========================================================================= */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-14 sm:py-16 lg:py-20 bg-white">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Copy matching Image 1 */}
-            <div className="lg:col-span-6 space-y-6 text-left">
-              <h2 className="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-extrabold text-slate-900 tracking-tight leading-[1.2]">
+            {/* Left Copy matching Image 2 */}
+            <div className="lg:col-span-6 space-y-5 text-left">
+              <h2 className="text-3xl sm:text-4xl lg:text-[40px] xl:text-[42px] font-extrabold text-[#0B0F19] tracking-tight leading-[1.2] font-sans">
                 Brief About Best App <br />
                 Consultants For Startups
               </h2>
 
-              <p className="text-slate-600 text-[14.5px] sm:text-[15.5px] leading-[1.75] font-normal">
+              <p className="text-[#475569] text-[14.5px] sm:text-[15.5px] leading-[1.75] font-normal">
                 Our mobile app development consultants use the appropriate technologies to analyze the audience in-depth, taking into account their routines, geographic location, preferences, age, employment, and other factors.
               </p>
 
-              <p className="text-slate-600 text-[14.5px] sm:text-[15.5px] leading-[1.75] font-normal">
+              <p className="text-[#475569] text-[14.5px] sm:text-[15.5px] leading-[1.75] font-normal">
                 As an Affordable App Development and Consulting Agency, we plan a user-first interface and user experience (UI and UX) for your solution optimized for increased user engagement.
               </p>
             </div>
@@ -346,7 +342,7 @@ export const AppDevelopmentConsultingService = () => {
             <div className="lg:col-span-6 flex justify-center items-center">
               <div className="w-full max-w-[560px] flex justify-center">
                 <img
-                  src="/images/brief_app_consultants.jpg"
+                  src="/images/app_development_consulting/images/app_development_about.svg"
                   alt="Brief About Best App Consultants For Startups"
                   className="w-full h-auto object-contain"
                 />
@@ -435,48 +431,45 @@ export const AppDevelopmentConsultingService = () => {
 
           {/* 3 Case Study Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            {/* Card 1: Healthcare Mobile App Development Company */}
+            {/* Card 1: Employee Health Monitoring App */}
             <div className="text-center group">
-              <div className="relative rounded-[20px] overflow-hidden bg-white shadow-sm border border-slate-200/80 p-2 group-hover:shadow-md transition-all">
-                <div className="absolute top-4 right-4 z-10 bg-[#005F96] text-white text-[11px] font-[700] px-3 py-1 rounded-md shadow-2xs">
-                  Case Study
-                </div>
+              <div className="rounded-[20px] overflow-hidden shadow-xs hover:shadow-md transition-all">
                 <img
-                  src="/images/adani.webp"
-                  alt="Healthcare Mobile App Development Company"
-                  className="w-full h-[220px] object-cover rounded-[14px]"
+                  src="/images/success_stories/almraai.svg"
+                  alt="Employee Health Monitoring App"
+                  className="w-full h-auto object-cover rounded-[20px]"
                 />
               </div>
-              <h3 className="text-[16px] font-[800] text-slate-900 mt-4 font-sans text-left">
-                Healthcare Mobile App Development Company
+              <h3 className="text-[17px] sm:text-[18px] font-[800] text-slate-900 mt-4 font-sans text-left">
+                Employee Health Monitoring App
               </h3>
             </div>
 
-            {/* Card 2: Federal Forecasting App */}
+            {/* Card 2: Water Distribution System */}
             <div className="text-center group">
-              <div className="rounded-[20px] overflow-hidden bg-white shadow-sm border border-slate-200/80 p-2 group-hover:shadow-md transition-all">
+              <div className="rounded-[20px] overflow-hidden shadow-xs hover:shadow-md transition-all">
                 <img
-                  src="/images/federal_forecasting_app.jpg"
-                  alt="Federal Forecasting App"
-                  className="w-full h-[220px] object-cover rounded-[14px]"
+                  src="/images/success_stories/water_distribution_system.svg"
+                  alt="Water Distribution System"
+                  className="w-full h-auto object-cover rounded-[20px]"
                 />
               </div>
-              <h3 className="text-[16px] font-[800] text-slate-900 mt-4 font-sans text-left">
-                Federal Forecasting App
+              <h3 className="text-[17px] sm:text-[18px] font-[800] text-slate-900 mt-4 font-sans text-left">
+                Water Distribution System
               </h3>
             </div>
 
-            {/* Card 3: Stress Management App */}
+            {/* Card 3: Vehicle Data Logging Software Services */}
             <div className="text-center group">
-              <div className="rounded-[20px] overflow-hidden bg-white shadow-sm border border-slate-200/80 p-2 group-hover:shadow-md transition-all">
+              <div className="rounded-[20px] overflow-hidden shadow-xs hover:shadow-md transition-all">
                 <img
-                  src="/images/stress_management_app.jpg"
-                  alt="Stress Management App"
-                  className="w-full h-[220px] object-cover rounded-[14px]"
+                  src="/images/success_stories/vehicle_data_logging_software_services.svg"
+                  alt="Vehicle Data Logging Software Services"
+                  className="w-full h-auto object-cover rounded-[20px]"
                 />
               </div>
-              <h3 className="text-[16px] font-[800] text-slate-900 mt-4 font-sans text-left">
-                Stress Management App
+              <h3 className="text-[17px] sm:text-[18px] font-[800] text-slate-900 mt-4 font-sans text-left">
+                Vehicle Data Logging Software Services
               </h3>
             </div>
           </div>
@@ -559,7 +552,7 @@ export const AppDevelopmentConsultingService = () => {
             {appExpertiseCards.map((card, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[16px] p-7 text-slate-900 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between text-left border border-slate-100"
+                className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
               >
                 <div>
                   <div className={`w-12 h-12 rounded-xl ${card.bg} flex items-center justify-center mb-5 shadow-xs`}>

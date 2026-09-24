@@ -1174,7 +1174,7 @@ export const HireEmberDevelopersService = () => {
                 return (
                   <div
                     key={idx}
-                    className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
+                    className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
                   >
                     <div className="space-y-4">
                       <div className={`w-12 h-12 rounded-xl ${card.bgColor} ${card.iconColor} flex items-center justify-center`}>

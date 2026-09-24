@@ -1009,7 +1009,7 @@ export const HireFastApiDevelopersService = () => {
                 return (
                   <div
                     key={idx}
-                    className="bg-white rounded-2xl p-7 shadow-xs hover:shadow-md border border-slate-100 transition-all flex flex-col justify-start space-y-4"
+                    className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
                   >
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${card.iconBg}`}>
                       <CardIcon className="w-6 h-6 stroke-[2]" />

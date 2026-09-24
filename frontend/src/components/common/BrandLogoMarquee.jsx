@@ -1,14 +1,14 @@
 import React from 'react';
 
 const brandLogos = [
-  { name: 'OPSYS care', src: '/images/opsys_care_logo.svg' },
-  { name: 'SEASWORTH JEWELS', src: '/images/seasworth_jewels.png' },
-  { name: 'TATVAM OVERSEAS', src: '/images/tatvam_overseas.jpg' },
-  { name: 'DH', src: '/images/dh_logo.jpg' },
-  { name: 'PARAM', src: '/images/param_logo.svg' },
   { name: 'adani', src: '/images/logo_adani.svg' },
-  { name: 'LARSEN & TOUBRO', src: '/images/logo_larsen_toubro.svg' },
-  { name: 'LafargeHolcim', src: '/images/logo_lafargeHolcim.svg' }
+  { name: 'TOYOTA', src: '/images/toyota_logo.webp' },
+  { name: 'Almarai', src: '/images/almarai_corporate_logo.png' },
+  { name: 'ORIENT CEMENT', src: '/images/orient_logo.svg' },
+  { name: 'AMERICAN EXPRESS', src: '/images/logo_american_express.svg' },
+  { name: 'Alembic', src: '/images/alembic_logo.svg' },
+  { name: 'LafargeHolcim', src: '/images/logo_lafargeHolcim.svg' },
+  { name: 'PARAM', src: '/images/param_logo.svg' }
 ];
 
 export const BrandLogoMarquee = () => {

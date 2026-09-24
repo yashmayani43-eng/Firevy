@@ -176,3 +176,74 @@ h2,
   font-weight: 400 !important;
   line-height: 26px !important;
 }
+
+/* Prototype & Expertise Cards Hover Animation (1:1 Sapphire matching) */
+.prototype-expertise-card,
+.expertise-hover-card {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px hsla(0, 0%, 60%, 0.18);
+  transition: all 0.4s ease;
+  min-height: 337px;
+  cursor: pointer;
+}
+
+.prototype-expertise-card > *,
+.expertise-hover-card > * {
+  position: relative;
+  z-index: 10;
+}
+
+.prototype-expertise-card:hover h3,
+.expertise-hover-card:hover h3 {
+  color: #005d89 !important;
+  transition: color 0.3s ease;
+}
+
+.prototype-expertise-card:before,
+.expertise-hover-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(90deg, #0a5978, #55cfff) top, linear-gradient(90deg, #55cfff, #0a5978) bottom;
+  background-size: 0 4px, 0 4px;
+  background-repeat: no-repeat;
+  background-position: 0 0, 100% 100%;
+  transition: background-size 0.5s ease, opacity 0.3s ease;
+  z-index: 2;
+  opacity: 0;
+}
+
+.prototype-expertise-card:hover:before,
+.expertise-hover-card:hover:before {
+  opacity: 1;
+  background-size: 100% 4px, 100% 4px;
+}
+
+.prototype-expertise-card:after,
+.expertise-hover-card:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-radius: inherit;
+  pointer-events: none;
+  transition: all 0.45s ease;
+  background: linear-gradient(306.64deg, #aae7ff -15.46%, #ffffff 97.25%);
+}
+
+.prototype-expertise-card:hover:after,
+.expertise-hover-card:hover:after {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+

@@ -703,7 +703,7 @@ export const CustomMobileAppDevelopmentService = () => {
             {customAppExpertiseCards.map((item, idx) => (
               <div
                 key={idx}
-                className="relative bg-white rounded-[14px] p-6 sm:p-7 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_14px_30px_rgba(0,95,150,0.14)] transition-all duration-500 ease-out overflow-hidden group cursor-pointer flex flex-col justify-start hover:-translate-y-1.5 select-none text-left"
+                className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
               >
                 {/* Smooth Hover Gradient Fill Layer */}
                 <div className="absolute inset-0 bg-gradient-to-b from-[#E2F4FD] via-[#D2F0FD] to-[#BCE9FC] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none" />
