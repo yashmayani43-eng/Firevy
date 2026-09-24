@@ -19,14 +19,14 @@ import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
 import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
 
-export const MachineLearningDevelopmentService = () => {
+export const ChatbotDevelopmentService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    model: 'Dedicated Machine Learning Squad',
-    appType: 'Custom Machine Learning Application Development',
+    model: 'Dedicated Chatbot Squad',
+    appType: 'Custom Chatbot Application Development',
     budget: '$15,000 - $40,000',
     message: ''
   });
@@ -41,11 +41,11 @@ export const MachineLearningDevelopmentService = () => {
     setFormSubmitted(true);
   };
 
-  // 6 Benefits of Machine Learning Development
+  // 6 Benefits of Chatbot Development
   const benefitsItems = [
     {
       title: 'Scale and Flex',
-      desc: 'The versatile and adaptable Machine Learning platform can expand with your company. ML enables algorithms to scale seamlessly without infrastructure bottlenecks or performance drops.',
+      desc: 'The versatile and adaptable Chatbot platform can expand with your business. Conversational AI enables user interactions to scale seamlessly without response lags or capacity constraints.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="6" width="22" height="7" rx="2" />
@@ -64,7 +64,7 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       title: 'Management and Usability',
-      desc: 'Businesses can build and deploy intelligent models using user-friendly MLOps workflows and automated pipelines. ML tools streamline model training, evaluation, and business management.',
+      desc: 'Businesses can build and deploy intelligent chatbot workflows using drag-and-drop flow builders and customizable NLP triggers. Chatbot tools simplify dialogue design, testing, and administration.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="6" y="4" width="24" height="28" rx="3" />
@@ -76,8 +76,8 @@ export const MachineLearningDevelopmentService = () => {
       )
     },
     {
-      title: 'Practical Predictive & Automated Tools',
-      desc: 'Machine Learning offers powerful predictive analytics, anomaly detection, NLP, and recommendation engines. Businesses can transform raw data into actionable insights and boost business ROI.',
+      title: 'Practical Automation & Engagement Tools',
+      desc: 'Chatbot development offers powerful intent recognition, multichannel messaging, automated support tickets, and CRM connectors to drive 24/7 engagement and higher conversion rates.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 14v8h4l10 6V8L10 14H6z" />
@@ -88,8 +88,8 @@ export const MachineLearningDevelopmentService = () => {
       )
     },
     {
-      title: 'Model & API Integration',
-      desc: 'Machine Learning algorithms interface with top cloud platforms, microservices, and web APIs. Enterprise applications leverage fast, reliable model inference endpoints securely.',
+      title: 'Multichannel & API Integration',
+      desc: 'Chatbots interface seamlessly with WhatsApp, Facebook Messenger, Slack, Microsoft Teams, and enterprise backends enabling businesses to deliver unified customer experiences everywhere.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="5" y="4" width="20" height="28" rx="3" />
@@ -101,8 +101,8 @@ export const MachineLearningDevelopmentService = () => {
       )
     },
     {
-      title: 'Mobile & Edge AI Integration',
-      desc: 'For seamless intelligent experiences across devices, machine learning models are optimized for mobile and edge platforms. Real-time inference ensures zero latency for end users.',
+      title: 'Mobile & Web Accessibility',
+      desc: 'For a smooth conversational experience across devices, chatbots provide responsive web widgets and SDKs for native mobile apps ensuring zero friction for end users.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="7" y="4" width="22" height="28" rx="3" />
@@ -114,7 +114,7 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       title: 'Powerful Analytics and Reports',
-      desc: 'Businesses can track model accuracy, monitor drift, and obtain valuable data insights using comprehensive ML monitoring dashboards to continuously refine algorithms.',
+      desc: 'Businesses can track session volume, monitor user satisfaction, analyze fallback rates, and gain valuable customer insights using real-time chatbot analytics dashboards.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="5" width="28" height="26" rx="3" />
@@ -185,27 +185,27 @@ export const MachineLearningDevelopmentService = () => {
     }
   ];
 
-  // Official Machine Learning FAQs
-  const mlFaqs = [
+  // Official Chatbot FAQs
+  const chatbotFaqs = [
     {
-      q: '1. What makes Machine Learning ideal for enterprise automation and predictive intelligence?',
-      a: 'Machine Learning algorithms process huge volumes of data to discover patterns, automate complex decision-making, and provide predictive capabilities that scale effortlessly.'
+      q: '1. What makes Chatbot development ideal for customer support and lead generation?',
+      a: 'AI Chatbots deliver instant 24/7 responses, resolve common customer queries automatically, capture qualified leads, and reduce support operation costs significantly.'
     },
     {
-      q: '2. Can Machine Learning models support high-traffic enterprise applications?',
-      a: 'Absolutely. With async web frameworks (FastAPI, Flask), model quantization, TensorRT acceleration, and microservices on AWS/GCP, ML systems handle millions of daily predictions.'
+      q: '2. Can Chatbots handle multi-language user interactions simultaneously?',
+      a: 'Yes! Our AI chatbots leverage advanced NLP engines and translation models (e.g. OpenAI GPT, Dialogflow) to communicate in 50+ languages automatically.'
     },
     {
-      q: '3. Do you handle legacy model migration and code refactoring?',
-      a: 'Yes! We specialize in optimizing legacy AI models, upgrading deep learning pipelines, and containerizing ML microservices with zero downtime.'
+      q: '3. Do you handle integration with existing CRMs, ERPs, and databases?',
+      a: 'Absolutely! We build custom webhook connections and REST APIs to sync chatbot interactions directly into Salesforce, HubSpot, Zendesk, and internal SQL/NoSQL databases.'
     },
     {
-      q: '4. How do you secure Machine Learning pipelines and data assets?',
-      a: 'We implement strict data encryption at rest and in transit, OAuth2/JWT API access controls, anonymization techniques, and compliance with GDPR/SOC-2 standards.'
+      q: '4. How do you secure user conversation data and privacy?',
+      a: 'We implement end-to-end data encryption, OAuth2/JWT authentication, PII masking, and full compliance with GDPR, HIPAA, and SOC-2 privacy standards.'
     },
     {
-      q: '5. Do you assist with cloud MLOps and serverless deployment?',
-      a: 'Yes! We configure complete Docker containerization, AWS SageMaker / GCP Vertex AI deployment, CI/CD pipeline automation, and automated model retrain loops.'
+      q: '5. Do you assist with cloud deployment and omnichannel integration?',
+      a: 'Yes! We configure complete cloud serverless deployments, Docker containers, and multi-channel connectors for Web, iOS, Android, WhatsApp, and social channels.'
     },
     {
       q: '6. Do you sign Non-Disclosure Agreements (NDAs)?',
@@ -213,12 +213,12 @@ export const MachineLearningDevelopmentService = () => {
     }
   ];
 
-  // 9 Cards Expertise for Machine Learning Developers
-  const mlDeveloperExpertise = [
+  // 9 Cards Expertise for Chatbot Developers
+  const chatbotDeveloperExpertise = [
     {
       id: 1,
-      title: 'Machine Learning Model Design & Setup',
-      desc: 'The initial step in your ML journey is defining dataset parameters and architecture. Our engineers select appropriate algorithms, clean data pipelines, and design custom model architectures.',
+      title: 'Custom AI Chatbot Design & Setup',
+      desc: 'The initial step in your conversational AI journey is defining user personas and dialogue flows. Our engineers select optimal NLP frameworks and design intuitive bot interfaces.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -230,8 +230,8 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       id: 2,
-      title: 'Machine Learning System Integration',
-      desc: 'We seamlessly integrate trained machine learning models into existing web, mobile, and cloud software backends using RESTful microservices and lightweight APIs.',
+      title: 'NLP & Intent Recognition Integration',
+      desc: 'We integrate advanced Natural Language Processing engines like Dialogflow, Rasa, and OpenAI to accurately understand user intent, entities, and sentiment.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
@@ -244,8 +244,8 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       id: 3,
-      title: 'MLOps & Pipeline Automation',
-      desc: 'We build end-to-end MLOps pipelines using Kubeflow, MLflow, and CI/CD tools to automate data processing, continuous training, model evaluation, and deployment.',
+      title: 'Multichannel Conversational Bot Integration',
+      desc: 'Deploy your chatbot across website widgets, mobile apps, WhatsApp Business API, Facebook Messenger, Slack, and Telegram with unified state management.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -257,8 +257,8 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       id: 4,
-      title: 'Custom Machine Learning Development',
-      desc: 'Our machine learning development service builds bespoke predictive models, computer vision classifiers, and NLP processing engines tailored to your exact business specifications.',
+      title: 'Generative AI & LLM Powered Chatbots',
+      desc: 'Build smart conversational agents powered by custom-trained Large Language Models (LLMs) that answer complex enterprise queries accurately.',
       badgeBg: 'bg-[#FEF3C7]',
       iconColor: 'text-[#D97706]',
       icon: (
@@ -272,8 +272,8 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       id: 5,
-      title: 'Deep Learning & Neural Networks',
-      desc: 'We leverage PyTorch and TensorFlow to build advanced deep learning models for speech recognition, recommendation systems, automated image processing, and LLM fine-tuning.',
+      title: 'Voicebot & Speech-to-Text Customization',
+      desc: 'We integrate Speech-to-Text and Text-to-Speech engines (Whisper, ElevenLabs, Google Speech) to power realistic voice assistants for telephony and mobile.',
       badgeBg: 'bg-[#FCE7F3]',
       iconColor: 'text-[#DB2777]',
       icon: (
@@ -284,8 +284,8 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       id: 6,
-      title: 'Secure Data Engineering & Pipelines',
-      desc: 'Data quality is fundamental to machine learning. We engineer scalable ETL data pipelines, feature stores, and automated cleaning protocols to ensure model accuracy.',
+      title: 'Secure CRM & Database API Integration',
+      desc: 'Seamlessly link chatbots to your internal CRM, helpdesk software, e-commerce cart, or payment gateways for automated order tracking and live agent handoff.',
       badgeBg: 'bg-[#E0F2FE]',
       iconColor: 'text-[#0284C7]',
       icon: (
@@ -298,8 +298,8 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       id: 7,
-      title: 'Intelligent Search & Vector Databases',
-      desc: 'We implement semantic search and vector embeddings using Pinecone, Milvus, and Elasticsearch to enable instant multi-modal search capabilities across your data.',
+      title: 'Intelligent Search & Vector Knowledge Base',
+      desc: 'We build Retrieval-Augmented Generation (RAG) pipelines using Pinecone and LangChain to allow chatbots to instantly query your private knowledge base.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -311,8 +311,8 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       id: 8,
-      title: 'Model Optimization & Quantization',
-      desc: 'We optimize ML models using ONNX, TensorRT, and model pruning techniques for low-latency inference on cloud servers and edge devices.',
+      title: 'Bot Flow Migration & Optimization',
+      desc: 'Upgrade outdated rule-based chatbots to modern AI generative agents with automated migration scripts, zero conversation disruption, and improved UX.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
@@ -326,8 +326,8 @@ export const MachineLearningDevelopmentService = () => {
     },
     {
       id: 9,
-      title: 'ML Support & Monitoring Maintenance',
-      desc: 'Continuous monitoring is essential for deployed models. We provide round-the-clock maintenance, drift detection, security updates, and automated retraining.',
+      title: 'Chatbot Support & Analytics Maintenance',
+      desc: 'Continuous monitoring ensures high resolution rates. We provide round-the-clock maintenance, intent retraining, fallback analysis, and platform updates.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -339,37 +339,37 @@ export const MachineLearningDevelopmentService = () => {
     }
   ];
 
-  // Exact Stats for Machine Learning Development
-  const mlStats = [
-    { value: '77+', label: 'ML Engineers' },
+  // Exact Stats for Chatbot Development
+  const chatbotStats = [
+    { value: '77+', label: 'Chatbot Engineers' },
     { value: '19+', label: 'Fortune 500 Companies' },
-    { value: '583+', label: 'AI/ML Projects Completed' },
+    { value: '583+', label: 'AI Bot Projects Completed' },
     { value: '311+', label: '5-Star Clutch Reviews' }
   ];
 
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Machine Learning Development Services in USA | Custom AI & ML Solutions | Firevy.Co"
-        description="Leading Machine Learning Development Company. We engineer fast, secure, and scalable enterprise AI/ML applications, neural networks, and predictive data pipelines."
-        canonical="/services/machine-learning-development"
+        title="Chatbot Development Services in USA | Custom AI Chatbot Solutions | Firevy.Co"
+        description="Leading Chatbot Development Company. We engineer fast, secure, and scalable AI chatbots, voicebots, and conversational AI platforms using Dialogflow, OpenAI, and Python."
+        canonical="/services/chatbot-development"
       />
 
       {/* 1. Sapphire Light Hero Banner */}
       <SapphireLightHeroBanner
-        title="Machine Learning App Development in USA"
-        subtitle="Machine Learning is a wonderful accelerator due to its data-driven decision making, predictive capabilities, and rapid model deployment."
+        title="Chatbot App Development in USA"
+        subtitle="Chatbots are a wonderful accelerator due to their 24/7 automated support, rapid instant responses, and intelligent conversational capabilities."
         ctaText="Discuss Your Project →"
         ctaLink="#quote-form"
         serviceCategory="hybrid"
-        stats={mlStats}
-        heroImage="/images/ml_hero_illustration.png"
+        stats={chatbotStats}
+        heroImage="/images/bigcommerce_hero_illustration.png"
       />
 
       {/* 2. Brand Logo Marquee Right Below Hero Banner */}
       <BrandLogoMarquee />
 
-      {/* 3. SECTION: Machine Learning Market Stats */}
+      {/* 3. SECTION: Chatbot Development Market Stats */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -377,8 +377,8 @@ export const MachineLearningDevelopmentService = () => {
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
-                  src="/images/ai_market_stats_chart.png"
-                  alt="Machine Learning Market Stats"
+                  src="/images/bigcommerce_market_stats_chart.png"
+                  alt="Chatbot Development Market Stats"
                   className="w-full h-auto max-w-[460px] object-contain rounded-lg"
                 />
               </div>
@@ -387,11 +387,11 @@ export const MachineLearningDevelopmentService = () => {
             {/* Right Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Machine Learning Market Stats
+                Chatbot Development Market Stats
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                The global machine learning market size was roughly USD 38.73 billion in 2022. As per our research, the market is expected to reach USD 528.10 billion by 2030, exhibiting a CAGR of 38.3% during the forecast period.
+                The global chatbot market size was roughly USD 4.9 billion in 2022. As per our research, the market is expected to reach USD 27.3 billion by 2030, exhibiting a CAGR of 23.3% during the forecast period.
               </p>
 
               <div className="pt-2">
@@ -407,18 +407,18 @@ export const MachineLearningDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 4. SECTION: Affordable Machine Learning App Development Services */}
+      {/* 4. SECTION: Affordable Chatbot App Development Services */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Affordable Machine Learning App Development Services
+                Affordable Chatbot App Development Services
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                Many small and medium-sized enterprises (SMEs) choose top-rated Machine Learning Development Services for a wide range of AI projects—from predictive analytics tools to complex enterprise neural networks. Machine Learning excels in building RESTful inference APIs, making it ideal for integrating with existing systems or creating new, efficient interfaces. As a reliable Machine Learning development company, we offer a team of dedicated ML engineers with over a decade of experience in delivering high-quality, scalable solutions.
+                Many small and medium-sized enterprises (SMEs) choose top-rated Chatbot Development Services for a wide range of AI projects—from simple support widgets to complex enterprise conversational agents. Chatbots excel in building RESTful webhook integrations, making them ideal for integrating with existing systems or creating new, efficient interfaces. As a reliable Chatbot development company, we offer a team of dedicated bot developers with over a decade of experience in delivering high-quality, scalable solutions.
               </p>
             </div>
 
@@ -426,9 +426,9 @@ export const MachineLearningDevelopmentService = () => {
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
-                  src="/images/ai_delivering_services_illustration.jpg"
-                  alt="Affordable Machine Learning App Development Services"
-                  className="w-full h-auto max-w-[460px] object-contain rounded-lg"
+                  src="/images/bigcommerce_sec3_illustration.png"
+                  alt="Affordable Chatbot App Development Services"
+                  className="w-full h-auto max-w-[460px] object-contain"
                 />
               </div>
             </div>
@@ -563,12 +563,12 @@ export const MachineLearningDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 8. SECTION: Get A 100% Customizable Machine Learning Development By Experts */}
+      {/* 8. SECTION: Get A 100% Customizable Chatbot Development By Experts */}
       <section className="py-12 sm:py-16 bg-white text-slate-900 font-sans text-left">
         <Container>
           <div className="text-center w-full max-w-5xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-[#0F172A] tracking-tight leading-tight">
-              Get A 100% Customizable Machine Learning Development By Experts
+              Get A 100% Customizable Chatbot Development By Experts
             </h2>
           </div>
 
@@ -591,27 +591,27 @@ export const MachineLearningDevelopmentService = () => {
               </div>
 
               <h3 className="text-[24px] sm:text-[27px] lg:text-[29px] font-[900] text-[#005F96] tracking-tight leading-[1.3] relative z-10">
-                Scalable And Robust Machine Learning Applications
+                Scalable And Robust Chatbot Applications
               </h3>
             </div>
 
             {/* Right Column: Paragraph Content */}
             <div className="lg:col-span-8 space-y-4 text-left flex flex-col justify-center">
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We are a leading Machine Learning application development company backed by certified AI software architects and senior Machine Learning engineers. Our team engineers high-velocity Machine Learning applications that maximize raw processing capabilities, cloud GPUs, and model framework ecosystems.
+                We are a leading Chatbot application development company backed by certified conversational AI architects and senior Bot engineers. Our team engineers high-velocity Chatbot applications that maximize NLP intent processing, dialogue management, and cloud messaging capabilities.
               </p>
 
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We know that applications engineered for modern enterprises must deliver instant inference, intelligent data processing, reliable caching, and bank-grade data security. We ensure every Machine Learning deliverable matches your business goals without compromising code maintainability, scalability, or performance.
+                We know that conversational applications engineered for modern enterprises must deliver instant response times, fluid chat UI components, reliable offline queueing, and bank-grade data security. We ensure every Chatbot deliverable matches your business goals without compromising code maintainability, scalability, or performance.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 9. SECTION: Cutting Edge Technologies Firevy Use For Machine Learning Development */}
+      {/* 9. SECTION: Cutting Edge Technologies Firevy Use For Chatbot Development */}
       <HybridAppCuttingEdgeTechnologiesSection
-        title={"Cutting Edge Technologies Firevy Use For\nMachine Learning Development"}
+        title={"Cutting Edge Technologies Firevy Use For\nChatbot Development"}
       />
 
       {/* 10. SECTION: Our Premium Services */}
@@ -620,17 +620,17 @@ export const MachineLearningDevelopmentService = () => {
       {/* 17. SECTION: Success Stories */}
       <SuccessStoriesSection category="general" />
 
-      {/* SECTION: The Expertise Of Our Machine Learning Developers */}
+      {/* SECTION: The Expertise Of Our Chatbot Developers */}
       <section className="py-16 sm:py-20 bg-[#F4F8FA] text-slate-900 font-sans text-left border-y border-slate-100 overflow-hidden">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight mb-3 font-sans">
-              The Expertise Of Our Machine Learning Developers
+              The Expertise Of Our Chatbot Developers
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 max-w-6xl mx-auto">
-            {mlDeveloperExpertise.map((item) => (
+            {chatbotDeveloperExpertise.map((item) => (
               <div
                 key={item.id}
                 className="group rounded-[14px] p-6 sm:p-7 text-left flex flex-col justify-start transition-all duration-300 ease-in-out cursor-pointer bg-white border-t-[3px] border-b-[3px] border-x border-t-transparent border-b-transparent border-x-slate-200/80 hover:bg-gradient-to-b hover:from-[#E6F6FF] hover:via-[#E1F3FD] hover:to-[#D5EEFA] hover:border-t-[#00A8E8] hover:border-b-[#005F96] hover:border-x-[#BAE6FD] hover:shadow-md hover:-translate-y-1"
@@ -668,7 +668,7 @@ export const MachineLearningDevelopmentService = () => {
       {/* 19. SECTION: Proud To Have Picked These Up Along The Way */}
       <ProudAwardsBanner />
 
-      {/* 20. SECTION: Benefits of Machine Learning Development */}
+      {/* 20. SECTION: Benefits of Chatbot Development */}
       <section className="py-16 sm:py-20 bg-white text-slate-900 font-sans text-left border-b border-slate-100 overflow-hidden">
         <Container>
           <motion.div
@@ -679,10 +679,10 @@ export const MachineLearningDevelopmentService = () => {
             className="text-center max-w-4xl mx-auto mb-12 sm:mb-14"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              Benefits Of Machine Learning Development
+              Benefits Of Chatbot Development
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              In Machine Learning development, intelligent systems are built and customized utilizing leading AI frameworks. Six significant Machine Learning development benefits:
+              In Chatbot development, intelligent conversational platforms are built and customized utilizing state-of-the-art NLP frameworks. Six significant Chatbot development benefits:
             </p>
           </motion.div>
 
@@ -810,7 +810,7 @@ export const MachineLearningDevelopmentService = () => {
       {/* 24. SECTION: Process We Follow */}
       <ProcessWeFollow
         title="Process We Follow"
-        subtitle="Process-oriented execution from data preprocessing to model training, evaluation, QA testing, and AWS/GCP cloud deployment."
+        subtitle="Process-oriented execution from dialogue wireframes to NLP intent architecture, QA testing, and AWS/GCP cloud deployment."
       />
 
       {/* 25. SECTION: Our Story, Their Words */}
@@ -830,12 +830,12 @@ export const MachineLearningDevelopmentService = () => {
               Technology Stack
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              We use the latest Machine Learning development technology and process to make sure we deliver the best. Have a look at our technology stack:
+              We use the latest Chatbot development technology and process to make sure we deliver the best. Have a look at our technology stack:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 max-w-6xl mx-auto">
-            {/* Box 1: Backend & AI Frameworks */}
+            {/* Box 1: Backend & NLP */}
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -849,19 +849,19 @@ export const MachineLearningDevelopmentService = () => {
                   <polyline points="18,20 18,27 26,31 26,24" />
                   <polyline points="34,20 34,27 26,31" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Backend & AI</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Backend & NLP</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
                 <div>- Python</div>
-                <div>- PyTorch</div>
-                <div>- TensorFlow</div>
-                <div>- Scikit-Learn</div>
-                <div>- FastAPI</div>
+                <div>- Dialogflow</div>
+                <div>- OpenAI API</div>
+                <div>- Rasa Engine</div>
+                <div>- Node.js</div>
               </div>
             </div>
 
-            {/* Box 2: Front End */}
+            {/* Box 2: Front End & Widgets */}
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -876,14 +876,14 @@ export const MachineLearningDevelopmentService = () => {
                   <line x1="6" y1="25" x2="10" y2="25" />
                   <rect x="17" y="16" width="12" height="11" rx="1.5" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Front End</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Front End & UI</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- React</div>
-                <div>- Next.js</div>
-                <div>- Vue</div>
-                <div>- Angular</div>
+                <div>- React Widget</div>
+                <div>- WebSockets</div>
+                <div>- Vue.js</div>
+                <div>- Flutter SDK</div>
                 <div className="col-span-2">- TypeScript</div>
               </div>
             </div>
@@ -908,7 +908,7 @@ export const MachineLearningDevelopmentService = () => {
               </div>
             </div>
 
-            {/* Box 4: DevOps & MLOps */}
+            {/* Box 4: DevOps & Cloud */}
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -917,18 +917,18 @@ export const MachineLearningDevelopmentService = () => {
                   <path d="M5 16L11 8L24 14L18 22Z" />
                   <path d="M31 16L25 8L12 14L18 22Z" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">DevOps & MLOps</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">DevOps & Cloud</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
                 <div>- Docker</div>
-                <div>- Kubernetes</div>
-                <div>- AWS SageMaker</div>
-                <div>- GCP Vertex AI</div>
+                <div>- AWS Lambda</div>
+                <div>- GCP Cloud Run</div>
+                <div>- GitHub Actions</div>
               </div>
             </div>
 
-            {/* Box 5: Testing & Validation */}
+            {/* Box 5: Testing & Analytics */}
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -937,13 +937,13 @@ export const MachineLearningDevelopmentService = () => {
                   <path d="M13 21.5L9 32l5-2.5 4 2.5v-10.5" />
                   <path d="M23 21.5L27 32l-5-2.5-4 2.5v-10.5" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Testing & Quality</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Testing & Analytics</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- PyTest</div>
-                <div className="col-span-2">- Deepchecks</div>
-                <div className="col-span-2">- Great Expectations</div>
+                <div>- Botium</div>
+                <div className="col-span-2">- Chatbase Analytics</div>
+                <div className="col-span-2">- PyTest</div>
               </div>
             </div>
 
@@ -976,7 +976,7 @@ export const MachineLearningDevelopmentService = () => {
       <DigitalTransformationSlider />
 
       {/* 30. SECTION: Frequently Asked Questions */}
-      <SapphireFaqSection faqList={mlFaqs} />
+      <SapphireFaqSection faqList={chatbotFaqs} />
 
       {/* 31. SECTION: Our Recent Blogs */}
       <IWatchRecentBlogsSection />
@@ -984,4 +984,4 @@ export const MachineLearningDevelopmentService = () => {
   );
 };
 
-export default MachineLearningDevelopmentService;
+export default ChatbotDevelopmentService;

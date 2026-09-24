@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import Container from '../common/Container';
 
 export const SapphireTechExpertiseSection = ({
-  title = "The Exceptional Technological Expertise of Sapphire Web Development Team"
+  title = "The Exceptional Technological Expertise of Sapphire Web Development Team",
+  expertiseRows: customRows
 }) => {
-  const expertiseRows = [
+  const defaultRows = [
     {
       category: 'Frontend',
       skills: [
@@ -74,6 +75,8 @@ export const SapphireTechExpertiseSection = ({
       ]
     }
   ];
+
+  const expertiseRows = customRows || defaultRows;
 
   return (
     <section className="py-10 sm:py-14 lg:py-18 bg-white font-sans text-left border-b border-slate-100 select-none">

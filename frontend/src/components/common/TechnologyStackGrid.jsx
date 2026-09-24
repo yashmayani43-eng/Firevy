@@ -3,26 +3,23 @@ import Container from './Container';
 
 const defaultTechCards = [
   {
-    id: 'frameworks',
-    title: 'Frameworks',
+    id: 'backend',
+    title: 'Back End',
     icon: (
       <svg viewBox="0 0 48 48" className="w-10 h-10 text-[#005F96]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        {/* Top Cube */}
-        <path d="M18 6 L28 12 L28 22 L18 16 Z" />
-        <path d="M18 6 L8 12 L8 22 L18 16 Z" />
-        <path d="M18 6 L28 12 L18 16 L8 12 Z" />
-        {/* Bottom Left Cube */}
-        <path d="M16 20 L26 26 L26 36 L16 30 Z" />
-        <path d="M16 20 L6 26 L6 36 L16 30 Z" />
-        <path d="M16 20 L26 26 L16 30 L6 26 Z" />
-        {/* Bottom Right Cube */}
-        <path d="M28 20 L38 26 L38 36 L28 30 Z" />
-        <path d="M28 20 L18 26 L18 36 L28 30 Z" />
-        <path d="M28 20 L38 26 L28 30 L18 26 Z" />
+        <path d="M 24 6 L 31 10 L 24 14 L 17 10 Z" />
+        <path d="M 17 10 V 17 L 24 21 V 14" />
+        <path d="M 31 10 V 17 L 24 21" />
+        <path d="M 16 20 L 23 24 L 16 28 L 9 24 Z" />
+        <path d="M 9 24 V 31 L 16 35 V 28" />
+        <path d="M 23 24 V 31 L 16 35" />
+        <path d="M 32 20 L 39 24 L 32 28 L 25 24 Z" />
+        <path d="M 25 24 V 31 L 32 35 V 28" />
+        <path d="M 39 24 V 31 L 32 35" />
       </svg>
     ),
-    col1: ['Drupal', 'Wordpress'],
-    col2: ['Shopify']
+    col1: ['.NET', 'Java', 'Node'],
+    col2: ['PHP', 'Ruby on Rails']
   },
   {
     id: 'frontend',
@@ -40,8 +37,8 @@ const defaultTechCards = [
         <line x1="24" y1="32" x2="32" y2="32" strokeWidth="1.8" />
       </svg>
     ),
-    col1: ['React', 'Vue', 'Bootstrap'],
-    col2: ['Angular', 'JQuery', 'WPF']
+    col1: ['React', 'Vue'],
+    col2: ['Angular']
   },
   {
     id: 'database',
@@ -53,8 +50,8 @@ const defaultTechCards = [
         <path d="M10 22 V32 C10 35 16 37.5 24 37.5 C32 35 38 32 38 32 V22" />
       </svg>
     ),
-    col1: ['MS-SQL', 'MariaDB', 'MongoDB'],
-    col2: ['Realm', 'PostgreSQL', 'Oracle']
+    col1: ['SQL Server', 'MongoDB', 'Elasticsearch'],
+    col2: ['MySQL', 'PostgreSQL', 'Oracle']
   },
   {
     id: 'deployment',
@@ -69,8 +66,8 @@ const defaultTechCards = [
         <path d="M24 24 L24 16 M21 19 L24 16 L27 19" strokeWidth="2" />
       </svg>
     ),
-    col1: ['AWS', 'Azure', 'Docker'],
-    col2: ['Kubernets', 'Google Cloud']
+    col1: ['AWS', 'Azure', 'Kubernetes'],
+    col2: ['Google Cloud', 'Docker']
   },
   {
     id: 'testing',
@@ -82,21 +79,22 @@ const defaultTechCards = [
         <path d="M17 29 L14 41 L24 37 L34 41 L31 29" />
       </svg>
     ),
-    col1: ['Selenium', 'Test Rail', 'Apache JMeter', 'BrowserStack'],
-    col2: ['Postman', 'OWASP ZAP']
+    col1: ['Selenium', 'Test Rail', 'Postman'],
+    col2: ['Apache JMeter', 'BrowserStack', 'OWASP ZAP']
   },
   {
-    id: 'architecture',
-    title: 'Architecture',
+    id: 'mobility',
+    title: 'Mobility',
     icon: (
       <svg viewBox="0 0 48 48" className="w-10 h-10 text-[#005F96]" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="24" cy="24" r="14" />
-        <path d="M24 6 V9 M24 39 V42 M6 24 H9 M39 24 H42 M11.3 11.3 L13.5 13.5 M34.5 34.5 L36.7 36.7 M11.3 36.7 L13.5 34.5 M34.5 13.5 L36.7 11.3" strokeWidth="2.8" />
-        <path d="M19 24 C19 21.5, 15 21.5, 15 24 C15 26.5, 19 26.5, 24 24 C29 21.5, 33 21.5, 33 24 C33 26.5, 29 26.5, 24 24" strokeWidth="2.2" />
+        <rect x="12" y="6" width="24" height="36" rx="4" />
+        <line x1="20" y1="10" x2="28" y2="10" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="24" cy="36" r="2" />
+        <path d="M18 20 C18 16 30 16 30 20 C30 24 18 24 18 28 C18 32 30 32 30 28" strokeWidth="1.8" />
       </svg>
     ),
-    col1: ['MVC', 'MVP', 'MVVM', 'Microservices'],
-    col2: []
+    col1: ['iOS', 'Android', 'Flutter'],
+    col2: ['React Native', 'Xamarin']
   }
 ];
 

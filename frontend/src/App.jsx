@@ -71,6 +71,10 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 const BarberAppDevelopmentService = lazy(() => import('./components/services/BarberAppDevelopmentService').then(m => ({ default: m.BarberAppDevelopmentService })));
 const OnDemandAppDevelopmentService = lazy(() => import('./components/services/OnDemandAppDevelopmentService').then(m => ({ default: m.OnDemandAppDevelopmentService })));
 const ArtificialIntelligenceDevelopmentService = lazy(() => import('./components/services/ArtificialIntelligenceDevelopmentService').then(m => ({ default: m.ArtificialIntelligenceDevelopmentService })));
+const AiCopilotDevelopmentService = lazy(() => import('./components/services/AiCopilotDevelopmentService').then(m => ({ default: m.AiCopilotDevelopmentService })));
+const EthicalAiDevelopmentService = lazy(() => import('./components/services/EthicalAiDevelopmentService').then(m => ({ default: m.EthicalAiDevelopmentService })));
+const AiPromptEngineeringService = lazy(() => import('./components/services/AiPromptEngineeringService').then(m => ({ default: m.AiPromptEngineeringService })));
+const AdaptiveAiDevelopmentService = lazy(() => import('./components/services/AdaptiveAiDevelopmentService').then(m => ({ default: m.AdaptiveAiDevelopmentService })));
 
 // Public Layout Wrapper Component
 const PublicLayoutWrapper = () => (
@@ -257,14 +261,14 @@ export function App() {
                 <Route path="/artificial-intelligence-development" element={<ServiceDetails />} />
                 <Route path="/services/generative-ai-development" element={<ServiceDetails />} />
                 <Route path="/generative-ai-development" element={<ServiceDetails />} />
-                <Route path="/services/ai-copilot-development" element={<ServiceDetails />} />
-                <Route path="/ai-copilot-development" element={<ServiceDetails />} />
-                <Route path="/services/ethical-ai-development" element={<ServiceDetails />} />
-                <Route path="/ethical-ai-development" element={<ServiceDetails />} />
-                <Route path="/services/ai-prompt-engineering" element={<ServiceDetails />} />
-                <Route path="/ai-prompt-engineering" element={<ServiceDetails />} />
-                <Route path="/services/adaptive-ai-development" element={<ServiceDetails />} />
-                <Route path="/adaptive-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/ai-copilot-development" element={<AiCopilotDevelopmentService />} />
+                <Route path="/ai-copilot-development" element={<AiCopilotDevelopmentService />} />
+                <Route path="/services/ethical-ai-development" element={<EthicalAiDevelopmentService />} />
+                <Route path="/ethical-ai-development" element={<EthicalAiDevelopmentService />} />
+                <Route path="/services/ai-prompt-engineering" element={<AiPromptEngineeringService />} />
+                <Route path="/ai-prompt-engineering" element={<AiPromptEngineeringService />} />
+                <Route path="/services/adaptive-ai-development" element={<AdaptiveAiDevelopmentService />} />
+                <Route path="/adaptive-ai-development" element={<AdaptiveAiDevelopmentService />} />
                 <Route path="/services/ai-in-business-intelligence" element={<ServiceDetails />} />
                 <Route path="/ai-in-business-intelligence" element={<ServiceDetails />} />
                 <Route path="/services/ai-in-marketing" element={<ServiceDetails />} />
