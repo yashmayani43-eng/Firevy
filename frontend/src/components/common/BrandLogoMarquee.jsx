@@ -1,58 +1,8 @@
 import React from 'react';
+import TrustMarquee from '../home/TrustMarquee';
 
-const brandLogos = [
-  { name: 'OPSYS care', src: '/images/opsys_care_logo.svg' },
-  { name: 'SEASWORTH JEWELS', src: '/images/seasworth_jewels.png' },
-  { name: 'TATVAM OVERSEAS', src: '/images/tatvam_overseas.jpg' },
-  { name: 'DH', src: '/images/dh_logo.jpg' },
-  { name: 'PARAM', src: '/images/param_logo.svg' },
-  { name: 'adani', src: '/images/logo_adani.svg' },
-  { name: 'LARSEN & TOUBRO', src: '/images/logo_larsen_toubro.svg' },
-  { name: 'LafargeHolcim', src: '/images/logo_lafargeHolcim.svg' }
-];
-
-export const BrandLogoMarquee = () => {
-  return (
-    <div className="w-full bg-white py-5 overflow-hidden select-none">
-      <div className="flex w-max animate-marquee hover:[animation-play-state:paused] items-center">
-        {/* Track 1 */}
-        <div className="flex items-center space-x-12 sm:space-x-16 pr-12 sm:pr-16 shrink-0">
-          {[...brandLogos, ...brandLogos].map((item, idx) => (
-            <div key={`logo-1-${idx}`} className="flex items-center justify-center shrink-0 h-10 sm:h-12 w-28 sm:w-36">
-              <img
-                src={item.src}
-                alt={item.name}
-                className="max-h-8 sm:max-h-10 max-w-full object-contain transition-transform hover:scale-105"
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  if (e.target.nextSibling) e.target.nextSibling.style.display = 'block';
-                }}
-              />
-              <span className="hidden font-bold text-slate-700 text-sm">{item.name}</span>
-            </div>
-          ))}
-        </div>
-
-        {/* Track 2 (Duplicate for Seamless Infinite Marquee Loop) */}
-        <div className="flex items-center space-x-12 sm:space-x-16 pr-12 sm:pr-16 shrink-0" aria-hidden="true">
-          {[...brandLogos, ...brandLogos].map((item, idx) => (
-            <div key={`logo-2-${idx}`} className="flex items-center justify-center shrink-0 h-10 sm:h-12 w-28 sm:w-36">
-              <img
-                src={item.src}
-                alt={item.name}
-                className="max-h-8 sm:max-h-10 max-w-full object-contain transition-transform hover:scale-105"
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  if (e.target.nextSibling) e.target.nextSibling.style.display = 'block';
-                }}
-              />
-              <span className="hidden font-bold text-slate-700 text-sm">{item.name}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
+export const BrandLogoMarquee = (props) => {
+  return <TrustMarquee {...props} />;
 };
 
 export default BrandLogoMarquee;

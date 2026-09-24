@@ -138,132 +138,154 @@ export const AspNetCoreDevelopmentService = () => {
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="ASP.NET Core Development Services in USA | Firevy"
-        description="We build lightweight and high performing Affordable Asp.NET Core development services to meet the needs of businesses of all type and size. Certified .NET Core developers."
+        title="ASP.Net App Development Services in USA | Firevy"
+        description="Our team designs, develops, and deploys cost-effective and reliable .NET solutions as per your business needs. Contact us to get DOT Net solutions developed by seasoned experts."
         canonical="/services/asp-net-core-development"
       />
 
       {/* =========================================================================
-          1. HERO SECTION
+          1. HERO SECTION (Exact ASP.Net App Development Mockup)
           ========================================================================= */}
-      <section className="pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-20 bg-white text-slate-900 relative overflow-hidden font-sans border-b border-slate-100">
+      <section className="pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-20 bg-slate-50/50 text-slate-900 relative overflow-hidden font-sans border-b border-slate-100">
         <Container className="relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
-            {/* Left Column: Title, Subtitle, Stats, CTAs */}
-            <div className="lg:col-span-7 space-y-5 text-left">
-              <h1 className="text-[32px] sm:text-[40px] lg:text-[46px] font-[800] text-[#0B0F19] leading-[1.18] tracking-tight">
-                ASP.NET Core Development<br className="hidden sm:inline" /> Services in USA
+            {/* Left Column: Title, Subtitle & CTAs */}
+            <div className="lg:col-span-6 space-y-6 text-left">
+              <h1 className="text-[36px] sm:text-[44px] lg:text-[50px] font-[800] text-[#0B0F19] leading-[1.15] tracking-tight">
+                ASP.Net App Development<br />Services in USA
               </h1>
 
-              <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.7] font-normal max-w-[620px]">
-                We build lightweight and high performing Affordable Asp.NET Core development services to meet the needs of businesses of all type and size. ASP.NET Core application development company offer full-cycle top.Net Core Development services to deliver high-performance applications. Get your quote today!
+              <p className="text-[15px] sm:text-[16px] text-[#475569] leading-[1.7] font-normal max-w-[580px]">
+                Our team designs, develops, and deploys cost-effective and reliable .NET solutions as per your business needs. Contact us to get DOT Net solutions developed by seasoned experts to outperform your competitors.
               </p>
 
               {/* Primary CTA Button */}
               <div className="pt-2 flex flex-wrap items-center gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-[#005F96] hover:bg-[#004875] text-white font-[700] text-sm px-7 py-3.5 rounded-md shadow-md hover:shadow-lg transition-all duration-300 group"
+                  className="inline-flex items-center justify-center gap-2.5 bg-[#005F96] hover:bg-[#004875] text-white font-[700] text-sm px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 group"
                 >
                   <span>Discuss Your Project</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
-
-              {/* 4 Statistics Counter Blocks */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 max-w-[600px] border-t border-slate-100">
-                <div className="space-y-0.5">
-                  <div className="text-[26px] sm:text-[28px] font-[800] text-[#005F96] leading-none">
-                    80+
-                  </div>
-                  <div className="text-[11.5px] sm:text-[12px] font-[600] text-[#1E293B] leading-tight">
-                    .NET Core<br />Developers
-                  </div>
-                </div>
-
-                <div className="space-y-0.5">
-                  <div className="text-[26px] sm:text-[28px] font-[800] text-[#005F96] leading-none">
-                    20+
-                  </div>
-                  <div className="text-[11.5px] sm:text-[12px] font-[600] text-[#1E293B] leading-tight">
-                    Fortune 500<br />Companies
-                  </div>
-                </div>
-
-                <div className="space-y-0.5">
-                  <div className="text-[26px] sm:text-[28px] font-[800] text-[#005F96] leading-none">
-                    600+
-                  </div>
-                  <div className="text-[11.5px] sm:text-[12px] font-[600] text-[#1E293B] leading-tight">
-                    Projects Completed in<br />.NET Core Tech
-                  </div>
-                </div>
-
-                <div className="space-y-0.5">
-                  <div className="text-[26px] sm:text-[28px] font-[800] text-[#005F96] leading-none">
-                    320+
-                  </div>
-                  <div className="text-[11.5px] sm:text-[12px] font-[600] text-[#1E293B] leading-tight">
-                    5-Star Clutch<br />Reviews
-                  </div>
-                </div>
-              </div>
             </div>
 
-            {/* Right Column: Graphic / Laptop Illustration matching Sapphire Reference */}
-            <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[480px] aspect-[4/3] bg-gradient-to-br from-blue-50/80 via-sky-50/40 to-slate-50 rounded-2xl p-6 border border-slate-200/60 shadow-xl flex items-center justify-center overflow-hidden group">
+            {/* Right Column: 1:1 Exact Vector Graphic Illustration matching reference image */}
+            <div className="lg:col-span-6 flex justify-center">
+              <div className="relative w-full max-w-[500px] aspect-[5/4] flex items-center justify-center p-2">
+                <div className="absolute inset-0 bg-blue-100/50 rounded-full blur-3xl transform scale-90 pointer-events-none" />
                 
-                {/* Background Decorative Rings */}
-                <div className="absolute -top-12 -right-12 w-48 h-48 bg-blue-100/50 rounded-full blur-2xl pointer-events-none" />
-                <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-sky-100/50 rounded-full blur-2xl pointer-events-none" />
+                {/* SVG Vector Graphic matching reference screenshot 1:1 */}
+                <div className="relative z-10 w-full h-full flex items-center justify-center">
+                  <svg className="w-full h-full max-h-[380px]" viewBox="0 0 500 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Background Wireframe Gears */}
+                    <g stroke="#38BDF8" strokeWidth="1.5" opacity="0.4" fill="none">
+                      <circle cx="210" cy="55" r="22" strokeDasharray="3 3" />
+                      <circle cx="210" cy="55" r="12" />
+                      <circle cx="450" cy="220" r="38" strokeDasharray="4 4" />
+                      <circle cx="450" cy="220" r="22" />
+                    </g>
+                    <circle cx="442" cy="235" r="3" fill="#F97316" />
 
-                {/* Laptop Mockup Illustration */}
-                <div className="relative w-full max-w-[360px] bg-slate-900 rounded-lg p-3 shadow-2xl border border-slate-800">
-                  <div className="flex items-center space-x-1.5 pb-2 mb-2 border-b border-slate-800">
-                    <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-amber-500" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-                    <span className="text-[10px] text-slate-400 font-mono pl-2">AspNetCoreApp.csproj</span>
-                  </div>
+                    {/* Laptop Bottom Base Stand */}
+                    <path d="M 60 345 L 440 345 C 445 345, 450 350, 440 358 L 60 358 C 50 358, 55 350, 60 345 Z" fill="url(#laptop_base_grad_core)" stroke="#CBD5E1" strokeWidth="1" />
+                    <rect x="220" y="345" width="60" height="4" rx="2" fill="#94A3B8" />
 
-                  <div className="font-mono text-[11px] space-y-1.5 text-slate-300 leading-relaxed py-2 pl-1">
-                    <div className="text-purple-400">using Microsoft.AspNetCore.Builder;</div>
-                    <div className="text-blue-400">namespace <span className="text-amber-300">Firevy.AspNetCore</span></div>
-                    <div>&#123;</div>
-                    <div className="pl-4 text-sky-300">var builder = WebApplication.CreateBuilder(args);</div>
-                    <div className="pl-4 text-emerald-400">builder.Services.AddControllers();</div>
-                    <div className="pl-4 text-blue-300">var app = builder.Build();</div>
-                    <div className="pl-4 text-purple-300">app.MapControllers();</div>
-                    <div className="pl-4 text-emerald-400">app.Run();</div>
-                    <div>&#123;</div>
-                  </div>
-                </div>
+                    {/* Laptop Black Outer Frame */}
+                    <rect x="90" y="70" width="320" height="275" rx="10" fill="#0A0E17" stroke="#1E293B" strokeWidth="3" />
 
-                {/* Floating Tech Badges */}
-                <div className="absolute top-4 left-4 bg-pink-500 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md animate-bounce [animation-duration:3s]">
-                  .NET Core
-                </div>
+                    {/* Laptop Canvas Screen */}
+                    <rect x="100" y="80" width="300" height="255" rx="4" fill="#FFFFFF" />
 
-                <div className="absolute top-4 right-4 bg-amber-500 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
-                  C#
-                </div>
+                    {/* Screen Top Title Bar (#38BDF8 Bright Blue) */}
+                    <path d="M 100 84 C 100 81.7, 101.7 80, 104 80 L 396 80 C 398.3 80, 400 81.7, 400 84 L 400 108 L 100 108 Z" fill="#38BDF8" />
+                    
+                    <circle cx="116" cy="94" r="5" fill="#F43F5E" />
+                    <circle cx="130" cy="94" r="5" fill="#FBBF24" />
+                    <circle cx="144" cy="94" r="5" fill="#FFFFFF" />
 
-                <div className="absolute bottom-6 left-4 bg-[#005F96] text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
-                  Azure
-                </div>
+                    {/* Code Line Bars on Left Side */}
+                    <g fill="#BAE6FD">
+                      <rect x="120" y="125" width="165" height="7" rx="3.5" fill="#93C5FD" />
+                      <rect x="120" y="138" width="130" height="7" rx="3.5" />
+                      <rect x="120" y="151" width="145" height="7" rx="3.5" fill="#93C5FD" />
+                      <rect x="120" y="164" width="110" height="7" rx="3.5" />
+                      <rect x="120" y="177" width="155" height="7" rx="3.5" fill="#93C5FD" />
+                      <rect x="120" y="190" width="95" height="7" rx="3.5" />
+                      <rect x="120" y="203" width="140" height="7" rx="3.5" fill="#93C5FD" />
+                      <rect x="120" y="216" width="160" height="7" rx="3.5" />
+                      <rect x="120" y="229" width="125" height="7" rx="3.5" fill="#93C5FD" />
+                      <rect x="120" y="242" width="145" height="7" rx="3.5" />
+                      <rect x="120" y="255" width="110" height="7" rx="3.5" fill="#93C5FD" />
+                      <rect x="120" y="268" width="155" height="7" rx="3.5" />
+                      <rect x="120" y="281" width="130" height="7" rx="3.5" fill="#93C5FD" />
+                      <rect x="120" y="294" width="90" height="7" rx="3.5" />
+                    </g>
 
-                <div className="absolute bottom-6 right-4 bg-teal-600 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
-                  SQL Server
-                </div>
+                    {/* Microsoft .NET Logo Emblem on Right Side */}
+                    <g transform="translate(300, 140)">
+                      <path d="M 12 42 C 6 22, 28 8, 36 24 C 44 40, 62 26, 68 8 C 58 26, 42 38, 32 20 C 22 4, 14 18, 12 42 Z" fill="url(#ms_wave_grad_core)" />
+                      <path d="M 28 42 C 34 22, 56 12, 64 28 C 54 28, 44 26, 36 14 C 28 28, 28 38, 28 42 Z" fill="#0078D4" opacity="0.8" />
+                      <text x="68" y="25" fill="#1E293B" fontSize="9" fontWeight="bold" fontFamily="sans-serif">Microsoft®</text>
+                      <text x="5" y="75" fill="#0F172A" fontSize="36" fontWeight="900" fontFamily="sans-serif" letterSpacing="-1">.NET</text>
+                    </g>
 
-                <div className="absolute top-1/2 -right-2 transform -translate-y-1/2 bg-blue-600 text-white text-[11px] font-bold px-3 py-1 rounded-md shadow-md">
-                  Web API
-                </div>
+                    {/* FLOATING BADGES */}
 
-                <div className="absolute top-1/2 -left-2 transform -translate-y-1/2 text-[#005F96] font-mono font-bold text-lg bg-white px-2 py-0.5 rounded shadow">
-                  &lt;/&gt;
+                    {/* 1. VB (Top Left - Yellow/Gold) */}
+                    <g transform="translate(70, 80)">
+                      <rect x="0" y="0" width="58" height="58" rx="8" fill="#EAB308" filter="url(#badge_shadow_core)" />
+                      <text x="29" y="38" fill="#FFFFFF" fontSize="24" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">VB</text>
+                    </g>
+
+                    {/* 2. .NET Core (Top Center - Purple) */}
+                    <g transform="translate(235, 15)">
+                      <rect x="0" y="0" width="66" height="66" rx="10" fill="#581C87" filter="url(#badge_shadow_core)" />
+                      <text x="33" y="36" fill="#FFFFFF" fontSize="20" fontWeight="extrabold" textAnchor="middle" fontFamily="sans-serif">.NET</text>
+                      <text x="33" y="52" fill="#E9D5FF" fontSize="11" fontWeight="normal" textAnchor="middle" fontFamily="sans-serif">Core</text>
+                    </g>
+
+                    {/* 3. SQL Server (Top Right - Pink/Magenta) */}
+                    <g transform="translate(385, 50)">
+                      <rect x="0" y="0" width="58" height="58" rx="8" fill="#EC4899" filter="url(#badge_shadow_core)" />
+                      <ellipse cx="29" cy="18" rx="14" ry="5" fill="none" stroke="#FFFFFF" strokeWidth="1.5" />
+                      <path d="M 15 18 L 15 32 C 15 35, 43 35, 43 32 L 43 18" fill="none" stroke="#FFFFFF" strokeWidth="1.5" />
+                      <path d="M 15 25 C 15 28, 43 28, 43 25" fill="none" stroke="#FFFFFF" strokeWidth="1.5" />
+                      <text x="29" y="48" fill="#FFFFFF" fontSize="8" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">SQL Server</text>
+                    </g>
+
+                    {/* 4. Azure (Bottom Left - Blue) */}
+                    <g transform="translate(42, 218)">
+                      <rect x="0" y="0" width="66" height="66" rx="8" fill="#0078D4" filter="url(#badge_shadow_core)" />
+                      <path d="M 28 14 L 45 42 L 32 42 L 23 28 Z" fill="#FFFFFF" />
+                      <path d="M 20 22 L 14 42 L 30 42 Z" fill="#FFFFFF" opacity="0.8" />
+                      <text x="33" y="56" fill="#FFFFFF" fontSize="11" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">Azure</text>
+                    </g>
+
+                    {/* 5. C# (Bottom Right - Emerald/Teal Green) */}
+                    <g transform="translate(388, 248)">
+                      <rect x="0" y="0" width="64" height="64" rx="8" fill="#00C49F" filter="url(#badge_shadow_core)" />
+                      <polygon points="32,14 46,22 46,38 32,46 18,38 18,22" fill="#FFFFFF" />
+                      <text x="32" y="34" fill="#00C49F" fontSize="14" fontWeight="black" textAnchor="middle" fontFamily="sans-serif">C#</text>
+                    </g>
+
+                    {/* Gradients & Filters */}
+                    <defs>
+                      <linearGradient id="laptop_base_grad_core" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stopColor="#E2E8F0" />
+                        <stop offset="100%" stopColor="#CBD5E1" />
+                      </linearGradient>
+                      <linearGradient id="ms_wave_grad_core" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#00A4EF" />
+                        <stop offset="100%" stopColor="#0078D4" />
+                      </linearGradient>
+                      <filter id="badge_shadow_core" x="-10%" y="-10%" width="130%" height="130%">
+                        <feDropShadow dx="0" dy="5" stdDeviation="5" floodColor="#000000" floodOpacity="0.15" />
+                      </filter>
+                    </defs>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -273,71 +295,330 @@ export const AspNetCoreDevelopmentService = () => {
       </section>
 
       {/* =========================================================================
-          2. CLIENT LOGO MARQUEE
+          2. CLIENT LOGOS STRIP (Homepage Style Infinite Scrolling Marquee)
           ========================================================================= */}
       <BrandLogoMarquee />
 
       {/* =========================================================================
-          3. ACQUIRE CUSTOM ASP.NET CORE WEB DEVELOPMENT SERVICES
+          3. #1 .NET APPLICATION DEVELOPMENT SERVICES SECTION
           ========================================================================= */}
       <section className="py-16 sm:py-20 bg-white text-slate-900 text-left border-b border-slate-100">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             
-            {/* Left Column: Vector Illustration */}
+            {/* Left Column: Vector Illustration (Mobile & Web App Development) */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[420px] aspect-square flex items-center justify-center">
-                <div className="absolute inset-0 bg-sky-100/70 rounded-full blur-2xl transform scale-90 pointer-events-none" />
+              <div className="relative w-full max-w-[480px] aspect-[5/4] flex items-center justify-center p-2">
+                <div className="absolute inset-0 bg-sky-100/60 rounded-full blur-3xl transform scale-90 pointer-events-none" />
                 
-                <div className="relative z-10 w-full h-full flex items-center justify-center p-4">
-                  <svg className="w-full h-full" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="200" cy="200" r="150" fill="#E0F2FE" opacity="0.8" />
-                    <rect x="90" y="110" width="220" height="180" rx="12" fill="#FFFFFF" stroke="#0284C7" strokeWidth="4" />
-                    <rect x="90" y="110" width="220" height="30" rx="12" fill="#0284C7" />
-                    <circle cx="110" cy="125" r="4" fill="#FFFFFF" />
-                    <circle cx="125" cy="125" r="4" fill="#FFFFFF" />
-                    <circle cx="140" cy="125" r="4" fill="#FFFFFF" />
-                    
-                    <rect x="110" y="160" width="80" height="8" rx="4" fill="#38BDF8" />
-                    <rect x="110" y="176" width="130" height="8" rx="4" fill="#E2E8F0" />
-                    <rect x="110" y="192" width="100" height="8" rx="4" fill="#E2E8F0" />
-                    <rect x="110" y="208" width="150" height="8" rx="4" fill="#0284C7" />
-                    <rect x="110" y="224" width="70" height="8" rx="4" fill="#E2E8F0" />
-                    <rect x="110" y="240" width="120" height="8" rx="4" fill="#38BDF8" />
+                {/* 1:1 Exact Vector Graphic Illustration matching reference image */}
+                <div className="relative z-10 w-full h-full flex items-center justify-center">
+                  <svg className="w-full h-full max-h-[380px]" viewBox="0 0 600 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <filter id="shadow_soft_sec3_asp" x="-10%" y="-10%" width="120%" height="120%">
+                        <feDropShadow dx="0" dy="4" stdDeviation="5" floodColor="#0F172A" floodOpacity="0.08" />
+                      </filter>
+                    </defs>
 
-                    <rect x="65" y="210" width="75" height="90" rx="8" fill="#0284C7" />
-                    <path d="M 65 225 L 140 225 L 120 210 L 65 210 Z" fill="#0369A1" />
-                    
-                    <circle cx="310" cy="270" r="25" fill="#38BDF8" opacity="0.9" />
-                    <circle cx="310" cy="270" r="10" fill="#FFFFFF" />
+                    {/* Background Organic Blobs */}
+                    <g opacity="0.9">
+                      <path d="M 100 200 C 60 120, 140 40, 240 60 C 320 80, 360 20, 460 70 C 540 120, 560 260, 510 330 C 460 400, 360 410, 260 395 C 160 380, 100 320, 100 200 Z" fill="#E1F4FE" />
+                      <path d="M 120 220 C 90 150, 150 70, 260 80 C 350 90, 420 40, 490 110 C 560 180, 520 310, 440 370 C 350 430, 220 390, 150 350 C 100 310, 130 260, 120 220 Z" fill="#D2EFFF" opacity="0.6" />
+                      <path d="M 60 280 C 40 220, 80 160, 140 170 C 200 180, 220 280, 160 340 C 100 400, 70 340, 60 280 Z" fill="#EBF7FF" />
+                    </g>
+
+                    {/* Top Right Gear Wheel Icon */}
+                    <g transform="translate(395, 18)">
+                      <path d="M 25 5 L 29 5 L 31 11 C 33 12, 35 13, 37 14 L 43 11 L 46 14 L 43 20 C 44 22, 45 24, 46 26 L 52 28 L 52 32 L 46 34 C 45 36, 44 38, 43 40 L 46 46 L 43 49 L 37 46 C 35 47, 33 48, 31 49 L 29 55 L 25 55 L 23 49 C 21 48, 19 47, 17 46 L 11 49 L 8 46 L 11 40 C 10 38, 9 36, 8 34 L 2 32 L 2 28 L 8 26 C 9 24, 10 22, 11 20 L 8 14 L 11 11 L 17 14 C 19 13, 21 12, 23 11 Z" fill="#008ECB" />
+                      <circle cx="27" cy="30" r="11" fill="#E1F4FE" />
+                    </g>
+
+                    {/* Top Left Soft Blue Badge */}
+                    <g transform="translate(125, 90)">
+                      <rect x="0" y="0" width="68" height="68" rx="18" fill="#369FE2" filter="url(#shadow_soft_sec3_asp)" />
+                    </g>
+
+                    {/* Top Right Code Badge </ > */}
+                    <g transform="translate(445, 75)">
+                      <rect x="0" y="0" width="72" height="72" rx="18" fill="#008ECB" filter="url(#shadow_soft_sec3_asp)" />
+                      <path d="M 22 45 L 12 36 L 22 27 M 50 45 L 60 36 L 50 27 M 40 21 L 32 51" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                    </g>
+
+                    {/* Central Smartphone */}
+                    <g transform="translate(230, 70)">
+                      {/* Dark Outer Frame */}
+                      <rect x="0" y="0" width="180" height="320" rx="24" fill="#1E2C39" filter="url(#shadow_soft_sec3_asp)" />
+                      
+                      {/* Screen Display (Bright Cyan Blue) */}
+                      <rect x="12" y="16" width="156" height="288" rx="14" fill="#009BD8" />
+
+                      {/* Phone UI Layout Wireframe Elements */}
+                      {/* Dotted Rectangle Container at Top */}
+                      <rect x="26" y="32" width="128" height="85" rx="4" fill="none" stroke="#0080B2" strokeWidth="1.5" strokeDasharray="3 3" />
+                      <circle cx="90" cy="50" r="3" fill="#0080B2" />
+                      <circle cx="102" cy="50" r="3" fill="#0080B2" />
+                      <circle cx="114" cy="50" r="3" fill="#0080B2" />
+                      
+                      {/* Image Icon inside top frame */}
+                      <g transform="translate(74, 60)">
+                        <rect x="0" y="0" width="32" height="24" rx="3" fill="none" stroke="#0080B2" strokeWidth="1.5" />
+                        <path d="M 4 20 L 12 11 L 18 17 L 22 13 L 28 20 Z" fill="#0080B2" />
+                        <circle cx="22" cy="7" r="2.5" fill="#0080B2" />
+                      </g>
+
+                      {/* Middle UI Blocks */}
+                      <rect x="26" y="125" width="40" height="40" rx="4" fill="#0087BA" opacity="0.6" />
+                      <rect x="74" y="125" width="80" height="100" rx="4" fill="#0087BA" opacity="0.5" />
+                      <rect x="82" y="135" width="64" height="22" rx="3" fill="#007CAE" />
+                      <rect x="82" y="165" width="64" height="22" rx="3" fill="#007CAE" />
+                      <rect x="82" y="195" width="64" height="22" rx="3" fill="#007CAE" />
+
+                      {/* Bottom Document Card Icon */}
+                      <g transform="translate(42, 235)">
+                        <rect x="0" y="0" width="48" height="36" rx="4" fill="#0087BA" opacity="0.6" />
+                        <rect x="14" y="8" width="20" height="20" rx="2" fill="none" stroke="#0080B2" strokeWidth="1.5" />
+                        <line x1="18" y1="13" x2="30" y2="13" stroke="#0080B2" strokeWidth="1.5" strokeLinecap="round" />
+                        <line x1="18" y1="17" x2="28" y2="17" stroke="#0080B2" strokeWidth="1.5" strokeLinecap="round" />
+                      </g>
+
+                      {/* Bottom Chat Icon Tab Badge */}
+                      <g transform="translate(66, 280)">
+                        <rect x="0" y="0" width="48" height="38" rx="10" fill="#008ECB" />
+                        <path d="M 16 12 C 12 12, 10 14, 10 18 C 10 21, 12 23, 15 23 L 15 26 L 19 23 L 32 23 C 34 23, 36 21, 36 18 C 36 14, 34 12, 32 12 Z" fill="#FFFFFF" />
+                      </g>
+                    </g>
+
+                    {/* Left Side: Kneeling Developer Figure & Floating Video Player Card */}
+                    <g>
+                      {/* Floating Video Player Card */}
+                      <g transform="translate(195, 200)">
+                        <rect x="0" y="0" width="105" height="60" rx="5" fill="#86C8EF" stroke="#71BCE7" strokeWidth="1" filter="url(#shadow_soft_sec3_asp)" />
+                        {/* Header with play bar */}
+                        <rect x="4" y="4" width="97" height="38" rx="3" fill="#FFFFFF" opacity="0.3" />
+                        {/* Center Play Circle Button */}
+                        <circle cx="52.5" cy="23" r="10" fill="#FFFFFF" />
+                        <polygon points="50.5,18 57.5,23 50.5,28" fill="#5A8EC9" />
+                        {/* Video timeline bar at bottom */}
+                        <rect x="8" y="48" width="89" height="4" rx="2" fill="#58A8DE" />
+                        <rect x="8" y="48" width="26" height="4" rx="2" fill="#1B2734" />
+                      </g>
+
+                      {/* Kneeling Developer Character */}
+                      <g transform="translate(100, 240)">
+                        {/* Head & Hair */}
+                        <circle cx="65" cy="12" r="10" fill="#FEDECF" />
+                        <path d="M 55 10 C 55 2, 65 0, 73 4 C 77 7, 75 16, 75 16 C 71 14, 63 15, 60 18 Z" fill="#1B2734" />
+                        
+                        {/* Arms holding the video card */}
+                        <path d="M 68 28 L 105 -24 L 115 -20 L 76 34 Z" fill="#5A8EC9" />
+                        <path d="M 62 30 L 98 -28 L 108 -24 L 70 38 Z" fill="#4B7EBA" />
+                        
+                        {/* Shirt / Torso */}
+                        <path d="M 52 24 L 72 24 L 78 52 L 44 52 Z" fill="#5A8EC9" />
+                        
+                        {/* Kneeling Legs (Navy Trousers) */}
+                        <path d="M 46 52 L 60 52 L 55 90 L 15 90 L 15 80 L 42 78 Z" fill="#1B2734" />
+                        <path d="M 62 52 L 82 52 L 86 88 L 72 88 L 68 64 Z" fill="#1B2734" />
+                        
+                        {/* Shoes */}
+                        <ellipse cx="12" cy="88" rx="8" ry="4" fill="#1B2734" />
+                        <ellipse cx="80" cy="88" rx="9" ry="4" fill="#1B2734" />
+                      </g>
+                    </g>
+
+                    {/* Right Side: Standing Developer Figure & Floating Code Window */}
+                    <g>
+                      {/* Floating Code Editor Window */}
+                      <g transform="translate(340, 145)">
+                        <rect x="0" y="0" width="115" height="95" rx="6" fill="#86C8EF" stroke="#72BDE6" strokeWidth="1" filter="url(#shadow_soft_sec3_asp)" />
+                        {/* Dark Header Bar */}
+                        <path d="M 0 6 C 0 2.7, 2.7 0, 6 0 L 109 0 C 112.3 0, 115 2.7, 115 6 L 115 16 L 0 16 Z" fill="#1B2734" />
+                        <circle cx="10" cy="8" r="2.5" fill="#EF4444" />
+                        <circle cx="18" cy="8" r="2.5" fill="#F59E0B" />
+                        <circle cx="26" cy="8" r="2.5" fill="#10B981" />
+                        
+                        {/* Code Syntax Lines */}
+                        <g fill="#1B2734" opacity="0.8">
+                          <rect x="10" y="24" width="35" height="4" rx="2" />
+                          <rect x="48" y="24" width="40" height="4" rx="2" fill="#005F96" />
+                          <rect x="18" y="32" width="25" height="4" rx="2" fill="#005F96" />
+                          <rect x="46" y="32" width="50" height="4" rx="2" />
+                          <rect x="26" y="40" width="45" height="4" rx="2" />
+                          <rect x="26" y="48" width="30" height="4" rx="2" fill="#005F96" />
+                          <rect x="26" y="56" width="60" height="4" rx="2" />
+                          <rect x="18" y="64" width="40" height="4" rx="2" />
+                          <rect x="10" y="72" width="20" height="4" rx="2" fill="#005F96" />
+                          <rect x="10" y="80" width="55" height="4" rx="2" />
+                        </g>
+                      </g>
+
+                      {/* Standing Developer Character */}
+                      <g transform="translate(440, 185)">
+                        {/* Head & Hair */}
+                        <circle cx="60" cy="14" r="10" fill="#FEDECF" />
+                        <path d="M 50 12 C 50 4, 60 2, 68 6 C 72 9, 70 18, 70 18 C 66 16, 58 17, 55 20 Z" fill="#1B2734" />
+                        
+                        {/* Torso & Shirt & Tie */}
+                        <path d="M 48 26 L 70 26 L 74 65 L 44 65 Z" fill="#5A8EC9" />
+                        {/* Navy Tie */}
+                        <polygon points="58,26 62,26 63,48 59,52 57,48" fill="#1B2734" />
+
+                        {/* Raised Right Arm pointing finger at Code Window */}
+                        <path d="M 46 30 L -10 -25 L -5 -32 L 52 26 Z" fill="#5A8EC9" />
+                        <circle cx="-9" cy="-28" r="4" fill="#FEDECF" />
+
+                        {/* Left Arm holding Laptop */}
+                        <path d="M 68 32 L 50 50 L 35 48 L 30 52 L 50 58 L 72 38 Z" fill="#4B7EBA" />
+                        {/* Small Laptop in Left Hand */}
+                        <rect x="18" y="40" width="24" height="15" rx="2" fill="#1B2734" transform="rotate(-10)" />
+                        <rect x="14" y="52" width="28" height="3" rx="1" fill="#94A3B8" />
+
+                        {/* Standing Legs (Navy Trousers) */}
+                        <path d="M 45 65 L 57 65 L 55 145 L 43 145 Z" fill="#1B2734" />
+                        <path d="M 60 65 L 72 65 L 70 145 L 58 145 Z" fill="#1B2734" />
+
+                        {/* Black Shoes */}
+                        <path d="M 38 142 L 55 142 C 55 147, 38 147, 38 142 Z" fill="#1B2734" />
+                        <path d="M 54 142 L 72 142 C 72 147, 54 147, 54 142 Z" fill="#1B2734" />
+                      </g>
+                    </g>
                   </svg>
                 </div>
               </div>
             </div>
 
-            {/* Right Column: Heading & Paragraph */}
-            <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-[800] text-slate-900 tracking-tight leading-tight font-sans">
-                Acquire Custom ASP.Net Core<br />Web Development Services
+            {/* Right Column: Heading & Detailed Description */}
+            <div className="lg:col-span-7 space-y-5">
+              <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-900 tracking-tight leading-tight font-sans">
+                #1 .NET Application<br />Development Services
               </h2>
               
-              <div className="space-y-3 text-sm sm:text-[15px] text-[#475569] leading-relaxed font-normal">
+              <div className="space-y-4 text-sm sm:text-[15.5px] text-[#475569] leading-relaxed font-normal">
                 <p>
-                  Our team transforms the functions of manufacturing, supply chain, finance, customer relations, and human resources, among other areas, for clients in a variety of industries by enabling creative, high-performance business solutions. We offer continuing support, strategy, implementation, and consulting for the whole range of Custom ASP.NET Core application development services.
+                  The creation of .NET applications provides businesses with quick, easy-to-use, feature-rich solutions that enhance business results and expedite operations. We provide a broad selection of tailored .NET development solutions as part of our AI-Powered .NET Application Development Services. We are Affordable .NET development services for startups with more than ten years of expertise developing IT solutions and collaborating with businesses from a range of industries. See more about our services for .NET applications here. Reach out to us for a quick quote now!
+                </p>
+              </div>
+
+              {/* Highlight Badges */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div className="flex items-center gap-2.5 text-sm font-semibold text-slate-800">
+                  <ShieldCheck className="w-5 h-5 text-[#005F96] shrink-0" />
+                  <span>Enterprise Security & NDA</span>
+                </div>
+                <div className="flex items-center gap-2.5 text-sm font-semibold text-slate-800">
+                  <Cloud className="w-5 h-5 text-[#005F96] shrink-0" />
+                  <span>Cloud & Azure Optimization</span>
+                </div>
+                <div className="flex items-center gap-2.5 text-sm font-semibold text-slate-800">
+                  <Sliders className="w-5 h-5 text-[#005F96] shrink-0" />
+                  <span>AI-Powered Architecture</span>
+                </div>
+                <div className="flex items-center gap-2.5 text-sm font-semibold text-slate-800">
+                  <Clock className="w-5 h-5 text-[#005F96] shrink-0" />
+                  <span>24/7 SLA Maintenance</span>
+                </div>
+              </div>
+
+              <div className="pt-3">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 bg-[#005F96] hover:bg-[#004875] text-white font-bold text-sm px-7 py-3.5 rounded-lg shadow-md transition-all"
+                >
+                  <span>Request Quick Quote</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </Container>
+      </section>
+
+      {/* =========================================================================
+          3.5 BRIEF ABOUT TOP .NET DEVELOPMENT SERVICES SECTION (Mockup Match)
+          ========================================================================= */}
+      <section className="py-16 sm:py-20 bg-slate-50/60 text-slate-900 text-left border-b border-slate-100">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            
+            {/* Left Column: Heading & Paragraphs */}
+            <div className="lg:col-span-6 space-y-5">
+              <h2 className="text-3xl sm:text-4xl lg:text-[38px] font-[800] text-slate-900 tracking-tight leading-tight font-sans">
+                Brief About Top .NET<br />Development Services
+              </h2>
+              
+              <div className="space-y-4 text-sm sm:text-[15px] text-[#475569] leading-relaxed font-normal">
+                <p>
+                  ASP NET framework is based on object-oriented programming, which reduces extraneous codes and requires developers to do less coding. The .NET framework facilitates post-development deployment with capabilities like no-impact apps, private components, controlled code sharing, side-by-side versioning, and partially trusted code.
                 </p>
                 <p>
-                  With top ASP.NET Core technology solutions provider, knowledge, and Center of Excellence, our team is committed to providing solutions with the most cutting-edge .NET Core product offerings for a variety of issues and complexity. Contact us now for a quick quote!
+                  .NET has been used to create millions of apps since its initial release in 2002. It also performs quite well on Microsoft® Windows Server™ 2003 and Windows 2000 Server.
                 </p>
               </div>
 
               <div className="pt-2">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 bg-[#005F96] hover:bg-[#004875] text-white font-bold text-sm px-6 py-3 rounded-md shadow transition-all"
+                  className="inline-flex items-center gap-2 bg-[#005F96] hover:bg-[#004875] text-white font-bold text-sm px-7 py-3.5 rounded-lg shadow-md transition-all"
                 >
-                  <span>Request Quick Quote</span>
+                  <span>Get Started Now</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
+              </div>
+            </div>
+
+            {/* Right Column: Multi-Device Responsive Illustration */}
+            <div className="lg:col-span-6 flex justify-center">
+              <div className="relative w-full max-w-[480px] aspect-[4/3] flex items-center justify-center p-2">
+                <div className="absolute inset-0 bg-blue-100/60 rounded-full blur-3xl transform scale-90 pointer-events-none" />
+                
+                {/* SVG Vector illustration matching mockup */}
+                <div className="relative z-10 w-full h-full flex items-center justify-center">
+                  <svg className="w-full h-full max-h-[380px]" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="250" cy="200" r="160" fill="#F0F9FF" />
+                    
+                    {/* Background Laptop */}
+                    <rect x="90" y="100" width="320" height="200" rx="14" fill="#1E293B" stroke="#0F172A" strokeWidth="4" />
+                    <rect x="100" y="115" width="300" height="170" rx="8" fill="#F8FAFC" />
+                    
+                    <circle cx="115" cy="128" r="4" fill="#EF4444" />
+                    <circle cx="128" cy="128" r="4" fill="#F59E0B" />
+                    <circle cx="141" cy="128" r="4" fill="#10B981" />
+                    
+                    <rect x="115" y="145" width="130" height="75" rx="8" fill="#BAE6FD" />
+                    <rect x="255" y="145" width="130" height="18" rx="4" fill="#E2E8F0" />
+                    <rect x="255" y="172" width="100" height="14" rx="4" fill="#E2E8F0" />
+                    <rect x="115" y="230" width="130" height="45" rx="6" fill="#FCA5A5" />
+                    <rect x="255" y="230" width="130" height="45" rx="6" fill="#BAE6FD" />
+
+                    {/* Left Phone */}
+                    <rect x="50" y="170" width="80" height="165" rx="16" fill="#0F172A" stroke="#334155" strokeWidth="3" />
+                    <rect x="56" y="180" width="68" height="145" rx="10" fill="#FFFFFF" />
+                    <rect x="64" y="192" width="52" height="45" rx="4" fill="#BAE6FD" />
+                    <rect x="64" y="246" width="52" height="14" rx="3" fill="#FCA5A5" />
+                    <rect x="64" y="268" width="52" height="14" rx="3" fill="#E2E8F0" />
+                    <circle cx="78" cy="296" r="3" fill="#F59E0B" />
+                    <circle cx="92" cy="296" r="3" fill="#F59E0B" />
+
+                    {/* Right Tablet / Phone */}
+                    <rect x="375" y="170" width="95" height="165" rx="16" fill="#0F172A" stroke="#334155" strokeWidth="3" />
+                    <rect x="381" y="180" width="83" height="145" rx="10" fill="#FFFFFF" />
+                    <rect x="390" y="192" width="65" height="55" rx="4" fill="#BAE6FD" />
+                    <rect x="390" y="256" width="65" height="15" rx="3" fill="#E2E8F0" />
+                    <rect x="390" y="278" width="65" height="15" rx="3" fill="#FCA5A5" />
+                    <circle cx="410" cy="305" r="3.5" fill="#3B82F6" />
+                    <circle cx="426" cy="305" r="3.5" fill="#3B82F6" />
+
+                    {/* Floating </> Badge */}
+                    <rect x="215" y="65" width="52" height="36" rx="10" fill="#FFFFFF" stroke="#F97316" strokeWidth="2.5" />
+                    <text x="241" y="89" fill="#F97316" fontSize="18" fontWeight="bold" textAnchor="middle" fontFamily="monospace">&lt;/&gt;</text>
+
+                    {/* Floating Microsoft .NET Logo Badge */}
+                    <circle cx="335" cy="75" r="24" fill="#FFFFFF" stroke="#0078D4" strokeWidth="2" />
+                    <path d="M323 66L331 78H335L347 66H343L333 75.5L326.5 66H323Z" fill="#0078D4" />
+                    <text x="335" y="91" fill="#1E293B" fontSize="9" fontWeight="bold" textAnchor="middle">.NET</text>
+                  </svg>
+                </div>
               </div>
             </div>
 
@@ -351,7 +632,7 @@ export const AspNetCoreDevelopmentService = () => {
       <ClutchTopRatedBanner title="World Wide Top Rated IT Company on Clutch" />
 
       {/* =========================================================================
-          5. TURN YOUR IDEAS INTO SOLUTIONS
+          5. WE DEVELOP SECURE AND FEATURE-RICH WEB SOLUTIONS
           ========================================================================= */}
       <section className="py-16 sm:py-20 bg-white text-slate-900 text-left border-b border-slate-100">
         <Container>
@@ -367,8 +648,8 @@ export const AspNetCoreDevelopmentService = () => {
                     <Quote className="w-8 h-8 rotate-180" />
                   </div>
                   
-                  <h3 className="text-2xl sm:text-3xl font-[900] text-[#005F96] leading-tight tracking-tight">
-                    Affordable ASP.NET Core Application Development Company
+                  <h3 className="text-2xl sm:text-3xl font-[900] text-[#005F96] leading-snug tracking-tight">
+                    Scalability, Security, Affordability, And Performance
                   </h3>
                 </div>
               </div>
@@ -377,15 +658,15 @@ export const AspNetCoreDevelopmentService = () => {
             {/* Right Column: Heading & Paragraphs */}
             <div className="lg:col-span-7 space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-tight">
-                Turn Your Ideas Into Solutions With Our ASP.NET Core Development Services
+                We Develop Secure And Feature-Rich Web Solutions
               </h2>
 
-              <div className="space-y-3 text-sm sm:text-[14.5px] text-[#475569] leading-relaxed font-normal">
+              <div className="space-y-4 text-sm sm:text-[15px] text-[#475569] leading-relaxed font-normal">
                 <p>
-                  We have a dependable ASP.NET Core web development team that is well-versed in enterprise data management, infrastructure optimization, portals and collaboration, business process automation, custom application creation, <strong className="text-slate-900 font-semibold">business intelligence</strong>, and systems integration. Our ASP.NET Core web development team uses cutting-edge tools, methodologies, and practices to develop applications that suit your business needs and standards.
+                  ASP.NET provides the framework you need to construct simple online applications as well as large and complicated applications. We have expertise working with clients from many industries as one of the best ASP.NET development companies. We are functioning on several different bandwidth initiatives. Being a <strong className="text-[#005F96] font-semibold">top software developmnet company</strong>, We have the necessary knowledge, team, and resources to develop business-specific apps to help your company succeed.
                 </p>
                 <p>
-                  Our ASP.NET Core web development team has extensive experience delivering software and products that use .NET Core, Azure IoT, Payment Gateway Solution, Microsoft Azure, Azure SQL, Content Management System, Microservices, and REST APIs. Hire .NET and ASP.NET Core developer team of Microsoft experts who have hands-on experience in ASP.NET Core, C#, Entity Framework Core, Web API 2, MVC, Blazor, and cloud-native .NET architecture.
+                  Our skilled team has created a slew of ASP.NET applications that have significantly aided the company's growth. We are one of India's most dependable, experienced, and professional ASP.NET development companies. Despite this, we have extensive expertise working on worldwide projects with a variety of worldwide businesses. We assist businesses in expanding their international reach by developing web apps in ASP.NET.
                 </p>
               </div>
             </div>
