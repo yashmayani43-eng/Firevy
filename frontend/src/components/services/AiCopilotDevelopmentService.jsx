@@ -1,131 +1,97 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Container from '../common/Container';
 import SEO from '../common/SEO';
 import BRAND from '../../constants/brand';
-import PremiumServicesGrid from '../common/PremiumServicesGrid';
 import BrandLogoMarquee from '../common/BrandLogoMarquee';
-import FeaturedInLogosGrid from '../home/FeaturedInLogosGrid';
+import ClutchTopRatedCompanyBanner from '../common/ClutchTopRatedCompanyBanner';
+import PremiumServicesGrid from '../common/PremiumServicesGrid';
+import AiSuccessStoriesSection from './AiSuccessStoriesSection';
+import ComprehensiveCopilotServicesSection from './ComprehensiveCopilotServicesSection';
+import TrustRecognitionBanner from '../home/TrustRecognitionBanner';
+import KeyBenefitsCopilotSection from './KeyBenefitsCopilotSection';
+import AndroidHiringModels from './AndroidHiringModels';
+import InnovativeSolutionsVideoSection from './InnovativeSolutionsVideoSection';
+import WorkProcessGrid from '../home/WorkProcessGrid';
 import VideoTestimonialsStory from '../home/VideoTestimonialsStory';
+import BrandLogoGrid from '../home/BrandLogoGrid';
+import SuccessMatrixGrid from '../home/SuccessMatrixGrid';
+import TechnologyStackGrid from '../common/TechnologyStackGrid';
+import FeaturedInBrandsSection from './FeaturedInBrandsSection';
+import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
 import SapphireFaqSection from '../common/SapphireFaqSection';
-import OurRecentProjectsGrid from './OurRecentProjectsGrid';
-import {
-  Sparkles,
-  ArrowRight,
-  CheckCircle2,
-  Cpu,
-  Brain,
-  Zap,
-  ShieldCheck,
-  Code2,
-  Bot,
-  Terminal,
-  Database,
-  Workflow
-} from 'lucide-react';
+import AppDevelopmentRecentBlogsSection from './AppDevelopmentRecentBlogsSection';
+import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
+import AndroidChallengeCtaBanner from './AndroidChallengeCtaBanner';
+import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
+import { ArrowRight } from 'lucide-react';
 
 export const AiCopilotDevelopmentService = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
-  const stats = [
-    { value: '45% Faster', label: 'Speed boost achieved by developers using custom AI Copilots in daily workflows.' },
-    { value: '99.9%', label: 'Accuracy in domain-specific code and workflow suggestions with custom LLM tuning.' },
-    { value: '60% Reduction', label: 'Decrease in repetitive task completion time across enterprise teams.' }
-  ];
-
-  const tailoredSolutions = [
-    {
-      id: 0,
-      title: 'Custom Enterprise Copilots',
-      icon: <Bot className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Build domain-specific AI copilots trained on your internal codebases, documentation, and enterprise knowledge bases for instant automated assistance.',
-      bullets: [
-        'Internal Knowledge Ingestion',
-        'Role-Based Context Awareness',
-        'Custom IDE & Workplace Plugins',
-        'Zero Data Leakage Governance'
-      ]
-    },
-    {
-      id: 1,
-      title: 'Workflow Automation Assistants',
-      icon: <Workflow className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Empower your teams with intelligent virtual co-pilots that trigger complex multi-step backend workflows and generate automated reports.',
-      bullets: [
-        'Automated Action Execution',
-        'API & Database Orchestration',
-        'Smart Query Translation',
-        'Proactive Process Recommendations'
-      ]
-    },
-    {
-      id: 2,
-      title: 'Code & Technical Copilots',
-      icon: <Code2 className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Assist developers with instant inline code generation, bug fixing, refactoring, and unit test creation tailored to proprietary standards.',
-      bullets: [
-        'Proprietary Code Autocomplete',
-        'Automated Bug Diagnosis',
-        'Architecture Standard Enforcement',
-        'Security Vulnerability Scanning'
-      ]
-    }
-  ];
-
   const faqs = [
     {
-      q: '1. What is an AI Copilot Development service?',
-      a: 'AI Copilot Development involves building custom AI assistants tailored to your company proprietary data, workflows, and tools to assist employees in completing complex tasks faster.'
+      q: '1. What is AI Copilot Development and how does it benefit businesses?',
+      a: 'AI Copilot Development involves creating domain-specific virtual AI assistants trained on proprietary enterprise knowledge bases, APIs, and workflows. They assist employees by automating routine tasks, summarizing context, writing code, and orchestrating complex backend processes.'
     },
     {
-      q: '2. How does an AI Copilot ensure data security?',
-      a: 'We deploy private Copilot models within your secure VPC or on-premises servers ensuring zero data sharing with public LLM providers.'
+      q: '2. How secure is our proprietary corporate data with custom AI Copilots?',
+      a: 'We implement zero-trust data architectures, private VPC model deployments (AWS, Azure, Google Cloud), and strict NDAs. Your internal data is never shared with public model training pools or third parties.'
     },
     {
-      q: '3. Can custom Copilots integrate with our existing tools?',
-      a: 'Yes! We create custom extensions for VS Code, Slack, Microsoft Teams, Salesforce, JIRA, and custom internal portals.'
+      q: '3. Can an AI Copilot integrate with our existing enterprise software?',
+      a: 'Yes, custom AI Copilots seamlessly connect via REST/GraphQL APIs, webhooks, or custom plugins into VS Code, Slack, Microsoft Teams, Salesforce, JIRA, SAP, and legacy web portals.'
+    },
+    {
+      q: '4. What is the typical timeframe to build an enterprise AI Copilot?',
+      a: 'An initial functional prototype/MVP copilot takes 3 to 5 weeks, while full enterprise integration with multi-modal capabilities takes 8 to 12 weeks.'
+    },
+    {
+      q: '5. What hiring models do you offer for AI Copilot engineering?',
+      a: 'We offer flexible Fixed Price project milestones, hourly Time & Material ($21/hr), and dedicated full-time AI engineering squads.'
     }
   ];
 
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="AI Copilot Development Services | Custom AI Assistants"
-        description="Build custom AI Copilot solutions tailored for enterprise workflows, software development, customer support, and internal knowledge automation."
+        title="AI Copilot Development Company | Custom AI Assistant & Agent Solutions"
+        description="Firevy.Co is a trusted AI Copilot Development Company. We build intelligent, secure, and scalable AI copilots and AI virtual assistants to automate workflows and supercharge enterprise productivity."
         canonical="/services/ai-copilot-development"
       />
 
-      {/* HERO SECTION */}
-      <section className="pt-8 pb-12 sm:pt-12 sm:pb-16 bg-white text-slate-900 border-b border-slate-100">
+      {/* =========================================================================
+          1ST COMPONENT: HERO SECTION (Exact 1:1 Screenshot Match)
+          ========================================================================= */}
+      <section className="pt-8 pb-12 sm:pt-12 sm:pb-16 bg-white text-slate-900 relative font-sans border-b border-slate-100">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column: Title, Long Description & Blue Button */}
             <div className="lg:col-span-6 space-y-6 text-left">
-              <span className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-sky-50 text-[#006B8F] text-xs font-bold uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>Next-Gen Enterprise AI</span>
-              </span>
-              <h1 className="text-[32px] sm:text-[42px] lg:text-[46px] font-[900] text-[#0B0F19] leading-[1.15]">
-                AI Copilot Development Services
+              <h1 className="text-[32px] sm:text-[42px] lg:text-[46px] font-[900] text-[#0B0F19] tracking-tight leading-[1.15] font-sans">
+                AI Copilot Development Company
               </h1>
-              <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.75]">
-                Transform your workforce productivity with custom AI Copilots. We design, fine-tune, and integrate domain-specific AI virtual assistants that seamlessly integrate into your everyday tools and enterprise software.
+
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.8] font-normal font-sans">
+                Unlock the power of artificial intelligence and AI copilot integration and automation services with expert AI Copilot development services from a trusted AI Agent & Copilot Development Company. We specialize in building intelligent, secure, and scalable AI-driven solutions for businesses of all sizes. Our Custom AI copilot development services enhance productivity, streamline operations, and optimize workflows—all at an affordable cost. Whether you are a startup or a large enterprise, our team ensures a seamless AI integration tailored to your business needs. Contact us today for a free quote and elevate your operations with AI-driven automation!
               </p>
-              <div className="flex flex-wrap items-center gap-3 pt-2">
+
+              <div className="pt-2">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-[6px] bg-[#006B8F] hover:bg-[#005478] text-white font-[700] text-[14.5px] transition-all shadow-md"
+                  className="inline-flex items-center space-x-2.5 px-7 py-3.5 rounded-[6px] bg-[#005F96] hover:bg-[#004B77] text-white font-[700] text-[14.5px] transition-all shadow-md hover:shadow-lg font-sans"
                 >
-                  <span>Build Your AI Copilot</span>
+                  <span>Discuss Your Project</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
-            <div className="lg:col-span-6 flex justify-center">
-              <div className="w-full max-w-lg rounded-2xl overflow-hidden shadow-xl border border-slate-100">
+
+            {/* Right Column: Clean Vector SVG Illustration */}
+            <div className="lg:col-span-6 flex justify-center lg:justify-end">
+              <div className="w-full max-w-lg overflow-hidden">
                 <img
-                  src="/images/ai_hero_illustration.jpg"
-                  alt="AI Copilot Development"
-                  className="w-full h-auto object-cover"
+                  src="/images/ai_copilot_hero_illustration.svg"
+                  alt="AI Copilot Development Company Illustration"
+                  className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>
@@ -133,108 +99,226 @@ export const AiCopilotDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* BRAND MARQUEE */}
-      <BrandLogoMarquee />
+      {/* =========================================================================
+          2ND COMPONENT: BRAND LOGOS MARQUEE (TDSG, Astral Pipes, CLP, Adani, Toyota, etc.)
+          ========================================================================= */}
+      <section className="py-2 bg-white border-b border-slate-200/70 overflow-hidden">
+        <BrandLogoMarquee />
+      </section>
 
-      {/* STATS SECTION */}
-      <section className="py-14 bg-white text-left">
+      {/* =========================================================================
+          3RD COMPONENT: A TRUSTED LEADER IN AI ASSISTANT DEVELOPMENT (1:1 Match)
+          ========================================================================= */}
+      <section className="py-14 sm:py-18 bg-white font-sans text-left border-b border-slate-100">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {stats.map((s, idx) => (
-              <div key={idx} className="bg-[#F8FAFC] rounded-[16px] p-6 border border-slate-200">
-                <div className="text-[32px] font-[900] text-[#006B8F] mb-1">{s.value}</div>
-                <p className="text-[13.5px] text-[#475569] leading-relaxed">{s.label}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            {/* Left Column: Robot Assistant Vector Illustration Image */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="w-full max-w-md overflow-hidden">
+                <img
+                  src="/images/ai_copilot_trusted_leader_illustration.svg"
+                  alt="A Trusted Leader In AI Assistant Development Illustration"
+                  className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500"
+                />
               </div>
-            ))}
+            </div>
+
+            {/* Right Column: Title & Paragraph Content */}
+            <div className="lg:col-span-7 space-y-5">
+              <h2 className="text-[28px] sm:text-[36px] font-[900] text-[#0B0F19] tracking-tight leading-tight">
+                A Trusted Leader In AI Assistant Development
+              </h2>
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.85] font-normal">
+                As a leading Generative AI Copilot development company, we provide secure and innovative web-based AI systems designed to empower businesses, startups, and entrepreneurs. With years of experience in AI, machine learning, and automation, we develop intelligent copilots that enhance decision-making, reduce manual efforts, and improve overall efficiency. Our Enterprise AI copilot Development Services providers and industry-specific AI solutions ensure reliability, adaptability, and superior performance. Trust us to deliver cutting-edge AI solutions that drive business success.
+              </p>
+            </div>
           </div>
         </Container>
       </section>
 
-      {/* TAILORED SOLUTIONS */}
-      <section className="py-16 bg-[#F4F8FA] border-y border-slate-200/80 text-left">
+      {/* =========================================================================
+          4TH COMPONENT: ARTIFICIAL INTELLIGENCE MARKET STATS (1:1 Screenshot Match)
+          ========================================================================= */}
+      <section className="py-14 sm:py-18 bg-[#F8FAFC] border-b border-slate-200/80 font-sans text-left">
         <Container>
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950">
-              Custom AI Copilot Solutions
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            {/* Left Column: Title, Paragraph & Button */}
+            <div className="lg:col-span-6 space-y-5">
+              <h2 className="text-[28px] sm:text-[36px] font-[900] text-[#0B0F19] tracking-tight leading-tight">
+                Artificial Intelligence Market Stats
+              </h2>
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.85] font-normal">
+                The global artificial intelligence (AI) market was estimated to be worth US$119.78 billion in 2022. It is anticipated to reach US$1,591.03 billion by 2030, with a compound annual growth rate (CAGR) of 38.1% from 2022 to 2030.
+              </p>
+              <div className="pt-2">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center space-x-2 px-7 py-3 rounded-[6px] bg-[#005F96] hover:bg-[#004B77] text-white font-[700] text-[14.5px] transition-all shadow-md hover:shadow-lg font-sans"
+                >
+                  <span>Connect With An Expert</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Column: Software Market Volume Chart Graphic */}
+            <div className="lg:col-span-6 flex justify-center">
+              <div className="w-full max-w-lg overflow-hidden rounded-xl shadow-md border border-slate-200 bg-white">
+                <img
+                  src="/images/ai_market_stats_chart.svg"
+                  alt="Software Market Volume (USD Billion) Chart"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* =========================================================================
+          5TH COMPONENT: CLUTCH TOP RATED WEB DEVELOPMENT COMPANY BANNER
+          ========================================================================= */}
+      <ClutchTopRatedCompanyBanner title="World Wide Top Rated Web Development Company on Clutch" />
+
+      {/* =========================================================================
+          6TH COMPONENT: HIGH-PERFORMANCE AI COPILOT SOLUTIONS FOR GLOBAL BUSINESSES
+          ========================================================================= */}
+      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100">
+        <Container>
+          {/* Centered Heading */}
+          <div className="text-center max-w-4xl mx-auto mb-12 space-y-3">
+            <h2 className="text-[28px] sm:text-[36px] font-[900] text-[#0B0F19] tracking-tight">
+              High-Performance AI Copilot Solutions for Global Businesses
             </h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-6xl mx-auto">
-            <div className="lg:col-span-4 space-y-3">
-              {tailoredSolutions.map((sol, idx) => (
-                <button
-                  key={sol.id}
-                  onClick={() => setActiveTab(idx)}
-                  className={`w-full text-left p-4 rounded-xl font-bold text-sm flex items-center justify-between border cursor-pointer ${
-                    activeTab === idx
-                      ? 'bg-[#006B8F] text-white border-[#006B8F]'
-                      : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50'
-                  }`}
-                >
-                  <span className="flex items-center space-x-3">
-                    <span className={activeTab === idx ? 'text-white' : 'text-[#006B8F]'}>{sol.icon}</span>
-                    <span>{sol.title}</span>
-                  </span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              ))}
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 max-w-6xl mx-auto items-center">
+            {/* Left Quote Card Box (1:1 Screenshot Match) */}
+            <div className="lg:col-span-5 bg-[#ECF4F8] rounded-[24px] p-8 sm:p-10 border border-slate-200/80 relative overflow-hidden flex flex-col justify-center min-h-[240px]">
+              <div className="text-[#005F96] text-6xl font-serif font-black leading-none mb-2">“</div>
+              <h3 className="text-[24px] sm:text-[28px] font-[800] text-[#005F96] leading-tight">
+                Innovative and intuitive websites
+              </h3>
             </div>
-            <div className="lg:col-span-8 bg-white rounded-2xl p-7 border border-slate-200 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">{tailoredSolutions[activeTab].title}</h3>
-              <p className="text-sm text-slate-600 leading-relaxed mb-5">{tailoredSolutions[activeTab].shortDesc}</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-                {tailoredSolutions[activeTab].bullets.map((b, bIdx) => (
-                  <div key={bIdx} className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#006B8F]" />
-                    <span className="text-xs text-slate-700 font-medium">{b}</span>
-                  </div>
-                ))}
-              </div>
-              <Link
-                to="/contact"
-                className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg bg-[#006B8F] text-white text-sm font-semibold"
-              >
-                <span>Get Started</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+
+            {/* Right Paragraph Columns */}
+            <div className="lg:col-span-7 space-y-5">
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.8] font-normal">
+                Our AI Copilot solutions are designed to be secure, scalable, and high-performing, catering to businesses across various industries. We leverage cutting-edge AI and machine learning technologies to develop intelligent copilots that streamline operations and drive innovation. Our expertise in AI-driven automation, predictive analytics, and real-time data processing ensures that businesses can optimize their workflows and enhance productivity.
+              </p>
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.8] font-normal">
+                With extensive experience in global projects, our skilled development team creates AI copilots that seamlessly integrate with existing systems, providing valuable insights and automation capabilities. We work closely with clients to understand their specific business needs and deliver customized AI solutions that drive measurable results. Whether you need AI-driven customer support, workflow automation, or predictive analytics, we build business-specific AI applications that enhance efficiency and scalability.
+              </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* PREMIUM SERVICES */}
-      <PremiumServicesGrid />
+      {/* =========================================================================
+          7TH COMPONENT: OUR PREMIUM SERVICES (Exact 10 White Cards Grid)
+          ========================================================================= */}
+      <PremiumServicesGrid companyName="Firevy.Co" />
 
-      {/* OUR RECENT PROJECTS */}
-      <OurRecentProjectsGrid />
+      {/* =========================================================================
+          8TH COMPONENT: SUCCESS STORIES SECTION (1:1 Screenshot Match)
+          ========================================================================= */}
+      <AiSuccessStoriesSection />
 
-      {/* VIDEO TESTIMONIALS */}
+      {/* =========================================================================
+          9TH COMPONENT: COMPREHENSIVE COPILOT SOFTWARE DEVELOPMENT
+          ========================================================================= */}
+      <ComprehensiveCopilotServicesSection />
+
+      {/* =========================================================================
+          10TH COMPONENT: PROUD TO HAVE PICKED THESE UP ALONG THE WAY
+          ========================================================================= */}
+      <TrustRecognitionBanner />
+
+      {/* =========================================================================
+          11TH COMPONENT: KEY BENEFITS OF AI COPILOT SOLUTIONS
+          ========================================================================= */}
+      <KeyBenefitsCopilotSection />
+
+      {/* =========================================================================
+          12TH COMPONENT (SEQUENCE 1): BUSINESS FRIENDLY HIRING MODELS
+          ========================================================================= */}
+      <AndroidHiringModels />
+
+      {/* =========================================================================
+          13TH COMPONENT (SEQUENCE 2): UNVEILING OUR INNOVATIVE SOLUTION
+          ========================================================================= */}
+      <InnovativeSolutionsVideoSection />
+
+      {/* =========================================================================
+          14TH COMPONENT (SEQUENCE 3): PROCESS WE FOLLOW
+          ========================================================================= */}
+      <WorkProcessGrid />
+
+      {/* =========================================================================
+          15TH COMPONENT (SEQUENCE 4): OUR STORY, THEIR WORDS
+          ========================================================================= */}
       <VideoTestimonialsStory />
 
-      {/* FAQS */}
+      {/* =========================================================================
+          16TH COMPONENT (SEQUENCE 5): TRUSTED BY THE WORLD'S LEADING BRANDS
+          ========================================================================= */}
+      <BrandLogoGrid />
+
+      {/* =========================================================================
+          SUCCESS MATRIX GRID (Directly Below Trusted By The World's Leading Brands)
+          ========================================================================= */}
+      <SuccessMatrixGrid />
+
+      {/* =========================================================================
+          TECHNOLOGY STACK GRID (Directly Below Success Matrix, 1:1 Screenshot Match)
+          ========================================================================= */}
+      <TechnologyStackGrid />
+
+      {/* =========================================================================
+          17TH COMPONENT (SEQUENCE 6): WE HAVE BEEN FEATURED IN
+          ========================================================================= */}
+      <FeaturedInBrandsSection />
+
+      {/* =========================================================================
+          18TH COMPONENT (SEQUENCE 7): DIGITAL TRANSFORMATION THROUGH INNOVATION AND COLLECTIVE KNOWLEDGE
+          ========================================================================= */}
+      <DigitalTransformationCaseStudies />
+
+      {/* =========================================================================
+          19TH COMPONENT (SEQUENCE 8): FREQUENTLY ASKED QUESTIONS
+          ========================================================================= */}
       <SapphireFaqSection faqList={faqs} />
 
-      {/* FEATURED IN LOGOS */}
-      <FeaturedInLogosGrid />
+      {/* =========================================================================
+          20TH COMPONENT (SEQUENCE 9): OUR RECENT BLOGS
+          ========================================================================= */}
+      <AppDevelopmentRecentBlogsSection />
 
-      {/* CTA BANNER */}
-      <section className="py-14 bg-[#005F96] text-white text-center">
-        <Container>
-          <div className="max-w-3xl mx-auto space-y-4">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Ready to Supercharge Productivity with Custom AI Copilots?
-            </h2>
-            <div className="pt-2">
-              <Link
-                to="/contact"
-                className="inline-flex items-center space-x-2 px-8 py-3.5 bg-white text-[#005F96] rounded-lg font-bold text-sm shadow-lg hover:scale-105 transition-all"
-              >
-                <span>Contact AI Experts</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        </Container>
-      </section>
+      {/* =========================================================================
+          21ST COMPONENT (SEQUENCE 10): BUSINESS FRIENDLY HIRING MODELS (REPEATED AT BOTTOM)
+          ========================================================================= */}
+      <AndroidHiringModels />
+
+      {/* =========================================================================
+          22ND COMPONENT: WHAT SETS US APART AS AI COPILOT DEVELOPMENT COMPANY
+          ========================================================================= */}
+      <WhatSetsUsApartSection
+        title="What Sets Us Apart As AI Copilot Development Company?"
+      />
+
+      {/* =========================================================================
+          23RD COMPONENT: HAVE AI COPILOT DEVELOPMENT CHALLENGE TO ADDRESS CTA BANNER
+          ========================================================================= */}
+      <AndroidChallengeCtaBanner
+        title="Have AI Copilot Development Challenge To Address ?"
+        subtitle="Get access to top AI copilot developers to transform your ideas into a robust application."
+        buttonText="Hire Now"
+      />
+
+      {/* =========================================================================
+          24TH COMPONENT: SUBSCRIBE US AND GET THE LATEST UPDATES AND NEWS
+          ========================================================================= */}
+      <SubscribeNewsletterSection />
+
     </div>
   );
 };

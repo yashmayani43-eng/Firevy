@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <!-- White Card Background with Rounded Corners & Shadow -->
+  <rect x="10" y="10" width="580" height="380" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- Chart Title -->
+  <text x="35" y="42" fill="#0F172A" font-family="system-ui, sans-serif" font-size="16" font-weight="800">
+    Software Market Volume <tspan fill="#64748B" font-size="13" font-weight="500">(USD Billion)</tspan>
+  </text>
+
+  <!-- Y Axis Labels & Gridlines -->
+  <g font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="end">
+    <text x="50" y="80">1000</text>
+    <line x1="60" y1="76" x2="550" y2="76" stroke="#F1F5F9" stroke-width="1.5"/>
+
+    <text x="50" y="130">800</text>
+    <line x1="60" y1="126" x2="550" y2="126" stroke="#F1F5F9" stroke-width="1.5"/>
+
+    <text x="50" y="180">600</text>
+    <line x1="60" y1="176" x2="550" y2="176" stroke="#F1F5F9" stroke-width="1.5"/>
+
+    <text x="50" y="230">400</text>
+    <line x1="60" y1="226" x2="550" y2="226" stroke="#F1F5F9" stroke-width="1.5"/>
+
+    <text x="50" y="280">200</text>
+    <line x1="60" y1="276" x2="550" y2="276" stroke="#F1F5F9" stroke-width="1.5"/>
+
+    <text x="50" y="325">0</text>
+    <line x1="60" y1="322" x2="550" y2="322" stroke="#E2E8F0" stroke-width="2"/>
+  </g>
+
+  <!-- Stacked Bars -->
+  <!-- Colors Palette matching screenshot:
+       Cyan: #38BDF8
+       Deep Blue: #005F96
+       Crimson Red: #DC2626
+       Dark Navy: #0B192C
+  -->
+
+  <!-- Bar 1: 2024 -->
+  <g transform="translate(110, 0)">
+    <rect x="0" y="270" width="45" height="52" fill="#0B192C"/>
+    <rect x="0" y="225" width="45" height="45" fill="#DC2626"/>
+    <rect x="0" y="185" width="45" height="40" fill="#005F96"/>
+    <rect x="0" y="150" width="45" height="35" rx="3" fill="#38BDF8"/>
+    <text x="22.5" y="342" fill="#64748B" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">2024</text>
+  </g>
+
+  <!-- Bar 2: 2025 -->
+  <g transform="translate(200, 0)">
+    <rect x="0" y="255" width="45" height="67" fill="#0B192C"/>
+    <rect x="0" y="200" width="45" height="55" fill="#DC2626"/>
+    <rect x="0" y="150" width="45" height="50" fill="#005F96"/>
+    <rect x="0" y="108" width="45" height="42" rx="3" fill="#38BDF8"/>
+    <text x="22.5" y="342" fill="#64748B" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">2025</text>
+  </g>
+
+  <!-- Bar 3: 2026 -->
+  <g transform="translate(290, 0)">
+    <rect x="0" y="235" width="45" height="87" fill="#0B192C"/>
+    <rect x="0" y="170" width="45" height="65" fill="#DC2626"/>
+    <rect x="0" y="115" width="45" height="55" fill="#005F96"/>
+    <rect x="0" y="68" width="45" height="47" rx="3" fill="#38BDF8"/>
+    <text x="22.5" y="342" fill="#64748B" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">2026</text>
+  </g>
+
+  <!-- Bar 4: 2027 -->
+  <g transform="translate(380, 0)">
+    <rect x="0" y="215" width="45" height="107" fill="#0B192C"/>
+    <rect x="0" y="140" width="45" height="75" fill="#DC2626"/>
+    <rect x="0" y="80" width="45" height="60" fill="#005F96"/>
+    <rect x="0" y="28" width="45" height="52" rx="3" fill="#38BDF8"/>
+    <text x="22.5" y="342" fill="#64748B" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">2027</text>
+  </g>
+
+  <!-- Bar 5: 2028 with $800.32B Callout -->
+  <g transform="translate(470, 0)">
+    <!-- Callout Text -->
+    <text x="22.5" y="22" fill="#0F172A" font-family="system-ui, sans-serif" font-size="11" font-weight="900" text-anchor="middle">$800.32B</text>
+
+    <rect x="0" y="195" width="45" height="127" fill="#0B192C"/>
+    <rect x="0" y="110" width="45" height="85" fill="#DC2626"/>
+    <rect x="0" y="45" width="45" height="65" fill="#005F96"/>
+    <rect x="0" y="-10" width="45" height="55" rx="3" fill="#38BDF8"/>
+    <text x="22.5" y="342" fill="#64748B" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">2028</text>
+  </g>
+
+  <!-- Legend Row at Bottom -->
+  <g transform="translate(40, 368)" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#475569">
+    <!-- Total -->
+    <rect x="0" y="0" width="10" height="10" fill="#0F172A"/>
+    <text x="14" y="9">Total</text>
+
+    <!-- Application Development Software -->
+    <rect x="60" y="0" width="10" height="10" fill="#38BDF8"/>
+    <text x="74" y="9">Application Development Software</text>
+
+    <!-- Enterprise Software -->
+    <rect x="235" y="0" width="10" height="10" fill="#DC2626"/>
+    <text x="249" y="9">Enterprise Software</text>
+
+    <!-- Productivity Software -->
+    <rect x="350" y="0" width="10" height="10" fill="#005F96"/>
+    <text x="364" y="9">Productivity Software</text>
+
+    <!-- System Infrastructure Software -->
+    <rect x="465" y="0" width="10" height="10" fill="#0B192C"/>
+    <text x="479" y="9">System Infrastructure Software</text>
+  </g>
+</svg>
