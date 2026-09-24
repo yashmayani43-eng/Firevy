@@ -47,6 +47,9 @@ import SitefinityDevelopmentService from '../components/services/SitefinityDevel
 import MagentoDevelopmentService from '../components/services/MagentoDevelopmentService';
 import ShopifyDevelopmentService from '../components/services/ShopifyDevelopmentService';
 import DotNetDevelopmentService from '../components/services/DotNetDevelopmentService';
+import KenticoDevelopmentService from '../components/services/KenticoDevelopmentService';
+import DotnetnukeDevelopmentService from '../components/services/DotnetnukeDevelopmentService';
+import PowerBiConsultingService from '../components/services/PowerBiConsultingService';
 import MicrosoftDevelopmentService from '../components/services/MicrosoftDevelopmentService';
 import AspNetCoreDevelopmentService from '../components/services/AspNetCoreDevelopmentService';
 import PhpDevelopmentService from '../components/services/PhpDevelopmentService';
@@ -162,6 +165,8 @@ import LampDevelopmentService from '../components/services/LampDevelopmentServic
 import PythonDevelopmentService from '../components/services/PythonDevelopmentService';
 import GolangDevelopmentService from '../components/services/GolangDevelopmentService';
 import BigCommerceDevelopmentService from '../components/services/BigCommerceDevelopmentService';
+import MachineLearningDevelopmentService from '../components/services/MachineLearningDevelopmentService';
+import ChatbotDevelopmentService from '../components/services/ChatbotDevelopmentService';
 import MongoDbDevelopmentService from '../components/services/MongoDbDevelopmentService';
 import PhalconDevelopmentService from '../components/services/PhalconDevelopmentService';
 import AzureWebServicesService from '../components/services/AzureWebServicesService';
@@ -226,6 +231,20 @@ export const ServiceDetails = () => {
     currentSlug === 'services/bigcommerce-development' ||
     currentSlug.includes('big-commerce-development') ||
     currentSlug.includes('bigcommerce-development');
+  const isMachineLearningDevelopment = currentSlug === 'machine-learning-development' ||
+    currentSlug === 'machine-learning-development-services' ||
+    currentSlug === 'machine-learning-development-company' ||
+    currentSlug === 'services/machine-learning-development' ||
+    currentSlug === 'services/machine-learning-development-services' ||
+    currentSlug === 'services/machine-learning-development-company' ||
+    currentSlug.includes('machine-learning-development');
+  const isChatbotDevelopment = currentSlug === 'chatbot-development' ||
+    currentSlug === 'chatbot-development-services' ||
+    currentSlug === 'chatbot-development-company' ||
+    currentSlug === 'services/chatbot-development' ||
+    currentSlug === 'services/chatbot-development-services' ||
+    currentSlug === 'services/chatbot-development-company' ||
+    currentSlug.includes('chatbot-development');
   const isMongoDb = currentSlug === 'mongodb-development-services' ||
     currentSlug === 'mongodb-development' ||
     currentSlug === 'services/mongodb-development-services' ||
@@ -652,12 +671,20 @@ export const ServiceDetails = () => {
     currentSlug === 'microsoft-development-services' ||
     currentSlug === 'services/microsoft-development' ||
     currentSlug === 'services/microsoft-development-services' ||
-    currentSlug.includes('microsoft-development'));
+    currentSlug.includes('microsoft-development') ||
+    currentSlug.includes('microsoft-dynamics') ||
+    currentSlug.includes('dynamics-365') ||
+    currentSlug.includes('dynamics'));
 
-  const isNet = !isAspNetCore && (currentSlug === 'net' ||
+  const isKentico = currentSlug.includes('kentico');
+  const isDotnetnuke = currentSlug.includes('dotnetnuke');
+  const isPowerBi = currentSlug.includes('power-bi') || currentSlug.includes('powerbi');
+
+  const isNet = !isAspNetCore && !isKentico && !isDotnetnuke && (currentSlug === 'net' ||
     currentSlug.includes('dot-net') ||
     currentSlug.includes('dotnet') ||
     currentSlug.includes('net-development') ||
+    currentSlug.includes('net-application') ||
     currentSlug.includes('asp-net') ||
     currentSlug.includes('aspnet')) && !isMicrosoft;
 
@@ -692,10 +719,12 @@ export const ServiceDetails = () => {
   const isAiBi = currentSlug.includes('business-intelligence') || currentSlug.includes('ai-in-business-intelligence') || currentSlug.includes('ai-bi');
   const isAiMarketing = currentSlug.includes('ai-in-marketing') || currentSlug.includes('marketing-ai') || (currentSlug.includes('ai') && currentSlug.includes('marketing'));
 
-  const isMachineLearningEngineer = currentSlug.includes('machine-learning') ||
+  const isMachineLearningEngineer = !isMachineLearningDevelopment && (
+    currentSlug.includes('machine-learning') ||
     currentSlug.includes('ml-engineer') ||
     currentSlug.includes('hire-machine-learning') ||
-    currentSlug.includes('hire-ml');
+    currentSlug.includes('hire-ml')
+  );
 
   const isArtificialIntelligence = !isHireAiApp && !isGenerativeAi && !isMachineLearningEngineer && !isAiCopilot && !isEthicalAi && !isAiPrompt && !isAdaptiveAi && !isAiBi && !isAiMarketing && (
     normalizedSlug.includes('artificial-intelligence') ||
@@ -807,6 +836,8 @@ export const ServiceDetails = () => {
   const isPowerApps = (currentSlug.includes('powerapps') ||
     currentSlug.includes('power-apps') ||
     currentSlug.includes('power-platform') ||
+    currentSlug.includes('power-bi') ||
+    currentSlug.includes('powerbi') ||
     currentSlug.includes('hire-powerapps') ||
     currentSlug.includes('hire-power-apps')) &&
     !currentSlug.includes('automate');
@@ -1080,7 +1111,7 @@ export const ServiceDetails = () => {
   const isApi = (currentSlug.includes('hire-api') || currentSlug.includes('api-developer') || currentSlug.includes('api-developers')) && !currentSlug.includes('fastapi') && !currentSlug.includes('fast-api');
   const isMeanStack = currentSlug.includes('mean-stack') || currentSlug.includes('hire-mean-stack') || currentSlug === 'services/hire-mean-stack-developers' || currentSlug === 'hire-mean-stack-developers' || currentSlug === 'services/hire-mean-stack-developer' || currentSlug === 'hire-mean-stack-developer';
   const isMernStack = currentSlug.includes('mern-stack') || currentSlug.includes('hire-mern-stack') || currentSlug === 'services/hire-mern-stack-developers' || currentSlug === 'hire-mern-stack-developers' || currentSlug === 'services/hire-mern-stack-developer' || currentSlug === 'hire-mern-stack-developer' || currentSlug === 'mern-stack-development' || currentSlug === 'services/mern-stack-development';
-  const isBackendComingSoon = !isMySql && !isAzureWebServices && !isPhalcon && !isMongoDb && !isMicrosoft && !isAspNetCore && !isDigitalTransformation && !isSoftwareDevelopment && !isProductDevelopment && !isMetaverseCompany && !isExtendedReality && !isNintex && !isArtificialIntelligence && !isGenerativeAi && !isAiCopilot && !isEthicalAi && !isAiPrompt && !isAdaptiveAi && !isAiBi && !isAiMarketing && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && isBackendServiceSlug(currentSlug);
+  const isBackendComingSoon = !isKentico && !isDotnetnuke && !isPowerBi && !isMySql && !isAzureWebServices && !isPhalcon && !isMongoDb && !isMicrosoft && !isAspNetCore && !isDigitalTransformation && !isSoftwareDevelopment && !isProductDevelopment && !isMetaverseCompany && !isExtendedReality && !isNintex && !isArtificialIntelligence && !isGenerativeAi && !isAiCopilot && !isEthicalAi && !isAiPrompt && !isAdaptiveAi && !isAiBi && !isAiMarketing && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isDigitalTwin && !isPrototypeDevelopment && !isWindowsApp && !isWindows11 && !isExpress && !isHireDjango && !isHireNet && !isHireNodeJs && !isHirePhp && !isHireFintech && !isMachineLearningDevelopment && !isChatbotDevelopment && isBackendServiceSlug(currentSlug);
 
   useEffect(() => {
     if (isBackendComingSoon || isHireNodeJs || isHireNet || isHireDjango || isHirePhp) {
@@ -1088,7 +1119,7 @@ export const ServiceDetails = () => {
       window.scrollTo(0, 0);
       return;
     }
-    if (!isMySql && !isAzureWebServices && !isPhalcon && !isMongoDb && !isMicrosoft && !isAspNetCore && !isDigitalTransformation && !isSoftwareDevelopment && !isBigCommerce && !isGolang && !isLamp && !isLaravel && !isDjango && !isSymfony && !isMernStack && !isWindows11 && !isWindowsApp && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isExtendedReality && !isMetaverseCompany && !isProductDevelopment && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
+    if (!isKentico && !isDotnetnuke && !isPowerBi && !isMySql && !isAzureWebServices && !isPhalcon && !isMongoDb && !isMicrosoft && !isAspNetCore && !isDigitalTransformation && !isSoftwareDevelopment && !isBigCommerce && !isMachineLearningDevelopment && !isChatbotDevelopment && !isGolang && !isLamp && !isLaravel && !isDjango && !isSymfony && !isMernStack && !isWindows11 && !isWindowsApp && !isMeanStack && !isApi && !isFastApi && !isSolidity && !isOpenAi && !isAiAgent && !isLlmEngineers && !isOnDemandApp && !isBarberApp && !isLanguageLearningApp && !isNintex && !isExtendedReality && !isMetaverseCompany && !isProductDevelopment && !isTestingQa && !isDigitalMarketing && !isUiUxDesign && !isChatGpt && !isSoftwareDevelopers && !isDedicatedDevelopers && !isMetaverse && !isEmbeddedSoftware && !isAlexaSkills && !isDataScientist && !isAnyDedicatedHire && !isKotlin && !isHybrid && !isNativeApp && !isCustomMobileApp && !isPersonalFitness && !isUsedCar && !isEnneagram && !isCreditCard && !isSwiftApp && !isIBeacon && !isWearableApp && !isIPad && !isCrossPlatform && !isItConsulting && !isAppConsulting && !isStartupConsulting && !isNext && !isExpress && !isMobileApp && !isBootstrap && !isCodeIgniter && !isEmber && !isLaravel && !isPowerAutomate && !isPowerApps && !isSharePoint && !isVue && !isReact && !isAngular && !isIot && !isPwa && !isRpa && !isVR && !isFullStack && !isBlockchain && !isArtificialIntelligence && !isGenerativeAi && !isNodeJs && !isJava && !isPhp && !isNet && !isXamarin && !isAndroid && !isReactNative && !isFlutter && !isIOS && !isHealthcare && !isEducation && !isUber && !isSpotify && !isZomato && !isAmazon && !isVisitor && !isWarehouse && !isClover && !isCSharp && !isIWatch && !isWordpress && !isDrupal && !isUmbraco && !isSitecore && !isSitefinity && !isMagento && !isShopify && !isCovid && !isEcommerceApp && !isProductFinderApp && !isEyelashBookingApp && !isDataCleansing && !isDataAnnotation && !isPatientManagement && !isDigitalTwin && !isArtistCollaboration && !isMobileAppPorting && !isPrototypeDevelopment && !isCloudDevelopment && !isCloudComputing && !isDevOpsDevelopment && !isAwsCloud && !isGoogleCloud && !isCloudDevOps && !isCloudFoundry) {
       fetchServiceDetails();
     } else {
       setLoading(false);
@@ -1242,6 +1273,14 @@ export const ServiceDetails = () => {
 
   if (isLlmEngineers) {
     return <HireLlmEngineersService />;
+  }
+
+  if (isMachineLearningDevelopment) {
+    return <MachineLearningDevelopmentService />;
+  }
+
+  if (isChatbotDevelopment) {
+    return <ChatbotDevelopmentService />;
   }
 
   if (isMachineLearningEngineer) {
@@ -1472,6 +1511,10 @@ export const ServiceDetails = () => {
     return <Windows11AppDevelopmentService />;
   }
 
+  if (isWindowsApp) {
+    return <WindowsAppDevelopmentService />;
+  }
+
   if (isB2BMobileApp) {
     return <B2BMobileAppDevelopmentService />;
   }
@@ -1538,6 +1581,18 @@ export const ServiceDetails = () => {
 
   if (isMicrosoft) {
     return <MicrosoftDevelopmentService />;
+  }
+
+  if (isKentico) {
+    return <KenticoDevelopmentService />;
+  }
+
+  if (isDotnetnuke) {
+    return <DotnetnukeDevelopmentService />;
+  }
+
+  if (isPowerBi) {
+    return <PowerBiConsultingService />;
   }
 
   if (isNet) {

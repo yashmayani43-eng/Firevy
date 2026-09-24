@@ -637,19 +637,88 @@ export const Windows11AppDevelopmentService = () => {
         <Container className="max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             
-            {/* Left Column: Vector Illustration */}
+            {/* Left Column: Vector Illustration Matching Screenshot Section 2 */}
             <div className="lg:col-span-5 flex items-center justify-center">
-              <div className="w-full max-w-[420px] mx-auto">
-                <img
-                  src="/images/windows_11_hero_illustration.svg"
-                  alt="Leading Experts In Windows 11 Desktop App Development"
-                  className="w-full h-auto object-contain select-none"
-                  loading="lazy"
-                />
+              <div className="w-full max-w-[460px] mx-auto">
+                <svg className="w-full h-auto max-h-[380px]" viewBox="0 0 540 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Background Soft Glow */}
+                  <circle cx="270" cy="200" r="170" fill="#EEF6FB" opacity="0.8" />
+                  
+                  {/* Central Smartphone/Tablet Frame */}
+                  <rect x="180" y="50" width="180" height="290" rx="20" fill="#294A6B" stroke="#48759C" strokeWidth="4" />
+                  <rect x="190" y="62" width="160" height="266" rx="14" fill="#182A3E" />
+                  <circle cx="270" cy="72" r="3" fill="#3D5A7A" />
+
+                  {/* Code Window (Floating Left) */}
+                  <g transform="translate(55, 115)">
+                    <rect x="0" y="0" width="125" height="78" rx="8" fill="#1E293B" stroke="#38BDF8" strokeWidth="1.5" />
+                    <path d="M 0 0 L 125 0 L 125 18 L 0 18 Z" fill="#334155" />
+                    <circle cx="12" cy="9" r="3" fill="#EF4444" />
+                    <circle cx="22" cy="9" r="3" fill="#F59E0B" />
+                    <circle cx="32" cy="9" r="3" fill="#10B981" />
+                    <line x1="12" y1="30" x2="60" y2="30" stroke="#F59E0B" strokeWidth="3" strokeLinecap="round" />
+                    <line x1="12" y1="42" x2="100" y2="42" stroke="#38BDF8" strokeWidth="3" strokeLinecap="round" />
+                    <line x1="12" y1="54" x2="85" y2="54" stroke="#94A3B8" strokeWidth="3" strokeLinecap="round" />
+                    <line x1="12" y1="66" x2="65" y2="66" stroke="#94A3B8" strokeWidth="3" strokeLinecap="round" />
+                  </g>
+
+                  {/* Video Play Button Badge (Top Left Floating) */}
+                  <g transform="translate(155, 80)">
+                    <rect x="0" y="0" width="54" height="42" rx="10" fill="#F87171" />
+                    <polygon points="22,13 22,29 36,21" fill="#FFFFFF" />
+                  </g>
+
+                  {/* Music Note Badge (Top Right Floating) */}
+                  <g transform="translate(325, 85)">
+                    <rect x="0" y="0" width="50" height="42" rx="10" fill="#38BDF8" />
+                    <path d="M 28 14 L 38 10 L 38 25 A 4 4 0 1 1 34 22 L 34 16 L 28 18 L 28 29 A 4 4 0 1 1 24 26 L 24 14 Z" fill="#FFFFFF" />
+                  </g>
+
+                  {/* Yellow Folder Card (Middle Left) */}
+                  <g transform="translate(205, 175)">
+                    <rect x="0" y="0" width="48" height="38" rx="6" fill="#EBF2F8" />
+                    <path d="M 8 10 L 18 10 L 22 14 L 38 14 C 40 14 41 15 41 17 L 41 30 C 41 32 40 33 38 33 L 8 33 C 6 33 5 32 5 30 L 5 13 C 5 11 6 10 8 10 Z" fill="#F59E0B" />
+                  </g>
+
+                  {/* Image Card (Pink/Red with Sun & Mountain - Middle Right Floating) */}
+                  <g transform="translate(265, 170)">
+                    <rect x="0" y="0" width="105" height="78" rx="8" fill="#FCA5A5" stroke="#F87171" strokeWidth="2" />
+                    <circle cx="82" cy="22" r="8" fill="#FFFFFF" />
+                    <polygon points="12,68 40,32 62,68" fill="#FFFFFF" opacity="0.9" />
+                    <polygon points="45,68 68,44 92,68" fill="#FFFFFF" opacity="0.75" />
+                  </g>
+
+                  {/* Gear Badge (Bottom Center) */}
+                  <g transform="translate(248, 270)">
+                    <rect x="0" y="0" width="45" height="42" rx="8" fill="#60A5FA" />
+                    <circle cx="22.5" cy="21" r="9" fill="#FFFFFF" />
+                    <circle cx="22.5" cy="21" r="4" fill="#60A5FA" />
+                  </g>
+
+                  {/* Seated Developer (Bottom Left Desk) */}
+                  <g transform="translate(85, 260)">
+                    <circle cx="30" cy="20" r="11" fill="#FEDECF" />
+                    <path d="M 20 18 C 20 8, 34 4, 42 10 Z" fill="#1E293B" />
+                    <path d="M 20 32 L 44 32 L 40 90 L 16 90 Z" fill="#F59E0B" />
+                    <path d="M 16 90 L 5 130 L 25 130 L 35 95 Z" fill="#1E293B" />
+                    <path d="M 40 90 L 55 130 L 70 130 L 52 95 Z" fill="#1E293B" />
+                    <path d="M 15 80 L 55 80 L 45 95 L 5 95 Z" fill="#38BDF8" />
+                  </g>
+
+                  {/* Standing Developer (Bottom Right) */}
+                  <g transform="translate(365, 250)">
+                    <circle cx="25" cy="20" r="11" fill="#FEDECF" />
+                    <path d="M 15 18 C 15 8, 30 4, 38 10 Z" fill="#1E293B" />
+                    <path d="M 12 32 L 38 32 L 35 85 L 15 85 Z" fill="#0284C7" />
+                    <path d="M 15 85 L 10 140 L 26 140 L 28 88 Z" fill="#1E293B" />
+                    <path d="M 35 85 L 38 140 L 54 140 L 46 88 Z" fill="#1E293B" />
+                    <path d="M 12 35 L -20 -5 L -10 -10 L 18 30 Z" fill="#0284C7" />
+                  </g>
+                </svg>
               </div>
             </div>
 
-            {/* Right Column: Title & Description */}
+            {/* Right Column: Title & Description Exact Match */}
             <div className="lg:col-span-7 space-y-5 text-left">
               <h2
                 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-[1.25] font-sans"
@@ -658,7 +727,7 @@ export const Windows11AppDevelopmentService = () => {
               </h2>
 
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.8] font-normal font-sans">
-                Being a well-reputed leader in Windows 11 application development services, we provide solid, secure, and industry-specific solutions that meet current business requirements. Our specialty is crafting bespoke Windows 11 desktop app development services that enable organizations to grow effectively while embracing digital processes. With extensive expertise in developing Windows 11 system apps, we bring security, usability, and the latest technology together to empower entrepreneurs, businesses, and startups to leverage the potential of Windows 11. With our out-of-the-box thinking and established record, we are the ideal partner for companies that want to develop customized apps that excel in a market saturated with options.
+                Being a well-established leader in Windows 11 application development services, we provide solid, secure, and industry-specific solutions that meet current business requirements. Our specialty is crafting bespoke Windows 11 desktop application development services that enable organizations to grow effectively while enhancing digital processes. With extensive expertise in developing Windows 11 system apps, we bring security, usability, and the latest technology together to empower entrepreneurs, businesses, and startups to leverage the potential of Windows 11. With our out-of-the-box thinking and established record, we are the ideal partner for companies that want to develop customized apps that are both current and future-proofed.
               </p>
             </div>
 

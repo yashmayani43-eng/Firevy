@@ -171,6 +171,14 @@ export function App() {
                 <Route path="/artificial-intelligence-development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/artificial intelligence development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/services/:slug" element={<ServiceDetails />} />
+                <Route path="/services/dot-net-application-development-services" element={<ServiceDetails />} />
+                <Route path="/dot-net-application-development-services" element={<ServiceDetails />} />
+                <Route path="/services/asp-dot-net-app-development" element={<ServiceDetails />} />
+                <Route path="/asp-dot-net-app-development" element={<ServiceDetails />} />
+                <Route path="/services/dot-net-development" element={<ServiceDetails />} />
+                <Route path="/dot-net-development" element={<ServiceDetails />} />
+                <Route path="/services/dotnet-application-development" element={<ServiceDetails />} />
+                <Route path="/dotnet-application-development" element={<ServiceDetails />} />
                 <Route path="/services/ride-sharing-app-development" element={<ServiceDetails />} />
                 <Route path="/ride-sharing-app-development" element={<ServiceDetails />} />
                 <Route path="/services/visa-card-app-development" element={<ServiceDetails />} />
@@ -825,6 +833,37 @@ export function App() {
                 <Route path="/dotnet" element={<ServiceDetails />} />
                 <Route path="/net-development" element={<ServiceDetails />} />
                 <Route path="/hire-dotnet-developers" element={<ServiceDetails />} />
+                <Route path="/services/dot-net-application-development-services" element={<ServiceDetails />} />
+                <Route path="/dot-net-application-development-services" element={<ServiceDetails />} />
+                <Route path="/services/dot-net-app-development-services" element={<ServiceDetails />} />
+                <Route path="/dot-net-app-development-services" element={<ServiceDetails />} />
+                <Route path="/services/dot-net-development-services" element={<ServiceDetails />} />
+                <Route path="/dot-net-development-services" element={<ServiceDetails />} />
+                <Route path="/services/net-application-development" element={<ServiceDetails />} />
+                <Route path="/net-application-development" element={<ServiceDetails />} />
+                <Route path="/services/asp-net-migration-service" element={<ServiceDetails />} />
+                <Route path="/asp-net-migration-service" element={<ServiceDetails />} />
+                <Route path="/services/microsoft-dynamics-365-consulting" element={<ServiceDetails />} />
+                <Route path="/microsoft-dynamics-365-consulting" element={<ServiceDetails />} />
+                <Route path="/services/kentico-development-services" element={<ServiceDetails />} />
+                <Route path="/kentico-development-services" element={<ServiceDetails />} />
+                <Route path="/services/dotnetnuke-development" element={<ServiceDetails />} />
+                <Route path="/dotnetnuke-development" element={<ServiceDetails />} />
+                <Route path="/services/power-bi-consulting" element={<ServiceDetails />} />
+                <Route path="/power-bi-consulting" element={<ServiceDetails />} />
+                <Route path="/services/windows-11-app-development" element={<ServiceDetails />} />
+                <Route path="/windows-11-app-development" element={<ServiceDetails />} />
+                <Route path="/services/windows-app-development" element={<ServiceDetails />} />
+                <Route path="/windows-app-development" element={<ServiceDetails />} />
+                <Route path="/services/asp-net-app-development-services" element={<ServiceDetails />} />
+                <Route path="/asp-net-app-development-services" element={<ServiceDetails />} />
+                <Route path="/services/asp-net-app-development" element={<ServiceDetails />} />
+                <Route path="/asp-net-app-development" element={<ServiceDetails />} />
+                <Route path="/services/asp-net-development" element={<ServiceDetails />} />
+                <Route path="/asp-net-development" element={<ServiceDetails />} />
+                <Route path="/services/asp-net" element={<ServiceDetails />} />
+                <Route path="/asp-net" element={<ServiceDetails />} />
+                <Route path="/aspnet" element={<ServiceDetails />} />
                 <Route path="/services/wordpress" element={<ServiceDetails />} />
                 <Route path="/wordpress" element={<ServiceDetails />} />
                 <Route path="/wordpress-development" element={<ServiceDetails />} />

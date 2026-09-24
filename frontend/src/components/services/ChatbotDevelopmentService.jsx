@@ -12,7 +12,6 @@ import BrandLogoMarquee from '../common/BrandLogoMarquee';
 import SapphireLightHeroBanner from '../common/SapphireLightHeroBanner';
 import HybridAppCuttingEdgeTechnologiesSection from './HybridAppCuttingEdgeTechnologiesSection';
 import ProudAwardsBanner from './ProudAwardsBanner';
-import HybridAppExpertiseServices from './HybridAppExpertiseServices';
 import InnovativeSolutionsVideoSection from './InnovativeSolutionsVideoSection';
 import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
@@ -20,14 +19,14 @@ import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
 import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
 
-export const AzureWebServicesService = () => {
+export const ChatbotDevelopmentService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    model: 'Dedicated Azure Cloud Squad',
-    appType: 'Custom Azure Web Services & Cloud Solutions',
+    model: 'Dedicated Chatbot Squad',
+    appType: 'Custom Chatbot Application Development',
     budget: '$15,000 - $40,000',
     message: ''
   });
@@ -42,11 +41,11 @@ export const AzureWebServicesService = () => {
     setFormSubmitted(true);
   };
 
-  // 6 Benefits of Azure Web Services
+  // 6 Benefits of Chatbot Development
   const benefitsItems = [
     {
-      title: 'High Availability & Global Scale',
-      desc: 'Azure operates in over 60 global regions, providing high availability, multi-region redundancy, and auto-scaling to keep your applications accessible 24/7 without performance degradation.',
+      title: 'Scale and Flex',
+      desc: 'The versatile and adaptable Chatbot platform can expand with your business. Conversational AI enables user interactions to scale seamlessly without response lags or capacity constraints.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="6" width="22" height="7" rx="2" />
@@ -64,8 +63,8 @@ export const AzureWebServicesService = () => {
       )
     },
     {
-      title: 'Seamless Microsoft Ecosystem Integration',
-      desc: 'Natively integrate with Microsoft 365, Active Directory (Entra ID), Visual Studio, Power BI, and Azure DevOps for streamlined management, SSO authentication, and developer productivity.',
+      title: 'Management and Usability',
+      desc: 'Businesses can build and deploy intelligent chatbot workflows using drag-and-drop flow builders and customizable NLP triggers. Chatbot tools simplify dialogue design, testing, and administration.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="6" y="4" width="24" height="28" rx="3" />
@@ -77,8 +76,8 @@ export const AzureWebServicesService = () => {
       )
     },
     {
-      title: 'Enterprise Security & Compliance',
-      desc: 'Azure adheres to strict compliance standards including HIPAA, GDPR, SOC-2, and ISO 27001. Advanced threat detection and encryption protect your cloud infrastructure.',
+      title: 'Practical Automation & Engagement Tools',
+      desc: 'Chatbot development offers powerful intent recognition, multichannel messaging, automated support tickets, and CRM connectors to drive 24/7 engagement and higher conversion rates.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 14v8h4l10 6V8L10 14H6z" />
@@ -89,8 +88,8 @@ export const AzureWebServicesService = () => {
       )
     },
     {
-      title: 'Hybrid Cloud Capability',
-      desc: 'Azure Arc and Azure Stack enable seamless hybrid cloud deployments, connecting on-premise datacenters with Azure public cloud resources for flexible infrastructure management.',
+      title: 'Multichannel & API Integration',
+      desc: 'Chatbots interface seamlessly with WhatsApp, Facebook Messenger, Slack, Microsoft Teams, and enterprise backends enabling businesses to deliver unified customer experiences everywhere.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="5" y="4" width="20" height="28" rx="3" />
@@ -102,8 +101,8 @@ export const AzureWebServicesService = () => {
       )
     },
     {
-      title: 'Serverless & Microservices Platform',
-      desc: 'Build event-driven microservices using Azure Functions, Azure App Services, and Azure Kubernetes Service (AKS) with automatic scaling and pay-per-execution pricing models.',
+      title: 'Mobile & Web Accessibility',
+      desc: 'For a smooth conversational experience across devices, chatbots provide responsive web widgets and SDKs for native mobile apps ensuring zero friction for end users.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="7" y="4" width="22" height="28" rx="3" />
@@ -114,8 +113,8 @@ export const AzureWebServicesService = () => {
       )
     },
     {
-      title: 'Advanced AI & Cognitive Analytics',
-      desc: 'Empower web applications with Azure OpenAI Service, Cognitive Search, Machine Learning Studio, and Azure Synapse Analytics for data-driven intelligent decision making.',
+      title: 'Powerful Analytics and Reports',
+      desc: 'Businesses can track session volume, monitor user satisfaction, analyze fallback rates, and gain valuable customer insights using real-time chatbot analytics dashboards.',
       icon: (
         <svg className="w-10 h-10 text-[#0084D1] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="5" width="28" height="26" rx="3" />
@@ -147,7 +146,7 @@ export const AzureWebServicesService = () => {
     },
     {
       title: 'Time Material',
-      desc: "If you are represent a company with undefined projects and need ongoing work, ask about hourly. It's a pay-as-you-go hour-wise rolling contract.",
+      desc: "If you represent a company with undefined projects and need ongoing work, ask about hourly. It's a pay-as-you-go hour-wise rolling contract.",
       icon: (
         <img src="/images/ic_time_material.svg" alt="Time Material" className="w-12 h-12 object-contain" />
       ),
@@ -186,40 +185,40 @@ export const AzureWebServicesService = () => {
     }
   ];
 
-  // Official Azure Web Services FAQs
-  const azureFaqs = [
+  // Official Chatbot FAQs
+  const chatbotFaqs = [
     {
-      q: '1. What makes Azure Web Services ideal for enterprise applications?',
-      a: 'Azure provides global scale across 60+ regions, enterprise security compliance (HIPAA, SOC-2, GDPR), native Microsoft integration, and comprehensive PaaS/SaaS services.'
+      q: '1. What makes Chatbot development ideal for customer support and lead generation?',
+      a: 'AI Chatbots deliver instant 24/7 responses, resolve common customer queries automatically, capture qualified leads, and reduce support operation costs significantly.'
     },
     {
-      q: '2. Can Azure support high-traffic cloud-native web apps?',
-      a: 'Yes! With Azure App Service auto-scaling, Azure Front Door CDN, Azure Traffic Manager, and Azure Redis Caching, your web app handles millions of concurrent user requests.'
+      q: '2. Can Chatbots handle multi-language user interactions simultaneously?',
+      a: 'Yes! Our AI chatbots leverage advanced NLP engines and translation models (e.g. OpenAI GPT, Dialogflow) to communicate in 50+ languages automatically.'
     },
     {
-      q: '3. Do you handle cloud migration from AWS/on-premise to Azure?',
-      a: 'Absolutely. We specialize in seamless database and application migration to Azure Cloud using Azure Migrate and Database Migration Service with zero downtime.'
+      q: '3. Do you handle integration with existing CRMs, ERPs, and databases?',
+      a: 'Absolutely! We build custom webhook connections and REST APIs to sync chatbot interactions directly into Salesforce, HubSpot, Zendesk, and internal SQL/NoSQL databases.'
     },
     {
-      q: '4. How do you secure web applications hosted on Azure?',
-      a: 'We implement Azure Web Application Firewall (WAF), Microsoft Entra ID (Azure AD) SSO, Key Vault secret management, DDOS protection, and continuous vulnerability monitoring.'
+      q: '4. How do you secure user conversation data and privacy?',
+      a: 'We implement end-to-end data encryption, OAuth2/JWT authentication, PII masking, and full compliance with GDPR, HIPAA, and SOC-2 privacy standards.'
     },
     {
-      q: '5. Do you assist with Azure DevOps CI/CD pipeline setup?',
-      a: 'Yes! We build automated deployment pipelines using Azure DevOps and GitHub Actions combined with Terraform or Bicep Infrastructure as Code.'
+      q: '5. Do you assist with cloud deployment and omnichannel integration?',
+      a: 'Yes! We configure complete cloud serverless deployments, Docker containers, and multi-channel connectors for Web, iOS, Android, WhatsApp, and social channels.'
     },
     {
-      q: '6. What hiring models do you offer for Azure Cloud Developers?',
-      a: 'We provide Dedicated Azure Squads, Hourly Time & Material contracts, Fixed Price projects, and Resource Bucket plans to match your development requirements.'
+      q: '6. Do you sign Non-Disclosure Agreements (NDAs)?',
+      a: 'Yes, we sign comprehensive NDAs prior to any technical discovery or project kickoff, ensuring complete confidentiality and 100% IP ownership.'
     }
   ];
 
-  // 9 Cards Expertise for Azure Web Services Developers
-  const azureDeveloperExpertise = [
+  // 9 Cards Expertise for Chatbot Developers
+  const chatbotDeveloperExpertise = [
     {
       id: 1,
-      title: 'Azure App Service & Web App Engineering',
-      desc: 'We design and deploy scalable Azure Web Apps for enterprise web applications with high availability, automated TLS/SSL certificates, and custom domain routing.',
+      title: 'Custom AI Chatbot Design & Setup',
+      desc: 'The initial step in your conversational AI journey is defining user personas and dialogue flows. Our engineers select optimal NLP frameworks and design intuitive bot interfaces.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -231,8 +230,8 @@ export const AzureWebServicesService = () => {
     },
     {
       id: 2,
-      title: 'Azure Cloud Architecture & Integration',
-      desc: 'Connect your cloud infrastructure with Microsoft 365, Active Directory (Entra ID), Visual Studio, Power BI, and third-party SaaS APIs seamlessly.',
+      title: 'NLP & Intent Recognition Integration',
+      desc: 'We integrate advanced Natural Language Processing engines like Dialogflow, Rasa, and OpenAI to accurately understand user intent, entities, and sentiment.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
@@ -245,8 +244,8 @@ export const AzureWebServicesService = () => {
     },
     {
       id: 3,
-      title: 'Azure Security & IAM Governance',
-      desc: 'Enforce enterprise-grade cloud security using Microsoft Entra ID (Azure AD), Azure Key Vault, Role-Based Access Control (RBAC), and Azure Sentinel.',
+      title: 'Multichannel Conversational Bot Integration',
+      desc: 'Deploy your chatbot across website widgets, mobile apps, WhatsApp Business API, Facebook Messenger, Slack, and Telegram with unified state management.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -258,8 +257,8 @@ export const AzureWebServicesService = () => {
     },
     {
       id: 4,
-      title: 'Azure Serverless & Microservices',
-      desc: 'Build high-performance microservices architecture using Azure Functions, Azure Container Apps, and Azure Kubernetes Service (AKS) with automated scaling.',
+      title: 'Generative AI & LLM Powered Chatbots',
+      desc: 'Build smart conversational agents powered by custom-trained Large Language Models (LLMs) that answer complex enterprise queries accurately.',
       badgeBg: 'bg-[#FEF3C7]',
       iconColor: 'text-[#D97706]',
       icon: (
@@ -273,8 +272,8 @@ export const AzureWebServicesService = () => {
     },
     {
       id: 5,
-      title: 'Azure Database Architecture (SQL & Cosmos DB)',
-      desc: 'Architect resilient database solutions using Azure SQL Database, Azure Cosmos DB, and Azure Cache for Redis for sub-millisecond query performance.',
+      title: 'Voicebot & Speech-to-Text Customization',
+      desc: 'We integrate Speech-to-Text and Text-to-Speech engines (Whisper, ElevenLabs, Google Speech) to power realistic voice assistants for telephony and mobile.',
       badgeBg: 'bg-[#FCE7F3]',
       iconColor: 'text-[#DB2777]',
       icon: (
@@ -285,8 +284,8 @@ export const AzureWebServicesService = () => {
     },
     {
       id: 6,
-      title: 'Azure Cloud Migration & Modernization',
-      desc: 'Migrate on-premise infrastructure and legacy applications to Azure cloud with zero downtime, database migration services (DMS), and cloud-native refactoring.',
+      title: 'Secure CRM & Database API Integration',
+      desc: 'Seamlessly link chatbots to your internal CRM, helpdesk software, e-commerce cart, or payment gateways for automated order tracking and live agent handoff.',
       badgeBg: 'bg-[#E0F2FE]',
       iconColor: 'text-[#0284C7]',
       icon: (
@@ -299,8 +298,8 @@ export const AzureWebServicesService = () => {
     },
     {
       id: 7,
-      title: 'Azure DevOps Pipeline & IaC Automation',
-      desc: 'Automate infrastructure provisioning using Terraform, Bicep, and ARM templates paired with Azure DevOps CI/CD pipelines for zero-downtime releases.',
+      title: 'Intelligent Search & Vector Knowledge Base',
+      desc: 'We build Retrieval-Augmented Generation (RAG) pipelines using Pinecone and LangChain to allow chatbots to instantly query your private knowledge base.',
       badgeBg: 'bg-[#EDE9FE]',
       iconColor: 'text-[#7C3AED]',
       icon: (
@@ -312,8 +311,8 @@ export const AzureWebServicesService = () => {
     },
     {
       id: 8,
-      title: 'Azure AI & OpenAI Service Integration',
-      desc: 'Integrate enterprise AI features such as ChatGPT models, Azure Cognitive Services, vector search, and intelligent analytics directly into your web applications.',
+      title: 'Bot Flow Migration & Optimization',
+      desc: 'Upgrade outdated rule-based chatbots to modern AI generative agents with automated migration scripts, zero conversation disruption, and improved UX.',
       badgeBg: 'bg-[#DCFCE7]',
       iconColor: 'text-[#16A34A]',
       icon: (
@@ -327,8 +326,8 @@ export const AzureWebServicesService = () => {
     },
     {
       id: 9,
-      title: 'Azure Cloud Support & 24/7 Managed Services',
-      desc: 'Continuous cloud infrastructure monitoring, automated disaster recovery, patch management, and 24/7 technical support for your Microsoft Azure environments.',
+      title: 'Chatbot Support & Analytics Maintenance',
+      desc: 'Continuous monitoring ensures high resolution rates. We provide round-the-clock maintenance, intent retraining, fallback analysis, and platform updates.',
       badgeBg: 'bg-[#FFEDD5]',
       iconColor: 'text-[#EA580C]',
       icon: (
@@ -340,43 +339,37 @@ export const AzureWebServicesService = () => {
     }
   ];
 
-  // Exact Stats for Azure Web Services matching BigCommerce reference sequence
-  const azureStats = [
-    { value: '77+', label: 'Cloud Developers' },
-    { value: '19+', label: 'Fortunes 500 Companies' },
-    { value: '583+', label: 'Project Completed in Cloud Technology' },
+  // Exact Stats for Chatbot Development
+  const chatbotStats = [
+    { value: '77+', label: 'Chatbot Engineers' },
+    { value: '19+', label: 'Fortune 500 Companies' },
+    { value: '583+', label: 'AI Bot Projects Completed' },
     { value: '311+', label: '5-Star Clutch Reviews' }
   ];
 
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
-        title="Azure Web Services in USA | Firevy.Co"
-        description="We provide a wide range of Azure cloud application development services, such as Assessment of Infrastructure, Azure Migration, and Azure Consulting."
-        keywords="azure web services in usa, azure cloud development, azure app service, azure devops, hire azure developers, azure cloud migration, Firevy.Co"
+        title="Chatbot Development Services in USA | Custom AI Chatbot Solutions | Firevy.Co"
+        description="Leading Chatbot Development Company. We engineer fast, secure, and scalable AI chatbots, voicebots, and conversational AI platforms using Dialogflow, OpenAI, and Python."
+        canonical="/services/chatbot-development"
       />
 
       {/* 1. Sapphire Light Hero Banner */}
       <SapphireLightHeroBanner
-        title="Azure Web Services in USA"
-        subtitle="We provide a wide range of Azure cloud application development services, such as Assessment of Infrastructure, Azure Migration, and Azure Consulting. As the Best Azure web services company, we ensure top-notch solutions and support for all your cloud computing needs."
+        title="Chatbot App Development in USA"
+        subtitle="Chatbots are a wonderful accelerator due to their 24/7 automated support, rapid instant responses, and intelligent conversational capabilities."
         ctaText="Discuss Your Project →"
         ctaLink="#quote-form"
-        heroComponent={
-          <div className="relative w-full max-w-[560px] flex items-center justify-center">
-            <img
-              src="/images/azure_hero_illustration.png"
-              alt="Azure Web Services in USA"
-              className="w-full max-w-[540px] h-auto object-contain select-none pointer-events-none drop-shadow-sm"
-            />
-          </div>
-        }
+        serviceCategory="hybrid"
+        stats={chatbotStats}
+        heroImage="/images/bigcommerce_hero_illustration.png"
       />
 
       {/* 2. Brand Logo Marquee Right Below Hero Banner */}
       <BrandLogoMarquee />
 
-      {/* 3. SECTION: Web Development Market Stats */}
+      {/* 3. SECTION: Chatbot Development Market Stats */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -385,7 +378,7 @@ export const AzureWebServicesService = () => {
               <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
                   src="/images/bigcommerce_market_stats_chart.png"
-                  alt="Web Development Market Stats"
+                  alt="Chatbot Development Market Stats"
                   className="w-full h-auto max-w-[460px] object-contain rounded-lg"
                 />
               </div>
@@ -394,11 +387,11 @@ export const AzureWebServicesService = () => {
             {/* Right Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Web Development Market Stats
+                Chatbot Development Market Stats
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                The global web development market size was roughly USD 55500.0 million in 2021. As per our research, the market is expected to reach USD 89015.19 million by 2027, exhibiting a CAGR of 8.03% during the forecast period.
+                The global chatbot market size was roughly USD 4.9 billion in 2022. As per our research, the market is expected to reach USD 27.3 billion by 2030, exhibiting a CAGR of 23.3% during the forecast period.
               </p>
 
               <div className="pt-2">
@@ -414,18 +407,18 @@ export const AzureWebServicesService = () => {
         </Container>
       </section>
 
-      {/* 4. SECTION: Affordable Azure Web Services App Development Services */}
+      {/* 4. SECTION: Affordable Chatbot App Development Services */}
       <section className="py-16 sm:py-20 bg-white text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Content */}
             <div className="lg:col-span-6 space-y-5">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Affordable Azure Web Services App Development Services
+                Affordable Chatbot App Development Services
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                Many small and medium-sized enterprises (SMEs) choose top-rated Azure Web Services for a wide range of cloud development projects—from simple cloud applications to complex enterprise microservices. Azure excels in building scalable RESTful APIs, making it ideal for integrating with existing systems or creating new, efficient interfaces. As a reliable Azure cloud development company, we offer a team of dedicated Azure developers with over a decade of experience in delivering high-quality, scalable solutions.
+                Many small and medium-sized enterprises (SMEs) choose top-rated Chatbot Development Services for a wide range of AI projects—from simple support widgets to complex enterprise conversational agents. Chatbots excel in building RESTful webhook integrations, making them ideal for integrating with existing systems or creating new, efficient interfaces. As a reliable Chatbot development company, we offer a team of dedicated bot developers with over a decade of experience in delivering high-quality, scalable solutions.
               </p>
             </div>
 
@@ -434,7 +427,7 @@ export const AzureWebServicesService = () => {
               <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
                   src="/images/bigcommerce_sec3_illustration.png"
-                  alt="Affordable Azure Web Services App Development Services"
+                  alt="Affordable Chatbot App Development Services"
                   className="w-full h-auto max-w-[460px] object-contain"
                 />
               </div>
@@ -443,7 +436,7 @@ export const AzureWebServicesService = () => {
         </Container>
       </section>
 
-      {/* 5. SECTION: World Wide Top Rated IT Company on Clutch */}
+      {/* 7. SECTION: World Wide Top Rated IT Company on Clutch */}
       <section className="py-6 sm:py-8 bg-[#005F96] text-white border-y border-blue-900/30 overflow-hidden text-left font-sans select-none">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
@@ -570,12 +563,12 @@ export const AzureWebServicesService = () => {
         </Container>
       </section>
 
-      {/* 6. SECTION: Get A 100% Customizable Azure Web Services Development By Experts */}
+      {/* 8. SECTION: Get A 100% Customizable Chatbot Development By Experts */}
       <section className="py-12 sm:py-16 bg-white text-slate-900 font-sans text-left">
         <Container>
           <div className="text-center w-full max-w-5xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-[#0F172A] tracking-tight leading-tight">
-              Get A 100% Customizable Azure Web Services Development By Experts
+              Get A 100% Customizable Chatbot Development By Experts
             </h2>
           </div>
 
@@ -598,46 +591,46 @@ export const AzureWebServicesService = () => {
               </div>
 
               <h3 className="text-[24px] sm:text-[27px] lg:text-[29px] font-[900] text-[#005F96] tracking-tight leading-[1.3] relative z-10">
-                Scalable And Robust Azure Web Services Applications
+                Scalable And Robust Chatbot Applications
               </h3>
             </div>
 
             {/* Right Column: Paragraph Content */}
             <div className="lg:col-span-8 space-y-4 text-left flex flex-col justify-center">
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We are a leading Azure cloud application development company backed by certified Microsoft architects and senior cloud engineers. Our team engineers high-velocity Azure cloud applications that maximize cloud scalability, microservices orchestration, and Microsoft ecosystem advantages.
+                We are a leading Chatbot application development company backed by certified conversational AI architects and senior Bot engineers. Our team engineers high-velocity Chatbot applications that maximize NLP intent processing, dialogue management, and cloud messaging capabilities.
               </p>
 
               <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal">
-                We know that applications engineered for modern enterprises must deliver 99.99% availability, fluid user interactions, reliable automated backups, and bank-grade data security. We ensure every Azure deliverable matches your business goals without compromising code maintainability, scalability, or performance.
+                We know that conversational applications engineered for modern enterprises must deliver instant response times, fluid chat UI components, reliable offline queueing, and bank-grade data security. We ensure every Chatbot deliverable matches your business goals without compromising code maintainability, scalability, or performance.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 7. SECTION: Cutting Edge Technologies Firevy Use For Azure Web Services */}
+      {/* 9. SECTION: Cutting Edge Technologies Firevy Use For Chatbot Development */}
       <HybridAppCuttingEdgeTechnologiesSection
-        title={"Cutting Edge Technologies Firevy Use For\nAzure Web Services"}
+        title={"Cutting Edge Technologies Firevy Use For\nChatbot Development"}
       />
 
-      {/* 8. SECTION: Our Premium Services */}
+      {/* 10. SECTION: Our Premium Services */}
       <PremiumServicesGrid />
 
-      {/* 9. SECTION: Success Stories */}
+      {/* 17. SECTION: Success Stories */}
       <SuccessStoriesSection category="general" />
 
-      {/* 10. SECTION: The Expertise Of Our Azure Web Services Developers */}
+      {/* SECTION: The Expertise Of Our Chatbot Developers */}
       <section className="py-16 sm:py-20 bg-[#F4F8FA] text-slate-900 font-sans text-left border-y border-slate-100 overflow-hidden">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight mb-3 font-sans">
-              The Expertise Of Our Azure Web Services Developers
+              The Expertise Of Our Chatbot Developers
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 max-w-6xl mx-auto">
-            {azureDeveloperExpertise.map((item) => (
+            {chatbotDeveloperExpertise.map((item) => (
               <div
                 key={item.id}
                 className="group rounded-[14px] p-6 sm:p-7 text-left flex flex-col justify-start transition-all duration-300 ease-in-out cursor-pointer bg-white border-t-[3px] border-b-[3px] border-x border-t-transparent border-b-transparent border-x-slate-200/80 hover:bg-gradient-to-b hover:from-[#E6F6FF] hover:via-[#E1F3FD] hover:to-[#D5EEFA] hover:border-t-[#00A8E8] hover:border-b-[#005F96] hover:border-x-[#BAE6FD] hover:shadow-md hover:-translate-y-1"
@@ -672,10 +665,10 @@ export const AzureWebServicesService = () => {
         </Container>
       </section>
 
-      {/* 11. SECTION: Proud To Have Picked These Up Along The Way */}
+      {/* 19. SECTION: Proud To Have Picked These Up Along The Way */}
       <ProudAwardsBanner />
 
-      {/* 12. SECTION: Benefits of Azure Web Services */}
+      {/* 20. SECTION: Benefits of Chatbot Development */}
       <section className="py-16 sm:py-20 bg-white text-slate-900 font-sans text-left border-b border-slate-100 overflow-hidden">
         <Container>
           <motion.div
@@ -686,10 +679,10 @@ export const AzureWebServicesService = () => {
             className="text-center max-w-4xl mx-auto mb-12 sm:mb-14"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              Benefits Of Azure Web Services Development
+              Benefits Of Chatbot Development
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              Build, deploy, and scale enterprise web applications using Microsoft Azure's global cloud platform. Six significant Azure Web Services development benefits:
+              In Chatbot development, intelligent conversational platforms are built and customized utilizing state-of-the-art NLP frameworks. Six significant Chatbot development benefits:
             </p>
           </motion.div>
 
@@ -735,7 +728,7 @@ export const AzureWebServicesService = () => {
         </Container>
       </section>
 
-      {/* 13. SECTION: Business Friendly Hiring Models */}
+      {/* 22. SECTION: Business Friendly Hiring Models */}
       <section className="py-16 sm:py-20 bg-[#f4f9fd] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
         <Container>
           <motion.div
@@ -811,25 +804,25 @@ export const AzureWebServicesService = () => {
         </Container>
       </section>
 
-      {/* 14. SECTION: Unveiling Our Innovative Solution */}
+      {/* 23. SECTION: Unveiling Our Innovative Solution */}
       <InnovativeSolutionsVideoSection />
 
-      {/* 15. SECTION: Process We Follow */}
+      {/* 24. SECTION: Process We Follow */}
       <ProcessWeFollow
         title="Process We Follow"
-        subtitle="Process-oriented execution from Azure Web Services architecture to cloud deployment, QA testing, and security compliance."
+        subtitle="Process-oriented execution from dialogue wireframes to NLP intent architecture, QA testing, and AWS/GCP cloud deployment."
       />
 
-      {/* 16. SECTION: Our Story, Their Words */}
+      {/* 25. SECTION: Our Story, Their Words */}
       <OurStoryTheirWordsSection />
 
-      {/* 17. SECTION: Trusted Brands Grid */}
+      {/* 26. SECTION: Trusted Brands Grid */}
       <TrustedBrandsGrid />
 
-      {/* 18. SECTION: Success Matrix */}
+      {/* 27. SECTION: Success Matrix */}
       <SuccessMatrix />
 
-      {/* 19. SECTION: Technology Stack */}
+      {/* Technology Stack Section */}
       <section className="py-16 sm:py-20 bg-[#F4F8FA] text-slate-900 font-sans text-left border-y border-slate-100 overflow-hidden">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-14">
@@ -837,12 +830,12 @@ export const AzureWebServicesService = () => {
               Technology Stack
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto font-normal">
-              We use the latest Azure Web Services development technology and process to make sure we deliver the best. Have a look at our technology stack:
+              We use the latest Chatbot development technology and process to make sure we deliver the best. Have a look at our technology stack:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 max-w-6xl mx-auto">
-            {/* Box 1: Backend */}
+            {/* Box 1: Backend & NLP */}
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -856,19 +849,19 @@ export const AzureWebServicesService = () => {
                   <polyline points="18,20 18,27 26,31 26,24" />
                   <polyline points="34,20 34,27 26,31" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Backend</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Backend & NLP</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- .NET Core</div>
-                <div>- Node.js</div>
-                <div>- Java</div>
                 <div>- Python</div>
-                <div>- C#</div>
+                <div>- Dialogflow</div>
+                <div>- OpenAI API</div>
+                <div>- Rasa Engine</div>
+                <div>- Node.js</div>
               </div>
             </div>
 
-            {/* Box 2: Front End */}
+            {/* Box 2: Front End & Widgets */}
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -883,19 +876,19 @@ export const AzureWebServicesService = () => {
                   <line x1="6" y1="25" x2="10" y2="25" />
                   <rect x="17" y="16" width="12" height="11" rx="1.5" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Front End</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Front End & UI</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- React.js</div>
-                <div>- Angular</div>
+                <div>- React Widget</div>
+                <div>- WebSockets</div>
                 <div>- Vue.js</div>
-                <div>- TypeScript</div>
-                <div className="col-span-2">- Blazor WebAssembly</div>
+                <div>- Flutter SDK</div>
+                <div className="col-span-2">- TypeScript</div>
               </div>
             </div>
 
-            {/* Box 3: Database */}
+            {/* Box 3: Database & Vector Search */}
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -904,18 +897,18 @@ export const AzureWebServicesService = () => {
                   <path d="M4 15v7c0 2.5 6.27 4.5 14 4.5s14-2 14-4.5v-7" />
                   <path d="M4 22v7c0 2.5 6.27 4.5 14 4.5s14-2 14-4.5v-7" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Database</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Database & Vector</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- Azure SQL</div>
-                <div>- Cosmos DB</div>
                 <div>- PostgreSQL</div>
-                <div>- Redis Cache</div>
+                <div>- MongoDB</div>
+                <div>- Pinecone</div>
+                <div>- Redis</div>
               </div>
             </div>
 
-            {/* Box 4: DevOps */}
+            {/* Box 4: DevOps & Cloud */}
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -924,18 +917,18 @@ export const AzureWebServicesService = () => {
                   <path d="M5 16L11 8L24 14L18 22Z" />
                   <path d="M31 16L25 8L12 14L18 22Z" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">DevOps</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">DevOps & Cloud</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- Azure Pipelines</div>
+                <div>- Docker</div>
+                <div>- AWS Lambda</div>
+                <div>- GCP Cloud Run</div>
                 <div>- GitHub Actions</div>
-                <div>- Terraform</div>
-                <div>- Docker / AKS</div>
               </div>
             </div>
 
-            {/* Box 5: Testing */}
+            {/* Box 5: Testing & Analytics */}
             <div className="bg-[#EFF6FC]/70 rounded-[14px] p-6 sm:p-7 border border-[#DCEBF6] shadow-xs text-left">
               <div className="flex items-center space-x-3 mb-5">
                 <svg className="w-9 h-9 text-[#0078D7] shrink-0" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -944,13 +937,13 @@ export const AzureWebServicesService = () => {
                   <path d="M13 21.5L9 32l5-2.5 4 2.5v-10.5" />
                   <path d="M23 21.5L27 32l-5-2.5-4 2.5v-10.5" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Testing</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Testing & Analytics</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- Playwright</div>
-                <div className="col-span-2">- Azure Load Testing</div>
-                <div className="col-span-2">- Selenium Automation</div>
+                <div>- Botium</div>
+                <div className="col-span-2">- Chatbase Analytics</div>
+                <div className="col-span-2">- PyTest</div>
               </div>
             </div>
 
@@ -962,33 +955,33 @@ export const AzureWebServicesService = () => {
                   <path d="M18 2v4M18 30v4M2 18h4M30 18h4M6.7 6.7l2.8 2.8M26.5 26.5l2.8 2.8M6.7 29.3l2.8-2.8M26.5 9.5l2.8-2.8" />
                   <circle cx="18" cy="18" r="11" />
                 </svg>
-                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Project Management Tools</h3>
+                <h3 className="font-[800] text-[18px] text-[#0B0F19]">Project Management</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-y-2.5 text-[13.5px] text-[#475569] font-normal">
-                <div>- Azure Boards</div>
                 <div>- Jira</div>
-                <div>- MS Teams</div>
+                <div>- Microsoft Teams</div>
                 <div>- Slack</div>
+                <div>- Trello</div>
               </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 20. SECTION: Featured In Brands Section */}
+      {/* 28. SECTION: Featured In Brands Section */}
       <FeaturedInBrandsSection />
 
-      {/* 21. SECTION: Digital Transformation Slider */}
+      {/* 29. SECTION: Digital Transformation Slider */}
       <DigitalTransformationSlider />
 
-      {/* 22. SECTION: Frequently Asked Questions */}
-      <SapphireFaqSection faqList={azureFaqs} />
+      {/* 30. SECTION: Frequently Asked Questions */}
+      <SapphireFaqSection faqList={chatbotFaqs} />
 
-      {/* 23. SECTION: Our Recent Blogs */}
+      {/* 31. SECTION: Our Recent Blogs */}
       <IWatchRecentBlogsSection />
     </div>
   );
 };
 
-export default AzureWebServicesService;
+export default ChatbotDevelopmentService;
