@@ -363,7 +363,7 @@ export const ChatbotDevelopmentService = () => {
         ctaLink="#quote-form"
         serviceCategory="hybrid"
         stats={chatbotStats}
-        heroImage="/images/bigcommerce_hero_illustration.png"
+        heroImage="/images/chatbot_hero_illustration.png"
       />
 
       {/* 2. Brand Logo Marquee Right Below Hero Banner */}
@@ -377,7 +377,7 @@ export const ChatbotDevelopmentService = () => {
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
-                  src="/images/bigcommerce_market_stats_chart.png"
+                  src="/images/ai_market_stats_chart.png"
                   alt="Chatbot Development Market Stats"
                   className="w-full h-auto max-w-[460px] object-contain rounded-lg"
                 />
@@ -426,9 +426,9 @@ export const ChatbotDevelopmentService = () => {
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
                 <img
-                  src="/images/bigcommerce_sec3_illustration.png"
+                  src="/images/ai_chatbot.png"
                   alt="Affordable Chatbot App Development Services"
-                  className="w-full h-auto max-w-[460px] object-contain"
+                  className="w-full h-auto max-w-[460px] object-contain rounded-lg"
                 />
               </div>
             </div>

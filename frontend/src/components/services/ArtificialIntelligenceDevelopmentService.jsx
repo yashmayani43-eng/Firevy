@@ -570,11 +570,11 @@ export const ArtificialIntelligenceDevelopmentService = () => {
 
             {/* Right Column: Hero Vector Illustration */}
             <div className="lg:col-span-6 flex justify-center lg:justify-end">
-              <div className="w-full max-w-lg overflow-hidden rounded-2xl border border-slate-100 shadow-xl">
+              <div className="w-full max-w-lg flex items-center justify-center">
                 <img
-                  src="/images/ai_hero_illustration.jpg"
+                  src="/images/ai_development_hero_copy.png"
                   alt="Artificial Intelligence Development Company"
-                  className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500"
+                  className="w-full h-auto object-contain select-none pointer-events-none drop-shadow-sm hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>
