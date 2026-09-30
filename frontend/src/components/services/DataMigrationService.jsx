@@ -26,7 +26,7 @@ import { TransformativeImpactSection } from './TransformativeImpactSection';
 import SectorsThrivingSection from './SectorsThrivingSection';
 import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
 
-const BlockchainCuttingEdgeSection = () => {
+const DataMigrationCuttingEdgeSection = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const technologies = [
@@ -124,7 +124,7 @@ const BlockchainCuttingEdgeSection = () => {
       <div className="w-full px-4 sm:px-8 lg:px-12">
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-tight font-sans">
-            Cutting-Edge Technologies Firevy Use for Blockchain<br />Development
+            Cutting-Edge Technologies Firevy Use for Data Migration<br />Development
           </h2>
         </div>
 
@@ -177,7 +177,7 @@ const BlockchainCuttingEdgeSection = () => {
   );
 };
 
-const BlockchainDigitalTransformationSection = () => {
+const DataMigrationDigitalTransformationSection = () => {
   const caseStudies = [
     {
       id: 1,
@@ -223,7 +223,7 @@ const BlockchainDigitalTransformationSection = () => {
       <Container className="max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-tight">
-            Enterprise Blockchain Development Case Studies
+            Enterprise Data Migration Case Studies
           </h2>
         </div>
 
@@ -255,7 +255,7 @@ const BlockchainDigitalTransformationSection = () => {
   );
 };
 
-export const BlockchainDevelopmentService = () => {
+export const DataMigrationService = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -263,9 +263,9 @@ export const BlockchainDevelopmentService = () => {
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans antialiased text-left selection:bg-sky-500 selection:text-white">
       <SEO
-        title="Trusted Blockchain Development Company | Blockchain Development Services"
-        description="Our best AI-powered blockchain development company creates quick, efficient, and safe apps for use cases such as micropayments, cryptocurrency exchanges and wallets, cryptocurrencies, crowdsourcing, payment reconciliation, and other use cases."
-        canonical="/services/blockchain-development"
+        title="Data Migration Services Company | Zero Downtime Cloud & Database Migration"
+        description="Empower your business with enterprise Data Migration Services. Seamless database migration, cloud data warehouse modernization, and zero-downtime ETL pipelines."
+        canonical="/services/data-migration-services"
       />
 
       {/* HERO SECTION */}
@@ -277,18 +277,18 @@ export const BlockchainDevelopmentService = () => {
                 className="font-[800] text-[#0B0F19] tracking-tight leading-[1.18] font-sans"
                 style={{ fontSize: 'clamp(32px, 4vw, 46px)' }}
               >
-                Trusted Blockchain<br className="hidden sm:inline" /> Development Company
+                Data Migration Services in USA
               </h1>
 
               <p className="text-[14px] sm:text-[15px] text-[#475569] font-normal leading-[1.7] max-w-2xl font-sans">
-                Our best AI-powered blockchain development company creates quick, efficient, and safe apps for use cases such as micropayments, cryptocurrency exchanges and wallets, cryptocurrencies, crowdsourcing, payment reconciliation, and other use cases.
+                Migrating data securely and seamlessly is crucial for every business, and you need to rely on a trusted service provider like us. We ensure smooth data transfer with zero data loss, enhanced security, and minimal downtime. Our expert team handles complex migrations with precision, whether it's cloud, database, or application data. With Cross-platform cloud data migration company, you get scalable, cost-effective, and hassle-free solutions tailored to your business needs.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-1 pb-1">
                 <div>
                   <div className="text-2xl sm:text-[28px] font-black text-[#005F96] tracking-tight">80+</div>
                   <div className="text-[12px] sm:text-[12.5px] text-[#2B2B2B] font-semibold leading-tight mt-1">
-                    Web<br />Developers
+                    Mobile App<br />Developers
                   </div>
                 </div>
                 <div>
@@ -300,7 +300,7 @@ export const BlockchainDevelopmentService = () => {
                 <div>
                   <div className="text-2xl sm:text-[28px] font-black text-[#005F96] tracking-tight">600+</div>
                   <div className="text-[12px] sm:text-[12.5px] text-[#2B2B2B] font-semibold leading-tight mt-1">
-                    Project Completed in<br />Web Technology
+                    Project Completed in<br />Mobile Technology
                   </div>
                 </div>
                 <div>
@@ -311,7 +311,7 @@ export const BlockchainDevelopmentService = () => {
                 </div>
               </div>
 
-              <div className="pt-2 flex flex-wrap items-center gap-3">
+              <div className="pt-2">
                 <a
                   href="#contact"
                   className="inline-flex items-center space-x-2 px-6 sm:px-7 py-3 rounded-[4px] bg-[#005F96] hover:bg-[#004B77] text-white font-[700] text-[13.5px] sm:text-[14px] shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer"
@@ -319,21 +319,14 @@ export const BlockchainDevelopmentService = () => {
                   <span>Discuss Your Project</span>
                   <span className="text-base font-bold">→</span>
                 </a>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center space-x-2 px-6 sm:px-7 py-3 rounded-[4px] bg-[#005F96] hover:bg-[#004B77] text-white font-[700] text-[13.5px] sm:text-[14px] shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer"
-                >
-                  <span>Hire Blockchain Developers</span>
-                  <span className="text-base font-bold">→</span>
-                </a>
               </div>
             </div>
 
             <div className="lg:col-span-5 flex items-center justify-center relative">
-              <div className="relative w-full max-w-[480px] sm:max-w-[520px] lg:max-w-[560px] mx-auto flex items-center justify-center">
+              <div className="relative w-full max-w-[440px] sm:max-w-[480px] lg:max-w-[520px] mx-auto flex items-center justify-center">
                 <img
-                  src="/images/blockchain_hero.png"
-                  alt="Trusted Blockchain Development Company"
+                  src="/images/data_migration_hero.png"
+                  alt="Data Migration Services in USA"
                   className="w-full h-auto object-contain select-none transition-transform duration-500 ease-out hover:scale-102"
                   loading="eager"
                   onError={(e) => {
@@ -349,132 +342,66 @@ export const BlockchainDevelopmentService = () => {
 
       <BrandLogoMarquee />
 
-      {/* SECTION 1: Web Development Market Stats */}
+      {/* SECTION 1: Outsource Automated Data Migration Services Today! */}
       <section className="py-14 sm:py-20 bg-white text-left font-sans">
         <Container className="max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Chart */}
-            <div className="lg:col-span-6 flex items-center justify-center">
-              <div className="w-full max-w-[480px] sm:max-w-[520px] mx-auto p-1 bg-white">
+            <div className="lg:col-span-5 flex items-center justify-center">
+              <div className="w-full max-w-[460px] sm:max-w-[500px] mx-auto">
                 <img
-                  src="/images/python_market_stats_chart.png"
-                  alt="Global web development market size from 2020 to 2031"
-                  className="w-full h-auto object-contain select-none transition-transform duration-500 hover:scale-102"
+                  src="/images/data_migration_sec1.png"
+                  alt="Outsource Automated Data Migration Services Today!"
+                  className="w-full h-auto object-contain select-none filter drop-shadow-sm transition-transform duration-500 hover:scale-102"
                   loading="lazy"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/cloud_analytics_about.svg';
+                  }}
                 />
               </div>
             </div>
 
-            {/* Right Column: Content */}
-            <div className="lg:col-span-6 space-y-5 text-left">
+            <div className="lg:col-span-7 space-y-5 text-left">
               <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-[1.25] font-sans">
-                Web Development Market<br />Stats
+                Outsource Automated Data<br />Migration Services Today!
               </h2>
 
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.8] font-normal font-sans">
-                The global web development market size was roughly USD 55500.0 million in 2021. As per our research, the market is expected to reach USD 89015.19 million by 2027, exhibiting a CAGR of 8.03% during the forecast period.
-              </p>
-
-              <div className="pt-2">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center px-6 sm:px-7 py-3 rounded-[4px] bg-[#005F96] hover:bg-[#004B77] text-white font-[700] text-[13.5px] sm:text-[14px] shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer"
-                >
-                  <span>Connect With An Expert</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* SECTION 2: Affordable Blockchain Development Services */}
-      <section className="py-14 sm:py-20 bg-white text-left font-sans">
-        <Container className="max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Content */}
-            <div className="lg:col-span-6 space-y-5 text-left">
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-[1.25] font-sans">
-                Affordable Blockchain<br />Development Services
-              </h2>
-
-              <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.8] font-normal font-sans">
-                We provide regulatory-compliant Custom AI blockchain development solutions that include various blockchain-powered features for businesses of all sizes, from large corporations to fledgling startups. As a leading AI integrated blockchain development Company, we provide solutions tailored to your company's needs. First, our blockchain development agency determines what you need and chooses the appropriate instruments. You are more than welcome to attend meetings, you will be provided with frequent updates, and your input is precious.
-              </p>
-            </div>
-
-            {/* Right Column: Illustration */}
-            <div className="lg:col-span-6 flex items-center justify-center">
-              <div className="w-full max-w-[480px] sm:max-w-[520px] lg:max-w-[560px] mx-auto flex items-center justify-center">
-                <img
-                  src="/images/blockchain_affordable_services.png"
-                  alt="Affordable Blockchain Development Services"
-                  className="w-full h-auto object-contain select-none transition-transform duration-500 hover:scale-102"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* SECTION 2B: Brief About Blockchain Consulting Services */}
-      <section className="py-14 sm:py-20 bg-white text-left font-sans">
-        <Container className="max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Illustration */}
-            <div className="lg:col-span-6 flex items-center justify-center">
-              <div className="w-full max-w-[440px] sm:max-w-[480px] lg:max-w-[500px] mx-auto flex items-center justify-center">
-                <img
-                  src="/images/blockchain_consulting_desk.png"
-                  alt="Brief About Blockchain Consulting Services"
-                  className="w-full h-auto object-contain select-none transition-transform duration-500 hover:scale-102"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            {/* Right Column: Content */}
-            <div className="lg:col-span-6 space-y-4 text-left">
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-[1.25] font-sans">
-                Brief About Blockchain<br />Consulting Services
-              </h2>
-
-              <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.8] font-normal font-sans">
-                We approach Enterprise blockchain development solutions for web services and design thinking from our customers' viewpoints to achieve our ultimate goal of maximizing outcomes. This is accomplished by considering any efforts to reduce the cognitive load imposed by our Blockchain deliverables.
-              </p>
-
-              <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.8] font-normal font-sans">
-                Our Affordable Blockchain Development Services providers assist in making the essential alterations and developments to your software or mobile application so that you may fulfil the revolutionary requirements of AI blockchain development service.
+                Once you Outsource Database Migration Services to us, we will take the time to evaluate what your firm requires before we put up a plan that is crafted just for your company. We will analyze the apps and data your company needs and collaborate with you to specify the aspects of migration that are vital to your company. In the data sources you already have, we will try to identify any deficiencies or opportunities for improvement that need to be addressed. We provide Enterprise data migration solutions, End-to-end data migration support, AWS and Azure data migration services by performing data analysis, interpretation, and architecture, checking the integrity of the migrated data and confirming that the migration was successful.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* SECTION 2C: Invest With Experienced Blockchain Development Company */}
+      {/* SECTION 2: Brief About Data Migration Services */}
       <section className="py-14 sm:py-20 bg-white text-left font-sans">
         <Container className="max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Content */}
-            <div className="lg:col-span-6 space-y-4 text-left">
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-[1.25] font-sans">
-                Invest With Experienced<br />Blockchain Development<br />Company
+            <div className="lg:col-span-7 space-y-4 text-left">
+              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-tight">
+                Brief About Data Migration<br />Services
               </h2>
 
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.8] font-normal font-sans">
-                Businesses seeking decentralized technology can use our blockchain development services end-to-end. We offer experience throughout the development lifecycle, from creating a blockchain platform to integrating blockchain into your processes. Our specialty is custom blockchain applications, smart contracts, dApps, and corporate blockchain solutions for your organization. Hire blockchain developers experts in Ethereum, Hyperledger, Solana, and Smart Chain ensure the optimal fit for your project. From strategy and consultation to design, coding, and implementation, we do it all. We provide dependable blockchain solutions to transform your operations in finance, supply chain, healthcare, and other industries.
+                With Google data migration services provider, you may improve your performance by using database migration experts, which helps you extract more data and predict trends, behaviors, events, and other occurrences.
+              </p>
+              <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.8] font-normal font-sans">
+                We have a detailed knowledge of several procedures unique to a particular sector and competence in implementing the full range of Blockchain solutions.
               </p>
             </div>
 
-            {/* Right Column: Illustration */}
-            <div className="lg:col-span-6 flex items-center justify-center">
-              <div className="w-full max-w-[440px] sm:max-w-[480px] lg:max-w-[500px] mx-auto flex items-center justify-center">
+            <div className="lg:col-span-5 flex items-center justify-center">
+              <div className="w-full max-w-[460px] sm:max-w-[500px] mx-auto">
                 <img
-                  src="/images/blockchain_invest_experienced.png"
-                  alt="Invest With Experienced Blockchain Development Company"
-                  className="w-full h-auto object-contain select-none transition-transform duration-500 hover:scale-102"
+                  src="/images/data_migration_sec3.png"
+                  alt="Brief About Data Migration Services"
+                  className="w-full h-auto object-contain select-none filter drop-shadow-sm transition-transform duration-500 hover:scale-102"
                   loading="lazy"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/cloud_analytics_about.svg';
+                  }}
                 />
               </div>
             </div>
@@ -524,12 +451,12 @@ export const BlockchainDevelopmentService = () => {
         </div>
       </section>
 
-      {/* SECTION 4: Get 100% Customizable Blockchain Development Services By Experts */}
+      {/* SECTION 4: Get 100% Customizable Data Migration Services By Experts */}
       <section className="py-14 sm:py-20 bg-white text-left font-sans">
         <Container className="max-w-7xl">
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-tight">
-              Get 100% Customizable Blockchain Development Services By Experts
+              Get 100% Customizable Data Migration Services By Experts
             </h2>
           </div>
 
@@ -545,10 +472,10 @@ export const BlockchainDevelopmentService = () => {
 
             <div className="lg:col-span-7 space-y-4 text-left">
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.8] font-normal font-sans">
-                Our blockchain development services professionals have a wealth of expertise in the design, development, and implementation of blockchain solutions. We know how to build and manage your decentralized applications by using smart contracts and blockchain architectures that are both comprehensive and highly effective.
+                Our AWS cloud data migration services professionals in data migration, integration, ETL, and ESB have a wealth of expertise in the design, development, and implementation of data migration services in AWS. We know how to transfer and manage your data by using solutions for data warehousing and data migration that are both comprehensive and highly effective. You can Outsource Database Migration Services to us and let our experts manage the things for you.
               </p>
               <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-[1.8] font-normal font-sans">
-                To ensure that any blockchain development project goes off without a hitch and meets with complete success, it is vital to choose a blockchain development model that aligns with your organization's needs. As a blockchain development service provider, we value businesses in terms of performance, security, and return on investment.
+                To ensure that any data migration goes off without a hitch and meets with complete success, it is vital to choose a data migration model that aligns with your organization's needs. As a data migration service provider, we value businesses in terms of performance, security, and return on investment. Every stage of the ESB or ETL process will be modified to meet your specific requirements and aims in terms of the outputs. Our data migration services company will guarantee that all the extracted data is successfully processed and converted before being loaded into the data warehouse.
               </p>
             </div>
           </div>
@@ -556,32 +483,32 @@ export const BlockchainDevelopmentService = () => {
       </section>
 
       {/* SECTION 5: Cutting Edge Technologies */}
-      <BlockchainCuttingEdgeSection />
+      <DataMigrationCuttingEdgeSection />
 
-      {/* SECTION 6: Our Premium Services */}
+      {/* SECTION 5: Our Premium Services */}
       <PremiumServicesGrid companyName="Firevy.Co" />
 
-      {/* MEET FIREVY'S EXCEPTIONAL TEAM OF SEASONED EXPERTS */}
-      <SapphireSeasonedExpertsSection companyName="Firevy" />
+      {/* MEET SAPPHIRE'S EXCEPTIONAL TEAM OF SEASONED EXPERTS */}
+      <SapphireSeasonedExpertsSection />
 
       {/* INDUSTRY-FOCUSED INSIGHTS TO ELEVATE YOUR BUSINESS */}
       <IndustryFocusedInsightsSection title="Industry-Focused Insights To Elevate Your Business" />
 
       {/* ABOUT US STATS */}
-      <AboutUsStats companyName="Firevy" />
+      <AboutUsStats companyName="Sapphire" />
 
-      {/* EXPLORE THE TRANSFORMATIVE IMPACT OF BLOCKCHAIN APP */}
-      <TransformativeImpactSection title="Explore The Transformative Impact Of Blockchain App On Your Business Success" />
+      {/* EXPLORE THE TRANSFORMATIVE IMPACT OF DATA MIGRATION APP */}
+      <TransformativeImpactSection title="Explore The Transformative Impact Of Data Migration App On Your Business Success" />
 
-      {/* FIREVY'S COMPREHENSIVE SUITE OF MOBILE APP DEVELOPMENT SERVICES */}
+      {/* SAPPHIRE'S COMPREHENSIVE SUITE OF MOBILE APP DEVELOPMENT SERVICES */}
       <section className="py-14 sm:py-18 bg-[#005F96] text-white font-sans text-left overflow-hidden">
         <Container>
           <div className="text-center max-w-4xl mx-auto mb-12 space-y-3">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight font-sans">
-              Firevy’s Comprehensive Suite of Mobile App Development Services
+              Sapphire’s Comprehensive Suite of Mobile App Development Services
             </h2>
             <p className="text-blue-100 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-normal">
-              Firevy developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Firevy provides full-service mobile app development customized to meet your requirements.
+              Sapphire developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Sapphire provides full-service mobile app development customized to meet your requirements.
             </p>
           </div>
 
@@ -628,8 +555,8 @@ export const BlockchainDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* SECTORS THRIVING THROUGH FIREVY'S BESPOKE BLOCKCHAIN DEVELOPMENT SERVICES */}
-      <SectorsThrivingSection title="Sectors Thriving Through Firevy’s Bespoke Blockchain Development Services" />
+      {/* SECTORS THRIVING THROUGH SAPPHIRE'S BESPOKE DATA MIGRATION SERVICES */}
+      <SectorsThrivingSection title="Sectors Thriving Through Sapphire’s Bespoke Data Migration Services" />
 
       {/* SECTION 6: Success Stories */}
       <SuccessStoriesSection />
@@ -650,7 +577,7 @@ export const BlockchainDevelopmentService = () => {
       <InnovativeSolutionsVideoSection />
 
       {/* SECTION 12: Process We Follow */}
-      <ProcessWeFollow title="Process We Follow" subtitle="Our agile blockchain development engineering life cycle from initial consultation and smart contract architecture to live deployment and post-launch auditing." />
+      <ProcessWeFollow title="Process We Follow" subtitle="Our agile data migration engineering life cycle from pre-migration schema audit and pipeline architecture to live CDC cutover and post-migration validation." />
 
       {/* SECTION 13: Our Story Their Words */}
       <OurStoryTheirWordsSection />
@@ -664,7 +591,7 @@ export const BlockchainDevelopmentService = () => {
       {/* SECTION 16: Featured In Brands */}
       <FeaturedInBrandsSection />
 
-      {/* SECTION 17: Case Studies Slider */}
+      {/* SECTION 17: Case Studies Slider (Matching Image 2 Copy-to-Copy) */}
       <DigitalTransformationCaseStudies />
 
       {/* SECTION 18: FAQ */}
@@ -682,12 +609,12 @@ export const BlockchainDevelopmentService = () => {
 
       {/* SECTION 21: Challenge CTA Banner */}
       <IWatchChallengeCtaBanner
-        title="Have A Blockchain Development Challenge To Address ?"
-        subtitle="Get access to top Blockchain Development Specialists to transform your enterprise seamlessly."
+        title="Have A Data Migration Challenge To Address ?"
+        subtitle="Get access to top Data Migration Specialists to transform and migrate your enterprise data seamlessly."
         buttonText="Hire Now"
       />
     </div>
   );
 };
 
-export default BlockchainDevelopmentService;
+export default DataMigrationService;

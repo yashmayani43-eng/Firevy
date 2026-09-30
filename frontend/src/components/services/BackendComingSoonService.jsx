@@ -21,11 +21,8 @@ export const BACKEND_SERVICES_CONFIG = {
   // AI & ML Development Services
   'machine-learning-development': { title: 'Machine Learning Development', category: 'AI & ML Development' },
   'chatbot-development': { title: 'Chatbot Development', category: 'AI & ML Development' },
-  'data-analytics-services': { title: 'Data Analytics Services', category: 'AI & ML Development' },
   'data-migration-services': { title: 'Data Migration Services', category: 'AI & ML Development' },
   'business-intelligence-development': { title: 'Business Intelligence Development', category: 'AI & ML Development' },
-  'iot-app-development': { title: 'IOT App Development', category: 'AI & ML Development' },
-  'blockchain-development': { title: 'Blockchain Development', category: 'Blockchain Development' },
   'ai-ionic-app-development': { title: 'AI Ionic App Development', category: 'AI & ML Development' },
   'enterprise-ai-development': { title: 'Enterprise AI Development', category: 'AI & ML Development' },
   'ai-in-payments-industry': { title: 'AI in Payments Industry', category: 'AI & ML Development' },
@@ -128,10 +125,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'data-migration' ||
     clean === 'business-intelligence-development' ||
     clean === 'business-intelligence' ||
-    clean === 'iot-app-development' ||
-    clean === 'iot-development' ||
-    clean === 'iot-app' ||
-    clean === 'blockchain-development' ||
     clean === 'ai-ionic-app-development' ||
     clean === 'enterprise-ai-development' ||
     clean === 'ai-in-payments-industry' ||

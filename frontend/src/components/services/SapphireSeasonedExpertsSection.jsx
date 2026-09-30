@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Container from '../common/Container';
 
-export const SapphireSeasonedExpertsSection = () => {
+export const SapphireSeasonedExpertsSection = ({ companyName = "Firevy" }) => {
   const [expertActiveCategory, setExpertActiveCategory] = useState('Trending');
   const [expertCarouselIndex, setExpertCarouselIndex] = useState(0);
   const [expertTabs, setExpertTabs] = useState({});
@@ -253,7 +253,7 @@ export const SapphireSeasonedExpertsSection = () => {
         {/* Section Heading */}
         <div className="text-center max-w-4xl mx-auto mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl md:text-[34px] lg:text-[38px] font-[800] text-[#0B0F19] tracking-tight leading-tight">
-            Meet Sapphire’s Exceptional Team of Seasoned Experts
+            Meet {companyName}’s Exceptional Team of Seasoned Experts
           </h2>
         </div>
 
