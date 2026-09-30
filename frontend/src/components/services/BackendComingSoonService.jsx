@@ -48,10 +48,6 @@ export const BACKEND_SERVICES_CONFIG = {
 
 
   // Blockchain Development Services
-  'nft-marketplace-development': { title: 'NFT Marketplace Development', category: 'Blockchain Development' },
-  'smart-contracts-development': { title: 'Smart Contracts Development', category: 'Blockchain Development' },
-  'bitcoin-wallet-development': { title: 'Bitcoin Wallet Development', category: 'Blockchain Development' },
-  'marketplace-app-development': { title: 'Marketplace App Development', category: 'Blockchain Development' },
   'cryptocurrency-wallet-development': { title: 'Cryptocurrency Wallet Development', category: 'Blockchain Development' },
   'bullion-exchange-app-development': { title: 'Bullion Exchange App Development', category: 'Blockchain Development' },
   'digital-wayfinding-solutions': { title: 'Digital Wayfinding Solutions', category: 'Blockchain Development' },
@@ -153,7 +149,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'kentico-development-services' ||
     clean === 'dotnetnuke-development' ||
     clean === 'power-bi-consulting' ||
-    clean === 'nft-marketplace-development' ||
     clean === 'smart-contracts-development' ||
     clean === 'bitcoin-wallet-development' ||
     clean === 'marketplace-app-development' ||

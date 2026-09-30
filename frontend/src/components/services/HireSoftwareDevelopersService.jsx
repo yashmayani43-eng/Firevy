@@ -208,9 +208,9 @@ export const HireSoftwareDevelopersService = () => {
             <div className="lg:col-span-6 flex justify-center items-center">
               <div className="relative w-full max-w-[500px]">
                 <img
-                  src="/images/software_dev_laptop_hero.svg"
+                  src="/images/hire_software_developers_competitive_rates.png"
                   alt="Hire Software Developers At Competitive Rates"
-                  className="w-full h-auto object-contain mx-auto drop-shadow-md"
+                  className="w-full h-auto object-contain mx-auto mix-blend-multiply"
                 />
               </div>
             </div>
@@ -451,9 +451,9 @@ export const HireSoftwareDevelopersService = () => {
             <div className="lg:col-span-6 flex justify-center items-center">
               <div className="relative w-full max-w-[500px]">
                 <img
-                  src="/images/software_dev_desk_brief.svg"
+                  src="/images/brief_software_dev_desk.png"
                   alt="Brief About Our Software Development Services"
-                  className="w-full h-auto object-contain mx-auto drop-shadow-md"
+                  className="w-full h-auto object-contain mx-auto mix-blend-multiply"
                 />
               </div>
             </div>
