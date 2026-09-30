@@ -181,6 +181,10 @@ import MongoDbDevelopmentService from '../components/services/MongoDbDevelopment
 import PhalconDevelopmentService from '../components/services/PhalconDevelopmentService';
 import AzureWebServicesService from '../components/services/AzureWebServicesService';
 import MySqlDevelopmentService from '../components/services/MySqlDevelopmentService';
+import NftMarketplaceDevelopmentService from '../components/services/NftMarketplaceDevelopmentService';
+import SmartContractsDevelopmentService from '../components/services/SmartContractsDevelopmentService';
+import BitcoinWalletDevelopmentService from '../components/services/BitcoinWalletDevelopmentService';
+import MarketplaceAppDevelopmentService from '../components/services/MarketplaceAppDevelopmentService';
 import BackendComingSoonService, { isBackendServiceSlug } from '../components/services/BackendComingSoonService';
 
 export const ServiceDetails = () => {
@@ -196,6 +200,46 @@ export const ServiceDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [openFaq, setOpenFaq] = useState(0);
+
+  const isNftMarketplace = currentSlug.includes('nft-marketplace') ||
+    currentSlug === 'nft-marketplace-development' ||
+    currentSlug === 'nft-marketplace-development-services' ||
+    currentSlug === 'services/nft-marketplace-development' ||
+    currentSlug === 'services/nft-marketplace-development-services';
+
+  if (isNftMarketplace) {
+    return <NftMarketplaceDevelopmentService />;
+  }
+
+  const isSmartContracts = currentSlug.includes('smart-contract') ||
+    currentSlug === 'smart-contracts-development' ||
+    currentSlug === 'smart-contracts-development-services' ||
+    currentSlug === 'services/smart-contracts-development' ||
+    currentSlug === 'services/smart-contracts-development-services';
+
+  if (isSmartContracts) {
+    return <SmartContractsDevelopmentService />;
+  }
+
+  const isBitcoinWallet = currentSlug.includes('bitcoin-wallet') ||
+    currentSlug === 'bitcoin-wallet-development' ||
+    currentSlug === 'bitcoin-wallet-development-services' ||
+    currentSlug === 'services/bitcoin-wallet-development' ||
+    currentSlug === 'services/bitcoin-wallet-development-services';
+
+  if (isBitcoinWallet) {
+    return <BitcoinWalletDevelopmentService />;
+  }
+
+  const isMarketplaceApp = currentSlug.includes('marketplace-app') ||
+    currentSlug === 'marketplace-app-development' ||
+    currentSlug === 'marketplace-app-development-services' ||
+    currentSlug === 'services/marketplace-app-development' ||
+    currentSlug === 'services/marketplace-app-development-services';
+
+  if (isMarketplaceApp) {
+    return <MarketplaceAppDevelopmentService />;
+  }
 
   const isHireAndroid = currentSlug.includes('hire-android');
   const isEnterpriseAi = currentSlug === 'enterprise-ai-development' ||
@@ -2014,6 +2058,8 @@ export const ServiceDetails = () => {
   if (isProductFinderApp) {
     return <ProductFinderAppDevelopmentService />;
   }
+
+
 
   if (loading) {
     return (

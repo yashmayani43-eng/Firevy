@@ -53,6 +53,7 @@ export const SapphireLightHeroBanner = ({
   const isEducation = serviceCategory === 'education';
   const isUber = serviceCategory === 'uber' || serviceCategory === 'taxi';
   const isHybrid = serviceCategory === 'hybrid';
+  const isMarketplace = serviceCategory === 'marketplace' || serviceCategory === 'marketplace-app';
 
   return (
     <section className="pt-20 sm:pt-24 pb-8 sm:pb-12 bg-[#EEF5FB] text-slate-900 relative overflow-hidden text-left font-sans border-b border-slate-200/60">
@@ -104,8 +105,130 @@ export const SapphireLightHeroBanner = ({
                 <img
                   src={heroImage}
                   alt={title}
-                  className="w-full max-w-[520px] h-auto object-contain select-none pointer-events-none drop-shadow-sm"
+                  className="w-full max-w-[520px] h-auto object-contain select-none pointer-events-none drop-shadow-sm mix-blend-multiply"
                 />
+              </div>
+            ) : isMarketplace ? (
+              <div className="relative w-full max-w-[560px] flex items-center justify-center py-2">
+                <svg className="w-full h-auto max-w-[520px] drop-shadow-md" viewBox="0 0 540 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Floating Bubble Icons (Top) */}
+                  <g transform="translate(130, 45)">
+                    <circle cx="20" cy="20" r="20" fill="#BFDBFE" />
+                    <text x="20" y="27" fill="#1D4ED8" fontSize="22" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">%</text>
+                  </g>
+
+                  <g transform="translate(255, 30)">
+                    <circle cx="18" cy="18" r="18" fill="#DBEAFE" />
+                    <path d="M 12 24 C 14 20, 18 18, 22 15 L 25 15 C 25 18, 23 21, 20 23 C 22 23, 24 22, 26 20 L 26 25 Z" fill="#2563EB" />
+                  </g>
+
+                  <g transform="translate(390, 35)">
+                    <path d="M 0 10 C 0 4, 4 0, 10 0 L 34 0 C 40 0, 44 4, 44 10 L 44 26 C 44 32, 40 36, 34 36 L 12 36 L 4 44 L 6 36 C 2 35, 0 31, 0 26 Z" fill="#93C5FD" />
+                    <text x="22" y="24" fill="#1E40AF" fontSize="20" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">%</text>
+                  </g>
+
+                  {/* Ground Baseline Line */}
+                  <line x1="40" y1="330" x2="500" y2="330" stroke="#1E293B" strokeWidth="2.5" strokeLinecap="round" />
+
+                  {/* Plant in Pot (Bottom Left) */}
+                  <g transform="translate(45, 260)">
+                    <path d="M 10 45 L 5 70 L 35 70 L 30 45 Z" fill="#1E293B" />
+                    <path d="M 20 45 C 5 35, 0 15, 10 5 C 20 20, 20 35, 20 45 Z" fill="#3B82F6" />
+                    <path d="M 20 45 C 35 35, 40 15, 30 5 C 20 20, 20 35, 20 45 Z" fill="#60A5FA" />
+                    <path d="M 20 45 C 15 25, 20 5, 20 0 C 25 15, 22 30, 20 45 Z" fill="#93C5FD" />
+                  </g>
+
+                  {/* Shopping Bag Behind Guy (Left) */}
+                  <g transform="translate(105, 220)">
+                    <path d="M 0 35 L 5 110 L 65 110 L 60 35 Z" fill="#93C5FD" opacity="0.9" />
+                    <path d="M 20 35 C 20 15, 40 15, 40 35" stroke="#3B82F6" strokeWidth="4" fill="none" />
+                  </g>
+
+                  {/* Guy Standing & Stretching Hand to Bubble (Left Person) */}
+                  <g transform="translate(85, 130)">
+                    <path d="M 42 22 C 35 12, 45 5, 52 10 C 58 8, 62 16, 58 24 Z" fill="#1E293B" />
+                    <ellipse cx="50" cy="24" rx="10" ry="12" fill="#FED7AA" />
+                    
+                    <path d="M 32 42 C 40 38, 60 38, 68 42 L 64 125 L 36 125 Z" fill="#60A5FA" />
+                    
+                    <path d="M 64 45 L 85 5 L 95 12 L 70 55 Z" fill="#60A5FA" />
+                    <circle cx="88" cy="6" r="6" fill="#FED7AA" />
+                    
+                    <path d="M 34 45 L 20 70 L 28 75 L 38 52 Z" fill="#3B82F6" />
+                    <circle cx="20" cy="74" r="5" fill="#FED7AA" />
+
+                    <path d="M 36 125 L 28 200 L 44 200 L 50 145 L 56 200 L 72 200 L 64 125 Z" fill="#1E293B" />
+
+                    <path d="M 20 200 C 20 195, 30 195, 45 200 Z" fill="#1E293B" />
+                    <path d="M 55 200 C 55 195, 68 195, 75 200 Z" fill="#1E293B" />
+                  </g>
+
+                  {/* Central Smartphone Frame (Marketplace App Screen) */}
+                  <g transform="translate(205, 125)">
+                    <rect x="5" y="10" width="130" height="205" rx="22" fill="#0F172A" opacity="0.15" />
+                    <rect x="0" y="0" width="130" height="205" rx="22" fill="#1E293B" stroke="#0F172A" strokeWidth="3" />
+                    <rect x="6" y="6" width="118" height="193" rx="16" fill="#60A5FA" />
+
+                    <path d="M 6 6 H 124 V 30 H 6 Z" fill="#3B82F6" />
+                    <g fill="#93C5FD">
+                      <path d="M 6 30 C 12 38, 22 38, 28 30 Z" />
+                      <path d="M 28 30 C 34 38, 44 38, 50 30 Z" />
+                      <path d="M 50 30 C 56 38, 66 38, 72 30 Z" />
+                      <path d="M 72 30 C 78 38, 88 38, 94 30 Z" />
+                      <path d="M 94 30 C 100 38, 110 38, 116 30 Z" />
+                      <path d="M 116 30 C 120 35, 124 35, 124 30 Z" />
+                    </g>
+
+                    <g fill="#EFF6FF">
+                      <circle cx="32" cy="70" r="10" />
+                      <circle cx="65" cy="70" r="10" />
+                      <circle cx="98" cy="70" r="10" />
+                      <circle cx="32" cy="105" r="10" />
+                      <circle cx="65" cy="105" r="10" />
+                      <circle cx="98" cy="105" r="10" />
+                    </g>
+
+                    <g transform="translate(18, 140)">
+                      <rect x="0" y="0" width="46" height="22" rx="6" fill="#EFF6FF" />
+                      <text x="23" y="15" fill="#1D4ED8" fontSize="10" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">BUY</text>
+                    </g>
+                    
+                    <g transform="translate(74, 138)">
+                      <rect x="0" y="0" width="26" height="24" rx="6" stroke="#EFF6FF" strokeWidth="2" fill="none" />
+                      <path d="M 6 10 H 20 L 18 20 H 8 Z" fill="#EFF6FF" />
+                      <path d="M 10 10 C 10 5, 16 5, 16 10" stroke="#EFF6FF" strokeWidth="2" fill="none" />
+                    </g>
+                  </g>
+
+                  {/* Blue Gear under Girl (Right) */}
+                  <g transform="translate(340, 270)">
+                    <path d="M 20 0 L 26 6 L 36 3 L 39 13 L 49 16 L 46 26 L 52 34 L 44 40 L 44 50 L 34 50 L 28 58 L 20 52 L 12 58 L 6 50 L -4 50 L -4 40 L -12 34 L -6 26 L -9 16 L 1 13 L 4 3 L 14 6 Z" fill="#93C5FD" />
+                    <circle cx="20" cy="26" r="12" fill="#EEF5FB" />
+                  </g>
+
+                  {/* Girl Carrying Megaphone & Large Arrow (Right Person) */}
+                  <g transform="translate(365, 135)">
+                    <path d="M 45 15 C 30 15, 25 35, 30 60 C 40 65, 55 55, 50 30 Z" fill="#1E293B" />
+                    <ellipse cx="40" cy="30" rx="10" ry="12" fill="#FED7AA" />
+
+                    <path d="M 28 48 C 35 44, 52 44, 58 48 L 52 120 L 26 120 Z" fill="#60A5FA" />
+
+                    <g transform="translate(-10, 20)">
+                      <path d="M 10 15 L -10 5 L -10 35 L 10 25 Z" fill="#1E293B" />
+                      <path d="M 10 15 L 25 18 L 25 22 L 10 25 Z" fill="#3B82F6" />
+                      <path d="M -10 5 C -15 5, -15 35, -10 35 Z" fill="#60A5FA" />
+                    </g>
+
+                    <g transform="translate(-50, 40)">
+                      <path d="M 50 0 L 15 25 L 50 50 L 50 36 L 90 36 L 90 14 L 50 14 Z" fill="#3B82F6" />
+                    </g>
+
+                    <path d="M 26 120 L 15 195 L 32 195 L 39 140 L 46 195 L 62 195 L 52 120 Z" fill="#1E293B" />
+
+                    <path d="M 5 195 C 5 190, 15 190, 32 195 Z" fill="#1E293B" />
+                    <path d="M 46 195 C 46 190, 58 190, 68 195 Z" fill="#1E293B" />
+                  </g>
+                </svg>
               </div>
             ) : isHybrid ? (
               <div className="relative w-full max-w-[560px] flex items-center justify-center">
