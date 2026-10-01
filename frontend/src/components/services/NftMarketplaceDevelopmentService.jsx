@@ -173,25 +173,20 @@ export const NftMarketplaceDevelopmentService = () => {
       />
 
       {/* =========================================================================
-          1. HERO SECTION (Matching ASP.Net Migration / Service Template)
+          1. HERO SECTION (1:1 Match with Screenshot 2)
           ========================================================================= */}
-      <section className="pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-20 bg-slate-50/50 text-slate-900 relative overflow-hidden font-sans border-b border-slate-100">
+      <section className="pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-20 bg-[#F4F9FD] text-slate-900 relative overflow-hidden font-sans border-b border-slate-100">
         <Container className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
-            {/* Left Column: Title, Subtitle & CTAs */}
+            {/* Left Column: Title, Subtitle & CTAs (1:1 with Screenshot 2) */}
             <div className="lg:col-span-6 space-y-6 text-left">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs font-bold text-[#005F96]">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>Next-Gen Web3 & Blockchain Solutions</span>
-              </div>
-
-              <h1 className="text-[36px] sm:text-[44px] lg:text-[50px] font-[800] text-[#0B0F19] leading-[1.15] tracking-tight">
-                NFT Marketplace<br />Development Services
+              <h1 className="text-[34px] sm:text-[42px] lg:text-[48px] font-[800] text-[#0B0F19] leading-[1.18] tracking-tight">
+                NFT Marketplace Development<br />Company in USA
               </h1>
 
               <p className="text-[15px] sm:text-[16px] text-[#475569] leading-[1.7] font-normal max-w-[580px]">
-                Our Web3 engineers design, audit, and deploy high-performing, decentralized NFT marketplaces tailored to your enterprise or startup vision. From Ethereum & Polygon to Solana & Flow, get scalable Web3 solutions built by seasoned blockchain architects.
+                Even though non-fungible tokens (NFTs) have been present since 2014, their popularity seems to increase since the end of 2021
               </p>
 
               {/* Primary CTA Button */}
@@ -200,133 +195,20 @@ export const NftMarketplaceDevelopmentService = () => {
                   to="/contact"
                   className="inline-flex items-center justify-center gap-2.5 bg-[#005F96] hover:bg-[#004875] text-white font-[700] text-sm px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 group"
                 >
-                  <span>Discuss Your NFT Project</span>
+                  <span>Discuss Your Project</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
 
-            {/* Right Column: Web3 NFT Vector Graphic Illustration */}
+            {/* Right Column: NFT Marketplace Vector Graphic PNG Image (1:1 Match with 2SS) */}
             <div className="lg:col-span-6 flex justify-center">
-              <div className="relative w-full max-w-[500px] aspect-[5/4] flex items-center justify-center p-2">
-                <div className="absolute inset-0 bg-purple-100/50 rounded-full blur-3xl transform scale-90 pointer-events-none" />
-                
-                {/* Vector Graphic Illustration for NFT Marketplace */}
-                <div className="relative z-10 w-full h-full flex items-center justify-center">
-                  <svg className="w-full h-full max-h-[380px]" viewBox="0 0 500 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Background Web3 Hexagonal Mesh & Orbital Rings */}
-                    <g stroke="#818CF8" strokeWidth="1.2" opacity="0.35" fill="none">
-                      <circle cx="250" cy="190" r="140" strokeDasharray="4 4" />
-                      <circle cx="250" cy="190" r="95" strokeDasharray="3 3" />
-                      <polygon points="250,50 330,95 330,185 250,230 170,185 170,95" />
-                    </g>
-
-                    {/* Central Tablet / Monitor Canvas Screen */}
-                    <rect x="75" y="60" width="350" height="255" rx="16" fill="#0F172A" stroke="#1E293B" strokeWidth="3" />
-                    <rect x="85" y="70" width="330" height="235" rx="10" fill="#1E1E2E" />
-
-                    {/* Screen Header Bar */}
-                    <rect x="85" y="70" width="330" height="30" fill="#2D2B55" rx="10" />
-                    <circle cx="105" cy="85" r="4" fill="#F43F5E" />
-                    <circle cx="118" cy="85" r="4" fill="#F59E0B" />
-                    <circle cx="131" cy="85" r="4" fill="#10B981" />
-                    <rect x="155" y="78" width="160" height="14" rx="7" fill="#3D3B6F" />
-                    <text x="235" y="89" fill="#A5B4FC" fontSize="8" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">nft.firevy.market</text>
-
-                    {/* NFT Cards Grid on Screen */}
-                    {/* Card 1: Crypto Punk Art */}
-                    <g transform="translate(100, 115)">
-                      <rect x="0" y="0" width="90" height="115" rx="8" fill="#28264C" stroke="#4338CA" strokeWidth="1" />
-                      <rect x="8" y="8" width="74" height="65" rx="6" fill="url(#nft_art_grad1)" />
-                      {/* Abstract Cyberpunk Face */}
-                      <circle cx="45" cy="35" r="18" fill="#F472B6" />
-                      <rect x="32" y="28" width="26" height="8" rx="2" fill="#1E1E2E" />
-                      <rect x="35" y="30" width="8" height="4" rx="1" fill="#38BDF8" />
-                      <rect x="47" y="30" width="8" height="4" rx="1" fill="#38BDF8" />
-                      {/* Price Tag */}
-                      <text x="8" y="90" fill="#E0E7FF" fontSize="9" fontWeight="bold" fontFamily="sans-serif">CyberPunk #402</text>
-                      <text x="8" y="103" fill="#818CF8" fontSize="8" fontWeight="bold" fontFamily="sans-serif">2.45 ETH</text>
-                    </g>
-
-                    {/* Card 2: Bored Ape Style Art */}
-                    <g transform="translate(205, 115)">
-                      <rect x="0" y="0" width="90" height="115" rx="8" fill="#28264C" stroke="#4338CA" strokeWidth="1" />
-                      <rect x="8" y="8" width="74" height="65" rx="6" fill="url(#nft_art_grad2)" />
-                      {/* Golden Crown NFT */}
-                      <polygon points="45,20 55,42 65,30 35,30 45,42" fill="#F59E0B" />
-                      <circle cx="45" cy="45" r="12" fill="#38BDF8" />
-                      <text x="8" y="90" fill="#E0E7FF" fontSize="9" fontWeight="bold" fontFamily="sans-serif">Ape Realm #891</text>
-                      <text x="8" y="103" fill="#818CF8" fontSize="8" fontWeight="bold" fontFamily="sans-serif">14.8 SOL</text>
-                    </g>
-
-                    {/* Card 3: 3D Crystal Gem Art */}
-                    <g transform="translate(310, 115)">
-                      <rect x="0" y="0" width="90" height="115" rx="8" fill="#28264C" stroke="#4338CA" strokeWidth="1" />
-                      <rect x="8" y="8" width="74" height="65" rx="6" fill="url(#nft_art_grad3)" />
-                      <polygon points="45,18 60,35 45,60 30,35" fill="#A855F7" />
-                      <polygon points="45,18 52,35 45,60 38,35" fill="#C084FC" />
-                      <text x="8" y="90" fill="#E0E7FF" fontSize="9" fontWeight="bold" fontFamily="sans-serif">Ether Gem #104</text>
-                      <text x="8" y="103" fill="#818CF8" fontSize="8" fontWeight="bold" fontFamily="sans-serif">0.95 ETH</text>
-                    </g>
-
-                    {/* Bottom Status Bar */}
-                    <rect x="100" y="245" width="300" height="40" rx="6" fill="#181825" />
-                    <circle cx="120" cy="265" r="8" fill="#10B981" />
-                    <text x="135" y="268" fill="#10B981" fontSize="10" fontWeight="bold" fontFamily="sans-serif">Smart Contract Active (ERC-721A) • 0% Gas Friction</text>
-
-                    {/* FLOATING BADGES */}
-
-                    {/* 1. ETH Badge (Top Left) */}
-                    <g transform="translate(40, 50)">
-                      <rect x="0" y="0" width="58" height="58" rx="12" fill="#627EEA" filter="url(#nft_shadow_core)" />
-                      <polygon points="29,12 42,32 29,26 16,32" fill="#FFFFFF" />
-                      <polygon points="29,26 42,32 29,46 16,32" fill="#C0CBF6" />
-                      <text x="29" y="52" fill="#FFFFFF" fontSize="7" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">ETH</text>
-                    </g>
-
-                    {/* 2. SOL Badge (Top Right) */}
-                    <g transform="translate(400, 40)">
-                      <rect x="0" y="0" width="60" height="60" rx="12" fill="#14F195" filter="url(#nft_shadow_core)" />
-                      <rect x="12" y="16" width="36" height="6" rx="2" fill="#9945FF" />
-                      <rect x="12" y="26" width="36" height="6" rx="2" fill="#9945FF" />
-                      <rect x="12" y="36" width="36" height="6" rx="2" fill="#9945FF" />
-                      <text x="30" y="53" fill="#000000" fontSize="8" fontWeight="extrabold" textAnchor="middle" fontFamily="sans-serif">SOLANA</text>
-                    </g>
-
-                    {/* 3. Polygon Badge (Bottom Left) */}
-                    <g transform="translate(35, 230)">
-                      <rect x="0" y="0" width="62" height="62" rx="12" fill="#8247E5" filter="url(#nft_shadow_core)" />
-                      <polygon points="31,14 43,21 43,35 31,42 19,35 19,21" fill="#FFFFFF" />
-                      <text x="31" y="54" fill="#FFFFFF" fontSize="7.5" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">POLYGON</text>
-                    </g>
-
-                    {/* 4. MetaMask Wallet Badge (Bottom Right) */}
-                    <g transform="translate(405, 240)">
-                      <rect x="0" y="0" width="62" height="62" rx="12" fill="#E4761B" filter="url(#nft_shadow_core)" />
-                      <polygon points="31,14 43,26 37,38 25,38 19,26" fill="#FFFFFF" />
-                      <text x="31" y="54" fill="#FFFFFF" fontSize="7" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">MetaMask</text>
-                    </g>
-
-                    {/* Gradients & Filters */}
-                    <defs>
-                      <linearGradient id="nft_art_grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#EC4899" />
-                        <stop offset="100%" stopColor="#8B5CF6" />
-                      </linearGradient>
-                      <linearGradient id="nft_art_grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#3B82F6" />
-                        <stop offset="100%" stopColor="#06B6D4" />
-                      </linearGradient>
-                      <linearGradient id="nft_art_grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#8B5CF6" />
-                        <stop offset="100%" stopColor="#D946EF" />
-                      </linearGradient>
-                      <filter id="nft_shadow_core" x="-10%" y="-10%" width="130%" height="130%">
-                        <feDropShadow dx="0" dy="5" stdDeviation="5" floodColor="#000000" floodOpacity="0.2" />
-                      </filter>
-                    </defs>
-                  </svg>
-                </div>
+              <div className="relative w-full max-w-[520px] flex items-center justify-center p-2">
+                <img
+                  src="/images/nft_marketplace_hero_2ss.png?v=2"
+                  alt="NFT Marketplace Development Company in USA"
+                  className="w-full max-w-[500px] h-auto object-contain mix-blend-multiply"
+                />
               </div>
             </div>
 
