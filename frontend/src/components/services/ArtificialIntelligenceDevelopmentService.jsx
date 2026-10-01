@@ -585,9 +585,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
       {/* =========================================================================
           2. TRUSTED BRAND LOGOS STRIP
           ========================================================================= */}
-      <section className="py-2 bg-white border-b border-slate-200/70 overflow-hidden">
-        <BrandLogoMarquee />
-      </section>
+      <BrandLogoMarquee />
 
       {/* =========================================================================
           3. DELIVERING TOP RATED AI DEVELOPMENT SERVICES GLOBALLY

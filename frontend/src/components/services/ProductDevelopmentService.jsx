@@ -412,11 +412,7 @@ export const ProductDevelopmentService = () => {
       {/* ========================================================================= */}
       {/* BRAND LOGO MARQUEE (BELOW HERO) */}
       {/* ========================================================================= */}
-      <div className="bg-white py-6 border-b border-slate-200/80">
-        <Container>
-          <BrandLogoMarquee />
-        </Container>
-      </div>
+      <BrandLogoMarquee />
 
       {/* ========================================================================= */}
       {/* 2. LEADING PRODUCT DEVELOPMENT COMPANY SECTION */}

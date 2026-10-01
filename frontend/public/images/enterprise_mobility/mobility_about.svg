@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 380" fill="none">
+  <defs>
+    <linearGradient id="mobAboutBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#005F96" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="mAboutSh" x="-10%" y="-10%" width="125%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.09" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect x="15" y="15" width="550" height="350" rx="20" fill="url(#mobAboutBg)" />
+
+  <!-- Central Security & Mobility Architecture Core -->
+  <g filter="url(#mAboutSh)">
+    <rect x="180" y="65" width="220" height="245" rx="16" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5" />
+    
+    <!-- Central Shield Circle -->
+    <circle cx="290" cy="115" r="32" fill="url(#shieldGrad)" />
+    <!-- Shield Icon -->
+    <path d="M 290 98 L 305 104 L 305 116 C 305 125 298.5 133 290 136 C 281.5 133 275 125 275 116 L 275 104 Z" fill="#FFFFFF" />
+    <path d="M 285 116 L 288.5 119.5 L 295.5 112.5" stroke="#005F96" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="290" y="168" text-anchor="middle" fill="#0F172A" font-size="14" font-weight="800" font-family="system-ui, sans-serif">Zero-Trust Mobility</text>
+    <text x="290" y="184" text-anchor="middle" fill="#64748B" font-size="10" font-family="system-ui, sans-serif">Enterprise Governance &amp; MDM</text>
+
+    <!-- Checklist inside central card -->
+    <circle cx="205" cy="210" r="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5" />
+    <path d="M 202 210 L 204.5 212.5 L 208 208" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="218" y="213" fill="#334155" font-size="9.5" font-weight="600" font-family="system-ui, sans-serif">AirWatch / Intune MDM</text>
+
+    <circle cx="205" cy="235" r="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5" />
+    <path d="M 202 235 L 204.5 237.5 L 208 233" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="218" y="238" fill="#334155" font-size="9.5" font-weight="600" font-family="system-ui, sans-serif">Encrypted Data-At-Rest</text>
+
+    <circle cx="205" cy="260" r="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5" />
+    <path d="M 202 260 L 204.5 262.5 L 208 258" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="218" y="263" fill="#334155" font-size="9.5" font-weight="600" font-family="system-ui, sans-serif">Remote Wipe &amp; Geo-fencing</text>
+  </g>
+
+  <!-- Left Supporting Card: Mobile Strategy & UX -->
+  <g filter="url(#mAboutSh)">
+    <rect x="35" y="105" width="130" height="155" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <circle cx="60" cy="130" r="14" fill="#F0F9FF" />
+    <path d="M 56 130 L 64 130 M 60 126 L 60 134" stroke="#0284C7" stroke-width="2" stroke-linecap="round" />
+    <text x="80" y="134" fill="#0F172A" font-size="11" font-weight="800" font-family="system-ui, sans-serif">Mobile Strategy</text>
+    
+    <rect x="50" y="158" width="100" height="6" rx="3" fill="#E2E8F0" />
+    <rect x="50" y="170" width="80" height="6" rx="3" fill="#F1F5F9" />
+    <rect x="50" y="182" width="90" height="6" rx="3" fill="#E2E8F0" />
+    
+    <rect x="50" y="206" width="100" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+    <text x="100" y="222" text-anchor="middle" fill="#64748B" font-size="8.5" font-weight="700" font-family="system-ui, sans-serif">Workforce UX &amp; UI</text>
+  </g>
+
+  <!-- Connection Line Left -> Center -->
+  <path d="M 165 180 L 180 180" stroke="#005F96" stroke-width="2" stroke-dasharray="3 3" />
+
+  <!-- Right Supporting Card: Enterprise Backend Integration -->
+  <g filter="url(#mAboutSh)">
+    <rect x="415" y="105" width="130" height="155" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <circle cx="440" cy="130" r="14" fill="#ECFDF5" />
+    <path d="M 436 134 L 444 126 M 444 134 L 436 126" stroke="#10B981" stroke-width="2" stroke-linecap="round" />
+    <text x="460" y="134" fill="#0F172A" font-size="11" font-weight="800" font-family="system-ui, sans-serif">ERP / CRM API</text>
+    
+    <rect x="430" y="158" width="100" height="6" rx="3" fill="#A7F3D0" />
+    <rect x="430" y="170" width="80" height="6" rx="3" fill="#D1FAE5" />
+    <rect x="430" y="182" width="90" height="6" rx="3" fill="#A7F3D0" />
+    
+    <rect x="430" y="206" width="100" height="26" rx="6" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1" />
+    <text x="480" y="222" text-anchor="middle" fill="#047857" font-size="8.5" font-weight="700" font-family="system-ui, sans-serif">SAP / Salesforce</text>
+  </g>
+
+  <!-- Connection Line Center -> Right -->
+  <path d="M 400 180 L 415 180" stroke="#10B981" stroke-width="2" stroke-dasharray="3 3" />
+</svg>

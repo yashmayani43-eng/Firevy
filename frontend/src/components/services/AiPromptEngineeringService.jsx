@@ -215,9 +215,7 @@ export const AiPromptEngineeringService = () => {
       {/* =========================================================================
           2ND COMPONENT: BRAND LOGOS MARQUEE (Adani, Toyota, Almarai, Orient, etc.)
           ========================================================================= */}
-      <section className="py-2 bg-white border-b border-slate-200/70 overflow-hidden">
-        <BrandLogoMarquee />
-      </section>
+      <BrandLogoMarquee />
 
       {/* =========================================================================
           3RD COMPONENT: RISE OF PROMPT ENGINEERING CONSULTING AND IMPLEMENTATION SERVICES

@@ -71,10 +71,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'business-application-development': { title: 'Business Application Development', category: 'Software Development Service' },
   'vb6-migration-services': { title: 'VB6 Migration Services', category: 'Software Development Service' },
   'enterprise-mobility-services': { title: 'Enterprise Mobility Services', category: 'Software Development Service' },
-  'full-stack-development': { title: 'Full Stack Development', category: 'Software Development Service' },
-  'financial-software-development': { title: 'Financial Software Development', category: 'Software Development Service' },
-  'travel-software-development': { title: 'Travel Software Development', category: 'Software Development Service' },
-  'software-product-discovery': { title: 'Software Product Discovery', category: 'Software Development Service' },
 
   // AR/VR Development Services (after Virtual Reality App Development)
   'metaverse-development-company': { title: 'Metaverse Development Company', category: 'AR/VR Development' },
@@ -165,13 +161,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'web-application-development' ||
     clean === 'product-engineering-services' ||
     clean === 'it-outsourcing' ||
-    clean === 'business-application-development' ||
-    clean === 'vb6-migration-services' ||
-    clean === 'enterprise-mobility-services' ||
-    clean === 'full-stack-development' ||
-    clean === 'financial-software-development' ||
-    clean === 'travel-software-development' ||
-    clean === 'software-product-discovery' ||
     clean === 'extended-reality-development' ||
     clean === 'extended-reality' ||
     clean === 'xr-development'

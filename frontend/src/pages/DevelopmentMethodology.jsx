@@ -159,9 +159,7 @@ export const DevelopmentMethodology = () => {
       {/* ============================================================
           2. LOGOS MARQUEE STRIP
           ============================================================ */}
-      <section className="py-6 bg-white border-b border-slate-100 overflow-hidden">
-        <TrustMarquee />
-      </section>
+      <TrustMarquee />
 
       {/* ============================================================
           3. "What is development methodology?"

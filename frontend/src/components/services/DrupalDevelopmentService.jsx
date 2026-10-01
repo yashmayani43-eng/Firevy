@@ -259,9 +259,7 @@ export const DrupalDevelopmentService = () => {
       {/* =========================================================================
           2. BRAND LOGOS MARQUEE / TRUST STRIP (Orient Cement, Amex, Alembic, Honda, etc.)
           ========================================================================= */}
-      <section className="py-6 bg-white border-b border-slate-200">
-        <BrandLogoMarquee />
-      </section>
+      <BrandLogoMarquee />
 
       {/* =========================================================================
           3. SECTION 2: "Quality Drupal Development Services"

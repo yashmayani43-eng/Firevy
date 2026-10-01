@@ -419,9 +419,7 @@ export const BlockchainDevelopmentService = () => {
       {/* =========================================================================
           2. TRUSTED BRAND LOGOS STRIP (Full Width Infinite Auto-Scroll Marquee)
           ========================================================================= */}
-      <section className="py-2 bg-white border-b border-slate-200/70 overflow-hidden">
-        <BrandLogoMarquee />
-      </section>
+      <BrandLogoMarquee />
 
       {/* =========================================================================
           3. HIRE COMPETENT BLOCKCHAIN DEVELOPERS (1:1 Exact Match with Sapphire)

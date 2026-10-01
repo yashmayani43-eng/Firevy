@@ -317,9 +317,7 @@ export const WordPressDevelopmentService = () => {
       {/* =========================================================================
           2. BRAND LOGOS MARQUEE / TRUST STRIP (Honda, LafargeHolcim, Adani, Toyota, etc.)
           ========================================================================= */}
-      <section className="py-6 bg-white border-b border-slate-200">
-        <BrandLogoMarquee />
-      </section>
+      <BrandLogoMarquee />
 
       {/* =========================================================================
           3. SECTION 2: "Reliable Wordpress Development Company For Businesses"
