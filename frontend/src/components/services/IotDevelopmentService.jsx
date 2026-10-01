@@ -335,34 +335,8 @@ export const IotDevelopmentService = () => {
       {/* 2. Brand Logo Marquee Right Below Hero Banner */}
       <BrandLogoMarquee />
 
-<<<<<<< HEAD
-            {/* Right Column: Hero Vector Illustration */}
-            <div className="lg:col-span-6 flex justify-center lg:justify-end">
-              <div className="w-full max-w-lg overflow-hidden">
-                <img
-                  src="/images/iot_hero_illustration.jpg"
-                  alt="IoT Application Development Company in USA"
-                  className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500"
-                />
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* =========================================================================
-          2. TRUSTED BRAND LOGOS STRIP (Full Width Infinite Auto-Scroll Marquee)
-          ========================================================================= */}
-      <BrandLogoMarquee />
-
-      {/* =========================================================================
-          3. BEST IOT APPLICATION DEVELOPMENT COMPANY (Section 2)
-          ========================================================================= */}
-      <section className="py-12 sm:py-16 bg-white border-b border-slate-100">
-=======
       {/* 3. SECTION: Delivering Affordable IoT Mobile App Development Services (Left Illustration, Right Text) */}
       <section className="py-14 sm:py-20 bg-white font-sans text-left">
->>>>>>> de1da228f73d1628d167ecd7b54ba719e41f0def
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Smart connected person Illustration */}

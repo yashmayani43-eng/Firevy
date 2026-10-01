@@ -6,6 +6,7 @@ import ProcessWeFollow from '../common/ProcessWeFollow';
 import SuccessMatrix from '../common/SuccessMatrix';
 import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
 import BrandLogoMarquee from '../common/BrandLogoMarquee';
+import ClutchTopRatedCompanyBanner from '../common/ClutchTopRatedCompanyBanner';
 import OurMobileAppExpertiseServices from './OurMobileAppExpertiseServices';
 import ProudAwardsBanner from './ProudAwardsBanner';
 import PremiumServicesGrid from '../common/PremiumServicesGrid';
@@ -25,6 +26,7 @@ import { AboutUsStats } from './AboutUsStats';
 import { TransformativeImpactSection } from './TransformativeImpactSection';
 import SectorsThrivingSection from './SectorsThrivingSection';
 import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
+import { Calendar, Sliders } from 'lucide-react';
 
 const BlockchainCuttingEdgeSection = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -524,7 +526,6 @@ export const BlockchainDevelopmentService = () => {
         </div>
       </section>
 
-<<<<<<< HEAD
       {/* =========================================================================
           2. TRUSTED BRAND LOGOS STRIP (Full Width Infinite Auto-Scroll Marquee)
           ========================================================================= */}
@@ -796,24 +797,17 @@ export const BlockchainDevelopmentService = () => {
       {/* ============================================================
           SECTION 3E: CLUTCH TOP RATED BANNER
           ============================================================ */}
-      <ClutchTopRatedBanner title="Proud To Have Picked These Up Along The Way" />
+      <ClutchTopRatedCompanyBanner title="Proud To Have Picked These Up Along The Way" />
 
       {/* ============================================================
           SECTION 3F: WHAT EXACTLY ARE BLOCKCHAIN DEVELOPERS?
           ============================================================ */}
-      <section className="py-16 md:py-24 bg-white text-slate-900 font-sans border-b border-slate-100">
-        <Container>
-          <div className="space-y-10 max-w-6xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-[900] text-slate-950 tracking-tight leading-tight text-center">
-              What Exactly Are Blockchain Developers?
-=======
       {/* SECTION 4: Get 100% Customizable Blockchain Development Services By Experts */}
       <section className="py-14 sm:py-20 bg-white text-left font-sans">
         <Container className="max-w-7xl">
           <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-[#0B0F19] tracking-tight leading-tight">
               Get 100% Customizable Blockchain Development Services By Experts
->>>>>>> de1da228f73d1628d167ecd7b54ba719e41f0def
             </h2>
           </div>
 

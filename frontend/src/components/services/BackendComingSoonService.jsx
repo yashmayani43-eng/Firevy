@@ -30,18 +30,9 @@ export const BACKEND_SERVICES_CONFIG = {
   'ai-and-ml-development': { title: 'AI & ML Development', category: 'AI & ML Development' },
 
   // Front End Development Services
-  'c-sharp-development': { title: 'C Sharp Development', category: 'Front End Development' },
-  'frontend-development': { title: 'Frontend Development', category: 'Front End Development' },
-  'front-end-development': { title: 'Front End Development', category: 'Front End Development' },
-  'meteor-js-development': { title: 'Meteor JS Development', category: 'Front End Development' },
-  'typescript-development-services': { title: 'Typescript Development Services', category: 'Front End Development' },
-  'next-js-development': { title: 'Next Js Development', category: 'Front End Development' },
-  'react-js-development': { title: 'React JS Development', category: 'Front End Development' },
   'csr-web-development': { title: 'CSR Web Development', category: 'Front End Development' },
   'css-web-development': { title: 'CSS Web Development', category: 'Front End Development' },
   'web-portal-development': { title: 'Web Portal Development', category: 'Front End Development' },
-  'web3-development': { title: 'Web3 Development', category: 'Front End Development' },
-  'progressive-web-app': { title: 'Progressive Web App', category: 'Front End Development' },
 
 
   // Blockchain Development Services
@@ -119,10 +110,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'ai-in-payments-industry' ||
     clean === 'ai-ml-development' ||
     clean === 'ai-and-ml-development' ||
-    clean === 'c-sharp-development' ||
-    clean === 'frontend-development' ||
-    clean === 'front-end-development' ||
-    clean === 'meteor-js-development' ||
     clean === 'typescript-development-services' ||
     clean === 'next-js-development' ||
     clean === 'react-js-development' ||
@@ -130,7 +117,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'css-web-development' ||
     clean === 'web-portal-development' ||
     clean === 'web3-development' ||
-    clean === 'progressive-web-app' ||
     clean === 'microsoft-dynamics-365-consulting' ||
     clean === 'kentico-development-services' ||
     clean === 'dotnetnuke-development' ||

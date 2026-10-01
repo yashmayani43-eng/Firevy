@@ -78,6 +78,21 @@ const SmartContractsDevelopmentService = lazy(() => import('./components/service
 const BitcoinWalletDevelopmentService = lazy(() => import('./components/services/BitcoinWalletDevelopmentService').then(m => ({ default: m.BitcoinWalletDevelopmentService })));
 const MarketplaceAppDevelopmentService = lazy(() => import('./components/services/MarketplaceAppDevelopmentService').then(m => ({ default: m.MarketplaceAppDevelopmentService })));
 const BullionExchangeAppDevelopmentService = lazy(() => import('./components/services/BullionExchangeAppDevelopmentService').then(m => ({ default: m.BullionExchangeAppDevelopmentService })));
+const MeteorJsDevelopmentService = lazy(() => import('./components/services/MeteorJsDevelopmentService').then(m => ({ default: m.default || m.MeteorJsDevelopmentService })));
+const FrontendDevelopmentService = lazy(() => import('./components/services/FrontendDevelopmentService').then(m => ({ default: m.default || m.FrontendDevelopmentService })));
+const CSharpDevelopmentService = lazy(() => import('./components/services/CSharpDevelopmentService').then(m => ({ default: m.default || m.CSharpDevelopmentService })));
+const TypescriptDevelopmentService = lazy(() => import('./components/services/TypescriptDevelopmentService').then(m => ({ default: m.default || m.TypescriptDevelopmentService })));
+const NextJsDevelopmentService = lazy(() => import('./components/services/NextJsDevelopmentService').then(m => ({ default: m.default || m.NextJsDevelopmentService })));
+const ReactJsDevelopmentService = lazy(() => import('./components/services/ReactJsDevelopmentService').then(m => ({ default: m.default || m.ReactJsDevelopmentService })));
+const Web3DevelopmentService = lazy(() => import('./components/services/Web3DevelopmentService').then(m => ({ default: m.default || m.Web3DevelopmentService })));
+const PwaDevelopmentService = lazy(() => import('./components/services/PwaDevelopmentService').then(m => ({ default: m.default || m.PwaDevelopmentService })));
+const BlockchainDevelopmentService = lazy(() => import('./components/services/BlockchainDevelopmentService').then(m => ({ default: m.default || m.BlockchainDevelopmentService })));
+const DotNetDevelopmentService = lazy(() => import('./components/services/DotNetDevelopmentService').then(m => ({ default: m.default || m.DotNetDevelopmentService })));
+const PhpDevelopmentService = lazy(() => import('./components/services/PhpDevelopmentService').then(m => ({ default: m.default || m.PhpDevelopmentService })));
+const AndroidAppDevelopmentService = lazy(() => import('./components/services/AndroidAppDevelopmentService').then(m => ({ default: m.default || m.AndroidAppDevelopmentService })));
+const IOSAppDevelopmentService = lazy(() => import('./components/services/IOSAppDevelopmentService').then(m => ({ default: m.default || m.IOSAppDevelopmentService })));
+const FlutterAppDevelopmentService = lazy(() => import('./components/services/FlutterAppDevelopmentService').then(m => ({ default: m.default || m.FlutterAppDevelopmentService })));
+const NodeJsDevelopmentService = lazy(() => import('./components/services/NodeJsDevelopmentService').then(m => ({ default: m.default || m.NodeJsDevelopmentService })));
 const DigitalWayfindingSolutionsService = lazy(() => import('./components/services/DigitalWayfindingSolutionsService').then(m => ({ default: m.DigitalWayfindingSolutionsService })));
 const EthereumAppDevelopmentService = lazy(() => import('./components/services/EthereumAppDevelopmentService').then(m => ({ default: m.EthereumAppDevelopmentService })));
 const AiPromptEngineeringService = lazy(() => import('./components/services/AiPromptEngineeringService').then(m => ({ default: m.AiPromptEngineeringService })));
@@ -193,6 +208,82 @@ export function App() {
                 <Route path="/bullion-exchange-app-development" element={<BullionExchangeAppDevelopmentService />} />
                 <Route path="/services/bullion-exchange-app-development-services" element={<BullionExchangeAppDevelopmentService />} />
                 <Route path="/bullion-exchange-app-development-services" element={<BullionExchangeAppDevelopmentService />} />
+                <Route path="/services/meteor-js-development" element={<MeteorJsDevelopmentService />} />
+                <Route path="/services/meteor-js-development-company" element={<MeteorJsDevelopmentService />} />
+                <Route path="/meteor-js-development" element={<MeteorJsDevelopmentService />} />
+                <Route path="/meteor-js-development-company" element={<MeteorJsDevelopmentService />} />
+                <Route path="/services/frontend-development" element={<FrontendDevelopmentService />} />
+                <Route path="/services/front-end-development" element={<FrontendDevelopmentService />} />
+                <Route path="/frontend-development" element={<FrontendDevelopmentService />} />
+                <Route path="/front-end-development" element={<FrontendDevelopmentService />} />
+                <Route path="/services/c-sharp-development" element={<CSharpDevelopmentService />} />
+                <Route path="/c-sharp-development" element={<CSharpDevelopmentService />} />
+                <Route path="/services/typescript-development-services" element={<TypescriptDevelopmentService />} />
+                <Route path="/services/typescript-development" element={<TypescriptDevelopmentService />} />
+                <Route path="/typescript-development-services" element={<TypescriptDevelopmentService />} />
+                <Route path="/typescript-development" element={<TypescriptDevelopmentService />} />
+                <Route path="/services/next-js-development" element={<NextJsDevelopmentService />} />
+                <Route path="/services/nextjs-development" element={<NextJsDevelopmentService />} />
+                <Route path="/next-js-development" element={<NextJsDevelopmentService />} />
+                <Route path="/nextjs-development" element={<NextJsDevelopmentService />} />
+                <Route path="/services/react-js-development" element={<ReactJsDevelopmentService />} />
+                <Route path="/services/reactjs-development" element={<ReactJsDevelopmentService />} />
+                <Route path="/react-js-development" element={<ReactJsDevelopmentService />} />
+                <Route path="/reactjs-development" element={<ReactJsDevelopmentService />} />
+                <Route path="/services/web3-development" element={<Web3DevelopmentService />} />
+                <Route path="/services/web3-development-company" element={<Web3DevelopmentService />} />
+                <Route path="/web3-development" element={<Web3DevelopmentService />} />
+                <Route path="/web3-development-company" element={<Web3DevelopmentService />} />
+                <Route path="/services/progressive-web-app" element={<PwaDevelopmentService />} />
+                <Route path="/services/pwa-development" element={<PwaDevelopmentService />} />
+                <Route path="/progressive-web-app" element={<PwaDevelopmentService />} />
+                <Route path="/pwa-development" element={<PwaDevelopmentService />} />
+                <Route path="/services/blockchain" element={<BlockchainDevelopmentService />} />
+                <Route path="/services/blockchain-development" element={<BlockchainDevelopmentService />} />
+                <Route path="/services/blockchain-development-services" element={<BlockchainDevelopmentService />} />
+                <Route path="/blockchain" element={<BlockchainDevelopmentService />} />
+                <Route path="/blockchain-development" element={<BlockchainDevelopmentService />} />
+                <Route path="/blockchain-development-services" element={<BlockchainDevelopmentService />} />
+                <Route path="/services/net" element={<DotNetDevelopmentService />} />
+                <Route path="/services/net-development" element={<DotNetDevelopmentService />} />
+                <Route path="/services/dot-net-development" element={<DotNetDevelopmentService />} />
+                <Route path="/services/dotnet-development" element={<DotNetDevelopmentService />} />
+                <Route path="/services/dot-net-application-development-services" element={<DotNetDevelopmentService />} />
+                <Route path="/net" element={<DotNetDevelopmentService />} />
+                <Route path="/net-development" element={<DotNetDevelopmentService />} />
+                <Route path="/dot-net-development" element={<DotNetDevelopmentService />} />
+                <Route path="/services/php" element={<PhpDevelopmentService />} />
+                <Route path="/services/php-development" element={<PhpDevelopmentService />} />
+                <Route path="/services/php-development-services" element={<PhpDevelopmentService />} />
+                <Route path="/php" element={<PhpDevelopmentService />} />
+                <Route path="/php-development" element={<PhpDevelopmentService />} />
+                <Route path="/php-development-services" element={<PhpDevelopmentService />} />
+                <Route path="/services/android" element={<AndroidAppDevelopmentService />} />
+                <Route path="/services/android-app-development" element={<AndroidAppDevelopmentService />} />
+                <Route path="/services/android-development" element={<AndroidAppDevelopmentService />} />
+                <Route path="/android" element={<AndroidAppDevelopmentService />} />
+                <Route path="/android-app-development" element={<AndroidAppDevelopmentService />} />
+                <Route path="/android-development" element={<AndroidAppDevelopmentService />} />
+                <Route path="/services/ios" element={<IOSAppDevelopmentService />} />
+                <Route path="/services/ios-app-development" element={<IOSAppDevelopmentService />} />
+                <Route path="/services/ios-development" element={<IOSAppDevelopmentService />} />
+                <Route path="/ios" element={<IOSAppDevelopmentService />} />
+                <Route path="/ios-app-development" element={<IOSAppDevelopmentService />} />
+                <Route path="/ios-development" element={<IOSAppDevelopmentService />} />
+                <Route path="/services/flutter" element={<FlutterAppDevelopmentService />} />
+                <Route path="/services/flutter-app-development" element={<FlutterAppDevelopmentService />} />
+                <Route path="/services/flutter-development" element={<FlutterAppDevelopmentService />} />
+                <Route path="/flutter" element={<FlutterAppDevelopmentService />} />
+                <Route path="/flutter-app-development" element={<FlutterAppDevelopmentService />} />
+                <Route path="/flutter-development" element={<FlutterAppDevelopmentService />} />
+                <Route path="/services/nodejs" element={<NodeJsDevelopmentService />} />
+                <Route path="/services/node-js" element={<NodeJsDevelopmentService />} />
+                <Route path="/services/nodejs-development" element={<NodeJsDevelopmentService />} />
+                <Route path="/services/node-js-development" element={<NodeJsDevelopmentService />} />
+                <Route path="/nodejs" element={<NodeJsDevelopmentService />} />
+                <Route path="/node-js" element={<NodeJsDevelopmentService />} />
+                <Route path="/nodejs-development" element={<NodeJsDevelopmentService />} />
+                <Route path="/node-js-development" element={<NodeJsDevelopmentService />} />
                 <Route path="/services/artificial-intelligence-development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/services/artificial%20intelligence%20development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/services/artificial intelligence development" element={<ArtificialIntelligenceDevelopmentService />} />
@@ -255,6 +346,8 @@ export function App() {
                 <Route path="/native-app-development" element={<ServiceDetails />} />
                 <Route path="/services/custom-mobile-app-development" element={<ServiceDetails />} />
                 <Route path="/custom-mobile-app-development" element={<ServiceDetails />} />
+                <Route path="/services/mobile-app-development" element={<ServiceDetails />} />
+                <Route path="/mobile-app-development" element={<ServiceDetails />} />
 
                 {/* Back End Development Services - Coming Soon */}
                 <Route path="/services/symfony-development" element={<ServiceDetails />} />
@@ -566,7 +659,7 @@ export function App() {
                 <Route path="/digital-twin-solutions" element={<ServiceDetails />} />
                 <Route path="/services/artist-collaboration-platform-development" element={<ServiceDetails />} />
                 <Route path="/artist-collaboration-platform-development" element={<ServiceDetails />} />
-                 <Route path="/services/artist-collaboration-platform" element={<ServiceDetails />} />
+                <Route path="/services/artist-collaboration-platform" element={<ServiceDetails />} />
                 <Route path="/artist-collaboration-platform" element={<ServiceDetails />} />
                 <Route path="/services/financial-software-development" element={<ServiceDetails />} />
                 <Route path="/financial-software-development" element={<ServiceDetails />} />
@@ -767,7 +860,7 @@ export function App() {
                 <Route path="/golang-developers" element={<ServiceDetails />} />
                 <Route path="/golang-developer" element={<ServiceDetails />} />
                 <Route path="/golang" element={<ServiceDetails />} />
-                
+
                 {/* Dedicated Backend & Specialized Developer Routes */}
                 <Route path="/services/hire-backend-developers" element={<ServiceDetails />} />
                 <Route path="/services/hire-backend-developer" element={<ServiceDetails />} />
@@ -776,7 +869,7 @@ export function App() {
                 <Route path="/backend-developers" element={<ServiceDetails />} />
                 <Route path="/backend-developer" element={<ServiceDetails />} />
                 <Route path="/backend" element={<ServiceDetails />} />
-                
+
                 <Route path="/services/hire-python-developers" element={<ServiceDetails />} />
                 <Route path="/services/hire-python-developer" element={<ServiceDetails />} />
                 <Route path="/hire-python-developers" element={<ServiceDetails />} />

@@ -61,26 +61,26 @@ export const Footer = () => {
       title: 'Services',
       links: [
         { name: 'Mobile App Development', path: '/services/mobile-app-development' },
-        { name: 'Software Development', path: '/services/custom-software-development' },
+        { name: 'Software Development', path: '/services/software-development-service' },
         { name: 'Web Development', path: '/services/web-development' },
-        { name: 'Progressive Web App Development', path: '/services/web-development' },
+        { name: 'Progressive Web App Development', path: '/services/progressive-web-app' },
         { name: 'IT Outsourcing Services', path: '/services' },
-        { name: 'Blockchain Development', path: '/services' },
+        { name: 'Blockchain Development', path: '/services/blockchain' },
         { name: 'Full Stack Development Services', path: '/services/custom-software-development' },
-        { name: 'Next Js Development', path: '/services/web-development' }
+        { name: 'Next Js Development', path: '/services/next-js-development' }
       ]
     },
     technology: {
       title: 'Technology',
       links: [
-        { name: '.NET Development', path: '/technologies' },
-        { name: 'PHP Development', path: '/technologies' },
-        { name: 'Android Development', path: '/technologies' },
-        { name: 'iOS Development', path: '/technologies' },
-        { name: 'Flutter Development', path: '/technologies' },
+        { name: '.NET Development', path: '/services/net' },
+        { name: 'PHP Development', path: '/services/php' },
+        { name: 'Android Development', path: '/services/android' },
+        { name: 'iOS Development', path: '/services/ios' },
+        { name: 'Flutter Development', path: '/services/flutter' },
         { name: 'Angular Development', path: '/services/angular' },
         { name: 'React Development', path: '/services/react' },
-        { name: 'NodeJS Development', path: '/technologies' }
+        { name: 'NodeJS Development', path: '/services/nodejs' }
       ]
     },
     hireDevelopers: {
