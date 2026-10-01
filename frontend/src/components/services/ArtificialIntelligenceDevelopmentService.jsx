@@ -58,6 +58,10 @@ import {
   Globe,
   Award,
   BarChart,
+  BarChart2,
+  Building2,
+  CreditCard,
+  Percent,
   Lock,
   Workflow,
   FileCheck
@@ -159,66 +163,98 @@ export const ArtificialIntelligenceDevelopmentService = () => {
 
   const renderTechBrandLogo = (name) => {
     const nameLower = name.toLowerCase();
-    if (nameLower.includes('openai') || nameLower.includes('gpt') || nameLower.includes('dall-e') || nameLower.includes('sora')) {
+
+    // 1. OpenAI
+    if (nameLower.includes('openai') || nameLower.includes('open ai') || nameLower.includes('gpt') || nameLower.includes('dall-e') || nameLower.includes('sora')) {
       return (
-        <svg className="w-9 h-9 text-slate-900" viewBox="0 0 24 24" fill="currentColor">
+        <svg className="w-12 h-12 text-[#0F172A]" viewBox="0 0 24 24" fill="currentColor">
           <path d="M22.28 9.82a5.98 5.98 0 0 0-.52-4.91 6.05 6.05 0 0 0-6.51-2.9 6.07 6.07 0 0 0-10.27 2.17 5.98 5.98 0 0 0-4 2.9 6.05 6.05 0 0 0 .74 7.1 5.98 5.98 0 0 0 .51 4.91 6.05 6.05 0 0 0 6.52 2.9 5.98 5.98 0 0 0 3.78 2.81 6.06 6.06 0 0 0 5.77-4.2 5.99 5.99 0 0 0 4-2.9 6.06 6.06 0 0 0-.75-6.88zm-9.02 12.61a4.48 4.48 0 0 1-2.88-1.04l.14-.08 4.78-2.76a.79.79 0 0 0 .39-.68v-6.74l2.02 1.17c.02.01.04.03.04.05v5.58a4.5 4.5 0 0 1-4.49 4.5zM3.6 18.3a4.47 4.47 0 0 1-.54-3.01l.14.08 4.78 2.76a.79.79 0 0 0 .79 0l5.84-3.37v2.33c0 .03-.01.05-.03.06l-4.84 2.79a4.5 4.5 0 0 1-6.14-1.64zm-1.38-10.92a4.47 4.47 0 0 1 2.34-1.97v5.68c0 .28.15.53.4.68l5.83 3.37-2.02 1.17a.08.08 0 0 1-.07 0l-4.85-2.8a4.5 4.5 0 0 1-1.63-6.13zm16.6 3.03l-5.84-3.37 2.02-1.17c.02-.01.04-.01.07 0l4.85 2.8a4.5 4.5 0 0 1-1.1 8.13v-5.68a.8.8 0 0 0-.4-.7zm2.02-3.02l-.14-.09-4.78-2.76a.79.79 0 0 0-.79 0l-5.84 3.37V7.6c0-.03.01-.05.03-.06l4.85-2.79a4.5 4.5 0 0 1 6.67 4.67zm-11.06-3.85a4.48 4.48 0 0 1 2.88 1.04l-.14.08-4.78 2.76a.79.79 0 0 0-.39.68v6.74l-2.02-1.17a.08.08 0 0 1-.04-.05V8.28a4.5 4.5 0 0 1 4.49-4.49z"/>
         </svg>
       );
     }
+
+    // 2. Mistral
     if (nameLower.includes('mistral')) {
       return (
-        <div className="w-10 h-10 flex items-center justify-center bg-amber-500 rounded-lg p-1.5 text-white font-black tracking-tighter text-xs">
-          MISTRAL
+        <div className="flex items-center justify-center">
+          <svg className="h-8 w-auto text-[#0F172A]" viewBox="0 0 120 32" fill="currentColor">
+            <path d="M8 4h8v24H8V4zm14 0h8v24h-8V4zm14 0h8v24h-8V4z" fill="#0F172A" />
+            <text x="52" y="24" fontFamily="sans-serif" fontSize="26" fontWeight="900" fill="#0F172A" letterSpacing="-1">mistral</text>
+          </svg>
         </div>
       );
     }
+
+    // 3. Hugging Face
     if (nameLower.includes('hugging')) {
-      return <span className="text-3xl">🤗</span>;
+      return (
+        <svg className="w-12 h-12 text-[#0F172A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="9" fill="none" />
+          <path d="M8.5 9.5c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5" />
+          <path d="M12.5 9.5c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5" />
+          <path d="M8.5 14c1 1.5 2.5 2 3.5 2s2.5-.5 3.5-2" />
+          <path d="M4 14.5c.8-1 2.2-1.5 3-1.5" />
+          <path d="M20 14.5c-.8-1-2.2-1.5-3-1.5" />
+        </svg>
+      );
     }
+
+    // 4. Anthropic's Claude
     if (nameLower.includes('claude') || nameLower.includes('anthropic')) {
       return (
-        <div className="w-10 h-10 rounded-full bg-[#D97757] flex items-center justify-center text-white font-bold text-lg">
-          ✦
+        <div className="flex items-center space-x-1.5 text-[#0F172A]">
+          <svg className="w-7 h-7 shrink-0 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l2.2 7.8H22l-6.5 4.7 2.4 7.5L12 17.2l-5.9 4.8 2.4-7.5L2 9.8h7.8z"/>
+          </svg>
+          <span className="text-xl sm:text-2xl font-[900] tracking-tight text-[#0F172A] font-sans">Claude</span>
         </div>
       );
     }
+
+    // 5. Cohere
     if (nameLower.includes('cohere')) {
       return (
-        <div className="w-10 h-10 rounded-xl bg-teal-700 flex items-center justify-center text-white font-bold text-sm">
-          c
-        </div>
+        <svg className="w-11 h-11 text-[#0F172A]" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 4a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h2a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4H8zm8 6a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h2a4 4 0 0 0 4-4v-2a4 4 0 0 0-4-4h-2zM6 16a3 3 0 0 0-3 3v1a2 2 0 0 0 2 2h4a3 3 0 0 0 3-3v-1a2 2 0 0 0-2-2H6z" />
+        </svg>
       );
     }
+
+    // 6. Llama
     if (nameLower.includes('llama') || nameLower.includes('meta')) {
       return (
-        <div className="w-10 h-10 rounded-full bg-sky-600 flex items-center justify-center text-white font-bold text-lg">
-          🦙
-        </div>
+        <svg className="w-11 h-11 text-[#0F172A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M9 3v4M15 3v4" />
+          <path d="M8 7h8a2 2 0 0 1 2 2v2a3 3 0 0 1-3 3h-2v5a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z" fill="none" />
+          <circle cx="10" cy="10" r="1" fill="currentColor" />
+          <circle cx="14" cy="10" r="1" fill="currentColor" />
+          <path d="M11 12h2" />
+        </svg>
       );
     }
+
     return (
-      <div className="w-10 h-10 rounded-full bg-sky-50 flex items-center justify-center text-[#0082C8] font-bold">
-        <Cpu className="w-6 h-6" />
+      <div className="w-11 h-11 rounded-full bg-slate-100 flex items-center justify-center text-slate-900 font-bold">
+        <Cpu className="w-6 h-6 text-slate-800" />
       </div>
     );
   };
 
   const techCategories = [
     {
-      name: 'LLM Models',
+      name: 'Text Models',
       tagline: 'Leverage the power of NLP to automate text processing and enhance language comprehension, enabling chatbots, search engines, and much more.',
       items: [
         { name: 'Open AI' },
         { name: 'Mistral' },
-        { name: 'Hugging Face' },
+        { name: 'Hugging face' },
         { name: "Anthropic's Claude" },
         { name: 'Cohere' },
         { name: 'Llama' }
       ]
     },
     {
-      name: 'Image & Vision Models',
+      name: 'Image & Video Models',
       tagline: 'Empower digital systems to interpret visual data, extract key features, and generate hyper-realistic content seamlessly.',
       items: [
         { name: 'DALL-E 3' },
@@ -254,39 +290,39 @@ export const ArtificialIntelligenceDevelopmentService = () => {
       ]
     },
     {
-      name: 'Generative AI',
-      tagline: 'Deploy autonomous agents, synthetic media pipelines, and multi-modal generative intelligence at enterprise scale.',
+      name: 'Data Lakes',
+      tagline: 'Store vast volumes of raw structured and unstructured enterprise data with high availability and analytical scale.',
       items: [
-        { name: 'GPT-4o' },
-        { name: 'Claude 3.5 Sonnet' },
-        { name: 'Gemini 1.5 Pro' },
-        { name: 'RunWay ML' },
-        { name: 'ElevenLabs' },
-        { name: 'Sora' }
+        { name: 'Snowflake' },
+        { name: 'Databricks' },
+        { name: 'Amazon Redshift' },
+        { name: 'Google BigQuery' },
+        { name: 'Apache Iceberg' },
+        { name: 'AWS S3 Lakehouse' }
       ]
     },
     {
-      name: 'KPIs',
-      tagline: 'Benchmark, monitor, and continuously optimize model latency, perplexity, inference cost, and response accuracy.',
+      name: 'ETL',
+      tagline: 'Automate data extraction, transformation, and loading pipelines to power continuous AI/ML model ingestion.',
       items: [
-        { name: 'ROUGE / BLEU Score' },
-        { name: 'Latent Precision' },
-        { name: 'TTFT (Time to First Token)' },
-        { name: 'Model Hallucination Rate' },
-        { name: 'Inference Cost per 1K' },
-        { name: 'GPU Utilization' }
+        { name: 'Apache Airflow' },
+        { name: 'dbt (Data Build Tool)' },
+        { name: 'Apache NiFi' },
+        { name: 'AWS Glue' },
+        { name: 'Talend' },
+        { name: 'Fivetran' }
       ]
     },
     {
-      name: 'AI Frameworks',
-      tagline: 'Build end-to-end Machine Learning pipelines with scalable, production-tested open-source frameworks.',
+      name: 'Annotation',
+      tagline: 'Label computer vision assets, conversational transcripts, and complex training datasets with high precision.',
       items: [
-        { name: 'PyTorch' },
-        { name: 'TensorFlow' },
-        { name: 'Scikit-Learn' },
-        { name: 'Ray Train' },
-        { name: 'Keras' },
-        { name: 'ONNX Runtime' }
+        { name: 'Labelbox' },
+        { name: 'Roboflow' },
+        { name: 'CVAT' },
+        { name: 'Scale AI' },
+        { name: 'Prodigy' },
+        { name: 'SuperAnnotate' }
       ]
     },
     {
@@ -304,12 +340,36 @@ export const ArtificialIntelligenceDevelopmentService = () => {
   ];
 
   const stats = [
-    { value: '$30 Billion', label: 'The expected expansion of the AI-powered automation market by 2030.' },
-    { value: '60%', label: 'The percentage of global enterprises implementing AI technologies by 2024, showing its widespread adoption.' },
-    { value: '$3 Trillion', label: 'Projected economic value AI will bring to industries like healthcare, finance, and manufacturing by 2025.' },
-    { value: '$350 Billion', label: 'The anticipated value of the European AI market by 2027, reflecting increasing investment across regions.' },
-    { value: '12% - 18%', label: 'The forecasted growth rate of the AI-driven cybersecurity market, underlining AI impact in safeguarding digital spaces.' },
-    { value: '$500 Billion', label: 'The estimated value of the global AI-driven fraud detection market by 2030, demonstrating its growing importance in financial security.' }
+    {
+      value: '$30 Billion',
+      label: 'The expected expansion of the AI-powered automation market by 2030.',
+      icon: <Sparkles className="w-6 h-6 text-[#0082C8]" />
+    },
+    {
+      value: '60%',
+      label: 'The percentage of global enterprises implementing AI technologies by 2024, showing its widespread adoption.',
+      icon: <Building2 className="w-6 h-6 text-[#0082C8]" />
+    },
+    {
+      value: '$3 Trillion',
+      label: 'Projected economic value AI will bring to industries like healthcare, finance, and manufacturing by 2025.',
+      icon: <TrendingUp className="w-6 h-6 text-[#0082C8]" />
+    },
+    {
+      value: '$350 Billion',
+      label: 'The anticipated value of the European AI market by 2027, reflecting increasing investment across regions.',
+      icon: <CreditCard className="w-6 h-6 text-[#0082C8]" />
+    },
+    {
+      value: '12% - 18%',
+      label: 'The forecasted growth rate of the AI-driven cybersecurity market, underlining AI impact in safeguarding digital spaces.',
+      icon: <BarChart2 className="w-6 h-6 text-[#0082C8]" />
+    },
+    {
+      value: '$500 Billion',
+      label: 'The estimated value of the global AI-driven fraud detection market by 2030, demonstrating its growing importance in financial security.',
+      icon: <Percent className="w-6 h-6 text-[#0082C8]" />
+    }
   ];
 
   const tailoredSolutions = [
@@ -528,6 +588,22 @@ export const ArtificialIntelligenceDevelopmentService = () => {
     }
   ];
 
+  const aiPageBrandLogos = [
+    { name: 'HONDA', image: '/images/honda_logo.png', isActive: true },
+    { name: 'LafargeHolcim', image: '/images/logo_lafargeHolcim.svg', isActive: true },
+    { name: 'Cummins', image: '/images/ncummins.png', isActive: true },
+    { name: "L'ORÉAL", image: '/images/logo_loreal.png', isActive: true },
+    { name: 'TDSG', image: '/images/logo_tdsg.png', isActive: true },
+    { name: 'ASTRAL PIPES', image: '/images/logo_astral.png', isActive: true },
+    { name: 'CLP INDIA', image: '/images/logo_clp_india.svg', isActive: true },
+    { name: 'adani', image: '/images/logo_adani.svg', isActive: true },
+    { name: 'TOYOTA', image: '/images/toyota_logo.webp', isActive: true },
+    { name: 'Almarai', image: '/images/almarai_corporate_logo.png', isActive: true },
+    { name: 'ORIENT CEMENT', image: '/images/orient_logo.svg', isActive: true },
+    { name: 'AMERICAN EXPRESS', image: '/images/logo_american_express.svg', isActive: true },
+    { name: 'Alembic', image: '/images/alembic_logo.svg', isActive: true }
+  ];
+
   return (
     <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO
@@ -570,11 +646,11 @@ export const ArtificialIntelligenceDevelopmentService = () => {
 
             {/* Right Column: Hero Vector Illustration */}
             <div className="lg:col-span-6 flex justify-center lg:justify-end">
-              <div className="w-full max-w-lg overflow-hidden rounded-2xl border border-slate-100 shadow-xl">
+              <div className="w-full max-w-lg flex items-center justify-center">
                 <img
-                  src="/images/ai_hero_illustration.jpg"
+                  src="/images/ai_development_hero_copy.png"
                   alt="Artificial Intelligence Development Company"
-                  className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500"
+                  className="w-full h-auto object-contain select-none pointer-events-none drop-shadow-sm hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>
@@ -586,7 +662,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
           2. TRUSTED BRAND LOGOS STRIP
           ========================================================================= */}
       <section className="py-2 bg-white border-b border-slate-200/70 overflow-hidden">
-        <BrandLogoMarquee />
+        <BrandLogoMarquee data={{ logos: aiPageBrandLogos }} />
       </section>
 
       {/* =========================================================================
@@ -596,11 +672,11 @@ export const ArtificialIntelligenceDevelopmentService = () => {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-5 flex justify-center">
-              <div className="w-full max-w-md overflow-hidden rounded-2xl shadow-md border border-slate-100">
+              <div className="w-full max-w-md overflow-hidden">
                 <img
-                  src="/images/ai_delivering_services_illustration.jpg"
+                  src="/images/ai_delivering_top_rated_illustration.jpg"
                   alt="Delivering Top Rated AI Development Services"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>
@@ -619,7 +695,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
       {/* =========================================================================
           4. BRIEF ABOUT CUSTOM AI DEVELOPMENT SERVICES (Left Text, Right Illustration)
           ========================================================================= */}
-      <section className="py-12 sm:py-16 bg-[#F8FAFC] border-y border-slate-200/70 font-sans text-left">
+      <section className="py-12 sm:py-16 bg-white font-sans text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
             {/* Left Column: Title & Text */}
@@ -682,7 +758,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
       {/* =========================================================================
           5. THE GROWING INFLUENCE OF AI (6 Metric Stat Cards)
           ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left">
+      <section className="py-16 sm:py-20 bg-[#F4F7FA] font-sans text-left">
         <Container>
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
             <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
@@ -697,12 +773,15 @@ export const ArtificialIntelligenceDevelopmentService = () => {
             {stats.map((s, idx) => (
               <div
                 key={idx}
-                className="bg-[#F8FAFC] rounded-[16px] p-7 border border-slate-200 shadow-xs hover:shadow-md transition-all flex flex-col justify-start space-y-3"
+                className="bg-white rounded-[18px] p-7 border border-slate-100 shadow-xs hover:shadow-md transition-all flex flex-col justify-start space-y-3"
               >
-                <div className="text-[28px] sm:text-[32px] font-[900] text-[#006B8F]">
+                <div className="w-11 h-11 rounded-xl bg-[#E0F2FE] flex items-center justify-center shrink-0">
+                  {s.icon}
+                </div>
+                <div className="text-[28px] sm:text-[32px] font-[900] text-slate-900 tracking-tight">
                   {s.value}
                 </div>
-                <p className="text-[14px] text-[#475569] leading-relaxed">
+                <p className="text-[13.5px] sm:text-[14px] text-[#475569] leading-relaxed font-normal">
                   {s.label}
                 </p>
               </div>
@@ -714,7 +793,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
       {/* =========================================================================
           6. AI SOLUTIONS TAILORED FOR YOUR BUSINESS (Matches exact reference design)
           ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left border-y border-slate-200/80">
+      <section className="py-16 sm:py-20 bg-white font-sans text-left">
         <Container>
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
@@ -735,16 +814,19 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                   <div
                     key={sol.id}
                     onClick={() => setActiveTab(idx)}
-                    className={`p-5 sm:p-6 rounded-[14px] transition-all cursor-pointer bg-white text-left ${
+                    onMouseEnter={() => setActiveTab(idx)}
+                    className={`p-5 sm:p-6 rounded-[14px] transition-all duration-300 cursor-pointer text-left ${
                       isActive
-                        ? 'border-[1.5px] border-[#0284C7] ring-2 ring-[#0284C7]/10 shadow-sm'
-                        : 'border border-slate-200/90 hover:border-slate-300'
+                        ? 'bg-white border-[1.5px] border-[#0284C7] ring-4 ring-[#0284C7]/10 shadow-sm shadow-[#0284C7]/10'
+                        : 'bg-white border border-slate-200/90 hover:border-[#0284C7]/40 hover:shadow-xs'
                     }`}
                   >
                     <div className="flex items-center justify-between">
-                      <h3 className="text-[16px] sm:text-[17px] font-[700] text-slate-900 tracking-tight flex items-center gap-2">
+                      <h3 className={`text-[16px] sm:text-[17px] font-[700] tracking-tight flex items-center gap-2 transition-colors duration-200 ${
+                        isActive ? 'text-[#0284C7]' : 'text-slate-900'
+                      }`}>
                         <span>{sol.title}</span>
-                        {isActive && <ArrowRight className="w-4 h-4 text-[#0284C7] shrink-0 inline" />}
+                        {isActive && <ArrowRight className="w-4 h-4 text-[#0284C7] shrink-0 inline transform translate-x-0.5 transition-transform" />}
                       </h3>
                     </div>
                     <p className="text-[13.5px] sm:text-[14px] text-[#475569] leading-[1.7] mt-2 font-normal">
@@ -761,11 +843,11 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                 {tailoredSolutions[activeTab].cards.map((c, cIdx) => (
                   <div
                     key={cIdx}
-                    className="bg-white rounded-[18px] p-6 flex flex-col items-center justify-center text-center shadow-xs border border-slate-100 min-h-[170px] sm:min-h-[190px] hover:shadow-md transition-all duration-300"
+                    className="bg-white rounded-[18px] p-6 flex flex-col items-center justify-center text-center shadow-xs border border-slate-100 min-h-[170px] sm:min-h-[190px] hover:shadow-lg hover:-translate-y-1 hover:border-[#0284C7]/20 transition-all duration-300"
                   >
                     <div className="mb-3.5 flex items-center justify-center">
                       {c.iconType === 'chip' && (
-                        <svg className="w-12 h-12 text-[#0082C8]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <svg className="w-12 h-12 text-[#0082C8] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                           <rect x="10" y="10" width="28" height="28" rx="6" fill="#F0F8FF" stroke="#0082C8" />
                           <text x="24" y="28.5" textAnchor="middle" fill="#0082C8" fontSize="11" fontWeight="800" stroke="none">AI</text>
                           <line x1="16" y1="4" x2="16" y2="10" />
@@ -783,7 +865,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                         </svg>
                       )}
                       {c.iconType === 'lightbulb' && (
-                        <svg className="w-12 h-12 text-[#0082C8]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <svg className="w-12 h-12 text-[#0082C8] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                           <path d="M18 36h12m-10 4h8" />
                           <path d="M15 22a9 9 0 1 1 18 0c0 3.8-2.2 7-5 8.7V34H20v-3.3c-2.8-1.7-5-4.9-5-8.7z" fill="#F0F8FF" />
                           <circle cx="33" cy="14" r="2" fill="#0082C8" />
@@ -793,7 +875,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                         </svg>
                       )}
                       {c.iconType === 'nodes' && (
-                        <svg className="w-12 h-12 text-[#0082C8]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <svg className="w-12 h-12 text-[#0082C8] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                           <circle cx="24" cy="24" r="8" fill="#F0F8FF" />
                           <text x="24" y="27.5" textAnchor="middle" fill="#0082C8" fontSize="9" fontWeight="800" stroke="none">AI</text>
                           <circle cx="10" cy="14" r="3.5" />
@@ -807,7 +889,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                         </svg>
                       )}
                       {c.iconType === 'governance' && (
-                        <svg className="w-12 h-12 text-[#0082C8]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <svg className="w-12 h-12 text-[#0082C8] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                           <rect x="8" y="10" width="32" height="22" rx="4" fill="#F0F8FF" />
                           <line x1="8" y1="16" x2="40" y2="16" />
                           <circle cx="12" cy="13" r="1.5" fill="#0082C8" />
@@ -817,7 +899,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                         </svg>
                       )}
                       {c.iconType === 'risk' && (
-                        <svg className="w-12 h-12 text-[#0082C8]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <svg className="w-12 h-12 text-[#0082C8] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                           <path d="M12 6h18l10 10v26a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V10a4 4 0 0 1 4-4z" fill="#F0F8FF" />
                           <rect x="13" y="12" width="14" height="6" rx="1" fill="#0082C8" />
                           <text x="20" y="16.5" textAnchor="middle" fill="#FFFFFF" fontSize="6.5" fontWeight="900" stroke="none">RISK</text>
@@ -826,7 +908,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                         </svg>
                       )}
                       {c.iconType === 'optimization' && (
-                        <svg className="w-12 h-12 text-[#0082C8]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <svg className="w-12 h-12 text-[#0082C8] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                           <circle cx="24" cy="24" r="14" fill="#F0F8FF" />
                           <path d="M24 16a8 8 0 0 1 7 4" />
                           <line x1="24" y1="24" x2="30" y2="18" strokeWidth="2.5" />
@@ -849,28 +931,29 @@ export const ArtificialIntelligenceDevelopmentService = () => {
       {/* =========================================================================
           7. TECHNOLOGIES POWERING OUR AI SOLUTIONS (Pills Tabs + Logo Grid)
           ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100">
+      <section className="py-16 sm:py-20 bg-[#F4F8FA] font-sans text-left">
         <Container>
           <div className="text-center max-w-3xl mx-auto mb-10 space-y-2.5">
             <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
               Technologies Powering Our AI Solutions
             </h2>
-            <p className="text-[14.5px] text-[#475569] leading-relaxed">
-              We utilize the latest advancements in AI technology and foundation models to develop high-performing enterprise solutions that not only meet today's demands but also pave the way for future success.
+            <p className="text-[14.5px] sm:text-[15px] text-[#475569] leading-relaxed">
+              We utilize the latest advancements in AI technology to develop solutions that not only meet today's demands but also pave the way for future success.
             </p>
           </div>
 
           {/* Category Pills Box */}
-          <div className="bg-[#ECF4F8] rounded-[20px] p-3 sm:p-4 max-w-5xl mx-auto mb-8">
+          <div className="bg-[#E6F0F6] rounded-[20px] p-3 sm:p-4 max-w-5xl mx-auto mb-8">
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
               {techCategories.map((cat, idx) => (
                 <button
                   key={idx}
                   onClick={() => setActiveTechTab(idx)}
-                  className={`px-4 sm:px-4.5 py-2 rounded-[8px] text-[13px] font-[700] transition-all cursor-pointer ${
+                  onMouseEnter={() => setActiveTechTab(idx)}
+                  className={`px-4 sm:px-4.5 py-2 rounded-[6px] text-[13px] font-[700] transition-all cursor-pointer ${
                     activeTechTab === idx
-                      ? 'bg-[#0082C8] text-white shadow-sm'
-                      : 'bg-white text-slate-700 hover:text-[#0082C8] hover:bg-slate-50 border border-slate-200/60'
+                      ? 'bg-[#0B5C7A] text-white shadow-sm'
+                      : 'bg-white/80 text-slate-700 hover:text-[#0B5C7A] hover:bg-white border border-slate-200/50'
                   }`}
                 >
                   {cat.name}
@@ -889,12 +972,12 @@ export const ArtificialIntelligenceDevelopmentService = () => {
             {techCategories[activeTechTab].items.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[16px] p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center space-y-3 min-h-[130px]"
+                className="bg-white rounded-[20px] p-8 border border-slate-100 shadow-xs hover:shadow-md transition-all flex flex-col items-center justify-center text-center space-y-4 min-h-[160px] group"
               >
-                <div className="w-12 h-12 flex items-center justify-center">
+                <div className="h-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                   {renderTechBrandLogo(item.name)}
                 </div>
-                <h3 className="text-[16px] font-[800] text-slate-900">{item.name}</h3>
+                <h3 className="text-[16px] font-[800] text-slate-900 tracking-tight">{item.name}</h3>
               </div>
             ))}
           </div>

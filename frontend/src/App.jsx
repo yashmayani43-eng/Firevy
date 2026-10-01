@@ -79,6 +79,7 @@ const BitcoinWalletDevelopmentService = lazy(() => import('./components/services
 const MarketplaceAppDevelopmentService = lazy(() => import('./components/services/MarketplaceAppDevelopmentService').then(m => ({ default: m.MarketplaceAppDevelopmentService })));
 const AiPromptEngineeringService = lazy(() => import('./components/services/AiPromptEngineeringService').then(m => ({ default: m.AiPromptEngineeringService })));
 const AdaptiveAiDevelopmentService = lazy(() => import('./components/services/AdaptiveAiDevelopmentService').then(m => ({ default: m.AdaptiveAiDevelopmentService })));
+const EnterpriseAiDevelopmentService = lazy(() => import('./components/services/EnterpriseAiDevelopmentService').then(m => ({ default: m.EnterpriseAiDevelopmentService })));
 
 // Public Layout Wrapper Component
 const PublicLayoutWrapper = () => (
@@ -309,8 +310,8 @@ export function App() {
                 <Route path="/blockchain-development" element={<ServiceDetails />} />
                 <Route path="/services/ai-ionic-app-development" element={<ServiceDetails />} />
                 <Route path="/ai-ionic-app-development" element={<ServiceDetails />} />
-                <Route path="/services/enterprise-ai-development" element={<ServiceDetails />} />
-                <Route path="/enterprise-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/enterprise-ai-development" element={<EnterpriseAiDevelopmentService />} />
+                <Route path="/enterprise-ai-development" element={<EnterpriseAiDevelopmentService />} />
                 <Route path="/services/ai-in-payments-industry" element={<ServiceDetails />} />
                 <Route path="/ai-in-payments-industry" element={<ServiceDetails />} />
                 <Route path="/services/ai-ml-development" element={<ServiceDetails />} />
