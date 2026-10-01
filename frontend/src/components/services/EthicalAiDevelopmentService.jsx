@@ -123,9 +123,7 @@ export const EthicalAiDevelopmentService = () => {
       {/* =========================================================================
           2ND COMPONENT: BRAND LOGOS MARQUEE (TDSG, Astral Pipes, CLP, Adani, Toyota, etc.)
           ========================================================================= */}
-      <section className="py-2 bg-white border-b border-slate-200/70 overflow-hidden">
-        <BrandLogoMarquee />
-      </section>
+      <BrandLogoMarquee />
 
       {/* =========================================================================
           3RD COMPONENT: SHAPE THE FUTURE WITH CUSTOM ETHICAL AI SOFTWARE DEVELOPMENT

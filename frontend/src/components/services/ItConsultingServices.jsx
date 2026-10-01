@@ -833,11 +833,7 @@ export const ItConsultingServices = () => {
       {/* ========================================================================= */}
       {/* BRAND LOGO MARQUEE (BELOW HERO) */}
       {/* ========================================================================= */}
-      <div className="bg-white py-6 border-b border-slate-200/80">
-        <Container>
-          <BrandLogoMarquee />
-        </Container>
-      </div>
+      <BrandLogoMarquee />
 
       {/* ========================================================================= */}
       {/* 2. TOP-NOTCH IT SERVICES AND CONSULTING COMPANY (1:1 SAPPHIRE REFERENCE) */}

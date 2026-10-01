@@ -1,1068 +1,752 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../common/SEO';
 import Container from '../common/Container';
-import PremiumServicesGrid from '../common/PremiumServicesGrid';
-import SapphireSeasonedExpertsSection from './SapphireSeasonedExpertsSection';
-import LeverageExpertiseGridSection from '../common/LeverageExpertiseGridSection';
-import { IndustryFocusedInsightsSection } from './IndustryFocusedInsightsSection';
-import { AboutUsStats } from './AboutUsStats';
-import SectorsThrivingSection from './SectorsThrivingSection';
-import TechStackProficientGrid from '../common/TechStackProficientGrid';
-import TrustMarquee from '../home/TrustMarquee';
+import BrandLogoMarquee from '../common/BrandLogoMarquee';
 import ClutchTopRatedBanner from '../common/ClutchTopRatedBanner';
-import HireDeveloper4Steps from '../common/HireDeveloper4Steps';
-import VideoTestimonialsStory from '../home/VideoTestimonialsStory';
-import EngagementModelsSection from '../home/EngagementModelsSection';
-import SuccessMatrixGrid from '../home/SuccessMatrixGrid';
-import InnovativeSolutionVideo from '../home/InnovativeSolutionVideo';
+import PremiumServicesGrid from '../common/PremiumServicesGrid';
+import { SapphireSeasonedExpertsSection } from './SapphireSeasonedExpertsSection';
+import { IndustryFocusedInsightsSection } from './IndustryFocusedInsightsSection';
+import { TransformativeImpactSection } from './TransformativeImpactSection';
+import AboutUsStats from './AboutUsStats';
+import { SectorsThrivingSection } from './SectorsThrivingSection';
+import SuccessStoriesSection from '../common/SuccessStoriesSection';
+import MobileAppProficientTechStackSection from './MobileAppProficientTechStackSection';
+import HybridAppExpertiseServices from './HybridAppExpertiseServices';
+import AndroidHiringModels from './AndroidHiringModels';
+import AndroidComparativeAnalysis from './AndroidComparativeAnalysis';
+import InnovativeSolutionsVideoSection from './InnovativeSolutionsVideoSection';
 import ProcessWeFollow from '../common/ProcessWeFollow';
-import ClientReviewsDarkSection from '../home/ClientReviewsDarkSection';
-import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
+import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
+import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
+import SuccessMatrix from '../common/SuccessMatrix';
+import WhatOurClientsSaySection from './WhatOurClientsSaySection';
+import FeaturedInBrandsSection from './FeaturedInBrandsSection';
+import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
-import SocialMediaSection from '../common/SocialMediaSection';
-import RecentBlogsSection from '../home/RecentBlogsSection';
+import MobileAppRecentBlogsSection from './MobileAppRecentBlogsSection';
 import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
-import ConversionCalloutBanner from '../home/ConversionCalloutBanner';
-import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
+import IWatchChallengeCtaBanner from './IWatchChallengeCtaBanner';
 import {
-  Clock, Check, Quote, Trophy, Award, Star, ArrowRight, PieChart,
-  LineChart, Globe, Headphones, Handshake, UserCheck, ShieldCheck,
-  Lightbulb, Users, Lock, Sliders, MessageSquare, Flag, RotateCcw,
-  ShoppingBag, Server, Code, Layout, CheckSquare, Wrench, Target,
-  Key, CheckCircle2, RefreshCw, TrendingUp, BarChart2, DollarSign,
-  Coins, Zap
+  Sparkles,
+  Layers,
+  Cpu,
+  Smartphone,
+  CheckCircle2,
+  ArrowRight,
+  ShieldCheck,
+  Zap,
+  Box,
+  Compass,
+  Monitor,
+  Gamepad2,
+  Wrench,
+  HelpCircle,
+  Code,
+  Database,
+  Server,
+  Cloud,
+  Layout,
+  Globe
 } from 'lucide-react';
 
 export const FullStackDevelopmentService = () => {
-  const [responsibilityTab, setResponsibilityTab] = useState('sapphire');
+  // Auto-scroll Carousel State for Cutting-Edge Technologies (Section 8)
+  const [techCarouselIndex, setTechCarouselIndex] = useState(0);
+  const [isTechHovered, setIsTechHovered] = useState(false);
+  const techScrollContainerRef = useRef(null);
 
-  const fullStackFaqs = [
+  const cuttingEdgeTechList = [
+    {
+      title: 'Modern Frontend Stacks',
+      desc: 'Build reactive, responsive user interfaces utilizing React.js, Next.js, Vue.js, Angular, and Tailwind CSS with sub-second page loads.',
+      icon: (
+        <svg className="w-9 h-9 text-[#0084D1]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="6" y="8" width="36" height="26" rx="4" />
+          <path d="M16 40h16M24 34v6" />
+          <path d="M14 18l4 4-4 4M22 26h6" />
+        </svg>
+      )
+    },
+    {
+      title: 'Scalable Backend Runtimes',
+      desc: 'Engineer resilient, event-driven server logic and microservices using Node.js, Express, Python (FastAPI/Django), Java Spring, and Go.',
+      icon: (
+        <svg className="w-9 h-9 text-[#0084D1]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="8" y="8" width="32" height="12" rx="3" />
+          <rect x="8" y="28" width="32" height="12" rx="3" />
+          <circle cx="14" cy="14" r="1.5" fill="#0084D1" />
+          <circle cx="20" cy="14" r="1.5" fill="#0084D1" />
+          <circle cx="14" cy="34" r="1.5" fill="#0084D1" />
+          <circle cx="20" cy="34" r="1.5" fill="#0084D1" />
+          <path d="M24 20v8" />
+        </svg>
+      )
+    },
+    {
+      title: 'Database & Distributed Cache',
+      desc: 'Architect high-throughput persistent storage and caching layers with PostgreSQL, MySQL, MongoDB, DynamoDB, and Redis.',
+      icon: (
+        <svg className="w-9 h-9 text-[#0084D1]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <ellipse cx="24" cy="12" rx="16" ry="6" />
+          <path d="M8 12v12c0 3.3 7.2 6 16 6s16-2.7 16-6V12" />
+          <path d="M8 24v12c0 3.3 7.2 6 16 6s16-2.7 16-6V24" />
+        </svg>
+      )
+    },
+    {
+      title: 'Cloud Native & DevOps',
+      desc: 'Deploy resilient cloud architectures on AWS, Azure, and GCP with Docker containerization, Kubernetes orchestration, and CI/CD pipelines.',
+      icon: (
+        <svg className="w-9 h-9 text-[#0084D1]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 28a8 8 0 0 1 1.5-15.8A12 12 0 0 1 36 18a8 8 0 0 1-2 15.7H12z" />
+          <polyline points="20 26 24 22 28 26" />
+          <line x1="24" y1="22" x2="24" y2="34" />
+        </svg>
+      )
+    },
+    {
+      title: 'RESTful & GraphQL APIs',
+      desc: 'Design high-performance API gateways, decoupled service layers, gRPC communication protocols, and bidirectional WebSockets.',
+      icon: (
+        <svg className="w-9 h-9 text-[#0084D1]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="24" r="6" />
+          <circle cx="36" cy="14" r="6" />
+          <circle cx="36" cy="34" r="6" />
+          <line x1="18" y1="21" x2="30" y2="16" />
+          <line x1="18" y1="27" x2="30" y2="32" />
+        </svg>
+      )
+    },
+    {
+      title: 'Microservices & Event Streams',
+      desc: 'Break monoliths into independent, highly scalable microservices orchestrated via Apache Kafka, RabbitMQ, and AWS SNS/SQS.',
+      icon: (
+        <svg className="w-9 h-9 text-[#0084D1]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="6" y="6" width="14" height="14" rx="3" />
+          <rect x="28" y="6" width="14" height="14" rx="3" />
+          <rect x="17" y="28" width="14" height="14" rx="3" />
+          <path d="M13 20v3a5 5 0 0 0 5 5h1M35 20v3a5 5 0 0 1-5 5h-1" />
+        </svg>
+      )
+    },
+    {
+      title: 'Cross-Platform Mobile Stacks',
+      desc: 'Synchronize web and mobile experiences with React Native, Flutter, and native bridges coupled with shared backend systems.',
+      icon: (
+        <svg className="w-9 h-9 text-[#0084D1]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="12" y="6" width="24" height="36" rx="5" />
+          <line x1="20" y1="10" x2="28" y2="10" />
+          <circle cx="24" cy="36" r="2" fill="#0084D1" />
+        </svg>
+      )
+    },
+    {
+      title: 'DevSecOps & Enterprise Security',
+      desc: 'Enforce enterprise-grade data security with OAuth2, JWT, RBAC authorization, automated SAST/DAST audits, and zero-trust policies.',
+      icon: (
+        <svg className="w-9 h-9 text-[#0084D1]" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M24 6l14 6v12c0 10-6.5 17-14 20-7.5-3-14-10-14-20V12l14-6z" />
+          <polyline points="18 24 22 28 30 20" />
+        </svg>
+      )
+    }
+  ];
+
+  // Auto-scroll loop for Cutting Edge Tech Carousel
+  useEffect(() => {
+    if (isTechHovered) return;
+    const interval = setInterval(() => {
+      if (techScrollContainerRef.current) {
+        const container = techScrollContainerRef.current;
+        const cardWidth = 320;
+        const gap = 20;
+        const scrollAmount = cardWidth + gap;
+
+        if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 30) {
+          container.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isTechHovered]);
+
+  // Section 16: Comprehensive Suite of Full Stack Development Services Cards
+  const fullStackServicesSuite = [
+    {
+      title: 'Full Stack Web App Development',
+      desc: 'By considering modern architectural patterns and user-centric frontend designs backed by high-throughput server runtimes, we help you create intuitive, scalable, and high-performance web applications.',
+      features: ['Single Page (SPA) & SSR Apps', 'Responsive Cross-Browser UI', 'RESTful & GraphQL Connectors', 'Enterprise Performance Optimization']
+    },
+    {
+      title: 'Full Stack MVP Development',
+      desc: 'By developing an end-to-end full stack MVP with vital frontend interactions and robust backend logic, we validate your product thesis quickly and let you test real user traction before committing to enterprise scaling.',
+      features: ['Rapid Prototyping & Wireframing', 'Core Feature Validation', 'Agile 2-4 Week MVP Delivery', 'Investor-Ready Architecture']
+    },
+    {
+      title: 'Custom Full Stack Software Development',
+      desc: 'Whether you are developing an enterprise SaaS portal, an omnichannel digital platform, or a workflow automation tool, we turn your unique business logic into secure, resilient full stack software.',
+      features: ['Tailored System Architecture', 'Multi-Tier Microservices', 'Custom Data Processing Engines', 'Seamless Third-Party API Integrations']
+    },
+    {
+      title: 'Startup Full Stack Engineering',
+      desc: 'Our world-class full stack solutions empower disruptive startups to launch scalable web and mobile platforms rapidly with cost-effective modern stacks such as MERN, MEAN, Next.js, and Python.',
+      features: ['Lean Architecture Sprints', 'High-Speed Feature Rollouts', 'Elastic Cloud Scaling', 'Fast Go-To-Market Execution']
+    },
+    {
+      title: 'Enterprise Full Stack Integration',
+      desc: 'Modernize legacy monolithic systems by refactoring them into decoupled microservices, cloud-native deployments, and seamless integrations with existing ERP, CRM, and corporate databases.',
+      features: ['Legacy Monolith Modernization', 'Zero-Downtime Data Migration', 'Hybrid Cloud Deployment', 'Enterprise ERP/CRM Connectors']
+    },
+    {
+      title: 'Cloud-Native & DevOps Support',
+      desc: 'To guarantee maximum uptime, robust horizontal scalability, and zero friction in deployment, we configure automated CI/CD pipelines, containerization, and 24/7 observability across AWS and Azure.',
+      features: ['Docker & Kubernetes Pipelines', 'Continuous Integration / Delivery', 'Real-Time Logging & APM', 'Automated Security & Backup Guardrails']
+    }
+  ];
+
+  // Section 18: Expertise of Our Full Stack Developers Cards
+  const fullStackExpertiseCards = [
     {
       id: 1,
-      question: "1. Why Full Stack Development?",
-      answer: "Full Stack development allows a single engineering team to handle both frontend client interfaces (React, Angular, Vue) and backend database/server systems (Node.js, Python, Java, .NET, PostgreSQL, MongoDB). This ensures seamless integration, reduced architectural friction, and significantly lower overhead costs."
+      title: 'Frontend UI/UX Engineering',
+      desc: 'We leverage modern client technologies such as React.js, Next.js, Vue.js, Angular, and Tailwind CSS to craft pixel-perfect, responsive user interfaces that deliver exceptional user satisfaction.'
     },
     {
       id: 2,
-      question: "2. Is Full Stack Architecture Scalable?",
-      answer: "Yes, our Full Stack development utilizes modern microservices architecture, cloud containerization (Docker/Kubernetes), and serverless execution models to ensure your application horizontally scales with rising enterprise demand."
+      title: 'Backend & Server-Side Systems',
+      desc: 'Our seasoned backend engineers construct resilient, high-throughput server logic, event-driven architectures, and microservices utilizing Node.js, Python, Java, Go, and .NET.'
     },
     {
       id: 3,
-      question: "3. Is Full Stack Development an economically viable option?",
-      answer: "Hiring dedicated Full Stack developers reduces headcount requirements compared to hiring isolated frontend, backend, and database engineers. It streamlines sprint workflows, speeds up MVP delivery, and minimizes time-to-market."
+      title: 'Database Architecture & Management',
+      desc: 'We design, normalize, and optimize relational and NoSQL databases—including PostgreSQL, MySQL, MongoDB, DynamoDB, and Redis—ensuring high availability and lightning-fast query execution.'
     },
     {
       id: 4,
-      question: "4. Why should I hire Full Stack developers from Sapphire Solutions / Firevy.co?",
-      answer: "Our Full Stack developers possess 23+ years of combined experience across web, mobile, and cloud environments. With 320+ 5-star Clutch reviews, transparent daily Agile updates, zero onboarding delay, and strict NDA compliance, we guarantee production-ready results."
+      title: 'API & Microservices Engineering',
+      desc: 'Using RESTful conventions, GraphQL schemas, and gRPC protocols, we create secure, decoupled service layers that seamlessly bridge client apps, internal systems, and third-party partner APIs.'
     },
     {
       id: 5,
-      question: "5. What are the key benefits of Full Stack Development for web & mobile apps?",
-      answer: "Key benefits include unified code ownership, fast prototyping, seamless API integration, comprehensive quality control, rapid troubleshooting, and easy cloud deployment across AWS, Azure, and Google Cloud."
+      title: 'DevOps & Cloud Infrastructure',
+      desc: 'We architect cloud environments across AWS, Azure, and Google Cloud with Docker, Kubernetes, and automated CI/CD pipelines to ensure continuous delivery with zero downtime.'
     },
     {
       id: 6,
-      question: "6. Do your Full Stack developers offer complete lifecycle project support?",
-      answer: "Yes, we manage the entire product development lifecycle—from discovery, UI/UX prototyping, and system architecture to frontend/backend coding, automated QA, DevOps CI/CD pipelines, and 24/7 post-launch maintenance."
+      title: 'Full Stack Maintenance & Upgrades',
+      desc: 'Our dedicated maintenance engineering squad regularly resolves bugs, performs security patching, updates core libraries and dependencies, and optimizes database queries for ongoing stability.'
+    }
+  ];
+
+  // Section 29: Full Stack Development FAQs
+  const fullStackFaqs = [
+    {
+      question: 'What is full stack development and what technologies do you specialize in?',
+      answer: 'Full stack development encompasses both frontend (client-side) and backend (server-side, database, and infrastructure) engineering. At Firevy, our full stack engineers specialize in modern stacks including MERN (MongoDB, Express, React, Node.js), MEAN, Next.js, Python (Django/FastAPI), Java Spring Boot, Golang, PostgreSQL, MySQL, Docker, Kubernetes, and AWS/Azure cloud environments.'
     },
     {
-      id: 7,
-      question: "7. Can I hire remote Full Stack developers aligned with my timezone?",
-      answer: "Yes! We provide flexible engagement models—hourly ($21/hr), part-time (80 hrs/mo), or dedicated monthly retainers fully synchronized with your preferred timezone and work hours."
+      question: 'What is the cost of developing a full stack application?',
+      answer: 'The investment for full stack development depends on project scope, architectural complexity, feature sets, third-party integrations, and performance requirements. Developing an end-to-end full stack MVP typically ranges between $25,000 to $50,000. Enterprise-grade platforms featuring multi-tenant SaaS architectures, distributed microservices, and complex compliance layers can scale higher based on tailored specifications.'
     },
     {
-      id: 8,
-      question: "8. What types of applications can be built using Full Stack frameworks?",
-      answer: "We build enterprise SaaS portals, eCommerce platforms, real-time analytics dashboards, healthcare systems, fintech solutions, ERP/CRM software, mobile apps, and high-throughput REST/GraphQL APIs."
+      question: 'Why should I hire full stack developers instead of separate frontend and backend specialists?',
+      answer: 'Full stack developers understand how all tiers of an application communicate—from browser rendering to database query execution. This holistic understanding eliminates handoff friction between teams, accelerates prototyping and sprint delivery, reduces overall engineering overhead, and ensures unified code quality across your stack.'
+    },
+    {
+      question: 'How do you guarantee the security and scalability of full stack software?',
+      answer: 'We implement industry-standard security practices, including OWASP Top 10 mitigation, OAuth2/JWT authentication, role-based access control (RBAC), end-to-end encryption in transit (TLS 1.3) and at rest, and automated dependency vulnerability scans. For scalability, we design stateless microservices, database indexing and connection pooling, Redis caching, and autoscaling cloud containers managed via Docker and Kubernetes.'
+    },
+    {
+      question: 'Can your full stack developers build mobile apps as well?',
+      answer: 'Yes. Our full stack team has extensive experience engineering cross-platform mobile apps with React Native and Flutter, linking them with unified backend APIs, serverless push notification services, and real-time database synchronization.'
+    },
+    {
+      question: 'What engagement models are available for hiring full stack developers?',
+      answer: 'We offer versatile engagement models tailored to your roadmap: Dedicated Engineering Pods, Hourly T & M (starting at $21/hr), Fixed-Price Milestone Contracts, and Resource Augmentation. All models include transparent Agile sprints, daily Slack/GitHub collaboration, and flexible timezone overlap.'
+    },
+    {
+      question: 'How quickly can your full stack developers onboard into our existing project?',
+      answer: 'Our pre-vetted senior full stack engineers can onboard and begin contributing to your codebase, daily standups, and Jira/Linear boards within 48 to 72 hours following the initial discovery call.'
+    },
+    {
+      question: 'What industries do you serve with Custom Full Stack Development Services?',
+      answer: 'Our full stack engineering solutions power high-impact platforms in FinTech, Healthcare, E-Commerce & Retail, SaaS & Enterprise B2B, Logistics & Supply Chain, Real Estate, and EdTech. We adhere strictly to industry standards such as HIPAA, SOC 2, and GDPR.'
     }
   ];
 
   return (
-    <>
+    <div className="w-full bg-white text-slate-800 font-sans antialiased overflow-x-hidden">
+      {/* Dynamic SEO Meta Information */}
       <SEO
-        title="Hire Full Stack Developers | Dedicated Full Stack Engineers Firevy.co"
-        description="Hire dedicated Full Stack developers from Firevy.co starting at $21/hr. Senior engineers skilled in React, Node.js, Angular, Python, Java, .NET, and SQL/NoSQL databases."
+        title="Full Stack Development Services in USA | Firevy.co"
+        description="By combining modern frontend frameworks with robust backend architectures and cloud DevOps pipelines, we build high-performance full stack applications. Our team of dedicated full stack developers brings your vision to life."
+        canonical="https://firevy.co/services/full-stack-development"
       />
 
-      {/* 1. HERO SECTION */}
-      <section className="py-12 sm:py-16 bg-[#F8FAFC] border-b border-slate-200/80 text-slate-900 font-sans relative overflow-hidden">
+      {/* ========================================================================= */}
+      {/* 1. HERO SECTION (1:1 Reference Match)                                     */}
+      {/* ========================================================================= */}
+      <section className="relative pt-10 pb-14 sm:pt-14 sm:pb-16 lg:pt-16 lg:pb-20 bg-[#EFF6FC] overflow-hidden">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Text + Stats + Teal CTA Box */}
-            <div className="lg:col-span-7 text-left">
-              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Hire Full Stack Developers
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 space-y-6 text-left">
+              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#111827] tracking-tight leading-[1.2] font-sans">
+                Full Stack Development<br className="hidden sm:inline" /> Services in USA
               </h1>
-              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed mt-4 max-w-2xl font-sans">
-                Full Stack development has amassed a large amount of popularity due to its ability to serve as a flexible blend of cutting-edge frontend and backend technologies for web and mobile application development. You can Hire dedicated Full Stack developers to develop productive applications.
+
+              <p className="text-[15px] sm:text-[15.5px] text-[#4B5563] leading-[1.65] max-w-2xl font-normal">
+                By combining cutting-edge frontend interfaces with resilient backend architectures and cloud DevOps pipelines, we build high-performance, enterprise-grade full stack applications. Our dedicated full stack engineers bring your vision to life.
               </p>
 
-              {/* 4 Stat Counters Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-8 pt-2">
+              {/* 4 Stats matching Reference 100% (unboxed, bold blue text + label) */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-2">
                 <div>
-                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">200+</div>
-                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
-                    Dedicated<br />Developers
-                  </div>
+                  <div className="text-3xl lg:text-[36px] font-extrabold text-[#005F96] tracking-tight">80+</div>
+                  <div className="text-xs sm:text-[13px] font-semibold text-[#1F2430] mt-1.5 leading-[1.3]">Full Stack<br />Developers</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">20+</div>
-                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
-                    Fortunes 500<br />Companies
-                  </div>
+                  <div className="text-3xl lg:text-[36px] font-extrabold text-[#005F96] tracking-tight">20+</div>
+                  <div className="text-xs sm:text-[13px] font-semibold text-[#1F2430] mt-1.5 leading-[1.3]">Fortunes 500<br />Companies</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">2800+</div>
-                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
-                    Project<br />Completed
-                  </div>
+                  <div className="text-3xl lg:text-[36px] font-extrabold text-[#005F96] tracking-tight">800+</div>
+                  <div className="text-xs sm:text-[13px] font-semibold text-[#1F2430] mt-1.5 leading-[1.3]">Project Completed in<br />Web & Mobile</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] font-sans">320+</div>
-                  <div className="text-xs sm:text-[13px] font-[600] text-slate-700 leading-tight mt-1 font-sans">
-                    5-Star Clutch<br />Reviews
-                  </div>
+                  <div className="text-3xl lg:text-[36px] font-extrabold text-[#005F96] tracking-tight">320+</div>
+                  <div className="text-xs sm:text-[13px] font-semibold text-[#1F2430] mt-1.5 leading-[1.3]">5-Star Clutch Reviews</div>
                 </div>
               </div>
 
-              {/* Teal CTA Container */}
-              <div className="mt-8">
-                <div className="text-xs font-[700] text-[#006E90] mb-2 font-sans">
-                  Get Top Talent Work for you At
-                </div>
-                <div className="p-2 bg-[#0080A0] rounded-2xl shadow-lg inline-flex items-center justify-between space-x-4 max-w-md w-full border border-cyan-700/20">
-                  <div className="flex items-center space-x-2.5 pl-3">
-                    <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-white">
-                      <Clock className="w-4 h-4 text-white" />
-                    </div>
-                    <span className="text-white font-[900] text-lg sm:text-xl tracking-tight font-sans">
-                      $21/Hourly*
-                    </span>
-                  </div>
-                  <Link
-                    to="/contact"
-                    className="bg-white hover:bg-slate-50 text-[#0080A0] font-[900] text-sm px-6 py-2.5 rounded-xl transition-all shadow-sm shrink-0 cursor-pointer font-sans"
-                  >
-                    Hire Team
-                  </Link>
-                </div>
+              {/* CTA Button matching Reference */}
+              <div className="pt-2">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-[5px] bg-[#005F96] hover:bg-[#004d7c] text-white text-[15px] font-semibold transition-all duration-200 shadow-none space-x-2"
+                >
+                  <span>Discuss Your Project</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
               </div>
             </div>
 
-            {/* Right Column: Custom Vector Illustration */}
-            <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[460px] aspect-[4/3] flex items-center justify-center">
-                <svg className="absolute inset-0 w-full h-full text-slate-200/60 pointer-events-none" viewBox="0 0 400 300">
-                  <circle cx="80" cy="60" r="30" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
-                  <circle cx="340" cy="220" r="45" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
-                  <path d="M 50 150 Q 200 280 350 150" fill="none" stroke="#0080A0" strokeWidth="1.5" opacity="0.15" />
-                </svg>
-
-                <div className="w-full bg-white rounded-2xl border-2 border-slate-200/90 shadow-2xl overflow-hidden relative z-10 p-4 sm:p-5">
-                  <div className="flex items-center space-x-1.5 pb-3 border-b border-slate-100">
-                    <div className="w-3 h-3 rounded-full bg-rose-500" />
-                    <div className="w-3 h-3 rounded-full bg-amber-400" />
-                    <div className="w-3 h-3 rounded-full bg-emerald-500" />
-                    <div className="ml-4 h-4 bg-slate-100 rounded-md w-36" />
-                  </div>
-
-                  <div className="py-5 space-y-3 font-mono text-[11px] text-slate-400">
-                    <div className="flex space-x-2">
-                      <span className="text-purple-600 font-bold">import</span>
-                      <span className="text-slate-800 font-semibold">{`{ FullStackApp }`}</span>
-                      <span className="text-purple-600 font-bold">from</span>
-                      <span className="text-emerald-600">'@firevy/core'</span>;
-                    </div>
-                    <div className="flex space-x-2">
-                      <span className="text-purple-600 font-bold">import</span>
-                      <span className="text-slate-800 font-semibold">React, Node, DB</span>
-                      <span className="text-purple-600 font-bold">from</span>
-                      <span className="text-cyan-600">'@fullstack/suite'</span>;
-                    </div>
-                    <div className="flex space-x-2">
-                      <span className="text-purple-600 font-bold">const</span>
-                      <span className="text-blue-600 font-bold">app</span> = <span className="text-slate-800">FullStackApp()</span>;
-                    </div>
-                    <div className="h-2 bg-slate-100 rounded w-3/4 my-2" />
-                    <div className="h-2 bg-slate-100 rounded w-1/2" />
-                    <div className="h-2 bg-slate-100 rounded w-5/6" />
-                  </div>
-
-                  <div className="w-20 h-4 bg-slate-200 rounded-b-md mx-auto -mb-5" />
-                </div>
-
-                <div className="absolute -top-3 -right-3 z-20 bg-white border border-cyan-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
-                  <div className="w-9 h-9 rounded-xl bg-[#00D8FF] text-slate-900 flex items-center justify-center font-black text-sm shadow-md font-sans">
-                    ⚛️
-                  </div>
-                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">Frontend</span>
-                </div>
-
-                <div className="absolute top-1/3 -left-5 z-20 bg-[#111827] text-white p-2.5 sm:p-3 rounded-2xl shadow-xl flex items-center space-x-2 border border-slate-800">
-                  <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-black text-xs font-mono">
-                    FS
-                  </div>
-                  <span className="text-xs font-bold text-white pr-1 font-sans">Backend</span>
-                </div>
-
-                <div className="absolute -bottom-3 left-4 z-20 bg-white border border-emerald-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
-                  <div className="w-9 h-9 rounded-xl bg-[#47A248] text-white flex items-center justify-center font-black text-sm shadow-md font-sans">
-                    🍃
-                  </div>
-                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">Database</span>
-                </div>
-
-                <div className="absolute -bottom-3 -right-3 z-20 bg-white border border-emerald-100 p-2 sm:p-2.5 rounded-2xl shadow-xl flex items-center space-x-2">
-                  <div className="w-9 h-9 rounded-xl bg-[#339933] text-white flex items-center justify-center font-black text-xs font-mono shadow-md">
-                    JS
-                  </div>
-                  <span className="text-xs font-bold text-slate-800 pr-1 font-sans">Node.js</span>
-                </div>
+            {/* Right Hero Illustration matching Reference */}
+            <div className="lg:col-span-5 flex justify-center lg:justify-end items-center">
+              <div className="relative w-full max-w-[540px]">
+                <img
+                  src="/images/software_dev_laptop_hero.svg"
+                  alt="Full Stack Development Services in USA"
+                  className="w-full h-auto object-contain"
+                  loading="eager"
+                />
               </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 2. CLIENT LOGOS MARQUEE BAR */}
-      <TrustMarquee />
+      {/* ========================================================================= */}
+      {/* 2. BRAND LOGO MARQUEE                                                     */}
+      {/* ========================================================================= */}
+      <BrandLogoMarquee companyName="Firevy.co" />
 
-      {/* 3. SECTION 1: Best Full Stack Developers Available With Us */}
-      <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
+      {/* ========================================================================= */}
+      {/* 3. OVERVIEW 1: Full Stack Development Services (Image Left + Text Right)  */}
+      {/* ========================================================================= */}
+      <section className="py-12 sm:py-16 bg-white">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Vector Illustration */}
-            <div className="lg:col-span-6 flex justify-center">
-              <div className="relative w-full max-w-[480px] p-4 flex items-center justify-center">
-                <div className="w-full bg-slate-900 rounded-2xl p-3 shadow-2xl border border-slate-700 relative">
-                  <div className="bg-[#EBF5FB] rounded-xl p-4 min-h-[220px] flex flex-col justify-between relative overflow-hidden border border-cyan-200">
-                    <div className="space-y-2">
-                      <div className="h-2.5 bg-cyan-600/30 rounded w-2/3" />
-                      <div className="h-2 bg-slate-300 rounded w-1/2" />
-                      <div className="h-2 bg-slate-300 rounded w-4/5" />
-                      <div className="h-2 bg-slate-300 rounded w-3/5" />
-                    </div>
-
-                    <div className="absolute right-6 top-6 w-28 h-44 bg-slate-900 rounded-xl p-1.5 shadow-2xl border border-cyan-400/40 z-10 flex flex-col justify-between">
-                      <div className="bg-sky-500 rounded-lg h-full p-2 flex flex-col items-center justify-center text-white">
-                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center mb-1">
-                          ⚙️
-                        </div>
-                        <span className="text-[9px] font-black tracking-wider uppercase">App Ready</span>
-                      </div>
-                    </div>
-
-                    <div className="absolute top-2 left-28 bg-[#339933] text-white text-[9px] font-bold px-2 py-0.5 rounded-full shadow">
-                      node.js
-                    </div>
-
-                    <div className="absolute top-10 right-2 bg-blue-600 text-white text-[9px] font-black px-1.5 py-0.5 rounded shadow">
-                      JS
-                    </div>
-
-                    <div className="absolute bottom-3 left-32 bg-[#00D8FF] text-slate-900 text-[10px] font-black px-2 py-0.5 rounded-md shadow">
-                      React
-                    </div>
-                  </div>
-                  <div className="w-28 h-3 bg-slate-700 rounded-b-md mx-auto mt-1" />
-                </div>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            {/* Left Image */}
+            <div className="lg:col-span-5 flex justify-center order-2 lg:order-1">
+              <div className="w-full max-w-[450px]">
+                <img
+                  src="/images/software_dev_desk_brief.svg"
+                  alt="Full Stack Development Services"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
               </div>
             </div>
 
-            {/* Right Column: Title + Paragraph */}
-            <div className="lg:col-span-6 text-left space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Best Full Stack Developers Available With Us
+            {/* Right Text */}
+            <div className="lg:col-span-7 space-y-4 text-left order-1 lg:order-2">
+              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#0B0F19] tracking-tight leading-snug">
+                Full Stack Development Services
               </h2>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans font-normal">
-                All of the Full Stack components (Frontend, Backend, Databases, Cloud & DevOps) are expertly handled by our full-stack developers. Hire full stack developers to create mobile and web applications that are ready for the future. We provide a range of hiring models so you can select the most appropriate ones for your project.
+              <p className="text-sm sm:text-[15px] text-[#475569] leading-relaxed">
+                It has become clear that modern digital products require more than isolated frontend designs or standalone server scripts. Full stack technology has become the core driving force behind the success of SaaS platforms, healthcare systems, fintech enterprises, ecommerce leaders, and high-growth startups by harmonizing complex frontend interactions with high-throughput backend services.
+              </p>
+              <p className="text-sm sm:text-[15px] text-[#475569] leading-relaxed">
+                As a Best Full Stack Development Company, our Full Stack Web and Mobile App Development Experts will identify the most beneficial architectural approach to satisfy your company's requirements since they have expertise across multiple domains and an in-depth understanding of cutting-edge full stack engineering technology.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 4. SECTION 2: Our Flexible Hiring Models */}
-      <section className="py-16 bg-[#F8FAFC] border-b border-slate-200/80 text-slate-900 font-sans">
+      {/* ========================================================================= */}
+      {/* 4. OVERVIEW 2: Brief About Full Stack Development (Text Left + Image Right)*/}
+      {/* ========================================================================= */}
+      <section className="py-12 sm:py-16 bg-[#F8FBFE]">
         <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight font-sans">
-              Our Flexible Hiring Models: Find the Perfect Fit For Your Project
-            </h2>
-            <p className="text-sm sm:text-base text-slate-600 font-normal mt-2.5 font-sans">
-              Hire Full Stack Developers from Firevy.co Starts from,
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Card 1: Quarterly */}
-            <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between text-center relative">
-              <div>
-                <div className="w-12 h-12 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-[#006E90] mx-auto mb-4">
-                  <PieChart className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-[800] text-slate-900 font-sans mb-1">Quarterly</h3>
-                <span className="text-xs font-bold text-slate-500 block mb-2 font-sans">Starting From</span>
-                <div className="text-2xl sm:text-3xl font-[900] text-slate-900 mb-6 font-sans">
-                  $ 7500.00/ Month
-                </div>
-
-                <ul className="space-y-3 text-left text-xs sm:text-[13px] text-slate-700 font-sans mb-8">
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>Billing cycle : Monthly</span>
-                  </li>
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>Project Trackers : Daily Reports, Basecamp, Jira, Redmine etc.</span>
-                  </li>
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>4 hours a day, 5 days a week</span>
-                  </li>
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>Minimum: 2 months</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <Link
-                  to="/contact"
-                  className="w-full py-3 rounded-xl bg-[#006E90] hover:bg-[#005573] text-white font-[800] text-sm block transition-all shadow-md font-sans mb-3"
-                >
-                  Hire Now
-                </Link>
-                <div className="bg-sky-50/80 rounded-lg py-1.5 text-[11px] text-[#006E90] font-bold font-sans">
-                  We sign NDA for all our projects.
-                </div>
-              </div>
-            </div>
-
-            {/* Card 2: Yearly */}
-            <div className="bg-white rounded-3xl p-8 border-4 border-[#006E90] shadow-2xl transition-all duration-300 flex flex-col justify-between text-center relative transform md:-translate-y-2">
-              <div>
-                <span className="text-[11px] font-extrabold text-[#006E90] uppercase tracking-wider block mb-1 font-sans">
-                  Save Up To 20%
-                </span>
-                <div className="w-12 h-12 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-[#006E90] mx-auto mb-3">
-                  <Award className="w-6 h-6" />
-                </div>
-                <div className="flex items-center justify-center space-x-2 mb-1">
-                  <h3 className="text-xl font-[800] text-slate-900 font-sans">Yearly</h3>
-                  <span className="bg-sky-100 text-[#006E90] text-[10px] font-black px-2 py-0.5 rounded-full uppercase font-sans">
-                    Best Deal
-                  </span>
-                </div>
-                <span className="text-xs font-bold text-slate-500 block mb-2 font-sans">Starting From</span>
-                <div className="text-2xl sm:text-3xl font-[900] text-[#006E90] mb-6 font-sans">
-                  $25000.0
-                </div>
-
-                <ul className="space-y-3 text-left text-xs sm:text-[13px] text-slate-700 font-sans mb-8">
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>Billing cycle : Monthly</span>
-                  </li>
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>Project Trackers : Daily Reports, Basecamp, Jira, Redmine etc.</span>
-                  </li>
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>4 hours a day, 5 days a week</span>
-                  </li>
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>Minimum: 2 months</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <Link
-                  to="/contact"
-                  className="w-full py-3 rounded-xl bg-[#006E90] hover:bg-[#005573] text-white font-[800] text-sm block transition-all shadow-md font-sans mb-3"
-                >
-                  Hire Now
-                </Link>
-                <div className="bg-sky-50/80 rounded-lg py-1.5 text-[11px] text-[#006E90] font-bold font-sans">
-                  We sign NDA for all our projects.
-                </div>
-              </div>
-            </div>
-
-            {/* Card 3: Part-time Developer */}
-            <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between text-center relative">
-              <div>
-                <div className="w-12 h-12 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-[#006E90] mx-auto mb-4">
-                  <Clock className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-[800] text-slate-900 font-sans mb-1">Part-time Developer</h3>
-                <span className="text-xs font-bold text-slate-500 block mb-2 font-sans">4 hours a day, 5 days a week</span>
-                <div className="text-2xl sm:text-3xl font-[900] text-slate-900 mb-6 font-sans">
-                  80 hours/month
-                </div>
-
-                <ul className="space-y-3 text-left text-xs sm:text-[13px] text-slate-700 font-sans mb-8">
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>Billing cycle : Monthly</span>
-                  </li>
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>Project Trackers : Daily Reports, Basecamp, Jira, Redmine etc.</span>
-                  </li>
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>4 hours a day, 5 days a week</span>
-                  </li>
-                  <li className="flex items-start space-x-2.5">
-                    <Check className="w-4 h-4 text-[#006E90] shrink-0 mt-0.5" />
-                    <span>Minimum: 2 months</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <Link
-                  to="/contact"
-                  className="w-full py-3 rounded-xl bg-[#006E90] hover:bg-[#005573] text-white font-[800] text-sm block transition-all shadow-md font-sans mb-3"
-                >
-                  Hire Now
-                </Link>
-                <div className="bg-sky-50/80 rounded-lg py-1.5 text-[11px] text-[#006E90] font-bold font-sans">
-                  We sign NDA for all our projects.
-                </div>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* 5. SECTION 3: Developers Comparison Table */}
-      <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
-        <Container>
-          <div className="text-center max-w-4xl mx-auto mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight font-sans">
-              Hire Dedicated Developers To Empower Your Business with our Development Proficiency
-            </h2>
-            <p className="text-sm sm:text-base text-slate-600 font-normal mt-2.5 font-sans">
-              Hire Full Stack Developers to meet your business perks by leveraging our technical elegance.
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto overflow-x-auto">
-            <table className="w-full text-left border-collapse rounded-2xl overflow-hidden shadow-lg border border-slate-200">
-              <thead>
-                <tr className="bg-[#005F96] text-white font-sans text-sm sm:text-base font-bold">
-                  <th className="p-4 sm:p-5 border-r border-cyan-700/50 w-1/4">Range of Developers</th>
-                  <th className="p-4 sm:p-5 border-r border-cyan-700/50 w-1/4">Junior Developers</th>
-                  <th className="p-4 sm:p-5 border-r border-cyan-700/50 w-1/4">Mid-Level Developers</th>
-                  <th className="p-4 sm:p-5 w-1/4">Senior Developers</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-200 text-xs sm:text-sm font-sans text-slate-800">
-                <tr className="bg-white hover:bg-slate-50 transition-colors">
-                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Approx Cost</td>
-                  <td className="p-4 sm:p-5 font-bold text-slate-900 border-r border-slate-200">$17</td>
-                  <td className="p-4 sm:p-5 font-bold text-slate-900 border-r border-slate-200">$22</td>
-                  <td className="p-4 sm:p-5 font-bold text-slate-900">$29</td>
-                </tr>
-                <tr className="bg-slate-50/60 hover:bg-slate-100 transition-colors">
-                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Years of Experience</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">1-3 Years</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">3-5 Years</td>
-                  <td className="p-4 sm:p-5">5+ Years</td>
-                </tr>
-                <tr className="bg-white hover:bg-slate-50 transition-colors">
-                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Project Manager</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
-                  <td className="p-4 sm:p-5">Yes</td>
-                </tr>
-                <tr className="bg-slate-50/60 hover:bg-slate-100 transition-colors">
-                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Time Zone Flexibility</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
-                  <td className="p-4 sm:p-5">Yes</td>
-                </tr>
-                <tr className="bg-white hover:bg-slate-50 transition-colors">
-                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Quality Guarantee</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">Yes</td>
-                  <td className="p-4 sm:p-5">Yes</td>
-                </tr>
-                <tr className="bg-slate-50/60 hover:bg-slate-100 transition-colors">
-                  <td className="p-4 sm:p-5 font-bold bg-[#005F96] text-white border-r border-cyan-700/50">Working Hours</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">40 hours/ Week</td>
-                  <td className="p-4 sm:p-5 border-r border-slate-200">40 hours/ Week</td>
-                  <td className="p-4 sm:p-5">40 hours/ Week</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </Container>
-      </section>
-
-      {/* 6. SECTION 4: Brief About Our Full Stack Developer */}
-      <section className="py-16 bg-[#F8FAFC] border-b border-slate-200/80 text-slate-900 font-sans">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Text */}
-            <div className="lg:col-span-7 text-left space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 leading-tight tracking-tight font-sans">
-                Brief About Our Full Stack Developer
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            {/* Left Text */}
+            <div className="lg:col-span-7 space-y-4 text-left">
+              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#0B0F19] tracking-tight leading-snug">
+                Brief About Our Full Stack Development
               </h2>
-              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
-                Our Full stack developers have rich expertise in database administration using MongoDB, PostgreSQL, MySQL and SQL Server. Our pool of talented developers has knowledge of React, Angular, Vue, Node.js, Python, Java and .NET programming languages.
+              <p className="text-sm sm:text-[15px] text-[#475569] leading-relaxed">
+                When you employ our full stack developers, you won't have to worry about frontend state management, server-side APIs, database indexing, cloud containerization, CI/CD automation, and a wide variety of other critical technical components.
               </p>
-              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed font-sans">
-                Our Full stack developers have wide expertise in languages such as HTML5, XHTML, and CSS coding. Our Full stack developers have expertise in UI, UX design and development, and MVC / Microservices Design Patterns. You can hire our full-stack developers who have rich expertise in a variety of JS frameworks and cloud architectures.
+              <p className="text-sm sm:text-[15px] text-[#475569] leading-relaxed">
+                As a leading Full Stack Development Company, we guarantee that our full stack mobile and web app development solutions will help you attract and engage the audience you seek. You can outperform your rivals and establish higher business efficiency with seamless end-to-end performance.
               </p>
             </div>
 
-            {/* Right Column: Character Vector Illustration */}
+            {/* Right Image */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[440px] aspect-[4/3] flex items-center justify-center p-4">
-                <div className="w-full bg-slate-900 rounded-2xl p-4 shadow-2xl border border-slate-800 relative text-white flex flex-col justify-between min-h-[220px]">
-                  <div className="flex justify-between items-center pb-2 border-b border-slate-800">
-                    <span className="text-xs font-mono text-cyan-400">FULL STACK IDE</span>
-                    <div className="flex space-x-1">
-                      <div className="w-2.5 h-2.5 rounded-full bg-rose-500" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-                    </div>
-                  </div>
-
-                  <div className="py-4 space-y-2 font-mono text-[11px] text-slate-300">
-                    <div><span className="text-purple-400">const</span> <span className="text-yellow-300">developer</span> = <span className="text-cyan-300">new</span> <span className="text-blue-400">FullStackDeveloper()</span>;</div>
-                    <div><span className="text-purple-400">await</span> developer.<span className="text-emerald-400 font-bold">buildScalableApps()</span>;</div>
-                  </div>
-
-                  <div className="absolute -bottom-4 -right-4 bg-white p-2 rounded-2xl shadow-xl border border-slate-200 text-slate-900 flex items-center space-x-2">
-                    <div className="w-8 h-8 rounded-xl bg-[#00D8FF] text-slate-900 flex items-center justify-center font-black text-xs font-sans">⚛️</div>
-                    <span className="text-xs font-bold font-sans">React & Node</span>
-                  </div>
-
-                  <div className="absolute -top-4 -left-4 bg-[#111827] p-2 rounded-2xl shadow-xl border border-slate-700 text-white flex items-center space-x-2">
-                    <div className="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black text-xs font-mono">FS</div>
-                    <span className="text-xs font-bold font-sans">Full Stack Backend</span>
-                  </div>
-                </div>
+              <div className="w-full max-w-[450px]">
+                <img
+                  src="/images/node_js_hero_monitor_illustration.svg"
+                  alt="Brief About Full Stack Development"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 7. SECTION 5: Clutch Top Rated Banner */}
-      <section className="py-8 bg-[#005C8A] text-white font-sans overflow-hidden border-b border-cyan-950 select-none">
+      {/* ========================================================================= */}
+      {/* 5. CLUTCH & GOODFIRMS TOP RATED RIBBON                                    */}
+      {/* ========================================================================= */}
+      <ClutchTopRatedBanner />
+
+      {/* ========================================================================= */}
+      {/* 6. GET A 100% CUSTOMIZABLE FULL STACK DEVELOPMENT BY EXPERTS              */}
+      {/* ========================================================================= */}
+      <section className="py-12 sm:py-16 bg-white text-slate-900 font-sans text-left">
         <Container>
-          <div className="flex flex-wrap lg:flex-nowrap items-center justify-between gap-6 sm:gap-8">
-            {/* Left Title */}
-            <div className="text-left max-w-sm shrink-0">
-              <h3 className="text-xl sm:text-2xl lg:text-[28px] font-[900] text-white leading-tight font-sans tracking-tight">
-                World Wide Top Rated<br />
-                Full Stack Development<br />
-                Company on Clutch
+          {/* Centered H2 Title */}
+          <div className="text-center w-full max-w-5xl mx-auto mb-10 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[900] text-[#0F172A] tracking-tight leading-tight">
+              Get A 100% Customizable Full Stack Development<br className="hidden sm:inline" /> By Experts
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Quote Card with Exact Background Image & Quotation Mark */}
+            <div className="lg:col-span-4 relative bg-[#F0F8FF] p-7 sm:p-9 flex flex-col justify-start min-h-[290px] overflow-visible select-none">
+              {/* Exact Shape Pattern WebP Background */}
+              <div className="absolute inset-0 -z-10 w-full h-full overflow-hidden">
+                <img
+                  src="/images/shape_pattern.webp"
+                  alt="Pattern background"
+                  className="w-full h-full object-cover pointer-events-none"
+                />
+              </div>
+
+              {/* Speech Bubble Arrow on Right (Desktop Only) */}
+              <div className="hidden lg:block absolute -right-[13px] top-1/2 -translate-y-1/2 w-0 h-0 border-y-[12px] border-y-transparent border-l-[14px] border-l-[#F0F8FF] z-20 pointer-events-none" />
+
+              {/* Exact Quotation Mark SVG */}
+              <div className="mb-4 relative z-10">
+                <img
+                  src="/images/quotation_mark.svg"
+                  alt="Quotation mark"
+                  className="w-[52px] h-[49px]"
+                />
+              </div>
+
+              {/* Heading Inside Card */}
+              <h3 className="text-[25px] sm:text-[27px] lg:text-[29px] font-bold text-[#005d89] tracking-tight leading-[1.28] relative z-10 text-left">
+                Customized Apps,<br />
+                Flexible Payment,<br />
+                Sleek Architecture
               </h3>
             </div>
 
-            {/* Gold Trophy with Laurel Wreath SVG */}
-            <div className="shrink-0 flex items-center justify-center">
-              <svg className="w-16 h-16 sm:w-20 sm:h-20 drop-shadow-md" viewBox="0 0 100 100" fill="none">
-                <path d="M 30 75 Q 18 50 32 25 Q 26 40 32 60 Z" fill="#FFC107" />
-                <path d="M 24 65 Q 12 45 26 22 Q 20 35 26 52 Z" fill="#FFB300" opacity="0.8" />
-                <path d="M 20 50 Q 10 32 22 15 Q 16 26 21 40 Z" fill="#FFC107" />
-                <path d="M 70 75 Q 82 50 68 25 Q 74 40 68 60 Z" fill="#FFC107" />
-                <path d="M 76 65 Q 88 45 74 22 Q 80 35 74 52 Z" fill="#FFB300" opacity="0.8" />
-                <path d="M 80 50 Q 90 32 78 15 Q 84 26 79 40 Z" fill="#FFC107" />
-                <path d="M 36 28 L 64 28 C 64 45 58 55 50 56 C 42 55 36 45 36 28 Z" fill="#FFD54F" stroke="#FFA000" strokeWidth="2" />
-                <path d="M 46 56 L 54 56 L 54 68 L 46 68 Z" fill="#FFC107" />
-                <rect x="40" y="68" width="20" height="7" rx="2" fill="#FFA000" />
-                <path d="M 36 34 C 28 34 28 44 36 44" fill="none" stroke="#FFD54F" strokeWidth="2.5" />
-                <path d="M 64 34 C 72 34 72 44 64 44" fill="none" stroke="#FFD54F" strokeWidth="2.5" />
-                <polygon points="50,33 53,40 60,40 55,44 57,51 50,47 43,51 45,44 40,40 47,40" fill="#FFF8E1" />
-              </svg>
-            </div>
-
-            {/* Badges Row */}
-            <div className="flex items-center space-x-2 sm:space-x-3 overflow-x-auto scrollbar-none py-2">
-              <div className="w-20 h-28 bg-[#182330] rounded-b-xl border border-slate-400/40 p-1.5 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <span className="text-[7px] font-bold text-slate-300 uppercase tracking-widest mt-0.5">TOP</span>
-                <span className="text-[6.5px] font-black text-slate-200 uppercase leading-none">MOBILE APP</span>
-                <span className="text-sm font-black text-white tracking-tight font-serif my-0.5">Clutch</span>
-                <div className="w-full bg-slate-700/60 rounded py-0.5 text-[6.5px] font-extrabold text-slate-200 uppercase">
-                  DEVELOPERS<br />2022
-                </div>
-              </div>
-
-              <div className="w-20 h-28 bg-[#1B263B] rounded-b-xl border border-amber-500/40 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <span className="text-xs font-black text-white tracking-tight font-serif mt-0.5">Clutch</span>
-                <span className="text-[6.5px] font-bold text-slate-300 uppercase">TOP COMPANY</span>
-                <div className="w-full bg-[#B89762] text-slate-950 font-black text-[7px] py-1 rounded-sm uppercase tracking-tighter">
-                  DEVELOPMENT<br />2022
-                </div>
-                <span className="text-[6.5px] font-bold text-slate-400 uppercase mb-0.5">INDIA</span>
-              </div>
-
-              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
-                  MOST REVIEWED
-                </div>
-                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
-                  ★
-                </div>
-                <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
-                  MOBILE APP<br />DEVELOPMENT<br />COMPANIES
-                </span>
-                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
-              </div>
-
-              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
-                  MOST REVIEWED
-                </div>
-                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
-                  ★
-                </div>
-                <span className="text-[6px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
-                  MICROSOFT<br />SHAREPOINT<br />CONSULTING
-                </span>
-                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
-              </div>
-
-              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
-                  MOST REVIEWED
-                </div>
-                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
-                  ★
-                </div>
-                <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
-                  SOFTWARE<br />DEVELOPERS<br />COMPANIES
-                </span>
-                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
-              </div>
-
-              <div className="w-20 h-28 bg-[#A81938] rounded-b-xl border-2 border-white/90 p-1 flex flex-col justify-between items-center text-center shadow-md shrink-0">
-                <div className="w-full bg-white text-[#A81938] font-black text-[6.5px] py-0.5 uppercase tracking-tighter rounded-xs">
-                  MOST REVIEWED
-                </div>
-                <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#A81938] text-[9px] font-black shadow-xs my-0.5">
-                  ★
-                </div>
-                <span className="text-[6.5px] font-extrabold text-white leading-tight uppercase font-sans mb-0.5">
-                  WEB<br />DEVELOPERS<br />COMPANIES
-                </span>
-                <div className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center text-[5px] font-bold text-white">top</div>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* 8. SECTION 6: What Exactly Is A Full Stack Developer? */}
-      <section className="py-16 bg-white border-b border-slate-100 text-slate-900 font-sans">
-        <Container>
-          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[900] text-slate-900 tracking-tight text-center mb-10 font-sans">
-            What Exactly Is A Full Stack Developer?
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-5xl mx-auto">
-            <div className="lg:col-span-5 bg-[#EBF5FB] p-8 rounded-3xl border border-cyan-200/80 shadow-sm text-left relative">
-              <Quote className="w-10 h-10 text-[#006085] opacity-30 mb-2" />
-              <h3 className="text-xl sm:text-2xl font-[900] text-[#006085] leading-snug font-sans">
-                Hire Full Stack Developers At A Reasonable Rate
-              </h3>
-            </div>
-
-            <div className="lg:col-span-7 text-left space-y-5">
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans font-normal">
-                Our remote Full stack developers have designed and launched a wide array of websites, applications, and portals, with a scope of defects and mistakes that is either minimal or nonexistent in most cases. As a trusted Full Stack development company you can get our Full Stack Consulting to build Full Stack apps. In addition, the team has the necessary skill set and expertise to develop applications with a high degree of precision and skill. We provide you with the opportunity to engage Full Stack web developers for Full Stack Migration & Porting to work on an hourly, part-time, or full-time basis, depending on what best meets your needs.
+            {/* Right Column: Paragraph Content */}
+            <div className="lg:col-span-8 space-y-4 text-left flex flex-col justify-center">
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#555555] leading-[1.75] font-normal">
+                You can hire full stack developers with years of proven expertise in building best-in-industry custom web applications, mobile platforms, and enterprise microservices offering robust backend logic and friendly user interfaces to attract and engage your target audience and accomplish your business goals. Our primary objective is to provide cutting-edge full stack architecture and development services for various business sectors.
               </p>
-              <div>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center px-6 py-3 rounded-xl bg-[#006085] hover:bg-[#004D6B] text-white font-[800] text-sm transition-all shadow-md font-sans"
-                >
-                  <span>Let's Discuss Your Project</span>
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </div>
+
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#555555] leading-[1.75] font-normal">
+                Our full stack solutions run faultlessly across all modern platforms, including web browsers, iOS & Android mobile devices, tablets, and cloud infrastructure. You will ultimately be able to achieve rapid time-to-market and lower total cost of ownership when you Hire Full Stack Developers from us.
+              </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 9. SECTION 7: Our Premium Services */}
-      <PremiumServicesGrid />
+      {/* ========================================================================= */}
+      {/* 7. THREE KEY FULL STACK CAPABILITIES CARDS                                */}
+      {/* ========================================================================= */}
+      <section className="py-8 sm:py-12 bg-white">
+        <Container>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Card 1 */}
+            <div className="p-6 rounded-2xl bg-[#F8FBFE] border border-slate-200/80 hover:border-[#005F96]/40 hover:shadow-md transition-all text-left space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#E0F2FE] flex items-center justify-center text-[#005F96]">
+                <Monitor className="w-6 h-6" />
+              </div>
+              <h4 className="text-lg font-bold text-slate-900">Intuitive Modern Frontend</h4>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                High-fidelity responsive UI/UX built with React, Next.js, Vue, and Angular, delivering sub-second load times, smooth transitions, and seamless cross-device compatibility.
+              </p>
+            </div>
 
-      {/* 10. SECTION 8: Meet Sapphire's Exceptional Team of Seasoned Experts */}
+            {/* Card 2 */}
+            <div className="p-6 rounded-2xl bg-[#F8FBFE] border border-slate-200/80 hover:border-[#005F96]/40 hover:shadow-md transition-all text-left space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#E0F2FE] flex items-center justify-center text-[#005F96]">
+                <Server className="w-6 h-6" />
+              </div>
+              <h4 className="text-lg font-bold text-slate-900">Resilient Backend & APIs</h4>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                High-throughput, event-driven microservices and RESTful/GraphQL APIs built on Node.js, Python, Java, and Go with secure enterprise authentication and high data integrity.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="p-6 rounded-2xl bg-[#F8FBFE] border border-slate-200/80 hover:border-[#005F96]/40 hover:shadow-md transition-all text-left space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#E0F2FE] flex items-center justify-center text-[#005F96]">
+                <Cloud className="w-6 h-6" />
+              </div>
+              <h4 className="text-lg font-bold text-slate-900">Scalable Cloud & DevOps</h4>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Cloud-native deployments on AWS and Azure with Docker, Kubernetes, and automated CI/CD pipelines, integrated with optimized PostgreSQL, MySQL, and MongoDB clusters.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* 8. CUTTING EDGE TECHNOLOGIES WE USE                                       */}
+      {/* ========================================================================= */}
+      <section className="py-12 sm:py-16 bg-[#F8FBFE]">
+        <Container>
+          <div className="text-center max-w-3xl mx-auto mb-10 space-y-2">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-slate-900 tracking-tight">
+              Cutting Edge Technologies We Use
+            </h2>
+            <p className="text-sm sm:text-base text-slate-600">
+              We leverage future-ready technological frameworks to engineer responsive, scalable, and resilient full stack software.
+            </p>
+          </div>
+
+          {/* Horizontal Scroll Carousel */}
+          <div
+            ref={techScrollContainerRef}
+            onMouseEnter={() => setIsTechHovered(true)}
+            onMouseLeave={() => setIsTechHovered(false)}
+            className="flex items-stretch space-x-5 overflow-x-auto no-scrollbar scroll-smooth pb-4"
+          >
+            {cuttingEdgeTechList.map((item, idx) => (
+              <div
+                key={idx}
+                className="w-[280px] sm:w-[310px] shrink-0 p-6 rounded-2xl bg-[#EFF7FE] border border-blue-100/90 shadow-2xs hover:shadow-md transition-all duration-300 text-left flex flex-col justify-between"
+              >
+                <div className="space-y-4">
+                  <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center shadow-xs border border-blue-100/60">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 tracking-tight">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* 9. OUR PREMIUM SERVICES GRID                                              */}
+      {/* ========================================================================= */}
+      <PremiumServicesGrid companyName="Firevy.co" />
+
+      {/* ========================================================================= */}
+      {/* 10. SEASONED FULL STACK APP DEVELOPERS / EXPERTS TEAM                     */}
+      {/* ========================================================================= */}
       <SapphireSeasonedExpertsSection />
 
-      {/* 11. SECTION 9: Leverage The Expertise of Sapphire Dedicated Developers */}
-      <LeverageExpertiseGridSection />
+      {/* ========================================================================= */}
+      {/* 11. INDUSTRY-FOCUSED INSIGHTS                                             */}
+      {/* ========================================================================= */}
+      <IndustryFocusedInsightsSection subtitle="Trending Industries that Use Full Stack Development" />
 
-      {/* 12. SECTION 10: Industry-Focused Insights To Elevate Your Business */}
-      <IndustryFocusedInsightsSection />
+      {/* ========================================================================= */}
+      {/* 12. TRANSFORMATIVE IMPACT / BENEFITS (8 PASTEL CARDS)                     */}
+      {/* ========================================================================= */}
+      <TransformativeImpactSection title="Explore The Transformative Impact Of Full Stack Development On Your Business Success" />
 
-      {/* 13. SECTION 11: About Us Stats */}
-      <AboutUsStats />
+      {/* ========================================================================= */}
+      {/* 13. ABOUT US STATS (100% On-Time, 20+ Yrs, 450+ Devs, 98% CSAT)          */}
+      {/* ========================================================================= */}
+      <AboutUsStats companyName="Firevy.co" />
 
-      {/* 14. SECTION 12: Sectors Thriving Through Sapphire's Bespoke Dedicated Developers */}
-      <SectorsThrivingSection />
+      {/* ========================================================================= */}
+      {/* 14. SECTORS THRIVING ON FULL STACK DEVELOPMENT                            */}
+      {/* ========================================================================= */}
+      <SectorsThrivingSection title="Sectors Thriving On Full Stack Development Solutions" />
 
-      {/* 15. SECTION 13: Employ the Advanced Proficiency of Sapphire's Dedicated Development Team */}
-      <section className="py-16 sm:py-20 bg-[#F8FAFC] text-slate-900 font-sans border-b border-slate-200">
-        <Container className="max-w-7xl">
+      {/* ========================================================================= */}
+      {/* 15. SUCCESS STORIES SECTION                                               */}
+      {/* ========================================================================= */}
+      <SuccessStoriesSection />
+
+      {/* ========================================================================= */}
+      {/* 16. COMPREHENSIVE SUITE OF FULL STACK DEVELOPMENT SERVICES                */}
+      {/* ========================================================================= */}
+      <section className="py-12 sm:py-16 bg-white text-left">
+        <Container>
           <div className="text-center max-w-4xl mx-auto mb-12 space-y-3">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-              Employ the Advanced Proficiency of Sapphire’s Dedicated Development Team
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-slate-900 tracking-tight">
+              Firevy’s Comprehensive Suite of Full Stack Development Services
             </h2>
-            <p className="text-xs sm:text-sm md:text-base text-slate-600 font-normal leading-relaxed">
-              At Sapphire, we have a dedicated development team to deliver IT services and create solutions that surpass expectations.
+            <p className="text-sm sm:text-base text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              Firevy developers thrive at developing compelling full stack applications by utilizing our knowledge of the latest web, mobile, and cloud frameworks. We provide full-service engineering customized to meet your exact specifications.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-6xl mx-auto">
-            {[
-              { title: 'On-Time Progress Monitoring', IconComp: LineChart },
-              { title: 'Time-Zone Compatibility', IconComp: Globe },
-              { title: 'Cost-Effective Development', IconComp: DollarSign },
-              { title: 'World Class Expertise', IconComp: Users },
-              { title: 'Least Turnaround Time', IconComp: RotateCcw },
-              { title: 'Best Management Standards', IconComp: ShieldCheck },
-              { title: '500+ Seasons Experts', IconComp: Lightbulb },
-              { title: '24x7 Support Team', IconComp: Headphones },
-              { title: 'Efficient Project Management', IconComp: Handshake },
-              { title: 'Dedicated Delivery Management', IconComp: UserCheck }
-            ].map((item, idx) => {
-              const CardIcon = item.IconComp;
-              return (
-                <div
-                  key={idx}
-                  className="bg-white rounded-2xl p-6 text-center shadow-xs hover:shadow-md border border-slate-200/80 transition-all flex flex-col justify-center items-center space-y-3 h-44"
-                >
-                  <div className="w-12 h-12 rounded-full bg-cyan-50 border border-cyan-100/80 text-[#006095] flex items-center justify-center">
-                    <CardIcon className="w-6 h-6 stroke-[2]" />
+          {/* 6 Grid Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {fullStackServicesSuite.map((service, idx) => (
+              <div
+                key={idx}
+                className="p-6 sm:p-7 rounded-2xl bg-[#EFF7FE] border border-blue-100/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-5"
+              >
+                <div className="space-y-3">
+                  <div className="w-11 h-11 rounded-lg bg-white border border-blue-100 flex items-center justify-center text-[#005F96] font-bold">
+                    0{idx + 1}
                   </div>
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                    {item.title}
-                  </h4>
+                  <h3 className="text-xl font-bold text-slate-900 tracking-tight">
+                    {service.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                    {service.desc}
+                  </p>
                 </div>
-              );
-            })}
-          </div>
-        </Container>
-      </section>
 
-      {/* 16. SECTION 14: How We Divide Your Project Responsibilities ? */}
-      <section className="py-16 md:py-20 bg-white text-slate-900 font-sans border-b border-slate-100">
-        <Container>
-          <div className="space-y-10 max-w-6xl mx-auto">
-            <div className="text-center space-y-3">
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                How We Divide Your Project Responsibilities ?
-              </h2>
-            </div>
-
-            {/* Sapphire / Client Segmented Control Switch */}
-            <div className="flex justify-center">
-              <div className="bg-[#DDECF5] p-1.5 rounded-full inline-flex items-center space-x-1 border border-cyan-100/60 shadow-xs">
-                <button
-                  onClick={() => setResponsibilityTab('sapphire')}
-                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                    responsibilityTab === 'sapphire'
-                      ? 'bg-[#006095] text-white shadow-xs'
-                      : 'text-slate-700 hover:text-slate-900 font-semibold'
-                  }`}
-                >
-                  Sapphire
-                </button>
-                <button
-                  onClick={() => setResponsibilityTab('client')}
-                  className={`px-6 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                    responsibilityTab === 'client'
-                      ? 'bg-[#006095] text-white shadow-xs'
-                      : 'text-slate-700 hover:text-slate-900 font-semibold'
-                  }`}
-                >
-                  Client
-                </button>
+                <div className="space-y-2 pt-2 border-t border-blue-100/60">
+                  {service.features.map((feat, featIdx) => (
+                    <div key={featIdx} className="flex items-center space-x-2 text-xs text-slate-700">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#005F96] shrink-0" />
+                      <span>{feat}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-
-            {/* 6 Responsive Grid Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
-              {(responsibilityTab === 'sapphire'
-                ? [
-                    { title: 'Create a dedicated team', IconComp: Users },
-                    { title: 'Gather required access', IconComp: Lock },
-                    { title: 'Plan project resources', IconComp: Sliders },
-                    { title: 'Create a standard delivery practice', IconComp: Clock },
-                    { title: 'Regular communication between stakeholders', IconComp: MessageSquare },
-                    { title: 'Research on competitors', IconComp: Flag }
-                  ]
-                : [
-                    { title: 'Define project scope & vision', IconComp: Target },
-                    { title: 'Provide domain context & access', IconComp: Key },
-                    { title: 'Review sprint deliverables', IconComp: CheckCircle2 },
-                    { title: 'Provide timely feedback & approvals', IconComp: RefreshCw },
-                    { title: 'Align business priorities with roadmap', IconComp: TrendingUp },
-                    { title: 'Co-evaluate key performance indicators', IconComp: BarChart2 }
-                  ]
-              ).map((item, idx) => {
-                const CardIcon = item.IconComp;
-                return (
-                  <div
-                    key={idx}
-                    className="bg-[#EBF4FA] rounded-2xl p-8 text-center border border-cyan-100/70 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center space-y-4 min-h-[160px]"
-                  >
-                    <div className="w-12 h-12 text-[#006095] flex items-center justify-center">
-                      <CardIcon className="w-10 h-10 stroke-[1.5]" />
-                    </div>
-                    <h4 className="text-sm md:text-base font-bold text-slate-900 leading-snug">
-                      {item.title}
-                    </h4>
-                  </div>
-                );
-              })}
-            </div>
+            ))}
           </div>
         </Container>
       </section>
 
-      {/* 17. SECTION 15: Technology Stack That Sapphire Dedicated Developers Use Proficiently */}
-      <TechStackProficientGrid title="Technology Stack That Sapphire Dedicated Developers Use Proficiently" />
+      {/* ========================================================================= */}
+      {/* 17. TECHNOLOGY STACK THAT DEVELOPERS USE PROFICIENTLY                     */}
+      {/* ========================================================================= */}
+      <MobileAppProficientTechStackSection title="Technology Stack That Firevy Full Stack Developers Use Proficiently" />
 
-      {/* 18. SECTION 16: The Expertise Of Our Talented Full Stack Developer */}
-      <section className="py-16 md:py-20 bg-[#F0F7FC] text-slate-900 font-sans border-b border-slate-100">
-        <Container className="max-w-7xl">
-          <div className="text-center max-w-4xl mx-auto mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-              The Expertise Of Our Talented Full Stack Developer
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
-            {[
-              {
-                title: 'Full Stack Ecommerce Store Development',
-                bg: 'bg-[#F3E8FF]',
-                iconColor: 'text-[#9333EA]',
-                IconComp: ShoppingBag,
-                desc: 'To fulfill the ever-increasing needs of clients, online companies require a scalable, high-performing, and adaptable eCommerce shop that can be easily constructed using full stack frameworks. Our devoted Full Stack eCommerce Development specialists provide superior eCommerce app development services to clients in all industry verticals. Hiring a Full Stack application development expert from us will assist you in developing ROI-boosting eCommerce solutions.'
-              },
-              {
-                title: 'Full Stack ERP Development',
-                bg: 'bg-[#DCFCE7]',
-                iconColor: 'text-[#16A34A]',
-                IconComp: Server,
-                desc: 'Our Full Stack ERP Development experts have hands-on expertise in designing ERP systems that are scalable, resilient, and user-friendly across all devices. Hiring full-stack developers from our top Full stack development firm in India for ERP development may assist you in tracking possible leads, driving business success, improving customer management, and making smart business choices.'
-              },
-              {
-                title: 'API & Web App Development',
-                bg: 'bg-[#FFEDD5]',
-                iconColor: 'text-[#EA580C]',
-                IconComp: Code,
-                desc: 'If you choose Full Stack frameworks over single-layer solutions, you get dynamic front-end and back-end for online and mobile apps. Leverage the knowledge of our Full Stack Web Development experts to create powerful and bespoke web apps and APIs for many business domains and industries.'
-              },
-              {
-                title: 'Enterprise CMS Development',
-                bg: 'bg-[#FEF9C3]',
-                iconColor: 'text-[#CA8A04]',
-                IconComp: Layout,
-                desc: 'A firm wants a user-friendly CMS gateway to optimize its quality management process and enhance operational efficiency. Employ our Full Stack CMS Development experts to create feature-rich, scalable, and user-friendly CMS for enterprises of all sizes.'
-              },
-              {
-                title: 'Testing And QA',
-                bg: 'bg-[#FCE7F3]',
-                iconColor: 'text-[#DB2777]',
-                IconComp: CheckSquare,
-                desc: 'Recruit Full Stack Migration & Porting experts from our talent pool. Our specialists execute thorough alpha and beta testing, guaranteeing that your application functions flawlessly and contains specific test cases. As an ISO-certified service provider, we guarantee that your dynamic applications and websites are of the highest quality.'
-              },
-              {
-                title: 'Maintenance & Support Services',
-                bg: 'bg-[#CFFAFE]',
-                iconColor: 'text-[#0891B2]',
-                IconComp: Wrench,
-                desc: 'Get comprehensive maintenance and support Full stack development services from our team of Full stack specialists. Our nimble specialists offer round-the-clock Full Stack development services to solve your development issues with agility, allowing you to remain stress-free and concentrate on essential business tasks.'
-              }
-            ].map((card, idx) => {
-              const CardIcon = card.IconComp;
-              return (
-                <div
-                  key={idx}
-                  className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
-                >
-                  <div>
-                    <div className={`w-12 h-12 rounded-xl ${card.bg} ${card.iconColor} flex items-center justify-center mb-5`}>
-                      <CardIcon className="w-6 h-6 stroke-[2]" />
-                    </div>
-                    <h3 className="text-lg sm:text-[19px] font-[800] text-slate-900 mb-3 leading-snug">
-                      {card.title}
-                    </h3>
-                    <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed font-normal">
-                      {card.desc}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="text-center">
-            <Link
-              to="/contact"
-              className="inline-block bg-[#006095] hover:bg-[#004B77] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-lg shadow-md transition-all hover:scale-105 cursor-pointer"
-            >
-              Get A Free Quote For Your Project
-            </Link>
-          </div>
-        </Container>
-      </section>
-
-      {/* 19. Proud To Have Picked These Up Along The Way */}
-      <ClutchTopRatedBanner title="Proud To Have Picked These Up Along The Way" />
-
-      {/* 20. Benefits of Hiring Dedicated Developers */}
-      <section className="py-16 md:py-24 bg-white text-slate-900 font-sans border-b border-slate-100">
-        <Container>
-          <div className="space-y-12 max-w-6xl mx-auto">
-            <div className="text-center space-y-3 max-w-4xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Benefits of Hiring Dedicated Developers
-              </h2>
-              <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                Hiring dedicated developers can help you save time and money so that you can focus more on core business activities. Benefits include:
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[
-                {
-                  title: 'Cost Efficiency',
-                  desc: 'One of the most significant advantages of hiring dedicated developers is access to a global talent pool. We provide access to global talent, lowering labour costs without sacrificing quality.',
-                  IconComp: Coins
-                },
-                {
-                  title: 'Access to Specialized Skills',
-                  desc: 'Dedicated developers are experts in their fields. You can swiftly overcome talent shortages by employing dedicated developers, ensuring projects are completed on time and without errors.',
-                  IconComp: Award
-                },
-                {
-                  title: 'Scalability and Flexibility',
-                  desc: 'Dedicated developers allow team size and composition changes without full-time employment. They can swiftly adapt to project needs and market circumstances, assuring timely delivery.',
-                  IconComp: Sliders
-                },
-                {
-                  title: 'Focused and Committed Effort',
-                  desc: 'Dedicated developers are more productive and committed since they only work on their tasks. This dedication generally improves code quality, turnaround times, and development cohesion.',
-                  IconComp: ShieldCheck
-                },
-                {
-                  title: 'Reduced Time to Market',
-                  desc: 'Dedicated developers can speed up project development by using their experience and attention. Businesses can optimize operations, eliminate bottlenecks, and finish projects quickly.',
-                  IconComp: Zap
-                },
-                {
-                  title: 'Enhanced Innovation and Creativity',
-                  desc: 'Dedicated developers offer new ideas and insights to projects. Dedicated developers can also encourage a collaborative atmosphere where in-house and external talent merge their expertise.',
-                  IconComp: Lightbulb
-                }
-              ].map((card, idx) => {
-                const CardIcon = card.IconComp;
-                return (
-                  <div
-                    key={idx}
-                    className="bg-white rounded-2xl p-7 shadow-xs hover:shadow-md border border-slate-100/90 transition-all flex flex-col justify-start space-y-4 text-left"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#006095] flex items-center justify-center">
-                      <CardIcon className="w-6 h-6 stroke-[1.8]" />
-                    </div>
-                    <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
-                      {card.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                      {card.desc}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* 21. Hire Full Stack Developer In 4 Easy Steps */}
-      <HireDeveloper4Steps
-        title="Hire Full Stack Developer In 4 Easy Steps"
-        subtitle="Full stack offers a number of advantages over single-layer platforms. Some of them are:"
+      {/* ========================================================================= */}
+      {/* 18. THE EXPERTISE OF OUR FULL STACK DEVELOPERS                            */}
+      {/* ========================================================================= */}
+      <HybridAppExpertiseServices
+        title="The Expertise Of Our Full Stack Developers"
+        subtitle="Contact us now to avail the expertise of our Full Stack developers. Their expertise includes:"
+        cards={fullStackExpertiseCards}
       />
 
-      {/* 22. Video Testimonials / Our Story, Their Words */}
-      <VideoTestimonialsStory />
+      {/* ========================================================================= */}
+      {/* 19. HIRING MODELS                                                         */}
+      {/* ========================================================================= */}
+      <AndroidHiringModels />
 
-      {/* 23. Business Friendly Hiring Models */}
-      <EngagementModelsSection
-        title="Business Friendly Hiring Models : Building Greater Futures Through Innovation"
-        subtitle="We offer three different types of hiring models that are designed to suit your diverse needs and budget. Take a look at our hiring models:"
-      />
+      {/* ========================================================================= */}
+      {/* 20. COMPARATIVE ANALYSIS                                                  */}
+      {/* ========================================================================= */}
+      <AndroidComparativeAnalysis />
 
-      {/* 24. Success Matrix */}
-      <SuccessMatrixGrid />
+      {/* ========================================================================= */}
+      {/* 21. INNOVATIVE SOLUTIONS VIDEO SECTION                                    */}
+      {/* ========================================================================= */}
+      <InnovativeSolutionsVideoSection />
 
-      {/* 25. Unveiling Our Innovative Solution */}
-      <InnovativeSolutionVideo />
-
-      {/* 26. Process We Follow */}
+      {/* ========================================================================= */}
+      {/* 22. PROCESS WE FOLLOW                                                     */}
+      {/* ========================================================================= */}
       <ProcessWeFollow />
 
-      {/* 27. What Our Clients Say */}
-      <ClientReviewsDarkSection />
+      {/* ========================================================================= */}
+      {/* 23. OUR STORY, THEIR WORDS (VIDEO TESTIMONIALS)                           */}
+      {/* ========================================================================= */}
+      <OurStoryTheirWordsSection />
 
-      {/* 28. Digital Transformation Through Innovation and Collective Knowledge */}
-      <DigitalTransformationCaseStudies />
+      {/* ========================================================================= */}
+      {/* 24. TRUSTED BY THE WORLD'S LEADING BRANDS                                 */}
+      {/* ========================================================================= */}
+      <TrustedBrandsGrid />
 
-      {/* 29. Frequently Asked Questions */}
+      {/* ========================================================================= */}
+      {/* 25. SUCCESS MATRIX                                                        */}
+      {/* ========================================================================= */}
+      <SuccessMatrix />
+
+      {/* ========================================================================= */}
+      {/* 26. WHAT OUR CLIENTS SAY                                                  */}
+      {/* ========================================================================= */}
+      <WhatOurClientsSaySection />
+
+      {/* ========================================================================= */}
+      {/* 27. WE HAVE BEEN FEATURED IN                                              */}
+      {/* ========================================================================= */}
+      <FeaturedInBrandsSection />
+
+      {/* ========================================================================= */}
+      {/* 28. DIGITAL TRANSFORMATION SLIDER                                         */}
+      {/* ========================================================================= */}
+      <DigitalTransformationSlider />
+
+      {/* ========================================================================= */}
+      {/* 29. FREQUENTLY ASKED QUESTIONS (8 FULL STACK FAQS)                        */}
+      {/* ========================================================================= */}
       <SapphireFaqSection
         title="Frequently Asked Questions"
-        subtitle="We listen to query and provide solutions that captivate users. Feel free to contact us in case of any query which is not mention below."
-        customFaqs={fullStackFaqs}
+        subtitle="We Listen To Queries And Provide Solutions That Captivate Users. Feel Free To Contact Us In Case Of Any Query Which Is Not Mentioned Below."
+        faqs={fullStackFaqs}
+        companyName="Firevy.co"
       />
 
-      {/* 30. Social Media */}
-      <SocialMediaSection />
+      {/* ========================================================================= */}
+      {/* 30. OUR RECENT BLOGS                                                      */}
+      {/* ========================================================================= */}
+      <MobileAppRecentBlogsSection />
 
-      {/* 31. Our Recent Blogs */}
-      <RecentBlogsSection />
+      {/* ========================================================================= */}
+      {/* 31. WHAT SETS US APART                                                    */}
+      {/* ========================================================================= */}
+      <WhatSetsUsApartSection />
 
-      {/* 32. What Sets Us Apart As Full Stack Development Company? */}
-      <WhatSetsUsApartSection
-        title="What Sets Us Apart As Full Stack Development Company?"
-        description="Being unique is our quality! Sapphire Solutions / Firevy.co believes in the things that give us an edge over our competitors. We are a renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors."
-      />
-
-      {/* 33. Have Full Stack Development Challenge To Address ? */}
-      <ConversionCalloutBanner
-        data={{
-          title: "Have Full Stack Development Challenge To Address ?",
-          description: "Get access to top Full Stack developers to transform your ideas into a robust application.",
-          buttonText: "Hire Now",
-          buttonLink: "/contact"
-        }}
-        hideSideImages={true}
-      />
-
-      {/* 34. Subscribe us and Get the latest updates and news */}
-      <SubscribeNewsletterSection />
-    </>
+      {/* ========================================================================= */}
+      {/* 32. CHALLENGE CTA BANNER                                                  */}
+      {/* ========================================================================= */}
+      <div id="contact">
+        <IWatchChallengeCtaBanner
+          title="Have Full Stack Development Challenge To Address ?"
+          subtitle="Get access to top Full Stack developers to transform your ideas into a robust application."
+          buttonText="Hire Now"
+        />
+      </div>
+    </div>
   );
 };
 

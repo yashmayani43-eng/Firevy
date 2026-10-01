@@ -379,6 +379,30 @@ export function App() {
                 <Route path="/ai-consulting-services" element={<ServiceDetails />} />
                 <Route path="/services/ai-consulting" element={<ServiceDetails />} />
                 <Route path="/ai-consulting" element={<ServiceDetails />} />
+                <Route path="/services/web-application-development" element={<ServiceDetails />} />
+                <Route path="/web-application-development" element={<ServiceDetails />} />
+                <Route path="/services/web-application-development-services" element={<ServiceDetails />} />
+                <Route path="/web-application-development-services" element={<ServiceDetails />} />
+                <Route path="/services/web-app-development" element={<ServiceDetails />} />
+                <Route path="/web-app-development" element={<ServiceDetails />} />
+                <Route path="/services/product-engineering-services" element={<ServiceDetails />} />
+                <Route path="/product-engineering-services" element={<ServiceDetails />} />
+                <Route path="/services/product-engineering-service" element={<ServiceDetails />} />
+                <Route path="/product-engineering-service" element={<ServiceDetails />} />
+                <Route path="/services/product-engineering" element={<ServiceDetails />} />
+                <Route path="/product-engineering" element={<ServiceDetails />} />
+                <Route path="/services/it-outsourcing" element={<ServiceDetails />} />
+                <Route path="/it-outsourcing" element={<ServiceDetails />} />
+                <Route path="/services/it-outsourcing-services" element={<ServiceDetails />} />
+                <Route path="/it-outsourcing-services" element={<ServiceDetails />} />
+                <Route path="/services/it-outsourcing-service" element={<ServiceDetails />} />
+                <Route path="/it-outsourcing-service" element={<ServiceDetails />} />
+                <Route path="/services/business-application-development" element={<ServiceDetails />} />
+                <Route path="/business-application-development" element={<ServiceDetails />} />
+                <Route path="/services/business-application-development-services" element={<ServiceDetails />} />
+                <Route path="/business-application-development-services" element={<ServiceDetails />} />
+                <Route path="/services/business-application-development-service" element={<ServiceDetails />} />
+                <Route path="/business-application-development-service" element={<ServiceDetails />} />
                 <Route path="/services/cloud-foundry-software-development" element={<ServiceDetails />} />
                 <Route path="/cloud-foundry-software-development" element={<ServiceDetails />} />
                 <Route path="/services/cloud-foundry-software-development-service" element={<ServiceDetails />} />
@@ -506,6 +530,18 @@ export function App() {
                 <Route path="/crm-development-services" element={<ServiceDetails />} />
                 <Route path="/services/crm-development-service" element={<ServiceDetails />} />
                 <Route path="/crm-development-service" element={<ServiceDetails />} />
+                <Route path="/services/vb6-migration-services" element={<ServiceDetails />} />
+                <Route path="/vb6-migration-services" element={<ServiceDetails />} />
+                <Route path="/services/vb6-migration-service" element={<ServiceDetails />} />
+                <Route path="/vb6-migration-service" element={<ServiceDetails />} />
+                <Route path="/services/vb6-migration" element={<ServiceDetails />} />
+                <Route path="/vb6-migration" element={<ServiceDetails />} />
+                <Route path="/services/enterprise-mobility-services" element={<ServiceDetails />} />
+                <Route path="/enterprise-mobility-services" element={<ServiceDetails />} />
+                <Route path="/services/enterprise-mobility-service" element={<ServiceDetails />} />
+                <Route path="/enterprise-mobility-service" element={<ServiceDetails />} />
+                <Route path="/services/enterprise-mobility" element={<ServiceDetails />} />
+                <Route path="/enterprise-mobility" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/data-cleansing-services" element={<ServiceDetails />} />
                 <Route path="/services/data-cleansing" element={<ServiceDetails />} />
@@ -530,8 +566,18 @@ export function App() {
                 <Route path="/digital-twin-solutions" element={<ServiceDetails />} />
                 <Route path="/services/artist-collaboration-platform-development" element={<ServiceDetails />} />
                 <Route path="/artist-collaboration-platform-development" element={<ServiceDetails />} />
-                <Route path="/services/artist-collaboration-platform" element={<ServiceDetails />} />
+                 <Route path="/services/artist-collaboration-platform" element={<ServiceDetails />} />
                 <Route path="/artist-collaboration-platform" element={<ServiceDetails />} />
+                <Route path="/services/financial-software-development" element={<ServiceDetails />} />
+                <Route path="/financial-software-development" element={<ServiceDetails />} />
+                <Route path="/services/financial-software" element={<ServiceDetails />} />
+                <Route path="/financial-software" element={<ServiceDetails />} />
+                <Route path="/services/travel-software-development" element={<ServiceDetails />} />
+                <Route path="/travel-software-development" element={<ServiceDetails />} />
+                <Route path="/services/travel-software" element={<ServiceDetails />} />
+                <Route path="/travel-software" element={<ServiceDetails />} />
+                <Route path="/services/software-product-discovery" element={<ServiceDetails />} />
+                <Route path="/software-product-discovery" element={<ServiceDetails />} />
                 <Route path="/services/prototype-development-services" element={<ServiceDetails />} />
                 <Route path="/prototype-development-services" element={<ServiceDetails />} />
                 <Route path="/services/prototype-development-service" element={<ServiceDetails />} />

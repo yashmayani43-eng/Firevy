@@ -184,9 +184,7 @@ export const Testimonials = () => {
       {/* ============================================================
           2. LOGOS MARQUEE STRIP
           ============================================================ */}
-      <section className="py-6 bg-white border-b border-slate-100 overflow-hidden">
-        <TrustMarquee />
-      </section>
+      <TrustMarquee />
 
       {/* ============================================================
           3. "What Our Clients Say" (1:1 Reference Match for Screenshots 2 & 3)

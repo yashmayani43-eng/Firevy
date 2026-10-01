@@ -661,9 +661,13 @@ export const ArtificialIntelligenceDevelopmentService = () => {
       {/* =========================================================================
           2. TRUSTED BRAND LOGOS STRIP
           ========================================================================= */}
+<<<<<<< HEAD
+      <BrandLogoMarquee />
+=======
       <section className="py-2 bg-white border-b border-slate-200/70 overflow-hidden">
         <BrandLogoMarquee data={{ logos: aiPageBrandLogos }} />
       </section>
+>>>>>>> de1da228f73d1628d167ecd7b54ba719e41f0def
 
       {/* =========================================================================
           3. DELIVERING TOP RATED AI DEVELOPMENT SERVICES GLOBALLY
