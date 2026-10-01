@@ -86,11 +86,11 @@ export const Footer = () => {
     hireDevelopers: {
       title: 'Hire Developers',
       links: [
-        { name: 'Hire Mobile App Developers', path: '/services/dedicated-developers' },
-        { name: 'Hire Dedicated Developers', path: '/services/dedicated-developers' },
-        { name: 'Hire Software Developers', path: '/services/dedicated-developers' },
-        { name: 'Hire AI Developers', path: '/services/dedicated-developers' },
-        { name: 'Hire Flutter App Developers', path: '/services/dedicated-developers' },
+        { name: 'Hire Mobile App Developers', path: '/services/mobile-app-development' },
+        { name: 'Hire Dedicated Developers', path: '/services/hire-dedicated-developers' },
+        { name: 'Hire Software Developers', path: '/services/hire-software-developers' },
+        { name: 'Hire AI Developers', path: '/services/artificial-intelligence-development' },
+        { name: 'Hire Flutter App Developers', path: '/services/hire-flutter-developers' },
         { name: 'Hire Full Stack Developer', path: '/services/full-stack' },
         { name: 'Hire Android App Developers', path: '/services/android' },
         { name: 'Hire React Js Developers', path: '/services/hire-react-developers' }

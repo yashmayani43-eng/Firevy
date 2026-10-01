@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 400" fill="none" class="w-full h-auto">
+  <defs>
+    <filter id="shieldShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0369A1" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Soft Backdrop -->
+  <path d="M 230 360 C 230 240 330 140 450 140 C 490 140 520 152 540 170 L 540 360 Z" fill="#E0F2FE" opacity="0.65"/>
+  <ellipse cx="400" cy="270" rx="140" ry="110" fill="#F0F9FF" opacity="0.8"/>
+
+  <!-- Ground Line -->
+  <line x1="80" y1="360" x2="520" y2="360" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Four-pointed sparkle stars -->
+  <!-- Left Star -->
+  <g transform="translate(100, 280)" fill="#7DD3FC">
+    <path d="M 12 0 C 12 6 6 12 0 12 C 6 12 12 18 12 24 C 12 18 18 12 24 12 C 18 12 12 6 12 0 Z"/>
+  </g>
+  <!-- Center Top Star -->
+  <g transform="translate(295, 220)" fill="#93C5FD">
+    <path d="M 14 0 C 14 7 7 14 0 14 C 7 14 14 21 14 28 C 14 21 21 14 28 14 C 21 14 14 7 14 0 Z"/>
+  </g>
+  <!-- Right Star -->
+  <g transform="translate(485, 285)" fill="#7DD3FC">
+    <path d="M 12 0 C 12 6 6 12 0 12 C 6 12 12 18 12 24 C 12 18 18 12 24 12 C 18 12 12 6 12 0 Z"/>
+  </g>
+
+  <!-- Floating Bitcoin Token -->
+  <g transform="translate(355, 175)" filter="url(#shieldShadow)">
+    <circle cx="28" cy="28" r="28" fill="#3B82F6"/>
+    <circle cx="28" cy="28" r="25" fill="#2563EB"/>
+    <text x="28" y="38" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="29" font-weight="900" text-anchor="middle">₿</text>
+  </g>
+
+  <!-- Floating Analytics Card with Pie & Bars -->
+  <g transform="translate(425, 185)" filter="url(#shieldShadow)">
+    <rect width="66" height="46" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <!-- Mini Pie Chart -->
+    <circle cx="22" cy="23" r="14" fill="#93C5FD"/>
+    <path d="M 22 23 L 22 9 A 14 14 0 0 1 36 23 Z" fill="#2563EB"/>
+    <path d="M 22 23 L 36 23 A 14 14 0 0 1 22 37 Z" fill="#60A5FA"/>
+    <!-- Metric Bars -->
+    <rect x="42" y="15" width="18" height="4" rx="1.5" fill="#3B82F6"/>
+    <rect x="42" y="23" width="14" height="4" rx="1.5" fill="#93C5FD"/>
+    <rect x="42" y="31" width="16" height="4" rx="1.5" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Three-way Network Branching Nodes -->
+  <g stroke="#94A3B8" stroke-width="2" stroke-linecap="round" fill="none">
+    <line x1="325" y1="265" x2="350" y2="280"/>
+    <line x1="375" y1="265" x2="350" y2="280"/>
+    <line x1="350" y1="280" x2="350" y2="305"/>
+
+    <line x1="390" y1="255" x2="405" y2="270"/>
+    <line x1="420" y1="255" x2="405" y2="270"/>
+    <line x1="405" y1="270" x2="405" y2="305"/>
+
+    <line x1="445" y1="265" x2="460" y2="280"/>
+    <line x1="475" y1="265" x2="460" y2="280"/>
+    <line x1="460" y1="280" x2="460" y2="305"/>
+  </g>
+  <circle cx="325" cy="265" r="3" fill="#60A5FA"/>
+  <circle cx="375" cy="265" r="3" fill="#60A5FA"/>
+  <circle cx="390" cy="255" r="3" fill="#60A5FA"/>
+  <circle cx="420" cy="255" r="3" fill="#60A5FA"/>
+  <circle cx="445" cy="265" r="3" fill="#60A5FA"/>
+  <circle cx="475" cy="265" r="3" fill="#60A5FA"/>
+
+  <!-- Server Racks (Stacked 3 tiers) -->
+  <g transform="translate(350, 305)" filter="url(#shieldShadow)">
+    <!-- Tier 1 Top -->
+    <rect x="0" y="0" width="75" height="24" rx="3" fill="#7DD3FC" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="6" cy="6" r="1.5" fill="#FFFFFF"/>
+    <circle cx="12" cy="6" r="1.5" fill="#FFFFFF"/>
+    <circle cx="18" cy="6" r="1.5" fill="#FFFFFF"/>
+    <circle cx="24" cy="6" r="1.5" fill="#0284C7"/>
+    <line x1="35" y1="12" x2="70" y2="12" stroke="#BAE6FD" stroke-width="2" stroke-dasharray="3 2"/>
+
+    <!-- Tier 2 Mid -->
+    <rect x="0" y="27" width="75" height="24" rx="3" fill="#7DD3FC" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="6" cy="33" r="1.5" fill="#FFFFFF"/>
+    <circle cx="12" cy="33" r="1.5" fill="#FFFFFF"/>
+    <circle cx="18" cy="33" r="1.5" fill="#0284C7"/>
+    <circle cx="24" cy="33" r="1.5" fill="#FFFFFF"/>
+    <line x1="35" y1="39" x2="70" y2="39" stroke="#BAE6FD" stroke-width="2" stroke-dasharray="3 2"/>
+
+    <!-- Tier 3 Bottom -->
+    <rect x="0" y="54" width="75" height="24" rx="3" fill="#7DD3FC" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="6" cy="60" r="1.5" fill="#FFFFFF"/>
+    <circle cx="12" cy="60" r="1.5" fill="#0284C7"/>
+    <circle cx="18" cy="60" r="1.5" fill="#FFFFFF"/>
+    <circle cx="24" cy="60" r="1.5" fill="#FFFFFF"/>
+    <line x1="35" y1="66" x2="70" y2="66" stroke="#BAE6FD" stroke-width="2" stroke-dasharray="3 2"/>
+  </g>
+
+  <!-- Security Shield in front of Server -->
+  <g transform="translate(405, 315)" filter="url(#shieldShadow)">
+    <path d="M 28 0 L 52 10 V 28 C 52 46 28 58 28 58 C 28 58 4 46 4 28 V 10 Z" fill="#BAE6FD" stroke="#0284C7" stroke-width="2"/>
+    <!-- White Padlock Icon -->
+    <rect x="20" y="24" width="16" height="15" rx="2" fill="#FFFFFF"/>
+    <path d="M 23 24 V 18 C 23 15.5 25.2 13.5 28 13.5 C 30.8 13.5 33 15.5 33 18 V 24" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
+    <circle cx="28" cy="30" r="1.8" fill="#0284C7"/>
+    <line x1="28" y1="31" x2="28" y2="35" stroke="#0284C7" stroke-width="1.5"/>
+  </g>
+
+  <!-- Pointing Person on Left -->
+  <!-- Legs -->
+  <g>
+    <!-- Left Leg (Back) -->
+    <path d="M 180 280 L 140 330 L 132 355" stroke="#1E293B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <ellipse cx="128" cy="358" rx="12" ry="5" fill="#0F172A"/>
+
+    <!-- Right Leg (Forward) -->
+    <path d="M 195 280 L 195 325 L 205 355" stroke="#1E293B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <ellipse cx="212" cy="358" rx="12" ry="5" fill="#0F172A"/>
+  </g>
+
+  <!-- Torso & Light Blue Long Sleeve Shirt -->
+  <path d="M 172 205 C 172 190 205 190 215 205 L 205 285 C 205 292 178 292 172 285 Z" fill="#60A5FA"/>
+
+  <!-- Left Arm (Pointing) -->
+  <path d="M 210 210 L 230 220 L 255 190" stroke="#60A5FA" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Pointing Hand & Finger -->
+  <circle cx="258" cy="188" r="5" fill="#FDBA74"/>
+  <line x1="258" y1="188" x2="265" y2="182" stroke="#FDBA74" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Right Arm (Down by side) -->
+  <path d="M 175 210 L 170 238 L 180 255" stroke="#60A5FA" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="182" cy="258" r="4.5" fill="#FDBA74"/>
+
+  <!-- Head & Hair -->
+  <circle cx="192" cy="178" r="12" fill="#FDBA74"/>
+  <!-- Dark Hair -->
+  <path d="M 183 175 C 183 162 203 162 203 172 C 196 170 188 172 184 178 Z" fill="#0F172A"/>
+</svg>

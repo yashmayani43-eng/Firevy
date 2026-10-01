@@ -363,72 +363,64 @@ export const ChatbotDevelopmentService = () => {
         ctaLink="#quote-form"
         serviceCategory="hybrid"
         stats={chatbotStats}
-        heroImage="/images/bigcommerce_hero_illustration.png"
+        heroImage="/images/chatbot_hero_illustration.png"
       />
 
       {/* 2. Brand Logo Marquee Right Below Hero Banner */}
       <BrandLogoMarquee />
 
-      {/* 3. SECTION: Chatbot Development Market Stats */}
-      <section className="py-16 sm:py-20 bg-white text-left">
+      {/* 3. SECTION: Custom Chatbot Solutions For Businesses (Left Illustration, Right Text) */}
+      <section className="py-14 sm:py-20 bg-white font-sans text-left">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Chart Image */}
-            <div className="lg:col-span-6 flex justify-center">
-              <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
+            {/* Left Column: Robot Sitting at Laptop Illustration */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="w-full max-w-md overflow-hidden">
                 <img
-                  src="/images/bigcommerce_market_stats_chart.png"
-                  alt="Chatbot Development Market Stats"
-                  className="w-full h-auto max-w-[460px] object-contain rounded-lg"
+                  src="/images/custom_chatbot_solutions_illustration.jpg"
+                  alt="Custom Chatbot Solutions For Businesses"
+                  className="w-full h-auto object-contain hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>
 
-            {/* Right Column: Content */}
-            <div className="lg:col-span-6 space-y-5">
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Chatbot Development Market Stats
+            {/* Right Column: Title & Content */}
+            <div className="lg:col-span-7 space-y-5">
+              <h2 className="text-[28px] sm:text-[36px] font-[900] text-[#0B0F19] tracking-tight leading-tight">
+                Custom Chatbot Solutions For Businesses
               </h2>
-
-              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                The global chatbot market size was roughly USD 4.9 billion in 2022. As per our research, the market is expected to reach USD 27.3 billion by 2030, exhibiting a CAGR of 23.3% during the forecast period.
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.8] font-normal">
+                You will be able to discover new levels of creativity, client perception, and planning if you make use of Chatbot app Development company. Chatbot app development company is expert in ensuring the success of even the most intricate of your company business plans. This is the secret behind our success. They have a wealth of expertise in the field and a voracious appetite for innovation, both of which contribute to the uniqueness of your software compared to that of your rivals. If you seek a Chatbot software development company to manage intractable challenges, you should contact our specialists.
               </p>
-
-              <div className="pt-2">
-                <a
-                  href="#quote-form"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-[8px] bg-[#005F96] hover:bg-[#004a75] text-white font-[700] text-sm sm:text-base transition-all shadow-md hover:shadow-lg font-sans"
-                >
-                  <span>Connect With An Expert</span>
-                </a>
-              </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 4. SECTION: Affordable Chatbot App Development Services */}
-      <section className="py-16 sm:py-20 bg-white text-left">
+      {/* 4. SECTION: Brief About Chatbot Development Services (Left Text, Right Illustration) */}
+      <section className="py-12 sm:py-16 bg-white font-sans text-left">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Content */}
-            <div className="lg:col-span-6 space-y-5">
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-[800] text-slate-900 tracking-tight leading-[1.25]">
-                Affordable Chatbot App Development Services
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+            {/* Left Column: Title & Text */}
+            <div className="lg:col-span-7 space-y-4">
+              <h2 className="text-[26px] sm:text-[32px] font-[800] text-[#0B0F19] tracking-tight">
+                Brief About Chatbot Development Services
               </h2>
-
-              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-                Many small and medium-sized enterprises (SMEs) choose top-rated Chatbot Development Services for a wide range of AI projects—from simple support widgets to complex enterprise conversational agents. Chatbots excel in building RESTful webhook integrations, making them ideal for integrating with existing systems or creating new, efficient interfaces. As a reliable Chatbot development company, we offer a team of dedicated bot developers with over a decade of experience in delivering high-quality, scalable solutions.
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.8] font-normal">
+                As a best Chatbot development company, we help businesses stay at the top. We assist in managing your chatbot infrastructure and controlling the power of conversational AI and visualization tools. We rapidly designed, trained, and deployed chatbot models using leading cloud platforms. We help businesses establish their system so they may take advantage of advanced Natural Language Processing algorithms. It makes the process of analyzing and predicting customer intent more efficient.
+              </p>
+              <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.8] font-normal">
+                We ask our customers for input on our data and chatbot models, and if they are pleased with the assessment, we go on to the next step of the process, which is deploying the models. Hire chatbot developer specialists clean the raw data using Machine Learning and NLP techniques to improve the overall quality and remove any data that is either insufficient or not appropriately structured.
               </p>
             </div>
 
-            {/* Right Column: Image */}
-            <div className="lg:col-span-6 flex justify-center">
-              <div className="relative w-full max-w-[480px] p-2 flex items-center justify-center">
+            {/* Right Column: Standing Robot Illustration */}
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="w-full max-w-md overflow-hidden">
                 <img
-                  src="/images/bigcommerce_sec3_illustration.png"
-                  alt="Affordable Chatbot App Development Services"
-                  className="w-full h-auto max-w-[460px] object-contain"
+                  src="/images/brief_chatbot_development_illustration.jpg"
+                  alt="Brief About Chatbot Development Services Illustration"
+                  className="w-full h-auto object-contain max-h-[380px] hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>

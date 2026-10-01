@@ -222,55 +222,11 @@ export const HireDedicatedDevelopersService = () => {
             {/* Right Hero Graphic Banner */}
             <div className="lg:col-span-5 relative flex justify-center items-center">
               <div className="relative w-full max-w-[480px] flex justify-center items-center">
-                <svg viewBox="0 0 500 400" className="w-full h-auto drop-shadow-md" fill="none">
-                  {/* Soft Background Cloud Blob */}
-                  <path d="M 60 170 C 60 90, 130 50, 210 70 C 280 30, 390 50, 430 110 C 480 160, 470 260, 410 310 C 350 360, 130 360, 80 310 C 40 260, 60 210, 60 170 Z" fill="#D4ECF9" />
-                  
-                  {/* Monitor Stand & Base */}
-                  <rect x="220" y="310" width="60" height="25" rx="4" fill="#94A3B8" />
-                  <ellipse cx="250" cy="335" rx="55" ry="10" fill="#64748B" />
-
-                  {/* Main Window / Monitor */}
-                  <rect x="95" y="115" width="310" height="200" rx="16" fill="#0F172A" />
-                  <rect x="105" y="125" width="290" height="180" rx="10" fill="#1E293B" />
-
-                  {/* Browser Header dots */}
-                  <circle cx="120" cy="138" r="4" fill="#EF4444" />
-                  <circle cx="132" cy="138" r="4" fill="#F59E0B" />
-                  <circle cx="144" cy="138" r="4" fill="#10B981" />
-
-                  {/* Inner Screen Windows */}
-                  <rect x="120" y="152" width="80" height="60" rx="6" fill="#006095" />
-                  <rect x="210" y="152" width="80" height="60" rx="6" fill="#38BDF8" />
-                  <rect x="300" y="152" width="85" height="60" rx="6" fill="#0284C7" />
-                  <rect x="120" y="222" width="170" height="12" rx="4" fill="#38BDF8" />
-                  <rect x="120" y="242" width="120" height="10" rx="4" fill="#006095" />
-                  <rect x="120" y="260" width="245" height="12" rx="4" fill="#0284C7" />
-
-                  {/* Floating Circle Logo */}
-                  <circle cx="100" cy="225" r="22" fill="#006095" stroke="#FFFFFF" strokeWidth="3" />
-                  <text x="100" y="231" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="bold" fontFamily="sans-serif">DEV</text>
-
-                  {/* Floating Code Badge Left: </> */}
-                  <rect x="100" y="70" width="48" height="34" rx="8" fill="#38BDF8" />
-                  <text x="124" y="93" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="extrabold">&lt;/&gt;</text>
-
-                  {/* Floating Code Badge Right: {} */}
-                  <rect x="340" y="55" width="48" height="34" rx="8" fill="#10B981" />
-                  <text x="364" y="78" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="extrabold">&#123;&#125;</text>
-
-                  {/* Left Female Developer Figure */}
-                  <circle cx="75" cy="245" r="10" fill="#F43F5E" />
-                  <path d="M 65 260 L 85 260 L 80 320 L 70 320 Z" fill="#E11D48" />
-                  <rect x="68" y="320" width="6" height="30" fill="#1E293B" />
-                  <rect x="76" y="320" width="6" height="30" fill="#1E293B" />
-
-                  {/* Top Male Developer Figure */}
-                  <circle cx="360" cy="95" r="10" fill="#F59E0B" />
-                  <path d="M 350 110 L 370 110 L 368 150 L 352 150 Z" fill="#2563EB" />
-                  <rect x="353" y="150" width="6" height="25" fill="#1E293B" />
-                  <rect x="361" y="150" width="6" height="25" fill="#1E293B" />
-                </svg>
+                <img
+                  src="/images/hire_dedicated_developer_hero_isometric.png"
+                  alt="Hire Dedicated Developers"
+                  className="w-full h-auto object-contain max-h-[420px]"
+                />
               </div>
             </div>
           </div>
@@ -307,79 +263,6 @@ export const HireDedicatedDevelopersService = () => {
               <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
                 By hiring dedicated development professionals from Firevy.Co, you gain immediate access to top 1% vetted developers who excel in modern web development, mobile applications, cloud microservices, database management, and custom APIs. Hire Dedicated Developers that deliver secure, maintainable, high-throughput software architectures while ensuring quality standards are prioritized. From building MVP prototypes to managing complex enterprise platforms, our dedicated software development team enhances product velocity and reliability seamlessly.
               </p>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* ============================================================
-          SECTION 3: BRIEF ABOUT OUR DEDICATED DEVELOPERS SERVICES
-          ============================================================ */}
-      <section className="py-16 md:py-24 bg-white text-slate-900 font-sans border-b border-slate-100">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Left Content Column */}
-            <div className="lg:col-span-6 space-y-6 text-left">
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
-                Brief About Our Dedicated Developers Services
-              </h2>
-              <div className="space-y-4 text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
-                <p>
-                  Our dedicated developers are pretty efficient and hold years of expertise. Other perks of hiring our developers include: We enable you to communicate with your development team in real-time and directly using Skype, Slack, or Teams. You are free to receive demonstrations whenever it is convenient for you. Stop wishing things are going according to plan and start realizing they are. From the initial conception to the final invoicing of your projects, you will have the ability to see the whole process personally. Hire Dedicated Developers who have received instruction in efficient communication and are always accessible to speak with you in real-time. Without mutual trust, there can be no successful collaboration. Trust is the foundation upon which Firevy.Co was formed, and we are aware that it is something that must be gained, appreciated, and maintained.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column: Clean Vector SVG Illustration matching Sapphire Reference */}
-            <div className="lg:col-span-6 flex justify-center items-center">
-              <div className="relative w-full max-w-[500px]">
-                <svg viewBox="0 0 550 400" className="w-full h-auto drop-shadow-sm" fill="none">
-                  {/* Background Wall Shelves */}
-                  <line x1="280" y1="120" x2="480" y2="120" stroke="#CBD5E1" strokeWidth="4" strokeLinecap="round" />
-                  <rect x="300" y="80" width="30" height="40" fill="#93C5FD" rx="2" />
-                  <rect x="335" y="85" width="25" height="35" fill="#3B82F6" rx="2" />
-                  <rect x="365" y="90" width="20" height="30" fill="#60A5FA" rx="2" />
-
-                  {/* Right Wall Shelf */}
-                  <line x1="420" y1="180" x2="520" y2="180" stroke="#CBD5E1" strokeWidth="4" strokeLinecap="round" />
-                  <rect x="435" y="150" width="25" height="30" fill="#93C5FD" rx="2" />
-                  <rect x="465" y="155" width="20" height="25" fill="#3B82F6" rx="2" />
-
-                  {/* Desk Surface */}
-                  <rect x="260" y="270" width="270" height="12" rx="4" fill="#0F172A" />
-                  <rect x="380" y="282" width="16" height="70" fill="#475569" />
-                  <rect x="420" y="282" width="16" height="70" fill="#475569" />
-
-                  {/* Computer Monitor on Desk */}
-                  <rect x="330" y="200" width="90" height="65" rx="6" fill="#0F172A" />
-                  <rect x="335" y="205" width="80" height="55" rx="4" fill="#006095" />
-                  <text x="375" y="238" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="bold">&lt;/&gt;</text>
-                  <rect x="367" y="265" width="16" height="8" fill="#475569" />
-                  <ellipse cx="375" cy="273" rx="20" ry="4" fill="#334155" />
-
-                  {/* Floating Chat Bubble */}
-                  <path d="M 320 160 C 320 148, 335 140, 350 140 C 365 140, 380 148, 380 160 C 380 168, 370 174, 360 176 L 362 185 L 350 177 C 330 177, 320 170, 320 160 Z" fill="#0284C7" />
-                  <line x1="335" y1="155" x2="365" y2="155" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" />
-                  <line x1="335" y1="162" x2="355" y2="162" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" />
-
-                  {/* Left Developer Sitting on Stool */}
-                  <circle cx="310" cy="215" r="14" fill="#FDBA74" />
-                  <path d="M 300 215 C 300 195, 320 195, 320 215 Z" fill="#0F172A" />
-                  <path d="M 295 235 L 325 235 L 320 300 L 305 300 Z" fill="#0284C7" />
-                  <rect x="303" y="300" width="6" height="40" fill="#1E293B" />
-                  <rect x="311" y="300" width="6" height="40" fill="#1E293B" />
-                  <ellipse cx="310" cy="310" rx="16" ry="4" fill="#64748B" />
-                  <rect x="308" y="314" width="4" height="26" fill="#475569" />
-
-                  {/* Right Developer Sitting on Office Chair */}
-                  <circle cx="430" cy="210" r="14" fill="#FDBA74" />
-                  <path d="M 415 230 L 445 230 L 440 300 L 420 300 Z" fill="#0F172A" />
-                  {/* Office Chair Backrest */}
-                  <rect x="435" y="230" width="30" height="50" rx="8" fill="#006095" />
-                  <rect x="440" y="280" width="10" height="30" fill="#334155" />
-                  <ellipse cx="445" cy="310" rx="20" ry="5" fill="#1E293B" />
-                </svg>
-              </div>
             </div>
           </div>
         </Container>

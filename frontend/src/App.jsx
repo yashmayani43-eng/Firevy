@@ -73,8 +73,13 @@ const OnDemandAppDevelopmentService = lazy(() => import('./components/services/O
 const ArtificialIntelligenceDevelopmentService = lazy(() => import('./components/services/ArtificialIntelligenceDevelopmentService').then(m => ({ default: m.ArtificialIntelligenceDevelopmentService })));
 const AiCopilotDevelopmentService = lazy(() => import('./components/services/AiCopilotDevelopmentService').then(m => ({ default: m.AiCopilotDevelopmentService })));
 const EthicalAiDevelopmentService = lazy(() => import('./components/services/EthicalAiDevelopmentService').then(m => ({ default: m.EthicalAiDevelopmentService })));
+const NftMarketplaceDevelopmentService = lazy(() => import('./components/services/NftMarketplaceDevelopmentService').then(m => ({ default: m.NftMarketplaceDevelopmentService })));
+const SmartContractsDevelopmentService = lazy(() => import('./components/services/SmartContractsDevelopmentService').then(m => ({ default: m.SmartContractsDevelopmentService })));
+const BitcoinWalletDevelopmentService = lazy(() => import('./components/services/BitcoinWalletDevelopmentService').then(m => ({ default: m.BitcoinWalletDevelopmentService })));
+const MarketplaceAppDevelopmentService = lazy(() => import('./components/services/MarketplaceAppDevelopmentService').then(m => ({ default: m.MarketplaceAppDevelopmentService })));
 const AiPromptEngineeringService = lazy(() => import('./components/services/AiPromptEngineeringService').then(m => ({ default: m.AiPromptEngineeringService })));
 const AdaptiveAiDevelopmentService = lazy(() => import('./components/services/AdaptiveAiDevelopmentService').then(m => ({ default: m.AdaptiveAiDevelopmentService })));
+const EnterpriseAiDevelopmentService = lazy(() => import('./components/services/EnterpriseAiDevelopmentService').then(m => ({ default: m.EnterpriseAiDevelopmentService })));
 
 // Public Layout Wrapper Component
 const PublicLayoutWrapper = () => (
@@ -165,6 +170,22 @@ export function App() {
                 <Route path="/barber-app-development" element={<BarberAppDevelopmentService />} />
                 <Route path="/services/on-demand-app-development" element={<OnDemandAppDevelopmentService />} />
                 <Route path="/on-demand-app-development" element={<OnDemandAppDevelopmentService />} />
+                <Route path="/services/nft-marketplace-development" element={<NftMarketplaceDevelopmentService />} />
+                <Route path="/nft-marketplace-development" element={<NftMarketplaceDevelopmentService />} />
+                <Route path="/services/nft-marketplace-development-services" element={<NftMarketplaceDevelopmentService />} />
+                <Route path="/nft-marketplace-development-services" element={<NftMarketplaceDevelopmentService />} />
+                <Route path="/services/smart-contracts-development" element={<SmartContractsDevelopmentService />} />
+                <Route path="/smart-contracts-development" element={<SmartContractsDevelopmentService />} />
+                <Route path="/services/smart-contracts-development-services" element={<SmartContractsDevelopmentService />} />
+                <Route path="/smart-contracts-development-services" element={<SmartContractsDevelopmentService />} />
+                <Route path="/services/bitcoin-wallet-development" element={<BitcoinWalletDevelopmentService />} />
+                <Route path="/bitcoin-wallet-development" element={<BitcoinWalletDevelopmentService />} />
+                <Route path="/services/bitcoin-wallet-development-services" element={<BitcoinWalletDevelopmentService />} />
+                <Route path="/bitcoin-wallet-development-services" element={<BitcoinWalletDevelopmentService />} />
+                <Route path="/services/marketplace-app-development" element={<MarketplaceAppDevelopmentService />} />
+                <Route path="/marketplace-app-development" element={<MarketplaceAppDevelopmentService />} />
+                <Route path="/services/marketplace-app-development-services" element={<MarketplaceAppDevelopmentService />} />
+                <Route path="/marketplace-app-development-services" element={<MarketplaceAppDevelopmentService />} />
                 <Route path="/services/artificial-intelligence-development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/services/artificial%20intelligence%20development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/services/artificial intelligence development" element={<ArtificialIntelligenceDevelopmentService />} />
@@ -289,8 +310,8 @@ export function App() {
                 <Route path="/blockchain-development" element={<ServiceDetails />} />
                 <Route path="/services/ai-ionic-app-development" element={<ServiceDetails />} />
                 <Route path="/ai-ionic-app-development" element={<ServiceDetails />} />
-                <Route path="/services/enterprise-ai-development" element={<ServiceDetails />} />
-                <Route path="/enterprise-ai-development" element={<ServiceDetails />} />
+                <Route path="/services/enterprise-ai-development" element={<EnterpriseAiDevelopmentService />} />
+                <Route path="/enterprise-ai-development" element={<EnterpriseAiDevelopmentService />} />
                 <Route path="/services/ai-in-payments-industry" element={<ServiceDetails />} />
                 <Route path="/ai-in-payments-industry" element={<ServiceDetails />} />
                 <Route path="/services/ai-ml-development" element={<ServiceDetails />} />
@@ -1019,6 +1040,10 @@ export function App() {
                 <Route path="/services/hire-machine-learning-engineers" element={<ServiceDetails />} />
                 <Route path="/hire-machine-learning-engineer" element={<ServiceDetails />} />
                 <Route path="/hire-machine-learning-engineers" element={<ServiceDetails />} />
+                <Route path="/services/nft-marketplace-development" element={<NftMarketplaceDevelopmentService />} />
+                <Route path="/services/nft-marketplace-development-services" element={<NftMarketplaceDevelopmentService />} />
+                <Route path="/nft-marketplace-development" element={<NftMarketplaceDevelopmentService />} />
+                <Route path="/nft-marketplace-development-services" element={<NftMarketplaceDevelopmentService />} />
                 <Route path="/technologies" element={<Technologies />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/portfolio/:slug" element={<PortfolioDetails />} />
