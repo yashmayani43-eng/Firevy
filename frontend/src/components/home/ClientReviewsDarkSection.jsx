@@ -116,32 +116,32 @@ export const ClientReviewsDarkSection = ({ data }) => {
         onMouseLeave={() => setIsPaused(false)}
       >
         <div
-          className="flex transition-transform duration-700 ease-in-out gap-6 sm:gap-7 pl-6 sm:pl-10"
+          className="flex transition-transform duration-700 ease-in-out gap-7 sm:gap-8 px-6 sm:px-12"
           style={{
-            transform: `translateX(calc(-${currentIndex * 510}px - 140px + 10vw))`
+            transform: `translateX(-${currentIndex * 670}px)`
           }}
         >
           {extendedReviews.map((review, idx) => (
             <div
               key={idx}
-              className="w-[350px] sm:w-[480px] md:w-[500px] shrink-0 bg-white text-slate-900 rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 shadow-2xl flex justify-between h-[340px] sm:h-[355px] border border-slate-100 transition-all duration-300 text-left"
+              className="w-[420px] sm:w-[580px] md:w-[640px] shrink-0 bg-[#EAF5FC] text-slate-900 rounded-[26px] sm:rounded-[30px] p-7 sm:p-9 shadow-xl flex justify-between min-h-[350px] border border-[#D5EAF8] transition-all duration-300 text-left"
             >
               {/* Left Section: Clutch, Quote, Desc, Author */}
-              <div className="flex-1 flex flex-col justify-between pr-4 sm:pr-5 min-w-0">
+              <div className="flex-1 flex flex-col justify-between pr-6 sm:pr-8 min-w-0">
                 <div>
-                  {/* Clutch Logo with SVG and fallback */}
-                  <div className="mb-3">
+                  {/* Clutch Logo */}
+                  <div className="mb-3.5">
                     <img
                       src="/images/clutch_new.svg"
                       alt="Clutch"
-                      className="h-6 sm:h-6.5 object-contain"
+                      className="h-6.5 sm:h-7.5 object-contain"
                       onError={(e) => {
                         e.target.onerror = null;
                         e.target.style.display = 'none';
                         if (e.target.nextSibling) e.target.nextSibling.style.display = 'flex';
                       }}
                     />
-                    <div className="hidden items-center text-slate-900 font-black text-[24px] tracking-tight font-sans">
+                    <div className="hidden items-center text-slate-900 font-black text-[26px] tracking-tight font-sans">
                       <span>Clutc</span>
                       <span className="text-[#DE281F]">h</span>
                       <span className="w-2.5 h-2.5 rounded-full bg-[#DE281F] ml-0.5 mb-2 inline-block" />
@@ -149,50 +149,50 @@ export const ClientReviewsDarkSection = ({ data }) => {
                   </div>
 
                   {/* Main Quote Title */}
-                  <h4 className="text-[16px] sm:text-[17px] font-[800] text-slate-900 leading-snug font-sans mb-2.5 line-clamp-2">
+                  <h4 className="text-[17px] sm:text-[18.5px] font-[800] text-slate-900 leading-snug font-sans mb-3 line-clamp-2">
                     {review.title || review.headline}
                   </h4>
 
                   {/* Description Comment */}
-                  <p className="text-[12.5px] sm:text-[13px] text-slate-600 leading-[1.65] font-[400] font-sans line-clamp-3">
+                  <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.7] font-[400] font-sans line-clamp-3">
                     {review.comment || review.desc || review.description}
                   </p>
                 </div>
 
                 {/* Author Profile Row */}
-                <div className="flex items-center space-x-3 pt-3 border-t border-slate-100">
+                <div className="flex items-center space-x-3.5 pt-4 border-t border-slate-200/60 mt-4">
                   <img
                     src={review.avatar || '/images/client/1.webp'}
                     alt={review.author || review.authorName}
-                    className="w-11 h-11 rounded-full object-cover shrink-0 border border-slate-200 shadow-xs"
+                    className="w-12 h-12 rounded-full object-cover shrink-0 border border-slate-200 shadow-xs"
                   />
                   <div className="min-w-0">
-                    <div className="text-[14px] font-[800] text-slate-900 tracking-tight font-sans truncate">
+                    <div className="text-[15px] font-[800] text-slate-900 tracking-tight font-sans truncate">
                       {review.author || review.authorName}
                     </div>
-                    <div className="text-[12px] font-[500] text-slate-500 font-sans truncate">
+                    <div className="text-[12.5px] font-[500] text-slate-500 font-sans truncate">
                       {review.location}
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Right Section: Ice-Blue Rating Score & Breakdown Panel */}
-              <div className="w-[130px] sm:w-[145px] shrink-0 bg-[#EEF7FC] rounded-[22px] p-4 sm:p-5 flex flex-col justify-between text-center border border-blue-100/70">
+              {/* Right Section: White Rating Score & Breakdown Panel */}
+              <div className="w-[150px] sm:w-[190px] md:w-[205px] shrink-0 bg-white rounded-[22px] p-5 sm:p-6 flex flex-col justify-between text-center border border-slate-100 shadow-sm">
                 {/* Rating Score & Stars */}
                 <div>
-                  <div className="text-[36px] sm:text-[40px] font-[900] text-slate-900 leading-none tracking-tight font-sans mb-1.5">
+                  <div className="text-[40px] sm:text-[46px] font-[900] text-slate-900 leading-none tracking-tight font-sans mb-2">
                     {review.score || review.overallRating || "5.0"}
                   </div>
-                  <div className="flex items-center justify-center space-x-0.5 text-amber-400">
+                  <div className="flex items-center justify-center space-x-1 text-amber-400">
                     {[...Array(review.stars || 5)].map((_, s) => (
-                      <Star key={s} className="w-3.5 h-3.5 fill-current" />
+                      <Star key={s} className="w-4 h-4 fill-current" />
                     ))}
                   </div>
                 </div>
 
                 {/* Breakdown Scores List */}
-                <div className="space-y-1.5 text-[11.5px] font-[700] text-slate-700 border-t border-blue-200/70 pt-3">
+                <div className="space-y-2 text-[12.5px] sm:text-[13.5px] font-[700] text-slate-700 border-t border-slate-100 pt-4">
                   <div className="flex justify-between items-center">
                     <span className="text-slate-600 font-[700]">Quality</span>
                     <span className="font-[900] text-slate-900">{review.ratings?.quality || review.quality || "5.0"}</span>

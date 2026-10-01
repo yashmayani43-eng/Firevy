@@ -25,7 +25,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'business-intelligence-development': { title: 'Business Intelligence Development', category: 'AI & ML Development' },
   'ai-ionic-app-development': { title: 'AI Ionic App Development', category: 'AI & ML Development' },
   'enterprise-ai-development': { title: 'Enterprise AI Development', category: 'AI & ML Development' },
-  'ai-in-payments-industry': { title: 'AI in Payments Industry', category: 'AI & ML Development' },
   'ai-ml-development': { title: 'AI & ML Development', category: 'AI & ML Development' },
   'ai-and-ml-development': { title: 'AI & ML Development', category: 'AI & ML Development' },
 
@@ -123,7 +122,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'business-intelligence' ||
     clean === 'ai-ionic-app-development' ||
     clean === 'enterprise-ai-development' ||
-    clean === 'ai-in-payments-industry' ||
     clean === 'ai-ml-development' ||
     clean === 'ai-and-ml-development' ||
     clean === 'c-sharp-development' ||

@@ -85,30 +85,30 @@ export const AiDevelopersExpertiseCarouselSection = () => {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div
-          className="flex items-stretch gap-6 transition-transform duration-700 ease-out py-3"
+          className="flex items-stretch gap-6 transition-transform duration-700 ease-out py-2"
           style={{
-            transform: `translateX(-${currentIndex * 350}px)`
+            transform: `translateX(-${currentIndex * 444}px)`
           }}
         >
           {developerExpertiseCards.map((card, idx) => (
             <div
               key={card.id}
-              className={`w-[290px] sm:w-[330px] md:w-[360px] shrink-0 bg-[#EAF5FC] border border-[#CCE3F5] rounded-[18px] p-6 sm:p-7 flex flex-col justify-between hover:shadow-lg transition-all duration-300 ${
-                currentIndex === idx ? 'ring-2 ring-[#0082C8]/40 shadow-md' : ''
+              className={`w-[320px] sm:w-[380px] md:w-[420px] shrink-0 bg-[#D9EFFD] rounded-[16px] p-5 sm:p-6 flex flex-col justify-between hover:shadow-md transition-all duration-300 ${
+                currentIndex === idx ? 'ring-2 ring-[#0082C8]/30 shadow-md' : ''
               }`}
             >
-              <div>
-                <h3 className="text-[17.5px] sm:text-[19px] font-[800] text-slate-900 mb-3 tracking-tight">
+              <div className="space-y-2.5">
+                <h3 className="text-[17px] sm:text-[18.5px] font-[800] text-[#0B0F19] tracking-tight leading-snug">
                   {card.title}
                 </h3>
-                <p className="text-[13px] sm:text-[13.5px] text-[#334155] leading-[1.75] font-normal">
+                <p className="text-[13px] sm:text-[13.5px] text-slate-700 leading-[1.65] font-normal">
                   {card.desc}
                 </p>
               </div>
-              <div className="pt-6">
+              <div className="pt-4">
                 <Link
                   to={card.link}
-                  className="inline-flex items-center justify-center bg-[#0082C8] hover:bg-[#006CAF] text-white font-[700] text-[13px] px-5 py-2.5 rounded-[6px] transition-colors shadow-2xs cursor-pointer active:scale-95"
+                  className="inline-flex items-center justify-center bg-[#0082C8] hover:bg-[#006CAF] text-white font-[700] text-[13px] px-5 py-2 rounded-[6px] transition-colors shadow-2xs cursor-pointer active:scale-95"
                 >
                   View More
                 </Link>
@@ -116,36 +116,6 @@ export const AiDevelopersExpertiseCarouselSection = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Bottom Slider Arrow Navigation & Indicators */}
-      <div className="flex items-center justify-center space-x-4 mt-8">
-        <button
-          onClick={handlePrev}
-          className="w-11 h-11 rounded-full bg-white border border-slate-200 text-slate-700 hover:text-[#0082C8] hover:bg-slate-50 hover:border-[#0082C8]/40 shadow-xs hover:shadow-md transition-all flex items-center justify-center font-bold text-xl cursor-pointer select-none"
-          aria-label="Previous developer expertise slide"
-        >
-          ←
-        </button>
-        <div className="flex space-x-2">
-          {developerExpertiseCards.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentIndex(idx)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                currentIndex === idx ? 'bg-[#0082C8] w-6' : 'bg-slate-300 hover:bg-slate-400'
-              }`}
-              aria-label={`Go to slide ${idx + 1}`}
-            />
-          ))}
-        </div>
-        <button
-          onClick={handleNext}
-          className="w-11 h-11 rounded-full bg-white border border-slate-200 text-slate-700 hover:text-[#0082C8] hover:bg-slate-50 hover:border-[#0082C8]/40 shadow-xs hover:shadow-md transition-all flex items-center justify-center font-bold text-xl cursor-pointer select-none"
-          aria-label="Next developer expertise slide"
-        >
-          →
-        </button>
       </div>
     </section>
   );

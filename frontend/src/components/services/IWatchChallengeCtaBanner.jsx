@@ -20,17 +20,9 @@ export const IWatchChallengeCtaBanner = ({
       </div>
 
       {/* Centered Content */}
-      <div className="relative z-10 w-full max-w-5xl px-4 sm:px-8 mx-auto text-center space-y-3">
+      <div className="relative z-10 w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto text-center space-y-3">
         {/* Main Title */}
-        <h2
-          className="text-white tracking-tight leading-tight"
-          style={{
-            fontFamily: "'Poppins', sans-serif",
-            fontWeight: 800,
-            fontSize: '32px',
-            color: '#FFFFFF'
-          }}
-        >
+        <h2 className="text-white tracking-tight leading-tight text-lg sm:text-xl md:text-[24px] lg:text-[27px] font-[800] font-sans">
           {title}
         </h2>
 

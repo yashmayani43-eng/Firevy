@@ -233,7 +233,7 @@ export const VideoTestimonialsStory = ({ data }) => {
                   </svg>
 
                   {/* Centered Circular Portrait */}
-                  <div className="relative z-10 w-26 h-26 sm:w-28 sm:h-28 rounded-full border-[3.5px] border-white overflow-hidden shadow-lg bg-white/10 shrink-0">
+                  <div className="relative z-10 w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-white overflow-hidden shadow-xl shrink-0">
                     <img
                       src={item.img}
                       alt={item.title}

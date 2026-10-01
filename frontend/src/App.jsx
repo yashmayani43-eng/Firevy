@@ -80,6 +80,9 @@ const MarketplaceAppDevelopmentService = lazy(() => import('./components/service
 const AiPromptEngineeringService = lazy(() => import('./components/services/AiPromptEngineeringService').then(m => ({ default: m.AiPromptEngineeringService })));
 const AdaptiveAiDevelopmentService = lazy(() => import('./components/services/AdaptiveAiDevelopmentService').then(m => ({ default: m.AdaptiveAiDevelopmentService })));
 const EnterpriseAiDevelopmentService = lazy(() => import('./components/services/EnterpriseAiDevelopmentService').then(m => ({ default: m.EnterpriseAiDevelopmentService })));
+const CsrWebDevelopmentService = lazy(() => import('./components/services/CsrWebDevelopmentService').then(m => ({ default: m.CsrWebDevelopmentService })));
+const CssWebDevelopmentService = lazy(() => import('./components/services/CssWebDevelopmentService').then(m => ({ default: m.CssWebDevelopmentService })));
+const WebPortalDevelopmentService = lazy(() => import('./components/services/WebPortalDevelopmentService').then(m => ({ default: m.WebPortalDevelopmentService })));
 
 // Public Layout Wrapper Component
 const PublicLayoutWrapper = () => (
@@ -312,6 +315,12 @@ export function App() {
                 <Route path="/ai-ionic-app-development" element={<ServiceDetails />} />
                 <Route path="/services/enterprise-ai-development" element={<EnterpriseAiDevelopmentService />} />
                 <Route path="/enterprise-ai-development" element={<EnterpriseAiDevelopmentService />} />
+                <Route path="/services/csr-web-development" element={<CsrWebDevelopmentService />} />
+                <Route path="/csr-web-development" element={<CsrWebDevelopmentService />} />
+                <Route path="/services/css-web-development" element={<CssWebDevelopmentService />} />
+                <Route path="/css-web-development" element={<CssWebDevelopmentService />} />
+                <Route path="/services/web-portal-development" element={<WebPortalDevelopmentService />} />
+                <Route path="/web-portal-development" element={<WebPortalDevelopmentService />} />
                 <Route path="/services/ai-in-payments-industry" element={<ServiceDetails />} />
                 <Route path="/ai-in-payments-industry" element={<ServiceDetails />} />
                 <Route path="/services/ai-ml-development" element={<ServiceDetails />} />

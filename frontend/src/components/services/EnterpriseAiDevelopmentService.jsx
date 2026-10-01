@@ -5,23 +5,35 @@ import SEO from '../common/SEO';
 import BrandLogoMarquee from '../common/BrandLogoMarquee';
 import ProcessWeFollow from '../common/ProcessWeFollow';
 import PremiumServicesGrid from '../common/PremiumServicesGrid';
+import AiCloudProvidersSection from './AiCloudProvidersSection';
 import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
 import SapphireFaqSection from '../common/SapphireFaqSection';
 import InnovativeSolutionsVideoSection from './InnovativeSolutionsVideoSection';
-import { 
-  ArrowRight, 
-  Cpu, 
-  BarChart3, 
-  LineChart, 
-  Network, 
-  Sparkles, 
-  Stethoscope, 
-  GraduationCap, 
-  Film, 
-  Heart, 
-  ShoppingBag, 
-  Landmark, 
-  ShieldCheck, 
+import SectorsThrivingSection from './SectorsThrivingSection';
+import { IndustryFocusedInsightsSection } from './IndustryFocusedInsightsSection';
+import AiDevelopersExpertiseCarouselSection from './AiDevelopersExpertiseCarouselSection';
+import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
+import ClientReviewsDarkSection from '../home/ClientReviewsDarkSection';
+import AboutUsStats from './AboutUsStats';
+import FeaturedInLogosGrid from '../home/FeaturedInLogosGrid';
+import VideoTestimonialsStory from '../home/VideoTestimonialsStory';
+import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
+import IWatchChallengeCtaBanner from './IWatchChallengeCtaBanner';
+import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
+import {
+  ArrowRight,
+  Cpu,
+  BarChart3,
+  LineChart,
+  Network,
+  Sparkles,
+  Stethoscope,
+  GraduationCap,
+  Film,
+  Heart,
+  ShoppingBag,
+  Landmark,
+  ShieldCheck,
   Leaf,
   Car,
   Lightbulb,
@@ -31,6 +43,7 @@ import {
 
 export const EnterpriseAiDevelopmentService = () => {
   const [activeSuiteTab, setActiveSuiteTab] = useState(0);
+  const [activePartnerAccordion, setActivePartnerAccordion] = useState(0);
   const sliderRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -203,8 +216,8 @@ export const EnterpriseAiDevelopmentService = () => {
       name: 'Python',
       svg: (
         <svg className="w-12 h-12" viewBox="0 0 128 128">
-          <path fill="#3776AB" d="M63.04 8c-26.68 0-25.04 11.58-25.04 11.58l.03 11.96h25.46v3.65H27.56S8 33.02 8 60.15c0 27.14 17.15 26.1 17.15 26.1h10.23v-14.4c0-16.2 13.9-15.68 13.9-15.68h25.18s13.38.2 13.38-12.92V23.47S90.4 8 63.04 8zm-13.8 15.65c2.58 0 4.67 2.1 4.67 4.68 0 2.59-2.09 4.69-4.67 4.69a4.68 4.68 0 1 1 0-9.37z"/>
-          <path fill="#FFD43B" d="M64.96 120c26.68 0 25.04-11.58 25.04-11.58l-.03-11.96H64.51v-3.65h35.93S120 94.98 120 67.85c0-27.14-17.15-26.1-17.15-26.1H92.62v14.4c0 16.2-13.9 15.68-13.9 15.68H53.54s-13.38-.2-13.38 12.92v20.78S37.6 120 64.96 120zm13.8-15.65c-2.58 0-4.67-2.1-4.67-4.68 0-2.59 2.09-4.69 4.67-4.69a4.68 4.68 0 1 1 0 9.37z"/>
+          <path fill="#3776AB" d="M63.04 8c-26.68 0-25.04 11.58-25.04 11.58l.03 11.96h25.46v3.65H27.56S8 33.02 8 60.15c0 27.14 17.15 26.1 17.15 26.1h10.23v-14.4c0-16.2 13.9-15.68 13.9-15.68h25.18s13.38.2 13.38-12.92V23.47S90.4 8 63.04 8zm-13.8 15.65c2.58 0 4.67 2.1 4.67 4.68 0 2.59-2.09 4.69-4.67 4.69a4.68 4.68 0 1 1 0-9.37z" />
+          <path fill="#FFD43B" d="M64.96 120c26.68 0 25.04-11.58 25.04-11.58l-.03-11.96H64.51v-3.65h35.93S120 94.98 120 67.85c0-27.14-17.15-26.1-17.15-26.1H92.62v14.4c0 16.2-13.9 15.68-13.9 15.68H53.54s-13.38-.2-13.38 12.92v20.78S37.6 120 64.96 120zm13.8-15.65c-2.58 0-4.67-2.1-4.67-4.68 0-2.59 2.09-4.69 4.67-4.69a4.68 4.68 0 1 1 0 9.37z" />
         </svg>
       )
     },
@@ -212,10 +225,10 @@ export const EnterpriseAiDevelopmentService = () => {
       name: 'Big Data',
       svg: (
         <svg className="w-11 h-11" viewBox="0 0 48 48" fill="none">
-          <path d="M24 12c11.046 0 20-3.134 20-7S35.046 2 24 2 4 5.134 4 9s8.954 7 20 7z" fill="#0072C6"/>
-          <path d="M44 9v11c0 3.866-8.954 7-20 7S4 23.866 4 20V9c0 3.866 8.954 7 20 7s20-3.134 20-7z" fill="#005A9E"/>
-          <path d="M44 20v11c0 3.866-8.954 7-20 7S4 34.866 4 31V20c0 3.866 8.954 7 20 7s20-3.134 20-7z" fill="#004578"/>
-          <path d="M44 31v11c0 3.866-8.954 7-20 7S4 45.866 4 42V31c0 3.866 8.954 7 20 7s20-3.134 20-7z" fill="#002050"/>
+          <path d="M24 12c11.046 0 20-3.134 20-7S35.046 2 24 2 4 5.134 4 9s8.954 7 20 7z" fill="#0072C6" />
+          <path d="M44 9v11c0 3.866-8.954 7-20 7S4 23.866 4 20V9c0 3.866 8.954 7 20 7s20-3.134 20-7z" fill="#005A9E" />
+          <path d="M44 20v11c0 3.866-8.954 7-20 7S4 34.866 4 31V20c0 3.866 8.954 7 20 7s20-3.134 20-7z" fill="#004578" />
+          <path d="M44 31v11c0 3.866-8.954 7-20 7S4 45.866 4 42V31c0 3.866 8.954 7 20 7s20-3.134 20-7z" fill="#002050" />
         </svg>
       )
     },
@@ -236,9 +249,9 @@ export const EnterpriseAiDevelopmentService = () => {
       name: 'ETL',
       svg: (
         <svg className="w-11 h-11" viewBox="0 0 48 48" fill="none">
-          <path d="M20 10c8 0 14-2 14-4.5S28 1 20 1 6 3 6 5.5 12 10 20 10z" fill="#0072C6"/>
-          <path d="M34 5.5v8c0 2.5-6 4.5-14 4.5S6 16 6 13.5v-8c0 2.5 6 4.5 14 4.5s14-2 14-4.5z" fill="#005A9E"/>
-          <path d="M34 13.5v8c0 2.5-6 4.5-14 4.5S6 24 6 21.5v-8c0 2.5 6 4.5 14 4.5s14-2 14-4.5z" fill="#004578"/>
+          <path d="M20 10c8 0 14-2 14-4.5S28 1 20 1 6 3 6 5.5 12 10 20 10z" fill="#0072C6" />
+          <path d="M34 5.5v8c0 2.5-6 4.5-14 4.5S6 16 6 13.5v-8c0 2.5 6 4.5 14 4.5s14-2 14-4.5z" fill="#005A9E" />
+          <path d="M34 13.5v8c0 2.5-6 4.5-14 4.5S6 24 6 21.5v-8c0 2.5 6 4.5 14 4.5s14-2 14-4.5z" fill="#004578" />
           <circle cx="33" cy="33" r="11" fill="#FFF" stroke="#F59E0B" strokeWidth="3" />
           <path d="M33 26v4M33 36v4M26 33h4M36 33h4M28 28l3 3M35 35l3 3M28 38l3-3M35 31l3-3" stroke="#F59E0B" strokeWidth="2.5" strokeLinecap="round" />
           <circle cx="33" cy="33" r="4" fill="#F59E0B" />
@@ -249,10 +262,10 @@ export const EnterpriseAiDevelopmentService = () => {
       name: 'Databricks',
       svg: (
         <svg className="w-11 h-11" viewBox="0 0 48 48" fill="none">
-          <path d="M24 4L4 14l20 10 20-10L24 4z" fill="#FF3621"/>
-          <path d="M4 22.5l20 10 20-10" stroke="#FF3621" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M4 31l20 10 20-10" stroke="#FF3621" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M4 39.5l20 10 20-10" stroke="#FF3621" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M24 4L4 14l20 10 20-10L24 4z" fill="#FF3621" />
+          <path d="M4 22.5l20 10 20-10" stroke="#FF3621" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M4 31l20 10 20-10" stroke="#FF3621" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M4 39.5l20 10 20-10" stroke="#FF3621" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       )
     },
@@ -281,9 +294,9 @@ export const EnterpriseAiDevelopmentService = () => {
       name: 'Pandas',
       svg: (
         <svg className="w-11 h-11" viewBox="0 0 48 48" fill="none">
-          <rect x="8" y="8" width="6" height="32" rx="3" fill="#150458"/>
-          <rect x="21" y="14" width="6" height="20" rx="3" fill="#E11D48"/>
-          <rect x="34" y="8" width="6" height="32" rx="3" fill="#150458"/>
+          <rect x="8" y="8" width="6" height="32" rx="3" fill="#150458" />
+          <rect x="21" y="14" width="6" height="20" rx="3" fill="#E11D48" />
+          <rect x="34" y="8" width="6" height="32" rx="3" fill="#150458" />
           <circle cx="11" cy="6" r="2.5" fill="#E11D48" />
           <circle cx="37" cy="42" r="2.5" fill="#E11D48" />
         </svg>
@@ -318,8 +331,8 @@ export const EnterpriseAiDevelopmentService = () => {
       name: 'Grafana',
       svg: (
         <svg className="w-11 h-11" viewBox="0 0 48 48" fill="none">
-          <path d="M24 6C14.059 6 6 14.059 6 24s8.059 18 18 18 18-8.059 18-18S33.941 6 24 6zm0 30c-6.627 0-12-5.373-12-12s5.373-12 12-12 12 5.373 12 12-5.373 12-12 12z" fill="#F97316"/>
-          <path d="M24 12c-6.627 0-12 5.373-12 12h6c0-3.314 2.686-6 6-6v-6z" fill="#EA580C"/>
+          <path d="M24 6C14.059 6 6 14.059 6 24s8.059 18 18 18 18-8.059 18-18S33.941 6 24 6zm0 30c-6.627 0-12-5.373-12-12s5.373-12 12-12 12 5.373 12 12-5.373 12-12 12z" fill="#F97316" />
+          <path d="M24 12c-6.627 0-12 5.373-12 12h6c0-3.314 2.686-6 6-6v-6z" fill="#EA580C" />
           <circle cx="24" cy="24" r="4" fill="#F97316" />
         </svg>
       )
@@ -328,8 +341,8 @@ export const EnterpriseAiDevelopmentService = () => {
       name: 'Azure',
       svg: (
         <svg className="w-11 h-11" viewBox="0 0 48 48" fill="none">
-          <path d="M6 38h23L13 10 6 38z" fill="#0078D4"/>
-          <path d="M17 30L29 8h13l-17 30H17z" fill="#50E6FF"/>
+          <path d="M6 38h23L13 10 6 38z" fill="#0078D4" />
+          <path d="M17 30L29 8h13l-17 30H17z" fill="#50E6FF" />
         </svg>
       )
     },
@@ -348,9 +361,9 @@ export const EnterpriseAiDevelopmentService = () => {
       name: 'API',
       svg: (
         <svg className="w-12 h-12" viewBox="0 0 52 36" fill="none">
-          <rect width="52" height="36" rx="8" fill="#1E293B"/>
+          <rect width="52" height="36" rx="8" fill="#1E293B" />
           <text x="14" y="24" fontSize="15" fontWeight="900" fill="#FFFFFF" fontFamily="sans-serif">API</text>
-          <path d="M38 12l4-4m-4 0l4 4m-2 4l3 3" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round"/>
+          <path d="M38 12l4-4m-4 0l4 4m-2 4l3 3" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" />
         </svg>
       )
     },
@@ -358,7 +371,7 @@ export const EnterpriseAiDevelopmentService = () => {
       name: 'DevOps',
       svg: (
         <svg className="w-11 h-11" viewBox="0 0 48 48" fill="none">
-          <path d="M14 32c-5.523 0-10-4.477-10-10s4.477-10 10-10c6.5 0 10 10 10 10s3.5-10 10-10c5.523 0 10 4.477 10 10s-4.477 10-10 10c-6.5 0-10-10-10-10s-3.5 10-10 10z" stroke="url(#devopsGrad)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M14 32c-5.523 0-10-4.477-10-10s4.477-10 10-10c6.5 0 10 10 10 10s3.5-10 10-10c5.523 0 10 4.477 10 10s-4.477 10-10 10c-6.5 0-10-10-10-10s-3.5 10-10 10z" stroke="url(#devopsGrad)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
           <defs>
             <linearGradient id="devopsGrad" x1="4" y1="12" x2="44" y2="32" gradientUnits="userSpaceOnUse">
               <stop stopColor="#A855F7" />
@@ -398,6 +411,66 @@ export const EnterpriseAiDevelopmentService = () => {
           <path d="M24 10v8M24 30v8M12 17l7 4M29 27l7 4M12 31l7-4M29 21l7-4" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" />
         </svg>
       )
+    }
+  ];
+
+  const keyBenefitsData = [
+    {
+      title: 'Enhanced Efficiency and Productivity',
+      description: 'Using advanced AI solutions, businesses may increase overall efficiency and production by streamlining procedures, automating repetitive jobs, and completing complicated computations quickly and accurately.'
+    },
+    {
+      title: 'Data-oriented Decision-making',
+      description: 'Businesses with a strong online presence can benefit greatly from the accurate, fast, and large-scale data analysis and actionable insights provided by AI-powered systems, which support data-driven strategy and success.'
+    },
+    {
+      title: 'Custom Experience Enhancement',
+      description: 'Artificial intelligence (AI)-driven technologies such as chatbots, personalization algorithms, and predictive analytics increase customer expectations for your platform services by improving customer experience.'
+    },
+    {
+      title: 'Market Competitiveness',
+      description: 'The integration of AI in commercial applications delights clients with individualized services by efficiently utilizing data. Additionally, it automates time-consuming procedures, giving you more time to focus on original business ideas.'
+    },
+    {
+      title: 'AI Integration Services',
+      description: 'Our AI integration services guarantee seamless adoption by integrating AI-driven tools and models with your existing applications. We assist you in maximizing operations by smoothly integrating AI into your enterprise environment.'
+    },
+    {
+      title: 'Data Engineering',
+      description: 'We create and put into place reliable data pipelines that provide clear, accessible, and well-organized data. We offer the framework required for AI and machine learning projects to be successful, from data warehousing to ETL procedures.'
+    }
+  ];
+
+  const idealPartnerItems = [
+    {
+      id: 1,
+      title: '1. Profound Industry Knowledge',
+      content: 'Sapphire has accumulated a wealth of experience in AI, machine learning, and automation in a variety of sectors, such as finance, healthcare, cybersecurity, and retail. Our solutions are engineered to resolve the unique challenges of your industry effectively.'
+    },
+    {
+      id: 2,
+      title: '2. Custom AI Solutions: Not a One-Size-Fits-All Approach',
+      content: 'We recognize that every organization has distinct goals. Our custom AI software development services design bespoke models, data algorithms, and enterprise workflows tailored to your operational ecosystem.'
+    },
+    {
+      id: 3,
+      title: '3. Innovation and Cutting-Edge Technology',
+      content: 'From Generative AI and LLMs to advanced computer vision and predictive analytics, we leverage state-of-the-art frameworks to ensure your business stays ahead of technological advancements.'
+    },
+    {
+      id: 4,
+      title: '4. Core Security and Compliance',
+      content: 'Data privacy and governance are embedded into our AI lifecycle. We strictly comply with GDPR, HIPAA, SOC2, and ISO standards to protect corporate intelligence.'
+    },
+    {
+      id: 5,
+      title: '5. Scalability and Integration',
+      content: 'Our enterprise AI architectures seamlessly connect with existing ERP, CRM, and cloud infrastructures, guaranteeing zero downtime and high performance at scale.'
+    },
+    {
+      id: 6,
+      title: '6. Continuous Optimization and Support',
+      content: 'We provide round-the-clock MLOps monitoring, re-training pipelines, and performance tuning to keep your enterprise AI models accurate, relevant, and robust over time.'
     }
   ];
 
@@ -441,7 +514,7 @@ export const EnterpriseAiDevelopmentService = () => {
               <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-[900] text-[#0B0F19] tracking-tight leading-[1.15] font-sans">
                 Enterprise AI Development Company
               </h1>
-              
+
               <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.8] font-normal font-sans max-w-xl">
                 We are the Leading Enterprise AI Software Provider specializing in the development of Top enterprise AI software development services for personalized marketing, fraud detection, and recommendation systems. Transform data into insights and insights into autonomous intelligence through the integration of AI and data. Contact us now!
               </p>
@@ -556,11 +629,10 @@ export const EnterpriseAiDevelopmentService = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveSuiteTab(index)}
-                  className={`px-4 sm:px-5 py-2.5 rounded-[6px] text-[13px] sm:text-[14px] font-[700] transition-all duration-300 cursor-pointer ${
-                    isActive
+                  className={`px-4 sm:px-5 py-2.5 rounded-[6px] text-[13px] sm:text-[14px] font-[700] transition-all duration-300 cursor-pointer ${isActive
                       ? 'bg-[#005F96] text-white shadow-md scale-[1.02]'
                       : 'bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80'
-                  }`}
+                    }`}
                 >
                   {tab.name}
                 </button>
@@ -630,12 +702,12 @@ export const EnterpriseAiDevelopmentService = () => {
                     <div className={`w-12 h-12 rounded-[12px] ${item.iconBg} flex items-center justify-center text-white shadow-sm`}>
                       <IconComp className="w-6 h-6" />
                     </div>
-                    
+
                     {/* Card Title */}
                     <h3 className="text-[20px] sm:text-[22px] font-[800] text-[#0B0F19] leading-snug">
                       {item.title}
                     </h3>
-                    
+
                     {/* Card Description */}
                     <p className="text-[14.5px] sm:text-[15.5px] text-[#475569] leading-[1.8] font-normal">
                       {item.desc}
@@ -689,14 +761,160 @@ export const EnterpriseAiDevelopmentService = () => {
       {/* 4.5 Our Premium Services */}
       <PremiumServicesGrid companyName="Firevy.Co" />
 
+      {/* 4.6 Fuelling Our AI Development Services With Powerful Cloud Providers */}
+      <AiCloudProvidersSection />
+
+      {/* Key benefits of choosing AI Development Services */}
+      <section className="py-16 sm:py-20 bg-[#006088] text-white font-sans">
+        <Container>
+          <div className="max-w-4xl mx-auto text-center space-y-4 mb-12 sm:mb-14">
+            <h2 className="text-[28px] sm:text-[36px] lg:text-[40px] font-[900] text-white tracking-tight leading-[1.2]">
+              Key benefits of choosing AI Development Services
+            </h2>
+            <p className="text-[14px] sm:text-[15.5px] text-sky-100/90 leading-[1.8] font-normal max-w-3xl mx-auto">
+              As pioneers in the field of artificial intelligence software development, we advise companies to take advantage of the potential of data and AI to open up a multitude of doors. Here are the key benefits
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {keyBenefitsData.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-[12px] p-6 sm:p-7 text-left space-y-3 shadow-md border border-white/20 transition-transform duration-300 hover:-translate-y-1"
+              >
+                <h3 className="text-[18px] sm:text-[19px] font-[800] text-[#0B0F19] leading-snug">
+                  {item.title}
+                </h3>
+                <p className="text-[13.5px] sm:text-[14px] text-slate-600 leading-[1.7] font-normal">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* What Makes Sapphire Your Ideal AI Services and Solutions Partner? */}
+      <section className="py-14 sm:py-20 bg-[#E8F3FA] text-slate-900 font-sans border-b border-slate-100">
+        <Container>
+          <div className="max-w-6xl mx-auto bg-white rounded-[24px] sm:rounded-[28px] overflow-hidden shadow-xl border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 min-h-[520px]">
+            {/* Left Dark Blue Card */}
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#005B8A] via-[#006A9F] to-[#0A5480] text-white p-8 sm:p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden">
+              {/* Decorative circles */}
+              <div className="absolute -bottom-16 -left-16 w-64 h-64 rounded-full bg-white/5 pointer-events-none" />
+              <div className="absolute top-1/2 -right-20 w-80 h-80 rounded-full bg-white/5 pointer-events-none" />
+
+              <div className="relative z-10 space-y-6">
+                {/* Handshake Icon Badge */}
+                <div className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 shadow-inner">
+                  <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="m11 17 2 2a1 1 0 0 0 1.4 0l6.6-6.6a1 1 0 0 0 0-1.4l-4.6-4.6a1 1 0 0 0-1.4 0L14 7.4" />
+                    <path d="m3 11 4.6-4.6a1 1 0 0 1 1.4 0l4.6 4.6a1 1 0 0 1 0 1.4l-2 2" />
+                    <path d="M7 15 2 20" />
+                    <path d="M15 11 9 17" />
+                    <path d="M19 7 14 12" />
+                  </svg>
+                </div>
+
+                {/* Main Heading */}
+                <h2 className="text-[26px] sm:text-[32px] font-[900] leading-[1.25] text-white tracking-tight">
+                  What Makes Sapphire Your Ideal AI Services and Solutions Partner?
+                </h2>
+
+                {/* Description Paragraphs */}
+                <div className="space-y-4 text-[13.5px] sm:text-[14.5px] text-sky-100/90 leading-[1.75] font-normal">
+                  <p>
+                    We are your AI consulting partner, and we have a decade of experience in ethical AI. We guarantee that the technology will not be used inappropriately or with prejudice and that it will comply with the regulations. Our Enterprise AI Development Company can assist businesses in navigating the intricate world of AI and implementing AI solutions that align with their business requirements.
+                  </p>
+                  <p>
+                    As a leading enterprise AI development company, we leverage cutting-edge technologies to transform businesses. Events like the India AI Impact Summit 2026 help us stay at the forefront of AI trends, enabling us to deliver scalable, intelligent, and future-ready AI solutions for enterprises worldwide.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Accordion Panel */}
+            <div className="lg:col-span-7 bg-white p-6 sm:p-10 lg:p-12 flex flex-col justify-center divide-y divide-slate-100">
+              {idealPartnerItems.map((item, index) => {
+                const isOpen = activePartnerAccordion === index;
+                return (
+                  <div key={item.id} className="py-4 sm:py-5 first:pt-0 last:pb-0">
+                    <button
+                      onClick={() => setActivePartnerAccordion(isOpen ? -1 : index)}
+                      className="w-full text-left flex items-center justify-between gap-4 group cursor-pointer"
+                    >
+                      <h3
+                        className={`text-[16px] sm:text-[17.5px] font-[800] transition-colors duration-200 ${isOpen ? 'text-[#005F96]' : 'text-[#0B0F19] group-hover:text-[#005F96]'
+                          }`}
+                      >
+                        {item.title}
+                      </h3>
+                      <span className={`text-xl font-bold transition-transform duration-300 shrink-0 ${isOpen ? 'rotate-180 text-[#005F96]' : 'text-slate-400'}`}>
+                        {isOpen ? '−' : '+'}
+                      </span>
+                    </button>
+
+                    {isOpen && (
+                      <div className="mt-3.5 text-[13.5px] sm:text-[14.5px] text-slate-600 leading-[1.75] font-normal transition-all duration-300">
+                        {item.content}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Sectors Thriving Through Sapphire's Bespoke AI Development Services */}
+      <SectorsThrivingSection title="Sectors Thriving Through Sapphire's Bespoke AI Development Services" />
+
+      {/* Industry-Focused Insights To Elevate Your Business */}
+      <IndustryFocusedInsightsSection
+        title="Industry-Focused Insights To Elevate Your Business"
+        subtitle="Trending Industries that Use AI Development Services"
+      />
+
+      {/* The Expertise Of Our Artificial Intelligence Developers */}
+      <AiDevelopersExpertiseCarouselSection />
+
+      {/* Digital Transformation Through Innovation and Collective Knowledge */}
+      <DigitalTransformationCaseStudies />
+
+      {/* What Our Clients Say */}
+      <ClientReviewsDarkSection />
+
       {/* 5. Trusted Brands Grid */}
       <TrustedBrandsGrid />
+
+      {/* About Us Stats Banner */}
+      <AboutUsStats companyName="Sapphire" />
+
+      {/* We Have Been Featured In */}
+      <FeaturedInLogosGrid />
 
       {/* 6. Innovative Solutions Video Section */}
       <InnovativeSolutionsVideoSection />
 
+      {/* Our Story, Their Words Video Testimonials */}
+      <VideoTestimonialsStory />
+
       {/* 7. Frequently Asked Questions */}
       <SapphireFaqSection faqList={faqs} />
+
+      {/* Our Recent Blogs */}
+      <IWatchRecentBlogsSection />
+
+      {/* Have Enterprise AI Development Services Challenge To Address ? */}
+      <IWatchChallengeCtaBanner
+        title="Have Enterprise AI Development Services Challenge To Address ?"
+        subtitle="Get access to top Enterprise AI development services to transform your ideas into a robust application."
+        buttonText="Request A Free Quote"
+      />
+
+      {/* Subscribe us and Get the latest updates and news */}
+      <SubscribeNewsletterSection />
     </div>
   );
 };
