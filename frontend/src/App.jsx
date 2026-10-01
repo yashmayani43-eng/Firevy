@@ -77,6 +77,9 @@ const NftMarketplaceDevelopmentService = lazy(() => import('./components/service
 const SmartContractsDevelopmentService = lazy(() => import('./components/services/SmartContractsDevelopmentService').then(m => ({ default: m.SmartContractsDevelopmentService })));
 const BitcoinWalletDevelopmentService = lazy(() => import('./components/services/BitcoinWalletDevelopmentService').then(m => ({ default: m.BitcoinWalletDevelopmentService })));
 const MarketplaceAppDevelopmentService = lazy(() => import('./components/services/MarketplaceAppDevelopmentService').then(m => ({ default: m.MarketplaceAppDevelopmentService })));
+const BullionExchangeAppDevelopmentService = lazy(() => import('./components/services/BullionExchangeAppDevelopmentService').then(m => ({ default: m.BullionExchangeAppDevelopmentService })));
+const DigitalWayfindingSolutionsService = lazy(() => import('./components/services/DigitalWayfindingSolutionsService').then(m => ({ default: m.DigitalWayfindingSolutionsService })));
+const EthereumAppDevelopmentService = lazy(() => import('./components/services/EthereumAppDevelopmentService').then(m => ({ default: m.EthereumAppDevelopmentService })));
 const AiPromptEngineeringService = lazy(() => import('./components/services/AiPromptEngineeringService').then(m => ({ default: m.AiPromptEngineeringService })));
 const AdaptiveAiDevelopmentService = lazy(() => import('./components/services/AdaptiveAiDevelopmentService').then(m => ({ default: m.AdaptiveAiDevelopmentService })));
 const EnterpriseAiDevelopmentService = lazy(() => import('./components/services/EnterpriseAiDevelopmentService').then(m => ({ default: m.EnterpriseAiDevelopmentService })));
@@ -186,6 +189,10 @@ export function App() {
                 <Route path="/marketplace-app-development" element={<MarketplaceAppDevelopmentService />} />
                 <Route path="/services/marketplace-app-development-services" element={<MarketplaceAppDevelopmentService />} />
                 <Route path="/marketplace-app-development-services" element={<MarketplaceAppDevelopmentService />} />
+                <Route path="/services/bullion-exchange-app-development" element={<BullionExchangeAppDevelopmentService />} />
+                <Route path="/bullion-exchange-app-development" element={<BullionExchangeAppDevelopmentService />} />
+                <Route path="/services/bullion-exchange-app-development-services" element={<BullionExchangeAppDevelopmentService />} />
+                <Route path="/bullion-exchange-app-development-services" element={<BullionExchangeAppDevelopmentService />} />
                 <Route path="/services/artificial-intelligence-development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/services/artificial%20intelligence%20development" element={<ArtificialIntelligenceDevelopmentService />} />
                 <Route path="/services/artificial intelligence development" element={<ArtificialIntelligenceDevelopmentService />} />
@@ -308,6 +315,10 @@ export function App() {
                 <Route path="/iot-app-development" element={<ServiceDetails />} />
                 <Route path="/services/blockchain-development" element={<ServiceDetails />} />
                 <Route path="/blockchain-development" element={<ServiceDetails />} />
+                <Route path="/services/digital-wayfinding-solutions" element={<DigitalWayfindingSolutionsService />} />
+                <Route path="/digital-wayfinding-solutions" element={<DigitalWayfindingSolutionsService />} />
+                <Route path="/services/ethereum-app-development" element={<EthereumAppDevelopmentService />} />
+                <Route path="/ethereum-app-development" element={<EthereumAppDevelopmentService />} />
                 <Route path="/services/ai-ionic-app-development" element={<ServiceDetails />} />
                 <Route path="/ai-ionic-app-development" element={<ServiceDetails />} />
                 <Route path="/services/enterprise-ai-development" element={<EnterpriseAiDevelopmentService />} />

@@ -9,6 +9,7 @@ import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
 import SapphireTechStackGrid from '../common/SapphireTechStackGrid';
 import ProcessWeFollow from '../common/ProcessWeFollow';
 import SuccessMatrixGrid from '../home/SuccessMatrixGrid';
+import ProudAwardsBanner from './ProudAwardsBanner';
 import AndroidHiringModels from './AndroidHiringModels';
 import InnovativeSolutionsVideoSection from './InnovativeSolutionsVideoSection';
 import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
@@ -809,6 +810,11 @@ export const AspNetCoreDevelopmentService = () => {
 
         </Container>
       </section>
+
+      {/* =========================================================================
+          PROUD AWARDS BANNER
+         ========================================================================= */}
+      <ProudAwardsBanner />
 
       {/* =========================================================================
           9. BENEFITS OF ASP.NET CORE DEVELOPMENT

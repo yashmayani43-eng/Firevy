@@ -46,9 +46,6 @@ export const BACKEND_SERVICES_CONFIG = {
 
   // Blockchain Development Services
   'cryptocurrency-wallet-development': { title: 'Cryptocurrency Wallet Development', category: 'Blockchain Development' },
-  'bullion-exchange-app-development': { title: 'Bullion Exchange App Development', category: 'Blockchain Development' },
-  'digital-wayfinding-solutions': { title: 'Digital Wayfinding Solutions', category: 'Blockchain Development' },
-  'ethereum-app-development': { title: 'Ethereum App Development', category: 'Blockchain Development' },
 
   // Software Development Service
   'product-development': { title: 'Product Development', category: 'Software Development Service' },
@@ -146,7 +143,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'bitcoin-wallet-development' ||
     clean === 'marketplace-app-development' ||
     clean === 'cryptocurrency-wallet-development' ||
-    clean === 'bullion-exchange-app-development' ||
     clean === 'digital-wayfinding-solutions' ||
     clean === 'ethereum-app-development' ||
     clean === 'offshore-software-development' ||

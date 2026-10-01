@@ -123,6 +123,8 @@ import SoftwareModernizationServices from '../components/services/SoftwareModern
 import DataCleansingService from '../components/services/DataCleansingService';
 import DataAnnotationService from '../components/services/DataAnnotationService';
 import PatientManagementService from '../components/services/PatientManagementService';
+import DigitalWayfindingSolutionsService from '../components/services/DigitalWayfindingSolutionsService';
+import EthereumAppDevelopmentService from '../components/services/EthereumAppDevelopmentService';
 import DigitalTwinSolutionsService from '../components/services/DigitalTwinSolutionsService';
 import ProductDevelopmentService from '../components/services/ProductDevelopmentService';
 import ArtistCollaborationPlatformService from '../components/services/ArtistCollaborationPlatformService';
@@ -185,6 +187,7 @@ import NftMarketplaceDevelopmentService from '../components/services/NftMarketpl
 import SmartContractsDevelopmentService from '../components/services/SmartContractsDevelopmentService';
 import BitcoinWalletDevelopmentService from '../components/services/BitcoinWalletDevelopmentService';
 import MarketplaceAppDevelopmentService from '../components/services/MarketplaceAppDevelopmentService';
+import BullionExchangeAppDevelopmentService from '../components/services/BullionExchangeAppDevelopmentService';
 import BackendComingSoonService, { isBackendServiceSlug } from '../components/services/BackendComingSoonService';
 
 export const ServiceDetails = () => {
@@ -200,6 +203,16 @@ export const ServiceDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [openFaq, setOpenFaq] = useState(0);
+
+  const isBullionExchange = currentSlug.includes('bullion-exchange') ||
+    currentSlug === 'bullion-exchange-app-development' ||
+    currentSlug === 'bullion-exchange-app-development-services' ||
+    currentSlug === 'services/bullion-exchange-app-development' ||
+    currentSlug === 'services/bullion-exchange-app-development-services';
+
+  if (isBullionExchange) {
+    return <BullionExchangeAppDevelopmentService />;
+  }
 
   const isNftMarketplace = currentSlug.includes('nft-marketplace') ||
     currentSlug === 'nft-marketplace-development' ||
@@ -853,10 +866,22 @@ export const ServiceDetails = () => {
     currentSlug.includes('hire-ai-developers')
   );
 
-  const isBlockchain = currentSlug.includes('blockchain') ||
+  const isDigitalWayfinding = currentSlug === 'digital-wayfinding-solutions' ||
+    currentSlug === 'services/digital-wayfinding-solutions' ||
+    currentSlug.includes('digital-wayfinding') ||
+    currentSlug.includes('wayfinding');
+
+  const isEthereumApp = currentSlug === 'ethereum-app-development' ||
+    currentSlug === 'services/ethereum-app-development' ||
+    currentSlug.includes('ethereum-app') ||
+    currentSlug.includes('ethereum');
+
+  const isBlockchain = !isDigitalWayfinding && !isEthereumApp && (
+    currentSlug.includes('blockchain') ||
     currentSlug.includes('crypto') ||
     currentSlug.includes('dapp') ||
-    currentSlug.includes('hire-blockchain');
+    currentSlug.includes('hire-blockchain')
+  );
 
   const isFullStack = currentSlug.includes('full-stack') ||
     currentSlug.includes('fullstack') ||
@@ -1945,6 +1970,14 @@ export const ServiceDetails = () => {
 
   if (isFullStack) {
     return <FullStackDevelopmentService />;
+  }
+
+  if (isDigitalWayfinding) {
+    return <DigitalWayfindingSolutionsService />;
+  }
+
+  if (isEthereumApp) {
+    return <EthereumAppDevelopmentService />;
   }
 
   if (isBlockchain) {
