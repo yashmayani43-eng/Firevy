@@ -17,6 +17,8 @@ import SapphireFaqSection from '../common/SapphireFaqSection';
 import MobileAppRecentBlogsSection from './MobileAppRecentBlogsSection';
 import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
 import IWatchChallengeCtaBanner from './IWatchChallengeCtaBanner';
+import PremiumServicesGrid from '../common/PremiumServicesGrid';
+import SuccessStoriesSection from '../common/SuccessStoriesSection';
 import {
   Sparkles,
   Layers,
@@ -84,6 +86,26 @@ export const SoftwareModernizationServices = () => {
     }
   ];
 
+  // Success Stories (Matching User Screenshot Exactly)
+  const modernizationSuccessCards = [
+    {
+      id: 1,
+      title: 'Document Quality Analyzer Website Development',
+      image: '/images/success_stories/redetect.svg',
+      badge: 'Case Study'
+    },
+    {
+      id: 2,
+      title: 'File Sharing App Development',
+      image: '/images/success_stories/file_sharing_application.svg'
+    },
+    {
+      id: 3,
+      title: 'Data Analytics Website Development',
+      image: '/images/success_stories/data_analytics.svg'
+    }
+  ];
+
   // Auto-scroll loop for Cutting Edge Tech Carousel
   useEffect(() => {
     if (isTechHovered) return;
@@ -104,154 +126,67 @@ export const SoftwareModernizationServices = () => {
     return () => clearInterval(interval);
   }, [isTechHovered]);
 
-  // Section: The Key Services of Software Modernization
+  // Carousel State for Key Service of Software Modernization Services Company
+  const [isExpertiseHovered, setIsExpertiseHovered] = useState(false);
+  const expertiseScrollRef = useRef(null);
+
+  // Section: The Key Services of Software Modernization (Exact 1:1 Match to User Reference Image)
   const modernizationExpertiseCards = [
     {
       id: 1,
-      title: 'Legacy Application Re-engineering',
-      desc: 'We reconstruct legacy software into sophisticated, scalable, and maintainable systems utilizing modern clean-code principles, responsive frameworks, and decoupled backends.'
+      title: 'Microservices Architecture Development',
+      desc: 'We can break legacy monolithic systems down to agile, high performing microservices and simplify the technology stack to meet business objectives.'
     },
     {
       id: 2,
-      title: 'Cloud Migration & Re-platforming',
-      desc: 'Shift on-premise workloads to hyperscale cloud infrastructure (AWS, Azure, GCP) to unlock infinite elasticity, auto-healing systems, and lowered total cost of ownership (TCO).'
+      title: 'UI/UX Modernization',
+      desc: 'We can modernize any user interface capability by creating designs that are responsive, intuitive, and easy to use.'
     },
     {
       id: 3,
-      title: 'Microservices Architecture Migration',
-      desc: 'Break tightly bound monolithic software into agile, independent microservices that your teams can develop, test, and deploy without impacting the overall system.'
+      title: 'API & Third-Party Integrations',
+      desc: 'Modernize legacy applications as we enhance capabilities to help integrate user-defined solutions with existing functionalities using APIs and third-party tool interfaces.'
     },
     {
       id: 4,
-      title: 'UI/UX Redesign & Modernization',
-      desc: 'Transform outdated clunky screens into sleek, responsive web and mobile interfaces built with modern design systems that delight users and accelerate adoption.'
+      title: 'Performance and Security Upgrades',
+      desc: 'We leverage existing applications to make them faster, secure, and robust through performance and security upgrades.'
     },
     {
       id: 5,
-      title: 'API & Third-Party Integrations',
-      desc: 'Unify disparate systems by building secure API layers that bridge legacy databases with modern SaaS platforms, payment rails, and enterprise software ecosystems.'
+      title: 'Legacy Application Re-engineering',
+      desc: 'We can reconstruct legacy applications into sophisticated, scalable and maintainable systems for any organization acting in the now.'
     },
     {
       id: 6,
-      title: 'Data Modernization & Real-Time Analytics',
-      desc: 'Transition stale data warehouses into real-time analytical lakes and streaming pipelines that power live executive dashboards and intelligent forecasting.'
+      title: 'Cloud Migration & Re-platforming',
+      desc: 'We can assist by moving or re-platforming legacy systems to cloud environments while enhancing the performance and security of the underlying architecture.'
     }
   ];
 
-  // Section: Technology Stack That Firevy Software Developers Use Proficiently
-  const modernizationTechStack = [
-    {
-      category: 'Frontend',
-      items: ['HTML5', 'CSS3', 'JavaScript', 'Angular', 'React', 'Vue.js', 'Bootstrap', 'Typescript', 'Next.js']
-    },
-    {
-      category: 'Full-stack Frameworks',
-      items: ['NestJS', 'Koa.js', 'Nuxt.js', 'Meteor.JS', 'Next.js']
-    },
-    {
-      category: 'Backend Frameworks',
-      items: ['Node.js', 'Express.js', 'PHP', 'Laravel', 'Python', 'Django', 'Flask', 'FastAPI', 'Go', '.NET Core']
-    },
-    {
-      category: 'Monitoring and Logging Tools',
-      items: ['Prometheus', 'Grafana', 'Elasticsearch', 'Logstash', 'Kibana', 'Datadog', 'New Relic']
-    },
-    {
-      category: 'Code Management & DevOps',
-      items: ['Docker', 'Kubernetes', 'Bitbucket', 'GitHub', 'GitLab', 'SonarQube', 'Terraform', 'Jenkins']
-    },
-    {
-      category: 'Database',
-      items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Firebase', 'DynamoDB', 'SQLite']
-    },
-    {
-      category: 'Cloud',
-      items: ['Amazon Web Services (AWS)', 'Microsoft Azure', 'Google Cloud Platform (GCP)']
+  // Set initial scroll offset so first card is partially cut off on the left (matching Reference Image 1)
+  useEffect(() => {
+    if (expertiseScrollRef.current) {
+      expertiseScrollRef.current.scrollLeft = 200;
     }
-  ];
+  }, []);
 
-  // Global Modernization Solutions
-  const globalModernizationSolutions = [
-    {
-      title: 'Software Modernization Services in USA',
-      desc: 'Tailored for US enterprises seeking to replace aging mainframe systems, enhance cybersecurity compliance (SOC-2, HIPAA), and modernize core commercial software applications.',
-      bg: 'bg-[#F3E8FF]',
-      icon: (
-        <svg className="w-7 h-7 text-[#9333EA]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" />
-          <line x1="2" y1="7" x2="22" y2="7" />
-          <path d="M16 19h2a2 2 0 0 0 2-2v-1" />
-          <path d="M4 16v1a2 2 0 0 0 2 2h2" />
-          <circle cx="16" cy="13" r="2" />
-        </svg>
-      )
-    },
-    {
-      title: 'Software Modernization Services in UK',
-      desc: 'Helping UK institutions modernize legacy banking, healthcare, and retail software while meeting strict GDPR, Open Banking standards, and cloud sovereignty protocols.',
-      bg: 'bg-[#DCFCE7]',
-      icon: (
-        <svg className="w-7 h-7 text-[#16A34A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" />
-          <line x1="2" y1="7" x2="22" y2="7" />
-          <path d="M8 21h8M12 17v4" />
-          <polyline points="7 10 9 12 7 14" />
-          <polyline points="13 10 11 12 13 14" />
-          <circle cx="17" cy="12" r="1.5" />
-        </svg>
-      )
-    },
-    {
-      title: 'Software Modernization Services in Canada',
-      desc: 'Re-engineering legacy public sector and commercial software suites across Canadian provinces with resilient multi-cloud architectures, PIPEDA compliance, and bilingual interfaces.',
-      bg: 'bg-[#FFEDD5]',
-      icon: (
-        <svg className="w-7 h-7 text-[#EA580C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 3v18M6 8l6-5 6 5M4 14l4-6 4 6a4 4 0 0 1-8 0zM16 14l4-6 4 6a4 4 0 0 1-8 0z" />
-        </svg>
-      )
-    },
-    {
-      title: 'Software Modernization Services in Australia',
-      desc: 'Modernizing enterprise platforms for Australian corporations with cloud-native Australian hosting zones, automated APRA-compliant auditing, and high-availability operations.',
-      bg: 'bg-[#E0F2FE]',
-      icon: (
-        <svg className="w-7 h-7 text-[#0284C7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" />
-          <path d="M8 21h8M12 17v4" />
-          <rect x="7" y="7" width="10" height="6" rx="1" />
-          <path d="M10 7v-1a2 2 0 0 1 4 0v1" />
-        </svg>
-      )
-    },
-    {
-      title: 'Software Modernization Services in Germany',
-      desc: 'Precision re-engineering for German industrial, automotive, and FinTech enterprises. Compliant with strict European BSI security standards, GDPR, and on-premise hybrid cloud needs.',
-      bg: 'bg-[#FEF9C3]',
-      icon: (
-        <svg className="w-7 h-7 text-[#CA8A04]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" />
-          <line x1="2" y1="7" x2="22" y2="7" />
-          <polyline points="8 10 6 12 8 14" />
-          <polyline points="12 10 14 12 12 14" />
-          <line x1="11" y1="10" x2="9" y2="14" />
-        </svg>
-      )
-    },
-    {
-      title: 'Software Modernization Services in UAE',
-      desc: 'Accelerating digital transformation across Middle Eastern enterprises with cloud-native government compliance, high-availability bilingual Arabian interfaces, and secure API gateways.',
-      bg: 'bg-[#FCE7F3]',
-      icon: (
-        <svg className="w-7 h-7 text-[#DB2777]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" />
-          <line x1="2" y1="7" x2="22" y2="7" />
-          <rect x="8" y="9" width="8" height="6" rx="1" />
-          <line x1="11" y1="12" x2="13" y2="12" />
-        </svg>
-      )
-    }
-  ];
+  // Smooth auto-scroll loop
+  useEffect(() => {
+    if (isExpertiseHovered) return;
+    const interval = setInterval(() => {
+      if (expertiseScrollRef.current) {
+        const container = expertiseScrollRef.current;
+        const scrollStep = 360;
+        if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 40) {
+          container.scrollTo({ left: 200, behavior: 'smooth' });
+        } else {
+          container.scrollBy({ left: scrollStep, behavior: 'smooth' });
+        }
+      }
+    }, 4500);
+    return () => clearInterval(interval);
+  }, [isExpertiseHovered]);
 
   // Key Benefits Of Legacy Software Modernization (Using Exact SVGs)
   const modernizationBenefitsList = [
@@ -588,7 +523,20 @@ export const SoftwareModernizationServices = () => {
       </section>
 
       {/* ========================================================================= */}
-      {/* 7. KEY BENEFITS OF LEGACY SOFTWARE MODERNIZATION EXPERTS                  */}
+      {/* 7. OUR PREMIUM SERVICES (1:1 MATCH TO USER SCREENSHOT 1)                  */}
+      {/* ========================================================================= */}
+      <PremiumServicesGrid companyName="Firevy.co" />
+
+      {/* ========================================================================= */}
+      {/* 8. SUCCESS STORIES & STATS (1:1 MATCH TO USER SCREENSHOT 2)               */}
+      {/* ========================================================================= */}
+      <SuccessStoriesSection
+        cards={modernizationSuccessCards}
+        subtitle="Know Firevy journey from concept to success. Explore how we've brought ideas to life and achieved remarkable results for our clients."
+      />
+
+      {/* ========================================================================= */}
+      {/* 9. KEY BENEFITS OF LEGACY SOFTWARE MODERNIZATION EXPERTS                  */}
       {/* ========================================================================= */}
       <section className="py-14 sm:py-20 bg-white text-slate-900 font-sans text-left">
         <Container>
@@ -623,112 +571,48 @@ export const SoftwareModernizationServices = () => {
       </section>
 
       {/* ========================================================================= */}
-      {/* 8. KEY SERVICES OF SOFTWARE MODERNIZATION SERVICES COMPANY                */}
+      {/* 10. KEY SERVICES OF SOFTWARE MODERNIZATION SERVICES COMPANY (CAROUSEL)    */}
       {/* ========================================================================= */}
-      <section className="py-14 sm:py-20 bg-[#F8FBFE] font-sans text-left">
-        <Container>
-          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight">
-              Key Service of Software Modernization Services Company
-            </h2>
-            <p className="text-sm sm:text-base text-slate-600 mt-3 max-w-2xl mx-auto">
-              We offer extensive software modernization services, delivered at high quality, to support your initiatives to enhance performance, lessen expenses, and strengthen robustness.
-            </p>
-          </div>
+      <section
+        className="py-14 sm:py-20 bg-white font-sans w-full overflow-hidden text-left"
+        onMouseEnter={() => setIsExpertiseHovered(true)}
+        onMouseLeave={() => setIsExpertiseHovered(false)}
+      >
+        {/* Header Container */}
+        <div className="max-w-5xl mx-auto px-4 text-center mb-10 sm:mb-12">
+          <h2 className="font-[800] text-[#0B0F19] tracking-tight leading-tight mb-3 text-2xl sm:text-3xl lg:text-[36px]">
+            Key Service of Software Modernization Services Company
+          </h2>
+          <p className="text-[13.5px] sm:text-[14.5px] text-[#475569] leading-relaxed max-w-3xl mx-auto font-normal">
+            We offer extensive software modernization services, delivered at high quality, to support your initiatives to enhance performance, lessen expenses, and strengthen robustness
+          </p>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {modernizationExpertiseCards.map((service) => (
+        {/* Edge-to-edge Full-width Carousel (Exact Match to User Reference Screenshot 1) */}
+        <div className="w-full relative">
+          <div
+            ref={expertiseScrollRef}
+            className="flex gap-5 sm:gap-6 overflow-x-auto scrollbar-none py-2 px-6 sm:px-12 md:px-16 lg:px-20 scroll-smooth cursor-grab active:cursor-grabbing"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {[...modernizationExpertiseCards, ...modernizationExpertiseCards].map((card, idx) => (
               <div
-                key={service.id}
-                className="p-7 sm:p-8 rounded-[16px] bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+                key={idx}
+                className="w-[300px] sm:w-[335px] lg:w-[350px] shrink-0 bg-[#DDF2FC] rounded-[16px] p-7 sm:p-8 flex flex-col justify-start border border-[#CCE8FA] select-none min-h-[250px] sm:min-h-[270px] transition-all duration-300 hover:shadow-md hover:bg-[#D5EEFA]"
               >
-                <div>
-                  <h3 className="text-lg sm:text-[20px] font-bold text-[#0B0F19] mb-3 leading-snug">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-[#475569] leading-relaxed">
-                    {service.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* ========================================================================= */}
-      {/* 9. GLOBAL SOFTWARE MODERNIZATION SOLUTIONS                                */}
-      {/* ========================================================================= */}
-      <section className="py-14 sm:py-20 bg-white font-sans text-left">
-        <Container>
-          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight">
-              Global Software Modernization Solutions
-            </h2>
-            <p className="text-sm sm:text-base text-slate-600 mt-3 max-w-2xl mx-auto">
-              Delivering high-performance software modernization engineering compliant with local compliance regimes across global financial hubs.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {globalModernizationSolutions.map((sol, index) => (
-              <div
-                key={index}
-                className="p-7 sm:p-8 rounded-[16px] bg-white border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-start"
-              >
-                <div className={`w-14 h-14 rounded-xl ${sol.bg} flex items-center justify-center mb-5 shrink-0`}>
-                  {sol.icon}
-                </div>
-                <h3 className="text-xl font-bold text-[#0B0F19] mb-3 leading-snug">
-                  {sol.title}
+                <h3 className="font-[800] text-[17.5px] sm:text-[18.5px] text-[#0B0F19] mb-3.5 text-left leading-snug tracking-tight">
+                  {card.title}
                 </h3>
-                <p className="text-sm text-[#475569] leading-relaxed">
-                  {sol.desc}
+                <p className="text-[13.5px] sm:text-[14px] text-[#475569] leading-[1.7] text-left font-normal">
+                  {card.desc}
                 </p>
               </div>
             ))}
           </div>
-        </Container>
+        </div>
       </section>
 
-      {/* ========================================================================= */}
-      {/* 10. TECHNOLOGY STACK WE PROFICIENTLY USE                                  */}
-      {/* ========================================================================= */}
-      <section className="py-14 sm:py-20 bg-[#F8FBFE] font-sans text-left">
-        <Container>
-          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-[800] text-[#0B0F19] tracking-tight leading-tight">
-              Technology Stack That Firevy Software Developers Use Proficiently
-            </h2>
-            <p className="text-sm sm:text-base text-slate-600 mt-3 max-w-2xl mx-auto">
-              Our engineers modernize legacy code using industry-standard enterprise languages, cloud providers, and automation tools.
-            </p>
-          </div>
 
-          <div className="space-y-6">
-            {modernizationTechStack.map((tech, idx) => (
-              <div
-                key={idx}
-                className="bg-white p-6 sm:p-7 rounded-[14px] border border-slate-200 shadow-sm"
-              >
-                <h3 className="text-lg font-bold text-[#005F96] mb-4">
-                  {tech.category}
-                </h3>
-                <div className="flex flex-wrap gap-2.5 sm:gap-3">
-                  {tech.items.map((item, itemIdx) => (
-                    <span
-                      key={itemIdx}
-                      className="px-3.5 py-1.5 rounded-full bg-[#EFF6FC] text-[#005F96] text-xs sm:text-[13px] font-semibold border border-[#D0E6F8]"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
 
       {/* ========================================================================= */}
       {/* 11. HIRING MODELS                                                         */}

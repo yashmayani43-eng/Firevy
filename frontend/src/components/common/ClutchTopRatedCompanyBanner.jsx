@@ -61,7 +61,7 @@ export const ClutchTopRatedCompanyBanner = ({ title }) => {
           </div>
 
           {/* 5 Specific Reference Badges Row matching Image 2 */}
-          <div className="flex items-center justify-center space-x-3 sm:space-x-4 overflow-x-auto max-w-full py-1">
+          <div className="flex items-center justify-center space-x-2 sm:space-x-3 md:space-x-4 overflow-x-auto max-w-full py-1 [::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {/* Badge 1: Red Ribbon Badge - Most Reviewed Dedicated Software Dev */}
             <svg className="w-[82px] sm:w-[92px] h-[105px] sm:h-[115px] drop-shadow-md shrink-0" viewBox="0 0 90 115" fill="none">
               <path d="M5 2C5 0.9 5.9 0 7 0H83C84.1 0 85 0.9 85 2V105L45 115L5 105V2Z" fill="white" stroke="#DC2626" strokeWidth="1.5" />

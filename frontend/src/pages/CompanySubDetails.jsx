@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import Careers from './Careers';
 import CSR from './CSR';
+import OurTeamPage from '../components/company/OurTeamPage';
 import Podcast from './Podcast';
 import DeliveryModels from './DeliveryModels';
 import EngagementModels from './EngagementModels';
@@ -4271,6 +4272,12 @@ export const CompanySubDetails = () => {
   const isCsrPage = pageKey === 'csr' || pageKey.includes('csr') || pageKey.includes('corporate-social-responsibility');
   if (isCsrPage) {
     return <CSR />;
+  }
+
+  // If this is the "Our Team" page, render exact Sapphire Our Team Layout
+  const isOurTeamPage = pageKey === 'our-team' || pageKey.includes('our-team') || pageKey === 'team' || pageKey === 'our-team-leadership';
+  if (isOurTeamPage) {
+    return <OurTeamPage dynamicSection={dynamicSection} pageKey={pageKey} />;
   }
 
   // If this is the "Blog" page, render dynamic Sapphire Blog Layout

@@ -214,9 +214,7 @@ export const AdaptiveAiDevelopmentService = () => {
       {/* =========================================================================
           2ND COMPONENT: BRAND LOGOS MARQUEE
           ========================================================================= */}
-      <section className="py-2 bg-white border-b border-slate-200/70 overflow-hidden">
-        <BrandLogoMarquee />
-      </section>
+      <BrandLogoMarquee />
 
       {/* =========================================================================
           3RD COMPONENT: SMART ADAPTIVE AI DEVELOPMENT SERVICES

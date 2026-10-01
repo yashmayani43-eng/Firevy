@@ -226,9 +226,7 @@ export const VideoTestimonial = () => {
       {/* ============================================================
           2. LOGOS MARQUEE STRIP
           ============================================================ */}
-      <section className="py-6 bg-white border-b border-slate-100 overflow-hidden">
-        <TrustMarquee />
-      </section>
+      <TrustMarquee />
 
       {/* ============================================================
           3. VIDEO TESTIMONIALS GRID (Screenshots 2 & 3 Match)

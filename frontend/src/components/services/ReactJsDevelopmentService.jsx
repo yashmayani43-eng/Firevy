@@ -1,609 +1,442 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Container from '../common/Container';
+import { motion } from 'framer-motion';
 import SEO from '../common/SEO';
-import BRAND from '../../constants/brand';
+import Container from '../common/Container';
+import ClutchTopRatedCompanyBanner from '../common/ClutchTopRatedCompanyBanner';
 import PremiumServicesGrid from '../common/PremiumServicesGrid';
-import TechnologyStackGrid from '../common/TechnologyStackGrid';
-import BrandLogoMarquee from '../common/BrandLogoMarquee';
-import FeaturedInLogosGrid from '../home/FeaturedInLogosGrid';
-import VideoTestimonialsStory from '../home/VideoTestimonialsStory';
+import TrustMarquee from '../home/TrustMarquee';
+import ProudAwardsBanner from './ProudAwardsBanner';
+import AndroidHiringModels from './AndroidHiringModels';
+import InnovativeSolutionsVideoSection from './InnovativeSolutionsVideoSection';
+import ProcessWeFollow from '../common/ProcessWeFollow';
+import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
+import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
+import SuccessMatrixGrid from '../home/SuccessMatrixGrid';
+import FeaturedInBrandsSection from './FeaturedInBrandsSection';
+import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
 import SapphireFaqSection from '../common/SapphireFaqSection';
+import RecentBlogsSection from '../home/RecentBlogsSection';
+import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
+import ConversionCalloutBanner from '../home/ConversionCalloutBanner';
+import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
+import BRAND from '../../constants/brand';
 import {
-  Sparkles,
   ArrowRight,
-  ChevronDown,
-  CheckCircle2,
-  Cpu,
-  Zap,
-  ShieldCheck,
-  Clock,
-  Headphones,
-  Users,
-  Layers,
-  Star,
-  ExternalLink,
+  ChevronRight,
   Code2,
-  TrendingUp,
-  DollarSign,
-  Phone,
-  MessageCircle,
+  Zap,
   Globe,
-  Database,
-  Terminal,
-  Smartphone,
-  RefreshCw,
-  LayoutGrid,
-  FileCode2,
-  CheckCircle,
-  Laptop
+  Layers,
+  Cpu,
+  RefreshCw
 } from 'lucide-react';
 
 export const ReactJsDevelopmentService = () => {
-  const heroMetrics = [
-    { number: '80+', label: 'Web Developers' },
-    { number: '20+', label: 'Fortunes 500 Companies' },
-    { number: '600+', label: 'Project Completed in Web Technology' },
-    { number: '320+', label: '5-Star Clutch Reviews' }
-  ];
 
+  // 6 Core React.js Expertise Cards
   const reactServices = [
     {
-      id: 1,
-      title: 'Custom React Web App Development',
-      icon: <Code2 className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Engineering custom, scalable, and responsive React web applications engineered for speed, enterprise security, and intuitive user experiences.',
-      bullets: [
-        'Single Page Applications (SPAs)',
-        'Enterprise Web Portals',
-        'Custom React Component Kits',
-        'Micro-Frontend Architecture'
-      ]
+      title: "Custom React.js Single Page App (SPA) Development",
+      desc: "Architect fast, responsive, single-page web applications utilizing React.js, TypeScript, and modern component-driven architectures."
     },
     {
-      id: 2,
-      title: 'Next.js SSR & Server Components',
-      icon: <Globe className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Harness the power of Next.js for Server-Side Rendering (SSR), Static Site Generation (SSG), and React Server Components for peak Google SEO ranking.',
-      bullets: [
-        'Next.js 14/15 App Router',
-        'Server-Side Rendering (SSR)',
-        'Core Web Vitals Optimization',
-        'Edge Middleware & Caching'
-      ]
+      title: "React Component Libraries & Design Systems",
+      desc: "Develop accessible, reusable UI component libraries documented in Storybook with Tailwind CSS, Radix UI, and Shadcn UI primitives."
     },
     {
-      id: 3,
-      title: 'React Native Cross-Platform Apps',
-      icon: <Smartphone className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Build native iOS and Android mobile apps from a single shared React codebase with near-native performance and 40% faster time-to-market.',
-      bullets: [
-        'iOS & Android Cross-Platform',
-        'Native Hardware API Access',
-        'Offline Synchronization',
-        'App Store & Play Store Release'
-      ]
+      title: "React Native Mobile App Development (iOS & Android)",
+      desc: "Build cross-platform mobile apps using React Native with shared codebases, native device API bridges, and high-FPS animations."
     },
     {
-      id: 4,
-      title: 'React Component Library & Design Systems',
-      icon: <LayoutGrid className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Develop standardized, modular, and accessible UI component libraries utilizing Tailwind CSS, Storybook, Shadcn UI, and Radix UI primitives.',
-      bullets: [
-        'Storybook Documentation',
-        'Tailwind CSS & Shadcn UI',
-        'WCAG Accessibility (a11y)',
-        'Figma to React Pixel-Perfect UI'
-      ]
+      title: "State Management & Real-Time Data Pipelines",
+      desc: "Architect global application state using Redux Toolkit, Zustand, TanStack React Query, and real-time WebSocket subscriptions."
     },
     {
-      id: 5,
-      title: 'State Management & Real-Time APIs',
-      icon: <Layers className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Architect predictable global state architectures using Redux Toolkit, Zustand, TanStack Query (React Query), and real-time WebSockets.',
-      bullets: [
-        'Redux Toolkit & Zustand',
-        'TanStack React Query',
-        'WebSockets & Server-Sent Events',
-        'Optimistic UI State Updates'
-      ]
+      title: "React Microservices & GraphQL Integration",
+      desc: "Connect React frontends with RESTful and GraphQL backend microservices built on Node.js, Python, Java, or .NET Core."
     },
     {
-      id: 6,
-      title: 'Legacy Web App Migration to React',
-      icon: <RefreshCw className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Seamlessly modernize legacy jQuery, AngularJS, PHP, or older frontend stacks to a modern React / TypeScript architecture with zero data loss.',
-      bullets: [
-        'Legacy Architecture Audit',
-        'Incremental Strangler Migration',
-        'TypeScript Refactoring',
-        'Performance & Security Upgrade'
-      ]
-    },
-    {
-      id: 7,
-      title: 'React API Integration & Microservices',
-      icon: <Database className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Connect your React frontend with RESTful and GraphQL backend microservices built on Node.js, Python, Java Spring Boot, or .NET Core.',
-      bullets: [
-        'REST & GraphQL Client Pipelines',
-        'OAuth2, JWT & SSO Integration',
-        'High-Throughput API Gateways',
-        'Third-Party Payment Gateways'
-      ]
-    },
-    {
-      id: 8,
-      title: 'React Maintenance & 24/7 SLA Support',
-      icon: <ShieldCheck className="w-6 h-6 text-[#006B8F]" />,
-      shortDesc: 'Comprehensive 24/7 production monitoring, automated security patch rollouts, package dependency updates, and guaranteed SLA responses.',
-      bullets: [
-        '24/7 SLA Uptime Guarantee',
-        'Performance Auditing & Profiling',
-        'Security Vulnerability Patches',
-        'Dedicated On-Demand Squads'
-      ]
+      title: "Legacy Codebase Migration to React & Audit",
+      desc: "Refactor legacy jQuery, AngularJS, PHP, or older frontend stacks into modern React TypeScript components with zero downtime."
     }
   ];
 
-  const keyBenefits = [
+  // 8 FAQs
+  const reactFaqs = [
     {
-      title: 'Virtual DOM for Blazing Speed',
-      desc: 'React’s Virtual DOM minimizes direct browser DOM manipulation, ensuring lightning-fast UI updates and seamless high-throughput rendering.',
-      icon: <Zap className="w-7 h-7 text-[#006B8F]" />
+      q: "What makes React.js the preferred choice for enterprise web applications?",
+      a: "React.js offers a component-based architecture, virtual DOM for high-performance updates, declarative UI development, and a massive ecosystem of libraries backed by Meta."
     },
     {
-      title: 'Component Reusability & Modularity',
-      desc: 'Encapsulated component architecture allows developers to build self-contained units that can be reused across pages and enterprise platforms.',
-      icon: <Layers className="w-7 h-7 text-[#006B8F]" />
+      q: "Can React.js applications be optimized for search engines (SEO)?",
+      a: "Yes! While plain React SPAs can be pre-rendered or augmented with hydration, we leverage Next.js or static site generation (SSG/SSR) to guarantee 100% search engine indexability."
     },
     {
-      title: 'Unidirectional Data Flow',
-      desc: 'One-way data binding guarantees predictable code behavior, simplified debugging, and easier scaling across large engineering organizations.',
-      icon: <FileCode2 className="w-7 h-7 text-[#006B8F]" />
+      q: "What state management tools do your React developers use?",
+      a: "We utilize industry-standard state management libraries including Redux Toolkit, Zustand, Context API for local state, and TanStack React Query for async server state."
     },
     {
-      title: 'SEO-Friendly with SSR / Next.js',
-      desc: 'Eliminate single-page app indexing limitations with Next.js server-side rendering and static pre-rendering for top Google organic rankings.',
-      icon: <Globe className="w-7 h-7 text-[#006B8F]" />
+      q: "Can we share code between our React web app and React Native mobile app?",
+      a: "Yes! Up to 60-80% of business logic, state management store routines, utility functions, and API layer code can be shared across React web and React Native mobile apps."
     },
     {
-      title: 'Backed by Meta & Vast Ecosystem',
-      desc: 'Maintained by Meta (Facebook) with millions of developers, extensive open-source npm packages, and guaranteed long-term enterprise adoption.',
-      icon: <Cpu className="w-7 h-7 text-[#006B8F]" />
+      q: "Do you offer migration services from Angular, Vue, or jQuery to React?",
+      a: "Yes. We perform step-by-step strangler-pattern migrations, converting legacy views into modern React components while keeping your production app running seamlessly."
     },
     {
-      title: 'Easy Cross-Platform Expansion',
-      desc: 'Shared logic and component abstractions allow teams to easily transition or expand web applications into iOS and Android apps with React Native.',
-      icon: <Smartphone className="w-7 h-7 text-[#006B8F]" />
-    }
-  ];
-
-  const whyChooseUs = [
-    {
-      title: 'Top 1% Vetted Senior React Developers',
-      desc: 'Access certified React & TypeScript engineers with an average of 6+ years building mission-critical enterprise applications.',
-      icon: <Users className="w-6 h-6 text-[#006B8F]" />
+      q: "How do you ensure React application performance and accessibility?",
+      a: "We perform bundle size analysis, dynamic code-splitting via React.lazy, memoization (useMemo/useCallback), and enforce WCAG accessibility guidelines."
     },
     {
-      title: '100% Source Code & IP Ownership',
-      desc: 'You retain complete ownership of all intellectual property, source code, repositories, and architectural documentation.',
-      icon: <ShieldCheck className="w-6 h-6 text-[#006B8F]" />
+      q: "What engagement models do you offer for hiring React developers?",
+      a: "We offer flexible engagement models including Dedicated React Engineers, Project-Based Fixed Price execution, and Hourly Staff Augmentation."
     },
     {
-      title: 'Strict NDA & Data Security',
-      desc: 'We enforce enterprise-grade data security with strict NDAs, OWASP Top-10 compliance, and SOC-2 / GDPR security standards.',
-      icon: <CheckCircle2 className="w-6 h-6 text-[#006B8F]" />
-    },
-    {
-      title: 'Transparent Bi-Weekly Agile Sprints',
-      desc: 'Collaborate directly with our engineering team via Slack, Teams, and Jira with bi-weekly sprint demos and transparent reporting.',
-      icon: <Clock className="w-6 h-6 text-[#006B8F]" />
-    },
-    {
-      title: 'Flexible Engagement Models',
-      desc: 'Choose between Dedicated Full-Time Teams, Time & Material hourly contracts, or Fixed Milestone budgets tailored to your scale.',
-      icon: <DollarSign className="w-6 h-6 text-[#006B8F]" />
-    },
-    {
-      title: 'Guaranteed 99.9% On-Time Delivery',
-      desc: 'Our battle-tested blueprints, automated CI/CD pipelines, and rigorous QA ensure on-budget, on-time project launches.',
-      icon: <TrendingUp className="w-6 h-6 text-[#006B8F]" />
-    }
-  ];
-
-  const workProcess = [
-    {
-      step: '01',
-      title: 'Discovery & Scoping',
-      desc: 'We analyze your business goals, user personas, third-party integrations, and technical requirements to create an architectural roadmap.'
-    },
-    {
-      step: '02',
-      title: 'UI/UX & Design System',
-      desc: 'Our design squad crafts intuitive, high-fidelity Figma prototypes, interactive wireframes, and design system tokens.'
-    },
-    {
-      step: '03',
-      title: 'Agile React Sprints',
-      desc: 'Senior developers build modular React components, clean TypeScript services, global state, and secure API integrations in 2-week sprints.'
-    },
-    {
-      step: '04',
-      title: 'Automated QA & Testing',
-      desc: 'Comprehensive unit tests (Jest / React Testing Library), end-to-end testing (Cypress / Playwright), and security vulnerability audits.'
-    },
-    {
-      step: '05',
-      title: 'CI/CD Cloud Deployment',
-      desc: 'Automated bundle optimization, code splitting, containerization with Docker, and zero-downtime deployment to AWS, Vercel, or Azure.'
-    },
-    {
-      step: '06',
-      title: '24/7 SLA & Maintenance',
-      desc: 'Continuous real-time error tracking, security updates, version upgrades, and dedicated engineering support to ensure peak performance.'
-    }
-  ];
-
-  const recentProjects = [
-    {
-      id: 1,
-      title: 'Enterprise FinTech Trading & Analytics Dashboard',
-      category: 'FinTech Platform',
-      image: '/images/ai_chatbot.png',
-      link: '/portfolio'
-    },
-    {
-      id: 2,
-      title: 'AI-Powered Smart Traffic & Video Analytics Portal',
-      category: 'Computer Vision & React',
-      image: '/images/traffic_mgt_ai.png',
-      link: '/portfolio'
-    },
-    {
-      id: 3,
-      title: 'Real Estate Interactive Map & Property Explorer',
-      category: 'PropTech Web App',
-      image: '/images/waymark_map_app.webp',
-      link: '/portfolio'
-    },
-    {
-      id: 4,
-      title: 'On-Demand Talent Recruitment SaaS Platform',
-      category: 'HR Tech Solution',
-      image: '/images/talenti_qube.png',
-      link: '/portfolio'
-    },
-    {
-      id: 5,
-      title: 'Car Rental & Fleet Mobility Booking Portal',
-      category: 'Automotive Web App',
-      image: '/images/beecar.png',
-      link: '/portfolio'
-    },
-    {
-      id: 6,
-      title: 'Smart Travel Itinerary & Flight Booking System',
-      category: 'Travel Tech',
-      image: '/images/ai_travel_app.png',
-      link: '/portfolio'
-    }
-  ];
-
-  const reactFaqList = [
-    {
-      id: 1,
-      question: '1. Why should I choose React JS for web application development?',
-      answer: 'React JS is the world’s most popular front-end library backed by Meta. Its Virtual DOM, component-based modularity, vast open-source ecosystem, and seamless support for Server-Side Rendering (via Next.js) make it the prime choice for building high-performance, scalable web apps.'
-    },
-    {
-      id: 2,
-      question: '2. What is the difference between React JS and React Native?',
-      answer: 'React JS is designed for building dynamic, responsive web applications that run in web browsers. React Native compiles React code into native iOS and Android mobile applications using native platform UI components and device APIs.'
-    },
-    {
-      id: 3,
-      question: '3. Can React applications be optimized for SEO?',
-      answer: 'Yes! By leveraging frameworks like Next.js for Server-Side Rendering (SSR), Static Site Generation (SSG), and Incremental Static Regeneration (ISR), React apps achieve instant First Contentful Paint and full search engine indexing.'
-    },
-    {
-      id: 4,
-      question: '4. How do you handle state management in complex React apps?',
-      answer: 'We tailor the state management approach to your project needs—utilizing Redux Toolkit for complex global state, Zustand for lightweight modularity, TanStack React Query for asynchronous server state and caching, or React Context for localized state.'
-    },
-    {
-      id: 5,
-      question: '5. Can you migrate our existing web application to React JS?',
-      answer: 'Yes. We specialize in legacy application modernization (from AngularJS, jQuery, PHP, or older monolithic systems). We use proven incremental migration techniques like the Strangler Fig pattern to ensure continuous business operations with zero downtime.'
-    },
-    {
-      id: 6,
-      question: '6. How much does custom React JS web development cost?',
-      answer: 'Development cost depends on the scope, UI/UX complexity, API integrations, and backend requirements. We offer transparent Fixed-Price milestone contracts as well as flexible Dedicated Developer engagement models tailored to your budget.'
-    },
-    {
-      id: 7,
-      question: '7. What post-launch maintenance and SLA support do you provide?',
-      answer: 'We provide 24/7/365 infrastructure monitoring, automated security patch rollouts, package upgrades, performance tuning, and guaranteed < 15-minute response times for critical production incidents.'
-    },
-    {
-      id: 8,
-      question: '8. Why choose Firevy / Sapphire Solutions as your React JS development partner?',
-      answer: 'With 23+ years of IT excellence, 320+ 5-star Clutch reviews, 1500+ successful projects, top 1% vetted React developers, 100% source code ownership, strict NDA agreements, and guaranteed timezone alignment, we ensure world-class software delivery.'
+      q: "How quickly can Firevy onboard dedicated React.js developers?",
+      a: "Following our technical alignment and requirements review, senior React.js developers can onboard and begin coding within 48 to 72 hours."
     }
   ];
 
   return (
-    <div className="bg-white text-slate-900 font-sans min-h-screen">
+    <div className="min-h-screen bg-white text-slate-800 font-sans selection:bg-[#005F96] selection:text-white">
       <SEO
-        title="Top React JS Development Company | ReactJS Web Development Services"
-        description="Sapphire is a top React JS development company. We create robust, high performance, scalable and powerful ReactJS web applications and enterprise portals."
-        canonical="/services/react"
+        title={`React JS Development Company in USA | ${BRAND.name}`}
+        description="React.JS Is A Library That Is Effective At Generating Lightweight, Responsive, And High-Performance Single Page Applications. Contact Firevy today."
       />
 
-      {/* Floating Brand Bubble */}
-      <div className="fixed right-4 bottom-5 z-40">
-        <Link
-          to="/contact"
-          title={`Contact ${BRAND.name === 'Firevy' ? 'Sapphire' : BRAND.name}`}
-          className="w-13 h-13 rounded-full bg-[#0086C6] hover:bg-[#0070A6] text-white flex items-center justify-center shadow-2xl transition-transform hover:scale-110"
-        >
-          <span className="font-[900] text-3xl font-serif select-none leading-none">S</span>
-        </Link>
-      </div>
-
       {/* =========================================================================
-          1. HERO SECTION (1:1 Exact Match with Screenshot)
-          ========================================================================= */}
-      <section className="pt-6 pb-12 sm:pt-8 sm:pb-16 bg-[#F4F9FD] text-slate-900 relative font-sans border-b border-slate-100">
+          IMAGE 1: HERO SECTION
+         ========================================================================= */}
+      <section className="relative pt-6 pb-10 md:pt-10 md:pb-14 bg-gradient-to-b from-slate-50/90 via-white to-slate-50/40 border-b border-slate-100 overflow-hidden">
+        <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-gradient-to-bl from-sky-100/40 via-blue-100/30 to-transparent rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-gradient-to-tr from-cyan-100/40 via-sky-50/30 to-transparent rounded-full blur-3xl pointer-events-none" />
+
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Heading, Subtext, Metrics & 2 CTA Buttons */}
-            <div className="lg:col-span-7 space-y-6 text-left">
-              <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-[900] text-[#0B0F19] tracking-tight leading-[1.12] font-sans">
-                Top React JS Development Company
-              </h1>
+          {/* Breadcrumbs */}
+          <nav className="flex items-center gap-2 text-xs md:text-sm text-slate-500 mb-8 font-medium">
+            <Link to="/" className="hover:text-[#005F96] transition-colors">Home</Link>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+            <Link to="/services" className="hover:text-[#005F96] transition-colors">Services</Link>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+            <Link to="/services/frontend-development" className="hover:text-[#005F96] transition-colors">Front End Development</Link>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+            <span className="text-[#005F96] font-semibold">React JS Development</span>
+          </nav>
 
-              <p className="text-[14px] sm:text-[15px] text-[#475569] leading-[1.8] font-normal font-sans max-w-2xl">
-                We create robust, high performance, scalable and powerful ReactJS framework for React js web development and react js application development. As a reputable AI-powered ReactJS development company, we offer a wide range of reliable ReactJS development services and solutions at affordable prices.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            {/* Left Content Column */}
+            <div className="lg:col-span-6 space-y-6 text-left">
+              <motion.h1
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="text-3xl sm:text-4xl md:text-5xl font-[900] text-slate-900 tracking-tight leading-[1.15]"
+              >
+                React JS Development<br className="hidden sm:inline" /> Company in USA
+              </motion.h1>
 
-              {/* 4 Counter Metrics (80+, 20+, 600+, 320+) */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-1">
-                {heroMetrics.map((m, idx) => (
-                  <div key={idx} className="space-y-1">
-                    <div className="text-[26px] sm:text-[30px] font-[900] text-[#005F96] tracking-tight">
-                      {m.number}
-                    </div>
-                    <div className="text-[11.5px] sm:text-[12.5px] font-[600] text-[#475569] leading-snug">
-                      {m.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <motion.p
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                className="text-base sm:text-lg text-slate-600 font-[400] leading-relaxed max-w-2xl"
+              >
+                React.JS Is A Library That Is Effective At Generating Lightweight, Responsive, And High-Performance Single Page Applications
+              </motion.p>
 
-              {/* 2 CTA Buttons (Discuss Your Project & Hire Reactjs Developers) */}
-              <div className="flex flex-wrap items-center gap-3.5 pt-2">
+              <motion.div
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.2 }}
+                className="pt-2 flex flex-wrap items-center gap-4"
+              >
                 <Link
                   to="/contact"
-                  className="px-7 py-3.5 rounded-[8px] bg-[#005F96] hover:bg-[#004A75] text-white font-[700] text-[14.5px] transition-all shadow-md hover:shadow-lg inline-flex items-center space-x-2"
+                  className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-lg bg-[#005F96] hover:bg-[#004a77] text-white font-bold text-base shadow-md hover:shadow-lg transition-all duration-200 group"
                 >
                   <span>Discuss Your Project</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
-
-                <Link
-                  to="/contact"
-                  className="px-7 py-3.5 rounded-[8px] bg-[#00456E] hover:bg-[#003454] text-white font-[700] text-[14.5px] transition-all shadow-md hover:shadow-lg inline-flex items-center space-x-2"
-                >
-                  <span>Hire Reactjs Developers</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
+              </motion.div>
             </div>
 
-            {/* Right Column: Laptop Mockup Displaying Analytics Dashboard */}
-            <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-md group">
-                {/* Mockup Frame */}
-                <div className="bg-slate-900 p-2.5 sm:p-3.5 rounded-[18px] shadow-[0_20px_50px_rgba(0,95,150,0.22)] border border-slate-700">
-                  <div className="bg-white rounded-[12px] overflow-hidden border border-slate-200">
-                    {/* Mock Browser Header */}
-                    <div className="bg-slate-100 px-3 py-1.5 border-b border-slate-200 flex items-center justify-between">
-                      <div className="flex items-center space-x-1.5">
-                        <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
-                        <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-                        <div className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-                      </div>
-                      <div className="text-[10px] text-slate-500 font-mono">React Dashboard v18.3</div>
-                      <div className="w-3" />
-                    </div>
+            {/* Right Hero Visual Illustration (React Atom Graphic) */}
+            <div className="lg:col-span-6 relative flex items-center justify-center">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="w-full max-w-[520px] relative"
+              >
+                <div className="relative w-full aspect-[4/3] flex items-center justify-center">
+                  <svg viewBox="0 0 520 360" className="w-full h-full drop-shadow-md">
+                    <defs>
+                      <linearGradient id="reactHeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#EBF5FF" />
+                        <stop offset="100%" stopColor="#E0F2FE" />
+                      </linearGradient>
+                      <filter id="reactHeroShadow" x="-10%" y="-10%" width="120%" height="120%">
+                        <feDropShadow dx="0" dy="4" stdDeviation="4" floodColor="#005F96" floodOpacity="0.1" />
+                      </filter>
+                    </defs>
 
-                    {/* Dashboard Visual UI */}
-                    <div className="p-4 space-y-3 text-left">
-                      {/* Top Metric Pills */}
-                      <div className="grid grid-cols-3 gap-2">
-                        <div className="bg-[#EBF5FB] p-2 rounded-lg border border-blue-100 text-center">
-                          <div className="text-[10px] text-slate-500 font-medium">Active Users</div>
-                          <div className="text-[15px] font-[800] text-[#005F96]">48.5K</div>
-                        </div>
-                        <div className="bg-emerald-50 p-2 rounded-lg border border-emerald-100 text-center">
-                          <div className="text-[10px] text-slate-500 font-medium">Conversion</div>
-                          <div className="text-[15px] font-[800] text-emerald-600">+24.8%</div>
-                        </div>
-                        <div className="bg-amber-50 p-2 rounded-lg border border-amber-100 text-center">
-                          <div className="text-[10px] text-slate-500 font-medium">Render Speed</div>
-                          <div className="text-[15px] font-[800] text-amber-600">0.12s</div>
-                        </div>
-                      </div>
+                    {/* Blue Window Display */}
+                    <rect x="50" y="50" width="340" height="240" rx="16" fill="#E0F2FE" stroke="#61DAFB" strokeWidth="2" />
+                    
+                    {/* Small REACT.JS Browser Card */}
+                    <g transform="translate(30, 90)" filter="url(#reactHeroShadow)">
+                      <rect x="0" y="0" width="105" height="65" rx="8" fill="#FFFFFF" stroke="#005F96" strokeWidth="1.5" />
+                      <rect x="0" y="0" width="105" height="14" rx="8" fill="#005F96" />
+                      <text x="8" y="10" fill="white" fontSize="7" fontWeight="bold">REACT.JS</text>
+                      <line x1="8" y1="28" x2="65" y2="28" stroke="#61DAFB" strokeWidth="2" />
+                      <line x1="8" y1="38" x2="85" y2="38" stroke="#CBD5E1" strokeWidth="2" />
+                      <line x1="8" y1="48" x2="50" y2="48" stroke="#CBD5E1" strokeWidth="2" />
+                    </g>
 
-                      {/* Mock Chart / Graph Bar */}
-                      <div className="bg-slate-50 p-3 rounded-lg border border-slate-100 space-y-2">
-                        <div className="flex justify-between items-center text-[11px] font-bold text-slate-700">
-                          <span>Component Performance Throughput</span>
-                          <span className="text-emerald-600 font-mono">100% Total</span>
-                        </div>
-                        <div className="w-full bg-slate-200 h-2.5 rounded-full overflow-hidden flex">
-                          <div className="bg-[#005F96] h-full w-[45%]" />
-                          <div className="bg-[#38BDF8] h-full w-[30%]" />
-                          <div className="bg-emerald-500 h-full w-[25%]" />
-                        </div>
-                      </div>
+                    {/* React Atom Floating Badge */}
+                    <g transform="translate(165, 45)" filter="url(#reactHeroShadow)">
+                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#20232A" />
+                      <ellipse cx="27.5" cy="27.5" rx="18" ry="7" fill="none" stroke="#61DAFB" strokeWidth="2" transform="rotate(0 27.5 27.5)" />
+                      <ellipse cx="27.5" cy="27.5" rx="18" ry="7" fill="none" stroke="#61DAFB" strokeWidth="2" transform="rotate(60 27.5 27.5)" />
+                      <ellipse cx="27.5" cy="27.5" rx="18" ry="7" fill="none" stroke="#61DAFB" strokeWidth="2" transform="rotate(120 27.5 27.5)" />
+                      <circle cx="27.5" cy="27.5" r="3.5" fill="#61DAFB" />
+                    </g>
 
-                      {/* Mock Table Rows */}
-                      <div className="space-y-1.5 pt-1">
-                        <div className="flex justify-between items-center text-[11px] font-semibold text-slate-600 pb-1 border-b border-slate-100">
-                          <span>Module</span>
-                          <span>Framework</span>
-                          <span>Status</span>
-                        </div>
-                        <div className="flex justify-between items-center text-[10.5px] text-slate-700">
-                          <span>Virtual DOM Hydration</span>
-                          <span className="text-[#005F96] font-semibold">React 18</span>
-                          <span className="text-emerald-600 font-bold">● Active</span>
-                        </div>
-                        <div className="flex justify-between items-center text-[10.5px] text-slate-700">
-                          <span>Next.js Server Actions</span>
-                          <span className="text-[#005F96] font-semibold">Next.js 14</span>
-                          <span className="text-emerald-600 font-bold">● Active</span>
-                        </div>
-                        <div className="flex justify-between items-center text-[10.5px] text-slate-700">
-                          <span>TanStack Query Caching</span>
-                          <span className="text-[#005F96] font-semibold">Zustand</span>
-                          <span className="text-emerald-600 font-bold">● Synced</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    {/* Floating Tech Icons */}
+                    <g transform="translate(230, 45)" filter="url(#reactHeroShadow)">
+                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#60A5FA" />
+                      <circle cx="27.5" cy="27.5" r="10" fill="none" stroke="white" strokeWidth="3" />
+                    </g>
+
+                    <g transform="translate(295, 45)" filter="url(#reactHeroShadow)">
+                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#60A5FA" />
+                      <rect x="17" y="18" width="21" height="6" rx="2" fill="white" />
+                      <rect x="17" y="27" width="21" height="6" rx="2" fill="white" />
+                      <rect x="17" y="36" width="21" height="6" rx="2" fill="white" />
+                    </g>
+
+                    <g transform="translate(195, 115)" filter="url(#reactHeroShadow)">
+                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#60A5FA" />
+                      <path d="M 18 37 L 37 18 M 32 18 L 37 23 M 18 32 L 23 37" stroke="white" strokeWidth="3" strokeLinecap="round" />
+                    </g>
+
+                    <g transform="translate(260, 115)" filter="url(#reactHeroShadow)">
+                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#20232A" />
+                      <path d="M 18 35 A 13 13 0 0 1 37 35" fill="none" stroke="#61DAFB" strokeWidth="3" />
+                      <line x1="27.5" y1="35" x2="33" y2="24" stroke="#61DAFB" strokeWidth="3" strokeLinecap="round" />
+                    </g>
+
+                    {/* Developer Person Vector Illustration */}
+                    <g transform="translate(340, 140)">
+                      <circle cx="45" cy="30" r="14" fill="#005F96" />
+                      <path d="M 25 55 C 25 42, 65 42, 65 55 L 75 110 L 15 110 Z" fill="#0284C7" />
+                      <rect x="15" y="110" width="60" height="25" fill="#1E293B" rx="4" />
+                      <polygon points="5,85 45,85 55,70 15,70" fill="#0F172A" />
+                      <rect x="5" y="85" width="40" height="4" fill="#64748B" rx="1" />
+                    </g>
+                  </svg>
                 </div>
+              </motion.div>
+            </div>
+          </div>
+        </Container>
 
-                {/* Laptop Base Stand */}
-                <div className="w-full h-3 bg-slate-400 rounded-b-xl mx-auto opacity-70 shadow-md" />
+        {/* IMAGE 1: Brand Logo Strip */}
+        <div className="mt-8">
+          <TrustMarquee />
+        </div>
+      </section>
+
+      {/* =========================================================================
+          IMAGE 1 & 2: GET REACT JS APPLICATION DEVELOPMENT SERVICES
+         ========================================================================= */}
+      <section className="py-14 sm:py-16 md:py-20 bg-white">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            
+            {/* Left Column Graphic (Person at Desk with REACT.JS Monitor) */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="w-full max-w-[460px] relative">
+                <svg viewBox="0 0 460 320" className="w-full h-auto drop-shadow-md">
+                  <rect x="50" y="240" width="360" height="12" fill="#1E293B" rx="2" />
+                  <rect x="90" y="252" width="12" height="60" fill="#334155" />
+                  <rect x="360" y="252" width="12" height="60" fill="#334155" />
+
+                  <rect x="120" y="70" width="180" height="130" rx="8" fill="#FFFFFF" stroke="#005F96" strokeWidth="3" />
+                  <rect x="120" y="70" width="180" height="24" rx="8" fill="#005F96" />
+                  <circle cx="134" cy="82" r="3" fill="#FF5F56" />
+                  <circle cx="144" cy="82" r="3" fill="#FFBD2E" />
+                  <circle cx="154" cy="82" r="3" fill="#27C93F" />
+                  <text x="210" y="130" fill="#005F96" fontSize="18" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">REACT.JS</text>
+                  <line x1="150" y1="150" x2="270" y2="150" stroke="#38BDF8" strokeWidth="3" strokeDasharray="6 4" />
+
+                  <rect x="195" y="200" width="30" height="40" fill="#94A3B8" />
+                  <rect x="175" y="235" width="70" height="5" fill="#64748B" rx="2" />
+
+                  <path d="M 330 140 C 330 120, 360 120, 360 140 C 360 160, 320 190, 310 240 Z" fill="#0284C7" />
+                  <circle cx="345" cy="120" r="16" fill="#005F96" />
+                  <rect x="300" y="190" width="80" height="50" rx="8" fill="#475569" />
+                </svg>
               </div>
             </div>
+
+            {/* Right Column Content */}
+            <div className="lg:col-span-7 space-y-5 text-left font-sans">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-[900] text-slate-900 tracking-tight leading-tight">
+                Get React JS Application<br className="hidden sm:inline" /> Development Services
+              </h2>
+
+              <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                <p>
+                  It uses JavaScript and Virtual DOM throughout the front-end protocols. Engage with us for advanced React.JS Application Development that will positively impact your company. These applications will be inventive, responsive, and influential.
+                </p>
+                <p>
+                  Because we are a React JS Web Development Company of the highest caliber, we can effortlessly satisfy our customers' expectations and carry out their activities as they have chosen. You can Hire React Developers to swiftly construct web applications using component-driven UI architecture.
+                </p>
+              </div>
+            </div>
+
           </div>
         </Container>
       </section>
 
       {/* =========================================================================
-          2. BRAND RECOGNITION MARQUEE BANNER
-          ========================================================================= */}
-      <BrandLogoMarquee />
+          IMAGE 2: BRIEF ABOUT OUR REACT JS DEVELOPMENT
+         ========================================================================= */}
+      <section className="py-14 sm:py-16 md:py-20 bg-slate-50/60 border-t border-slate-100">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            
+            {/* Left Column Content */}
+            <div className="lg:col-span-7 space-y-5 text-left font-sans">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-[900] text-slate-900 tracking-tight leading-tight">
+                Brief About Our React JS<br className="hidden sm:inline" /> Development
+              </h2>
+
+              <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                <p>
+                  Because React is accessible for component-based development of JavaScript applications using virtual DOM reconciliation, it has the advantage of updating user interface components with maximum efficiency. Another incredible benefit of React web development is how simple it is to maintain and scale complex enterprise frontends.
+                </p>
+                <p>
+                  React has access to React Native and Next.js platforms, enabling developers to create cross-platform mobile apps and server-rendered web portals with high stability and speed.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column Graphic */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="w-full max-w-[440px] relative">
+                <svg viewBox="0 0 440 340" className="w-full h-auto drop-shadow-md">
+                  <rect x="180" y="20" width="160" height="290" rx="24" fill="#FFFFFF" stroke="#005F96" strokeWidth="4" />
+                  <rect x="190" y="30" width="140" height="270" rx="16" fill="#F0F9FF" />
+                  <rect x="235" y="35" width="50" height="6" rx="3" fill="#94A3B8" />
+
+                  <rect x="205" y="60" width="50" height="50" rx="10" fill="#E0F2FE" stroke="#0284C7" strokeWidth="1.5" />
+                  <rect x="265" y="60" width="50" height="50" rx="10" fill="#0284C7" />
+                  <rect x="205" y="120" width="50" height="50" rx="10" fill="#0284C7" />
+                  <rect x="265" y="120" width="50" height="50" rx="10" fill="#E0F2FE" stroke="#0284C7" strokeWidth="1.5" />
+                  <rect x="205" y="180" width="50" height="50" rx="10" fill="#E0F2FE" stroke="#0284C7" strokeWidth="1.5" />
+                  <rect x="265" y="180" width="50" height="50" rx="10" fill="#0284C7" />
+
+                  <g transform="translate(60, 80)">
+                    <circle cx="35" cy="30" r="14" fill="#005F96" />
+                    <path d="M 15 50 C 15 40, 55 40, 55 50 L 65 140 L 5 140 Z" fill="#0284C7" />
+                    <circle cx="65" cy="90" r="22" fill="#FFFFFF" stroke="#005F96" strokeWidth="3" />
+                    <line x1="65" y1="90" x2="65" y2="78" stroke="#005F96" strokeWidth="2" strokeLinecap="round" />
+                    <line x1="65" y1="90" x2="74" y2="90" stroke="#005F96" strokeWidth="2" strokeLinecap="round" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+        </Container>
+      </section>
 
       {/* =========================================================================
-          3. LEADING REACT JS DEVELOPMENT COMPANY (Matching Screenshot Lower Section)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100">
+          IMAGE 3: CLUTCH TOP RATED BANNER
+         ========================================================================= */}
+      <ClutchTopRatedCompanyBanner title="World Wide Top Rated IT Company on Clutch" />
+
+      {/* =========================================================================
+          IMAGE 3: GET A 100% CUSTOMIZABLE REACT JS DEVELOPMENT BY EXPERTS
+         ========================================================================= */}
+      <section className="py-14 sm:py-16 md:py-20 bg-white">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Visual: Code Window / React Architecture */}
-            <div className="lg:col-span-5">
-              <div className="bg-[#0F172A] rounded-[20px] p-6 text-white shadow-2xl relative overflow-hidden border border-slate-800">
-                <div className="flex items-center justify-between pb-4 border-b border-slate-800 mb-4">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 rounded-full bg-red-500" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                    <div className="w-3 h-3 rounded-full bg-green-500" />
-                  </div>
-                  <span className="text-[11px] text-cyan-400 font-mono">ReactComponent.tsx</span>
+          <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl md:text-[34px] font-[900] text-slate-900 tracking-tight leading-tight font-sans">
+              Get A 100% Customizable React JS Development By Experts
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+            {/* Left Quote Card */}
+            <div className="lg:col-span-5 flex relative">
+              <div className="w-full bg-[#EBF5FC] rounded-2xl p-8 sm:p-10 flex flex-col justify-center shadow-xs relative text-left border border-sky-100/60">
+                <div className="hidden lg:block absolute top-1/2 -right-3 -translate-y-1/2 w-0 h-0 border-y-[10px] border-y-transparent border-l-[12px] border-l-[#EBF5FC] z-20" />
+
+                <div className="mb-4">
+                  <svg className="w-12 h-12 text-[#005F96] fill-[#005F96]" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
                 </div>
-                <div className="font-mono text-[12px] sm:text-[13px] leading-relaxed text-slate-300 space-y-1">
-                  <p className="text-purple-400">import <span className="text-white">&#123; useState, useEffect &#125;</span> from <span className="text-amber-300">'react'</span>;</p>
-                  <p className="text-purple-400">import <span className="text-white">&#123; useQuery &#125;</span> from <span className="text-amber-300">'@tanstack/react-query'</span>;</p>
-                  <p className="pt-2 text-blue-400">export const <span className="text-yellow-300">EnterprisePortal</span> = () =&gt; &#123;</p>
-                  <p className="pl-4 text-slate-400">// High throughput reactive rendering</p>
-                  <p className="pl-4 text-white">const &#123; data, isLoading &#125; = useQuery(&#123; ... &#125;);</p>
-                  <p className="pl-4 text-purple-400">return (</p>
-                  <p className="pl-8 text-cyan-300">&lt;<span className="text-rose-400">Dashboard</span> data=&#123;data&#125; /&gt;</p>
-                  <p className="pl-4 text-purple-400">);</p>
-                  <p className="text-blue-400">&#125;;</p>
-                </div>
+
+                <h3 className="text-2xl sm:text-[28px] font-[800] text-[#005F96] tracking-tight leading-snug font-sans">
+                  Scalable, Interactive, And Fast Single Page Apps
+                </h3>
               </div>
             </div>
 
             {/* Right Content */}
-            <div className="lg:col-span-7 space-y-5 text-left">
-              <h2 className="text-[28px] sm:text-[36px] font-[900] text-[#0B0F19] tracking-tight leading-tight font-sans">
-                Leading React Js Development Company With High Rating
-              </h2>
-
-              <p className="text-[14.5px] text-[#475569] leading-relaxed font-normal">
-                Affordable AI ReactJS development services from Sapphire, a well-known global company, enable developers to create complex, scalable, and dynamic web applications with optimal efficiency. Our certified React engineers construct enterprise-grade single page applications, SaaS platforms, and customer portals tailored to your specific business requirements.
+            <div className="lg:col-span-7 flex flex-col justify-center space-y-4 text-left font-sans">
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                Our developers design integrated strategies using the flexibility and rich ecosystem of React JS framework. Hire React JS Developers to create seamless websites and Enterprise React JS Development Services through which you communicate with your consumers.
               </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
-                <div className="flex items-center space-x-2.5 text-[13.5px] font-semibold text-slate-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#005F96] shrink-0" />
-                  <span>Virtual DOM High-Speed Execution</span>
-                </div>
-                <div className="flex items-center space-x-2.5 text-[13.5px] font-semibold text-slate-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#005F96] shrink-0" />
-                  <span>Next.js SSR & Server Actions</span>
-                </div>
-                <div className="flex items-center space-x-2.5 text-[13.5px] font-semibold text-slate-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#005F96] shrink-0" />
-                  <span>TypeScript-Powered Code Reliability</span>
-                </div>
-                <div className="flex items-center space-x-2.5 text-[13.5px] font-semibold text-slate-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#005F96] shrink-0" />
-                  <span>100% Source Code & IP Ownership</span>
-                </div>
-              </div>
-
-              <div className="pt-3">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center space-x-2 px-8 py-3.5 rounded-[8px] bg-[#005F96] hover:bg-[#004A75] text-white font-[700] text-[14.5px] transition-all shadow-md hover:shadow-lg"
-                >
-                  <span>Request Architectural Consultation</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                When you choose to outsource the development of your React application to our React JS App Development Company, you may anticipate receiving services of exceptional quality, specialized resources, sophisticated project management, and cost reductions.
+              </p>
             </div>
           </div>
         </Container>
       </section>
 
       {/* =========================================================================
-          4. COMPREHENSIVE REACT JS DEVELOPMENT SERVICES (8 Cards Grid)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-slate-50 font-sans text-left border-b border-slate-200/80">
+          IMAGE 4: OUR PREMIUM SERVICES GRID
+         ========================================================================= */}
+      <PremiumServicesGrid companyName="Firevy.Co" />
+
+      {/* =========================================================================
+          IMAGE 4: THE EXPERTISE OF OUR REACT JS DEVELOPERS
+         ========================================================================= */}
+      <section className="py-14 sm:py-16 md:py-20 bg-slate-50/70 border-y border-slate-100">
         <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
-              Our React JS Development Services
+          <div className="text-center max-w-4xl mx-auto mb-12 space-y-3 font-sans">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-[900] text-slate-900 tracking-tight">
+              The Expertise Of Our React JS Developers
             </h2>
-            <p className="text-[14.5px] text-[#475569] leading-relaxed">
-              From dynamic single-page web applications to enterprise cloud SaaS solutions, we offer full-spectrum React JS development.
+            <p className="text-sm sm:text-base text-slate-600 font-normal">
+              Our React Developers Have Years Of Expertise In Developing React JS Solutions For You. Our Expertise Includes:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {reactServices.map((service) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {reactServices.map((service, idx) => (
               <div
-                key={service.id}
-                className="bg-white rounded-[16px] p-6 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
+                key={idx}
+                className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between text-left group"
               >
-                <div className="space-y-3.5">
-                  <div className="w-12 h-12 rounded-xl bg-[#EAF4FA] flex items-center justify-center group-hover:scale-110 transition-transform">
-                    {service.icon}
+                <div className="space-y-4">
+                  <div className="w-12 h-12 rounded-xl bg-sky-50 text-[#005F96] flex items-center justify-center font-bold text-lg group-hover:bg-[#005F96] group-hover:text-white transition-colors">
+                    0{idx + 1}
                   </div>
-                  <h3 className="text-[16.5px] font-[800] text-slate-900 group-hover:text-[#005F96] transition-colors leading-snug">
+                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#005F96] transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-[13px] text-[#475569] leading-relaxed">
-                    {service.shortDesc}
+                  <p className="text-sm text-slate-600 leading-relaxed font-normal">
+                    {service.desc}
                   </p>
                 </div>
-
-                <div className="mt-5 pt-4 border-t border-slate-100 space-y-2">
-                  {service.bullets.map((bullet, bIdx) => (
-                    <div key={bIdx} className="flex items-center space-x-2 text-[12px] font-medium text-slate-700">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#005F96] shrink-0" />
-                      <span className="truncate">{bullet}</span>
-                    </div>
-                  ))}
-                </div>
               </div>
             ))}
           </div>
@@ -611,209 +444,86 @@ export const ReactJsDevelopmentService = () => {
       </section>
 
       {/* =========================================================================
-          5. KEY BENEFITS OF REACT (6 Cards Grid)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
-              Why Choose React JS for Your Enterprise?
-            </h2>
-            <p className="text-[14.5px] text-[#475569] leading-relaxed">
-              React delivers unparalleled rendering performance, rich ecosystem support, and exceptional developer velocity.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {keyBenefits.map((benefit, idx) => (
-              <div
-                key={idx}
-                className="bg-[#F8FAFC] rounded-[16px] p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all space-y-3"
-              >
-                <div className="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center shadow-xs">
-                  {benefit.icon}
-                </div>
-                <h3 className="text-[17px] font-[800] text-slate-900">
-                  {benefit.title}
-                </h3>
-                <p className="text-[13px] text-[#475569] leading-relaxed">
-                  {benefit.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
+          SECTION 9: PROUD AWARDS BANNER
+         ========================================================================= */}
+      <ProudAwardsBanner />
 
       {/* =========================================================================
-          6. OUR AGILE WORK PROCESS (Step-by-Step)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-slate-900 text-white font-sans text-left">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-14 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-white tracking-tight">
-              Our React JS Development Lifecycle
-            </h2>
-            <p className="text-[14.5px] text-slate-300 leading-relaxed">
-              Agile 2-week sprint workflows with continuous integration, automated testing, and transparent progress demos.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {workProcess.map((proc, idx) => (
-              <div
-                key={idx}
-                className="bg-slate-800/80 rounded-[16px] p-6 border border-slate-700/80 space-y-3 hover:border-sky-500/50 transition-colors"
-              >
-                <div className="text-[26px] font-[900] text-[#38BDF8]">
-                  {proc.step}
-                </div>
-                <h3 className="text-[18px] font-[800] text-white">
-                  {proc.title}
-                </h3>
-                <p className="text-[13px] text-slate-300 leading-relaxed">
-                  {proc.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
+          SECTION 10: HIRING MODELS
+         ========================================================================= */}
+      <AndroidHiringModels />
 
       {/* =========================================================================
-          7. WHY CHOOSE US (6 Cards Grid)
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
-              Why Choose Firevy for React JS Development?
-            </h2>
-            <p className="text-[14.5px] text-[#475569] leading-relaxed">
-              A trusted global technology partner with proven technical excellence and deep full-stack proficiency.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {whyChooseUs.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-[16px] p-6 border border-slate-200 shadow-xs hover:shadow-xl transition-all space-y-3 group"
-              >
-                <div className="w-12 h-12 rounded-xl bg-[#EAF4FA] flex items-center justify-center group-hover:scale-110 transition-transform">
-                  {item.icon}
-                </div>
-                <h3 className="text-[17px] font-[800] text-slate-900 group-hover:text-[#005F96] transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-[13px] text-[#475569] leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
+          SECTION 11: INNOVATIVE SOLUTIONS VIDEO SECTION
+         ========================================================================= */}
+      <InnovativeSolutionsVideoSection />
 
       {/* =========================================================================
-          8. OUR RECENT PROJECTS
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-[#F8FAFC] font-sans text-left border-b border-slate-200/80">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
-            <h2 className="text-[28px] sm:text-[36px] font-[800] text-slate-950 tracking-tight">
-              Our Recent React JS Projects
-            </h2>
-            <p className="text-[14.5px] text-[#475569] leading-relaxed">
-              Explore custom React JS applications and enterprise web solutions successfully engineered for our clients.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10">
-            {recentProjects.map((proj) => (
-              <div
-                key={proj.id}
-                className="bg-white rounded-[16px] overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col justify-between"
-              >
-                <div className="h-48 overflow-hidden bg-slate-100 relative">
-                  <img
-                    src={proj.image}
-                    alt={proj.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute top-3 left-3 bg-[#006B8F] text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                    {proj.category}
-                  </div>
-                </div>
-                <div className="p-5 flex-1 flex flex-col justify-between">
-                  <h4 className="text-[16px] font-[700] text-slate-900 group-hover:text-[#006B8F] transition-colors mb-4">
-                    {proj.title}
-                  </h4>
-                  <Link
-                    to={proj.link}
-                    className="inline-flex items-center text-[13px] font-[700] text-[#006B8F] group-hover:translate-x-1 transition-transform"
-                  >
-                    <span>View Case Study</span>
-                    <ArrowRight className="w-3.5 h-3.5 ml-1" />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <Link
-              to="/portfolio"
-              className="inline-flex items-center space-x-2 px-8 py-3.5 rounded-[8px] bg-[#005F96] hover:bg-[#004A75] text-white font-[700] text-[15px] transition-all shadow-md hover:shadow-lg"
-            >
-              <span>View All Projects</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </Container>
-      </section>
+          SECTION 12: PROCESS WE FOLLOW
+         ========================================================================= */}
+      <ProcessWeFollow title="Process We Follow" subtitle="Our agile React.js engineering lifecycle ensures component modularity, automated testing, and seamless cloud deployment." />
 
       {/* =========================================================================
-          9. VIDEO TESTIMONIALS STORY
-          ========================================================================= */}
-      <VideoTestimonialsStory />
+          SECTION 13: OUR STORY THEIR WORDS
+         ========================================================================= */}
+      <OurStoryTheirWordsSection />
 
       {/* =========================================================================
-          10. TECHNOLOGY STACK GRID
-          ========================================================================= */}
-      <TechnologyStackGrid />
+          SECTION 14: TRUSTED BRANDS GRID
+         ========================================================================= */}
+      <TrustedBrandsGrid />
 
       {/* =========================================================================
-          11. FREQUENTLY ASKED QUESTIONS (Signature 2-Column Sapphire Section)
-          ========================================================================= */}
-      <SapphireFaqSection faqList={reactFaqList} />
+          SECTION 15: SUCCESS MATRIX GRID
+         ========================================================================= */}
+      <SuccessMatrixGrid />
 
       {/* =========================================================================
-          12. WE HAVE BEEN FEATURED IN (18 Brand Logos Grid)
-          ========================================================================= */}
-      <FeaturedInLogosGrid />
+          SECTION 16: FEATURED IN BRANDS
+         ========================================================================= */}
+      <FeaturedInBrandsSection />
 
       {/* =========================================================================
-          13. HIRE NOW CTA BANNER
-          ========================================================================= */}
-      <section className="py-14 sm:py-18 bg-[#005F96] text-white text-center font-sans">
-        <Container>
-          <div className="max-w-3xl mx-auto space-y-5">
-            <h2 className="text-[26px] sm:text-[34px] font-[900] tracking-tight text-white leading-tight">
-              Get access to top {BRAND.name === 'Firevy' ? 'Sapphire' : BRAND.name} React JS Development Company to transform your ideas into a robust application.
-            </h2>
-            <div className="pt-2">
-              <Link
-                to="/contact"
-                className="inline-flex items-center space-x-2 px-9 py-4 rounded-[8px] bg-white hover:bg-slate-100 text-[#005F96] font-[800] text-[15px] transition-all shadow-xl hover:scale-105"
-              >
-                <span>Hire React JS Developers</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        </Container>
-      </section>
+          SECTION 17: CASE STUDIES
+         ========================================================================= */}
+      <DigitalTransformationCaseStudies />
+
+      {/* =========================================================================
+          SECTION 18: SAPPHIRE FAQ SECTION
+         ========================================================================= */}
+      <SapphireFaqSection
+        title="Frequently Asked Questions"
+        subtitle="Explore answers to common questions about our React JS development services."
+        faqs={reactFaqs}
+      />
+
+      {/* =========================================================================
+          SECTION 19: RECENT BLOGS
+         ========================================================================= */}
+      <RecentBlogsSection />
+
+      {/* =========================================================================
+          SECTION 20: WHAT SETS US APART
+         ========================================================================= */}
+      <WhatSetsUsApartSection />
+
+      {/* =========================================================================
+          SECTION 21: HAVE REACT JS DEVELOPMENT CHALLENGE TO ADDRESS ?
+         ========================================================================= */}
+      <ConversionCalloutBanner
+        data={{
+          title: "Have React JS Development Challenge To Address ?",
+          description: "Get Access To Top React JS Development To Transform Your Ideas Into A Robust Application",
+          buttonText: "Hire Now",
+          buttonLink: "/contact"
+        }}
+        hideSideImages={true}
+      />
+
+      {/* =========================================================================
+          SECTION 22: SUBSCRIBE US AND GET THE LATEST UPDATES AND NEWS
+         ========================================================================= */}
+      <SubscribeNewsletterSection />
     </div>
   );
 };

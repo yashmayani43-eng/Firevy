@@ -4,6 +4,7 @@ import Container from '../components/common/Container';
 import { Link } from 'react-router-dom';
 import BRAND from '../constants/brand';
 import TrustRecognitionBanner from '../components/home/TrustRecognitionBanner';
+import TrustMarquee from '../components/home/TrustMarquee';
 import BrandLogoGrid from '../components/home/BrandLogoGrid';
 import PremiumServicesGrid from '../components/home/PremiumServicesGrid';
 import ClientReviewsDarkSection from '../components/home/ClientReviewsDarkSection';
@@ -130,19 +131,7 @@ export const DeliveryModels = () => {
       {/* ============================================================
           2. LOGOS MARQUEE STRIP
           ============================================================ */}
-      <section className="py-8 bg-white border-b border-slate-100 overflow-hidden">
-        <Container>
-          <div className="flex items-center justify-between gap-6 opacity-70 grayscale hover:grayscale-0 transition-all flex-wrap">
-            <span className="text-base font-black text-blue-900 tracking-wider">Almarai</span>
-            <span className="text-base font-black text-slate-800 tracking-tight">ORIENT CEMENT</span>
-            <span className="text-base font-black text-[#006B8F] tracking-tighter">AMERICAN EXPRESS</span>
-            <span className="text-base font-black text-blue-700">Alembic</span>
-            <span className="text-base font-black text-red-600">HONDA</span>
-            <span className="text-base font-black text-slate-900">LafargeHolcim</span>
-            <span className="text-base font-black text-red-700">Cummins</span>
-          </div>
-        </Container>
-      </section>
+      <TrustMarquee />
 
       {/* ============================================================
           3. "To Maximize Your Business Potential And Drive Profitability!"

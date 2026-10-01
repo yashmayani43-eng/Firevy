@@ -29,25 +29,13 @@ export const BACKEND_SERVICES_CONFIG = {
   'ai-and-ml-development': { title: 'AI & ML Development', category: 'AI & ML Development' },
 
   // Front End Development Services
-  'c-sharp-development': { title: 'C Sharp Development', category: 'Front End Development' },
-  'frontend-development': { title: 'Frontend Development', category: 'Front End Development' },
-  'front-end-development': { title: 'Front End Development', category: 'Front End Development' },
-  'meteor-js-development': { title: 'Meteor JS Development', category: 'Front End Development' },
-  'typescript-development-services': { title: 'Typescript Development Services', category: 'Front End Development' },
-  'next-js-development': { title: 'Next Js Development', category: 'Front End Development' },
-  'react-js-development': { title: 'React JS Development', category: 'Front End Development' },
   'csr-web-development': { title: 'CSR Web Development', category: 'Front End Development' },
   'css-web-development': { title: 'CSS Web Development', category: 'Front End Development' },
   'web-portal-development': { title: 'Web Portal Development', category: 'Front End Development' },
-  'web3-development': { title: 'Web3 Development', category: 'Front End Development' },
-  'progressive-web-app': { title: 'Progressive Web App', category: 'Front End Development' },
 
 
   // Blockchain Development Services
   'cryptocurrency-wallet-development': { title: 'Cryptocurrency Wallet Development', category: 'Blockchain Development' },
-  'bullion-exchange-app-development': { title: 'Bullion Exchange App Development', category: 'Blockchain Development' },
-  'digital-wayfinding-solutions': { title: 'Digital Wayfinding Solutions', category: 'Blockchain Development' },
-  'ethereum-app-development': { title: 'Ethereum App Development', category: 'Blockchain Development' },
 
   // Software Development Service
   'product-development': { title: 'Product Development', category: 'Software Development Service' },
@@ -63,10 +51,6 @@ export const BACKEND_SERVICES_CONFIG = {
   'business-application-development': { title: 'Business Application Development', category: 'Software Development Service' },
   'vb6-migration-services': { title: 'VB6 Migration Services', category: 'Software Development Service' },
   'enterprise-mobility-services': { title: 'Enterprise Mobility Services', category: 'Software Development Service' },
-  'full-stack-development': { title: 'Full Stack Development', category: 'Software Development Service' },
-  'financial-software-development': { title: 'Financial Software Development', category: 'Software Development Service' },
-  'travel-software-development': { title: 'Travel Software Development', category: 'Software Development Service' },
-  'software-product-discovery': { title: 'Software Product Discovery', category: 'Software Development Service' },
 
   // AR/VR Development Services (after Virtual Reality App Development)
   'metaverse-development-company': { title: 'Metaverse Development Company', category: 'AR/VR Development' },
@@ -124,10 +108,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'enterprise-ai-development' ||
     clean === 'ai-ml-development' ||
     clean === 'ai-and-ml-development' ||
-    clean === 'c-sharp-development' ||
-    clean === 'frontend-development' ||
-    clean === 'front-end-development' ||
-    clean === 'meteor-js-development' ||
     clean === 'typescript-development-services' ||
     clean === 'next-js-development' ||
     clean === 'react-js-development' ||
@@ -135,7 +115,6 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'css-web-development' ||
     clean === 'web-portal-development' ||
     clean === 'web3-development' ||
-    clean === 'progressive-web-app' ||
     clean === 'microsoft-dynamics-365-consulting' ||
     clean === 'kentico-development-services' ||
     clean === 'dotnetnuke-development' ||
@@ -144,20 +123,12 @@ export const isBackendServiceSlug = (slug) => {
     clean === 'bitcoin-wallet-development' ||
     clean === 'marketplace-app-development' ||
     clean === 'cryptocurrency-wallet-development' ||
-    clean === 'bullion-exchange-app-development' ||
     clean === 'digital-wayfinding-solutions' ||
     clean === 'ethereum-app-development' ||
     clean === 'offshore-software-development' ||
     clean === 'web-application-development' ||
     clean === 'product-engineering-services' ||
     clean === 'it-outsourcing' ||
-    clean === 'business-application-development' ||
-    clean === 'vb6-migration-services' ||
-    clean === 'enterprise-mobility-services' ||
-    clean === 'full-stack-development' ||
-    clean === 'financial-software-development' ||
-    clean === 'travel-software-development' ||
-    clean === 'software-product-discovery' ||
     clean === 'extended-reality-development' ||
     clean === 'extended-reality' ||
     clean === 'xr-development'

@@ -6,6 +6,7 @@ import ProcessWeFollow from '../common/ProcessWeFollow';
 import SuccessMatrix from '../common/SuccessMatrix';
 import TrustedBrandsGrid from '../common/TrustedBrandsGrid';
 import BrandLogoMarquee from '../common/BrandLogoMarquee';
+import ClutchTopRatedCompanyBanner from '../common/ClutchTopRatedCompanyBanner';
 import OurMobileAppExpertiseServices from './OurMobileAppExpertiseServices';
 import ProudAwardsBanner from './ProudAwardsBanner';
 import PremiumServicesGrid from '../common/PremiumServicesGrid';
@@ -25,6 +26,7 @@ import { AboutUsStats } from './AboutUsStats';
 import { TransformativeImpactSection } from './TransformativeImpactSection';
 import SectorsThrivingSection from './SectorsThrivingSection';
 import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
+import { Calendar, Sliders } from 'lucide-react';
 
 const BlockchainCuttingEdgeSection = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -524,6 +526,282 @@ export const BlockchainDevelopmentService = () => {
         </div>
       </section>
 
+      {/* =========================================================================
+          2. TRUSTED BRAND LOGOS STRIP (Full Width Infinite Auto-Scroll Marquee)
+          ========================================================================= */}
+      <BrandLogoMarquee />
+
+      {/* =========================================================================
+          3. HIRE COMPETENT BLOCKCHAIN DEVELOPERS (1:1 Exact Match with Sapphire)
+          ========================================================================= */}
+      <section className="py-16 md:py-20 bg-white border-b border-slate-100 font-sans">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-6 flex justify-center items-center">
+              <div className="relative w-full max-w-[540px]">
+                <img
+                  src="/images/blockchain_competent_developers.svg"
+                  alt="Hire Competent Blockchain Developers"
+                  className="w-full h-auto object-contain mx-auto drop-shadow-md"
+                />
+              </div>
+            </div>
+
+            <div className="lg:col-span-6 space-y-5 text-left">
+              <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[900] text-slate-900 tracking-tight leading-[1.15]">
+                Hire Competent Blockchain Developers
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+                Do you want to work with the top blockchain developer? Hire knowledgeable and competent Blockchain developers to create safe, scalable blockchain applications for your company. Our remote teams provide blockchain technology expertise. Hire experts right away!
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+
+
+      {/* =========================================================================
+          3B. OUR FLEXIBLE HIRING MODELS: FIND THE PERFECT FIT FOR YOUR PROJECT
+          ========================================================================= */}
+      <section className="py-16 md:py-24 bg-white text-slate-900 font-sans border-b border-slate-100">
+        <Container>
+          <div className="space-y-10 max-w-6xl mx-auto">
+            <div className="text-center space-y-3">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
+                Our Flexible Hiring Models: Find the Perfect Fit For Your Project
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 font-medium">
+                Hire Blockchain Developers from Firevy.Co Starts from,
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-4 items-stretch">
+              {[
+                {
+                  title: 'Monthly',
+                  subtitle: 'Starting From',
+                  price: '$ 2850.00/ Month',
+                  IconComp: Calendar,
+                  isFeatured: false,
+                  saveText: null,
+                  badgeText: null,
+                  features: [
+                    'checked-engagement Billing cycle : Monthly',
+                    'Project Trackers : Daily Reports, Basecamp, Jira, Redmine etc.',
+                    'checked-engagement 4 hours a day, 5 days a week',
+                    'checked-engagement Minimum: 2 months'
+                  ]
+                },
+                {
+                  title: 'Quarterly',
+                  subtitle: 'Starting From',
+                  price: '$ 7999.00/ Month',
+                  IconComp: Sliders,
+                  isFeatured: false,
+                  saveText: null,
+                  badgeText: null,
+                  features: [
+                    'checked-engagement Billing cycle : Monthly',
+                    'Project Trackers : Daily Reports, Basecamp, Jira, Redmine etc.',
+                    'checked-engagement 4 hours a day, 5 days a week',
+                    'checked-engagement Minimum: 2 months'
+                  ]
+                },
+                {
+                  title: 'Yearly',
+                  subtitle: 'Starting From',
+                  price: '$31000.0',
+                  IconComp: Calendar,
+                  isFeatured: true,
+                  saveText: 'Save Up TO 20%',
+                  badgeText: 'Best Deal',
+                  features: [
+                    'checked-engagement Billing cycle : Monthly',
+                    'Project Trackers : Daily Reports, Basecamp, Jira, Redmine etc.',
+                    'checked-engagement 4 hours a day, 5 days a week',
+                    'checked-engagement Minimum: 2 months'
+                  ]
+                }
+              ].map((card, idx) => {
+                const CardIcon = card.IconComp;
+                return (
+                  <div
+                    key={idx}
+                    className={`rounded-2xl p-8 flex flex-col justify-between transition-all relative ${card.isFeatured
+                        ? 'border-2 border-[#006095] bg-white shadow-xl scale-105 z-10'
+                        : 'border border-slate-200 bg-white shadow-xs hover:shadow-md'
+                      }`}
+                  >
+                    {card.isFeatured && (
+                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex items-center space-x-2">
+                        {card.saveText && (
+                          <span className="bg-white border border-[#006095] text-[#006095] text-[10px] font-bold px-3 py-1 rounded-full shadow-2xs">
+                            {card.saveText}
+                          </span>
+                        )}
+                        {card.badgeText && (
+                          <span className="bg-[#006095] text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-2xs">
+                            {card.badgeText}
+                          </span>
+                        )}
+                      </div>
+                    )}
+
+                    <div className="space-y-6 text-center">
+                      <div className="w-14 h-14 rounded-full bg-[#F0F7FC] text-[#006095] flex items-center justify-center mx-auto">
+                        <CardIcon className="w-7 h-7 stroke-[1.8]" />
+                      </div>
+
+                      <div>
+                        <h3 className="text-xl font-bold text-slate-900">{card.title}</h3>
+                        <p className="text-xs text-slate-600 mt-1">{card.subtitle}</p>
+                        <p className="text-2xl font-black text-[#006095] mt-2">{card.price}</p>
+                      </div>
+
+                      <div className="space-y-3 text-left pt-4 border-t border-slate-100">
+                        {card.features.map((feat, fIdx) => (
+                          <div key={fIdx} className="flex items-start space-x-2.5 text-xs text-slate-600">
+                            <span className="text-[#006095] font-bold shrink-0 mt-0.5">✓</span>
+                            <span>{feat}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="pt-8 space-y-3">
+                      <a
+                        href="#quote-form"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          document.getElementById('quote-form')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="block w-full bg-[#006095] hover:bg-[#0083B0] text-white font-bold py-3 rounded-lg text-sm text-center transition-all shadow-md cursor-pointer"
+                      >
+                        Hire Now
+                      </a>
+                      <div className="bg-[#F0F7FC] rounded-full py-1.5 px-4 text-center">
+                        <p className="text-[11px] font-semibold text-[#006095]">We sign NDA for all our projects.</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ============================================================
+          SECTION 3C: DEVELOPMENT PROFICIENCY TABLE
+          ============================================================ */}
+      <section className="py-16 md:py-24 bg-white text-slate-900 font-sans border-b border-slate-100">
+        <Container>
+          <div className="space-y-10 max-w-5xl mx-auto">
+            <div className="text-center space-y-3">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-[900] text-slate-900 tracking-tight leading-tight">
+                Hire Dedicated Developers To Empower Your Business with our Development Proficiency
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 font-medium">
+                Hire Blockchain Developer to meet your business perks by leveraging our technical elegance.
+              </p>
+            </div>
+
+            <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="bg-[#006095] text-white">
+                    <th className="py-4 px-6 font-bold text-sm bg-[#006095] text-white">Range of Developers</th>
+                    <th className="py-4 px-6 font-bold text-sm">Junior Developers</th>
+                    <th className="py-4 px-6 font-bold text-sm">Mid-Level Developers</th>
+                    <th className="py-4 px-6 font-bold text-sm">Senior Developers</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 text-xs sm:text-sm text-slate-700">
+                  <tr className="hover:bg-slate-50">
+                    <td className="py-4 px-6 font-bold text-white bg-[#006095]">Approx Cost</td>
+                    <td className="py-4 px-6 font-semibold">$17</td>
+                    <td className="py-4 px-6 font-semibold">$22</td>
+                    <td className="py-4 px-6 font-semibold">$29</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="py-4 px-6 font-bold text-white bg-[#006095]">Years of Experience</td>
+                    <td className="py-4 px-6">1-3 Years</td>
+                    <td className="py-4 px-6">3-5 Years</td>
+                    <td className="py-4 px-6">5+ Years</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="py-4 px-6 font-bold text-white bg-[#006095]">Project Manager</td>
+                    <td className="py-4 px-6">Yes</td>
+                    <td className="py-4 px-6">Yes</td>
+                    <td className="py-4 px-6">Yes</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="py-4 px-6 font-bold text-white bg-[#006095]">Time Zone Flexibility</td>
+                    <td className="py-4 px-6">Yes</td>
+                    <td className="py-4 px-6">Yes</td>
+                    <td className="py-4 px-6">Yes</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="py-4 px-6 font-bold text-white bg-[#006095]">Quality Guarantee</td>
+                    <td className="py-4 px-6">Yes</td>
+                    <td className="py-4 px-6">Yes</td>
+                    <td className="py-4 px-6">Yes</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="py-4 px-6 font-bold text-white bg-[#006095]">Working Hours</td>
+                    <td className="py-4 px-6">40 hours/ Week</td>
+                    <td className="py-4 px-6">40 hours/ Week</td>
+                    <td className="py-4 px-6">40 hours/ Week</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ============================================================
+          SECTION 3D: BRIEF ABOUT OUR TALENTED BLOCKCHAIN DEVELOPERS
+          ============================================================ */}
+      <section className="py-16 md:py-24 bg-white text-slate-900 font-sans border-b border-slate-100">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-6 space-y-6 text-left">
+              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-[900] text-slate-950 tracking-tight leading-[1.15]">
+                Brief About Our Talented Blockchain Developers
+              </h2>
+              <div className="space-y-4 text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+                <p>
+                  As a Blockchain Development Company in the USA, our blockchain engineers understand the basics of Blockchain, including- Distributed ledger technology shares, synchronize, and replicates digital data across several nodes. A developer should grasp DLT and how it's implemented in blockchain types.
+                </p>
+                <p>
+                  Smart Contracts enable anybody to trade property, shares, money, or anything of value smoothly and transparently without intermediaries. Solidity is used for Ethereum and Hyperledger smart contracts.Sharding improves database performance. A shard is a horizontal database portion maintained on an independent server to share the load.
+                </p>
+              </div>
+            </div>
+
+            <div className="lg:col-span-6 flex justify-center items-center">
+              <div className="relative w-full max-w-[560px]">
+                <img
+                  src="/images/blockchain_talented_developers.svg"
+                  alt="Brief About Our Talented Blockchain Developers"
+                  className="w-full h-auto object-contain mx-auto drop-shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ============================================================
+          SECTION 3E: CLUTCH TOP RATED BANNER
+          ============================================================ */}
+      <ClutchTopRatedCompanyBanner title="Proud To Have Picked These Up Along The Way" />
+
+      {/* ============================================================
+          SECTION 3F: WHAT EXACTLY ARE BLOCKCHAIN DEVELOPERS?
+          ============================================================ */}
       {/* SECTION 4: Get 100% Customizable Blockchain Development Services By Experts */}
       <section className="py-14 sm:py-20 bg-white text-left font-sans">
         <Container className="max-w-7xl">
