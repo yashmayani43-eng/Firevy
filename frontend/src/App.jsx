@@ -101,6 +101,7 @@ const EnterpriseAiDevelopmentService = lazy(() => import('./components/services/
 const CsrWebDevelopmentService = lazy(() => import('./components/services/CsrWebDevelopmentService').then(m => ({ default: m.CsrWebDevelopmentService })));
 const CssWebDevelopmentService = lazy(() => import('./components/services/CssWebDevelopmentService').then(m => ({ default: m.CssWebDevelopmentService })));
 const WebPortalDevelopmentService = lazy(() => import('./components/services/WebPortalDevelopmentService').then(m => ({ default: m.WebPortalDevelopmentService })));
+const WebDevelopmentService = lazy(() => import('./components/services/WebDevelopmentService').then(m => ({ default: m.WebDevelopmentService })));
 
 // Public Layout Wrapper Component
 const PublicLayoutWrapper = () => (
@@ -355,6 +356,10 @@ export function App() {
                 <Route path="/custom-mobile-app-development" element={<ServiceDetails />} />
                 <Route path="/services/mobile-app-development" element={<ServiceDetails />} />
                 <Route path="/mobile-app-development" element={<ServiceDetails />} />
+                <Route path="/services/custom-software-development" element={<ServiceDetails />} />
+                <Route path="/custom-software-development" element={<ServiceDetails />} />
+                <Route path="/services/custom-software-development-services" element={<ServiceDetails />} />
+                <Route path="/custom-software-development-services" element={<ServiceDetails />} />
 
                 {/* Back End Development Services - Coming Soon */}
                 <Route path="/services/symfony-development" element={<ServiceDetails />} />
@@ -429,6 +434,8 @@ export function App() {
                 <Route path="/css-web-development" element={<CssWebDevelopmentService />} />
                 <Route path="/services/web-portal-development" element={<WebPortalDevelopmentService />} />
                 <Route path="/web-portal-development" element={<WebPortalDevelopmentService />} />
+                <Route path="/services/web-development" element={<WebDevelopmentService />} />
+                <Route path="/web-development" element={<WebDevelopmentService />} />
                 <Route path="/services/ai-in-payments-industry" element={<ServiceDetails />} />
                 <Route path="/ai-in-payments-industry" element={<ServiceDetails />} />
                 <Route path="/services/ai-ml-development" element={<ServiceDetails />} />
