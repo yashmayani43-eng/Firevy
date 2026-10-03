@@ -512,7 +512,7 @@ export const CompanySubDetails = () => {
   }
 
   // If this is the "About Firevy.Co" / "about-firevy" page, render the exact Sapphire About Layout
-  if (pageKey === 'about-firevy') {
+  if (pageKey === 'about-firevy' || pageKey === 'about' || pageKey === 'about-us' || pageKey === 'ceo-message') {
     const content = dynamicSection?.content || {};
 
     // 1. About Company (Overview & Building)
@@ -4803,8 +4803,8 @@ export const CompanySubDetails = () => {
                           window.scrollTo({ top: 600, behavior: 'smooth' });
                         }}
                         className={`w-9 h-9 rounded-[6px] text-[14px] font-[700] transition-colors ${blogPage === pageNum
-                            ? 'bg-[#0099CC] text-white'
-                            : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                          ? 'bg-[#0099CC] text-white'
+                          : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                           }`}
                       >
                         {pageNum}

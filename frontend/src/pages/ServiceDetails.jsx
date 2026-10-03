@@ -323,6 +323,47 @@ export const ServiceDetails = () => {
     return <BlockchainDevelopmentService />;
   }
 
+  const isDotnetnukeDev = currentSlug.includes('dotnetnuke') ||
+    normalizedSlug.includes('dotnetnuke') ||
+    currentSlug.includes('dnn-development') ||
+    normalizedSlug.includes('dnn-development');
+
+  if (isDotnetnukeDev) {
+    return <DotnetnukeDevelopmentService />;
+  }
+
+  const isPowerBiDev = currentSlug.includes('power-bi') ||
+    normalizedSlug.includes('power-bi') ||
+    currentSlug.includes('powerbi') ||
+    normalizedSlug.includes('powerbi');
+
+  if (isPowerBiDev) {
+    return <PowerBiConsultingService />;
+  }
+
+  const isWindows11Dev = currentSlug.includes('windows-11') ||
+    normalizedSlug.includes('windows-11') ||
+    currentSlug.includes('windows11') ||
+    normalizedSlug.includes('windows11') ||
+    currentSlug.includes('windows 11') ||
+    normalizedSlug.includes('windows 11');
+
+  if (isWindows11Dev) {
+    return <Windows11AppDevelopmentService />;
+  }
+
+  const isWindowsAppDev = (currentSlug.includes('windows-app') ||
+    normalizedSlug.includes('windows-app') ||
+    currentSlug.includes('windows_app') ||
+    normalizedSlug.includes('windows_app') ||
+    currentSlug.includes('windows app') ||
+    normalizedSlug.includes('windows app') ||
+    currentSlug.includes('windows')) && !isWindows11Dev;
+
+  if (isWindowsAppDev) {
+    return <WindowsAppDevelopmentService />;
+  }
+
   const isDotNetDev = currentSlug === 'net' ||
     currentSlug === 'services/net' ||
     currentSlug === 'dot-net-development' ||

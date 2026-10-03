@@ -131,8 +131,8 @@ export function App() {
               <Route element={<PublicLayoutWrapper />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/company/about" element={<About />} />
-                <Route path="/company/about-firevy" element={<About />} />
+                <Route path="/company/about" element={<CompanySubDetails />} />
+                <Route path="/company/about-firevy" element={<CompanySubDetails />} />
                 <Route path="/company/our-team" element={<CompanySubDetails />} />
                 <Route path="/our-team" element={<CompanySubDetails />} />
                 <Route path="/company/events-activities" element={<CompanySubDetails />} />
@@ -239,8 +239,12 @@ export function App() {
                 <Route path="/web3-development-company" element={<Web3DevelopmentService />} />
                 <Route path="/services/progressive-web-app" element={<PwaDevelopmentService />} />
                 <Route path="/services/pwa-development" element={<PwaDevelopmentService />} />
+                <Route path="/services/progressive-web-app-development" element={<PwaDevelopmentService />} />
+                <Route path="/services/progressive-web-app-development-services" element={<PwaDevelopmentService />} />
                 <Route path="/progressive-web-app" element={<PwaDevelopmentService />} />
                 <Route path="/pwa-development" element={<PwaDevelopmentService />} />
+                <Route path="/progressive-web-app-development" element={<PwaDevelopmentService />} />
+                <Route path="/progressive-web-app-development-services" element={<PwaDevelopmentService />} />
                 <Route path="/services/blockchain" element={<BlockchainDevelopmentService />} />
                 <Route path="/services/blockchain-development" element={<BlockchainDevelopmentService />} />
                 <Route path="/services/blockchain-development-services" element={<BlockchainDevelopmentService />} />
@@ -1054,13 +1058,39 @@ export function App() {
                 <Route path="/services/kentico-development-services" element={<ServiceDetails />} />
                 <Route path="/kentico-development-services" element={<ServiceDetails />} />
                 <Route path="/services/dotnetnuke-development" element={<ServiceDetails />} />
+                <Route path="/services/dotnetnuke_development" element={<ServiceDetails />} />
+                <Route path="/services/dotnetnuke%20development" element={<ServiceDetails />} />
+                <Route path="/services/dotnetnuke-development-services" element={<ServiceDetails />} />
+                <Route path="/services/dotnetnuke-development-company" element={<ServiceDetails />} />
                 <Route path="/dotnetnuke-development" element={<ServiceDetails />} />
+                <Route path="/dotnetnuke_development" element={<ServiceDetails />} />
+                <Route path="/dotnetnuke-development-services" element={<ServiceDetails />} />
+                <Route path="/dotnetnuke-development-company" element={<ServiceDetails />} />
                 <Route path="/services/power-bi-consulting" element={<ServiceDetails />} />
+                <Route path="/services/power-bi-consulting-services" element={<ServiceDetails />} />
+                <Route path="/services/power_bi_consulting" element={<ServiceDetails />} />
+                <Route path="/services/powerbi-consulting" element={<ServiceDetails />} />
                 <Route path="/power-bi-consulting" element={<ServiceDetails />} />
+                <Route path="/power-bi-consulting-services" element={<ServiceDetails />} />
+                <Route path="/power_bi_consulting" element={<ServiceDetails />} />
+                <Route path="/powerbi-consulting" element={<ServiceDetails />} />
                 <Route path="/services/windows-11-app-development" element={<ServiceDetails />} />
+                <Route path="/services/windows_11_app_development" element={<ServiceDetails />} />
+                <Route path="/services/windows%2011%20app%20development" element={<ServiceDetails />} />
+                <Route path="/services/windows 11 app development" element={<ServiceDetails />} />
+                <Route path="/services/windows-11-app-development-services" element={<ServiceDetails />} />
                 <Route path="/windows-11-app-development" element={<ServiceDetails />} />
+                <Route path="/windows_11_app_development" element={<ServiceDetails />} />
+                <Route path="/windows%2011%20app%20development" element={<ServiceDetails />} />
+                <Route path="/windows 11 app development" element={<ServiceDetails />} />
                 <Route path="/services/windows-app-development" element={<ServiceDetails />} />
+                <Route path="/services/windows_app_development" element={<ServiceDetails />} />
+                <Route path="/services/windows%20app%20development" element={<ServiceDetails />} />
+                <Route path="/services/windows app development" element={<ServiceDetails />} />
                 <Route path="/windows-app-development" element={<ServiceDetails />} />
+                <Route path="/windows_app_development" element={<ServiceDetails />} />
+                <Route path="/windows%20app%20development" element={<ServiceDetails />} />
+                <Route path="/windows app development" element={<ServiceDetails />} />
                 <Route path="/services/asp-net-app-development-services" element={<ServiceDetails />} />
                 <Route path="/asp-net-app-development-services" element={<ServiceDetails />} />
                 <Route path="/services/asp-net-app-development" element={<ServiceDetails />} />
