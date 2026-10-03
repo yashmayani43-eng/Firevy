@@ -11,16 +11,12 @@ import WorkTogetherNewsletterSection from '../home/WorkTogetherNewsletterSection
 import { getMediaUrl } from '../../utils/mediaUrl';
 
 export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
-  // 1. Hero Content
-  const heroHeading = dynamicSection?.content?.heroHeading || dynamicSection?.hero?.title || dynamicSection?.title || 'Our Team';
-  const heroSubtitle =
-    dynamicSection?.content?.heroSubtitle ||
-    dynamicSection?.hero?.subtitle ||
-    dynamicSection?.subtitle ||
-    'Behind every success of Firevy is our team of 100+ passionate engineers, designers, and innovators building future-ready enterprise solutions across the globe.';
-  const heroButtonText = dynamicSection?.content?.heroButtonText || dynamicSection?.hero?.ctaText || dynamicSection?.ctaText || 'Connect Now';
-  const heroButtonLink = dynamicSection?.content?.heroButtonLink || dynamicSection?.hero?.ctaLink || dynamicSection?.ctaLink || '/contact';
-  const heroImage = dynamicSection?.hero?.image || dynamicSection?.content?.heroImage || '/images/our-team-hero.svg';
+  // 1. Hero Content (Copy to Copy Reference Image Match)
+  const heroHeading = 'Our Team';
+  const heroSubtitle = 'Meet the team of innovative, driven and passionate individuals. We cultivate the diverse talents of our team and leverage their extraordinary perspectives and innovative ideas to make Sapphire the industry leader.';
+  const heroButtonText = 'Connect Now';
+  const heroButtonLink = '/contact';
+  const heroImage = '/images/our_team_brainstorming.png';
 
   // 2. Management Team
   const managementHeading = dynamicSection?.content?.managementHeading || 'Management Team';
@@ -107,10 +103,10 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
   const teamworkButtonLink = dynamicSection?.content?.teamworkButtonLink || '/careers';
 
   // 5. What Our Firevian Says (Testimonial)
+  const rawSayAvatar = dynamicSection?.content?.firevianSay?.avatar || dynamicSection?.content?.firevianSay?.image;
+  const isUnsplashSay = rawSayAvatar?.includes('unsplash');
   const firevianSay = {
-    avatar:
-      dynamicSection?.content?.firevianSay?.avatar ||
-      '/images/Sahaj_Maniya.JPG',
+    avatar: (!isUnsplashSay && rawSayAvatar) ? rawSayAvatar : '/images/Sahaj_Maniya.JPG',
     name: dynamicSection?.content?.firevianSay?.name || 'Sahaj Maniya',
     role: dynamicSection?.content?.firevianSay?.role || 'Project Manager',
     objectPosition: '50% 85%',
@@ -198,22 +194,22 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
         canonical={`/company/${pageKey}`}
       />
 
-      {/* 1. HERO SECTION: "Our Team" (Exact Reference Match) */}
-      <section className="pt-32 pb-16 bg-white relative overflow-hidden text-left font-sans">
+      {/* 1. HERO SECTION: "Our Team" (Copy-to-Copy Image 1 Match) */}
+      <section className="pt-28 pb-16 lg:pt-32 lg:pb-20 bg-[#F1F6FB] relative overflow-hidden text-left font-sans">
         <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Left Text */}
             <div className="lg:col-span-6 space-y-6">
-              <h1 className="text-[34px] font-[800] text-slate-900 tracking-tight leading-tight font-sans page-hero-title">
+              <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-[800] text-[#061C2D] tracking-tight leading-tight font-sans page-hero-title">
                 {heroHeading}
               </h1>
-              <p className="text-[15px] text-slate-600 leading-relaxed font-[400] font-sans max-w-lg page-hero-desc">
+              <p className="text-[15px] sm:text-[15.5px] text-slate-600 leading-relaxed font-[400] font-sans max-w-lg page-hero-desc">
                 {heroSubtitle}
               </p>
               <div className="pt-2">
                 <Link
                   to={heroButtonLink}
-                  className="inline-flex items-center justify-center space-x-2 px-8 py-3.5 rounded-[6px] bg-[#006B8F] hover:bg-[#005478] text-white font-[700] text-[15px] transition-all shadow-md group font-sans"
+                  className="inline-flex items-center justify-center space-x-2 px-6 sm:px-7 py-3 rounded-[6px] bg-[#005F96] hover:bg-[#004B77] text-white font-[700] text-[15px] transition-all shadow-sm group font-sans cursor-pointer"
                 >
                   <span>{heroButtonText}</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -221,48 +217,18 @@ export const OurTeamPage = ({ dynamicSection, pageKey = 'our-team' }) => {
               </div>
             </div>
 
-            {/* Right 3D Isometric Team Illustration */}
+            {/* Right Team Brainstorming Vector Illustration */}
             <div className="lg:col-span-6 flex justify-center relative">
-              <div className="relative w-full max-w-[500px] h-[340px] flex items-center justify-center">
-                {heroImage ? (
-                  <img
-                    src={getMediaUrl(heroImage)}
-                    alt={heroHeading}
-                    className="w-full h-full object-contain drop-shadow-xl"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = '/images/our-team-hero.svg';
-                    }}
-                  />
-                ) : (
-                  <svg viewBox="0 0 500 360" className="w-full h-full drop-shadow-xl" fill="none">
-                    <polygon points="250,90 440,190 250,290 60,190" fill="#E0F2FE" />
-                    <polygon points="250,290 440,190 440,205 250,305 60,205 60,190" fill="#BAE6FD" />
-                    <rect x="220" y="150" width="60" height="35" rx="3" fill="#0284C7" transform="rotate(-15 250 167)" />
-                    <rect x="225" y="155" width="50" height="25" rx="2" fill="#FFFFFF" transform="rotate(-15 250 167)" />
-                    <rect x="340" y="50" width="90" height="65" rx="4" fill="#FFFFFF" stroke="#006B8F" strokeWidth="3" />
-                    <line x1="355" y1="70" x2="415" y2="70" stroke="#38BDF8" strokeWidth="3" strokeLinecap="round" />
-                    <line x1="355" y1="85" x2="395" y2="85" stroke="#F59E0B" strokeWidth="3" strokeLinecap="round" />
-                    <line x1="355" y1="100" x2="405" y2="100" stroke="#10B981" strokeWidth="3" strokeLinecap="round" />
-
-                    {/* Team Characters */}
-                    <circle cx="150" cy="110" r="14" fill="#FED7AA" />
-                    <path d="M135 125 C135 120 165 120 165 125 L168 155 L132 155 Z" fill="#0284C7" />
-                    <polygon points="125,145 175,145 165,185 135,185" fill="#3B82F6" opacity="0.4" />
-
-                    <circle cx="360" cy="110" r="14" fill="#FED7AA" />
-                    <path d="M345 125 C345 120 375 120 375 125 L378 155 L342 155 Z" fill="#10B981" />
-
-                    <circle cx="130" cy="230" r="14" fill="#FED7AA" />
-                    <path d="M115 245 C115 240 145 240 145 245 L148 285 L112 285 Z" fill="#F59E0B" />
-
-                    <circle cx="370" cy="230" r="14" fill="#FED7AA" />
-                    <path d="M355 245 C355 240 385 240 385 245 L388 285 L352 285 Z" fill="#EC4899" />
-
-                    <circle cx="250" cy="260" r="15" fill="#FED7AA" />
-                    <path d="M232 277 C232 272 268 272 268 277 L272 320 L228 320 Z" fill="#006B8F" />
-                  </svg>
-                )}
+              <div className="relative w-full max-w-[540px] h-[340px] sm:h-[380px] flex items-center justify-center">
+                <img
+                  src="/images/our_team_brainstorming.png"
+                  alt={heroHeading}
+                  className="w-full h-full object-contain filter drop-shadow-md select-none"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/our_team_brainstorming.png';
+                  }}
+                />
               </div>
             </div>
           </div>

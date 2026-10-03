@@ -67,6 +67,7 @@ import EnterpriseAiDevelopmentService from '../components/services/EnterpriseAiD
 import CsrWebDevelopmentService from '../components/services/CsrWebDevelopmentService';
 import CssWebDevelopmentService from '../components/services/CssWebDevelopmentService';
 import WebPortalDevelopmentService from '../components/services/WebPortalDevelopmentService';
+import WebDevelopmentService from '../components/services/WebDevelopmentService';
 import BlockchainDevelopmentService from '../components/services/BlockchainDevelopmentService';
 import FullStackDevelopmentService from '../components/services/FullStackDevelopmentService';
 import VirtualRealityDevelopmentService from '../components/services/VirtualRealityDevelopmentService';
@@ -767,6 +768,11 @@ export const ServiceDetails = () => {
     currentSlug.includes('web-portal') ||
     currentSlug === 'services/web-portal-development';
 
+  const isWebDev = currentSlug === 'web-development' ||
+    currentSlug === 'web-development-services' ||
+    currentSlug === 'web-development-service' ||
+    currentSlug === 'services/web-development';
+
   const isDataMigration = currentSlug === 'data-migration-services' ||
     currentSlug === 'data-migration-service' ||
     currentSlug === 'data-migration' ||
@@ -836,7 +842,12 @@ export const ServiceDetails = () => {
   const isSoftwareDevelopment = currentSlug === 'software-development-service' ||
     currentSlug === 'software-development-services' ||
     currentSlug === 'software-development' ||
-    currentSlug === 'services/software-development-service';
+    currentSlug === 'services/software-development-service' ||
+    currentSlug === 'custom-software-development' ||
+    currentSlug === 'custom-software-development-service' ||
+    currentSlug === 'custom-software-development-services' ||
+    currentSlug === 'services/custom-software-development' ||
+    currentSlug.includes('custom-software-development');
 
   const isMobileAppPorting = currentSlug === 'mobile-app-porting' ||
     currentSlug === 'mobile-app-porting-services' ||
@@ -2065,6 +2076,10 @@ export const ServiceDetails = () => {
 
   if (isWebPortal) {
     return <WebPortalDevelopmentService />;
+  }
+
+  if (isWebDev) {
+    return <WebDevelopmentService />;
   }
 
   if (isDataMigration) {

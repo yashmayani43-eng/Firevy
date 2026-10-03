@@ -376,7 +376,9 @@ export const CompanySubDetails = () => {
   const params = useParams();
   const location = useLocation();
   const isPreview = new URLSearchParams(location.search).get('preview') === 'true';
-  const pageKey = params.slug || params.subpage || 'about-firevy';
+  const pathParts = location.pathname.split('/').filter(Boolean);
+  const pathKey = pathParts[pathParts.length - 1];
+  const pageKey = params.slug || params.subpage || (pathKey && pathKey !== 'company' ? pathKey : 'about-firevy');
   const pageData = companyPagesData[pageKey] || companyPagesData['about-firevy'];
   const [activeReviewIdx, setActiveReviewIdx] = useState(0);
   const [selectedYear, setSelectedYear] = useState('2026');
@@ -1303,7 +1305,16 @@ export const CompanySubDetails = () => {
       objectPosition: '50% 85%',
       quote: "I am proud to be working for a company like Firevy.Co that values honesty and a fair attitude to all which has also contributed to a very valuable and delightful experience. The work culture and the integrity of the company's management are remarkable. In Firevy.Co, we get all the freedom to think out-of-the-box and take complete ownership of the work we do. Being a client-focused company, Firevy.Co makes us understand the clients' requirements easily so that the work can be coordinated effectively. There are always opportunities to learn and no limitations to scale new heights in this organization."
     };
-    const firevianSay = dynamicSection?.content?.firevianSay || defaultFirevianSay;
+    const rawSay = dynamicSection?.content?.firevianSay;
+    const isUnsplashSay = rawSay?.image?.includes('unsplash') || rawSay?.avatar?.includes('unsplash');
+    const firevianSay = {
+      heading: rawSay?.heading || defaultFirevianSay.heading,
+      name: rawSay?.name || defaultFirevianSay.name,
+      role: rawSay?.role || defaultFirevianSay.role,
+      image: (!isUnsplashSay && (rawSay?.image || rawSay?.avatar)) ? (rawSay.image || rawSay.avatar) : '/images/Sahaj_Maniya.JPG',
+      objectPosition: '50% 85%',
+      quote: rawSay?.quote || defaultFirevianSay.quote
+    };
 
     // 6. Learning & Growth
     const defaultLearningGrowth = {
@@ -1351,8 +1362,8 @@ export const CompanySubDetails = () => {
           canonical={`/company/${pageKey}`}
         />
 
-        {/* 1. HERO SECTION: "Our Team" (Exact Reference Screenshot 1 Match) */}
-        <section className="pt-32 pb-16 bg-white relative overflow-hidden text-left font-sans">
+        {/* 1. HERO SECTION: "Our Team" (Exact Reference Light Blue Background) */}
+        <section className="pt-28 pb-16 lg:pt-32 lg:pb-20 bg-[#F1F6FB] relative overflow-hidden text-left font-sans">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
               {/* Left Text */}
@@ -1374,58 +1385,18 @@ export const CompanySubDetails = () => {
                 </div>
               </div>
 
-              {/* Right 3D Isometric Team Illustration */}
+              {/* Right Team Brainstorming Vector Illustration */}
               <div className="lg:col-span-6 flex justify-center relative">
-                <div className="relative w-full max-w-[500px] h-[340px] flex items-center justify-center">
-                  {heroImage ? (
-                    <img
-                      src={getMediaUrl(heroImage)}
-                      alt={heroTitle}
-                      className="w-full h-full object-contain drop-shadow-xl"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = '/images/our-team-hero.svg';
-                      }}
-                    />
-                  ) : (
-                    <svg viewBox="0 0 500 360" className="w-full h-full drop-shadow-xl" fill="none">
-                      {/* Isometric Meeting Table */}
-                      <polygon points="250,90 440,190 250,290 60,190" fill="#E0F2FE" />
-                      <polygon points="250,290 440,190 440,205 250,305 60,205 60,190" fill="#BAE6FD" />
-
-                      {/* Laptop Screen & Charts */}
-                      <rect x="220" y="150" width="60" height="35" rx="3" fill="#0284C7" transform="rotate(-15 250 167)" />
-                      <rect x="225" y="155" width="50" height="25" rx="2" fill="#FFFFFF" transform="rotate(-15 250 167)" />
-
-                      {/* Whiteboard in backdrop */}
-                      <rect x="340" y="50" width="90" height="65" rx="4" fill="#FFFFFF" stroke="#006B8F" strokeWidth="3" />
-                      <line x1="355" y1="70" x2="415" y2="70" stroke="#38BDF8" strokeWidth="3" strokeLinecap="round" />
-                      <line x1="355" y1="85" x2="395" y2="85" stroke="#F59E0B" strokeWidth="3" strokeLinecap="round" />
-                      <line x1="355" y1="100" x2="405" y2="100" stroke="#10B981" strokeWidth="3" strokeLinecap="round" />
-
-                      {/* Team Characters */}
-                      {/* Person 1 (Top Left) */}
-                      <circle cx="150" cy="110" r="14" fill="#FED7AA" />
-                      <path d="M135 125 C135 120 165 120 165 125 L168 155 L132 155 Z" fill="#0284C7" />
-                      <polygon points="125,145 175,145 165,185 135,185" fill="#3B82F6" opacity="0.4" />
-
-                      {/* Person 2 (Top Right) */}
-                      <circle cx="360" cy="110" r="14" fill="#FED7AA" />
-                      <path d="M345 125 C345 120 375 120 375 125 L378 155 L342 155 Z" fill="#10B981" />
-
-                      {/* Person 3 (Bottom Left) */}
-                      <circle cx="130" cy="230" r="14" fill="#FED7AA" />
-                      <path d="M115 245 C115 240 145 240 145 245 L148 285 L112 285 Z" fill="#F59E0B" />
-
-                      {/* Person 4 (Bottom Right) */}
-                      <circle cx="370" cy="230" r="14" fill="#FED7AA" />
-                      <path d="M355 245 C355 240 385 240 385 245 L388 285 L352 285 Z" fill="#EC4899" />
-
-                      {/* Person 5 (Bottom Center) */}
-                      <circle cx="250" cy="260" r="15" fill="#FED7AA" />
-                      <path d="M232 277 C232 272 268 272 268 277 L272 320 L228 320 Z" fill="#006B8F" />
-                    </svg>
-                  )}
+                <div className="relative w-full max-w-[540px] h-[340px] sm:h-[380px] flex items-center justify-center">
+                  <img
+                    src="/images/our_team_brainstorming.png"
+                    alt={heroTitle}
+                    className="w-full h-full object-contain filter drop-shadow-md select-none"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = '/images/our_team_brainstorming.png';
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -1794,7 +1765,7 @@ export const CompanySubDetails = () => {
     const heroSubtitle = dynamicSection?.content?.heroSubtitle || dynamicSection?.hero?.subtitle || dynamicSection?.subtitle || "At Firevy.Co, we believe that celebrating success is just as important as achieving it. From casual dress-down days and monthly celebrations enjoy the celebration.";
     const heroButtonText = dynamicSection?.content?.heroButtonText || dynamicSection?.hero?.ctaText || dynamicSection?.ctaText || "Let's Talk";
     const heroButtonLink = dynamicSection?.content?.heroButtonLink || dynamicSection?.hero?.ctaLink || dynamicSection?.ctaLink || "/contact";
-    const heroImage = dynamicSection?.hero?.image || dynamicSection?.content?.heroImage || '/images/events-hero.svg';
+    const heroImage = dynamicSection?.hero?.image || dynamicSection?.content?.heroImage || '/images/events_celebration_hero.png';
 
     const lifeHeading = dynamicSection?.content?.lifeHeading || "Life @Firevy.Co";
     const lifeDescription = dynamicSection?.content?.lifeDescription || "At Firevy.Co, we constantly try new ways to make our work environment, enjoyable and inspiring. From company outings to birthdays, we just need a reason to celebrate. Have a glimpse at life and culture @Firevy.Co!";
@@ -1942,73 +1913,18 @@ export const CompanySubDetails = () => {
                 </div>
               </div>
 
-              {/* Right Isometric Graphic Vector Illustration (Exact Reference Screenshot Match) */}
+              {/* Right Events & Celebrations Vector Illustration */}
               <div className="lg:col-span-6 flex justify-center relative select-none">
-                <div className="relative w-full max-w-[540px] h-[360px] flex items-center justify-center">
-                  {heroImage ? (
-                    <img
-                      src={getMediaUrl(heroImage)}
-                      alt={heroTitle}
-                      className="w-full h-full object-contain drop-shadow-xl"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = '/images/events-hero.svg';
-                      }}
-                    />
-                  ) : (
-                    <svg viewBox="0 0 540 360" className="w-full h-full drop-shadow-xl" fill="none">
-                      {/* Isometric Base Platform (Light Blue Cyan) */}
-                      <polygon points="270,70 510,190 270,310 30,190" fill="#E6F2FC" opacity="0.9" />
-                      <polygon points="270,310 510,190 510,205 270,325 30,205 30,190" fill="#BAE1F9" />
-
-                      {/* Isometric Laptop Base & Screen */}
-                      <polygon points="230,120 410,120 370,240 190,240" fill="#2B80C5" />
-                      <polygon points="238,128 402,128 365,232 201,232" fill="#FFFFFF" />
-
-                      {/* Laptop Screen Content / Charts & Lines */}
-                      <rect x="230" y="142" width="120" height="8" rx="2" fill="#38BDF8" />
-                      <path d="M220 200 Q250 160 280 180 T340 150" stroke="#0284C7" strokeWidth="4" fill="none" strokeLinecap="round" />
-                      <path d="M220 215 Q260 185 300 205 T350 175" stroke="#38BDF8" strokeWidth="3" fill="none" strokeLinecap="round" />
-
-                      {/* Isometric Keyboard Stand */}
-                      <polygon points="190,240 370,240 430,290 250,290" fill="#1E5C91" />
-                      <polygon points="200,245 360,245 415,285 255,285" fill="#0F385C" />
-
-                      {/* Isometric Floating Bar Chart Pillars (Cyan, Yellow, Purple) */}
-                      <polygon points="90,190 120,175 150,190 120,205" fill="#FBBF24" />
-                      <polygon points="90,190 120,205 120,245 90,230" fill="#D97706" />
-                      <polygon points="120,205 150,190 150,230 120,245" fill="#F59E0B" />
-
-                      <polygon points="125,160 155,145 185,160 155,175" fill="#38BDF8" />
-                      <polygon points="125,160 155,175 155,225 125,210" fill="#0284C7" />
-                      <polygon points="155,175 185,160 185,210 155,225" fill="#0369A1" />
-
-                      <polygon points="160,185 190,170 220,185 190,200" fill="#C084FC" />
-                      <polygon points="160,185 190,200 190,245 160,230" fill="#9333EA" />
-                      <polygon points="190,200 220,185 220,230 190,245" fill="#A855F7" />
-
-                      {/* Server Tower Unit in Front Right */}
-                      <polygon points="380,260 410,245 440,260 410,275" fill="#38BDF8" />
-                      <polygon points="380,260 410,275 410,315 380,300" fill="#0284C7" />
-                      <polygon points="410,275 440,260 440,300 410,315" fill="#0369A1" />
-                      <line x1="390" y1="275" x2="400" y2="280" stroke="#E0F2FE" strokeWidth="2" strokeLinecap="round" />
-                      <line x1="390" y1="285" x2="400" y2="290" stroke="#E0F2FE" strokeWidth="2" strokeLinecap="round" />
-
-                      {/* Characters */}
-                      <circle cx="95" cy="140" r="10" fill="#FED7AA" />
-                      <path d="M85 152 C85 148 105 148 105 152 L107 180 L83 180 Z" fill="#3B82F6" />
-
-                      <circle cx="308" cy="195" r="10" fill="#FED7AA" />
-                      <path d="M298 207 C298 203 318 203 318 207 L320 230 L296 230 Z" fill="#EF4444" />
-
-                      <circle cx="410" cy="180" r="10" fill="#FED7AA" />
-                      <path d="M400 192 C400 188 420 188 420 192 L422 220 L398 220 Z" fill="#10B981" />
-
-                      {/* Floating Tech Widgets */}
-                      <rect x="420" y="200" width="40" height="60" rx="6" fill="#60A5FA" stroke="#FFFFFF" strokeWidth="2" />
-                      <rect x="426" y="210" width="28" height="40" rx="3" fill="#FFFFFF" />
-                    </svg>
-                  )}
+                <div className="relative w-full max-w-[540px] h-[340px] sm:h-[380px] flex items-center justify-center">
+                  <img
+                    src="/images/events_celebration_hero.png"
+                    alt={heroTitle}
+                    className="w-full h-full object-contain filter drop-shadow-md select-none"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = '/images/events_celebration_hero.png';
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -4803,8 +4719,8 @@ export const CompanySubDetails = () => {
                           window.scrollTo({ top: 600, behavior: 'smooth' });
                         }}
                         className={`w-9 h-9 rounded-[6px] text-[14px] font-[700] transition-colors ${blogPage === pageNum
-                            ? 'bg-[#0099CC] text-white'
-                            : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                          ? 'bg-[#0099CC] text-white'
+                          : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                           }`}
                       >
                         {pageNum}

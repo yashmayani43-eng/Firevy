@@ -32,6 +32,14 @@ export const BestMobileAppCompanyShowcase = ({ title = "Best Mobile App Developm
 
         {/* Featured Showcase Card with Thick White Border */}
         <div className="max-w-[1040px] mx-auto rounded-[24px] sm:rounded-[30px] border-[6px] sm:border-[8px] border-white shadow-2xl overflow-hidden relative bg-[#FCE1CF] text-slate-900 select-none">
+          {/* Top Right Corner Firevy.Co Logo */}
+          <div className="absolute top-4 right-5 sm:top-6 sm:right-8 z-30">
+            <img
+              src="/firevy_logo_dark.png"
+              alt="Firevy.Co Logo"
+              className="h-8 sm:h-10 md:h-12 w-auto object-contain drop-shadow-sm"
+            />
+          </div>
           {/* Subtle Decorative Gift Watermark Patterns */}
           <div className="absolute inset-0 opacity-15 pointer-events-none overflow-hidden">
             {/* Top Right Gift Icon */}
@@ -76,11 +84,16 @@ export const BestMobileAppCompanyShowcase = ({ title = "Best Mobile App Developm
                     </div>
                   </div>
 
-                  {/* Settings Header Title */}
-                  <div className="mb-2.5 px-0.5">
+                  {/* Settings Header Title with Firevy Logo */}
+                  <div className="mb-2.5 px-0.5 flex items-center justify-between">
                     <h4 className="font-[800] text-[16px] sm:text-[17px] text-[#0B0F19] leading-none">
                       Settings
                     </h4>
+                    <img
+                      src="/firevy_logo_dark.png"
+                      alt="Firevy.Co"
+                      className="h-4 sm:h-5 w-auto object-contain opacity-90"
+                    />
                   </div>
 
                   {/* Profile Card */}
