@@ -343,6 +343,7 @@ export const IPadAppDevelopmentService = () => {
         subtitle="Our Top-rated iPad app development agency is well-known for its ability to build and design individualized iPad applications while adhering to the standards set by the Apple App Store."
         ctaText="Discuss Your Project"
         ctaLink="#quote-form"
+        heroImage="/images/ipad_hero_illustration.svg"
         serviceCategory="ipad"
       />
 

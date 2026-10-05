@@ -170,70 +170,110 @@ export const PwaDevelopmentService = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="w-full max-w-[520px] relative"
+                className="w-full max-w-[540px] relative"
               >
                 <div className="relative w-full aspect-[4/3] flex items-center justify-center">
-                  <svg viewBox="0 0 520 360" className="w-full h-full drop-shadow-md">
+                  <svg viewBox="0 0 540 380" className="w-full h-full drop-shadow-lg">
                     <defs>
-                      <linearGradient id="pwaHeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#EBF5FF" />
-                        <stop offset="100%" stopColor="#E0F2FE" />
-                      </linearGradient>
-                      <filter id="pwaHeroShadow" x="-10%" y="-10%" width="120%" height="120%">
-                        <feDropShadow dx="0" dy="4" stdDeviation="4" floodColor="#005F96" floodOpacity="0.1" />
+                      <filter id="pwaShadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feDropShadow dx="0" dy="12" stdDeviation="16" floodColor="#005F96" floodOpacity="0.18" />
                       </filter>
+                      <filter id="pwaBadgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feDropShadow dx="0" dy="6" stdDeviation="8" floodColor="#0f172a" floodOpacity="0.12" />
+                      </filter>
+
+                      <linearGradient id="pwaGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#7c3aed" />
+                        <stop offset="100%" stopColor="#4f46e5" />
+                      </linearGradient>
+
+                      <linearGradient id="pwaGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#005F96" />
+                        <stop offset="100%" stopColor="#0284c7" />
+                      </linearGradient>
+
+                      <linearGradient id="pwaGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#10b981" />
+                        <stop offset="100%" stopColor="#059669" />
+                      </linearGradient>
                     </defs>
 
-                    {/* Window Screen Display */}
-                    <rect x="50" y="50" width="340" height="240" rx="16" fill="#E0F2FE" stroke="#7C3AED" strokeWidth="2" />
-                    
-                    {/* Small PWA Browser Card */}
-                    <g transform="translate(30, 90)" filter="url(#pwaHeroShadow)">
-                      <rect x="0" y="0" width="105" height="65" rx="8" fill="#FFFFFF" stroke="#7C3AED" strokeWidth="1.5" />
-                      <rect x="0" y="0" width="105" height="14" rx="8" fill="#7C3AED" />
-                      <text x="8" y="10" fill="white" fontSize="7" fontWeight="bold">PWA</text>
-                      <line x1="8" y1="28" x2="65" y2="28" stroke="#7C3AED" strokeWidth="2" />
-                      <line x1="8" y1="38" x2="85" y2="38" stroke="#CBD5E1" strokeWidth="2" />
-                      <line x1="8" y1="48" x2="50" y2="48" stroke="#CBD5E1" strokeWidth="2" />
+                    {/* Floating Badge 1: Top Left - Lighthouse Score */}
+                    <g transform="translate(30, 45)" filter="url(#pwaBadgeShadow)">
+                      <rect x="0" y="0" width="130" height="44" rx="14" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5" />
+                      <circle cx="22" cy="22" r="14" fill="#10b981" />
+                      <text x="22" y="27" fill="#ffffff" fontSize="12" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">100</text>
+                      <text x="78" y="22" fill="#0f172a" fontSize="12" fontWeight="800" fontFamily="sans-serif">Lighthouse</text>
+                      <text x="78" y="35" fill="#64748b" fontSize="10" fontWeight="500" fontFamily="sans-serif">Perf Score</text>
                     </g>
 
-                    {/* PWA Purple Floating Badge */}
-                    <g transform="translate(165, 45)" filter="url(#pwaHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#7C3AED" />
-                      <text x="7" y="36" fill="white" fontSize="18" fontWeight="900" fontFamily="sans-serif">PWA</text>
+                    {/* Floating Badge 2: Top Right - Web Push Notifications */}
+                    <g transform="translate(385, 40)" filter="url(#pwaBadgeShadow)">
+                      <rect x="0" y="0" width="125" height="44" rx="14" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5" />
+                      <rect x="8" y="8" width="28" height="28" rx="8" fill="url(#pwaGrad1)" />
+                      <path d="M22 17 C22 14, 24 14, 24 17 C26 18, 27 20, 27 23 L28 25 H16 L17 23 C17 20, 18 18, 22 17 Z M20 27 C20 28, 24 28, 24 27" stroke="#ffffff" strokeWidth="2" fill="none" />
+                      <text x="78" y="22" fill="#0f172a" fontSize="12" fontWeight="800" fontFamily="sans-serif">Web Push</text>
+                      <text x="78" y="35" fill="#64748b" fontSize="10" fontWeight="500" fontFamily="sans-serif">Real-time Alert</text>
                     </g>
 
-                    {/* Tech Cubes */}
-                    <g transform="translate(230, 45)" filter="url(#pwaHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#60A5FA" />
-                      <circle cx="27.5" cy="27.5" r="10" fill="none" stroke="white" strokeWidth="3" />
+                    {/* Floating Badge 3: Middle Right - Service Worker */}
+                    <g transform="translate(395, 220)" filter="url(#pwaBadgeShadow)">
+                      <rect x="0" y="0" width="125" height="48" rx="14" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5" />
+                      <rect x="10" y="9" width="30" height="30" rx="8" fill="#0284c7" />
+                      <path d="M20 24 L24 28 L31 18" fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
+                      <text x="82" y="24" fill="#0f172a" fontSize="12" fontWeight="800" fontFamily="sans-serif">Offline Sync</text>
+                      <text x="82" y="37" fill="#64748b" fontSize="10" fontWeight="500" fontFamily="sans-serif">Service Worker</text>
                     </g>
 
-                    <g transform="translate(295, 45)" filter="url(#pwaHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#60A5FA" />
-                      <rect x="17" y="18" width="21" height="6" rx="2" fill="white" />
-                      <rect x="17" y="27" width="21" height="6" rx="2" fill="white" />
-                      <rect x="17" y="36" width="21" height="6" rx="2" fill="white" />
+                    {/* Floating Badge 4: Bottom Left - Add to Home Screen */}
+                    <g transform="translate(20, 290)" filter="url(#pwaBadgeShadow)">
+                      <rect x="0" y="0" width="140" height="46" rx="14" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5" />
+                      <rect x="8" y="7" width="30" height="30" rx="8" fill="url(#pwaGreenGrad)" />
+                      <path d="M23 15 V29 M16 22 H30" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
+                      <text x="87" y="23" fill="#0f172a" fontSize="12" fontWeight="800" fontFamily="sans-serif">Install PWA</text>
+                      <text x="87" y="36" fill="#64748b" fontSize="10" fontWeight="500" fontFamily="sans-serif">1-Tap Add</text>
                     </g>
 
-                    <g transform="translate(195, 115)" filter="url(#pwaHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#60A5FA" />
-                      <path d="M 18 37 L 37 18 M 32 18 L 37 23 M 18 32 L 23 37" stroke="white" strokeWidth="3" strokeLinecap="round" />
+                    {/* CENTER DESKTOP BROWSER MOCKUP */}
+                    <g transform="translate(130, 70)" filter="url(#pwaShadow)">
+                      <rect x="0" y="0" width="260" height="175" rx="12" fill="#0f172a" stroke="#334155" strokeWidth="3" />
+                      <rect x="8" y="8" width="244" height="159" rx="6" fill="#ffffff" />
+                      <path d="M8 8 H252 V30 H8 Z" fill="#f8fafc" />
+                      <circle cx="20" cy="19" r="3.5" fill="#ef4444" />
+                      <circle cx="30" cy="19" r="3.5" fill="#f59e0b" />
+                      <circle cx="40" cy="19" r="3.5" fill="#10b981" />
+                      <rect x="58" y="14" width="130" height="11" rx="5" fill="#e2e8f0" />
+                      <text x="123" y="22" fill="#64748b" fontSize="7" textAnchor="middle" fontFamily="sans-serif">https://pwa.app</text>
+
+                      <rect x="18" y="40" width="224" height="60" rx="8" fill="url(#pwaGrad1)" />
+                      <text x="30" y="60" fill="#ffffff" fontSize="13" fontWeight="900" fontFamily="sans-serif">Progressive Web App</text>
+                      <text x="30" y="74" fill="#e0e7ff" fontSize="9" fontFamily="sans-serif">Instant Loading • Offline First</text>
+
+                      <rect x="30" y="82" width="75" height="14" rx="7" fill="#ffffff" />
+                      <text x="67" y="92" fill="#4f46e5" fontSize="7" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">● Add to Desktop</text>
+
+                      <rect x="18" y="108" width="68" height="48" rx="6" fill="#f1f5f9" />
+                      <rect x="96" y="108" width="68" height="48" rx="6" fill="#f1f5f9" />
+                      <rect x="174" y="108" width="68" height="48" rx="6" fill="#f1f5f9" />
                     </g>
 
-                    <g transform="translate(260, 115)" filter="url(#pwaHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#7C3AED" />
-                      <path d="M 18 35 A 13 13 0 0 1 37 35" fill="none" stroke="white" strokeWidth="3" />
-                      <line x1="27.5" y1="35" x2="33" y2="24" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                    </g>
+                    {/* SMARTPHONE OVERLAY ON RIGHT OF DESKTOP */}
+                    <g transform="translate(260, 140)" filter="url(#pwaShadow)">
+                      <rect x="0" y="0" width="120" height="220" rx="20" fill="#1e293b" stroke="#475569" strokeWidth="3" />
+                      <rect x="5" y="5" width="110" height="210" rx="16" fill="#ffffff" />
+                      <rect x="40" y="10" width="40" height="8" rx="4" fill="#0f172a" />
 
-                    {/* Developer Person Vector Illustration */}
-                    <g transform="translate(340, 140)">
-                      <circle cx="45" cy="30" r="14" fill="#005F96" />
-                      <path d="M 25 55 C 25 42, 65 42, 65 55 L 75 110 L 15 110 Z" fill="#0284C7" />
-                      <rect x="15" y="110" width="60" height="25" fill="#1E293B" rx="4" />
-                      <polygon points="5,85 45,85 55,70 15,70" fill="#0F172A" />
-                      <rect x="5" y="85" width="40" height="4" fill="#64748B" rx="1" />
+                      <rect x="5" y="5" width="110" height="50" rx="16" fill="url(#pwaGrad2)" />
+                      <text x="14" y="32" fill="#ffffff" fontSize="10" fontWeight="800" fontFamily="sans-serif">PWA Mobile</text>
+
+                      <rect x="12" y="65" width="96" height="40" rx="6" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="1" />
+                      <circle cx="28" cy="85" r="10" fill="url(#pwaGreenGrad)" />
+                      <text x="45" y="82" fill="#0f172a" fontSize="8" fontWeight="700" fontFamily="sans-serif">Offline Ready</text>
+                      <text x="45" y="92" fill="#10b981" fontSize="7" fontWeight="600" fontFamily="sans-serif">Service Worker</text>
+
+                      <rect x="12" y="112" width="96" height="40" rx="6" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="1" />
+                      <rect x="12" y="159" width="96" height="35" rx="6" fill="url(#pwaGrad1)" />
+                      <text x="60" y="180" fill="#ffffff" fontSize="8" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">Install Application</text>
                     </g>
                   </svg>
                 </div>
@@ -255,28 +295,45 @@ export const PwaDevelopmentService = () => {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             
-            {/* Left Column Graphic (Person at Desk with PWA Monitor) */}
+            {/* Left Column Graphic (PWA Architecture & Service Worker Engine) */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="w-full max-w-[460px] relative">
                 <svg viewBox="0 0 460 320" className="w-full h-auto drop-shadow-md">
-                  <rect x="50" y="240" width="360" height="12" fill="#1E293B" rx="2" />
-                  <rect x="90" y="252" width="12" height="60" fill="#334155" />
-                  <rect x="360" y="252" width="12" height="60" fill="#334155" />
+                  <defs>
+                    <filter id="pwaSec2Shadow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="#005F96" floodOpacity="0.15" />
+                    </filter>
+                    <linearGradient id="pwaWorkstationGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#005F96" />
+                      <stop offset="100%" stopColor="#0284c7" />
+                    </linearGradient>
+                  </defs>
 
-                  <rect x="120" y="70" width="180" height="130" rx="8" fill="#FFFFFF" stroke="#7C3AED" strokeWidth="3" />
-                  <rect x="120" y="70" width="180" height="24" rx="8" fill="#7C3AED" />
-                  <circle cx="134" cy="82" r="3" fill="#FF5F56" />
-                  <circle cx="144" cy="82" r="3" fill="#FFBD2E" />
-                  <circle cx="154" cy="82" r="3" fill="#27C93F" />
-                  <text x="210" y="130" fill="#7C3AED" fontSize="18" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">PWA</text>
-                  <line x1="150" y1="150" x2="270" y2="150" stroke="#38BDF8" strokeWidth="3" strokeDasharray="6 4" />
+                  {/* NO BACKGROUND CONTAINER BOX - TRANSPARENT CANVAS */}
+                  <g filter="url(#pwaSec2Shadow)">
+                    {/* Workstation Monitor */}
+                    <rect x="90" y="40" width="280" height="180" rx="12" fill="#0f172a" stroke="#334155" strokeWidth="3" />
+                    <rect x="100" y="50" width="260" height="160" rx="6" fill="#ffffff" />
+                    {/* Header */}
+                    <path d="M100 50 H360 V74 H100 Z" fill="url(#pwaWorkstationGrad)" />
+                    <text x="115" y="66" fill="#ffffff" fontSize="11" fontWeight="800" fontFamily="sans-serif">PWA Service Worker Engine</text>
 
-                  <rect x="195" y="200" width="30" height="40" fill="#94A3B8" />
-                  <rect x="175" y="235" width="70" height="5" fill="#64748B" rx="2" />
+                    {/* Service Worker Pipeline */}
+                    <rect x="115" y="85" width="230" height="42" rx="8" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="1" />
+                    <circle cx="135" cy="106" r="10" fill="#10b981" />
+                    <path d="M130 106 L134 110 L140 102" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
+                    <text x="155" y="102" fill="#0f172a" fontSize="10" fontWeight="700" fontFamily="sans-serif">Cache API &amp; Background Sync</text>
+                    <text x="155" y="114" fill="#64748b" fontSize="8" fontFamily="sans-serif">Zero latency offline fallback</text>
 
-                  <path d="M 330 140 C 330 120, 360 120, 360 140 C 360 160, 320 190, 310 240 Z" fill="#0284C7" />
-                  <circle cx="345" cy="120" r="16" fill="#005F96" />
-                  <rect x="300" y="190" width="80" height="50" rx="8" fill="#475569" />
+                    {/* Web Push Banner inside screen */}
+                    <rect x="115" y="136" width="230" height="40" rx="8" fill="#7c3aed" />
+                    <text x="130" y="153" fill="#ffffff" fontSize="10" fontWeight="800" fontFamily="sans-serif">Web Push Notification Triggered</text>
+                    <text x="130" y="165" fill="#e0e7ff" fontSize="8" fontFamily="sans-serif">Sent to Chrome, Safari &amp; Edge</text>
+
+                    {/* Monitor Stand */}
+                    <rect x="210" y="220" width="40" height="30" fill="#64748b" rx="2" />
+                    <rect x="170" y="250" width="120" height="8" fill="#475569" rx="4" />
+                  </g>
                 </svg>
               </div>
             </div>
@@ -324,27 +381,64 @@ export const PwaDevelopmentService = () => {
               </div>
             </div>
 
-            {/* Right Column Graphic */}
+            {/* Right Column Graphic (Native Hardware APIs & Mobile PWA) */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="w-full max-w-[440px] relative">
                 <svg viewBox="0 0 440 340" className="w-full h-auto drop-shadow-md">
-                  <rect x="180" y="20" width="160" height="290" rx="24" fill="#FFFFFF" stroke="#7C3AED" strokeWidth="4" />
-                  <rect x="190" y="30" width="140" height="270" rx="16" fill="#F0F9FF" />
-                  <rect x="235" y="35" width="50" height="6" rx="3" fill="#94A3B8" />
+                  <defs>
+                    <filter id="pwaSec3Shadow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feDropShadow dx="0" dy="10" stdDeviation="14" floodColor="#7c3aed" floodOpacity="0.16" />
+                    </filter>
+                    <linearGradient id="sec3PhoneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#7c3aed" />
+                      <stop offset="100%" stopColor="#4f46e5" />
+                    </linearGradient>
+                  </defs>
 
-                  <rect x="205" y="60" width="50" height="50" rx="10" fill="#E0F2FE" stroke="#7C3AED" strokeWidth="1.5" />
-                  <rect x="265" y="60" width="50" height="50" rx="10" fill="#7C3AED" />
-                  <rect x="205" y="120" width="50" height="50" rx="10" fill="#7C3AED" />
-                  <rect x="265" y="120" width="50" height="50" rx="10" fill="#E0F2FE" stroke="#7C3AED" strokeWidth="1.5" />
-                  <rect x="205" y="180" width="50" height="50" rx="10" fill="#E0F2FE" stroke="#7C3AED" strokeWidth="1.5" />
-                  <rect x="265" y="180" width="50" height="50" rx="10" fill="#7C3AED" />
+                  {/* NO BACKGROUND RECTANGLE - TRANSPARENT CANVAS */}
+                  {/* Floating Badge Left: Camera & Geolocation APIs */}
+                  <g transform="translate(30, 60)" filter="url(#pwaSec3Shadow)">
+                    <rect x="0" y="0" width="130" height="46" rx="12" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5" />
+                    <rect x="8" y="8" width="30" height="30" rx="8" fill="#005F96" />
+                    <text x="23" y="27" fill="#ffffff" fontSize="12" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">API</text>
+                    <text x="82" y="23" fill="#0f172a" fontSize="11" fontWeight="800" fontFamily="sans-serif">Native Hardware</text>
+                    <text x="82" y="36" fill="#64748b" fontSize="9" fontFamily="sans-serif">GPS &amp; Camera</text>
+                  </g>
 
-                  <g transform="translate(60, 80)">
-                    <circle cx="35" cy="30" r="14" fill="#005F96" />
-                    <path d="M 15 50 C 15 40, 55 40, 55 50 L 65 140 L 5 140 Z" fill="#0284C7" />
-                    <circle cx="65" cy="90" r="22" fill="#FFFFFF" stroke="#005F96" strokeWidth="3" />
-                    <line x1="65" y1="90" x2="65" y2="78" stroke="#005F96" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="65" y1="90" x2="74" y2="90" stroke="#005F96" strokeWidth="2" strokeLinecap="round" />
+                  {/* Floating Badge Left 2: Offline Storage */}
+                  <g transform="translate(40, 210)" filter="url(#pwaSec3Shadow)">
+                    <rect x="0" y="0" width="125" height="46" rx="12" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5" />
+                    <rect x="8" y="8" width="30" height="30" rx="8" fill="#10b981" />
+                    <path d="M18 23 L22 27 L29 18" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+                    <text x="78" y="23" fill="#0f172a" fontSize="11" fontWeight="800" fontFamily="sans-serif">IndexedDB</text>
+                    <text x="78" y="36" fill="#64748b" fontSize="9" fontFamily="sans-serif">Offline Cache</text>
+                  </g>
+
+                  {/* Center Smartphone with Installed PWA Apps Grid */}
+                  <g transform="translate(190, 25)" filter="url(#pwaSec3Shadow)">
+                    <rect x="0" y="0" width="160" height="290" rx="28" fill="#0f172a" stroke="#334155" strokeWidth="3" />
+                    <rect x="6" y="6" width="148" height="278" rx="22" fill="#ffffff" />
+                    <rect x="55" y="14" width="50" height="6" rx="3" fill="#1e293b" />
+
+                    <rect x="6" y="6" width="148" height="70" rx="22" fill="url(#sec3PhoneGrad)" />
+                    <text x="20" y="45" fill="#ffffff" fontSize="13" fontWeight="900" fontFamily="sans-serif">PWA App Store</text>
+
+                    <g transform="translate(18, 90)">
+                      <rect x="0" y="0" width="32" height="32" rx="8" fill="#005F96" />
+                      <rect x="42" y="0" width="32" height="32" rx="8" fill="#7c3aed" />
+                      <rect x="84" y="0" width="32" height="32" rx="8" fill="#10b981" />
+
+                      <rect x="0" y="42" width="32" height="32" rx="8" fill="#f59e0b" />
+                      <rect x="42" y="42" width="32" height="32" rx="8" fill="#06b6d4" />
+                      <rect x="84" y="42" width="32" height="32" rx="8" fill="#ec4899" />
+
+                      <rect x="0" y="84" width="32" height="32" rx="8" fill="#8b5cf6" />
+                      <rect x="42" y="84" width="32" height="32" rx="8" fill="#3b82f6" />
+                      <rect x="84" y="84" width="32" height="32" rx="8" fill="#14b8a6" />
+                    </g>
+
+                    <rect x="16" y="235" width="128" height="32" rx="8" fill="url(#sec3PhoneGrad)" />
+                    <text x="80" y="255" fill="#ffffff" fontSize="10" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">Zero App Store Fee</text>
                   </g>
                 </svg>
               </div>

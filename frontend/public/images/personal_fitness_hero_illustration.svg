@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <!-- Filters -->
+    <filter id="fitnessShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#ff4757" flood-opacity="0.22"/>
+    </filter>
+    <filter id="fitBadgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="fitnessGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4757"/>
+      <stop offset="100%" stop-color="#ff6b81"/>
+    </linearGradient>
+
+    <linearGradient id="phoneDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#005F96"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- NO CONTAINER BOX - 100% TRANSPARENT CANVAS -->
+
+  <!-- Floating Badge 1: Top Left - AI Fitness Coach -->
+  <g transform="translate(35, 45)" filter="url(#fitBadgeShadow)">
+    <rect x="0" y="0" width="135" height="46" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="8" y="8" width="30" height="30" rx="9" fill="url(#fitnessGrad)"/>
+    <path d="M23 16 C20 16 17 18 17 21 C17 25 23 29 23 29 C23 29 29 25 29 21 C29 18 26 16 23 16 Z" fill="#ffffff"/>
+    <text x="83" y="23" font-family="sans-serif" font-weight="800" font-size="12" fill="#0f172a">AI Coach</text>
+    <text x="83" y="36" font-family="sans-serif" font-weight="500" font-size="10" fill="#64748b">Personalized</text>
+  </g>
+
+  <!-- Floating Badge 2: Top Right - Live Heart Rate BPM -->
+  <g transform="translate(425, 40)" filter="url(#fitBadgeShadow)">
+    <rect x="0" y="0" width="140" height="46" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="8" y="8" width="30" height="30" rx="9" fill="#10b981"/>
+    <path d="M14 23 H18 L21 16 L24 28 L27 20 L30 23 H34" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="86" y="23" font-family="sans-serif" font-weight="800" font-size="12" fill="#0f172a">138 BPM</text>
+    <text x="86" y="36" font-family="sans-serif" font-weight="500" font-size="10" fill="#64748b">Live Heart Tracking</text>
+  </g>
+
+  <!-- Floating Badge 3: Middle Right - Calories Burned -->
+  <g transform="translate(440, 235)" filter="url(#fitBadgeShadow)">
+    <rect x="0" y="0" width="130" height="48" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="10" y="9" width="30" height="30" rx="8" fill="url(#fitnessGrad)"/>
+    <path d="M25 15 C25 15 29 19 29 23 C29 26 27 28 25 28 C23 28 21 26 21 23 C21 21 23 19 23 19 C23 19 22 21 23 22 C24 23 25 22 25 21 C25 19 25 15 25 15 Z" fill="#ffffff"/>
+    <text x="83" y="24" font-family="sans-serif" font-weight="800" font-size="12" fill="#0f172a">740 Kcal</text>
+    <text x="83" y="37" font-family="sans-serif" font-weight="500" font-size="10" fill="#64748b">Daily Goal Burned</text>
+  </g>
+
+  <!-- Floating Badge 4: Bottom Left - Smart Watch Sync -->
+  <g transform="translate(30, 315)" filter="url(#fitBadgeShadow)">
+    <rect x="0" y="0" width="140" height="48" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="10" y="9" width="30" height="30" rx="8" fill="#005F96"/>
+    <rect x="20" y="16" width="10" height="16" rx="3" stroke="#ffffff" stroke-width="2" fill="none"/>
+    <line x1="25" y1="13" x2="25" y2="16" stroke="#ffffff" stroke-width="2"/>
+    <line x1="25" y1="32" x2="25" y2="35" stroke="#ffffff" stroke-width="2"/>
+    <text x="86" y="24" font-family="sans-serif" font-weight="800" font-size="12" fill="#0f172a">Watch Sync</text>
+    <text x="86" y="37" font-family="sans-serif" font-weight="500" font-size="10" fill="#64748b">Real-time Fitness</text>
+  </g>
+
+  <!-- CENTER SMARTPHONE MOCKUP -->
+  <g transform="translate(190, 20)" filter="url(#fitnessShadow)">
+    <!-- Outer Phone Body -->
+    <rect x="0" y="0" width="220" height="410" rx="36" fill="url(#phoneDark)" stroke="#334155" stroke-width="4"/>
+
+    <!-- Inner Screen Display -->
+    <rect x="8" y="8" width="204" height="394" rx="28" fill="#f8fafc"/>
+
+    <!-- Dynamic Notch -->
+    <rect x="75" y="16" width="70" height="14" rx="7" fill="#0f172a"/>
+
+    <!-- Screen Header (Coral Gradient) -->
+    <rect x="8" y="8" width="204" height="100" rx="28" fill="url(#fitnessGrad)"/>
+    <text x="24" y="52" font-family="sans-serif" font-weight="900" font-size="15" fill="#ffffff">Fitness Coach Pro</text>
+    <text x="24" y="68" font-family="sans-serif" font-weight="500" font-size="10" fill="#ffe4e6">AI Workout &amp; Nutrition</text>
+
+    <!-- Workout Progress Widget -->
+    <rect x="20" y="90" width="180" height="78" rx="12" fill="#ffffff" filter="url(#fitBadgeShadow)"/>
+    <circle cx="55" cy="129" r="24" fill="none" stroke="#f1f5f9" stroke-width="6"/>
+    <path d="M 55 105 A 24 24 0 1 1 34 141" fill="none" stroke="#ff4757" stroke-width="6" stroke-linecap="round"/>
+    <text x="55" y="133" font-family="sans-serif" font-weight="900" font-size="11" fill="#0f172a" text-anchor="middle">75%</text>
+
+    <text x="94" y="118" font-family="sans-serif" font-weight="800" font-size="11" fill="#0f172a">Daily Target</text>
+    <text x="94" y="134" font-family="sans-serif" font-weight="900" font-size="15" fill="#ff4757">35 / 45 min</text>
+    <text x="94" y="148" font-family="sans-serif" font-weight="500" font-size="9" fill="#64748b">Active Cardio Session</text>
+
+    <!-- Live Heart Rate Wave Box -->
+    <rect x="20" y="178" width="180" height="65" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="32" y="196" font-family="sans-serif" font-weight="700" font-size="11" fill="#1e293b">Heart Rate Wave</text>
+    <text x="145" y="196" font-family="sans-serif" font-weight="800" font-size="10" fill="#10b981">138 BPM</text>
+    <!-- ECG Wave Path -->
+    <path d="M32 225 H60 L65 210 L72 235 L78 200 L84 230 L90 220 H180" fill="none" stroke="#ff4757" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- AI Workout Plan Row -->
+    <rect x="20" y="253" width="180" height="60" rx="12" fill="url(#blueGrad)"/>
+    <text x="34" y="278" font-family="sans-serif" font-weight="800" font-size="12" fill="#ffffff">HIIT Power Session</text>
+    <text x="34" y="293" font-family="sans-serif" font-weight="500" font-size="9" fill="#e0f2fe">Personalized AI Trainer Routine</text>
+
+    <!-- Bottom Start Workout Button -->
+    <rect x="20" y="325" width="180" height="38" rx="10" fill="url(#fitnessGrad)"/>
+    <text x="110" y="349" font-family="sans-serif" font-weight="800" font-size="12" fill="#ffffff" text-anchor="middle">Start AI Workout →</text>
+  </g>
+</svg>

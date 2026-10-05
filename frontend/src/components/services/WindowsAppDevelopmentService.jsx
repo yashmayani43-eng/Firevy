@@ -924,12 +924,6 @@ export const WindowsAppDevelopmentService = () => {
                 {/* Smooth Hover Gradient Fill Layer */}
                 <div className="absolute inset-0 bg-gradient-to-b from-[#E2F4FD] via-[#D2F0FD] to-[#BCE9FC] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none" />
 
-                {/* Top Animated Gradient Accent Border (Deep Blue -> Cyan) */}
-                <div className="absolute top-0 left-0 right-0 h-[4px] bg-gradient-to-r from-[#004A75] via-[#0070B3] to-[#38BDF8] opacity-0 group-hover:opacity-100 scale-x-0 group-hover:scale-x-100 origin-left transition-all duration-500 ease-out" />
-
-                {/* Bottom Animated Gradient Accent Border (Cyan -> Deep Blue) */}
-                <div className="absolute bottom-0 left-0 right-0 h-[4px] bg-gradient-to-r from-[#38BDF8] via-[#0070B3] to-[#004A75] opacity-0 group-hover:opacity-100 scale-x-0 group-hover:scale-x-100 origin-right transition-all duration-500 ease-out" />
-
                 {/* Card Content (Relative z-10 to stay crisp above hover layer) */}
                 <div className="relative z-10 flex flex-col h-full">
                   {/* Icon Container */}

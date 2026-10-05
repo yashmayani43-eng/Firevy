@@ -5,9 +5,7 @@
     </filter>
   </defs>
 
-  <!-- Background Decorative Leaf / Glow Shapes -->
-  <path d="M50 380 Q20 280 80 220 Q140 280 120 380 Z" fill="#bae6fd" opacity="0.6"/>
-  <path d="M90 400 Q40 320 120 270 Q160 340 140 400 Z" fill="#0284c7" opacity="0.3"/>
+  <!-- NO BACKGROUND GLOW - 100% TRANSPARENT CANVAS -->
 
   <!-- Large Browser Window Mockup Container -->
   <g transform="translate(100, 40)" filter="url(#shadow3)">

@@ -346,6 +346,7 @@ export const KotlinAppDevelopmentService = () => {
         subtitle="Kotlin is Google’s official language for developing Android apps because it is a brilliantly designed and fully developed programming language that will make the development of Android native apps more efficient and more enjoyable."
         ctaText="Discuss Your Project"
         ctaLink="#quote-form"
+        heroImage="/images/kotlin_hero_illustration.svg"
         serviceCategory="kotlin"
       />
 

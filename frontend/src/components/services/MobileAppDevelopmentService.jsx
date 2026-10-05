@@ -131,9 +131,9 @@ export const MobileAppDevelopmentService = () => {
             <div className="lg:col-span-5 flex items-center justify-center relative">
               <div className="relative w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[420px] mx-auto flex items-center justify-center">
                 <img
-                  src="/images/mobile_app_hero_vector.png"
+                  src="/images/mobile_app_hero_vector.svg"
                   alt="Best Mobile App Development Company"
-                  className="w-full h-auto object-contain drop-shadow-xl transition-transform duration-500 ease-out hover:scale-105 cursor-pointer"
+                  className="w-full h-auto max-w-[460px] object-contain drop-shadow-md transition-transform duration-500 ease-out hover:scale-105 cursor-pointer"
                   loading="eager"
                 />
               </div>

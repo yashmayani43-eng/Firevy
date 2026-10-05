@@ -279,6 +279,7 @@ export const PersonalFitnessAppService = () => {
         subtitle="We have expertise in developing Personal Fitness Coach App that enable people and businesses to deliver personalized fitness experiences to users across the globe. Right from AI-based personal trainer app development to sophisticated fitness challenges app, our products are cost-effective, scalable, and interactive. Being a startup, gym, or wellness brand, we provide tailor-made fitness app solutions that enable personal coaching for everyone. Contact us today for a free consultation and get started on your next-gen fitness platform."
         ctaText="Discuss Your Project"
         ctaLink="#quote-form"
+        heroImage="/images/personal_fitness_hero_illustration.svg"
         serviceCategory="personal-fitness-app"
         stats={fitnessStats}
       />
