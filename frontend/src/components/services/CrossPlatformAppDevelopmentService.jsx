@@ -398,6 +398,7 @@ export const CrossPlatformAppDevelopmentService = () => {
         subtitle="At Sapphire Solutions, we provide cross-platform app development services for multiple platforms and devices using programming languages like HTML5, CSS3, and JavaScript."
         ctaText="Discuss Your Project"
         ctaLink="#quote-form"
+        heroImage="/images/hybrid_hero_illustration_transparent.png"
         serviceCategory="cross-platform"
       />
 
@@ -536,12 +537,6 @@ export const CrossPlatformAppDevelopmentService = () => {
                 }}
                 className="expertise-hover-card p-7 sm:p-8 flex flex-col justify-between text-left group"
               >
-                {/* Animated Top Border Accent Line */}
-                <span className="absolute top-0 left-0 w-full h-[3.5px] bg-[#0284c7] scale-x-0 group-hover:scale-x-100 transition-transform duration-400 ease-out origin-left z-20" />
-
-                {/* Animated Bottom Border Accent Line */}
-                <span className="absolute bottom-0 left-0 w-full h-[3.5px] bg-[#0284c7] scale-x-0 group-hover:scale-x-100 transition-transform duration-400 ease-out origin-right z-20" />
-
                 {/* Animated Hover Fill Gradient Layer */}
                 <div className="absolute inset-0 bg-gradient-to-b from-[#e4f6ff] via-[#d2f0ff] to-[#bdeaff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0 rounded-[15px]" />
 

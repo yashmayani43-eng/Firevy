@@ -18,6 +18,7 @@ import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
+import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
 
 export const EnneagramTestAppService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -707,86 +708,7 @@ export const EnneagramTestAppService = () => {
       <SapphireFaqSection faqList={enneagramFaqs} />
 
       {/* 22. SECTION: Our Recent Blogs */}
-      <section className="py-16 sm:py-20 bg-[#F8FAFC] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
-        <Container>
-          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-14">
-            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              Our Recent Blogs
-            </h2>
-            <p className="text-base sm:text-[17.5px] font-[400] text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto">
-              Read our latest engineering insights, architecture breakdowns, and personality mobile app best practices.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-            {/* Blog Card 1 */}
-            <div className="bg-white rounded-[16px] overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div className="w-full h-48 overflow-hidden bg-slate-900">
-                <img
-                  src="/images/fitness_blog_1.svg"
-                  alt="Building Accurate Psychometric Assessment & Scoring Engines"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                <h3 className="text-lg font-[800] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                  Building Accurate Psychometric Assessment &amp; Scoring Engines
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                  How modern psychological test architectures optimize score calibration and reliability across all 9 Enneagram types.
-                </p>
-                <div className="text-[#005F96] font-bold text-xs flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read More →
-                </div>
-              </div>
-            </div>
-
-            {/* Blog Card 2 */}
-            <div className="bg-white rounded-[16px] overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div className="w-full h-48 overflow-hidden bg-slate-900">
-                <img
-                  src="/images/fitness_blog_2.svg"
-                  alt="AI in Personality Apps: Delivering Hyper-Personalized Growth Insights"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                <h3 className="text-lg font-[800] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                  AI in Personality Apps: Delivering Hyper-Personalized Growth Insights
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                  Machine learning models that adapt daily prompts, stress triggers, and habit recommendations for self-actualization.
-                </p>
-                <div className="text-[#005F96] font-bold text-xs flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read More →
-                </div>
-              </div>
-            </div>
-
-            {/* Blog Card 3 */}
-            <div className="bg-white rounded-[16px] overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div className="w-full h-48 overflow-hidden bg-slate-900">
-                <img
-                  src="/images/fitness_blog_3.svg"
-                  alt="Privacy & Data Standards for Self-Discovery & Psychology Applications"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                <h3 className="text-lg font-[800] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                  Privacy &amp; Data Standards for Self-Discovery &amp; Psychology Applications
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                  Implementing cryptographic keystores, biometrics, and zero-trust API communications for sensitive user psychometric data.
-                </p>
-                <div className="text-[#005F96] font-bold text-xs flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read More →
-                </div>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
+      <IWatchRecentBlogsSection />
 
       {/* 24. SECTION: Have Enneagram Test App Development Challenge To Address ?? */}
       <section className="relative w-full max-w-full py-10 sm:py-12 lg:py-14 bg-[#005F96] text-white text-center font-sans overflow-hidden">

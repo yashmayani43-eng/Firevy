@@ -16,7 +16,7 @@ import SuccessMatrixGrid from '../home/SuccessMatrixGrid';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
 import SapphireFaqSection from '../common/SapphireFaqSection';
-import RecentBlogsSection from '../home/RecentBlogsSection';
+import MobileAppRecentBlogsSection from './MobileAppRecentBlogsSection';
 import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
 import ConversionCalloutBanner from '../home/ConversionCalloutBanner';
 import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
@@ -594,7 +594,7 @@ export const PwaDevelopmentService = () => {
       {/* =========================================================================
           SECTION 19: RECENT BLOGS
          ========================================================================= */}
-      <RecentBlogsSection />
+      <MobileAppRecentBlogsSection />
 
       {/* =========================================================================
           SECTION 20: WHAT SETS US APART

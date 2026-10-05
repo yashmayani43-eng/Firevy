@@ -18,6 +18,7 @@ import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
+import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
 
 export const UsedCarAppDevelopmentService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -826,84 +827,7 @@ export const UsedCarAppDevelopmentService = () => {
       <SapphireFaqSection customFaqs={faqItems} />
 
       {/* Section 21: Our Recent Blogs */}
-      <section className="pt-12 pb-16 sm:pt-16 sm:pb-20 bg-white text-slate-900 text-left font-sans border-b border-slate-100">
-        <div className="text-center w-full max-w-4xl px-4 sm:px-6 mx-auto mb-10 sm:mb-12 space-y-2.5">
-          <h2
-            className="font-[800] text-[#0B0F19] tracking-tight leading-tight"
-            style={{ fontSize: '32px' }}
-          >
-            Our Recent Blogs
-          </h2>
-          <p className="text-[13px] sm:text-[14px] text-[#475569] font-normal leading-relaxed max-w-3xl mx-auto">
-            Having exclusive experience to work with startups to corporate, we have in-depth insights about the versatile needs of diversified industry domains.
-          </p>
-        </div>
-
-        <Container className="max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7 mx-auto mb-10">
-            {recentBlogs.map((blog) => (
-              <div
-                key={blog.id}
-                className="rounded-[18px] sm:rounded-[20px] bg-white border border-slate-100/90 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.09)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden group cursor-pointer"
-              >
-                {/* Top Banner Graphic */}
-                <div className={`relative w-full h-48 sm:h-52 overflow-hidden bg-gradient-to-br ${blog.banner.bgGradient} p-4 flex flex-col justify-between select-none`}>
-                  {/* Top Left Firevy Logo */}
-                  <div className="flex items-center">
-                    <img
-                      src="/firevy_logo_dark.png"
-                      alt="Firevy"
-                      className="h-5 sm:h-5.5 w-auto max-w-[110px] object-contain select-none"
-                    />
-                  </div>
-
-                  {/* Tag and Illustration Layout */}
-                  <div className="flex items-end justify-between gap-2 mt-auto">
-                    <div className="max-w-[130px] sm:max-w-[145px] mb-1">
-                      {blog.banner.tagTitle}
-                    </div>
-                    <div className="shrink-0 flex items-center justify-end">
-                      {blog.banner.illustration}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom Body */}
-                <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 space-y-4 text-left">
-                  <div className="space-y-2">
-                    <span className="text-[12px] sm:text-[12.5px] font-[500] text-slate-400 block font-sans">
-                      {blog.date}
-                    </span>
-                    <h3 className="text-[15.5px] sm:text-[16.5px] font-[800] text-[#0B0F19] leading-snug group-hover:text-[#005F96] transition-colors font-sans line-clamp-2">
-                      {blog.title}
-                    </h3>
-                    <p className="text-[12.5px] sm:text-[13px] text-[#475569] font-normal leading-relaxed line-clamp-3 font-sans">
-                      {blog.desc}
-                    </p>
-                  </div>
-
-                  <div className="pt-2">
-                    <span className="inline-flex items-center text-[12.5px] sm:text-[13px] font-[700] text-[#005F96] group-hover:underline gap-1">
-                      Get more details
-                      <span className="transition-transform group-hover:translate-x-1">→</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Centered 'View All' Button */}
-          <div className="text-center pt-2">
-            <a
-              href="/company/blog"
-              className="inline-flex items-center justify-center px-9 py-2.5 rounded-[5px] bg-[#005F96] hover:bg-[#004a75] text-white font-[700] text-[13.5px] sm:text-[14px] transition-all shadow-xs hover:shadow-md cursor-pointer"
-            >
-              View All
-            </a>
-          </div>
-        </Container>
-      </section>
+      <IWatchRecentBlogsSection />
 
       {/* Section 22: Bottom Blue CTA Banner */}
       <section className="py-12 bg-[#0084D1] text-white text-center">

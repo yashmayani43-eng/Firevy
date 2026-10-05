@@ -18,6 +18,7 @@ import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
 import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
+import CrossPlatformAwardsMarqueeBanner from './CrossPlatformAwardsMarqueeBanner';
 
 export const MachineLearningDevelopmentService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -436,132 +437,9 @@ export const MachineLearningDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 7. SECTION: World Wide Top Rated IT Company on Clutch */}
-      <section className="py-6 sm:py-8 bg-[#005F96] text-white border-y border-blue-900/30 overflow-hidden text-left font-sans select-none">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
-            {/* Left Column: Title */}
-            <div className="lg:col-span-4 shrink-0 pr-4 border-r-0 lg:border-r border-white/20">
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-[900] text-white tracking-tight leading-tight">
-                World Wide Top Rated IT Company on Clutch
-              </h2>
-            </div>
+      {/* 7. SECTION: World Wide Top Rated IT Company on Clutch (1:1 Copy to Copy Match to Image 2 with Auto Scroll) */}
+      <CrossPlatformAwardsMarqueeBanner />
 
-            {/* Right Column: Animated Scrolling Award Badges Marquee */}
-            <div className="lg:col-span-8 overflow-hidden">
-              <div className="flex w-max animate-marquee hover:[animation-play-state:paused] items-center">
-                {/* Track 1 Badges */}
-                <div className="flex items-center space-x-8 sm:space-x-10 pr-8 sm:pr-10 shrink-0">
-                  <div className="w-18 h-18 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center">
-                    <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
-                      <g fill="#F59E0B">
-                        <path d="M 18 72 C 10 50 14 26 30 14 C 24 24 24 42 31 56 C 28 48 24 30 33 20 C 34 34 38 46 44 58" fill="none" stroke="#F59E0B" strokeWidth="2.5" />
-                        <path d="M 82 72 C 90 50 86 26 70 14 C 76 24 76 42 69 56 C 72 48 76 30 67 20 C 66 34 62 46 56 58" fill="none" stroke="#F59E0B" strokeWidth="2.5" />
-                        <path d="M 18 64 Q 10 54 22 48 Q 26 58 18 64 Z" />
-                        <path d="M 22 48 Q 13 38 26 32 Q 30 42 22 48 Z" />
-                        <path d="M 28 32 Q 20 22 34 18 Q 36 28 28 32 Z" />
-                        <path d="M 82 64 Q 90 54 78 48 Q 74 58 82 64 Z" />
-                        <path d="M 78 48 Q 87 38 74 32 Q 70 42 78 48 Z" />
-                        <path d="M 72 32 Q 80 22 66 18 Q 64 28 72 32 Z" />
-                      </g>
-                      <path d="M 36 28 L 64 28 L 60 52 C 58 60 42 60 40 52 Z" fill="#FBBF24" stroke="#D97706" strokeWidth="1.5" />
-                      <path d="M 36 32 C 26 32 26 44 37 44" fill="none" stroke="#FBBF24" strokeWidth="2.5" strokeLinecap="round" />
-                      <path d="M 64 32 C 74 32 74 44 63 44" fill="none" stroke="#FBBF24" strokeWidth="2.5" strokeLinecap="round" />
-                      <rect x="47" y="58" width="6" height="12" fill="#F59E0B" />
-                      <rect x="38" y="70" width="24" height="6" rx="1" fill="#D97706" />
-                      <polygon points="50,22 53,27 58,28 54,32 55,37 50,34 45,37 46,32 42,28 47,27" fill="#FDE047" />
-                    </svg>
-                  </div>
-
-                  <img
-                    src="/images/awards/most_review_softwarecompany_manifest.svg"
-                    alt="Most Reviewed Software Development Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/most_web_review_manifest.svg"
-                    alt="Most Reviewed Software Developers"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/top_mobile_app_goodfirm.svg"
-                    alt="Top Dedicated Software Development Company GoodFirms"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/most_review_softwarecompany_manifest.svg"
-                    alt="Most Reviewed Software Development Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/top_mobile_clutchn.svg"
-                    alt="Top Clutch Dedicated Software Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-                </div>
-
-                {/* Track 2 Badges */}
-                <div className="flex items-center space-x-8 sm:space-x-10 pr-8 sm:pr-10 shrink-0" aria-hidden="true">
-                  <div className="w-18 h-18 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center">
-                    <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
-                      <g fill="#F59E0B">
-                        <path d="M 18 72 C 10 50 14 26 30 14 C 24 24 24 42 31 56 C 28 48 24 30 33 20 C 34 34 38 46 44 58" fill="none" stroke="#F59E0B" strokeWidth="2.5" />
-                        <path d="M 82 72 C 90 50 86 26 70 14 C 76 24 76 42 69 56 C 72 48 76 30 67 20 C 66 34 62 46 56 58" fill="none" stroke="#F59E0B" strokeWidth="2.5" />
-                        <path d="M 18 64 Q 10 54 22 48 Q 26 58 18 64 Z" />
-                        <path d="M 22 48 Q 13 38 26 32 Q 30 42 22 48 Z" />
-                        <path d="M 28 32 Q 20 22 34 18 Q 36 28 28 32 Z" />
-                        <path d="M 82 64 Q 90 54 78 48 Q 74 58 82 64 Z" />
-                        <path d="M 78 48 Q 87 38 74 32 Q 70 42 78 48 Z" />
-                        <path d="M 72 32 Q 80 22 66 18 Q 64 28 72 32 Z" />
-                      </g>
-                      <path d="M 36 28 L 64 28 L 60 52 C 58 60 42 60 40 52 Z" fill="#FBBF24" stroke="#D97706" strokeWidth="1.5" />
-                      <path d="M 36 32 C 26 32 26 44 37 44" fill="none" stroke="#FBBF24" strokeWidth="2.5" strokeLinecap="round" />
-                      <path d="M 64 32 C 74 32 74 44 63 44" fill="none" stroke="#FBBF24" strokeWidth="2.5" strokeLinecap="round" />
-                      <rect x="47" y="58" width="6" height="12" fill="#F59E0B" />
-                      <rect x="38" y="70" width="24" height="6" rx="1" fill="#D97706" />
-                      <polygon points="50,22 53,27 58,28 54,32 55,37 50,34 45,37 46,32 42,28 47,27" fill="#FDE047" />
-                    </svg>
-                  </div>
-
-                  <img
-                    src="/images/awards/most_review_softwarecompany_manifest.svg"
-                    alt="Most Reviewed Software Development Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/most_web_review_manifest.svg"
-                    alt="Most Reviewed Software Developers"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/top_mobile_app_goodfirm.svg"
-                    alt="Top Dedicated Software Development Company GoodFirms"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/most_review_softwarecompany_manifest.svg"
-                    alt="Most Reviewed Software Development Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-
-                  <img
-                    src="/images/awards/top_mobile_clutchn.svg"
-                    alt="Top Clutch Dedicated Software Company"
-                    className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-md hover:scale-105 transition-transform"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
 
       {/* 8. SECTION: Get A 100% Customizable Machine Learning Development By Experts */}
       <section className="py-12 sm:py-16 bg-white text-slate-900 font-sans text-left">

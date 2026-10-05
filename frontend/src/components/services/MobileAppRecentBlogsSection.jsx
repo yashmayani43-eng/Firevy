@@ -5,9 +5,9 @@ import Container from '../common/Container';
 const mobileAppBlogsData = [
   {
     id: 1,
-    date: 'January 9, 2023',
+    date: 'January 8, 2024',
     title: 'Mobile App Ideas to Boost Your Business Growth in 2023',
-    excerpt: 'Undoubtedly, the mobile app market is expanding rapidly, and new concepts and innovations are introduced each...',
+    excerpt: 'Explore innovative mobile app concepts and feature strategies designed to accelerate digital...',
     banner: {
       bgGradient: 'from-[#E8EEFD] via-[#EDE8FA] to-[#FDE8F3]',
       tagTitle: (
@@ -20,41 +20,64 @@ const mobileAppBlogsData = [
       ),
       illustration: (
         <svg viewBox="0 0 160 140" className="w-28 h-28 sm:w-32 sm:h-32 object-contain">
-          {/* Phone Frame */}
-          <rect x="50" y="10" width="70" height="120" rx="12" fill="#1E293B" />
-          <rect x="54" y="14" width="62" height="112" rx="8" fill="#3B82F6" opacity="0.15" />
-          <rect x="56" y="20" width="58" height="100" rx="6" fill="#0F172A" />
-          {/* Top Music Player Widget */}
-          <rect x="62" y="28" width="46" height="28" rx="6" fill="url(#gradMusic)" />
-          <circle cx="85" cy="40" r="6" fill="#FFFFFF" opacity="0.9" />
-          <polygon points="83,37 89,40 83,43" fill="#EC4899" />
-          {/* User Profile Bubble */}
-          <rect x="110" y="32" width="36" height="34" rx="8" fill="#A855F7" opacity="0.9" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.2))" />
-          <circle cx="128" cy="45" r="5" fill="#FFFFFF" />
-          <path d="M120 58 C120 53 124 51 128 51 C132 51 136 53 136 58" fill="#FFFFFF" />
-          {/* App Grid Cards */}
-          <rect x="105" y="74" width="44" height="50" rx="8" fill="#F43F5E" opacity="0.9" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.2))" />
-          <rect x="111" y="82" width="22" height="4" rx="2" fill="#FFFFFF" />
-          <rect x="111" y="90" width="30" height="3" rx="1.5" fill="#FFFFFF" opacity="0.7" />
-          <rect x="111" y="96" width="26" height="3" rx="1.5" fill="#FFFFFF" opacity="0.7" />
-          <rect x="111" y="102" width="18" height="3" rx="1.5" fill="#FFFFFF" opacity="0.7" />
           <defs>
-            <linearGradient id="gradMusic" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#FB923C" />
+            <linearGradient id="phoneGrad3d1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#312E81" />
+              <stop offset="100%" stopColor="#1E1B4B" />
+            </linearGradient>
+            <linearGradient id="cardGrad3d1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#FB7185" />
               <stop offset="100%" stopColor="#F43F5E" />
             </linearGradient>
+            <filter id="shadow3d1" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="2" dy="6" stdDeviation="4" floodColor="#1E1B4B" floodOpacity="0.2" />
+            </filter>
           </defs>
+
+          {/* 3D Angled Phone Frame with Bright White Screen */}
+          <g filter="url(#shadow3d1)" transform="rotate(-8 80 70)">
+            <rect x="52" y="12" width="64" height="114" rx="14" fill="url(#phoneGrad3d1)" />
+            <rect x="55" y="15" width="58" height="108" rx="11" fill="#FFFFFF" />
+            <rect x="74" y="19" width="20" height="3" rx="1.5" fill="#E2E8F0" />
+
+            {/* Colorful Screen Widgets */}
+            <rect x="61" y="28" width="46" height="26" rx="6" fill="#3B82F6" />
+            <circle cx="72" cy="41" r="5" fill="#FFFFFF" opacity="0.9" />
+            <rect x="80" y="36" width="20" height="3" rx="1.5" fill="#FFFFFF" />
+            <rect x="80" y="42" width="14" height="3" rx="1.5" fill="#BFDBFE" />
+
+            <rect x="61" y="60" width="46" height="42" rx="6" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1" />
+            <rect x="66" y="66" width="18" height="18" rx="5" fill="#EC4899" />
+            <rect x="87" y="68" width="15" height="3" rx="1.5" fill="#94A3B8" />
+            <rect x="87" y="74" width="12" height="3" rx="1.5" fill="#CBD5E1" />
+
+            <rect x="66" y="89" width="36" height="8" rx="4" fill="#F97316" />
+          </g>
+
+          {/* Floating 3D Play/Media Card Badge */}
+          <g filter="url(#shadow3d1)" transform="translate(104, 20)">
+            <rect x="0" y="0" width="40" height="36" rx="9" fill="url(#cardGrad3d1)" />
+            <circle cx="20" cy="18" r="9" fill="#FFFFFF" opacity="0.95" />
+            <polygon points="18,13 25,18 18,23" fill="#F43F5E" />
+          </g>
+
+          {/* Floating 3D User Bubble */}
+          <g filter="url(#shadow3d1)" transform="translate(114, 66)">
+            <circle cx="18" cy="18" r="16" fill="#A855F7" />
+            <circle cx="18" cy="14" r="5.5" fill="#FFFFFF" />
+            <path d="M 10 27 C 10 22, 14 20, 18 20 C 22 20, 26 22, 26 27 Z" fill="#FFFFFF" />
+          </g>
         </svg>
       )
     }
   },
   {
     id: 2,
-    date: 'February 22, 2023',
+    date: 'November 30, 2023',
     title: 'Securing Your Mobile App: The Essential Cybersecurity Guide',
-    excerpt: 'Our lives now revolve around our mobile phones. Since most mobile users spend 90% of their time on mobile applications...',
+    excerpt: 'Before deploying an app, protect client data with robust cybersecurity protocols, biometric...',
     banner: {
-      bgGradient: 'from-[#EEF2FF] via-[#F3E8FF] to-[#EDE9FE]',
+      bgGradient: 'from-[#E0F2FE] via-[#E6F4FE] to-[#DDF4FF]',
       tagTitle: (
         <>
           <span className="font-[700] text-[#0F172A] text-[10.5px] sm:text-[11.5px] block leading-tight">Securing Your</span>
@@ -66,34 +89,59 @@ const mobileAppBlogsData = [
       ),
       illustration: (
         <svg viewBox="0 0 160 140" className="w-28 h-28 sm:w-32 sm:h-32 object-contain">
-          {/* Phone Frame */}
-          <rect x="65" y="12" width="66" height="116" rx="10" fill="#1E293B" />
-          <rect x="69" y="16" width="58" height="108" rx="7" fill="#0F172A" />
-          {/* Fingerprint Biometric Scanner */}
-          <circle cx="98" cy="50" r="18" fill="#0284C7" opacity="0.3" />
-          <circle cx="98" cy="50" r="13" fill="none" stroke="#38BDF8" strokeWidth="1.8" strokeDasharray="3 2" />
-          <circle cx="98" cy="50" r="8" fill="none" stroke="#38BDF8" strokeWidth="1.8" />
-          <circle cx="98" cy="50" r="3" fill="#38BDF8" />
-          {/* Cybersecurity Padlock Badge */}
-          <rect x="82" y="80" width="30" height="24" rx="5" fill="#10B981" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.25))" />
-          <path d="M89 80 V72 C89 68 105 68 105 72 V80" fill="none" stroke="#F59E0B" strokeWidth="3" strokeLinecap="round" />
-          <circle cx="97" cy="91" r="2.5" fill="#FFFFFF" />
-          <rect x="96" y="91" width="2" height="5" fill="#FFFFFF" />
-          {/* Person Security Shield Agent */}
-          <circle cx="50" cy="85" r="4.5" fill="#6366F1" />
-          <path d="M44 100 C44 94 47 92 50 92 C53 92 56 94 56 100" fill="#6366F1" />
-          <polygon points="50,94 58,98 58,107 50,111 42,107 42,98" fill="#F59E0B" opacity="0.9" />
+          <defs>
+            <linearGradient id="phoneGrad3d2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#0F172A" />
+              <stop offset="100%" stopColor="#1E293B" />
+            </linearGradient>
+            <linearGradient id="lockGrad3d2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#10B981" />
+              <stop offset="100%" stopColor="#059669" />
+            </linearGradient>
+            <filter id="shadow3d2" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="2" dy="6" stdDeviation="4" floodColor="#0EA5E9" floodOpacity="0.2" />
+            </filter>
+          </defs>
+
+          {/* 3D Vertical Phone Display with Light Screen */}
+          <g filter="url(#shadow3d2)" transform="translate(68, 12)">
+            <rect x="0" y="0" width="62" height="114" rx="12" fill="url(#phoneGrad3d2)" />
+            <rect x="3" y="3" width="56" height="108" rx="9" fill="#F8FAFC" />
+
+            {/* Screen UI: Security Shield Diagram */}
+            <rect x="10" y="16" width="42" height="48" rx="8" fill="#F1F5F9" stroke="#E2E8F0" strokeWidth="1" />
+            <path d="M 31 24 C 38 24 42 27 42 34 C 42 45 31 52 31 52 C 31 52 20 45 20 34 C 20 27 24 24 31 24 Z" fill="#7C3AED" />
+            <path d="M 31 31 V 44 M 27 37 H 35" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" />
+
+            <rect x="12" y="74" width="38" height="8" rx="4" fill="#0EA5E9" opacity="0.8" />
+            <rect x="16" y="88" width="30" height="6" rx="3" fill="#CBD5E1" />
+          </g>
+
+          {/* Floating 3D Security Keyhole Padlock Badge */}
+          <g filter="url(#shadow3d2)" transform="translate(88, 60)">
+            <path d="M 12 12 V -2 C 12 -12, 28 -12, 28 -2 V 12" fill="none" stroke="#F59E0B" strokeWidth="4.5" strokeLinecap="round" />
+            <rect x="0" y="8" width="40" height="34" rx="8" fill="url(#lockGrad3d2)" />
+            <circle cx="20" cy="22" r="4" fill="#FFFFFF" />
+            <rect x="18" y="22" width="4" height="8" rx="1" fill="#FFFFFF" />
+          </g>
+
+          {/* Floating 3D Security User Badge */}
+          <g filter="url(#shadow3d2)" transform="translate(42, 74)">
+            <circle cx="15" cy="15" r="14" fill="#6366F1" />
+            <circle cx="15" cy="11" r="5" fill="#FFFFFF" />
+            <path d="M 7 22 C 7 17, 11 16, 15 16 C 19 16, 23 17, 23 22 Z" fill="#FFFFFF" />
+          </g>
         </svg>
       )
     }
   },
   {
     id: 3,
-    date: 'February 15, 2023',
+    date: 'September 21, 2023',
     title: 'Start Making Money Now: Create an MVP for Your Mobile App',
-    excerpt: 'MVP stands for "minimum viable product," and it refers to a new method of testing the potential of a product...',
+    excerpt: 'Step-by-step roadmap to building a high-impact minimum viable product (MVP), validating market...',
     banner: {
-      bgGradient: 'from-[#F0F9FF] via-[#E0F2FE] to-[#EFF6FF]',
+      bgGradient: 'from-[#E0F2FE] via-[#EAF5FF] to-[#F0F7FF]',
       tagTitle: (
         <>
           <span className="font-[700] text-[#0F172A] text-[10.5px] sm:text-[11.5px] block leading-tight">Start Making</span>
@@ -104,28 +152,62 @@ const mobileAppBlogsData = [
       ),
       illustration: (
         <svg viewBox="0 0 160 140" className="w-28 h-28 sm:w-32 sm:h-32 object-contain">
-          {/* Big App Screen Frame */}
-          <rect x="40" y="24" width="86" height="66" rx="8" fill="#FFFFFF" stroke="#CBD5E1" strokeWidth="1.5" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.06))" />
-          <rect x="40" y="24" width="86" height="12" rx="8" fill="#3B82F6" />
-          <circle cx="46" cy="30" r="2" fill="#FFFFFF" />
-          <circle cx="52" cy="30" r="2" fill="#FFFFFF" />
-          <circle cx="58" cy="30" r="2" fill="#FFFFFF" />
-          {/* MVP UI charts */}
-          <rect x="46" y="42" width="30" height="20" rx="3" fill="#F1F5F9" />
-          <path d="M48 56 L55 49 L62 53 L72 45" fill="none" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" />
-          <rect x="80" y="42" width="40" height="38" rx="3" fill="#F8FAFC" stroke="#E2E8F0" />
-          <rect x="85" y="47" width="22" height="4" rx="2" fill="#2563EB" />
-          <rect x="85" y="55" width="30" height="3" rx="1.5" fill="#94A3B8" />
-          <rect x="85" y="61" width="26" height="3" rx="1.5" fill="#94A3B8" />
-          {/* Developer / User working on laptop */}
-          <circle cx="126" cy="74" r="5" fill="#1E293B" />
-          <path d="M120 92 C120 85 123 82 126 82 C129 82 132 85 132 92" fill="#2563EB" />
-          {/* Desk & Laptop */}
-          <rect x="108" y="92" width="34" height="3" rx="1.5" fill="#64748B" />
-          <polygon points="112,92 120,86 122,86 114,92" fill="#0F172A" />
-          {/* Floating UI gear & target */}
-          <circle cx="132" cy="30" r="7" fill="#38BDF8" opacity="0.25" />
-          <circle cx="132" cy="30" r="4" fill="none" stroke="#0284C7" strokeWidth="1.5" strokeDasharray="2 1" />
+          <defs>
+            <linearGradient id="screenGrad3d3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#FFFFFF" />
+              <stop offset="100%" stopColor="#F8FAFC" />
+            </linearGradient>
+            <filter id="shadow3d3" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="2" dy="5" stdDeviation="4" floodColor="#0F172A" floodOpacity="0.15" />
+            </filter>
+          </defs>
+
+          {/* 3D Dashboard Window Screen */}
+          <g filter="url(#shadow3d3)" transform="translate(28, 20)">
+            <rect x="0" y="0" width="92" height="68" rx="9" fill="url(#screenGrad3d3)" stroke="#3B82F6" strokeWidth="2" />
+            <rect x="0" y="0" width="92" height="15" rx="9" fill="#2563EB" />
+            <circle cx="8" cy="7.5" r="2.5" fill="#FF5F56" />
+            <circle cx="16" cy="7.5" r="2.5" fill="#FFBD2E" />
+            <circle cx="24" cy="7.5" r="2.5" fill="#27C93F" />
+
+            {/* Line Graph Card */}
+            <rect x="8" y="23" width="40" height="36" rx="5" fill="#F0F9FF" stroke="#BAE6FD" strokeWidth="1" />
+            <path d="M 12 50 L 20 40 L 28 44 L 38 30" fill="none" stroke="#0284C7" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="38" cy="30" r="3" fill="#F59E0B" />
+
+            {/* Right Bar Widgets */}
+            <rect x="52" y="23" width="32" height="6" rx="3" fill="#2563EB" />
+            <rect x="52" y="33" width="26" height="4" rx="2" fill="#94A3B8" />
+            <rect x="52" y="41" width="20" height="4" rx="2" fill="#CBD5E1" />
+          </g>
+
+          {/* 3D Character Standing & Waving (Yellow Shirt, Blue Jeans) */}
+          <g filter="url(#shadow3d3)" transform="translate(114, 42)">
+            {/* Head & Hair */}
+            <circle cx="16" cy="12" r="7" fill="#FDBA74" />
+            <path d="M 9 10 C 9 4, 23 4, 23 10 Z" fill="#451A03" />
+
+            {/* Yellow Shirt */}
+            <path d="M 8 21 C 8 18, 24 18, 24 21 L 26 38 L 6 38 Z" fill="#F59E0B" />
+
+            {/* Waving Arm */}
+            <path d="M 23 20 L 31 12" stroke="#FDBA74" strokeWidth="3" strokeLinecap="round" />
+            <circle cx="32" cy="11" r="2.5" fill="#FDBA74" />
+
+            {/* Blue Pants */}
+            <rect x="9" y="38" width="6" height="24" rx="2" fill="#1D4ED8" />
+            <rect x="17" y="38" width="6" height="24" rx="2" fill="#1D4ED8" />
+
+            {/* Shoes */}
+            <rect x="7" y="60" width="9" height="4" rx="2" fill="#0F172A" />
+            <rect x="17" y="60" width="9" height="4" rx="2" fill="#0F172A" />
+          </g>
+
+          {/* Floating Gold Badge */}
+          <g filter="url(#shadow3d3)" transform="translate(128, 14)">
+            <circle cx="10" cy="10" r="9" fill="#F59E0B" />
+            <polygon points="10,4 12,8 16,8 13,11 14,15 10,12 6,15 7,11 4,8 8,8" fill="#FFFFFF" />
+          </g>
         </svg>
       )
     }
@@ -157,22 +239,22 @@ export const MobileAppRecentBlogsSection = () => {
               className="rounded-[20px] bg-white border border-slate-100/90 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden group cursor-pointer"
             >
               {/* Top Banner Matching Screenshot */}
-              <div className={`relative w-full h-48 sm:h-52 overflow-hidden bg-gradient-to-br ${blog.banner.bgGradient} p-4 flex flex-col justify-between select-none`}>
+              <div className={`relative w-full h-36 sm:h-40 overflow-hidden bg-gradient-to-br ${blog.banner.bgGradient} p-3.5 sm:p-4 flex flex-col justify-between select-none`}>
                 {/* Top Left Firevy.Co Logo */}
                 <div className="flex items-center">
                   <img
                     src="/firevy_logo_dark.png"
                     alt="Firevy.Co"
-                    className="h-5 sm:h-5.5 w-auto max-w-[110px] object-contain select-none"
+                    className="h-4 sm:h-4.5 w-auto max-w-[95px] object-contain select-none"
                   />
                 </div>
 
                 {/* Banner Content Layout: Tag text on left, Illustration on right */}
                 <div className="flex items-end justify-between gap-2 mt-auto">
-                  <div className="max-w-[130px] sm:max-w-[140px] mb-1">
+                  <div className="max-w-[130px] sm:max-w-[140px] mb-0.5">
                     {blog.banner.tagTitle}
                   </div>
-                  <div className="shrink-0 flex items-center justify-end">
+                  <div className="shrink-0 flex items-center justify-end -mr-1 -mb-1">
                     {blog.banner.illustration}
                   </div>
                 </div>

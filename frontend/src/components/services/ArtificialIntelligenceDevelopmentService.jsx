@@ -168,7 +168,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
     if (nameLower.includes('openai') || nameLower.includes('open ai') || nameLower.includes('gpt') || nameLower.includes('dall-e') || nameLower.includes('sora')) {
       return (
         <svg className="w-12 h-12 text-[#0F172A]" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M22.28 9.82a5.98 5.98 0 0 0-.52-4.91 6.05 6.05 0 0 0-6.51-2.9 6.07 6.07 0 0 0-10.27 2.17 5.98 5.98 0 0 0-4 2.9 6.05 6.05 0 0 0 .74 7.1 5.98 5.98 0 0 0 .51 4.91 6.05 6.05 0 0 0 6.52 2.9 5.98 5.98 0 0 0 3.78 2.81 6.06 6.06 0 0 0 5.77-4.2 5.99 5.99 0 0 0 4-2.9 6.06 6.06 0 0 0-.75-6.88zm-9.02 12.61a4.48 4.48 0 0 1-2.88-1.04l.14-.08 4.78-2.76a.79.79 0 0 0 .39-.68v-6.74l2.02 1.17c.02.01.04.03.04.05v5.58a4.5 4.5 0 0 1-4.49 4.5zM3.6 18.3a4.47 4.47 0 0 1-.54-3.01l.14.08 4.78 2.76a.79.79 0 0 0 .79 0l5.84-3.37v2.33c0 .03-.01.05-.03.06l-4.84 2.79a4.5 4.5 0 0 1-6.14-1.64zm-1.38-10.92a4.47 4.47 0 0 1 2.34-1.97v5.68c0 .28.15.53.4.68l5.83 3.37-2.02 1.17a.08.08 0 0 1-.07 0l-4.85-2.8a4.5 4.5 0 0 1-1.63-6.13zm16.6 3.03l-5.84-3.37 2.02-1.17c.02-.01.04-.01.07 0l4.85 2.8a4.5 4.5 0 0 1-1.1 8.13v-5.68a.8.8 0 0 0-.4-.7zm2.02-3.02l-.14-.09-4.78-2.76a.79.79 0 0 0-.79 0l-5.84 3.37V7.6c0-.03.01-.05.03-.06l4.85-2.79a4.5 4.5 0 0 1 6.67 4.67zm-11.06-3.85a4.48 4.48 0 0 1 2.88 1.04l-.14.08-4.78 2.76a.79.79 0 0 0-.39.68v6.74l-2.02-1.17a.08.08 0 0 1-.04-.05V8.28a4.5 4.5 0 0 1 4.49-4.49z"/>
+          <path d="M22.28 9.82a5.98 5.98 0 0 0-.52-4.91 6.05 6.05 0 0 0-6.51-2.9 6.07 6.07 0 0 0-10.27 2.17 5.98 5.98 0 0 0-4 2.9 6.05 6.05 0 0 0 .74 7.1 5.98 5.98 0 0 0 .51 4.91 6.05 6.05 0 0 0 6.52 2.9 5.98 5.98 0 0 0 3.78 2.81 6.06 6.06 0 0 0 5.77-4.2 5.99 5.99 0 0 0 4-2.9 6.06 6.06 0 0 0-.75-6.88zm-9.02 12.61a4.48 4.48 0 0 1-2.88-1.04l.14-.08 4.78-2.76a.79.79 0 0 0 .39-.68v-6.74l2.02 1.17c.02.01.04.03.04.05v5.58a4.5 4.5 0 0 1-4.49 4.5zM3.6 18.3a4.47 4.47 0 0 1-.54-3.01l.14.08 4.78 2.76a.79.79 0 0 0 .79 0l5.84-3.37v2.33c0 .03-.01.05-.03.06l-4.84 2.79a4.5 4.5 0 0 1-6.14-1.64zm-1.38-10.92a4.47 4.47 0 0 1 2.34-1.97v5.68c0 .28.15.53.4.68l5.83 3.37-2.02 1.17a.08.08 0 0 1-.07 0l-4.85-2.8a4.5 4.5 0 0 1-1.63-6.13zm16.6 3.03l-5.84-3.37 2.02-1.17c.02-.01.04-.01.07 0l4.85 2.8a4.5 4.5 0 0 1-1.1 8.13v-5.68a.8.8 0 0 0-.4-.7zm2.02-3.02l-.14-.09-4.78-2.76a.79.79 0 0 0-.79 0l-5.84 3.37V7.6c0-.03.01-.05.03-.06l4.85-2.79a4.5 4.5 0 0 1 6.67 4.67zm-11.06-3.85a4.48 4.48 0 0 1 2.88 1.04l-.14.08-4.78 2.76a.79.79 0 0 0-.39.68v6.74l-2.02-1.17a.08.08 0 0 1-.04-.05V8.28a4.5 4.5 0 0 1 4.49-4.49z" />
         </svg>
       );
     }
@@ -204,7 +204,7 @@ export const ArtificialIntelligenceDevelopmentService = () => {
       return (
         <div className="flex items-center space-x-1.5 text-[#0F172A]">
           <svg className="w-7 h-7 shrink-0 fill-current" viewBox="0 0 24 24">
-            <path d="M12 2l2.2 7.8H22l-6.5 4.7 2.4 7.5L12 17.2l-5.9 4.8 2.4-7.5L2 9.8h7.8z"/>
+            <path d="M12 2l2.2 7.8H22l-6.5 4.7 2.4 7.5L12 17.2l-5.9 4.8 2.4-7.5L2 9.8h7.8z" />
           </svg>
           <span className="text-xl sm:text-2xl font-[900] tracking-tight text-[#0F172A] font-sans">Claude</span>
         </div>
@@ -813,16 +813,14 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                     key={sol.id}
                     onClick={() => setActiveTab(idx)}
                     onMouseEnter={() => setActiveTab(idx)}
-                    className={`p-5 sm:p-6 rounded-[14px] transition-all duration-300 cursor-pointer text-left ${
-                      isActive
+                    className={`p-5 sm:p-6 rounded-[14px] transition-all duration-300 cursor-pointer text-left ${isActive
                         ? 'bg-white border-[1.5px] border-[#0284C7] ring-4 ring-[#0284C7]/10 shadow-sm shadow-[#0284C7]/10'
                         : 'bg-white border border-slate-200/90 hover:border-[#0284C7]/40 hover:shadow-xs'
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center justify-between">
-                      <h3 className={`text-[16px] sm:text-[17px] font-[700] tracking-tight flex items-center gap-2 transition-colors duration-200 ${
-                        isActive ? 'text-[#0284C7]' : 'text-slate-900'
-                      }`}>
+                      <h3 className={`text-[16px] sm:text-[17px] font-[700] tracking-tight flex items-center gap-2 transition-colors duration-200 ${isActive ? 'text-[#0284C7]' : 'text-slate-900'
+                        }`}>
                         <span>{sol.title}</span>
                         {isActive && <ArrowRight className="w-4 h-4 text-[#0284C7] shrink-0 inline transform translate-x-0.5 transition-transform" />}
                       </h3>
@@ -948,11 +946,10 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                   key={idx}
                   onClick={() => setActiveTechTab(idx)}
                   onMouseEnter={() => setActiveTechTab(idx)}
-                  className={`px-4 sm:px-4.5 py-2 rounded-[6px] text-[13px] font-[700] transition-all cursor-pointer ${
-                    activeTechTab === idx
+                  className={`px-4 sm:px-4.5 py-2 rounded-[6px] text-[13px] font-[700] transition-all cursor-pointer ${activeTechTab === idx
                       ? 'bg-[#0B5C7A] text-white shadow-sm'
                       : 'bg-white/80 text-slate-700 hover:text-[#0B5C7A] hover:bg-white border border-slate-200/50'
-                  }`}
+                    }`}
                 >
                   {cat.name}
                 </button>
@@ -1160,26 +1157,26 @@ export const ArtificialIntelligenceDevelopmentService = () => {
       </section>
 
       {/* =========================================================================
-          8.5 CUTTING EDGE TECHNOLOGY FIREVY USE FOR ARTIFICIAL INTELLIGENCE DEVELOPMENT (1:1 Screenshot Match with Image 2)
+          8.5 CUTTING EDGE TECHNOLOGY FIREVY USE FOR ARTIFICIAL INTELLIGENCE DEVELOPMENT (Full Width & Wider Cards)
           ========================================================================= */}
-      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100 overflow-hidden">
-        <Container>
+      <section className="py-16 sm:py-20 bg-white font-sans text-left border-b border-slate-100 overflow-hidden w-full">
+        <div className="w-full px-4 sm:px-8 lg:px-12">
           <div className="text-center max-w-4xl mx-auto mb-10 space-y-2.5">
             <h2 className="text-[26px] sm:text-[34px] font-[800] text-slate-950 tracking-tight">
               Cutting Edge Technology Firevy Use For Artificial Intelligence Development
             </h2>
           </div>
 
-          {/* Light Blue Cards Slider/Carousel Container */}
-          <div className="relative overflow-hidden max-w-6xl mx-auto px-1 py-2">
+          {/* Light Blue Cards Slider/Carousel Container - Full Width & Wider Cards */}
+          <div className="relative overflow-hidden w-full py-2">
             <div
-              className="flex transition-transform duration-500 ease-out gap-5"
-              style={{ transform: `translateX(-${cuttingEdgeSlide * 315}px)` }}
+              className="flex transition-transform duration-500 ease-out gap-6"
+              style={{ transform: `translateX(-${cuttingEdgeSlide * 424}px)` }}
             >
               {expertOfferings.map((off, idx) => (
                 <div
                   key={idx}
-                  className="bg-[#DDF4FF] rounded-[18px] p-6 sm:p-7 border border-sky-100/70 shadow-xs flex flex-col justify-between text-left shrink-0 w-[290px] sm:w-[310px] min-h-[260px] hover:shadow-md transition-all duration-300"
+                  className="bg-[#DDF4FF] rounded-[18px] p-7 sm:p-8 border border-sky-100/70 shadow-xs flex flex-col justify-between text-left shrink-0 w-[320px] sm:w-[380px] lg:w-[400px] min-h-[270px] hover:shadow-md transition-all duration-300"
                 >
                   <div>
                     {/* SVG Line-Art Icon */}
@@ -1236,10 +1233,10 @@ export const ArtificialIntelligenceDevelopmentService = () => {
                       )}
                     </div>
 
-                    <h3 className="text-[17px] font-[800] text-slate-900 mb-2.5 tracking-tight">
+                    <h3 className="text-[18px] sm:text-[19px] font-[800] text-slate-900 mb-2.5 tracking-tight">
                       {off.title}
                     </h3>
-                    <p className="text-[13.5px] text-[#334155] leading-relaxed font-normal">
+                    <p className="text-[13.5px] sm:text-[14px] text-[#334155] leading-relaxed font-normal">
                       {off.desc}
                     </p>
                   </div>
@@ -1253,23 +1250,21 @@ export const ArtificialIntelligenceDevelopmentService = () => {
             <button
               onClick={() => setCuttingEdgeSlide(prev => Math.max(0, prev - 1))}
               disabled={cuttingEdgeSlide === 0}
-              className={`w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center transition-colors shadow-xs font-bold text-lg ${
-                cuttingEdgeSlide === 0 ? 'bg-slate-100 text-slate-400 cursor-not-allowed' : 'bg-white text-slate-800 hover:bg-slate-50 cursor-pointer'
-              }`}
+              className={`w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center transition-colors shadow-xs font-bold text-lg ${cuttingEdgeSlide === 0 ? 'bg-slate-100 text-slate-400 cursor-not-allowed' : 'bg-white text-slate-800 hover:bg-slate-50 cursor-pointer'
+                }`}
             >
               ←
             </button>
             <button
               onClick={() => setCuttingEdgeSlide(prev => Math.min(expertOfferings.length - 3, prev + 1))}
               disabled={cuttingEdgeSlide >= expertOfferings.length - 3}
-              className={`w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center transition-colors shadow-xs font-bold text-lg ${
-                cuttingEdgeSlide >= expertOfferings.length - 3 ? 'bg-slate-100 text-slate-400 cursor-not-allowed' : 'bg-white text-slate-800 hover:bg-slate-50 cursor-pointer'
-              }`}
+              className={`w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center transition-colors shadow-xs font-bold text-lg ${cuttingEdgeSlide >= expertOfferings.length - 3 ? 'bg-slate-100 text-slate-400 cursor-not-allowed' : 'bg-white text-slate-800 hover:bg-slate-50 cursor-pointer'
+                }`}
             >
               →
             </button>
           </div>
-        </Container>
+        </div>
       </section>
 
 
@@ -1306,9 +1301,8 @@ export const ArtificialIntelligenceDevelopmentService = () => {
             {combinationTechList.map((item, idx) => (
               <div
                 key={`tech-comb-item-${idx}`}
-                className={`w-[290px] sm:w-[330px] md:w-[360px] bg-[#DDF1FC]/90 hover:bg-[#D4EDFC] rounded-[18px] p-6 border border-[#CCE8F7] shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col justify-between shrink-0 text-left cursor-pointer ${
-                  comboIndex === idx ? 'ring-2 ring-[#005F96]/30 shadow-md' : ''
-                }`}
+                className={`w-[290px] sm:w-[330px] md:w-[360px] bg-[#DDF1FC]/90 hover:bg-[#D4EDFC] rounded-[18px] p-6 border border-[#CCE8F7] shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col justify-between shrink-0 text-left cursor-pointer ${comboIndex === idx ? 'ring-2 ring-[#005F96]/30 shadow-md' : ''
+                  }`}
               >
                 <div className="mb-3">
                   <span className="bg-[#005F96] text-white text-[12px] sm:text-[13px] font-[700] px-3.5 py-1.5 rounded-[8px] inline-flex items-center space-x-2 shadow-2xs">

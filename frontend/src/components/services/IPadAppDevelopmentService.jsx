@@ -19,6 +19,7 @@ import SapphireFaqSection from '../common/SapphireFaqSection';
 import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
 import IWatchWhatSetsUsApartSection from './IWatchWhatSetsUsApartSection';
 import IWatchChallengeCtaBanner from './IWatchChallengeCtaBanner';
+import AndroidHiringModels from './AndroidHiringModels';
 
 export const IPadAppDevelopmentService = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -343,7 +344,7 @@ export const IPadAppDevelopmentService = () => {
         subtitle="Our Top-rated iPad app development agency is well-known for its ability to build and design individualized iPad applications while adhering to the standards set by the Apple App Store."
         ctaText="Discuss Your Project"
         ctaLink="#quote-form"
-        heroImage="/images/ipad_hero_illustration.svg"
+        heroImage="/images/ipad_brief_solutions_transparent.png"
         serviceCategory="ipad"
       />
 
@@ -755,88 +756,9 @@ export const IPadAppDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* 12. SECTION: Business Friendly Hiring Models */}
-      <section className="py-16 sm:py-20 bg-[#f4f9fd] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
-        <Container>
-          {/* Section Header */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-            className="text-center max-w-4xl mx-auto mb-12 sm:mb-14"
-          >
-            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              Business Friendly Hiring Models : Building Greater Futures Through Innovation
-            </h2>
-            <p className="text-base sm:text-[17.5px] font-[400] text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto">
-              We offer different types of hiring models that are designed to suit your diverse needs and budget. Take a look at our hiring models:
-            </p>
-          </motion.div>
+      {/* 12. SECTION: Business Friendly Hiring Models (1:1 Copy to Copy Match to Image 2) */}
+      <AndroidHiringModels />
 
-          {/* 4 White Hiring Cards Grid */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-50px' }}
-            variants={{
-              hidden: { opacity: 0 },
-              visible: {
-                opacity: 1,
-                transition: { staggerChildren: 0.08, delayChildren: 0.1 }
-              }
-            }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
-          >
-            {hiringModels.map((item, idx) => (
-              <motion.div
-                key={idx}
-                variants={{
-                  hidden: { opacity: 0, y: 30, scale: 0.96 },
-                  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } }
-                }}
-                whileHover={{ y: -6, transition: { type: 'spring', stiffness: 400, damping: 25 } }}
-                className="bg-white rounded-[18px] p-7 border border-slate-100 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between text-center space-y-6 group cursor-default"
-              >
-                <div className="space-y-4">
-                  {/* Circle Badge Icon */}
-                  <div className={`w-14 h-14 rounded-full ${item.badgeBg} ${item.badgeColor} flex items-center justify-center shrink-0 mx-auto transition-transform duration-300 group-hover:scale-110 shadow-sm`}>
-                    {item.icon}
-                  </div>
-
-                  {/* Card Title */}
-                  <h3 className="text-lg sm:text-[20px] font-[800] text-slate-950 font-sans leading-snug group-hover:text-[#0b5072] transition-colors">
-                    {item.title}
-                  </h3>
-
-                  {/* Card Description */}
-                  <p className="text-xs sm:text-[13px] text-slate-600 font-[400] leading-relaxed font-sans text-center">
-                    {item.desc}
-                  </p>
-
-                  {/* Bullet Points List with Blue Checkmarks */}
-                  <ul className="space-y-2 pt-2 text-left font-sans text-xs sm:text-[13px] text-slate-700 font-[600]">
-                    {item.points.map((pt, pIdx) => (
-                      <li key={pIdx} className="flex items-center space-x-2">
-                        <span className="text-[#0284c7] font-bold text-sm">✓</span>
-                        <span>{pt}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* 'Hire Now' Dark Blue Button */}
-                <a
-                  href="#quote-form"
-                  className="w-full py-3 rounded-[8px] bg-[#0b5072] hover:bg-[#084260] text-white font-[800] text-sm transition-all shadow-md hover:shadow-lg font-sans inline-block mt-4"
-                >
-                  Hire Now
-                </a>
-              </motion.div>
-            ))}
-          </motion.div>
-        </Container>
-      </section>
 
       {/* 13. SECTION: Unveiling Our Innovative Solution */}
       <InnovativeSolutionsVideoSection />

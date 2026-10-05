@@ -17,6 +17,7 @@ import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import DigitalTransformationSlider from '../common/DigitalTransformationSlider';
 import SapphireFaqSection from '../common/SapphireFaqSection';
+import MobileAppRecentBlogsSection from './MobileAppRecentBlogsSection';
 import {
   Code,
   Smartphone,
@@ -346,7 +347,7 @@ export const KotlinAppDevelopmentService = () => {
         subtitle="Kotlin is Google’s official language for developing Android apps because it is a brilliantly designed and fully developed programming language that will make the development of Android native apps more efficient and more enjoyable."
         ctaText="Discuss Your Project"
         ctaLink="#quote-form"
-        heroImage="/images/kotlin_hero_illustration.svg"
+        heroImage="/images/kotlin_hero_illustration_transparent.png"
         serviceCategory="kotlin"
       />
 
@@ -869,132 +870,9 @@ export const KotlinAppDevelopmentService = () => {
       <SapphireFaqSection faqList={kotlinFaqs} />
 
       {/* 22. SECTION: Our Recent Blogs */}
-      <section className="py-16 sm:py-20 bg-[#f4f9fd] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
-        <Container>
-          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-14">
-            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              Our Recent Blogs
-            </h2>
-            <p className="text-base sm:text-[17.5px] font-[400] text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto">
-              Stay ahead with curated technical insights, architecture patterns, and industry trends from our senior engineering team.
-            </p>
-          </div>
+      <MobileAppRecentBlogsSection />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-            {/* Blog Card 1 */}
-            <div className="bg-white rounded-[16px] overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div className="w-full h-48 overflow-hidden bg-slate-100">
-                <img
-                  src="/images/iwatch_blog_1.png"
-                  alt="Kotlin Coroutines & Jetpack Compose in Production"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                <h3 className="text-lg font-[800] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                  Kotlin Coroutines &amp; Jetpack Compose in Production
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                  How modern declarative UI and non-blocking asynchronous coroutines optimize battery life and deliver fluid 120Hz frame rates.
-                </p>
-                <div className="text-[#005F96] font-bold text-xs flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read More →
-                </div>
-              </div>
-            </div>
 
-            {/* Blog Card 2 */}
-            <div className="bg-white rounded-[16px] overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div className="w-full h-48 overflow-hidden bg-slate-100">
-                <img
-                  src="/images/iwatch_blog_2.png"
-                  alt="Kotlin Multiplatform Mobile (KMM) Architecture"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                <h3 className="text-lg font-[800] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                  Kotlin Multiplatform Mobile (KMM) Architecture
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                  A comprehensive guide to sharing cross-platform networking, domain logic, and offline storage between Android and iOS.
-                </p>
-                <div className="text-[#005F96] font-bold text-xs flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read More →
-                </div>
-              </div>
-            </div>
-
-            {/* Blog Card 3 */}
-            <div className="bg-white rounded-[16px] overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div className="w-full h-48 overflow-hidden bg-slate-100">
-                <img
-                  src="/images/iwatch_blog_3.png"
-                  alt="Migrating Enterprise Java Codebases to Kotlin"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                <h3 className="text-lg font-[800] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                  Migrating Enterprise Java Codebases to Kotlin
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                  Step-by-step strategies for seamless Java-to-Kotlin modernization with zero regression and improved memory footprints.
-                </p>
-                <div className="text-[#005F96] font-bold text-xs flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read More →
-                </div>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* 23. SECTION: What Sets Us Apart */}
-      <section className="py-16 sm:py-20 bg-white text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
-        <Container>
-          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-14">
-            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-[800] text-slate-950 tracking-tight mb-3 font-sans">
-              What Sets Us Apart
-            </h2>
-            <p className="text-base sm:text-[17.5px] font-[400] text-slate-600 leading-relaxed font-sans max-w-3xl mx-auto">
-              Our engineering excellence, transparent communication, and client-first delivery methodologies distinguish Firevy as a premier development partner.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-            <div className="p-8 rounded-[16px] bg-[#f8fafc] border border-slate-100 space-y-4 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-blue-100 text-[#005F96] flex items-center justify-center font-black text-xl">
-                01
-              </div>
-              <h3 className="text-xl font-[800] text-slate-950">Top 1% Vetted Engineers</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Work directly with senior Google-certified Kotlin architects and Android engineers with average 7+ years of mobile production experience.
-              </p>
-            </div>
-
-            <div className="p-8 rounded-[16px] bg-[#f8fafc] border border-slate-100 space-y-4 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-xl">
-                02
-              </div>
-              <h3 className="text-xl font-[800] text-slate-950">Agile Sprint Transparency</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Receive weekly sprint demos, live test builds, Jira backlog tracking, and direct Slack/Teams collaboration with your development squad.
-              </p>
-            </div>
-
-            <div className="p-8 rounded-[16px] bg-[#f8fafc] border border-slate-100 space-y-4 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-black text-xl">
-                03
-              </div>
-              <h3 className="text-xl font-[800] text-slate-950">Full Source Code Ownership</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                You retain 100% intellectual property, full Git repository access, patent rights, and custom deployment documentation from day one.
-              </p>
-            </div>
-          </div>
-        </Container>
-      </section>
 
       {/* 24. SECTION: Challenge CTA Banner */}
       <section className="py-14 sm:py-16 bg-[#005F96] text-white text-center font-sans overflow-hidden">

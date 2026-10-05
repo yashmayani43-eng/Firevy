@@ -105,7 +105,8 @@ export const SapphireLightHeroBanner = ({
                 <img
                   src={heroImage}
                   alt={title}
-                  className="w-full max-w-[520px] h-auto object-contain select-none pointer-events-none drop-shadow-sm mix-blend-multiply"
+                  className="w-full max-w-[520px] h-auto object-contain select-none pointer-events-none drop-shadow-sm"
+                  style={typeof heroImage === 'string' && (heroImage.endsWith('.svg') || heroImage.endsWith('.png')) ? {} : { mixBlendMode: 'multiply' }}
                 />
               </div>
             ) : isMarketplace ? (
@@ -148,12 +149,12 @@ export const SapphireLightHeroBanner = ({
                   <g transform="translate(85, 130)">
                     <path d="M 42 22 C 35 12, 45 5, 52 10 C 58 8, 62 16, 58 24 Z" fill="#1E293B" />
                     <ellipse cx="50" cy="24" rx="10" ry="12" fill="#FED7AA" />
-                    
+
                     <path d="M 32 42 C 40 38, 60 38, 68 42 L 64 125 L 36 125 Z" fill="#60A5FA" />
-                    
+
                     <path d="M 64 45 L 85 5 L 95 12 L 70 55 Z" fill="#60A5FA" />
                     <circle cx="88" cy="6" r="6" fill="#FED7AA" />
-                    
+
                     <path d="M 34 45 L 20 70 L 28 75 L 38 52 Z" fill="#3B82F6" />
                     <circle cx="20" cy="74" r="5" fill="#FED7AA" />
 
@@ -192,7 +193,7 @@ export const SapphireLightHeroBanner = ({
                       <rect x="0" y="0" width="46" height="22" rx="6" fill="#EFF6FF" />
                       <text x="23" y="15" fill="#1D4ED8" fontSize="10" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">BUY</text>
                     </g>
-                    
+
                     <g transform="translate(74, 138)">
                       <rect x="0" y="0" width="26" height="24" rx="6" stroke="#EFF6FF" strokeWidth="2" fill="none" />
                       <path d="M 6 10 H 20 L 18 20 H 8 Z" fill="#EFF6FF" />

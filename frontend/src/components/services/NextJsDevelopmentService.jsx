@@ -16,7 +16,7 @@ import SuccessMatrixGrid from '../home/SuccessMatrixGrid';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import DigitalTransformationCaseStudies from '../home/DigitalTransformationCaseStudies';
 import SapphireFaqSection from '../common/SapphireFaqSection';
-import RecentBlogsSection from '../home/RecentBlogsSection';
+import MobileAppRecentBlogsSection from './MobileAppRecentBlogsSection';
 import WhatSetsUsApartSection from '../common/WhatSetsUsApartSection';
 import ConversionCalloutBanner from '../home/ConversionCalloutBanner';
 import SubscribeNewsletterSection from '../home/SubscribeNewsletterSection';
@@ -161,80 +161,19 @@ export const NextJsDevelopmentService = () => {
               </motion.div>
             </div>
 
-            {/* Right Hero Visual Illustration (Next.js Vector Graphic) */}
+            {/* Right Hero Visual Illustration (Next.js Development Illustration) */}
             <div className="lg:col-span-6 relative flex items-center justify-center">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="w-full max-w-[520px] relative"
+                className="w-full max-w-[500px] relative flex items-center justify-center p-2"
               >
-                <div className="relative w-full aspect-[4/3] flex items-center justify-center">
-                  <svg viewBox="0 0 520 360" className="w-full h-full drop-shadow-md">
-                    <defs>
-                      <linearGradient id="nextHeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#EBF5FF" />
-                        <stop offset="100%" stopColor="#E0F2FE" />
-                      </linearGradient>
-                      <filter id="nextHeroShadow" x="-10%" y="-10%" width="120%" height="120%">
-                        <feDropShadow dx="0" dy="4" stdDeviation="4" floodColor="#005F96" floodOpacity="0.1" />
-                      </filter>
-                    </defs>
-
-                    {/* Window Screen Display */}
-                    <rect x="50" y="50" width="340" height="240" rx="16" fill="#E0F2FE" stroke="#000000" strokeWidth="2" />
-                    
-                    {/* Small NEXT.JS Browser Card */}
-                    <g transform="translate(30, 90)" filter="url(#nextHeroShadow)">
-                      <rect x="0" y="0" width="105" height="65" rx="8" fill="#FFFFFF" stroke="#000000" strokeWidth="1.5" />
-                      <rect x="0" y="0" width="105" height="14" rx="8" fill="#000000" />
-                      <text x="8" y="10" fill="white" fontSize="7" fontWeight="bold">NEXT.JS</text>
-                      <line x1="8" y1="28" x2="65" y2="28" stroke="#005F96" strokeWidth="2" />
-                      <line x1="8" y1="38" x2="85" y2="38" stroke="#CBD5E1" strokeWidth="2" />
-                      <line x1="8" y1="48" x2="50" y2="48" stroke="#CBD5E1" strokeWidth="2" />
-                    </g>
-
-                    {/* Next.js Black Floating Badge */}
-                    <g transform="translate(165, 45)" filter="url(#nextHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#000000" />
-                      <text x="7" y="36" fill="white" fontSize="20" fontWeight="900" fontFamily="sans-serif">N</text>
-                      <line x1="28" y1="18" x2="45" y2="38" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" />
-                    </g>
-
-                    {/* Tech Cubes */}
-                    <g transform="translate(230, 45)" filter="url(#nextHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#60A5FA" />
-                      <circle cx="27.5" cy="27.5" r="10" fill="none" stroke="white" strokeWidth="3" />
-                    </g>
-
-                    <g transform="translate(295, 45)" filter="url(#nextHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#60A5FA" />
-                      <rect x="17" y="18" width="21" height="6" rx="2" fill="white" />
-                      <rect x="17" y="27" width="21" height="6" rx="2" fill="white" />
-                      <rect x="17" y="36" width="21" height="6" rx="2" fill="white" />
-                    </g>
-
-                    <g transform="translate(195, 115)" filter="url(#nextHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#60A5FA" />
-                      <path d="M 18 37 L 37 18 M 32 18 L 37 23 M 18 32 L 23 37" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                    </g>
-
-                    <g transform="translate(260, 115)" filter="url(#nextHeroShadow)">
-                      <rect x="0" y="0" width="55" height="55" rx="10" fill="#000000" />
-                      <path d="M 18 35 A 13 13 0 0 1 37 35" fill="none" stroke="white" strokeWidth="3" />
-                      <line x1="27.5" y1="35" x2="33" y2="24" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                    </g>
-
-                    {/* Developer Person Vector Illustration */}
-                    <g transform="translate(340, 140)">
-                      <circle cx="45" cy="30" r="14" fill="#005F96" />
-                      <path d="M 25 55 C 25 42, 65 42, 65 55 L 75 110 L 15 110 Z" fill="#0284C7" />
-                      <rect x="15" y="110" width="60" height="25" fill="#1E293B" rx="4" />
-                      <polygon points="5,85 45,85 55,70 15,70" fill="#0F172A" />
-                      <rect x="5" y="85" width="40" height="4" fill="#64748B" rx="1" />
-                    </g>
-                  </svg>
-                </div>
+                <img
+                  src="/images/nextjs_hero_illustration_transparent.png"
+                  alt="Next.js Development Services"
+                  className="w-full h-auto max-w-[480px] object-contain drop-shadow-md"
+                />
               </motion.div>
             </div>
           </div>
@@ -252,30 +191,15 @@ export const NextJsDevelopmentService = () => {
       <section className="py-14 sm:py-16 md:py-20 bg-white">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            
-            {/* Left Column Graphic (Person at Desk with NEXT.JS Monitor) */}
+
+            {/* Left Column Graphic */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="w-full max-w-[460px] relative">
-                <svg viewBox="0 0 460 320" className="w-full h-auto drop-shadow-md">
-                  <rect x="50" y="240" width="360" height="12" fill="#1E293B" rx="2" />
-                  <rect x="90" y="252" width="12" height="60" fill="#334155" />
-                  <rect x="360" y="252" width="12" height="60" fill="#334155" />
-
-                  <rect x="120" y="70" width="180" height="130" rx="8" fill="#FFFFFF" stroke="#000000" strokeWidth="3" />
-                  <rect x="120" y="70" width="180" height="24" rx="8" fill="#000000" />
-                  <circle cx="134" cy="82" r="3" fill="#FF5F56" />
-                  <circle cx="144" cy="82" r="3" fill="#FFBD2E" />
-                  <circle cx="154" cy="82" r="3" fill="#27C93F" />
-                  <text x="210" y="130" fill="#000000" fontSize="18" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">NEXT.JS</text>
-                  <line x1="150" y1="150" x2="270" y2="150" stroke="#38BDF8" strokeWidth="3" strokeDasharray="6 4" />
-
-                  <rect x="195" y="200" width="30" height="40" fill="#94A3B8" />
-                  <rect x="175" y="235" width="70" height="5" fill="#64748B" rx="2" />
-
-                  <path d="M 330 140 C 330 120, 360 120, 360 140 C 360 160, 320 190, 310 240 Z" fill="#0284C7" />
-                  <circle cx="345" cy="120" r="16" fill="#005F96" />
-                  <rect x="300" y="190" width="80" height="50" rx="8" fill="#475569" />
-                </svg>
+              <div className="w-full max-w-[460px] relative flex justify-center">
+                <img
+                  src="/images/angular_section2_illustration.jpg"
+                  alt="Get Next.js Application Development Services"
+                  className="w-full h-auto max-w-[440px] object-contain drop-shadow-sm mix-blend-multiply"
+                />
               </div>
             </div>
 
@@ -305,7 +229,7 @@ export const NextJsDevelopmentService = () => {
       <section className="py-14 sm:py-16 md:py-20 bg-slate-50/60 border-t border-slate-100">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            
+
             {/* Left Column Content */}
             <div className="lg:col-span-7 space-y-5 text-left font-sans">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-[900] text-slate-900 tracking-tight leading-tight">
@@ -324,27 +248,12 @@ export const NextJsDevelopmentService = () => {
 
             {/* Right Column Graphic */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="w-full max-w-[440px] relative">
-                <svg viewBox="0 0 440 340" className="w-full h-auto drop-shadow-md">
-                  <rect x="180" y="20" width="160" height="290" rx="24" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
-                  <rect x="190" y="30" width="140" height="270" rx="16" fill="#F0F9FF" />
-                  <rect x="235" y="35" width="50" height="6" rx="3" fill="#94A3B8" />
-
-                  <rect x="205" y="60" width="50" height="50" rx="10" fill="#E0F2FE" stroke="#000000" strokeWidth="1.5" />
-                  <rect x="265" y="60" width="50" height="50" rx="10" fill="#000000" />
-                  <rect x="205" y="120" width="50" height="50" rx="10" fill="#000000" />
-                  <rect x="265" y="120" width="50" height="50" rx="10" fill="#E0F2FE" stroke="#000000" strokeWidth="1.5" />
-                  <rect x="205" y="180" width="50" height="50" rx="10" fill="#E0F2FE" stroke="#000000" strokeWidth="1.5" />
-                  <rect x="265" y="180" width="50" height="50" rx="10" fill="#000000" />
-
-                  <g transform="translate(60, 80)">
-                    <circle cx="35" cy="30" r="14" fill="#005F96" />
-                    <path d="M 15 50 C 15 40, 55 40, 55 50 L 65 140 L 5 140 Z" fill="#0284C7" />
-                    <circle cx="65" cy="90" r="22" fill="#FFFFFF" stroke="#005F96" strokeWidth="3" />
-                    <line x1="65" y1="90" x2="65" y2="78" stroke="#005F96" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="65" y1="90" x2="74" y2="90" stroke="#005F96" strokeWidth="2" strokeLinecap="round" />
-                  </g>
-                </svg>
+              <div className="w-full max-w-[440px] relative flex justify-center">
+                <img
+                  src="/images/pwa_brief_services_illustration.jpg"
+                  alt="Brief About Our Next.js Development"
+                  className="w-full h-auto max-w-[440px] object-contain drop-shadow-sm mix-blend-multiply"
+                />
               </div>
             </div>
 
@@ -498,7 +407,7 @@ export const NextJsDevelopmentService = () => {
       {/* =========================================================================
           SECTION 19: RECENT BLOGS
          ========================================================================= */}
-      <RecentBlogsSection />
+      <MobileAppRecentBlogsSection />
 
       {/* =========================================================================
           SECTION 20: WHAT SETS US APART

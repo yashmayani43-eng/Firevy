@@ -17,7 +17,7 @@ import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import WhatOurClientsSaySection from './WhatOurClientsSaySection';
 import SapphireFaqSection from '../common/SapphireFaqSection';
-import MobileAppRecentBlogsSection from './MobileAppRecentBlogsSection';
+import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
 import MobileAppWhatSetsUsApartSection from './MobileAppWhatSetsUsApartSection';
 import IWatchChallengeCtaBanner from './IWatchChallengeCtaBanner';
 
@@ -885,7 +885,7 @@ export const Windows11AppDevelopmentService = () => {
       />
 
       {/* SECTION: Our Recent Blogs */}
-      <MobileAppRecentBlogsSection />
+      <IWatchRecentBlogsSection />
 
       {/* SECTION: What Sets Us Apart */}
       <MobileAppWhatSetsUsApartSection />

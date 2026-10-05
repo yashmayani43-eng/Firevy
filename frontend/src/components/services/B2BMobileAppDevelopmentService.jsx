@@ -15,6 +15,8 @@ import OurStoryTheirWordsSection from './OurStoryTheirWordsSection';
 import FeaturedInBrandsSection from './FeaturedInBrandsSection';
 import SapphireFaqSection from '../common/SapphireFaqSection';
 import IWatchRecentBlogsSection from './IWatchRecentBlogsSection';
+import AndroidHiringModels from './AndroidHiringModels';
+import SuccessStoriesSection from '../common/SuccessStoriesSection';
 
 // Full Width Digital Transformation Section Matching Reference 1:1
 const B2BDigitalTransformationSection = () => {
@@ -698,143 +700,12 @@ export const B2BMobileAppDevelopmentService = () => {
         </Container>
       </section>
 
-      {/* Section 6: Business Friendly Hiring Models (4 Cards) */}
-      <section className="py-14 sm:py-20 bg-[#F9FBFC] border-b border-slate-200/60 font-sans">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
-            <h2
-              className="text-slate-900 tracking-tight"
-              style={{
-                fontFamily: "'Poppins', sans-serif",
-                fontWeight: 800,
-                fontSize: '32px',
-                lineHeight: '40px'
-              }}
-            >
-              Business Friendly Hiring Models
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto font-sans">
-              Choose an engagement model that matches your corporate timeline, security mandates, and architectural scope.
-            </p>
-          </div>
+      {/* Section 6: Business Friendly Hiring Models (1:1 Copy to Copy Match to Image 2) */}
+      <AndroidHiringModels />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {hiringModels.map((model, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between text-left group hover:-translate-y-1"
-              >
-                <div>
-                  <div className="mb-5 flex items-center justify-center w-16 h-16 rounded-xl bg-blue-50/50 group-hover:scale-105 transition-transform duration-200">
-                    {model.icon}
-                  </div>
+      {/* Section 9: Success Stories (1:1 Copy to Copy Match to Image 2) */}
+      <SuccessStoriesSection />
 
-                  <h3
-                    className="text-slate-900 mb-2 font-sans"
-                    style={{
-                      fontFamily: "'Poppins', sans-serif",
-                      fontWeight: 700,
-                      fontSize: '18px'
-                    }}
-                  >
-                    {model.title}
-                  </h3>
-
-                  <p className="text-xs text-slate-600 leading-relaxed font-normal mb-5 font-sans min-h-[50px]">
-                    {model.desc}
-                  </p>
-
-                  <ul className="space-y-2 pt-2 border-t border-slate-100">
-                    {model.points.map((pt, pIdx) => (
-                      <li key={pIdx} className="flex items-start text-xs text-slate-700 font-medium font-sans">
-                        <span className="text-[#0084D1] font-bold mr-2 text-sm leading-none">•</span>
-                        <span>{pt}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="pt-6 mt-6 border-t border-slate-100">
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center text-xs font-bold text-[#005F96] hover:text-[#00426b] transition-colors group/link"
-                  >
-                    <span>Hire Developer</span>
-                    <span className="ml-1 text-sm transition-transform duration-200 group-hover/link:translate-x-1">→</span>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* Section 9: Success Stories */}
-      <section className="py-14 sm:py-20 bg-[#EAF5FC] text-slate-900 font-sans text-left border-b border-slate-200/80 overflow-hidden">
-        <Container>
-          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 space-y-2.5">
-            <h2 className="text-3xl sm:text-4xl font-[900] text-slate-950 tracking-tight font-sans">
-              Success Stories
-            </h2>
-            <p className="text-[14px] sm:text-[15.5px] text-slate-700 font-normal leading-relaxed font-sans max-w-2xl mx-auto">
-              Explore how our custom enterprise B2B apps drive automation, transparency, and operational efficiency across global markets.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto mb-10">
-            <div className="flex flex-col group cursor-pointer text-left">
-              <div className="relative w-full h-[220px] sm:h-[235px] rounded-[20px] overflow-hidden bg-white p-2 border border-slate-200/80 shadow-sm group-hover:shadow-md transition-all">
-                <div className="absolute top-4 right-4 z-10 bg-[#7DD3FC] text-[#0369A1] text-[11px] font-[800] px-3 py-1 rounded-md shadow-xs">
-                  Case Study
-                </div>
-                <img
-                  src="/images/adani.webp"
-                  alt="Enterprise B2B Health & Supply Management"
-                  className="w-full h-full object-cover object-bottom rounded-[14px] group-hover:scale-[1.02] transition-transform duration-300 select-none"
-                  loading="lazy"
-                />
-              </div>
-              <h3 className="mt-4 text-[17px] font-[900] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                Adani EmCare - Enterprise Workforce Health Portal
-              </h3>
-            </div>
-
-            <div className="flex flex-col group cursor-pointer text-left">
-              <div className="relative w-full h-[220px] sm:h-[235px] rounded-[20px] overflow-hidden bg-white p-2 border border-slate-200/80 shadow-sm group-hover:shadow-md transition-all">
-                <div className="absolute top-4 right-4 z-10 bg-[#7DD3FC] text-[#0369A1] text-[11px] font-[800] px-3 py-1 rounded-md shadow-xs">
-                  Case Study
-                </div>
-                <img
-                  src="/images/mg.webp"
-                  alt="Morris Garages Enterprise Health Management"
-                  className="w-full h-full object-cover object-bottom rounded-[14px] group-hover:scale-[1.02] transition-transform duration-300 select-none"
-                  loading="lazy"
-                />
-              </div>
-              <h3 className="mt-4 text-[17px] font-[900] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                Morris Garages - Industrial Workforce Audit System
-              </h3>
-            </div>
-
-            <div className="flex flex-col group cursor-pointer text-left">
-              <div className="relative w-full h-[220px] sm:h-[235px] rounded-[20px] overflow-hidden bg-white p-2 border border-slate-200/80 shadow-sm group-hover:shadow-md transition-all">
-                <div className="absolute top-4 right-4 z-10 bg-[#7DD3FC] text-[#0369A1] text-[11px] font-[800] px-3 py-1 rounded-md shadow-xs">
-                  Case Study
-                </div>
-                <img
-                  src="/images/loreal.webp"
-                  alt="L'Oréal Enterprise Safety Improvement System"
-                  className="w-full h-full object-cover object-bottom rounded-[14px] group-hover:scale-[1.02] transition-transform duration-300 select-none"
-                  loading="lazy"
-                />
-              </div>
-              <h3 className="mt-4 text-[17px] font-[900] text-slate-950 group-hover:text-[#005F96] transition-colors leading-snug">
-                L'Oréal - Safe@Work Corporate Incident Platform
-              </h3>
-            </div>
-          </div>
-        </Container>
-      </section>
 
       {/* Section 8: ProudAwardsBanner (Proud To Have Picked These Up Along The Way) */}
       <ProudAwardsBanner />
